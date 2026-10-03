@@ -161,7 +161,7 @@
 
     const pct = score / QUESTIONS.length;
     let lvl, title, blurb;
-    if (pct >= 0.8) { lvl = "lvl-ready"; title = "Ready to dive in 🤿"; blurb = "You've got the physics. Skim the chapters for the details you missed, then scroll to “Where to go” for your level."; }
+    if (pct >= 0.8) { lvl = "lvl-ready"; title = "Physics: nailed it 🤿"; blurb = "You've got the physics. Skim the chapters for the details you missed, then scroll to “Where to go” to find training at your level. Knowing the physics is a great start; it is not the same as being trained to dive."; }
     else if (pct >= 0.55) { lvl = "lvl-close"; title = "Nearly there. Brush up on a couple of chapters"; blurb = "You have the basics. Fill the gaps below before your next dive and the rest will feel obvious underwater."; }
     else { lvl = "lvl-brush"; title = "Brush up first"; blurb = "No shame in that: this is exactly what the chapters are for. Read the ones linked below, then take the challenge again."; }
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kinetic: the physics behind adventure sports</title>
-<meta name="description" content="Kinetic explains the physics behind individual adventure sports. Start with scuba diving; paragliding, ice skating and skating are coming soon.">
+<meta name="description" content="Kinetic explains the physics behind individual adventure sports. Scuba diving, paragliding, ice skating, and roller and inline skating, each with a science challenge.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
@@ -21,9 +21,6 @@
   .sport.live:hover{color:var(--ink);transform:translateY(-2px);box-shadow:0 0 0 2px var(--teal),0 14px 30px rgba(4,23,38,.12)}
   .sport.live .go{font:600 .92rem var(--sans);color:var(--sea-500);margin-top:8px}
   .sport.live:hover .go{color:var(--coral)}
-  .sport.soon{background:#fbfaf6;border-style:dashed;box-shadow:none;color:var(--muted)}
-  .sport.soon h4{color:var(--ink-2)}
-  .card .tag.soon{background:#eceae3;color:#6b6656}
   @media (max-width:960px){.sports{grid-template-columns:1fr 1fr}}
   @media (max-width:560px){.sports{grid-template-columns:1fr}.home-hero{padding:64px 0 56px}.sport{min-height:0}}
 </style>
@@ -38,6 +35,9 @@
     </a>
     <nav class="sectionnav" aria-label="Sports">
       <a href="scuba/">Scuba</a>
+      <a href="paragliding/">Paragliding</a>
+      <a href="ice-skating/">Ice skating</a>
+      <a href="skating/">Skating</a>
     </nav>
   </div>
 </header>
@@ -49,7 +49,7 @@
         <span class="eyebrow">Kinetic · a Curiosta brand</span>
         <h1>The physics behind <em>adventure sports</em>.</h1>
         <p class="lede">Pressure, lift, friction and balance, explained with real numbers, one sport at a time.</p>
-        <div class="cta"><a class="btn btn-primary" href="scuba/">Start with scuba →</a></div>
+        <div class="cta"><a class="btn btn-primary" href="#sports">Pick a sport →</a><a class="btn btn-ghost" href="scuba/">Start with scuba</a></div>
       </div>
     </div>
   </section>
@@ -69,24 +69,27 @@
           <p>Pressure, buoyancy, gas laws, ears and light underwater, with a 15-question challenge and a depth lab.</p>
           <span class="go">Explore scuba →</span>
         </a>
-        <div class="card sport soon" aria-disabled="true">
-          <span class="tag soon">Coming soon</span>
+        <a class="card sport live" href="paragliding/" id="card-paragliding">
+          <span class="tag">Live</span>
           <div class="ico" aria-hidden="true">🪂</div>
           <h4>Paragliding</h4>
-          <p>Lift, glide ratio, thermals and why the wing stays open.</p>
-        </div>
-        <div class="card sport soon" aria-disabled="true">
-          <span class="tag soon">Coming soon</span>
+          <p>Lift, glide ratio, thermals, wing loading, stalls and weather, with a 15-question challenge and a glide lab.</p>
+          <span class="go">Explore paragliding →</span>
+        </a>
+        <a class="card sport live" href="ice-skating/" id="card-ice-skating">
+          <span class="tag">Live</span>
           <div class="ico" aria-hidden="true">⛸️</div>
           <h4>Ice skating</h4>
-          <p>Why ice is slippery, edges and spins, and angular momentum.</p>
-        </div>
-        <div class="card sport soon" aria-disabled="true">
-          <span class="tag soon">Coming soon</span>
+          <p>Why ice is slippery (honestly), edges, spins, jumps and falls, with a 15-question challenge and a spin &amp; jump lab.</p>
+          <span class="go">Explore ice skating →</span>
+        </a>
+        <a class="card sport live" href="skating/" id="card-skating">
+          <span class="tag">Live</span>
           <div class="ico" aria-hidden="true">🛼</div>
-          <h4>Skating</h4>
-          <p>Rolling friction, balance, pumping and carving.</p>
-        </div>
+          <h4>Roller &amp; inline skating</h4>
+          <p>Rolling resistance, bearings, wheels, balance, braking and ramps, with a 15-question challenge and a roll lab.</p>
+          <span class="go">Explore skating →</span>
+        </a>
       </div>
     </div>
   </section>
