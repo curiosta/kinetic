@@ -293,3 +293,19 @@ footer a{color:#7fd8cd}
 /* ---------- theme: paragliding (sky) ---------- */
 .hero{background:radial-gradient(1100px 520px at 85% -10%,#3aa0d8 0%,transparent 60%),linear-gradient(180deg,#0c4a72,#062a44)}
 .gauge .bar{background:linear-gradient(90deg,#2e7d32 0%,#7cb342 20%,#e0c068 40%,#9ecbe8 65%,#e8f3fb 100%)}
+
+/* ---------- mobile section menu: own row, swipeable, snap + edge fades (v2) ---------- */
+.sectionnav{scroll-behavior:smooth}
+@media (max-width:640px){
+  :root{--nav-h:100px}
+  .topbar .wrap{flex-wrap:wrap;height:auto;padding-top:10px;row-gap:6px;column-gap:12px}
+  .wordmark .wm-sub{display:inline;max-width:52vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sectionnav{flex:0 0 calc(100% + 40px);width:calc(100% + 40px);margin:0 -20px;padding:2px 20px 10px;
+    scroll-snap-type:x proximity;scroll-padding-inline:20px;overscroll-behavior-x:contain}
+  .sectionnav a{scroll-snap-align:start;flex-shrink:0;background:rgba(255,255,255,.07);padding:8px 14px}
+  .sectionnav a:last-child{scroll-snap-align:end}
+  .sectionnav a.active{background:var(--teal)}
+  .sectionnav.fade-r{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  .sectionnav.fade-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px);mask-image:linear-gradient(90deg,transparent,#000 48px)}
+  .sectionnav.fade-l.fade-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent)}
+}

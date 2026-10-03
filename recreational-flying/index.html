@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recreational flying: gliders, microlights, hang gliders, paramotors &amp; balloons, the physics explained | Kinetic</title>
+<meta name="description" content="Take the flying physics challenge, then learn lift and glide, thermals and ridge soaring, hot-air buoyancy with worked balloon numbers, powered vs unpowered flight, weather and stalls. Plus the passenger-to-licence ladder (DGCA, Aero Club of India, FAI) and verified Indian clubs, schools and balloon flights.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Recreational flying</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Licence ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to fly</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Gliders, microlights, hang gliders, paramotors &amp; balloons</span>
+      <h1>Wings, engines or hot air: <em>it's all physics.</em></h1>
+      <p class="lede">A sailplane turns 1 km of height into 40 km of travel. A hot-air balloon floats on nothing but a difference in air density. A microlight needs about as much power as a small motorbike to cruise. Learn lift, soaring, buoyancy, thrust, weather and stalls with real numbers, then pick your first flight.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>passenger</span><span class="bar"></span><span>pilot in command</span></div>
+      <p class="small" style="margin-top:14px;color:#a9c4d2">Flying a paraglider? It has its own page: <a href="../paragliding/">Paragliding</a>.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 781 kg</span><span class="l">of lift from a 2,800 m³ balloon at 100 °C on a 15 °C morning</span></div>
+      <div class="hero-stat"><span class="n">≈ 559 kg</span><span class="l">from the same balloon on a 35 °C afternoon</span></div>
+      <div class="hero-stat"><span class="n">40 km</span><span class="l">of glide from 1,000 m up, at a glide ratio of 40</span></div>
+      <div class="hero-stat"><span class="n">1.41×</span><span class="l">higher stall speed in a 60° banked turn</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>Do you know what keeps you up there?</h2>
+      <p>15 questions on the physics of flight, from wings and thermals to hot air and engines. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Your logbook</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification, pilot licence, rating or exam pass.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters, from the wing to the weather</h2>
+      <p>One page for five ways to fly for fun: <strong>gliders (sailplanes)</strong>, <strong>hang gliders</strong>, <strong>microlights</strong>, <strong>paramotors</strong> and <strong>hot-air balloons</strong>. The first three chapters cover unpowered flight (wings, soaring, buoyancy), then engines, weather and control. Numbers are textbook round values and illustrative examples, not figures for any particular aircraft; your instructor and the aircraft's own manual always win.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-lift"><span class="n">CHAPTER 1</span><span class="t">Lift, drag &amp; glide</span><span class="d">One equation for every wing, and why height is fuel</span></a>
+      <a href="#ch-soar"><span class="n">CHAPTER 2</span><span class="t">Thermals, ridges &amp; soaring</span><span class="d">How engineless aircraft climb, and stay up for hours</span></a>
+      <a href="#ch-balloon"><span class="n">CHAPTER 3</span><span class="t">Hot air: buoyancy you can calculate</span><span class="d">Worked balloon numbers, and why sunrise flights</span></a>
+      <a href="#ch-power"><span class="n">CHAPTER 4</span><span class="t">Powered vs unpowered flight</span><span class="d">Thrust, drag, power and climb, from paramotor to microlight</span></a>
+      <a href="#ch-weather"><span class="n">CHAPTER 5</span><span class="t">Weather &amp; density altitude</span><span class="d">Cloud base, storms, monsoon and hot, high airfields</span></a>
+      <a href="#ch-stall"><span class="n">CHAPTER 6</span><span class="t">Stalls, turns &amp; control</span><span class="d">Load factor, weight-shift vs three-axis, and balloon control</span></a>
+    </nav>
+
+    <!-- BALLOON LAB -->
+    <div class="lab" id="balloon-lab">
+      <span class="eyebrow">Interactive · Balloon Lab</span>
+      <h3>Size the envelope, heat the air, pick the morning, and see how many people it can lift</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An illustrative model: air as an ideal gas (ρ = P ÷ RT), standard-atmosphere pressure for the launch elevation, and an assumed equipment mass (envelope, basket, burners and fuel) of 0.14 kg per m³ of envelope. People are counted at 80 kg each, pilot included. Real balloons fly with safety margins and limits set by their manufacturer and operator. For learning only; it is not a flight-planning or load-calculation tool.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="bl-vol">Envelope volume</label><input type="range" id="bl-vol" min="1000" max="8500" step="100" value="2800"><output id="bl-vol-o">2,800 m³</output></div>
+        <div class="ctl"><label for="bl-out">Outside air temperature</label><input type="range" id="bl-out" min="-5" max="45" step="1" value="15"><output id="bl-out-o">15 °C</output></div>
+        <div class="ctl"><label for="bl-in">Average air temperature inside the envelope</label><input type="range" id="bl-in" min="60" max="120" step="1" value="100"><output id="bl-in-o">100 °C</output></div>
+        <div class="ctl"><label>Launch elevation</label><div class="seg" id="bl-elev"><button type="button" data-elev="0" aria-pressed="true">Sea level</button><button type="button" data-elev="500" aria-pressed="false">500 m</button><button type="button" data-elev="1500" aria-pressed="false">1,500 m</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Outside air density</span><span class="v" id="bl-rho-out">1.225</span><span class="s">Ch 3 · kg/m³</span></div>
+        <div class="lab-card"><span class="k">Inside air density</span><span class="v" id="bl-rho-in">0.946</span><span class="s">Ch 3 · kg/m³</span></div>
+        <div class="lab-card"><span class="k">Gross lift</span><span class="v" id="bl-gross">781 kg</span><span class="s">Ch 3 · volume × density difference</span></div>
+        <div class="lab-card"><span class="k">Equipment (assumed)</span><span class="v" id="bl-equip">392 kg</span><span class="s">0.14 kg per m³</span></div>
+        <div class="lab-card"><span class="k">Left for people</span><span class="v" id="bl-pay">389 kg</span><span class="s">gross − equipment</span></div>
+        <div class="lab-card"><span class="k">People it could carry</span><span class="v" id="bl-people">4 people</span><span class="s">at 80 kg each, pilot included</span></div>
+        <div class="lab-card"><span class="k">Extra lift per +1 °C inside</span><span class="v" id="bl-deg">+7.1 kg</span><span class="s">Ch 3 · why pilots "burn" to climb</span></div>
+        <div class="lab-card"><span class="k">Inside temperature for 4 people</span><span class="v" id="bl-need">90 °C</span><span class="s">Ch 5 · hotter mornings need hotter air</span></div>
+        <div class="lab-card"><span class="k">Same volume as a sphere of</span><span class="v" id="bl-sphere">17.5 m</span><span class="s">diameter</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="bl-bar"></span></div>
+      <p class="fine">Bar = lift left for people (0–1,000 kg). Try a 35 °C afternoon, then a 5 °C winter dawn: the same balloon at the same inside temperature lifts hundreds of kilograms more on the cold morning. Envelope fabrics have a maximum temperature set by the manufacturer; this lab stops at 120 °C. Treat every number as a teaching example.</p>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-lift">
+      <header><span class="chno">CH 1</span><h3>Lift, drag &amp; glide</h3></header>
+      <p class="hook">One equation holds up every wing, from a hang glider to a microlight. Height is the fuel tank of anything without an engine.</p>
+      <div class="body">
+        <p>A wing turns the oncoming air slightly downward; by Newton's third law the air pushes the wing up. The size of that push is <span class="eq">L = ½ × ρ × v² × S × C<sub>L</sub></span>: air density ρ, true airspeed v, wing area S and a lift coefficient C<sub>L</sub> set mostly by the angle of attack. Making lift always costs some <strong>drag</strong>: parasitic drag (the pilot, struts, wires and skin friction) grows with speed, while induced drag (the unavoidable cost of making lift, seen in wingtip vortices) shrinks with speed. Their sum is smallest at one particular speed, which is where a wing glides best.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 450 kg microlight cruising at 25 m/s (90 km/h) with a 15 m² wing, at sea level</span>
+          <p style="margin:0">Weight = 450 × 9.81 ≈ <strong>4,415 N</strong>. In level flight lift equals weight, so C<sub>L</sub> = 2 × 4,415 ÷ (1.225 × 25² × 15) ≈ <strong>0.77</strong>, a comfortable value for a light-aircraft wing. Slow down to 20 m/s and C<sub>L</sub> must rise to about 1.2: the wing flies at a higher angle of attack, closer to the stall (<a href="#ch-stall">Ch 6</a>).</p>
+        </div>
+        <h4>Glide ratio: metres forward per metre down</h4>
+        <p>Without an engine, an aircraft is always sliding down through the air it's in. The <strong>glide ratio</strong> equals lift ÷ drag (L/D). Typical round numbers, which vary a lot between models:</p>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Aircraft</th><th>Typical glide ratio</th><th>Still-air glide from 1,000 m</th></tr></thead>
+          <tbody>
+            <tr><td>Paraglider (see <a href="../paragliding/">our paragliding page</a>)</td><td class="num">≈ 8–10</td><td class="num">≈ 8–10 km</td></tr>
+            <tr><td>Hang glider (flexible or rigid wing)</td><td class="num">≈ 10–16</td><td class="num">≈ 10–16 km</td></tr>
+            <tr><td>Training sailplane</td><td class="num">≈ 25–35</td><td class="num">≈ 25–35 km</td></tr>
+            <tr><td>High-performance sailplane</td><td class="num">≈ 45–60</td><td class="num">≈ 45–60 km</td></tr>
+            <tr><td>Microlight, engine off</td><td class="num">≈ 7–12</td><td class="num">≈ 7–12 km</td></tr>
+          </tbody>
+        </table></div>
+        <p class="small">Long, slender wings (high aspect ratio) cut induced drag, which is why sailplanes have such long wings. A headwind shortens the glide over the ground; sinking air can shorten it far more.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A glide ratio of 40 is a slope of 1.4°, gentler than almost any road. From the height of a tall building (100 m), a good sailplane could glide 4 km in still air.</div></div>
+        <details class="check"><summary>A sailplane glides at 90 km/h (25 m/s) with L/D 40. How fast is it sinking?</summary>
+        <p>Sink rate = speed ÷ glide ratio = 25 ÷ 40 ≈ <strong>0.6 m/s</strong>. Any air rising faster than that, and the glider climbs (<a href="#ch-soar">Ch 2</a>).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-soar">
+      <header><span class="chno">CH 2</span><h3>Thermals, ridges &amp; soaring</h3></header>
+      <p class="hook">A glider never stops sinking through the air. Soaring is the art of finding air that rises faster.</p>
+      <div class="body">
+        <p>Your climb rate over the ground is simply <span class="eq">air's vertical speed − your sink rate</span>. Soaring pilots use three main sources of rising air:</p>
+        <ul>
+          <li><strong>Thermals:</strong> the sun heats the ground unevenly; air over a warm patch (a dry field, a town, a rocky slope) becomes less dense and rises in bubbles or columns. Typical climbs are around 1–3 m/s, stronger on hot, dry days, and the tops are often marked by fluffy cumulus clouds (<a href="#ch-weather">Ch 5</a>). Gliders circle tightly to stay inside the core.</li>
+          <li><strong>Ridge (slope) lift:</strong> wind blowing onto a hillside is forced upward. As long as the wind is steady and roughly perpendicular to the ridge, a glider or hang glider can fly back and forth along it. The lee side has sinking air and turbulence.</li>
+          <li><strong>Wave lift:</strong> strong wind over a mountain range can set up standing waves in the air downwind, sometimes marked by smooth, lens-shaped clouds. Wave can carry sailplanes far higher than thermals, which is how many gliding altitude records are set.</li>
+        </ul>
+        <div class="worked">
+          <span class="lbl">Worked example · climb in a thermal, then glide</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Step</th><th>Calculation</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>Thermal rises at 2.5 m/s; glider sinks 0.8 m/s while circling</td><td class="num">2.5 − 0.8</td><td class="num">climb 1.7 m/s</td></tr>
+              <tr><td>Time to gain 1,000 m</td><td class="num">1,000 ÷ 1.7</td><td class="num">≈ 590 s ≈ 10 min</td></tr>
+              <tr><td>Glide those 1,000 m at L/D 40 in still air</td><td class="num">1,000 × 40</td><td class="num">≈ 40 km</td></tr>
+              <tr><td>Same height for a hang glider at L/D 12</td><td class="num">1,000 × 12</td><td class="num">≈ 12 km</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">String climbs and glides together and you have cross-country soaring: India's Hadapsar Gliding Centre in Pune, for example, is reported to hold records for distances over 500 km and heights over 20,000 ft.</p>
+        </div>
+        <h4>The sinking air you don't see</h4>
+        <p>What goes up must come down: around every thermal there is sinking air, often 1–2 m/s or more. A glider crossing it loses height much faster than its still-air sink rate. That's why pilots speed up through sink (to spend less time in it) and slow down in lift.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>1.7 m/s up is a calm lift ride: about a floor of a building every two seconds, with no engine anywhere.</div></div>
+        <details class="check"><summary>A hang glider sinks at 1.1 m/s while circling. The thermal is rising at 1.0 m/s. What happens?</summary>
+        <p>1.0 − 1.1 = <strong>−0.1 m/s</strong>: it still sinks slowly, just more slowly than in still air. Weak thermals that keep a sailplane up may not keep a less efficient wing up.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-balloon">
+      <header><span class="chno">CH 3</span><h3>Hot air: buoyancy you can calculate</h3></header>
+      <p class="hook">A hot-air balloon has no wing and no engine pushing it up. It floats because hot air is lighter than cold air.</p>
+      <div class="body">
+        <p>Archimedes' principle: anything immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces. Air is a fluid. At constant pressure its density falls as temperature rises: <span class="eq">ρ = P ÷ (R × T)</span>, with R = 287 J/(kg·K) for dry air and T in kelvin (°C + 273.15). The envelope is open at the bottom, so the pressure inside is essentially the same as outside; only the temperature differs. The gross lift is <span class="eq">V × (ρ<sub>outside</sub> − ρ<sub>inside</sub>)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 2,800 m³ envelope (the volume of a sphere 17.5 m across)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Conditions</th><th>Outside ρ</th><th>Inside ρ</th><th>Gross lift</th><th>Left after ≈ 392 kg of equipment</th></tr></thead>
+            <tbody>
+              <tr><td>Sea level, 15 °C outside, 100 °C inside</td><td class="num">1.225</td><td class="num">0.946</td><td class="num">≈ 781 kg</td><td class="num">≈ 389 kg (4 people)</td></tr>
+              <tr><td>Sea level, 5 °C winter dawn, 100 °C</td><td class="num">1.269</td><td class="num">0.946</td><td class="num">≈ 905 kg</td><td class="num">≈ 513 kg (6 people)</td></tr>
+              <tr><td>Sea level, 35 °C afternoon, 100 °C</td><td class="num">1.146</td><td class="num">0.946</td><td class="num">≈ 559 kg</td><td class="num">≈ 167 kg (2 people)</td></tr>
+              <tr><td>Sea level, 15 °C, hotter: 120 °C inside</td><td class="num">1.225</td><td class="num">0.898</td><td class="num">≈ 916 kg</td><td class="num">≈ 524 kg (6 people)</td></tr>
+              <tr><td>1,500 m elevation, 15 °C, 100 °C</td><td class="num">1.022</td><td class="num">0.789</td><td class="num">≈ 652 kg</td><td class="num">≈ 260 kg (3 people)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Densities in kg/m³; standard-atmosphere pressure. Equipment (envelope, basket, burners, fuel) is an assumed 0.14 kg per m³ for illustration; people at 80 kg each, pilot included. Real balloons carry safety margins, and commercial operators use much bigger envelopes for more passengers.</p>
+        </div>
+        <h4>How a balloon is flown</h4>
+        <ul>
+          <li><strong>Up:</strong> the pilot fires the propane burner to heat the air; each extra °C inside adds about 7 kg of lift to our example balloon.</li>
+          <li><strong>Down:</strong> let the air cool, or open a vent at the top to release hot air.</li>
+          <li><strong>Sideways:</strong> no direct control. A balloon moves with the wind, so pilots steer by changing height to find winds blowing in different directions, and plan landing areas downwind.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>The 0.28 kg/m³ difference between 15 °C and 100 °C air is about the mass of a full glass of water (≈ 280 g) for every cubic metre. It takes 2,800 cubic metres to lift a small family.</div></div>
+        <details class="check"><summary>Why do hot-air balloon flights in India (and most places) mostly happen around sunrise?</summary>
+        <p>Two reasons from the physics: the air is coolest, so the same envelope temperature gives more lift (the table above), and winds near the ground are usually lightest and steadiest before the sun starts thermals (<a href="#ch-weather">Ch 5</a>). Late afternoon, as heating dies down, is the other window.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-power">
+      <header><span class="chno">CH 4</span><h3>Powered vs unpowered flight</h3></header>
+      <p class="hook">An engine doesn't hold you up. The wing does that. The engine pays for the drag, and for the climb.</p>
+      <div class="body">
+        <p>In steady level flight four forces balance: <strong>lift = weight</strong> and <strong>thrust = drag</strong>. A glider has no thrust, so gravity provides it: the glider tilts slightly nose-down and "spends" height to keep moving. A powered aircraft (microlight, light sport aircraft, paramotor, motor glider) replaces that with a propeller. Since drag = weight ÷ (L/D), the power needed is <span class="eq">P = drag × speed</span>, and any extra power becomes climb: <span class="eq">climb rate = extra power ÷ weight</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · three ways to fly, side by side (illustrative numbers)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th></th><th>Sailplane</th><th>Microlight</th><th>Paramotor</th></tr></thead>
+            <tbody>
+              <tr><td>All-up mass</td><td class="num">400 kg</td><td class="num">450 kg</td><td class="num">110 kg (pilot, motor, wing)</td></tr>
+              <tr><td>Speed · L/D</td><td class="num">25 m/s · 40</td><td class="num">25 m/s · 10</td><td class="num">10 m/s · 6</td></tr>
+              <tr><td>Drag = weight ÷ L/D</td><td class="num">≈ 98 N</td><td class="num">≈ 441 N</td><td class="num">≈ 180 N</td></tr>
+              <tr><td>Power to fly level = drag × speed</td><td class="num">≈ 2.5 kW, paid by height (0.6 m/s sink)</td><td class="num">≈ 11 kW</td><td class="num">≈ 1.8 kW</td></tr>
+              <tr><td>Extra power to climb</td><td class="num">needs rising air (<a href="#ch-soar">Ch 2</a>)</td><td class="num">+11 kW for 2.5 m/s</td><td class="num">+1.6 kW for 1.5 m/s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Propellers are not perfectly efficient (often roughly 60–80%), so the engine has to deliver more than these figures, plus a margin for take-off and hot, high days (<a href="#ch-weather">Ch 5</a>). The paramotor's L/D is lower than a free-flying paraglider's because the motor, cage and higher speed add drag.</p>
+        </div>
+        <h4>What the engine changes, and what it doesn't</h4>
+        <ul>
+          <li><strong>Changes:</strong> you can take off from flat ground, climb without rising air, and fly when there's no lift. A paramotor needs only a field; a microlight needs a runway or strip.</li>
+          <li><strong>Doesn't change:</strong> the wing still stalls at the same angle of attack (<a href="#ch-stall">Ch 6</a>), turbulence and wind still matter, and an engine failure turns you into a glider, so pilots always keep a landing option within gliding range.</li>
+          <li><strong>Balloons:</strong> the burner isn't thrust at all; it's a heater for buoyancy (<a href="#ch-balloon">Ch 3</a>).</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>About 11 kW is roughly what a typical 150 cc motorbike engine puts out, enough to hold a two-seat microlight in the air at 90 km/h.</div></div>
+        <details class="check"><summary>The microlight's engine and propeller deliver 20 kW of useful thrust power at 25 m/s. Roughly how fast can it climb?</summary>
+        <p>Spare power = 20 − 11 = 9 kW. Climb = 9,000 ÷ 4,415 N ≈ <strong>2 m/s</strong> (about 400 ft per minute), less on a hot day.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-weather">
+      <header><span class="chno">CH 5</span><h3>Weather &amp; density altitude</h3></header>
+      <p class="hook">Light aircraft, gliders and balloons are guests of the weather. Reading it is the first skill, not the last.</p>
+      <div class="body">
+        <h4>Hot, high and thin: density altitude</h4>
+        <p>Wings, propellers and engines all work less well in thin air. Air density depends on both elevation and temperature, so a hot day at a high airfield can feel like flying from a much higher one.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · air density compared with a standard sea-level day (1.225 kg/m³)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Conditions</th><th>Density</th><th>% of standard</th><th>True airspeed needed for the same lift</th></tr></thead>
+            <tbody>
+              <tr><td>Sea level, 15 °C</td><td class="num">1.225</td><td class="num">100%</td><td class="num">× 1.00</td></tr>
+              <tr><td>430 m, 15 °C</td><td class="num">1.164</td><td class="num">95%</td><td class="num">× 1.03</td></tr>
+              <tr><td>430 m, 35 °C</td><td class="num">1.088</td><td class="num">89%</td><td class="num">× 1.06</td></tr>
+              <tr><td>430 m, 45 °C (north Indian summer)</td><td class="num">1.054</td><td class="num">86%</td><td class="num">× 1.08</td></tr>
+              <tr><td>1,500 m, 30 °C</td><td class="num">0.972</td><td class="num">79%</td><td class="num">× 1.12</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Speed factor = √(1.225 ÷ density). Engines also make less power in thin air, so take-off runs get longer and climbs weaker on hot afternoons.</p>
+        </div>
+        <h4>Clouds, thermals and storms</h4>
+        <ul>
+          <li><strong>Cloud base:</strong> rising air cools as it expands; when it reaches its dew point, cloud forms. A common rule of thumb is about 125 m of height per °C of spread between temperature and dew point.</li>
+          <li><strong>Cumulonimbus (thunderstorms):</strong> powerful up- and downdrafts, gust fronts that spread out from the storm, hail and lightning. They're a hard no-go for every aircraft on this page.</li>
+          <li><strong>Monsoon:</strong> low cloud, heavy rain and embedded storms. Balloon operators in India typically fly in the drier months; SkyWaltz, for example, lists a season from 1 September to 30 April.</li>
+          <li><strong>Wind:</strong> balloons need light winds to launch and land; gliders and hang gliders need the right wind for ridge lift but can be overpowered by strong, gusty wind. Air flowing over hills, trees and buildings leaves turbulence (rotor) on the downwind side.</li>
+        </ul>
+        <div class="callout warn"><h4>The pilot's call is final</h4><p style="margin:0">Cancellations for weather are a sign of a good operator, not a bad one. If a pilot or instructor says the conditions aren't right, they're reading physics you can't see yet.</p></div>
+        <details class="check"><summary>It's 34 °C with a dew point of 22 °C. Roughly where's the cloud base?</summary>
+        <p>Spread 12 °C × 125 m ≈ <strong>1,500 m</strong> above the ground. A bigger spread means a higher base and usually deeper thermals.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-stall">
+      <header><span class="chno">CH 6</span><h3>Stalls, turns &amp; control</h3></header>
+      <p class="hook">A wing stalls at an angle, not a speed. Turning, or adding weight, moves the speed at which you reach that angle.</p>
+      <div class="body">
+        <p>Raise the angle of attack and C<sub>L</sub> rises, until the airflow can no longer follow the top of the wing. It separates, lift drops sharply and drag jumps: a <strong>stall</strong>. From the lift equation, the speed at which you reach that maximum C<sub>L</sub> is <span class="eq">V<sub>stall</sub> = √(2 × n × W ÷ (ρ × S × C<sub>L,max</sub>))</span>, where n is the load factor (g). In a level turn n = 1 ÷ cos(bank).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a wing that stalls at 50 km/h in level flight</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Bank angle</th><th>Load factor</th><th>Stall speed × </th><th>New stall speed</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0° (straight)</td><td class="num">1.00 g</td><td class="num">1.00</td><td class="num">50 km/h</td></tr>
+              <tr><td class="num">30°</td><td class="num">1.15 g</td><td class="num">1.07</td><td class="num">≈ 54 km/h</td></tr>
+              <tr><td class="num">45°</td><td class="num">1.41 g</td><td class="num">1.19</td><td class="num">≈ 59 km/h</td></tr>
+              <tr><td class="num">60°</td><td class="num">2.00 g</td><td class="num">1.41</td><td class="num">≈ 71 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Weight works the same way: going from 350 kg to 450 kg all-up raises stall speed by √(450 ÷ 350) ≈ 13%. Thin air (<a href="#ch-weather">Ch 5</a>) raises the true stall speed too.</p>
+        </div>
+        <h4>Three ways to control an aircraft</h4>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Control type</th><th>Aircraft</th><th>How you steer</th></tr></thead>
+          <tbody>
+            <tr><td>Three-axis</td><td>Sailplanes, fixed-wing microlights, light sport aircraft</td><td>Ailerons (roll), elevator (pitch) and rudder (yaw) via stick and pedals</td></tr>
+            <tr><td>Weight-shift</td><td>Hang gliders, microlight "trikes", powered hang gliders</td><td>Push and pull a control bar to move your weight relative to the wing</td></tr>
+            <tr><td>Brakes and weight</td><td>Paramotors, paragliders, powered parachutes</td><td>Brake toggles pull down the trailing edge; plus weight shift and throttle</td></tr>
+            <tr><td>Buoyancy only</td><td>Hot-air balloons</td><td>Burner and vent for up and down; the wind decides direction</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout warn"><h4>Low, slow and turning</h4><p style="margin:0">Most stall accidents in light aircraft happen close to the ground: a steep turn at low speed after take-off or before landing. Instructors drill keeping speed up and banks shallow when you're low.</p></div>
+        <details class="check"><summary>Why does a hang glider pilot push the bar out (nose up) to slow down, and what's the risk?</summary>
+        <p>Moving weight back raises the nose and the angle of attack, so the wing slows. Push too far and you reach C<sub>L,max</sub>: the wing stalls. Recovery means lowering the angle of attack again, which needs height.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LICENCE LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The licence ladder</span>
+      <h2>Passenger → first lessons → pilot's licence → competitions &amp; records</h2>
+      <p>In India, flying an aircraft as pilot generally needs a licence from the <strong>DGCA</strong> (Directorate General of Civil Aviation). The Aircraft Rules, 1937 list a <em>Pilot's Licence</em> for gliders, balloons, microlight aircraft, light sport aircraft and aeroplanes (as amended in 2023). Some foot-launched and powered-parachute categories are treated differently, and schools describe them as needing no licence. Below, each step shows what we could verify from official documents or the operators' own pages. Rules change, so always confirm the current position with DGCA and an approved school.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Passenger</span><b>Fly with a licensed pilot</b><span class="iso">No training needed</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real examples</span><span class="cn">Balloon flights and festivals</span><ul><li>SkyWaltz: commercial hot-air balloon flights at sunrise and sunset, about an hour aloft</li><li>Tamil Nadu International Balloon Festival: limited tethered rides (60–80 ft), weather permitting</li><li>Tandem paragliding: see <a href="../paragliding/">our paragliding page</a></li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Buoyancy and weather</span><ul><li>Why it floats: <a href="#ch-balloon">Ch 3</a></li><li>Why it's at dawn: <a href="#ch-weather">Ch 5</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Ask who the pilot is and how the operator decides whether to fly. A calm "not today" is good airmanship.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Powered paragliding &amp; powered parachutes</span><b>Engine on your back, fabric wing above</b><span class="iso">Described by schools as non-licensed</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real rules we found</span><span class="cn">School statements</span><ul><li>GFZ Flying Club (near Jaipur) says powered paratrikes and powered parachutes fall under a "non-licensed flex-wing category in India"</li><li>PG Gurukul's 6-day paramotoring course (Punjab) requires a P3 paragliding rating first</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Thrust and stalls</span><ul><li>Power and climb: <a href="#ch-power">Ch 4</a></li><li>Brakes and stalls: <a href="#ch-stall">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">International body</span><span class="cn">FAI CIMA</span><ul><li>The FAI's Microlight and Paramotor Commission runs paramotor competitions and records</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Hang gliding</span><b>Foot-launched, weight-shift wing</b><span class="iso">School training, then ratings</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">In India</span><span class="cn">SkyVentures, Rajasthan</span><ul><li>A 5-day basic course: rigging, pre-flight checks, ground handling, assisted launches and landings</li><li>Then intermediate ridge soaring and thermal soaring</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Glide and soaring</span><ul><li>Glide ratios: <a href="#ch-lift">Ch 1</a></li><li>Ridge and thermal lift: <a href="#ch-soar">Ch 2</a></li></ul></div>
+          <div class="ag"><span class="an">Reference abroad</span><span class="cn">BHPA (UK)</span><ul><li>First flights tethered to an instructor, then Elementary Pilot and Club Pilot (Novice) on the BHPA Pilot Rating Scheme</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Glider pilot</span><b>DGCA Pilot's Licence (Gliders)</b><span class="iso">Oral examination plus flight training</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real rules</span><span class="cn">DGCA CAR Section 7, Series B, Part II</span><ul><li>An oral examination in Air Regulations, Air Navigation, Aviation Meteorology, and Aircraft and Instruments (plus engines for motor gliders)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything unpowered</span><ul><li>Lift, glide and soaring: <a href="#ch-lift">Ch 1</a>, <a href="#ch-soar">Ch 2</a></li><li>Weather: <a href="#ch-weather">Ch 5</a></li></ul></div>
+          <div class="ag"><span class="an">Where</span><span class="cn">Hadapsar Gliding Centre, Pune</span><ul><li>Reported as the last operational DGCA gliding centre; check availability first</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Microlight &amp; light sport aircraft</span><b>DGCA Pilot's Licence (microlight / LSA)</b><span class="iso">Written examination plus flight training</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real rules</span><span class="cn">DGCA CAR and Aircraft Rules</span><ul><li>A written examination conducted by DGCA; the CAR groups the microlight syllabus with the private pilot's licence for aeroplanes</li><li>The 2023 amendment's licence list names light sport aircraft alongside microlights</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Powered flight</span><ul><li>Power, climb and density altitude: <a href="#ch-power">Ch 4</a>, <a href="#ch-weather">Ch 5</a></li><li>Three-axis vs weight-shift: <a href="#ch-stall">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">Training path</span><span class="cn">GFZ Flying Club</span><ul><li>Lists progression to powered hang glider, fixed-wing microlight, LSA and motor glider training</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Balloon pilot, competitions &amp; records</span><b>DGCA Pilot's Licence (Balloons) · FAI events</b><span class="iso">Written examination; FAI sporting rules</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real rules</span><span class="cn">DGCA</span><ul><li>Balloon pilot's licence: written examination per the same DGCA CAR (Aircraft Rules Schedule II, Section H)</li></ul></div>
+          <div class="ag"><span class="an">Competition &amp; records</span><span class="cn">FAI commissions</span><ul><li>Gliding (IGC), microlights and paramotors (CIMA), ballooning (CIA), hang gliding and paragliding (CIVL)</li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">Aero Club of India</span><ul><li>India's National Air Sports Control (NAC-India) under the National Air Sports Guidelines 2023</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout note" style="margin-top:26px"><p style="margin:0"><strong>What the law says, briefly:</strong> India's aviation law was re-enacted as the <strong>Bharatiya Vayuyan Adhiniyam, 2024</strong>, in force from 1 January 2025, replacing the Aircraft Act, 1934 (Press Information Bureau). Licensing detail sits in the Aircraft Rules and DGCA's Civil Aviation Requirements (CARs). We haven't listed flying-hour minimums because we couldn't verify the current figures on an official page: ask DGCA or your school for the current CAR.</p></div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Two kinds of body matter. <strong>Aviation regulators</strong> (in India, the Ministry of Civil Aviation and DGCA) license pilots and aircraft. <strong>Air-sports bodies</strong> (the FAI worldwide and the Aero Club of India nationally) run competitions, records and sporting licences. Every body below was checked on its official website or in an official document.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>FAI, the World Air Sports Federation</h4><p>The international federation for air sports, from ballooning and gliding to microlights, hang gliding and paragliding. It organises world championships and certifies world records through specialist commissions.</p><a class="url" href="https://www.fai.org/" target="_blank" rel="noopener">fai.org</a></div>
+      <div class="card"><span class="tag">FAI commission</span><h4>FAI Gliding Commission (IGC)</h4><p>Runs FAI gliding: sailplane championships and records.</p><a class="url" href="https://www.fai.org/commission/igc" target="_blank" rel="noopener">fai.org › IGC</a></div>
+      <div class="card"><span class="tag">FAI commission</span><h4>FAI Microlight and Paramotor Commission (CIMA)</h4><p>Runs FAI microlight and paramotor championships and records.</p><a class="url" href="https://www.fai.org/commission/cima" target="_blank" rel="noopener">fai.org › CIMA</a></div>
+      <div class="card"><span class="tag">FAI commission</span><h4>FAI Ballooning Commission (CIA)</h4><p>Conducts FAI's ballooning activities, in particular world records and international competitions.</p><a class="url" href="https://www.fai.org/commission/cia" target="_blank" rel="noopener">fai.org › CIA</a></div>
+      <div class="card"><span class="tag">FAI commission</span><h4>FAI Hang Gliding and Paragliding Commission (CIVL)</h4><p>Runs FAI hang gliding and paragliding competitions and records. Paragliding has its own Kinetic page: <a href="../paragliding/">Paragliding</a>.</p><a class="url" href="https://www.fai.org/commission/civl" target="_blank" rel="noopener">fai.org › CIVL</a></div>
+      <div class="card"><span class="tag">Reference: UK training body</span><h4>BHPA (British Hang Gliding and Paragliding Association)</h4><p>A well-documented training model: initial instruction only at a BHPA-registered school, first hang-gliding flights tethered to an instructor, then the Elementary Pilot award and Club Pilot (Novice) rating on its Pilot Rating Scheme.</p><a class="url" href="https://www.bhpa.co.uk/sport/learn_to_fly/" target="_blank" rel="noopener">bhpa.co.uk › learn to fly</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Aviation regulator</span><h4>Directorate General of Civil Aviation (DGCA)</h4><p>Issues pilot's licences, including for gliders, microlight aircraft and balloons, and publishes the Civil Aviation Requirements (CARs) that set exam syllabuses: written exams for microlight and balloon licences, an oral exam for gliders.</p><a class="url" href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a></div>
+      <div class="card"><span class="tag">Ministry</span><h4>Ministry of Civil Aviation (MoCA)</h4><p>Notified the Aircraft (First Amendment) Rules, 2023 (10 October 2023), whose licence list covers gliders, balloons, microlight aircraft, light sport aircraft and aeroplanes. The National Air Sports Guidelines 2023 superseded the National Air Sports Policy 2022, per a Lok Sabha answer of 27 July 2026.</p><a class="url" href="https://www.civilaviation.gov.in/" target="_blank" rel="noopener">civilaviation.gov.in</a></div>
+      <div class="card"><span class="tag">National air-sports body</span><h4>Aero Club of India</h4><p>India's National Air Sports Control (NAC-India), recognised under the National Air Sports Guidelines 2023, and India's link to the FAI for air-sports events and records.</p><a class="url" href="https://www.aeroclubofindia.com/" target="_blank" rel="noopener">aeroclubofindia.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to fly</span>
+      <h2>Pick your level. We'll point you to the airfield.</h2>
+      <p>Real Indian operators, schools, clubs and a festival, each checked on its own website, or in a news report where no official page exists. For current courses, fees, approvals and dates, follow the link and confirm with the operator directly. For paragliding, see our <a href="../paragliding/">paragliding page</a>.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>Balloon season</b>Drier months: SkyWaltz lists 1 September to 30 April; Coimbatore's balloon festival is held in mid-January.</div>
+      <div><b>Soaring</b>Sunny, dry days build the best thermals by late morning (<a href="#ch-soar">Ch 2</a>). Very hot afternoons bring thin air and rough thermals (<a href="#ch-weather">Ch 5</a>).</div>
+      <div><b>Monsoon</b>Low cloud, rain and storms: most recreational flying pauses or becomes very weather-dependent.</div>
+      <div><b>Winter mornings</b>Cool, dense air gives balloons more lift (<a href="#ch-balloon">Ch 3</a>), but fog in north India can ground flights.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-ride" id="tab-ride">① Passenger &amp; first taste</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-learn" id="tab-learn">② Learn: paramotor &amp; hang gliding</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-licence" id="tab-licence">③ Licensed: glider &amp; microlight</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-sport" id="tab-sport">④ Sport, records &amp; beyond</button>
+    </div>
+
+    <!-- PASSENGER -->
+    <div class="lvl-panel show" id="lvl-ride" role="tabpanel" aria-labelledby="tab-ride">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to feel flight before learning it. A balloon flight or a tethered festival ride needs no training (Step 1 on our ladder). Read <a href="#ch-balloon">Ch 3</a> before you go and you'll understand every burn the pilot makes.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What wind limits do you fly in? What happens if the morning is too windy (<a href="#ch-weather">Ch 5</a>)? How do you choose a landing field, given that a balloon goes where the wind goes? How many people does this envelope carry on a warm day?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>SkyWaltz</h4><span class="loc">Jaipur (Kukas) base · other locations listed on its site</span></div><span class="badge gov">Licensed balloon operator</span></div>
+          <p>Describes itself as India's first fully licensed commercial hot-air balloon operator, authorised by the Ministry of Civil Aviation in January 2008 (a brand of E Factor Adventure Tourism). Flights last about an hour around sunrise or sunset, in balloons for 2 to 22 people, flown by internationally licensed pilots; season 1 September to 30 April.</p>
+          <a class="url" href="https://www.skywaltz.com/about-us/" target="_blank" rel="noopener">skywaltz.com</a></div>
+        <div class="school"><div class="top"><div><h4>Tamil Nadu International Balloon Festival</h4><span class="loc">Coimbatore · 11th edition 15–18 Jan 2026 · Jallikattu Grounds, L&amp;T Bypass Road</span></div><span class="badge">Festival</span></div>
+          <p>A balloon display supported by the Tamil Nadu Department of Tourism. Visitors watch the balloons; a limited number of tethered rides rise 60–80 ft, depending on the weather, and the pilot's decision is final. Balloons do not take off on free flights at the festival.</p>
+          <a class="url" href="https://tnibf.com/" target="_blank" rel="noopener">tnibf.com</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Tandem flights in a wing:</strong> the easiest way to try a fabric wing is a tandem paraglide with a qualified pilot. Our <a href="../paragliding/">paragliding page</a> lists verified sites and schools.</p></div>
+    </div>
+
+    <!-- LEARN -->
+    <div class="lvl-panel" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to be the pilot, starting with categories that schools describe as needing no DGCA licence (Steps 2–3 on our ladder). Read <a href="#ch-power">Ch 4</a> and <a href="#ch-stall">Ch 6</a> first.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the current legal position for this aircraft type, and can you show me? What's the instructor-to-student ratio? How do you teach engine-failure landings? What wind and thermal limits do students fly in? What happens to the wing in a stall?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">PPG, PPC, microlight &amp; LSA</span></div>
+          <p>Starts students on powered paratrikes and powered parachutes, which it says fall under a non-licensed flex-wing category in India, then offers progression to licensed flying on powered hang gliders, fixed-wing microlights, light sport aircraft and motor gliders.</p>
+          <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
+        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge">Paramotor course</span></div>
+          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating, so you learn to fly the wing before adding an engine.</p>
+          <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
+        <div class="school"><div class="top"><div><h4>SkyVentures</h4><span class="loc">Rajasthan</span></div><span class="badge">Hang gliding</span></div>
+          <p>Calls itself Rajasthan's first and only hang-gliding school. A 5-day basic course covers rigging, pre-flight checks, ground handling and assisted launches and landings; intermediate training moves on to ridge soaring (for example, gaining height above a 300 ft hill) and thermal soaring. Also offers paramotor training and winch towing.</p>
+          <a class="url" href="https://skyventures.in/hang-glider-training-india/" target="_blank" rel="noopener">skyventures.in</a></div>
+      </div>
+    </div>
+
+    <!-- LICENSED -->
+    <div class="lvl-panel" id="lvl-licence" role="tabpanel" aria-labelledby="tab-licence">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want a DGCA pilot's licence for gliders or microlights (Steps 4–5 on our ladder). Expect ground school for the DGCA examinations as well as flight training, and usually a medical assessment (ask DGCA which applies).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the school approved by DGCA for this licence, and can I see the approval? Which aircraft will I train on, and how is it maintained? How do you teach stalls and spins (<a href="#ch-stall">Ch 6</a>), and field landings after engine failure (<a href="#ch-power">Ch 4</a>)?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Hadapsar Gliding Centre</h4><span class="loc">Hadapsar, Pune · established 7 Nov 1950</span></div><span class="badge gov">DGCA gliding centre</span></div>
+          <p>India's oldest civil-aviation training base, founded by the Indian Gliding Association. A November 2025 news report describes it as the sole surviving operational gliding centre under DGCA (once one of 18), with only two gliders left, and notes a plan announced in January 2025 for the Airports Authority of India to take it over under a PPP model, with officials saying the intent is to preserve it. Check its current status before planning training.</p>
+          <a class="url" href="https://www.hindustantimes.com/cities/pune-news/as-hadapsar-gliding-centre-turns-75-india-s-oldest-civil-aviation-training-base-fights-to-stay-aloft-101762281454591.html" target="_blank" rel="noopener">hindustantimes.com (news report)</a></div>
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club: licensed categories</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">Microlight, LSA &amp; motor glider</span></div>
+          <p>After the no-licence categories, GFZ lists training on powered hang gliders, fixed-wing microlights, light sport aircraft and motor gliders. Ask which DGCA licence each course leads to and confirm its approval.</p>
+          <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Check approvals at the source:</strong> licences and approved training organisations are DGCA matters. Before paying for training, confirm the school's approval for your licence type on <a href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a> or with DGCA directly.</p></div>
+    </div>
+
+    <!-- SPORT -->
+    <div class="lvl-panel" id="lvl-sport" role="tabpanel" aria-labelledby="tab-sport">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're a licensed or rated pilot who wants competitions or records (Step 6 on our ladder), or to train abroad.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which FAI commission covers my aircraft? How are records measured and verified? What cross-country soaring technique (<a href="#ch-soar">Ch 2</a>) do top pilots use?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Aero Club of India</h4><span class="loc">New Delhi · national</span></div><span class="badge gov">NAC-India</span></div>
+          <p>India's National Air Sports Control under the National Air Sports Guidelines 2023: the body that connects Indian air sports to the FAI for international events and records.</p>
+          <a class="url" href="https://www.aeroclubofindia.com/" target="_blank" rel="noopener">aeroclubofindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>FAI air-sport commissions</h4><span class="loc">World federation · international</span></div><span class="badge">Competitions &amp; records</span></div>
+          <p>World championships and world records for gliding (IGC), microlights and paramotors (CIMA), ballooning (CIA), and hang gliding and paragliding (CIVL). Each commission's page lists its events and rules.</p>
+          <a class="url" href="https://www.fai.org/commission/cia" target="_blank" rel="noopener">fai.org › commissions</a></div>
+        <div class="school"><div class="top"><div><h4>Training abroad: BHPA-registered schools</h4><span class="loc">United Kingdom</span></div><span class="badge">Reference</span></div>
+          <p>If you train in the UK, the BHPA requires initial instruction at a registered school and offers hill or winch-tow training towards the Elementary Pilot and Club Pilot awards. Its school finder is on the same page.</p>
+          <a class="url" href="https://www.bhpa.co.uk/sport/learn_to_fly/" target="_blank" rel="noopener">bhpa.co.uk</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../paragliding/">paragliding</a> · <a href="../ice-skating/">ice skating</a> · <a href="../skating/">skating</a> · <a href="../running/">running</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

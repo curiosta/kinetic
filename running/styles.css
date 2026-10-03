@@ -290,9 +290,9 @@ footer a{color:#7fd8cd}
 .skip-note{font-size:.86rem;color:var(--muted)}
 @media (max-width:640px){.lab .ctl{grid-template-columns:1fr auto;}.lab .ctl label{grid-column:1/-1}}
 
-/* ---------- theme: skating (asphalt & sunset) ---------- */
-.hero{background:radial-gradient(1100px 520px at 82% -10%,#c8643a 0%,transparent 58%),linear-gradient(180deg,#2a2f3a,#12161e)}
-.gauge .bar{background:linear-gradient(90deg,#4fd18b 0%,#f3d34a 40%,#ff9a3c 70%,#ff5a3c 100%)}
+/* ---------- theme: running (dawn road & high passes) ---------- */
+.hero{background:radial-gradient(1100px 520px at 82% -10%,#d0803a 0%,transparent 58%),linear-gradient(180deg,#2b2f45,#141726)}
+.gauge .bar{background:linear-gradient(90deg,#4fd18b 0%,#bfe35a 35%,#f3d34a 60%,#ff9a3c 80%,#ff5a3c 100%)}
 
 /* ---------- mobile section menu: own row, swipeable, snap + edge fades (v2) ---------- */
 .sectionnav{scroll-behavior:smooth}
