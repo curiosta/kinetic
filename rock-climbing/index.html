@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rock Climbing · Physics of Grip, Falls & Ropes · Kinetic by Curiosta</title>
+<meta name="description" content="Test your climbing physics in 15 questions, learn friction, fall factor, anchors and landings, then follow the climbing ladder to real gyms, boulders, crags and courses in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Rock climbing</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Climbing ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to climb</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Rock climbing</span>
+      <h1>Grip, gravity and the <em>physics of a good catch.</em></h1>
+      <p class="lede">Bouldering, sport and trad climbing all come down to the same physics: friction on your feet, torque on your arms and a rope that stretches when you fall. Take the challenge, learn the science, then find a gym, a boulder field or a crag at your level.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Gym</span><span class="bar"></span><span>Crag</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≤ 12 kN</span><span class="l">most a single rope may pass on in the standard drop test</span></div>
+      <div class="hero-stat"><span class="n">0.35</span><span class="l">fall factor of a 3.5 m fall on 10 m of rope</span></div>
+      <div class="hero-stat"><span class="n">≈ 10 g</span><span class="l">average stop from a 3 m boulder fall onto a pad that gives 30 cm</span></div>
+      <div class="hero-stat"><span class="n">1.0 ×</span><span class="l">load on each anchor leg when they're 120° apart</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of climbing?</h2>
+      <p>15 questions on friction, body position, ropes and falls, anchors, landings and grip. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Climbing physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace a belay check or instruction.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Fall Lab to see how slack, rope out and rope type change a catch.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-friction"><span class="n">CHAPTER 1</span><span class="t">Friction, rubber &amp; rock</span><span class="d">Why slabs get scary and chalk helps</span></a>
+      <a href="#ch-body"><span class="n">CHAPTER 2</span><span class="t">Body position &amp; torque</span><span class="d">Hips in, arms straight, legs push</span></a>
+      <a href="#ch-falls"><span class="n">CHAPTER 3</span><span class="t">Ropes, falls &amp; fall factor</span><span class="d">Why rope out matters more than fall length</span></a>
+      <a href="#ch-anchors"><span class="n">CHAPTER 4</span><span class="t">Anchors &amp; protection</span><span class="d">Sling angles, bolts and cams</span></a>
+      <a href="#ch-landing"><span class="n">CHAPTER 5</span><span class="t">Bouldering falls &amp; landings</span><span class="d">Pads, spotters and stopping distance</span></a>
+      <a href="#ch-energy"><span class="n">CHAPTER 6</span><span class="t">Energy, grip &amp; pump</span><span class="d">Work done, forearm pump and fingers</span></a>
+    </nav>
+
+    <!-- FALL LAB -->
+    <div class="lab" id="rc-lab">
+      <span class="eyebrow">Interactive · Fall Lab</span>
+      <h3>Set up a lead fall and see what the rope, you and the top bolt feel</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An idealised model: the rope is a perfect spring (stiffness EA ≈ 24 kN, chosen so an 80 kg mass in the standard factor-1.77 test gives ≈ 9 kN, inside the 12 kN limit), the belay is fixed, and nothing else absorbs energy. Real falls are softer, thanks to rope slip, a moving belayer and your body. For learning only; it is not a guide to how far you can safely fall.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="rc-mass">Climber mass</label><input type="range" id="rc-mass" min="40" max="110" step="1" value="70"><output id="rc-mass-o">70 kg</output></div>
+        <div class="ctl"><label for="rc-out">Rope out (belayer to climber)</label><input type="range" id="rc-out" min="2" max="40" step="0.5" value="10"><output id="rc-out-o">10 m</output></div>
+        <div class="ctl"><label for="rc-above">Height above the last bolt</label><input type="range" id="rc-above" min="0.5" max="5" step="0.1" value="1.5"><output id="rc-above-o">1.5 m</output></div>
+        <div class="ctl"><label>Slack in the system</label><div class="seg" id="rc-slack"><button type="button" data-m="0" aria-pressed="false">None</button><button type="button" data-m="0.5" aria-pressed="true">0.5 m</button><button type="button" data-m="1.5" aria-pressed="false">1.5 m (too much)</button></div><span></span></div>
+        <div class="ctl"><label>Rope type</label><div class="seg" id="rc-rope"><button type="button" data-ea="24000" aria-pressed="true">Dynamic (climbing) rope</button><button type="button" data-ea="250000" aria-pressed="false">Static rope (never lead on it)</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Fall distance</span><span class="v" id="rc-fall">3.5 m</span><span class="s">Ch 3 · 2 × height above bolt + slack</span></div>
+        <div class="lab-card"><span class="k">Fall factor</span><span class="v" id="rc-ff">0.35</span><span class="s">Ch 3 · fall ÷ rope out</span></div>
+        <div class="lab-card"><span class="k">Speed when the rope comes tight</span><span class="v" id="rc-v">8.3 m/s</span><span class="s">Ch 5 · √(2gh)</span></div>
+        <div class="lab-card"><span class="k">Peak force on you</span><span class="v" id="rc-peak">4.2 kN</span><span class="s" id="rc-peak-s">Ch 3 · ideal spring rope</span></div>
+        <div class="lab-card"><span class="k">That's about</span><span class="v" id="rc-g">6.0 ×</span><span class="s">your body weight</span></div>
+        <div class="lab-card"><span class="k">Rope stretch at the peak</span><span class="v" id="rc-stretch">1.4 m</span><span class="s">Ch 3 · extra distance you drop</span></div>
+        <div class="lab-card"><span class="k">Load on the top bolt</span><span class="v" id="rc-bolt">≈ 6.6 kN</span><span class="s">Ch 4 · illustrative ≈ 1.6 × (climber + belayer side)</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="rc-bar"></span></div>
+      <p class="fine">Bar = peak force on you as a share of 12 kN, the most a single rope may pass on in the EN 892 drop test (UIAA 101). The 1.6 × bolt factor is a teaching assumption for friction over the carabiner; real values vary. Never use this lab to plan falls: practise falling only with a qualified instructor.</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-friction">
+      <header><span class="chno">CH 1</span><h3>Friction, rubber &amp; rock</h3></header>
+      <p class="hook">Climbing shoes don't stick by magic. They press, and the rock pushes back.</p>
+      <div class="body">
+        <p>Friction is the sideways force that stops your shoe or fingers sliding. In the simple model every physics class uses, the most friction you can get is <span class="eq">F ≤ μ × N</span>: the friction coefficient μ (how grippy the two surfaces are together) times the normal force N (how hard you press into the rock). On a slab tilted at angle α, gravity tries to slide you down the slope with a force mg sin α while pressing you in with mg cos α. You only stay put if <span class="eq">μ ≥ tan α</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · friction needed to stand on a smooth slab, all weight on one foot</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Slab angle (from horizontal)</th><th>tan α = μ needed</th><th>What it feels like</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30°</td><td class="num">0.58</td><td>Walkable in good rubber</td></tr>
+              <tr><td class="num">40°</td><td class="num">0.84</td><td>Committing; trust your feet</td></tr>
+              <tr><td class="num">45°</td><td class="num">1.00</td><td>Needs very good rubber and technique</td></tr>
+              <tr><td class="num">60°</td><td class="num">1.73</td><td>Beyond pure friction: you need edges, holds or hands</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">tan 30° = 0.577, tan 45° = 1, tan 60° = 1.732. Real rubber on rough rock behaves better than this simple model on steep ground, because soft rubber also deforms around tiny crystals. That's why sticky rubber can beat "μ ≤ 1".</p>
+        </div>
+        <h4>What helps grip</h4>
+        <ul>
+          <li><strong>Weight over your feet:</strong> leaning into a slab feels safer but reduces the push into the rock, so your feet skate. Hips out, heels down.</li>
+          <li><strong>Chalk:</strong> magnesium carbonate dries sweat from your fingers. Brush excess chalk off holds; caked chalk gets slippery.</li>
+          <li><strong>Conditions:</strong> cool, dry air beats heat and humidity. Climbers at Badami start very early, even in January, because direct sun makes rock and rubber greasy.</li>
+          <li><strong>Rock type:</strong> Hampi's granite and Badami's sandstone feel completely different: rough crystals versus a finer, sometimes softer surface. Wet sandstone can be weakened, so let it dry after rain.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Stand on a sloping roof-like surface in sports shoes and slowly lean back: the point where you start to slide tells you the angle where your shoes' μ equals tan α.</div></div>
+        <details class="check"><summary>Your shoes give μ ≈ 0.84 on a smooth slab. What's the steepest angle you can stand on with no holds?</summary>
+        <p>α = arctan 0.84 ≈ <strong>40°</strong>. Steeper than that, and you need an edge or a hold.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-body">
+      <header><span class="chno">CH 2</span><h3>Body position &amp; torque</h3></header>
+      <p class="hook">Good climbers aren't just strong. They put their weight where the wall can hold it.</p>
+      <div class="body">
+        <p>On a vertical wall, your weight acts at your centre of mass, roughly at your hips. If your hips are a distance <em>d</em> out from the wall, gravity creates a torque (turning effect) of <span class="eq">m g × d</span> that tries to topple you backwards around your feet. Your hands, roughly a height <em>h</em> above your feet, must pull in with a force that cancels it: <span class="eq">F<sub>arms</sub> ≈ m g × d ÷ h</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 70 kg climber (weight 686.7 N), hands 1.2 m above the feet</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Hips out from the wall</th><th>Arm pull needed</th><th>As "kilograms"</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.30 m (sagging back)</td><td class="num">686.7 × 0.30 ÷ 1.2 ≈ 172 N</td><td class="num">≈ 17.5 kg</td></tr>
+              <tr><td class="num">0.15 m (hips in)</td><td class="num">≈ 86 N</td><td class="num">≈ 8.8 kg</td></tr>
+              <tr><td>Steep overhang, feet cut loose</td><td class="num">≈ 687 N (your whole weight)</td><td class="num">≈ 70 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">A simplified static model: it ignores friction at your feet and assumes you pull straight in. It still shows why moving your hips 15 cm closer to the wall halves the work your arms do.</p>
+        </div>
+        <h4>Moves that use the physics</h4>
+        <ul>
+          <li><strong>Straight arms:</strong> hanging from straight arms lets bones and ligaments take the load while muscles partly recover.</li>
+          <li><strong>Legs push, arms steer:</strong> leg muscles are far bigger than forearm muscles. Stand up on your feet; don't pull up on your arms.</li>
+          <li><strong>Drop-knee and flagging:</strong> turning a hip into the wall or pushing a leg out sideways moves your centre of mass under the hold, so you don't "barn-door" (swing open like a door).</li>
+          <li><strong>Overhangs:</strong> keep tension through your core and toes so your feet stay on. If they cut loose, your arms suddenly carry your whole weight.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Hold a 2 kg bag at arm's length, then close to your chest. Same weight, different torque. Your hips on a wall work the same way.</div></div>
+        <details class="check"><summary>A 60 kg climber keeps their hips 0.2 m out, hands 1.0 m above their feet. What arm pull do they need?</summary>
+        <p>60 × 9.81 × 0.2 ÷ 1.0 ≈ <strong>118 N</strong>, about 12 kg-force.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-falls">
+      <header><span class="chno">CH 3</span><h3>Ropes, falls &amp; fall factor</h3></header>
+      <p class="hook">It's not how far you fall. It's how much rope is there to stretch.</p>
+      <div class="body">
+        <p>A falling climber has kinetic energy that the rope must absorb by stretching. A <strong>dynamic</strong> climbing rope is designed to stretch, so it stops you over a longer distance with a lower peak force. The key number is the <strong>fall factor</strong>: <span class="eq">f = fall distance ÷ rope length paid out</span>. A 3.5 m fall on 10 m of rope (f = 0.35) is far gentler than a 3.5 m fall on 2.5 m of rope near the belay (f = 1.4), because there's four times less rope to stretch.</p>
+        <p>Treating the rope as an ideal spring of stiffness EA gives the peak force <span class="eq">F = m g (1 + √(1 + 2 f EA ÷ m g))</span>. Notice that the length of the fall on its own isn't in the formula: only the fall factor is.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 70 kg climber, ideal dynamic rope (EA ≈ 24 kN, our Fall Lab's model)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Fall</th><th>Rope out</th><th>Fall factor</th><th>Peak force (model)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1 m</td><td class="num">10 m</td><td class="num">0.10</td><td class="num">≈ 2.6 kN</td></tr>
+              <tr><td class="num">3.5 m</td><td class="num">10 m</td><td class="num">0.35</td><td class="num">≈ 4.2 kN</td></tr>
+              <tr><td class="num">3.5 m</td><td class="num">5 m</td><td class="num">0.70</td><td class="num">≈ 5.5 kN</td></tr>
+              <tr><td class="num">4 m</td><td class="num">2.5 m</td><td class="num">1.60</td><td class="num">≈ 8.0 kN</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Example: f = 0.35, mg = 686.7 N. 2 × 0.35 × 24,000 ÷ 686.7 ≈ 24.5; √25.5 ≈ 5.05; F ≈ 686.7 × 6.05 ≈ 4,150 N. The same model with 80 kg at f = 1.77 gives ≈ 9.0 kN.</p>
+        </div>
+        <h4>The standard drop test</h4>
+        <p>The UIAA's rope standard (UIAA 101, which requires the European norm EN 892) drops a test mass, 80 kg for single and twin ropes and 55 kg for half ropes, in a severe factor-1.77 fall onto a fixed metal edge. A single rope must hold the first drop with a peak force of <strong>no more than 12 kN</strong> (8 kN for a half rope, 12 kN for a twin pair), survive at least 5 drops (12 for twins), and stretch no more than 40% during the fall. Rope maker Petzl points out that real falls are usually softer than the test, because the belayer moves, the rope slips through the device and your harness and body flex.</p>
+        <div class="callout warn"><h4>Static ropes are not climbing ropes</h4><p style="margin:0">Low-stretch "static" ropes are for abseiling, hauling and rescue. Lead-fall on one and the peak force can be several times higher: switch the Fall Lab to "static" to see it. Belaying is a skill you learn hands-on from an instructor, and every gym will check it before you belay there.</p></div>
+        <details class="check"><summary>You're 2 m above your last bolt with 12 m of rope out and no slack. What's your fall distance and fall factor?</summary>
+        <p>You fall 2 m to the bolt and 2 m below it: <strong>4 m</strong> (plus rope stretch). f = 4 ÷ 12 ≈ <strong>0.33</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-anchors">
+      <header><span class="chno">CH 4</span><h3>Anchors &amp; protection</h3></header>
+      <p class="hook">Two good bolts can be worse than one if the angle between them is wrong.</p>
+      <div class="body">
+        <p>When a sling or rope shares a load F between two anchor points, each leg carries <span class="eq">F ÷ (2 cos(θ/2))</span>, where θ is the angle between the legs. Narrow angles share the load nicely. Wide angles multiply it.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · load on each anchor leg</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Angle between legs</th><th>Each leg carries</th><th>With a 6 kN load</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0°</td><td class="num">0.50 × F</td><td class="num">3.0 kN</td></tr>
+              <tr><td class="num">60°</td><td class="num">0.58 × F</td><td class="num">3.5 kN</td></tr>
+              <tr><td class="num">90°</td><td class="num">0.71 × F</td><td class="num">4.2 kN</td></tr>
+              <tr><td class="num">120°</td><td class="num">1.00 × F</td><td class="num">6.0 kN</td></tr>
+              <tr><td class="num">150°</td><td class="num">1.93 × F</td><td class="num">11.6 kN</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 120°: cos 60° = 0.5, so each leg takes F ÷ (2 × 0.5) = F. At 150°: cos 75° ≈ 0.259, so each leg takes ≈ 1.93 F.</p>
+        </div>
+        <h4>Why the top bolt sees more than you</h4>
+        <p>In a lead fall, the rope runs from you, up through the top quickdraw, and back down to the belayer. The bolt holds both strands: your side and the belayer's side (a bit less, because of friction over the carabiner). That's why it can see well over your own peak force; the Fall Lab uses an illustrative 1.6 ×.</p>
+        <h4>Sport versus trad</h4>
+        <ul>
+          <li><strong>Sport climbing:</strong> you clip pre-placed bolts. At Badami, local climbers report that some bottom bolts have been stolen or chopped, so a stick clip (a pole for clipping the first bolt from the ground) is recommended.</li>
+          <li><strong>Trad climbing:</strong> you place removable protection, such as nuts wedged into constrictions and spring-loaded cams. A cam turns your pull into outward pressure on the crack walls; friction holds it. It needs solid rock and the right crack shape.</li>
+          <li><strong>Strength markings:</strong> certified carabiners and slings are marked with their rated strength in kN. Even so, rock quality is often the weak link.</li>
+        </ul>
+        <div class="callout warn"><h4>Learn this in person</h4><p style="margin:0">Building anchors and placing trad gear are life-critical skills. This chapter explains the physics; it doesn't teach the technique. Learn from qualified instructors on real rock, and have your placements checked.</p></div>
+        <details class="check"><summary>A sling joins two bolts at a 90° angle and holds 4 kN. What does each bolt take?</summary>
+        <p>4 ÷ (2 × cos 45°) = 4 ÷ 1.414 ≈ <strong>2.8 kN</strong> each.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-landing">
+      <header><span class="chno">CH 5</span><h3>Bouldering falls &amp; landings</h3></header>
+      <p class="hook">No rope means every fall ends on the ground. The pad's job is to make that ending longer.</p>
+      <div class="body">
+        <p>Bouldering means short, hard climbs close to the ground, protected by crash pads and spotters instead of a rope. Falling from height h, you hit the ground at <span class="eq">v = √(2 g h)</span>. To stop, you need an average deceleration of <span class="eq">a = v² ÷ (2 d)</span>, where d is your stopping distance: the pad's compression plus how much your knees bend.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · landing from different heights</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Fall height</th><th>Impact speed</th><th>Stopping over 0.3 m</th><th>Stopping over 0.6 m</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1 m</td><td class="num">4.4 m/s</td><td class="num">≈ 3.3 g</td><td class="num">≈ 1.7 g</td></tr>
+              <tr><td class="num">2 m</td><td class="num">6.3 m/s</td><td class="num">≈ 6.7 g</td><td class="num">≈ 3.3 g</td></tr>
+              <tr><td class="num">3 m</td><td class="num">7.7 m/s</td><td class="num">≈ 10 g</td><td class="num">≈ 5 g</td></tr>
+              <tr><td class="num">4 m</td><td class="num">8.9 m/s</td><td class="num">≈ 13 g</td><td class="num">≈ 6.7 g</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">3 m: v = √(2 × 9.81 × 3) ≈ 7.67 m/s; a = 7.67² ÷ (2 × 0.3) ≈ 98 m/s² ≈ 10 g. A neat shortcut: a ÷ g = h ÷ d. Doubling the stopping distance halves the deceleration.</p>
+        </div>
+        <h4>Landing well</h4>
+        <ul>
+          <li><strong>Feet first, knees soft, then roll back</strong> onto your bottom and back. Don't put your arms out straight to catch yourself: wrists break.</li>
+          <li><strong>Pads cover the landing, not the rock:</strong> place them where you'll actually fall, and close gaps between pads. Hampi's boulders often have uneven, rocky landings.</li>
+          <li><strong>Spotters steer, they don't catch:</strong> hands up near your hips and back, guiding you onto the pad and protecting your head.</li>
+          <li><strong>Down-climb or jump on purpose:</strong> a controlled drop beats a surprise fall.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Jumping off a 1 m wall and landing stiff-legged feels jarring; landing with bent knees feels fine. Same speed, longer stopping distance.</div></div>
+        <details class="check"><summary>Your pad and knee-bend give 0.5 m of stopping distance. From what height would you see 6 g?</summary>
+        <p>a ÷ g = h ÷ d, so h = 6 × 0.5 = <strong>3 m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-energy">
+      <header><span class="chno">CH 6</span><h3>Energy, grip &amp; pump</h3></header>
+      <p class="hook">Your legs could carry you up the wall all day. Your forearms are the bottleneck.</p>
+      <div class="body">
+        <p>Lifting your body up a route takes mechanical work <span class="eq">W = m g h</span>. Your body burns several times more than that, because muscles are inefficient and much of climbing is gripping and holding still, which costs energy without lifting you at all.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · lifting a 70 kg climber</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Climb</th><th>Height</th><th>Work = m g h</th><th>In kcal</th></tr></thead>
+            <tbody>
+              <tr><td>Gym boulder problem</td><td class="num">4 m</td><td class="num">≈ 2.7 kJ</td><td class="num">≈ 0.7 kcal</td></tr>
+              <tr><td>Badami single pitch</td><td class="num">20 m</td><td class="num">≈ 13.7 kJ</td><td class="num">≈ 3.3 kcal</td></tr>
+              <tr><td>A 200 m multi-pitch</td><td class="num">200 m</td><td class="num">≈ 137 kJ</td><td class="num">≈ 33 kcal</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">70 × 9.81 × 20 = 13,734 J; ÷ 4,184 J per kcal ≈ 3.3 kcal. Badami's bolted routes are mostly single pitches of roughly 9–23 m, according to the Bangalore Climbing Initiatives guide.</p>
+        </div>
+        <h4>The pump</h4>
+        <p>Squeezing a hold hard and continuously compresses the blood vessels inside your forearm muscles. Less oxygen gets in and waste products build up; the muscles swell and your grip fades. The fixes are mostly technique: climb smoothly, rest on big holds with straight arms, shake out each arm in turn, and grip only as hard as you need.</p>
+        <h4>Fingers need time</h4>
+        <p>Tendons and the finger "pulleys" that hold them adapt much more slowly than muscles. Sharp pain in a finger during a hard crimp is a reason to stop. Warm up on easy climbs, build up volume gradually, and get finger injuries checked by a professional.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Climbing a 20 m route lifts you the height of a six- or seven-storey building, but the mechanical work is only about 3 kcal. The tiredness you feel is grip, not height.</div></div>
+        <details class="check"><summary>A 55 kg climber does five laps of a 15 m route. How much lifting work is that?</summary>
+        <p>55 × 9.81 × 15 × 5 ≈ <strong>40 kJ</strong> (about 9.7 kcal).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The climbing ladder</span>
+      <h2>Gym → boulders → top rope → lead → trad &amp; mountains → competition</h2>
+      <p>Rock climbing has no single licence. Instead, gyms run their own inductions and belay checks, institutes run graded courses, and competitions follow World Climbing (IFSC) rules through the Indian Mountaineering Foundation. The steps below are a typical path, with the real requirement we found at each step. They aren't official grades.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · First session</span><b>Gym induction</b><span class="iso">Gym's own safety briefing</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">BoulderBox, Delhi</span><ul><li>Register online and watch a safety induction video before your first visit</li><li>Free 15-minute "Intro to Climbing" induction class</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Friction and position</span><ul><li>Feet first: <a href="#ch-friction">Ch 1</a></li><li>Hips in: <a href="#ch-body">Ch 2</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Climb easy problems, learn to fall and down-climb, and stop before your fingers hurt.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Bouldering</span><b>Short problems, pads and spotting</b><span class="iso">Gym or outdoor boulders</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Where it happens</span><span class="cn">Gyms, then Hampi</span><ul><li>Bouldering gyms (BoulderBox walls go up to 7 m over two floors)</li><li>Hampi's granite, where bouldering is the most popular form of climbing</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Landings</span><ul><li>Pads and stopping distance: <a href="#ch-landing">Ch 5</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Outdoors</span>Go with an experienced group or a local outfit for your first outdoor sessions; landings outdoors are uneven.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Top rope</span><b>Rope climbing and belaying</b><span class="iso">Gym belay check / instructor sign-off</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">How you learn</span><span class="cn">Instructor-led</span><ul><li>Knots, harness and belay device are taught hands-on</li><li>Gyms check your belaying before you belay unsupervised</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Ropes</span><ul><li>Dynamic ropes: <a href="#ch-falls">Ch 3</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Partner checks</span>Check each other's knot, harness buckle and belay set-up every time, before every climb.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Lead sport climbing</span><b>Clipping bolts as you go</b><span class="iso">Taught by instructors; no national licence</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Where it happens</span><span class="cn">Badami, Karnataka</span><ul><li>Hundreds of bolted sport routes, graded 4+ to 8b+ (French grades)</li><li>Mostly single pitches of about 9–23 m</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Fall factor and bolt loads</span><ul><li><a href="#ch-falls">Ch 3</a> and the Fall Lab</li><li><a href="#ch-anchors">Ch 4</a></li></ul></div>
+          <div class="ag"><span class="an">Guided options</span><span class="cn">Let's Play Climbing</span><ul><li>Guided Badami sport-climbing trips that teach clipping and cleaning routes</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Trad, multi-pitch &amp; mountains</span><b>Placing your own protection</b><span class="iso">Institute courses</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">NIM, Uttarkashi</span><ul><li>Sport Climbing Course: an introduction to sport climbing, indoor and outdoor (batches in July and August)</li><li>Basic Mountaineering Course: movement on rock, snow and ice</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Anchors and protection</span><ul><li><a href="#ch-anchors">Ch 4</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Mentorship</span>Trad skills are best learned by seconding an experienced leader and having your placements checked.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Competition</span><b>Boulder, Lead, Speed</b><span class="iso">IMF zonal &amp; national championships, World Climbing</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">Indian Mountaineering Foundation</span><ul><li>Zonal committees select athletes for the annual national championship, usually held between November and December</li><li>IMF represents India in World Climbing (IFSC)</li></ul></div>
+          <div class="ag"><span class="an">Disciplines</span><span class="cn">World Climbing</span><ul><li>Boulder, Lead, Speed and Para Climbing</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything</span><ul><li>Power and pump: <a href="#ch-energy">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout note" style="margin-top:22px"><h4>Reading climbing grades</h4><p style="margin:0">Indian sport routes are usually graded on the French scale (for example 5c, 6a, 7b+); Badami's routes span roughly 4+ to 8b+. Boulder problems use their own scales. Grades are a climber's opinion of difficulty, not a safety rating: an "easy" route can still have a dangerous fall.</p></div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Climbing has two kinds of rule-makers: sport federations that run competitions, and safety bodies that set equipment standards. We checked each on its own official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Competition</span><h4>World Climbing (IFSC)</h4><p>The International Federation of Sport Climbing, now branded World Climbing, governs competition climbing worldwide: Boulder, Lead, Speed and Para Climbing. Its member list names the Indian Mountaineering Foundation as India's federation.</p><a class="url" href="https://www.ifsc-climbing.org/" target="_blank" rel="noopener">ifsc-climbing.org</a></div>
+      <div class="card"><span class="tag">Safety standards</span><h4>UIAA</h4><p>The International Climbing and Mountaineering Federation sets safety standards for climbing equipment and awards the UIAA Safety Label. Its rope standard, UIAA 101, sets the 12 kN single-rope drop-test limit used in Ch 3.</p><a class="url" href="https://www.theuiaa.org/" target="_blank" rel="noopener">theuiaa.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Indian Mountaineering Foundation (IMF)</h4><p>Represents India in World Climbing and coordinates sport climbing in India under IFSC guidelines, through a National Sport Climbing Committee and zonal committees. India's first national championship was held in New Delhi in 1996.</p><a class="url" href="https://indmount.org/IMF/sportclimbing" target="_blank" rel="noopener">indmount.org</a></div>
+      <div class="card"><span class="tag">Training institute</span><h4>National Institute of Mountaineering (NIM), Uttarkashi</h4><p>Runs a Sport Climbing Course (indoor and outdoor) and a Basic Mountaineering Course that covers movement on rock, snow and ice.</p><a class="url" href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to climb</span>
+      <h2>Pick your level. We'll point you to the wall.</h2>
+      <p>Real gyms, boulder fields, crags and courses, each checked on its own website. For timings, eligibility and fees, follow the link and confirm directly with the gym, operator or institute.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>Gyms</b>Year-round, and the best place to start. Indoor walls are the answer to monsoon and summer heat.</div>
+      <div><b>Badami</b>Best from October to February, according to the Bangalore Climbing Initiatives guide (BoulderBox suggests November to March). Summer can reach 40 °C.</div>
+      <div><b>Hampi</b>Same Deccan plateau, so plan for the cooler months too, and confirm conditions with a local outfit before you go.</div>
+      <div><b>Monsoon</b>Wet sandstone and slippery granite: climb indoors. Rock needs time to dry after rain (<a href="#ch-friction">Ch 1</a>).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-gym" id="tab-gym">① Gyms: start here</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-boulder" id="tab-boulder">② Bouldering: Hampi</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-sport" id="tab-sport">③ Sport climbing: Badami</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-courses" id="tab-courses">④ Courses &amp; competitions</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-gym" role="tabpanel" aria-labelledby="tab-gym">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never climbed, or you climb occasionally and want to learn properly (Steps 1–3). Read <a href="#ch-body">Ch 2</a> and <a href="#ch-landing">Ch 5</a> first.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is there an induction or intro class? Who teaches belaying, and do you check belayers? How deep are the floor mats under the boulder walls? Can I rent shoes?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>BoulderBox</h4><span class="loc">Vasant Kunj, New Delhi</span></div><span class="badge">Bouldering gym</span></div>
+          <p>A bouldering gym with walls over two floors, up to 7 m. First-timers register online and watch a safety induction video; there's a free 15-minute "Intro to Climbing" induction class.</p>
+          <a class="url" href="https://www.boulderbox.in/first-visit" target="_blank" rel="noopener">boulderbox.in</a></div>
+        <div class="school"><div class="top"><div><h4>Let's Play Climbing</h4><span class="loc">Bengaluru (four centres)</span></div><span class="badge">Gyms &amp; coaching</span></div>
+          <p>Climbing coaching across four centres in Bengaluru, with guided outdoor trips once you're ready.</p>
+          <a class="url" href="https://mytribe.in/letsplayclimbing/climbing-coaching-training/outdoor-rock-adventures" target="_blank" rel="noopener">mytribe.in/letsplayclimbing</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">Other cities have climbing gyms too. Whichever you choose, look for an induction, staff who check belaying, and good matting.</p></div>
+    </div>
+    <div class="lvl-panel" id="lvl-boulder" role="tabpanel" aria-labelledby="tab-boulder">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're comfortable bouldering indoors and want real rock (Step 2). Read <a href="#ch-landing">Ch 5</a> and bring enough pads.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How many crash pads will we have, and who spots? How far is the nearest medical help? Are the landings flat or rocky? Which areas are off-limits around the heritage monuments?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Golden Boulders</h4><span class="loc">Hampi, Karnataka</span></div><span class="badge">Classes &amp; gear</span></div>
+          <p>Runs climbing classes for all levels with certified instructors, and rents or sells gear. Hampi's granite boulders sit beside the Tungabhadra river, within a UNESCO World Heritage site.</p>
+          <a class="url" href="https://www.goldenboulders.com/" target="_blank" rel="noopener">goldenboulders.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Hampi boulders</b><span class="meta">Granite · bouldering-first</span><p>Bouldering is the most popular form of climbing here, with only a few bolted lines. Treat it as a heritage landscape: no chipping, no new bolts, and pack out everything.</p><a class="url" href="https://www.goldenboulders.com/" target="_blank" rel="noopener">goldenboulders.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-sport" role="tabpanel" aria-labelledby="tab-sport">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can lead-climb and clip confidently indoors and want bolted outdoor routes (Step 4). Read <a href="#ch-falls">Ch 3</a> and <a href="#ch-anchors">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Are the bolts on this route checked recently? Is the first bolt missing (bring a stick clip)? Is my rope long enough for the lower-off? Who checks my clipping and lowering before I lead?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Guided Badami trips</h4><span class="loc">Let's Play Climbing, Bengaluru</span></div><span class="badge">Guided trips</span></div>
+          <p>Guided sport-climbing trips to Badami (and bouldering trips to Hampi) that teach clipping, cleaning routes and crash-pad placement.</p>
+          <a class="url" href="https://mytribe.in/letsplayclimbing/climbing-coaching-training/outdoor-rock-adventures" target="_blank" rel="noopener">mytribe.in/letsplayclimbing</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Badami</b><span class="meta">Sandstone · sport, some trad · 4+ to 8b+</span><p>Hundreds of sport routes on sandstone, about 150 km north-west of Hampi, with trad and bouldering potential. Local climbers report some bottom bolts stolen or chopped, so carry a stick clip.</p><a class="url" href="https://www.boulderbox.in/blog/badami" target="_blank" rel="noopener">boulderbox.in/blog/badami</a></div>
+        <div class="site"><b>Badami climbing guide</b><span class="meta">Bangalore Climbing Initiatives</span><p>A free guidebook to more than 150 bolted routes across six areas, mostly single pitches of 9–23 m and mostly on horizontal cracks, many bolted through the "Bolts for Bangalore" effort.</p><a class="url" href="https://uploads-ssl.webflow.com/5af93e3da9b84e2196b89aab/5cd7cf598463a52520b35134_Badami%20-%20Climbing%20Guide%20Book%20-%20Bangalore%20Climbing%20Initiatives.pdf" target="_blank" rel="noopener">Guide (PDF)</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-courses" role="tabpanel" aria-labelledby="tab-courses">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want structured training in trad and mountain skills, or you want to compete (Steps 5–6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What does the course cover, and what fitness and age criteria apply? For competitions: which zone am I in, and when are the zonal selections?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Sport Climbing Course</h4><span class="loc">NIM, Uttarkashi</span></div><span class="badge gov">Institute</span></div>
+          <p>A comprehensive introduction to sport climbing, indoor and outdoor, run in batches in July and August.</p>
+          <a class="url" href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a></div>
+        <div class="school"><div class="top"><div><h4>Basic Mountaineering Course</h4><span class="loc">NIM, Uttarkashi</span></div><span class="badge gov">Institute</span></div>
+          <p>Teaches movement on rock, snow and ice: the bridge from crag climbing to the mountains.</p>
+          <a class="url" href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a></div>
+        <div class="school"><div class="top"><div><h4>IMF sport climbing</h4><span class="loc">Zonal &amp; national championships</span></div><span class="badge gov">Federation</span></div>
+          <p>Zonal committees select athletes for the annual national championship. Since 2018 IMF has also held Open National Championships in Lead, Speed and Bouldering.</p>
+          <a class="url" href="https://indmount.org/IMF/sportclimbing" target="_blank" rel="noopener">indmount.org</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>World Climbing events</b><span class="meta">Boulder · Lead · Speed · Para</span><p>The international competition calendar and rules, for when you're aiming beyond the nationals.</p><a class="url" href="https://www.ifsc-climbing.org/" target="_blank" rel="noopener">ifsc-climbing.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

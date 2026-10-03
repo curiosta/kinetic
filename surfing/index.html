@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surfing · Physics of Waves, Boards & Rips · Kinetic by Curiosta</title>
+<meta name="description" content="Test your surfing physics in 15 questions, learn swell, breaking waves, board volume and rip currents, then follow the surf ladder to real ISA-certified schools, contests and instructor courses in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Surfing</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Surf ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to surf</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Surfing</span>
+      <h1>Ride the energy of <em>a storm far out at sea.</em></h1>
+      <p class="lede">Every wave you catch is energy that crossed an ocean. Learn how swell travels, why waves break where they do, why learner boards are so big and how to read a rip, then find an ISA-certified school on India's coast at your level.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Whitewater</span><span class="bar"></span><span>Line-up</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 100 m</span><span class="l">between crests of an 8-second swell in deep water</span></div>
+      <div class="hero-stat"><span class="n">≈ 1.3 m</span><span class="l">water depth where a 1 m wave breaks (rule of thumb)</span></div>
+      <div class="hero-stat"><span class="n">up to 2.4 m/s</span><span class="l">how fast a rip current can flow (US National Weather Service)</span></div>
+      <div class="hero-stat"><span class="n">4 ×</span><span class="l">the energy of a wave twice as tall</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of surfing?</h2>
+      <p>15 questions on swell, breaking waves, board buoyancy, catching and riding, rip currents and wave energy. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Surf physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace lessons with an ISA-certified instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Wave Lab to follow a swell from a distant storm to the moment it breaks.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-swell"><span class="n">CHAPTER 1</span><span class="t">Swell: how waves travel</span><span class="d">Period, wavelength and group speed</span></a>
+      <a href="#ch-breaking"><span class="n">CHAPTER 2</span><span class="t">Shoaling &amp; breaking</span><span class="d">Why waves trip over sandbars</span></a>
+      <a href="#ch-board"><span class="n">CHAPTER 3</span><span class="t">Buoyancy &amp; board volume</span><span class="d">Litres, kilograms and learner boards</span></a>
+      <a href="#ch-ride"><span class="n">CHAPTER 4</span><span class="t">Paddling, catching &amp; riding</span><span class="d">Matching speed and planing</span></a>
+      <a href="#ch-rips"><span class="n">CHAPTER 5</span><span class="t">Rip currents</span><span class="d">Spot them, escape sideways</span></a>
+      <a href="#ch-energy"><span class="n">CHAPTER 6</span><span class="t">Wave energy &amp; impact</span><span class="d">Height squared, leashes and etiquette</span></a>
+    </nav>
+
+    <!-- WAVE LAB -->
+    <div class="lab" id="sf-lab">
+      <span class="eyebrow">Interactive · Wave Lab</span>
+      <h3>Dial in a swell and follow it from a distant storm to the sandbar</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">Uses textbook linear wave theory: deep-water wavelength and speed from the period, energy travelling at half the crest speed, a rule-of-thumb breaking depth of height ÷ 0.78, and wave power per metre of crest. Real surf depends on the seabed, wind and tide. For learning only; it is not a surf forecast or a safety guide.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="sf-T">Swell period</label><input type="range" id="sf-T" min="5" max="16" step="1" value="8"><output id="sf-T-o">8 s</output></div>
+        <div class="ctl"><label for="sf-H">Wave height</label><input type="range" id="sf-H" min="0.3" max="3" step="0.1" value="1"><output id="sf-H-o">1.0 m</output></div>
+        <div class="ctl"><label>Distance from the storm</label><div class="seg" id="sf-dist"><button type="button" data-km="500" aria-pressed="false">500 km</button><button type="button" data-km="1000" aria-pressed="true">1,000 km</button><button type="button" data-km="2000" aria-pressed="false">2,000 km</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Deep-water wavelength</span><span class="v" id="sf-L">100 m</span><span class="s">Ch 1 · gT² ÷ 2π</span></div>
+        <div class="lab-card"><span class="k">Crest speed (deep water)</span><span class="v" id="sf-c">12.5 m/s</span><span class="s">Ch 1 · gT ÷ 2π</span></div>
+        <div class="lab-card"><span class="k">Energy travels at</span><span class="v" id="sf-cg">22.5 km/h</span><span class="s">Ch 1 · group speed = half the crest speed</span></div>
+        <div class="lab-card"><span class="k">Swell arrives after</span><span class="v" id="sf-eta">44.5 h</span><span class="s" id="sf-eta-s">Ch 1 · 1,000 km at group speed</span></div>
+        <div class="lab-card"><span class="k">Breaks in water about</span><span class="v" id="sf-db">1.28 m</span><span class="s">Ch 2 · deep (height ÷ 0.78)</span></div>
+        <div class="lab-card"><span class="k">Speed as it breaks</span><span class="v" id="sf-cb">3.5 m/s</span><span class="s">Ch 2 · √(g × depth)</span></div>
+        <div class="lab-card"><span class="k">Power per metre of crest</span><span class="v" id="sf-P">3.9 kW/m</span><span class="s">Ch 6 · ρg²H²T ÷ 64π</span></div>
+        <div class="lab-card"><span class="k">Energy vs a 1 m wave</span><span class="v" id="sf-E">1.00 ×</span><span class="s">Ch 6 · grows with height²</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sf-bar"></span></div>
+      <p class="fine">Bar = wave power on a 0–30 kW/m scale. Real breaking depth varies with beach slope and wave shape; reefs and points behave differently from sandbars. Before you paddle out, ask the local school or lifeguards, not this lab.</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-swell">
+      <header><span class="chno">CH 1</span><h3>Swell: how waves travel</h3></header>
+      <p class="hook">The wave you ride may have started as a storm days ago and a thousand kilometres away.</p>
+      <div class="body">
+        <p>Wind blowing over the sea makes waves. Far from the storm, they sort themselves into regular <strong>swell</strong>, described by its <strong>period</strong> T (seconds between crests) and height. Water itself barely travels: it moves round in circles as the wave's energy passes through. In deep water (deeper than about half a wavelength), linear wave theory gives <span class="eq">L = g T² ÷ 2π ≈ 1.56 T²</span> metres and crest speed <span class="eq">c = g T ÷ 2π ≈ 1.56 T</span> m/s. The energy moves at the <strong>group speed</strong>, half of c.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · deep-water swell by period</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Period</th><th>Wavelength</th><th>Crest speed</th><th>Energy speed</th><th>Time to travel 1,000 km</th></tr></thead>
+            <tbody>
+              <tr><td class="num">6 s (wind swell)</td><td class="num">≈ 56 m</td><td class="num">9.4 m/s</td><td class="num">16.9 km/h</td><td class="num">≈ 59 h</td></tr>
+              <tr><td class="num">8 s</td><td class="num">≈ 100 m</td><td class="num">12.5 m/s</td><td class="num">22.5 km/h</td><td class="num">≈ 44 h</td></tr>
+              <tr><td class="num">12 s (groundswell)</td><td class="num">≈ 225 m</td><td class="num">18.7 m/s</td><td class="num">33.7 km/h</td><td class="num">≈ 30 h</td></tr>
+              <tr><td class="num">16 s</td><td class="num">≈ 400 m</td><td class="num">25.0 m/s</td><td class="num">45.0 km/h</td><td class="num">≈ 22 h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">T = 8 s: L = 9.81 × 64 ÷ 6.283 ≈ 99.9 m; c = 9.81 × 8 ÷ 6.283 ≈ 12.5 m/s; group speed ≈ 6.25 m/s; 1,000,000 m ÷ 6.25 m/s ≈ 160,000 s ≈ 44.5 h.</p>
+        </div>
+        <h4>Reading a forecast</h4>
+        <ul>
+          <li><strong>Period matters as much as height:</strong> a 1 m, 12 s swell breaks with far more push than a 1 m, 6 s wind chop.</li>
+          <li><strong>Long-period swell arrives first:</strong> because longer waves travel faster, the first sign of a distant storm is a long-period "forerunner".</li>
+          <li><strong>Wind direction:</strong> light offshore wind (blowing from land to sea) grooms wave faces; onshore wind makes them crumbly and messy.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Count the seconds between waves arriving at the beach: that's the period. Multiply it by itself and by 1.56, and you have roughly how far apart the crests were out at sea.</div></div>
+        <details class="check"><summary>A 10-second swell: how long are the waves in deep water, and how fast does the energy travel?</summary>
+        <p>L ≈ 1.56 × 100 = <strong>156 m</strong>. Crest speed ≈ 15.6 m/s, so the energy travels at about <strong>7.8 m/s (28 km/h)</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-breaking">
+      <header><span class="chno">CH 2</span><h3>Shoaling &amp; breaking</h3></header>
+      <p class="hook">A wave breaks when the sea floor trips it up.</p>
+      <div class="body">
+        <p>Once the depth is less than about a twentieth of the wavelength, the wave "feels" the bottom and its speed becomes <span class="eq">c ≈ √(g d)</span>, where d is the depth. As it slows, the same energy is squeezed into a shorter, taller wave: <strong>shoaling</strong>. When the wave gets too tall for the depth, the crest outruns the base and spills or pitches forward. A widely used rule of thumb says this happens when the height is about <span class="eq">H ≈ 0.78 d</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · where waves break (rule of thumb H ≈ 0.78 d)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wave height</th><th>Breaking depth ≈ H ÷ 0.78</th><th>Wave speed there ≈ √(g d)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">≈ 0.64 m</td><td class="num">≈ 2.5 m/s</td></tr>
+              <tr><td class="num">1.0 m</td><td class="num">≈ 1.28 m</td><td class="num">≈ 3.5 m/s</td></tr>
+              <tr><td class="num">1.5 m</td><td class="num">≈ 1.92 m</td><td class="num">≈ 4.3 m/s</td></tr>
+              <tr><td class="num">2.0 m</td><td class="num">≈ 2.56 m</td><td class="num">≈ 5.0 m/s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1 m wave: d = 1 ÷ 0.78 ≈ 1.28 m; √(9.81 × 1.28) ≈ 3.5 m/s. Real breaking depth varies with beach slope and wave steepness; treat 0.78 as a classroom approximation.</p>
+        </div>
+        <h4>Beaches, reefs and points</h4>
+        <ul>
+          <li><strong>Beach breaks</strong> break over sandbars that shift with the seasons. Gentle slopes make soft, spilling waves: ideal for learning. Most Indian surf schools teach on beach breaks.</li>
+          <li><strong>Reef and point breaks</strong> break over rock or coral in the same place each time, often more powerfully and over shallow, hard bottoms.</li>
+          <li><strong>Steeper bottoms make plunging waves</strong> that pitch forward and can slam you down. That shallow impact zone is why you fall flat, never dive head-first, and protect your head as you surface.</li>
+        </ul>
+        <div class="callout warn"><h4>Know the bottom before you paddle out</h4><p style="margin:0">Ask your instructor what's under the waves: sand, rock or reef, and how the tide changes it. A spot that's friendly at high tide can be shallow and dangerous at low tide.</p></div>
+        <details class="check"><summary>Waves are breaking in water about 2 m deep. Roughly how big are they?</summary>
+        <p>H ≈ 0.78 × 2 ≈ <strong>1.6 m</strong>, about head-high on many adults.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-board">
+      <header><span class="chno">CH 3</span><h3>Buoyancy &amp; board volume</h3></header>
+      <p class="hook">Every litre of board holds up about a kilogram. Beginners need lots of litres.</p>
+      <div class="body">
+        <p>Archimedes' principle: anything in water is pushed up by a force equal to the weight of the water it displaces. Seawater has a density of about 1.025 kg per litre, so <strong>each litre of board volume can support about 1 kg</strong> when pushed fully under. A board that floats you high on the surface paddles faster and wobbles less.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · maximum buoyant support in seawater</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Board</th><th>Volume</th><th>Weight of displaced seawater if fully submerged</th></tr></thead>
+            <tbody>
+              <tr><td>Performance shortboard</td><td class="num">≈ 30 L</td><td class="num">≈ 31 kg</td></tr>
+              <tr><td>Fun board / mini-mal</td><td class="num">≈ 50 L</td><td class="num">≈ 51 kg</td></tr>
+              <tr><td>Big foam learner board</td><td class="num">≈ 80 L</td><td class="num">≈ 82 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">80 L × 1.025 kg/L ≈ 82 kg. A 70 kg surfer's body also floats a little in seawater, so the board doesn't carry their whole weight, but the more volume to spare, the higher and steadier it sits. The board volumes here are typical examples, not a sizing guide; ask your school.</p>
+        </div>
+        <h4>Why learner boards look the way they do</h4>
+        <ul>
+          <li><strong>Length and width:</strong> a long, wide board is stable side-to-side and glides into small waves early.</li>
+          <li><strong>Soft-top:</strong> a foam deck and flexible fins hurt far less when you fall on the board or it hits you. Kallialay Surf School, for example, provides soft-top boards for lessons.</li>
+          <li><strong>Wax and rash vests:</strong> wax gives grip on hard decks; a rash vest protects skin from the deck and the sun.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 1-litre water bottle full of air takes a surprising push to hold under in a pool: about 1 kg-force. Your learner board is like 80 of them.</div></div>
+        <details class="check"><summary>Roughly how much support could a 40 L board give if pushed fully under seawater?</summary>
+        <p>40 × 1.025 ≈ <strong>41 kg</strong>. That's why advanced surfers on small boards sit low in the water and duck-dive easily.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-ride">
+      <header><span class="chno">CH 4</span><h3>Paddling, catching &amp; riding</h3></header>
+      <p class="hook">Surfing is falling down a hill that keeps moving towards the beach.</p>
+      <div class="body">
+        <p>To catch a wave you need to be moving towards the beach as it lifts the back of your board. Once you're on the sloping face, part of gravity, <span class="eq">g sin θ</span> for a face at angle θ, pulls you down the slope while the wave keeps rebuilding the slope underneath you. The board starts to <strong>plane</strong>, skimming on top of the water instead of pushing through it.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · speed from dropping down the face (no friction)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Drop down the face</th><th>v = √(2 g h)</th><th>In km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">3.1 m/s</td><td class="num">≈ 11 km/h</td></tr>
+              <tr><td class="num">1.0 m</td><td class="num">4.4 m/s</td><td class="num">≈ 16 km/h</td></tr>
+              <tr><td class="num">1.5 m</td><td class="num">5.4 m/s</td><td class="num">≈ 20 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1.5 m: √(2 × 9.81 × 1.5) ≈ 5.42 m/s × 3.6 ≈ 19.5 km/h. Friction and drag reduce this, but the wave keeps feeding you energy as long as you stay on the steep part of the face.</p>
+        </div>
+        <h4>Where the physics shows up in a lesson</h4>
+        <ul>
+          <li><strong>Whitewater first:</strong> broken waves (foam) push you towards the beach with no need to match a wave's speed. Most schools start you here.</li>
+          <li><strong>Paddle position:</strong> too far back and the nose lifts and drags; too far forward and the nose digs in ("pearling"). Find the spot where the board lies flat.</li>
+          <li><strong>Pop-up:</strong> hands under your chest, one smooth move to your feet, knees bent, weight centred. A low centre of mass is more stable.</li>
+          <li><strong>Turning:</strong> leaning puts the board on its rail; the water's push on the tilted board and fins curves your path, like a bicycle leaning into a bend.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 1 m drop gives you about 16 km/h: a brisk cycling pace, on a board, on water.</div></div>
+        <details class="check"><summary>You drop 0.8 m down a face. Ignoring friction, what speed do you gain?</summary>
+        <p>√(2 × 9.81 × 0.8) ≈ <strong>4.0 m/s</strong> (about 14 km/h).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-rips">
+      <header><span class="chno">CH 5</span><h3>Rip currents</h3></header>
+      <p class="hook">The calm-looking gap between breaking waves is often the most dangerous water on the beach.</p>
+      <div class="body">
+        <p>Breaking waves carry water towards the shore. It has to return to sea, and it does so in narrow, fast channels: <strong>rip currents</strong>. They form in gaps between sandbars and along piers, groynes and rocks. The US National Weather Service says channel rips typically flow at about 1–2 feet per second (0.3–0.6 m/s) and can reach 8 feet per second (about 2.4 m/s), which NOAA notes is faster than an Olympic swimmer.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · why you swim sideways, not straight in</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Situation</th><th>Your speed through the water</th><th>Rip speed</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>Swim straight at the beach</td><td class="num">1.0 m/s</td><td class="num">1.5 m/s</td><td>You go backwards at 0.5 m/s and tire fast</td></tr>
+              <tr><td>Swim parallel across a 30 m-wide rip</td><td class="num">1.0 m/s</td><td class="num">1.5 m/s</td><td>Out of the rip in ≈ 30 s, carried ≈ 45 m seaward on the way</td></tr>
+              <tr><td>Typical rip, standing at waist depth</td><td>—</td><td class="num">0.5 m/s</td><td>Hard to stand against, according to the NWS</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Crossing time = 30 m ÷ 1.0 m/s = 30 s; seaward drift = 1.5 m/s × 30 s = 45 m. Once you're out of the channel, the breaking waves on either side help push you back in.</p>
+        </div>
+        <h4>Spotting and escaping rips</h4>
+        <ul>
+          <li><strong>Look for:</strong> a darker, calmer-looking gap in the line of breaking waves, foam or sediment drifting seaward, or water flowing out along rocks and piers.</li>
+          <li><strong>If caught:</strong> don't fight it. Stay calm and float, keep hold of your board, signal for help, and paddle or swim parallel to the shore until you're free.</li>
+          <li><strong>Swimming matters:</strong> Kovalam Surf Club asks for basic swimming skills; Kallialay Surf School asks group-lesson students to swim at least 50 m confidently without touching the ground.</li>
+        </ul>
+        <div class="callout warn"><h4>Monsoon seas on the west coast</h4><p style="margin:0">During the monsoon, much of India's west coast gets big, rough, unpredictable surf with strong currents. Learn in the calmer months, follow local warnings and lifeguards, and never surf alone in conditions you don't know.</p></div>
+        <details class="check"><summary>A rip is 20 m wide and flows at 1 m/s. You swim across it at 0.8 m/s. How far out are you carried?</summary>
+        <p>Crossing takes 20 ÷ 0.8 = 25 s; drift = 1 × 25 = <strong>25 m</strong> seaward.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-energy">
+      <header><span class="chno">CH 6</span><h3>Wave energy &amp; impact</h3></header>
+      <p class="hook">Twice the height, four times the energy. That's why "just a bit bigger" can be a lot more.</p>
+      <div class="body">
+        <p>In linear wave theory, the energy in each square metre of sea is <span class="eq">E = ⅛ ρ g H²</span>, and the power carried per metre of wave crest is <span class="eq">P = ρ g² H² T ÷ 64π</span> (ρ ≈ 1,025 kg/m³ for seawater). Energy grows with height squared, power also grows with period.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · wave power per metre of crest</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Height</th><th>Period</th><th>Energy per m² of sea</th><th>Power per m of crest</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">6 s</td><td class="num">≈ 0.31 kJ</td><td class="num">≈ 0.7 kW</td></tr>
+              <tr><td class="num">1 m</td><td class="num">8 s</td><td class="num">≈ 1.26 kJ</td><td class="num">≈ 3.9 kW</td></tr>
+              <tr><td class="num">2 m</td><td class="num">12 s</td><td class="num">≈ 5.0 kJ</td><td class="num">≈ 23.5 kW</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1 m, 8 s: P = 1025 × 9.81² × 1 × 8 ÷ (64π) ≈ 3,920 W/m. E = 1025 × 9.81 × 1 ÷ 8 ≈ 1,257 J per m².</p>
+        </div>
+        <h4>Staying safe with all that energy</h4>
+        <ul>
+          <li><strong>Leash on, board under control:</strong> a loose board pushed by whitewater can hit you or someone else hard. Keep it between you and the wave, never between you and other people.</li>
+          <li><strong>Wipeouts:</strong> relax, protect your head with your arms as you surface, and wait for the turbulence to pass.</li>
+          <li><strong>Etiquette is safety:</strong> one surfer per wave (the one closest to the breaking part has priority), don't drop in, and paddle around the line-up, not through it.</li>
+          <li><strong>Sun and heat:</strong> India's water is warm, but the sun is strong: rash vest, reef-safe sunscreen and water.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A modest 1 m, 8-second swell delivers about 4 kW per metre of beach, like a row of electric kettles every metre along the shore, all day long.</div></div>
+        <details class="check"><summary>The swell grows from 1 m to 1.5 m at the same period. How much more power?</summary>
+        <p>1.5² = 2.25, so about <strong>2.25 times</strong> (≈ 8.8 kW/m at 8 s).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The surf ladder</span>
+      <h2>Whitewater → green waves → independent → competition → instructor → international</h2>
+      <p>Surfing has no licence. Schools run their own levels, the Surfing Federation of India (SFI) accredits schools and runs national contests, and the International Surfing Association (ISA) certifies instructors and coaches. The steps below are a typical path with the real requirement we found at each one. They aren't official grades.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · First lesson</span><b>Whitewater and your first stand-up</b><span class="iso">School's own level 1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Kovalam Surf Club, Kerala</span><ul><li>Basic swimming skills; about 1.5 h with an internationally certified instructor</li><li>Theory on safety, ocean knowledge, paddling and balance, then pushed into whitewater; most students need 3–5 introduction classes</li></ul></div>
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Kallialay Surf School, Puducherry</span><ul><li>Group lessons: swim at least 50 m confidently without touching the ground (non-swimmers can book a private lesson)</li><li>Children under 11 take private lessons</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Buoyancy and breaking</span><ul><li><a href="#ch-board">Ch 3</a> and <a href="#ch-breaking">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Green waves</span><b>Paddling out past the whitewater</b><span class="iso">School's own level 2–3</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real progression</span><span class="cn">Kovalam Surf Club</span><ul><li>Basic class: wax your board, paddle through the waves, catch small rides from the line-up</li><li>Step-up class: catch waves on your own with an instructor paddling alongside</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Catching and riding</span><ul><li><a href="#ch-ride">Ch 4</a></li><li>Rips: <a href="#ch-rips">Ch 5</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Learn etiquette now: one surfer per wave, don't drop in, paddle wide of the line-up.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Independent surfer</span><b>Choosing spots and conditions yourself</b><span class="iso">Self-assessed; coaching optional</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real progression</span><span class="cn">Kovalam Surf Club level 4 · Mantra Surf Club</span><ul><li>Performance class: bottom turns, cutbacks and beyond, for surfers who can hold their own position</li><li>Mantra (Mulki) runs intermediate courses and advanced coaching with ISA-certified instructors</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Swell and energy</span><ul><li>Reading forecasts: <a href="#ch-swell">Ch 1</a></li><li><a href="#ch-energy">Ch 6</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Never alone</span>Surf with others, ask locals about the bottom and the rips, and leave when it's beyond you.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · National contests</span><b>SFI National Surf &amp; SUP series</b><span class="iso">SFI individual membership</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Surfing Federation of India</span><ul><li>SFI's individual membership covers athletes taking part in national championships</li><li>2026 events included the Indian Open of Surfing (Karnataka, May), the Point Break Challenge (Mahabalipuram) and the Covelong Classic (Kovalam, Tamil Nadu)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Wave choice</span><ul><li>Period and power: <a href="#ch-swell">Ch 1</a>, <a href="#ch-energy">Ch 6</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Start local</span>Your school or state association can tell you about junior and open divisions.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Instructor</span><b>ISA Surf Level 1 Instructor</b><span class="iso">ISA certification</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">ISA Surf Level 1</span><ul><li>Online Introduction to Surf Instructing course, then a Level 1 course with an ISA Course Presenter</li><li>Show basic surfing ability (traverse left and right on green waves and exit with control), log 20 supervised practical hours, hold a valid lifesaving or surf-rescue award</li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">SFI-run ISA courses</span><ul><li>SFI has run ISA instructor, SUP and judging courses since 2014, certifying over 300 participants</li></ul></div>
+          <div class="ag"><span class="an">Next level</span><span class="cn">ISA Surf Level 2 Coach</span><ul><li>For coaching intermediate to early-advanced surfers; requires Level 1 first</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · International</span><b>Qualifying Series and world championships</b><span class="iso">WSL and ISA events</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">WSL in India</span><ul><li>The WSL Shore Temple Classic QS 2000 and India's first WSL Pro Junior: Mahabalipuram, 12–16 August 2026, with SFI and the Tamil Nadu Surfing Association</li></ul></div>
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">ISA</span><ul><li>ISA World Surfing Games and world championships for juniors, longboard, para surfing and SUP; surfing made its first Asian Games appearance in 2026</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything</span><ul><li>All six chapters, and lots of time in the water</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Surfing's rules come from a world federation recognised by the Olympic movement, a professional tour, and India's national federation and its state associations. We checked each on its own official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>International Surfing Association (ISA)</h4><p>Surfing's world governing authority, as recognised by the International Olympic Committee. Runs the World Surfing Games and other world championships, and the Coaching and Instructing Program (Surf Level 1 Instructor, Level 2 Coach, judging), with an ISA/ILS water-safety course for instructors.</p><a class="url" href="https://isasurf.org/" target="_blank" rel="noopener">isasurf.org</a></div>
+      <div class="card"><span class="tag">Professional tour</span><h4>World Surf League (WSL)</h4><p>Runs the professional Championship Tour, Challenger Series, Qualifying Series and Junior Tour. Its Shore Temple Classic QS 2000 is held in India with SFI.</p><a class="url" href="https://www.worldsurfleague.com/" target="_blank" rel="noopener">worldsurfleague.com</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Surfing Federation of India (SFI)</h4><p>The recognised national governing body for surfing and stand-up paddle (SUP) in India: recognised by the ISA, the Asia Surfing Federation and the Ministry of Youth Affairs and Sports. Accredits surf and SUP schools and runs national contests and ISA courses.</p><a class="url" href="https://www.surfingfederationofindia.org/" target="_blank" rel="noopener">surfingfederationofindia.org</a></div>
+      <div class="card"><span class="tag">State associations</span><h4>SFI state associations</h4><p>SFI lists state associations including the Tamil Nadu Surfing Association (founded 2023), the Karnataka Surfing Association and Surfing Kerala (both founded 2025), with others under review.</p><a class="url" href="https://www.surfingfederationofindia.org/accreditation" target="_blank" rel="noopener">surfingfederationofindia.org/accreditation</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to surf</span>
+      <h2>Pick your level. We'll point you to the beach.</h2>
+      <p>Real surf schools, contests and courses, each checked on its own website. For timings, eligibility and fees, follow the link and confirm directly with the school or organiser.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>West coast (Kerala, Karnataka, Goa)</b>Best for learning outside the monsoon. Cocopelli in Gokarna recommends October to May for beginners; monsoon seas are big and rough.</div>
+      <div><b>East coast (Tamil Nadu, Puducherry)</b>Waves at different times of year: SFI's 2026 contests at Mahabalipuram and Kovalam (TN) ran from late July to mid-August. Kallialay runs lessons every day of the year, depending on sea conditions.</div>
+      <div><b>Time of day</b>Lessons are timed around tides and sea conditions, which change daily; mornings often bring lighter winds.</div>
+      <div><b>Every day</b>Check the forecast's period as well as its height (<a href="#ch-swell">Ch 1</a>), and ask about rips (<a href="#ch-rips">Ch 5</a>).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-learn" id="tab-learn">① First lessons</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-progress" id="tab-progress">② Progressing</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-compete" id="tab-compete">③ Contests</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-teach" id="tab-teach">④ Become an instructor</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never surfed, or you're still on whitewater (Step 1). You can swim confidently. Read <a href="#ch-rips">Ch 5</a> before your first lesson.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Are your instructors ISA-certified? Is the school SFI-accredited? What's the bottom like, sand or rock? Where do rips form on this beach? How many students per instructor?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Kovalam Surf Club</h4><span class="loc">Lighthouse Beach, Kovalam, Kerala</span></div><span class="badge">Surf school</span></div>
+          <p>Teaching since 2005, from age five to sixty. Levels 1–4 run from an introduction on whitewater to performance coaching; lessons in English, Malayalam, Tamil and Hindi. Also offers free lessons for local children.</p>
+          <a class="url" href="https://www.kovalamsurfclub.com/surfschool" target="_blank" rel="noopener">kovalamsurfclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>Kallialay Surf School</h4><span class="loc">Serenity Beach, near Puducherry</span></div><span class="badge">Surf school</span></div>
+          <p>Running since 2009, every day of the year depending on the sea. Soft-top boards and rash vests provided; group students must swim 50 m confidently.</p>
+          <a class="url" href="https://surfschoolindia.com/surf-school-faq/" target="_blank" rel="noopener">surfschoolindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Mantra Surf Club</h4><span class="loc">Mulki, near Mangaluru, Karnataka</span></div><span class="badge">Surf school</span></div>
+          <p>Describes itself as India's first surf school, founded in 2004. Beginner lessons over three or five days with ISA-certified instructors, for swimmers of varying ability.</p>
+          <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
+        <div class="school"><div class="top"><div><h4>Cocopelli Surf School</h4><span class="loc">Gokarna Main Beach, Karnataka</span></div><span class="badge">Surf school</span></div>
+          <p>Gokarna's first surf school (2010), run by ISA Level 1 instructor Sandeep Samuel. Teaches absolute beginners, non-swimmers and intermediates; recommends October to May for beginners.</p>
+          <a class="url" href="https://cocopelli.org/" target="_blank" rel="noopener">cocopelli.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-progress" role="tabpanel" aria-labelledby="tab-progress">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can catch whitewater and want green waves and the line-up (Steps 2–3). Read <a href="#ch-ride">Ch 4</a> and <a href="#ch-swell">Ch 1</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which board volume should I move to next? Where's the channel to paddle out? What swell period and tide suit this spot?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Mantra intermediate &amp; advanced</h4><span class="loc">Mulki, Karnataka</span></div><span class="badge">Coaching</span></div>
+          <p>Intermediate surf courses and advanced coaching with ISA-certified instructors.</p>
+          <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
+        <div class="school"><div class="top"><div><h4>Kovalam step-up &amp; performance</h4><span class="loc">Kovalam, Kerala</span></div><span class="badge">Coaching</span></div>
+          <p>Step-up classes with the instructor paddling alongside, then performance classes: bottom turns, cutbacks and beyond, conditions permitting.</p>
+          <a class="url" href="https://www.kovalamsurfclub.com/surfschool" target="_blank" rel="noopener">kovalamsurfclub.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Gokarna Main Beach</b><span class="meta">Beach break · beginner-friendly</span><p>A long beach that Cocopelli describes as having good waves for beginners and light currents.</p><a class="url" href="https://cocopelli.org/" target="_blank" rel="noopener">cocopelli.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You surf independently and want to compete (Step 4), or you're aiming at international events (Step 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which division am I eligible for? Do I need SFI individual membership? What's the venue's break like at contest time?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Indian Open of Surfing</b><span class="meta">SFI national championship · Karnataka · May</span><p>India's national surfing championship series, held in Karnataka from 28 to 31 May in 2026.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
+        <div class="site"><b>Covelong Classic</b><span class="meta">National Surf &amp; SUP Series · Kovalam, TN · August</span><p>Part of the 2026 National Surf &amp; SUP Series, 6–8 August 2026 at Kovalam (Covelong), Tamil Nadu.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
+        <div class="site"><b>Point Break Challenge</b><span class="meta">National Surf &amp; SUP Series · Mahabalipuram · July–August</span><p>Held 30 July to 1 August 2026 at Mahabalipuram, Tamil Nadu.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
+        <div class="site"><b>WSL Shore Temple Classic</b><span class="meta">QS 2000 + Pro Junior · Mahabalipuram · August</span><p>The WSL's second event in India (after 2023) and the country's first WSL Pro Junior, 12–16 August 2026.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-teach" role="tabpanel" aria-labelledby="tab-teach">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're an experienced surfer who wants to teach (Step 5).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Do I meet the surfing-ability standard? Where can I get a valid lifesaving or surf-rescue award? Who will supervise my 20 practical hours?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>ISA Surf Level 1 Instructor</h4><span class="loc">Online course + in-person course</span></div><span class="badge gov">Certification</span></div>
+          <p>Online introduction, then an in-person course with an ISA Course Presenter, 20 supervised practical hours, a lifesaving award and the ISA Coach's Code of Conduct.</p>
+          <a class="url" href="https://isasurf.org/learning/isa-courses/" target="_blank" rel="noopener">isasurf.org</a></div>
+        <div class="school"><div class="top"><div><h4>SFI-run ISA courses</h4><span class="loc">Across India, e.g. Varkala, Kerala</span></div><span class="badge gov">Federation</span></div>
+          <p>SFI hosts ISA instructor, SUP and judging courses. In March 2026 it ran an ISA/ILS Ocean Safety Course and an ISA Surf Instructor Level 1 course in Varkala.</p>
+          <a class="url" href="https://www.surfingfederationofindia.org/courses" target="_blank" rel="noopener">surfingfederationofindia.org/courses</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>SFI school accreditation</b><span class="meta">What an accredited school must have</span><p>At least one active ISA-certified instructor, beach staff with active lifeguard (ILS) certification, safety briefings, an emergency action plan and posted weather and safety information.</p><a class="url" href="https://www.surfingfederationofindia.org/guidelines" target="_blank" rel="noopener">SFI guidelines</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">SFI's accreditation guidelines also say non-certified instructors should never teach beginners on their own. It's a good question to ask any school.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
