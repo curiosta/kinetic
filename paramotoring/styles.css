@@ -290,9 +290,9 @@ footer a{color:#7fd8cd}
 .skip-note{font-size:.86rem;color:var(--muted)}
 @media (max-width:640px){.lab .ctl{grid-template-columns:1fr auto;}.lab .ctl label{grid-column:1/-1}}
 
-/* ---------- theme: shooting (navy, steel & signal orange) ---------- */
-.hero{background:radial-gradient(1100px 520px at 82% -10%,#ff8a3d 0%,transparent 55%),radial-gradient(900px 500px at 10% 120%,#3d7bd9 0%,transparent 60%),linear-gradient(180deg,#1a2433,#0c121b)}
-.gauge .bar{background:linear-gradient(90deg,#fff 0%,#9aa9bb 40%,#1a2433 70%,#ff8a3d 100%)}
+/* ---------- theme: paramotoring (dawn sky blue & propeller orange) ---------- */
+.hero{background:radial-gradient(1100px 520px at 82% -10%,#ff9a3c 0%,transparent 55%),radial-gradient(900px 500px at 10% 120%,#58a6e8 0%,transparent 60%),linear-gradient(180deg,#1b3350,#0c1828)}
+.gauge .bar{background:linear-gradient(90deg,#58a6e8 0%,#dbeaf8 40%,#1b3350 70%,#ff9a3c 100%)}
 
 /* ---------- mobile section menu: own row, swipeable, snap + edge fades (v2) ---------- */
 .sectionnav{scroll-behavior:smooth}
@@ -309,8 +309,3 @@ footer a{color:#7fd8cd}
   .sectionnav.fade-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px);mask-image:linear-gradient(90deg,transparent,#000 48px)}
   .sectionnav.fade-l.fade-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent)}
 }
-
-/* ---------- narrow screens: grid cards may shrink; long badges and URLs wrap (Batch C fix for 320 px overflow) ---------- */
-.cards>*,.schools>*,.sites>*{min-width:0}
-.school a.url,.site a.url{overflow-wrap:anywhere}
-@media (max-width:640px){.school .top{flex-wrap:wrap}}

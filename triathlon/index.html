@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Triathlon & Ironman · Physics of Fuel, Drag & Pacing · Kinetic by Curiosta</title>
+<meta name="description" content="Test your triathlon physics in 15 questions, learn fuelling, pacing, swim drag and wetsuits, drafting and bike aerodynamics, running on tired legs, heat and transitions, then follow the ladder from sprint to IRONMAN and the world championships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Triathlon &amp; Ironman</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Race ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to race</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Triathlon</span>
+      <h1>Swim. Bike. Run. <em>Fuel the physics all the way to the finish.</em></h1>
+      <p class="lede">A triathlon is three sports back to back, and the longer the race, the more it's decided by drag, pacing and how much carbohydrate you can keep putting in. Take the challenge, learn the science with a Race-Day Lab, then find real races in India and around the world, from a first sprint to IRONMAN.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First sprint</span><span class="bar"></span><span>Kona</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">226 km</span><span class="l">a full IRONMAN: 3.8 km swim, 180 km bike, 42.2 km run</span></div>
+      <div class="hero-stat"><span class="n">up to 90 g/h</span><span class="l">carbohydrate guidance for events over 2.5–3 h</span></div>
+      <div class="hero-stat"><span class="n">12 m</span><span class="l">the age-group draft zone, with 25 s to pass</span></div>
+      <div class="hero-stat"><span class="n">17 h</span><span class="l">the IRONMAN overall cut-off</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of triathlon?</h2>
+      <p>15 questions on energy systems and fuelling, pacing and power, swim drag and wetsuits, drafting rules and bike aerodynamics, running on tired legs, and heat, hydration and transitions. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Triathlon physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace a coach, a medical check or the race rules.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Race-Day Lab to see how power, position and fuelling change your race.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-fuel"><span class="n">CHAPTER 1</span><span class="t">Energy systems &amp; fuelling</span><span class="d">Glycogen and grams per hour</span></a>
+      <a href="#ch-pace"><span class="n">CHAPTER 2</span><span class="t">Pacing &amp; power</span><span class="d">Why surges cost so much</span></a>
+      <a href="#ch-swim"><span class="n">CHAPTER 3</span><span class="t">Swim drag &amp; wetsuit buoyancy</span><span class="d">Body line and the wetsuit rules</span></a>
+      <a href="#ch-aero"><span class="n">CHAPTER 4</span><span class="t">Drafting rules &amp; bike aerodynamics</span><span class="d">CdA and the 12 m zone</span></a>
+      <a href="#ch-run"><span class="n">CHAPTER 5</span><span class="t">Running economy on tired legs</span><span class="d">The run after the ride</span></a>
+      <a href="#ch-heat"><span class="n">CHAPTER 6</span><span class="t">Heat, hydration &amp; transitions</span><span class="d">Sweat, the 2% guide and T1/T2</span></a>
+    </nav>
+
+    <!-- RACE-DAY LAB -->
+    <div class="lab" id="tr-lab">
+      <span class="eyebrow">Interactive · Race-Day Lab</span>
+      <h3>Pick a distance, your bike power, your position and how many grams of carbohydrate you eat per hour, then see your bike split and your fuel balance</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple flat-road model: rider + bike 80 kg, rolling resistance 0.004, air density 1.2 kg/m³, 97% drivetrain efficiency, no wind. Energy assumes your muscles turn about 23% of food energy into pedal power, and that about 60% of that energy comes from carbohydrate at 4 kcal per gram. Learning values only (illustrative), not a race plan.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label>Distance</label><div class="seg" id="tr-dist"><button type="button" data-km="20" aria-pressed="false">Sprint</button><button type="button" data-km="40" aria-pressed="false">Standard</button><button type="button" data-km="90" aria-pressed="true">70.3</button><button type="button" data-km="180" aria-pressed="false">Full</button></div><span></span></div>
+        <div class="ctl"><label for="tr-p">Bike power</label><input type="range" id="tr-p" min="100" max="300" step="5" value="180"><output id="tr-p-o">180 W</output></div>
+        <div class="ctl"><label>Position</label><div class="seg" id="tr-pos"><button type="button" data-cda="0.40" aria-pressed="false">Upright</button><button type="button" data-cda="0.32" aria-pressed="true">Hoods</button><button type="button" data-cda="0.25" aria-pressed="false">Aero bars</button></div><span></span></div>
+        <div class="ctl"><label for="tr-c">Carbs eaten</label><input type="range" id="tr-c" min="0" max="120" step="5" value="60"><output id="tr-c-o">60 g/h</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Bike speed</span><span class="v" id="tr-v">32.9 km/h</span><span class="s">Ch 4 · drag + rolling = power</span></div>
+        <div class="lab-card"><span class="k">Bike split</span><span class="v" id="tr-t">2:44</span><span class="s">Ch 2 · distance ÷ speed</span></div>
+        <div class="lab-card"><span class="k">Share of power fighting air</span><span class="v" id="tr-air">84%</span><span class="s">Ch 4 · why aero matters</span></div>
+        <div class="lab-card"><span class="k">Energy burned on the bike</span><span class="v" id="tr-kcal">1,845 kcal</span><span class="s">Ch 1 · power ÷ efficiency</span></div>
+        <div class="lab-card"><span class="k">Carbohydrate burned</span><span class="v" id="tr-cho">101 g/h</span><span class="s">Ch 1 · the glycogen clock</span></div>
+        <div class="lab-card"><span class="k">Gap the body must cover</span><span class="v" id="tr-gap">41 g/h</span><span class="s">Ch 1 · eaten vs burned</span></div>
+        <div class="lab-card"><span class="k">Extra power to pass in 25 s</span><span class="v" id="tr-pass">+27 W</span><span class="s">Ch 4 · the 12 m draft zone</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="tr-bar"></span></div>
+      <p class="fine">Bar = share of the carbohydrate you burn that you're replacing by eating. Try aero bars, then the full distance. Guidance for long events is up to 90 g/h (Ch 1); practise any fuelling plan in training first.</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-fuel">
+      <header><span class="chno">CH 1</span><h3>Energy systems &amp; fuelling</h3></header>
+      <p class="hook">Your legs can go all day. Your carbohydrate stores can't.</p>
+      <div class="body">
+        <p>Long triathlons are aerobic: muscles burn a mix of fat and carbohydrate with oxygen. Fat stores are huge, but the harder you go, the more of your energy comes from carbohydrate, and the body only stores a few hundred grams of it as glycogen in muscle and liver (an illustrative ballpark: about 500 g, roughly 2,000 kcal, for a trained athlete). Run low and your pace drops sharply: what endurance athletes call "hitting the wall".</p>
+        <p>Your muscles are only about a quarter efficient (we use 23%, illustrative): to put 180 W into the pedals your body burns about 180 ÷ 0.23 ≈ 780 W of food energy.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 180 W on the bike (illustrative values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Food energy burned</td><td class="num">≈ 673 kcal/h</td><td>180 ÷ 0.23 × 3,600 s ÷ 4,184 J/kcal</td></tr>
+              <tr><td>From carbohydrate (60%)</td><td class="num">≈ 101 g/h</td><td>673 × 0.6 ÷ 4 kcal/g</td></tr>
+              <tr><td>Eating 60 g/h</td><td class="num">≈ 41 g/h short</td><td>covered by glycogen</td></tr>
+              <tr><td>500 g of glycogen at 41 g/h</td><td class="num">≈ 12 h</td><td>but the run burns more per hour than the bike</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The ratio of fat to carbohydrate changes with intensity and training, so the 60% is a teaching number, not your number.</p>
+        </div>
+        <h4>What the guidelines say</h4>
+        <p>The joint position statement on nutrition and athletic performance from the Academy of Nutrition and Dietetics, Dietitians of Canada and the American College of Sports Medicine (2016) suggests <strong>30–60 g of carbohydrate per hour</strong> during endurance exercise of 1–2.5 h, and <strong>up to 90 g/h</strong> for ultra-endurance exercise over 2.5–3 h, using glucose-fructose mixtures ("multiple transportable carbohydrates") that the gut can absorb faster. For events longer than 90 minutes it describes carbohydrate loading of 10–12 g per kg of body mass per day for the 36–48 hours before.</p>
+        <div class="feel"><span class="ico">🍌</span><div><span class="lbl">Feel the number</span>90 g of carbohydrate an hour is roughly what three energy gels or a few bananas give you (illustrative), every hour, for many hours, while racing. Guts can be trained: practise race fuelling in long training sessions, never for the first time on race day.</div></div>
+        <details class="check"><summary>At 200 W with the same assumptions, roughly how many grams of carbohydrate do you burn per hour?</summary>
+        <p>200 ÷ 0.23 × 3,600 ÷ 4,184 ≈ 748 kcal/h; × 0.6 ÷ 4 ≈ <strong>112 g/h</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-pace">
+      <header><span class="chno">CH 2</span><h3>Pacing &amp; power</h3></header>
+      <p class="hook">Going a little harder costs a lot more than it gives.</p>
+      <div class="body">
+        <p>On a flat road most of your power goes into pushing air, and air drag power grows with the <strong>cube</strong> of speed: <span class="eq">P<sub>air</sub> = ½ ρ CdA v³</span>. Ride 10% faster and you need about 33% more power for the air part. That's why steady, even pacing beats surges: every surge burns extra carbohydrate (Ch 1) for a small time gain, and you still have to run afterwards.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 90 km in the hoods, CdA 0.32 m² (from our Race-Day Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Power</th><th>Speed</th><th>90 km split</th><th>Carbohydrate burned</th></tr></thead>
+            <tbody>
+              <tr><td class="num">150 W</td><td class="num">≈ 30.7 km/h</td><td class="num">≈ 2:56</td><td class="num">≈ 84 g/h</td></tr>
+              <tr><td class="num">180 W</td><td class="num">≈ 32.9 km/h</td><td class="num">≈ 2:44</td><td class="num">≈ 101 g/h</td></tr>
+              <tr><td class="num">200 W</td><td class="num">≈ 34.2 km/h</td><td class="num">≈ 2:38</td><td class="num">≈ 112 g/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">From 150 W to 200 W is 33% more power for about 11% more speed: you save about 18 minutes but burn about a third more carbohydrate every hour.</p>
+        </div>
+        <h4>Pacing a whole race</h4>
+        <ul>
+          <li><strong>Swim:</strong> start controlled; a wild first 200 m spikes your heart rate for little gain.</li>
+          <li><strong>Bike:</strong> ride steady power, ease off on descents and don't spike up climbs; a power meter or heart rate helps.</li>
+          <li><strong>Run:</strong> the race often starts here. Many coaches suggest running the first kilometres slightly slower than feels right.</li>
+        </ul>
+        <details class="check"><summary>If air drag were all of the power, how much more power would 20% more speed need?</summary>
+        <p>1.2³ ≈ 1.73, so about <strong>73% more</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-swim">
+      <header><span class="chno">CH 3</span><h3>Swim drag &amp; wetsuit buoyancy</h3></header>
+      <p class="hook">Water is 800 times denser than air. Position beats power.</p>
+      <div class="body">
+        <p>Drag in water follows the same law as in air, <span class="eq">F = ½ ρ C<sub>d</sub>A v²</span>, but with ρ ≈ 1,000 kg/m³ instead of 1.2. Legs that sink add frontal area and drag, so a high, flat body line matters more than raw strength. Our <a href="../swimming/">Swimming page</a> covers drag, buoyancy and open-water skills in detail.</p>
+        <p>A wetsuit is closed-cell foam, full of tiny gas bubbles. It lifts the hips and legs, which cuts drag, and keeps you warm. That's why rules limit when you may wear one.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · wetsuit lift (illustrative values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Neoprene volume</td><td class="num">≈ 5.4 L</td><td>1.8 m² of suit × 3 mm average thickness</td></tr>
+              <tr><td>Water it displaces</td><td class="num">≈ 5.4 kg</td><td>1 L of water ≈ 1 kg</td></tr>
+              <tr><td>Suit's own mass</td><td class="num">≈ 1.1 kg</td><td>foam about 0.2 kg per litre</td></tr>
+              <tr><td>Net extra lift</td><td class="num">≈ 4.3 kg</td><td>5.4 − 1.1, mostly at hips and legs</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <h4>Wetsuit rules (IRONMAN 2026 Competition Rules)</h4>
+        <ul>
+          <li>Age-group athletes may wear wetsuits in water up to and including <strong>24.5 °C</strong>.</li>
+          <li>From 24.5 °C to 28.8 °C, IRONMAN may at some events allow a separate non-competitive wetsuit wave, whose athletes aren't eligible for awards or world championship slots.</li>
+          <li>Wetsuits are prohibited above <strong>28.8 °C</strong>; for professionals the limit is 21.9 °C. Thickness may not exceed 5 mm.</li>
+        </ul>
+        <p>World Triathlon events set their own temperature limits in the World Triathlon Competition Rules; check the athlete guide for your race.</p>
+        <div class="feel"><span class="ico">🌊</span><div><span class="lbl">Feel the number</span>Doubling your swim speed needs four times the drag force and eight times the power. A small gain in body position is worth a lot of fitness.</div></div>
+        <details class="check"><summary>Water at 26 °C, an age-group athlete, IRONMAN rules: can you race for an age-group award in a wetsuit?</summary>
+        <p><strong>No.</strong> 26 °C is above 24.5 °C; at most, the race may offer a non-competitive wetsuit wave without awards or slots.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-aero">
+      <header><span class="chno">CH 4</span><h3>Drafting rules &amp; bike aerodynamics</h3></header>
+      <p class="hook">Your body is most of the drag. CdA is the number that matters.</p>
+      <div class="body">
+        <p><strong>CdA</strong> (drag coefficient × frontal area, in m²) sums up how "slippery" you and your bike are. Folding down onto aero bars shrinks your frontal area and smooths the airflow. Our <a href="../cycling-mtb/">Cycling &amp; MTB page</a> works through rolling resistance, climbing and power in more detail.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 180 W, 80 kg, flat road (from our Race-Day Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Position (illustrative CdA)</th><th>Speed</th><th>90 km</th><th>180 km</th></tr></thead>
+            <tbody>
+              <tr><td>Upright, 0.40 m²</td><td class="num">≈ 30.6 km/h</td><td class="num">≈ 2:56</td><td class="num">≈ 5:53</td></tr>
+              <tr><td>Hoods, 0.32 m²</td><td class="num">≈ 32.9 km/h</td><td class="num">≈ 2:44</td><td class="num">≈ 5:29</td></tr>
+              <tr><td>Aero bars, 0.25 m²</td><td class="num">≈ 35.5 km/h</td><td class="num">≈ 2:32</td><td class="num">≈ 5:04</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Same power, same legs: the aero position saves about 49 minutes over 180 km compared with sitting up. Hold it only as long as you can stay comfortable and in control.</p>
+        </div>
+        <h4>Why drafting is banned in most age-group racing</h4>
+        <p>Riding close behind another rider puts you in their slipstream and can cut your drag a lot, so non-drafting races keep riders apart. World Triathlon's updated competition rules unified the draft zone to <strong>12 m</strong>, with <strong>25 s</strong> to pass; IRONMAN's 2026 rules use 12 m (about six bike lengths of clear space) and 25 s for age-group athletes, and 20 m for professionals. Once you enter the zone you must keep moving through it; if you're passed, you must drop back out of the passer's zone.</p>
+        <div class="feel"><span class="ico">🚴</span><div><span class="lbl">Feel the number</span>To clear 12 m in 25 s you need to ride at least 12 ÷ 25 = 0.48 m/s (about 1.7 km/h) faster than the rider ahead. At 33 km/h in the hoods that takes roughly 27 W more for those 25 seconds.</div></div>
+        <details class="check"><summary>A pass takes you 30 s through someone's 12 m draft zone. What's wrong?</summary>
+        <p>The limit is <strong>25 s</strong>: that would be a drafting violation and a time penalty.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-run">
+      <header><span class="chno">CH 5</span><h3>Running economy on tired legs</h3></header>
+      <p class="hook">The run is a different sport when you start it after the bike.</p>
+      <div class="body">
+        <p>Running costs energy roughly in proportion to your body mass and distance. A common rule of thumb (illustrative) is about <strong>1 kcal per kg per km</strong>, nearly whatever your pace. Off the bike, legs feel heavy and stiff for the first kilometres, and tired muscles can make each stride slightly less economical. Our <a href="../running/">Running page</a> covers pace, cadence and heat in more detail.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 70 kg athlete (illustrative values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Run</th><th>Energy (1 kcal/kg/km)</th><th>If 5% less economical</th></tr></thead>
+            <tbody>
+              <tr><td>Sprint, 5 km</td><td class="num">≈ 350 kcal</td><td class="num">≈ 368 kcal</td></tr>
+              <tr><td>Standard, 10 km</td><td class="num">≈ 700 kcal</td><td class="num">≈ 735 kcal</td></tr>
+              <tr><td>70.3, 21.1 km</td><td class="num">≈ 1,477 kcal</td><td class="num">≈ 1,551 kcal</td></tr>
+              <tr><td>Full, 42.2 km</td><td class="num">≈ 2,954 kcal</td><td class="num">≈ 3,102 kcal</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">A full-distance marathon alone can burn more energy than your glycogen holds (Ch 1), which is why fuelling on the bike matters for the run.</p>
+        </div>
+        <ul>
+          <li><strong>Brick sessions</strong> (a run straight after a ride) train the switch from cycling to running.</li>
+          <li><strong>Short, quick steps</strong> off the bike, then settle into your normal stride.</li>
+          <li><strong>Walk the aid stations</strong> if that's what lets you drink and eat properly.</li>
+        </ul>
+        <details class="check"><summary>A 60 kg athlete runs the 10 km of a standard triathlon. About how much energy?</summary>
+        <p>60 × 10 × 1 ≈ <strong>600 kcal</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-heat">
+      <header><span class="chno">CH 6</span><h3>Heat, hydration &amp; transitions</h3></header>
+      <p class="hook">Only about a quarter of your energy moves you. The rest is heat.</p>
+      <div class="body">
+        <p>If 23% of the energy you burn becomes motion (Ch 1), about 77% becomes heat. Your body sheds it mainly by sweating: evaporating sweat carries heat away, and in humid air it evaporates less. The 2016 position statement gives sweat rates of <strong>0.3–2.4 L per hour</strong>, depending on intensity, fitness, heat acclimatisation and weather, and suggests drinking enough to keep the total body-fluid deficit under <strong>2% of body mass</strong>, because bigger deficits can impair thinking and performance, especially in heat.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · heat and sweat (illustrative values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Heat made at 180 W</td><td class="num">≈ 600 W</td><td>780 W burned × 0.77</td></tr>
+              <tr><td>2% of a 70 kg athlete</td><td class="num">1.4 kg</td><td>≈ 1.4 L of fluid</td></tr>
+              <tr><td>Sweating 1.2 L/h, drinking 0.8 L/h</td><td class="num">0.4 L/h net loss</td><td>reaches 1.4 L in 3.5 h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Drinking far more than you sweat is risky too. Find your own sweat rate by weighing yourself before and after training sessions.</p>
+        </div>
+        <h4>Transitions: the fourth discipline</h4>
+        <ul>
+          <li><strong>T1</strong> (swim to bike) and <strong>T2</strong> (bike to run) count in your race time.</li>
+          <li>IRONMAN's 2026 rules: mount and dismount only at the marked lines; no stopping in the flow zones; keep your kit in your bag or spot; don't touch other athletes' kit.</li>
+          <li>Your <strong>helmet must be fastened</strong> from the moment you take your bike off the rack until you rack it again.</li>
+        </ul>
+        <div class="callout warn"><h4>Race safely</h4><p style="margin:0">Get a medical check before you train for a long-distance race, build up gradually, practise open-water swimming with others and with water-safety cover, and know the race's cut-off times and medical support. In heat, slow down early rather than late.</p></div>
+        <details class="check"><summary>T1 takes 4 min and T2 takes 3 min. You cut both to 2 min. How much time do you save?</summary>
+        <p>(4 + 3) − (2 + 2) = <strong>3 minutes</strong>, with no extra fitness.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The triathlon ladder</span>
+      <h2>Sprint → standard → nationals &amp; age-group worlds → IRONMAN 70.3 → full IRONMAN → Kona &amp; Nice</h2>
+      <p>Triathlon has two worlds: the Olympic sport run by World Triathlon and national federations (in India, the Indian Triathlon Federation), and long-distance races run by the IRONMAN Group, a commercial race organiser rather than a governing body. The steps below show the real distances and requirements we found.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Sprint</span><b>750 m swim · 20 km bike · 5 km run</b><span class="iso">World Triathlon sprint distance</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real distance</span><span class="cn">World Triathlon</span><ul><li>Sprint racing halves the standard distance: 750 m, 20 km, 5 km</li></ul></div>
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">Indian Triathlon Federation</span><ul><li>Four pathways: Kids, Age Group, Pro and Para</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Pacing &amp; transitions</span><ul><li><a href="#ch-pace">Ch 2</a> and <a href="#ch-heat">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Standard (Olympic)</span><b>1.5 km swim · 40 km bike · 10 km run</b><span class="iso">World Triathlon standard distance</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real distance</span><span class="cn">World Triathlon</span><ul><li>The Olympic distance: 1.5 km open-water swim, 40 km bike, 10 km run</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Drag</span><ul><li><a href="#ch-swim">Ch 3</a> and <a href="#ch-aero">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Nationals &amp; age-group worlds</span><b>Race for India in your age group</b><span class="iso">Through your national federation</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real event</span><span class="cn">ITF National Triathlon Championship</span><ul><li>Shree Shiv Chhatrapati Sports Complex, Balewadi, Pune, 15–16 Aug 2026; ITF then named India's squad for the Asian Elite &amp; Age Group Championships in Aqaba, Jordan</li></ul></div>
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">World Triathlon</span><ul><li>Age-group world titles in standard and sprint triathlon, aquabike and mixed relay; each national federation runs qualification and selection</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · IRONMAN 70.3</span><b>1.9 km swim · 90 km bike · 21.1 km run</b><span class="iso">IRONMAN race brand</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real distance</span><span class="cn">IRONMAN</span><ul><li>70.3 miles (113 km) in all; a typical overall cut-off of 8 h 30 min</li></ul></div>
+          <div class="ag"><span class="an">Real event</span><span class="cn">IRONMAN 70.3 Goa</span><ul><li>1 Nov 2026, Miramar Beach, Goa (registration sold out)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Fuelling</span><ul><li><a href="#ch-fuel">Ch 1</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Full IRONMAN</span><b>3.8 km swim · 180 km bike · 42.2 km run</b><span class="iso">IRONMAN race brand</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real distance</span><span class="cn">IRONMAN</span><ul><li>140.6 miles (226.3 km); overall cut-off 17 h, with intermediate cut-offs of about 2 h 20 min (swim) and 10 h 30 min (swim + bike)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything, for 12+ hours</span><ul><li>Especially <a href="#ch-run">Ch 5</a> and <a href="#ch-heat">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Kona &amp; Nice world championships</span><b>Earn a qualifying slot</b><span class="iso">IRONMAN slot allocation</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real format</span><span class="cn">IRONMAN World Championship, Kona</span><ul><li>10 Oct 2026, single day, men and women together, in Kona only</li><li>Each age-group winner earns an automatic slot (rolling to 2nd, then 3rd); the rest go to a Performance Pool ranked by age-graded time against the "Kona Standard"</li></ul></div>
+          <div class="ag"><span class="an">Real format</span><span class="cn">IRONMAN 70.3 World Championship</span><ul><li>Rotates venues; Nice hosted it on 12–13 Sep 2026; slots are awarded at qualifying 70.3 races (Goa awards 2027 slots)</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Triathlon's rules come from World Triathlon; in India the national federation runs the sport. IRONMAN is different: a commercial race organiser with its own rules, not a governing body. We checked each on an official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Triathlon</h4><p>The international federation for triathlon and its multisport family (duathlon, aquathlon, cross and long-distance triathlon). Sets the Competition Rules, including the unified 12 m / 25 s draft zone, and runs age-group world championships through national federations.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+      <div class="card"><span class="tag">Race organiser (not a governing body)</span><h4>The IRONMAN Group</h4><p>A commercial company that owns and organises the IRONMAN and IRONMAN 70.3 race series, including the Kona and 70.3 world championships, under its own competition rules. It isn't a sports federation.</p><a class="url" href="https://www.ironman.com/" target="_blank" rel="noopener">ironman.com</a></div>
+      <div class="card"><span class="tag">Nutrition guidance</span><h4>ACSM / AND / Dietitians of Canada</h4><p>The 2016 joint position statement on nutrition and athletic performance: carbohydrate per hour, loading and hydration guidance used in Ch 1 and Ch 6.</p><a class="url" href="https://pubmed.ncbi.nlm.nih.gov/26891166/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Indian Triathlon Federation (ITF)</h4><p>The national federation for triathlon in India, with Kids, Age Group, Pro and Para pathways. It lists affiliations with the Ministry of Youth Affairs &amp; Sports, the Sports Authority of India, World Triathlon and Asia Triathlon.</p><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
+      <div class="card"><span class="tag">World Triathlon listing</span><h4>ITF on triathlon.org</h4><p>World Triathlon's page for its Indian member federation, and its event listing for the 2026 Indian Sprint Triathlon National Championships (16 Aug 2026).</p><a class="url" href="https://triathlon.org/federations/indian-triathlon-federation" target="_blank" rel="noopener">triathlon.org</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to race</span>
+      <h2>Pick your distance. We'll point you to the start line.</h2>
+      <p>Real federations and races, each checked on an official website. Follow the link and confirm dates, cut-offs, eligibility and entry rules directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>October 2026</b>IRONMAN World Championship, Kona, 10 Oct: single day, men and women together.</div>
+      <div><b>November 2026</b>IRONMAN 70.3 Goa, Miramar Beach, Goa, 1 Nov (registration sold out).</div>
+      <div><b>Training</b>Learn the three sports separately first: see our Swimming, Cycling &amp; MTB and Running pages.</div>
+      <div><b>Every race</b>Read the athlete guide: wetsuit rule, cut-offs, draft zone and transition rules.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① First triathlon</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-compete" id="tab-compete">② Nationals</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-long" id="tab-long">③ 70.3 &amp; IRONMAN</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-worlds" id="tab-worlds">④ World championships</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can swim, ride and run, and want to try a sprint (Step 1). Read <a href="#ch-pace">Ch 2</a> and <a href="#ch-heat">Ch 6</a>; build each sport with our <a href="../swimming/">Swimming</a>, <a href="../cycling-mtb/">Cycling &amp; MTB</a> and <a href="../running/">Running</a> pages.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the swim in a pool or open water? What water-safety cover is there? Are there novice or relay categories? What are the cut-offs?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Indian Triathlon Federation · Age Group &amp; Kids pathways</h4><span class="loc">India</span></div><span class="badge gov">Federation</span></div>
+          <p>Start here for ITF events, the ITF account you need to enter them, and pathways for kids (from age 9) and adult age-group athletes.</p>
+          <a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Learn open-water swimming first</b><span class="meta">Kinetic Swimming page</span><p>Drag, buoyancy, currents and open-water safety: the skills behind the first leg of every triathlon.</p><a class="url" href="../swimming/" target="_blank" rel="noopener">Swimming page</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You race standard or sprint distance and want to race in India's championships (Steps 2–3). Read <a href="#ch-aero">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which ITF events count for selection? What are this year's age-group selection criteria for the Asian and world championships?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>ITF National Triathlon Championship</b><span class="meta">Shree Shiv Chhatrapati Sports Complex, Balewadi, Pune · 15–16 Aug 2026</span><p>ITF's 2026 national championship, after which it named India's squad for the Asian Elite &amp; Age Group Triathlon Championships in Aqaba, Jordan.</p><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
+        <div class="site"><b>World Triathlon age-group racing</b><span class="meta">Sprint, standard, aquabike, mixed relay and multisport worlds</span><p>Age-group athletes race for their country in national kit; your national federation runs qualification and the registration pathway.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-long" role="tabpanel" aria-labelledby="tab-long">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've raced standard distance and want to go long (Steps 4–5). Read <a href="#ch-fuel">Ch 1</a> and <a href="#ch-run">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What are the cut-offs? What's the expected water temperature and the wetsuit rule? What will the aid stations serve, so I can train with it?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>IRONMAN 70.3 Goa</b><span class="meta">Miramar Beach, Goa · 1 Nov 2026</span><p>Ocean swim and a hilly bike course, with a rolling start from 7:00 AM; IRONMAN lists air temperatures of about 21–32 °C and water around 26 °C. Registration is sold out; 2027 IRONMAN 70.3 World Championship slots are awarded at the race.</p><a class="url" href="https://www.ironman.com/races/im703-goa" target="_blank" rel="noopener">ironman.com</a></div>
+        <div class="site"><b>IRONMAN distances explained</b><span class="meta">IRONMAN</span><p>Sprint, Olympic, 70.3 and full distance compared, with typical finish times and cut-offs.</p><a class="url" href="https://www.ironman.com/stories/intro-triathlon/ironman-distances-explained-how-pick-your-perfect-race" target="_blank" rel="noopener">ironman.com</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">IRONMAN is a commercial race brand, not a governing body: its races run under the IRONMAN Competition Rules, so read them and the race's athlete guide.</p></div>
+    </div>
+    <div class="lvl-panel" id="lvl-worlds" role="tabpanel" aria-labelledby="tab-worlds">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're racing for a world championship slot (Step 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How many slots does my qualifying race have? How does the roll-down work? What's the deadline to accept a slot?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>IRONMAN World Championship · Kona</b><span class="meta">Kailua-Kona, Hawai'i · 10 Oct 2026</span><p>From 2026 a single-day race for men and women together, in Kona only, with nearly 3,000 athletes.</p><a class="url" href="https://www.ironman.com/stories/news-updates/2026-ironman-world-championship-returns-hawaiian-roots-kona-exclusive-location" target="_blank" rel="noopener">ironman.com</a></div>
+        <div class="site"><b>How Kona age-group slots work</b><span class="meta">IRONMAN</span><p>Automatic slots for each age-group winner, then Performance Pool slots ranked by age-graded time against the Kona Standard.</p><a class="url" href="https://www.ironman.com/races/im-world-championship-kona/age-group-slot-allocation-how-it-works" target="_blank" rel="noopener">ironman.com</a></div>
+        <div class="site"><b>World Triathlon age-group world championships</b><span class="meta">Through your national federation</span><p>Sprint and standard world titles for amateurs; ask the ITF about selection.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

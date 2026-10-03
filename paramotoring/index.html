@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paramotoring · Physics of Thrust, Torque & Powered Paragliding · Kinetic by Curiosta</title>
+<meta name="description" content="Test your paramotoring physics in 15 questions, learn thrust and drag, PPG wings, torque, forward and reverse launches, fuel and weight-shift, and wind and the rules, then follow the ladder from paragliding to a paramotor course and PPG ratings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Paramotoring</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Pilot ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to train</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Paramotoring</span>
+      <h1>Inflate. Throttle up. <em>Let thrust replace the hill.</em></h1>
+      <p class="lede">A paramotor is a paraglider with an engine and propeller on your back, so you can take off from a flat field. Take the challenge, learn the science with a Thrust Lab, then find paramotor courses in India, the rating systems schools use and the rules you need to know.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Paraglider</span><span class="bar"></span><span>PPG3</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 180 N</span><span class="l">drag at 110 kg on a 6 : 1 wing</span></div>
+      <div class="hero-stat"><span class="n">18 km/h</span><span class="l">the guideline's maximum wind for tandem PPG</span></div>
+      <div class="hero-stat"><span class="n">600 ft</span><span class="l">no aerobatics below, says the guideline</span></div>
+      <div class="hero-stat"><span class="n">2023</span><span class="l">National Air Sports Guidelines (NASG)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of paramotoring?</h2>
+      <p>15 questions on thrust and drag, the PPG wing, thrust line and torque, forward and reverse launches, fuel, endurance and weight-shift, and wind, weather and the rules. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Paramotoring physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace training at a school or a pilot rating.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Thrust Lab to see how mass, wing, thrust and wind change the flight.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-thrust"><span class="n">CHAPTER 1</span><span class="t">Thrust vs drag</span><span class="d">Holding height and climbing</span></a>
+      <a href="#ch-wing"><span class="n">CHAPTER 2</span><span class="t">The PPG wing</span><span class="d">Wing loading and trim speed</span></a>
+      <a href="#ch-torque"><span class="n">CHAPTER 3</span><span class="t">Thrust line &amp; torque</span><span class="d">Why the motor twists you</span></a>
+      <a href="#ch-launch"><span class="n">CHAPTER 4</span><span class="t">Forward &amp; reverse launch</span><span class="d">Airspeed, groundspeed and the run</span></a>
+      <a href="#ch-fuel"><span class="n">CHAPTER 5</span><span class="t">Fuel, endurance &amp; weight-shift</span><span class="d">Range, wind and banked turns</span></a>
+      <a href="#ch-weather"><span class="n">CHAPTER 6</span><span class="t">Wind, weather &amp; the rules</span><span class="d">Glide, permissions and NASG 2023</span></a>
+    </nav>
+
+    <!-- THRUST LAB -->
+    <div class="lab" id="pm-lab">
+      <span class="eyebrow">Interactive · Thrust Lab</span>
+      <h3>Set the all-up mass, the wing's glide ratio, airspeed, engine thrust and the wind, then see the drag, the power you need, your climb, your groundspeed and how far you could glide with the engine off</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple steady-flight model: drag = weight ÷ (L/D), power = drag × airspeed, climb = (thrust − drag) × airspeed ÷ weight, engine-off glide from 300 m into the wind = 300 m × L/D × (airspeed − headwind) ÷ airspeed. Wing loading uses a 22 m² wing. Learning values only (illustrative): real wings, motors and propellers vary.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="pm-m">All-up mass</label><input type="range" id="pm-m" min="80" max="200" step="5" value="110"><output id="pm-m-o">110 kg</output></div>
+        <div class="ctl"><label>Wing glide ratio (L/D)</label><div class="seg" id="pm-ld"><button type="button" data-ld="5" aria-pressed="false">5 : 1</button><button type="button" data-ld="6" aria-pressed="true">6 : 1</button><button type="button" data-ld="7" aria-pressed="false">7 : 1</button></div><span></span></div>
+        <div class="ctl"><label for="pm-v">Airspeed</label><input type="range" id="pm-v" min="25" max="50" step="1" value="36"><output id="pm-v-o">36 km/h</output></div>
+        <div class="ctl"><label for="pm-t">Thrust</label><input type="range" id="pm-t" min="150" max="700" step="10" value="400"><output id="pm-t-o">400 N</output></div>
+        <div class="ctl"><label for="pm-w">Wind</label><input type="range" id="pm-w" min="0" max="25" step="1" value="15"><output id="pm-w-o">15 km/h</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Drag in level flight</span><span class="v" id="pm-drag">180 N</span><span class="s">Ch 1 · weight ÷ L/D</span></div>
+        <div class="lab-card"><span class="k">Power to hold height</span><span class="v" id="pm-pow">1.80 kW</span><span class="s">Ch 1 · drag × airspeed</span></div>
+        <div class="lab-card"><span class="k">Climb rate</span><span class="v" id="pm-climb">2.0 m/s</span><span class="s">Ch 1 · spare thrust</span></div>
+        <div class="lab-card"><span class="k">Groundspeed into / with the wind</span><span class="v" id="pm-gs">21 / 51 km/h</span><span class="s">Ch 6 · airspeed ∓ wind</span></div>
+        <div class="lab-card"><span class="k">Engine-off glide from 300 m into wind</span><span class="v" id="pm-glide">1.05 km</span><span class="s">Ch 6 · keep a field in reach</span></div>
+        <div class="lab-card"><span class="k">Wing loading (22 m²)</span><span class="v" id="pm-load">5.0 kg/m²</span><span class="s">Ch 2 · trim speed</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="pm-bar"></span></div>
+      <p class="fine">Bar = thrust used just to hold height (drag ÷ thrust); the rest is spare for climbing. Try 200 kg (a tandem) or a 25 km/h wind. Fly only after training at a school (Ch 6).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-thrust">
+      <header><span class="chno">CH 1</span><h3>Thrust vs drag</h3></header>
+      <p class="hook">A paraglider with a fan on your back: thrust replaces the hill.</p>
+      <div class="body">
+        <p>A paraglider "spends" height to keep moving (our <a href="../paragliding/">Paragliding page</a> covers glide in detail). A <strong>paramotor</strong>, or powered paraglider (PPG), adds a propeller on the pilot's back. In level flight four forces balance: <strong>lift = weight</strong> and <strong>thrust = drag</strong>. Since lift ÷ drag is the glide ratio, <span class="eq">drag = weight ÷ (L/D)</span>. Any thrust beyond that makes you climb.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 110 kg all-up, 36 km/h (10 m/s), 400 N thrust (from our Thrust Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wing L/D</th><th>Drag</th><th>Power to hold height</th><th>Climb rate</th></tr></thead>
+            <tbody>
+              <tr><td class="num">5 : 1</td><td class="num">≈ 216 N</td><td class="num">≈ 2.16 kW</td><td class="num">≈ 1.7 m/s</td></tr>
+              <tr><td class="num">6 : 1</td><td class="num">≈ 180 N</td><td class="num">≈ 1.80 kW</td><td class="num">≈ 2.0 m/s</td></tr>
+              <tr><td class="num">7 : 1</td><td class="num">≈ 154 N</td><td class="num">≈ 1.54 kW</td><td class="num">≈ 2.3 m/s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Weight = 110 × 9.81 = 1,079 N; ÷ 6 ≈ 180 N. Climb = (400 − 180) × 10 ÷ 1,079 ≈ 2.0 m/s. Propellers aren't perfectly efficient, so the engine must make more than this power.</p>
+        </div>
+        <div class="feel"><span class="ico">🪂</span><div><span class="lbl">Feel the number</span>Holding a paramotor level takes about 1.8 kW in our example: roughly the power of an electric kettle, delivered as a gentle 18 kg push.</div></div>
+        <details class="check"><summary>A 150 kg tandem on a 6 : 1 wing: what drag in level flight?</summary>
+        <p>150 × 9.81 ÷ 6 ≈ <strong>245 N</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-wing">
+      <header><span class="chno">CH 2</span><h3>The PPG wing</h3></header>
+      <p class="hook">The same kind of fabric wing, loaded heavier and flown faster.</p>
+      <div class="body">
+        <p>A PPG wing is a ram-air fabric wing like a paraglider: air enters openings at the front and inflates the cells. With an engine, fuel and frame on your back, the wing carries more weight per square metre. <strong>Wing loading</strong> (kg per m²) sets how fast the wing flies at trim: in steady flight, lift must equal weight, so speed rises with the square root of the load, <span class="eq">v ∝ √(loading)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 22 m² wing (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>All-up mass</th><th>Wing loading</th><th>Trim speed (scaled from 36 km/h at 110 kg)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">110 kg</td><td class="num">5.0 kg/m²</td><td class="num">36 km/h</td></tr>
+              <tr><td class="num">125 kg</td><td class="num">≈ 5.7 kg/m²</td><td class="num">≈ 38.4 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">36 × √(125 ÷ 110) ≈ 38.4 km/h. Every wing has a certified weight range; flying outside it changes how the wing behaves.</p>
+        </div>
+        <h4>Certified wings</h4>
+        <p>The Safety Guidelines for Paramotoring and powered parachutes (Version E5) say wings should be EN, LTF, DHV or DGAC certified and recommended for powered flying, with annual airworthiness checks and records kept.</p>
+        <details class="check"><summary>Your all-up mass rises by a quarter. Roughly how much faster does the wing trim?</summary>
+        <p>√1.25 ≈ 1.12, so about <strong>12% faster</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-torque">
+      <header><span class="chno">CH 3</span><h3>Thrust line &amp; torque</h3></header>
+      <p class="hook">Spin a propeller one way and it tries to spin you the other.</p>
+      <div class="body">
+        <p>Newton's third law works on rotation too: the engine turns the propeller, so the propeller pushes back on the engine, and on you, with an equal and opposite <strong>torque</strong>. Torque = power ÷ angular speed, so a slow-turning propeller at high power gives the biggest twist. It tends to roll and turn the pilot against the propeller's direction; frames often build in offsets and pilots learn to correct for it. Where the push acts matters too: if the <strong>thrust line</strong> sits above or below the hang points, adding power pitches you forward or back.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · reaction torque (illustrative motor)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Power</th><th>Propeller speed</th><th>Torque on the pilot</th></tr></thead>
+            <tbody>
+              <tr><td class="num">15 kW (full power)</td><td class="num">3,200 rpm</td><td class="num">≈ 45 N·m</td></tr>
+              <tr><td class="num">5 kW (cruise)</td><td class="num">2,200 rpm</td><td class="num">≈ 22 N·m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">3,200 rpm = 335 rad/s; 15,000 ÷ 335 ≈ 45 N·m: like a 4.5 kg mass hanging on a 1 m lever. Torque is strongest at full power, which is during take-off and climb, close to the ground.</p>
+        </div>
+        <p>The USPPA's PPG2 rating (a US reference) requires pilots to understand torque effects and to train on a simulator, a frame hung from a hang point so you can feel the controls on the ground.</p>
+        <details class="check"><summary>Same 15 kW but the propeller turns at 2,400 rpm. More or less torque?</summary>
+        <p>More: 15,000 ÷ (2,400 × 2π ÷ 60) ≈ <strong>60 N·m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-launch">
+      <header><span class="chno">CH 4</span><h3>Forward &amp; reverse launch</h3></header>
+      <p class="hook">The wing needs airspeed, not groundspeed. Wind gives you some for free.</p>
+      <div class="body">
+        <p>To lift off, the wing must reach its flying <strong>airspeed</strong>. Facing into the wind, <span class="eq">groundspeed = airspeed − headwind</span>, so a headwind means a shorter, slower take-off run. In calm air you run and use thrust to build the speed: a <strong>forward launch</strong>, facing the way you'll fly. In more wind, pilots often use a <strong>reverse launch</strong>: face the wing to inflate and check it, then turn round and go.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · wing flies at 32 km/h, acceleration 1.5 m/s² (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Headwind</th><th>Groundspeed at lift-off</th><th>Take-off run</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 km/h</td><td class="num">32 km/h</td><td class="num">≈ 26 m</td></tr>
+              <tr><td class="num">10 km/h</td><td class="num">22 km/h</td><td class="num">≈ 12 m</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">12 km/h</td><td class="num">≈ 4 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Run distance = v² ÷ (2a): (32 ÷ 3.6)² ÷ 3 ≈ 26 m. Halving the groundspeed needed cuts the run to about a quarter. Taking off downwind does the opposite.</p>
+        </div>
+        <p>The USPPA's PPG1 (student) rating, for example, asks for two forward and two reverse inflations, 30 seconds of kiting the wing overhead, and two unassisted flights, in winds of no more than 8 mph (about 13 km/h).</p>
+        <details class="check"><summary>The wing flies at 32 km/h and there's a 12 km/h headwind. What groundspeed at lift-off?</summary>
+        <p>32 − 12 = <strong>20 km/h</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-fuel">
+      <header><span class="chno">CH 5</span><h3>Fuel, endurance &amp; weight-shift</h3></header>
+      <p class="hook">Plan the trip home before you leave, and steer with your hips.</p>
+      <div class="body">
+        <p>Endurance is usable fuel ÷ burn rate, and range depends on the wind. Into a headwind your groundspeed drops; downwind it rises. The <strong>point of no return</strong> is how far you can go out and still get back on the fuel you have.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 36 km/h airspeed, 15 km/h wind, 2 h of usable fuel after a reserve (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Groundspeed into wind</td><td class="num">21 km/h</td><td>36 − 15</td></tr>
+              <tr><td>Groundspeed downwind</td><td class="num">51 km/h</td><td>36 + 15</td></tr>
+              <tr><td>Furthest you can go upwind and return</td><td class="num">≈ 30 km</td><td>R ÷ 21 + R ÷ 51 = 2 h</td></tr>
+              <tr><td>12 L of petrol</td><td class="num">≈ 8.9 kg</td><td>about 0.74 kg per litre: 8% of a 110 kg all-up mass</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Go out upwind and come home downwind: if you go out downwind, the slow, fuel-hungry leg comes last.</p>
+        </div>
+        <h4>Weight-shift and brakes</h4>
+        <p>You steer by pulling a brake toggle (which pulls down one side of the trailing edge) and by shifting your weight in the harness. A banked turn needs more lift: the load factor is <span class="eq">n = 1 ÷ cos(bank)</span>, so 30° of bank needs 1.15 g, 45° needs 1.41 g and 60° needs 2 g. The USPPA's PPG2 novice rating limits flying to no more than 30° of bank.</p>
+        <details class="check"><summary>A 45° banked turn: what load factor?</summary>
+        <p>1 ÷ cos 45° ≈ <strong>1.41 g</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-weather">
+      <header><span class="chno">CH 6</span><h3>Wind, weather &amp; the rules</h3></header>
+      <p class="hook">Fly smooth air, always within glide of a field, and with the right permissions.</p>
+      <div class="body">
+        <p>A paramotor flies at only roughly 30–45 km/h (illustrative), so wind matters a lot: a 25 km/h headwind can leave you barely moving over the ground. Engines can stop, so always fly with a landing area within gliding distance. Into the wind, your glide over the ground shrinks.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · engine-off glide from 300 m, 6 : 1 wing, 36 km/h airspeed (from our Thrust Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wind</th><th>Glide over the ground</th><th>Distance from 300 m</th></tr></thead>
+            <tbody>
+              <tr><td>Still air</td><td class="num">6 : 1</td><td class="num">1.8 km</td></tr>
+              <tr><td>15 km/h headwind</td><td class="num">3.5 : 1</td><td class="num">≈ 1.05 km</td></tr>
+              <tr><td>15 km/h tailwind</td><td class="num">8.5 : 1</td><td class="num">≈ 2.55 km</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">300 × 6 × (36 − 15) ÷ 36 = 1,050 m.</p>
+        </div>
+        <h4>What the safety guideline says</h4>
+        <ul>
+          <li><strong>Smooth air:</strong> motorised flying needs smooth, laminar wind, so early morning and evening are generally suitable for training.</li>
+          <li><strong>Tandem:</strong> not in more than 18 km/h of wind; no aerobatic manoeuvres below 600 ft; always fly with a landing zone within glide in case of engine failure.</li>
+          <li><strong>Engines:</strong> instruments for cylinder-head temperature and RPM.</li>
+          <li><strong>Permissions:</strong> an NOC through the district collector's office (with police clearance), Airports Authority of India clearance and a NOTAM giving the radius and height ceiling, then daily permission from local ATC.</li>
+        </ul>
+        <div class="callout warn"><h4>The rules in India</h4><p style="margin:0">The Ministry of Civil Aviation told Parliament in 2026 that the National Air Sports Guidelines (NASG) 2023, which replaced the National Air Sports Policy 2022, set a framework through the Air Sports Federation of India (ASFI). DGCA regulates safety and licensing for gliders, microlights, light sport aircraft, gyroplanes, balloons and powered hang gliders; powered paragliders aren't on that list. The Safety Guidelines for Paramotoring and powered parachutes (Version E5) state that PPG and powered parachutes are not regulated in India, so officially no licence is required, but that pilots should keep a logbook and schools should certify their students' level. Training, it says, should follow BHPA, USPPA, APPI PPG or another recommended body. Check the current position with the school, the state tourism department and the airspace authorities before you fly.</p></div>
+        <details class="check"><summary>From 300 m on a 6 : 1 wing at 36 km/h, with a 20 km/h headwind, how far can you glide over the ground?</summary>
+        <p>300 × 6 × (36 − 20) ÷ 36 = <strong>800 m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The paramotor ladder</span>
+      <h2>Learn to paraglide → paramotor course → PPG1 student → PPG2 novice → PPG3 experienced → tandem &amp; instructor</h2>
+      <p>India has no national paramotor licence that we could verify. Schools set their own courses and, as the state safety guideline recommends, base them on international rating systems (BHPA, USPPA, APPI PPG). We use the USPPA ratings as a published reference: they are voluntary US ratings, not Indian law.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Learn to paraglide</span><b>Wing handling first</b><span class="iso">School prerequisite</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Indian schools</span><ul><li>PG Gurukul's paramotoring course requires a P3 paragliding rating</li><li>SkyThrill's 10-day basic course is for pilots who have done a basic paragliding course</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Glide</span><ul><li>Our <a href="../paragliding/">Paragliding page</a> and <a href="#ch-wing">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Paramotor course</span><b>Engine, launches, first powered flights</b><span class="iso">School course and certification</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real courses</span><span class="cn">India</span><ul><li>PG Gurukul: 6-day paramotoring course at Kotkapura, Punjab</li><li>SkyThrill, Sohna (Haryana): 4-day orientation for newcomers, 10-day basic course, age 16+, with a final exam</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Launching</span><ul><li><a href="#ch-launch">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · PPG1 Student (USPPA reference)</span><b>First solo flights</b><span class="iso">USPPA PPG1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPPA</span><ul><li>Ground school, two forward and two reverse inflations, 30 s of kiting, two unassisted flights and a written exam; wind no more than 8 mph</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · PPG2 Novice (USPPA reference)</span><b>Flying on your own in mild conditions</b><span class="iso">USPPA PPG2</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPPA</span><ul><li>At least 25 flights over 5 days, 8 h of ground school, torque knowledge, simulator training and a reserve-deployment demonstration</li><li>Limits: gusts up to 12 mph, no more than 30° of bank, thermals up to 200 ft/min</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Torque &amp; turns</span><ul><li><a href="#ch-torque">Ch 3</a> and <a href="#ch-fuel">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · PPG3 Experienced (USPPA reference)</span><b>Experience and precision</b><span class="iso">USPPA PPG3</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPPA</span><ul><li>90 flights over 30 days, 20 solo hours, PPG2 held for 120 days, and power-off landings from 300 ft within 15 ft of a target</li></ul></div>
+          <div class="ag"><span class="an">Real events</span><span class="cn">FAI CIMA</span><ul><li>The FAI's Microlight and Paramotor Commission runs world paramotor championships and records</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Tandem &amp; instructor</span><b>Carry a passenger or teach</b><span class="iso">Instructor ratings</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPPA</span><ul><li>Tandem instructor rating: 100 hours or 300 flights</li></ul></div>
+          <div class="ag"><span class="an">Real guideline</span><span class="cn">India (Version E5 guideline)</span><ul><li>Tandem PPG in no more than 18 km/h wind; instructors with over 5 years' active flying and a first-aid certificate</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Paramotor competitions come under the FAI; rating systems come from national associations abroad; in India, air sports sit under the Ministry of Civil Aviation's NASG 2023, with state safety guidelines for operators. We checked each on an official source.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>FAI Microlight and Paramotor Commission (CIMA)</h4><p>The FAI commission for microlights and paramotors: world championships, records and competition rules. (Paragliding without an engine is under CIVL.)</p><a class="url" href="https://www.fai.org/commission/cima" target="_blank" rel="noopener">fai.org</a></div>
+      <div class="card"><span class="tag">Rating system (reference)</span><h4>United States Powered Paragliding Association (USPPA)</h4><p>Publishes voluntary PPG1–PPG3 pilot ratings and tandem instructor requirements, based on the US FAA's Part 103 rules and advisory circular 103-7.</p><a class="url" href="https://usppa.org/usppa-program/" target="_blank" rel="noopener">usppa.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Ministry</span><h4>Ministry of Civil Aviation · NASG 2023</h4><p>Its 2026 reply to Parliament says the National Air Sports Guidelines 2023 replaced the 2022 policy and give a framework through the Air Sports Federation of India (ASFI).</p><a class="url" href="https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1311_OsAJQG.pdf" target="_blank" rel="noopener">sansad.in</a></div>
+      <div class="card"><span class="tag">Regulator</span><h4>Directorate General of Civil Aviation (DGCA)</h4><p>Regulates safety and licensing for gliders, microlights, light sport aircraft, gyroplanes, balloons and powered hang gliders, as the ministry described in 2026; powered paragliders weren't on that list.</p><a class="url" href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a></div>
+      <div class="card"><span class="tag">Safety guideline</span><h4>Safety Guidelines for Paramotoring &amp; powered parachutes (Version E5)</h4><p>A Maharashtra-focused guideline; the same text appears in Maharashtra Tourism's air-activity safety guidelines. Covers sites, NOC/AAI/NOTAM permissions, training, equipment and tandem limits.</p><a class="url" href="https://safetyguidelines.co.in/Documents/English/Air/Paramotoring.pdf" target="_blank" rel="noopener">safetyguidelines.co.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to train</span>
+      <h2>Pick your level. We'll point you to the field.</h2>
+      <p>Real schools and official sources, each checked on its own website. Follow the link and confirm course content, prerequisites and permissions directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>Mornings &amp; evenings</b>The guideline says smooth, laminar air makes early morning and evening generally suitable for training.</div>
+      <div><b>Coasts</b>Beaches are popular for their laminar sea breeze, the guideline notes, but avoid crowded ones.</div>
+      <div><b>Before you go</b>Check the permissions: NOC, AAI clearance and NOTAM, daily ATC permission (Ch 6).</div>
+      <div><b>Every flight</b>A landing field within glide, in case the engine stops.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-pg" id="tab-pg">① Learn to paraglide</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-course" id="tab-course">② Paramotor course</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-ratings" id="tab-ratings">③ Ratings &amp; competition</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-rules" id="tab-rules">④ Rules &amp; permissions</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-pg" role="tabpanel" aria-labelledby="tab-pg">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never flown a wing (Step 1). Start with our <a href="../paragliding/">Paragliding page</a> and <a href="#ch-wing">Ch 2</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which paragliding rating do I need before your paramotor course? Can I do both at your school?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>PG Gurukul · P1–P3 paragliding courses</h4><span class="loc">Bir, Himachal Pradesh</span></div><span class="badge">Paragliding first</span></div>
+          <p>Runs P1 to P3 paragliding courses at Bir (P1 + P2 in 8 days); its paramotoring course needs a P3 rating first.</p>
+          <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Kinetic · Paragliding</b><span class="meta">Our paragliding page</span><p>Glide, lift, thermals and the paragliding rating ladder in India: the base you build a paramotor on.</p><a class="url" href="../paragliding/" target="_blank" rel="noopener">Paragliding page</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-course" role="tabpanel" aria-labelledby="tab-course">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can fly a paraglider and want to add an engine (Step 2). Read <a href="#ch-launch">Ch 4</a> and <a href="#ch-torque">Ch 3</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which rating system is your course based on (BHPA, USPPA, APPI PPG)? What certificate and logbook do I get? Which permissions does the school hold for its site?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>PG Gurukul · Paramotoring course</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge">6 days</span></div>
+          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating.</p>
+          <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
+        <div class="school"><div class="top"><div><h4>SkyThrill · Paramotor training</h4><span class="loc">Sohna and Gurgaon, Haryana</span></div><span class="badge">Basic &amp; intermediate</span></div>
+          <p>A 4-day orientation for newcomers, a 10-day basic course for pilots with basic paragliding, then intermediate and refresher courses; age 16+, with an exam on safety, equipment, aviation knowledge, flying skills and weather.</p>
+          <a class="url" href="http://www.skythrill.in/skythrill-paramotoring-training-course" target="_blank" rel="noopener">skythrill.in</a></div>
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">PPG &amp; PPC</span></div>
+          <p>Starts students on powered paratrikes and powered parachutes, which it says fall under a non-licensed category in India, with progression to licensed microlight and light-aircraft training.</p>
+          <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-ratings" role="tabpanel" aria-labelledby="tab-ratings">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You fly solo and want to build experience (Steps 3–6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How do your school's levels compare with PPG1–PPG3? What logbook evidence will I need?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>USPPA PPG ratings</b><span class="meta">US reference system</span><p>PPG1 Student, PPG2 Novice and PPG3 Experienced, with flight counts, ground school and limits, plus tandem instructor requirements.</p><a class="url" href="https://usppa.org/usppa-program/" target="_blank" rel="noopener">usppa.org</a></div>
+        <div class="site"><b>FAI CIMA championships &amp; records</b><span class="meta">FAI</span><p>World and continental paramotor championships, and the records list.</p><a class="url" href="https://www.fai.org/commission/cima" target="_blank" rel="noopener">fai.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-rules" role="tabpanel" aria-labelledby="tab-rules">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to know what's required to fly in India (Ch 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the site registered with the state? Who holds the NOC, AAI clearance and NOTAM? What insurance covers students and passengers?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Safety Guidelines for Paramotoring &amp; powered parachutes</b><span class="meta">Version E5 (Maharashtra-focused)</span><p>Sites, permissions, training, equipment, tandem limits and emergency planning.</p><a class="url" href="https://safetyguidelines.co.in/Documents/English/Air/Paramotoring.pdf" target="_blank" rel="noopener">safetyguidelines.co.in</a></div>
+        <div class="site"><b>Ministry of Civil Aviation</b><span class="meta">NASG 2023 and ASFI</span><p>The national air sports framework; see also the ministry's 2026 reply in Parliament.</p><a class="url" href="https://www.civilaviation.gov.in/" target="_blank" rel="noopener">civilaviation.gov.in</a></div>
+        <div class="site"><b>Kinetic · Recreational flying</b><span class="meta">Gliders, microlights, hang gliders, paramotors &amp; balloons</span><p>How paramotors compare with gliders, microlights and balloons, and which of those need a DGCA licence.</p><a class="url" href="../recreational-flying/" target="_blank" rel="noopener">Recreational flying page</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../skydiving/">skydiving</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
