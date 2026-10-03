@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scuba diving: the physics, explained | Kinetic</title>
+<meta name="description" content="Take the scuba science challenge, then learn the physics of diving: pressure, buoyancy, gas, ears, light. Plus certifications, governing bodies and where to dive in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Scuba</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Certifications</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to go</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Scuba diving</span>
+      <h1>Breathing underwater is <em>applied physics.</em></h1>
+      <p class="lede">Every rule your instructor gives you comes from a law of nature: Boyle, Archimedes, Henry, Beer–Lambert. Learn the why, with real numbers, and diving gets safer, calmer and a lot more fun.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="depthgauge" aria-hidden="true"><span>0 m</span><span class="bar"></span><span>40 m</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">+1 bar</span><span class="l">for every 10 m of seawater</span></div>
+      <div class="hero-stat"><span class="n">4×</span><span class="l">faster air use at 30 m than at the surface</span></div>
+      <div class="hero-stat"><span class="n">~4%</span><span class="l">of red sunlight left at 5 m, even in very clear water</span></div>
+      <div class="hero-stat"><span class="n">2.5 kg</span><span class="l">extra lift for a typical diver in seawater vs fresh</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>Would your physics keep you safe at 30 m?</h2>
+      <p>15 questions on what's really going on down there. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Your dive log</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = ready to dive in · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification or fitness-to-dive assessment.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters, from the surface to 40 m</h2>
+      <p>Each chapter takes one physical law and follows it underwater, with worked numbers you can check on a calculator. We round seawater to "1 bar per 10 m". The precise figure is about 1 bar per 10.06 m, and the difference doesn't matter for anything here.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-pressure"><span class="n">CHAPTER 1</span><span class="t">Pressure &amp; Boyle's law</span><span class="d">Why the first 10 m matter most, and why you never hold your breath</span></a>
+      <a href="#ch-buoyancy"><span class="n">CHAPTER 2</span><span class="t">Buoyancy, weighting &amp; trim</span><span class="d">Archimedes, salt vs fresh water, the shrinking wetsuit</span></a>
+      <a href="#ch-air"><span class="n">CHAPTER 3</span><span class="t">Why your tank shrinks at depth</span><span class="d">Air consumption, gas planning and reserves</span></a>
+      <a href="#ch-gas"><span class="n">CHAPTER 4</span><span class="t">Nitrogen, decompression &amp; narcosis</span><span class="d">Henry's law, no-stop limits, nitrox and oxygen limits</span></a>
+      <a href="#ch-ears"><span class="n">CHAPTER 5</span><span class="t">Ears, sinuses &amp; equalising</span><span class="d">The force on your eardrum, and how to beat it</span></a>
+      <a href="#ch-light"><span class="n">CHAPTER 6</span><span class="t">Light, colour, sound &amp; heat</span><span class="d">Why reds vanish first, and why boats are hard to locate</span></a>
+    </nav>
+
+    <!-- DEPTH LAB -->
+    <div class="lab" id="depth-lab">
+      <span class="eyebrow">Interactive · Depth Lab</span>
+      <h3>Drag yourself down and watch the physics change</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">All six chapters on one slider. The assumptions: seawater, surface air consumption 20 L/min, a 12-litre cylinder used from 200 to 50 bar (1,800 L usable), and clear "pure-water" light absorption.</p>
+      <div class="controls">
+        <div class="depthread"><span id="lab-d">0</span><small> m</small></div>
+        <input type="range" id="lab-depth" min="0" max="40" step="1" value="0" aria-label="Depth in metres">
+      </div>
+      <div class="lab-grid">
+        <div class="lab-card"><span class="k">Absolute pressure</span><span class="v" id="lab-p">1.0 bar</span><span class="s">Ch 1 · 1 bar air + 1 bar / 10 m</span></div>
+        <div class="lab-card"><span class="k">Air use (SAC 20)</span><span class="v" id="lab-use">20 L/min</span><span class="s">Ch 3 · surface-equivalent litres</span></div>
+        <div class="lab-card"><span class="k">Usable air lasts</span><span class="v" id="lab-time">90 min</span><span class="s">Ch 3 · 1,800 L ÷ consumption</span></div>
+        <div class="lab-card"><span class="k">No-stop limit (air)</span><span class="v" id="lab-ndl">&gt; 3 h</span><span class="s">Ch 4 · first dive, table values*</span></div>
+        <div class="lab-card"><span class="k">Nitrogen pressure</span><span class="v" id="lab-n2">0.79 bar</span><span class="s">Ch 4 · narcosis: <span id="lab-narc">unlikely</span></span></div>
+        <div class="lab-card"><span class="k">Oxygen pressure · air</span><span class="v" id="lab-o2">0.21 bar</span><span class="s">Ch 4 · 21% × pressure</span></div>
+        <div class="lab-card"><span class="k">Oxygen pressure · EAN32</span><span class="v" id="lab-o2n">0.32 bar</span><span class="s" id="lab-o2n-note">within limit</span></div>
+        <div class="lab-card"><span class="k">6 L surface balloon</span><span class="v" id="lab-vol">6.00 L</span><span class="s">Ch 1 · Boyle: P×V constant</span></div>
+      </div>
+      <div class="lab-visual">
+        <div class="balloon-box"><div class="balloon" id="lab-balloon" style="width:140px;height:140px"></div><span class="small" style="color:#8fb3c6;margin-top:10px">balloon to scale (volume)</span></div>
+        <div>
+          <div class="small" style="color:#a9c4d2;margin-bottom:8px">Ch 6 · Share of surface sunlight left at this depth (straight down, pure water):</div>
+          <div class="swatches">
+            <div class="swatch" id="sw0"><span class="k">Red 700 nm</span><span class="v">100%</span></div>
+            <div class="swatch" id="sw1"><span class="k">Orange 600 nm</span><span class="v">100%</span></div>
+            <div class="swatch" id="sw2"><span class="k">Green 550 nm</span><span class="v">100%</span></div>
+            <div class="swatch" id="sw3"><span class="k">Blue 450 nm</span><span class="v">100%</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="fine">*No-stop limits are the published first-dive values of the widely used PADI Recreational Dive Planner (air), shown here for illustration only. Always dive by your own computer or planner and your training. Real coastal water (Goa, Tarkarli, Pondicherry) absorbs and scatters more than pure water, so colours fade even faster.</p>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-pressure">
+      <header><span class="chno">CH 1</span><h3>Pressure &amp; Boyle's law</h3></header>
+      <p class="hook">The ocean is heavy, and the air you carry gets squeezed.</p>
+      <div class="body">
+        <p>At sea level you're already under one "atmosphere" of air: about 1.013 bar, which we'll call 1 bar. Water is roughly 850 times denser than air, so it piles on pressure fast. A column of seawater 10 m tall over one square metre holds 10 m³ × 1,025 kg/m³ = 10,250 kg. Its weight (× 9.81 m/s²) spread over that square metre is about 100,500 pascals. That's ≈ 1 bar.</p>
+        <p><strong>So: every 10 m of seawater adds one more atmosphere.</strong> Your gauge shows depth, but your body responds to <em>absolute</em> pressure, which is air plus water.</p>
+
+        <h4>Boyle's law: squeeze the gas, shrink the gas</h4>
+        <p>For a fixed amount of gas at constant temperature, <span class="eq">P₁ × V₁ = P₂ × V₂</span>. Double the pressure and the volume halves. Your body is mostly liquid, and liquids barely compress. The gas spaces are what feel it: lungs, middle ears, sinuses, mask, BCD, the bubbles in your wetsuit.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 6-litre balloon going down</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Absolute pressure</th><th>Balloon volume</th><th>Change from previous row</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">6.0 L</td><td>n/a</td></tr>
+              <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">3.0 L</td><td><strong>−50%</strong> (pressure doubled)</td></tr>
+              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.0 L</td><td>−33%</td></tr>
+              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">1.5 L</td><td>−25%</td></tr>
+              <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">1.2 L</td><td>−20%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Look at the last column. Pressure doubles in the first 10 m, but going from 30 m to 40 m adds only 25% more. The <strong>shallows are where gas volumes change fastest</strong>. That's why buoyancy is twitchiest near the surface, why your ears need the most attention in the first few metres, and why the last 5 m of an ascent (1.5 → 1 bar, a 50% expansion) deserve the most care.</p>
+        </div>
+
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>At 10 m, every square centimetre of your skin carries about <b>2 kg-force</b> (2 bar ≈ 2.04 kgf/cm²). Your palm, about 100 cm², has roughly <b>200 kg-force</b> pressing on it. You don't feel it because it pushes equally from every side through tissue that doesn't compress. Only air pockets notice.</div></div>
+
+        <h4>The one rule that's pure physics: never hold your breath</h4>
+        <p>Your regulator gives you air at whatever pressure surrounds you. Fill your lungs with 6 L at 10 m (2 bar), then swim up holding that breath. By the surface (1 bar) that same gas wants to take up <strong>12 L</strong>. Lungs can't double in size. Small air sacs tear, and air can be forced into the chest cavity or bloodstream (pulmonary barotrauma, arterial gas embolism). Diving-medicine literature describes these injuries after breath-hold ascents of only a metre or two, so this isn't just a deep-dive risk. The fix is simple: <strong>breathe slowly and continuously, all the time</strong>, and on an emergency ascent keep exhaling ("ahhh").</p>
+
+        <details class="check"><summary>You're at 5 m with 4 L of air in your BCD and you rise to the surface without venting. How much does it want to expand to?</summary>
+        <p>5 m = 1.5 bar. 4 L × 1.5 ÷ 1 = <strong>6 L</strong>, so 2 L more air, which means about 2 kg more lift (Chapter 2). That runaway lift is why you vent on every ascent.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-buoyancy">
+      <header><span class="chno">CH 2</span><h3>Buoyancy, weighting &amp; trim</h3></header>
+      <p class="hook">Archimedes is your co-pilot: you float by the litre.</p>
+      <div class="body">
+        <p><strong>Archimedes' principle:</strong> anything in water is pushed up by a force equal to the weight of the water it displaces. Displace more water than you weigh and you float. Displace less and you sink. Match exactly and you hover. That's "neutral buoyancy", the skill that separates calm divers from flailing ones.</p>
+        <p>Every litre you displace in seawater (density ≈ 1.025 kg/L) gives you about <strong>1.025 kg of lift</strong>. In fresh water it's 1.000 kg. Your fine controls are all gas volumes: BCD air, wetsuit bubbles and your lungs.</p>
+
+        <div class="worked">
+          <span class="lbl">Worked example · lake to sea</span>
+          <p style="margin:0">A diver plus gear displacing about 100 L gets 100 kg of lift in fresh water and <span class="eq">100 × 1.025 = 102.5 kg</span> in the sea: <strong>about 2.5 kg extra</strong>. So if you trained in a pool or lake, expect to add roughly 2 to 3 kg of lead for the ocean. A quick rule of thumb is about 2.5% of your total weight with gear. Always confirm with a buoyancy check at the surface.</p>
+        </div>
+
+        <h4>The shrinking wetsuit</h4>
+        <p>Neoprene is a foam full of tiny gas cells, and Boyle's law applies to them too. Say a full suit gives you about 4 kg of lift at the surface (it varies a lot with thickness and size). If it behaved like pure gas it would give ~2 kg at 10 m and ~1 kg at 30 m. Real neoprene doesn't quite compress that fully, but the trend is real: <strong>you get heavier as you go down</strong>. You make up for it with small puffs into the BCD on descent, then vent that air as it expands on ascent.</p>
+
+        <h4>You get lighter as you breathe</h4>
+        <div class="worked">
+          <span class="lbl">Worked example · the weight of air</span>
+          <p style="margin:0">A 12 L cylinder at 200 bar holds about <span class="eq">12 × 200 = 2,400 L</span> of surface air. Air weighs ~1.2 g per litre, so that's about <strong>2.9 kg of gas</strong>. Breathe it down to 50 bar and you've exhaled roughly 2.2 kg. You're now ~2 kg more buoyant than at the start. Your weights must still hold you at a 5 m safety stop with a near-empty tank. That's how a proper weight check is done.</p>
+        </div>
+
+        <div class="feel"><span class="ico">🫁</span><div><span class="lbl">Feel the number</span>Your lungs are the finest buoyancy control you own. A deep breath can add 2 L or more of volume, which is <b>~2 kg of lift</b>. Experienced divers hover over coral by breathing a little deeper or a little shallower, without touching the BCD.</div></div>
+
+        <h4>Trim: the physics of looking effortless</h4>
+        <p>Water is about 850× denser than air, so drag dominates everything. Drag grows with your frontal area and with the <em>square</em> of your speed, which means the power you need grows with the <em>cube</em> of speed. Swim twice as fast and you need roughly 8× the power. A diver swimming at a 45° angle pushes a much bigger cross-section through the water than one lying flat. "Trim" (horizontal, streamlined, gear tucked in) cuts drag, and that cuts effort and air use (Chapter 3). Slow and flat wins.</p>
+
+        <details class="check"><summary>Halfway through a dive you're slowly sinking even though you're kicking. What's the physics-first fix?</summary>
+        <p>Stop kicking and add a short puff to your BCD, because your wetsuit has compressed with depth. Then fine-tune with your breathing. Kicking to stay up wastes air and stirs up sand.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-air">
+      <header><span class="chno">CH 3</span><h3>Why your tank shrinks at depth</h3></header>
+      <p class="hook">Same lungs, same breaths, but each one costs more at depth.</p>
+      <div class="body">
+        <p>Your regulator delivers air at the surrounding pressure, or you couldn't inhale. So a lungful at 30 m (4 bar) holds <strong>four times as many air molecules</strong> as a lungful on the beach, and it drains the cylinder four times as fast.</p>
+        <p>Divers measure breathing as <strong>SAC</strong> (surface air consumption): litres per minute at surface pressure. A relaxed recreational diver might be around 15–25 L/min. Cold, stress, currents and poor trim push it up, sometimes a lot. We'll use 20 L/min.</p>
+
+        <div class="worked">
+          <span class="lbl">Worked example · how long does a 12 L tank last?</span>
+          <p class="small">12 L cylinder filled to 200 bar = 2,400 surface litres. We keep 50 bar (600 L) as a reserve, so <strong>1,800 L is usable</strong>. Consumption at depth = SAC × absolute pressure.</p>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Pressure</th><th>Air used per minute</th><th>Time on 1,800 L</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">20 L</td><td class="num">90 min</td></tr>
+              <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">40 L</td><td class="num">45 min</td></tr>
+              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">60 L</td><td class="num">30 min</td></tr>
+              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">80 L</td><td class="num">22.5 min</td></tr>
+              <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">100 L</td><td class="num">18 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:8px 0 0">These are simplified: they ignore descent and ascent time, and real gas at 200 bar packs slightly less than the ideal-gas figure. The shape is what matters: <strong>the same tank lasts a quarter as long at 30 m as at the surface.</strong></p>
+        </div>
+
+        <h4>Why keep a reserve? Do the ascent maths</h4>
+        <p>From 30 m, rising at 9 m/min takes ~3 minutes at an average of about 2.5 bar: <span class="eq">20 × 2.5 × 3 ≈ 150 L</span>. A 3-minute safety stop at 5 m (1.5 bar) costs <span class="eq">20 × 1.5 × 3 = 90 L</span>. That's ~240 L, or 20 bar from a 12 L tank, <em>for a calm diver</em>. Now picture sharing air with an out-of-air buddy who's breathing hard: two people, maybe double the SAC. A 50-bar reserve stops looking conservative.</p>
+
+        <div class="feel"><span class="ico">🎈</span><div><span class="lbl">Feel the number</span>Air at 30 m is 4× denser, so it's literally heavier to move through your regulator and airways. That's part of why exertion at depth feels harder, and why <b>slow, deep breaths</b> make your gas last longer than quick shallow ones.</div></div>
+
+        <details class="check"><summary>Your SAC rises from 20 to 30 L/min in a current. How long does 1,800 L now last at 20 m?</summary>
+        <p>30 × 3 bar = 90 L/min, so 1,800 ÷ 90 = <strong>20 minutes</strong> instead of 30. Effort costs gas, and depth multiplies the cost.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-gas">
+      <header><span class="chno">CH 4</span><h3>Nitrogen, decompression &amp; narcosis</h3></header>
+      <p class="hook">Your body is a soda bottle, and you decide how fast to open it.</p>
+      <div class="body">
+        <p>Air is about 79% nitrogen and 21% oxygen. Each gas behaves as if it were alone, with a <strong>partial pressure</strong> = fraction × absolute pressure (Dalton's law). <strong>Henry's law</strong> says the amount of gas that dissolves in a liquid is proportional to its partial pressure. Your blood and tissues are the liquid.</p>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Depth</th><th>Absolute</th><th>Nitrogen pp (air)</th><th>Oxygen pp (air)</th><th>Oxygen pp (EAN32)</th></tr></thead>
+          <tbody>
+            <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">0.79</td><td class="num">0.21</td><td class="num">0.32</td></tr>
+            <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">1.58</td><td class="num">0.42</td><td class="num">0.64</td></tr>
+            <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.37</td><td class="num">0.63</td><td class="num">0.96</td></tr>
+            <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">3.16</td><td class="num">0.84</td><td class="num">1.28</td></tr>
+            <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">3.95</td><td class="num">1.05</td><td class="num"><strong>1.60</strong> ⚠</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Loading up: tissues with half-times</h4>
+        <p>At 30 m, you're breathing nitrogen at 3.16 bar while your tissues are still at ~0.79. Nitrogen flows in. It doesn't flow in all at once. Decompression models picture the body as a set of "compartments", from fast ones like blood to slow ones like joints and fat, each with a <em>half-time</em>. Common models span half-times from a few minutes to more than ten hours.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 20-minute tissue at 30 m</span>
+          <p style="margin:0">Gap to fill: 3.16 − 0.79 = 2.37 bar. After one half-time (20 min) the tissue is halfway: <span class="eq">0.79 + 0.5 × 2.37 ≈ 1.98 bar</span>. After two half-times (40 min) it's three-quarters: <span class="eq">≈ 2.57 bar</span>, more than <strong>three times</strong> its surface level. Bring that tissue straight to 1 bar and it's heavily supersaturated, like a shaken soda.</p>
+        </div>
+
+        <h4>Coming up: why slow ascents and safety stops work</h4>
+        <p>A modest supersaturation leaves your tissues harmlessly through the lungs. Too much, too fast, and the gas forms bubbles in tissue and blood. That's <strong>decompression sickness</strong> ("the bends"): joint pain, numbness, fatigue, and in serious cases paralysis. Recreational divers stay within <strong>no-decompression limits</strong> (NDLs), ascend slowly (agency maximums are 18 m/min, and many computers want ~9–10 m/min), and add a 3-minute <strong>safety stop at about 5 m</strong>.</p>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Depth (air)</th><th class="num">12 m</th><th class="num">18 m</th><th class="num">30 m</th><th class="num">40 m</th></tr></thead>
+          <tbody><tr><td>First-dive no-stop limit*</td><td class="num">147 min</td><td class="num">56 min</td><td class="num">20 min</td><td class="num">9 min</td></tr></tbody>
+        </table></div>
+        <p class="small muted">*Published values of the PADI Recreational Dive Planner (air), for illustration. Computers and other tables differ. Note how fast the limit collapses with depth.</p>
+        <div class="callout"><h4>Flying after diving</h4><p>A plane cabin is pressurised to roughly 0.75–0.8 bar, lower than sea level, which makes any leftover nitrogen more likely to bubble. Widely used guidance (originally from DAN workshops, and repeated by Indian dive centres) is to wait <strong>at least 12 hours after a single no-stop dive and 18 hours after multiple dives or days of diving</strong>, and longer after decompression dives. Andaman divers flying out of Port Blair: plan your last dive day around your flight.</p></div>
+
+        <h4>Nitrogen narcosis: the "martini effect"</h4>
+        <p>At high partial pressure, nitrogen acts like a mild anaesthetic: slowed thinking, overconfidence, fixation, giggles or anxiety. Many divers start to notice it around <strong>30 m</strong>, which is one reason the Advanced level stops there. It varies between people and from day to day. Two things make it manageable: it gets stronger the deeper you go, and it <strong>fades within moments when you go up a few metres</strong>. No hangover.</p>
+
+        <h4>Oxygen: essential, then toxic</h4>
+        <p>Breathing oxygen at a high partial pressure can trigger convulsions without warning, which underwater can mean drowning. Recreational training uses <strong>1.4 bar</strong> as the working limit (1.6 as an absolute contingency). That sets a <strong>maximum operating depth (MOD)</strong> for each gas:</p>
+        <div class="worked">
+          <span class="lbl">Worked example · maximum depths at ppO₂ 1.4 bar</span>
+          <p style="margin:0">Air (21%): 1.4 ÷ 0.21 = 6.67 bar, which is <strong>~56 m</strong>, far below recreational limits. EAN32: 1.4 ÷ 0.32 = 4.375 bar, which is <strong>~34 m</strong>. EAN36: 1.4 ÷ 0.36 = 3.89 bar, which is <strong>~29 m</strong>.<br>
+          Why bother with nitrox, then? Less nitrogen. At 30 m on EAN32 your nitrogen pressure is 0.68 × 4 = 2.72 bar, the same as breathing air at only ~24.4 m (the "equivalent air depth"). That means longer no-stop times and shorter surface intervals. DIVEIndia, for example, requires nitrox certification for its Barren Island trips.</p>
+        </div>
+        <div class="callout warn"><h4>If something feels wrong after a dive</h4><p>Joint pain, tingling, unusual fatigue or breathlessness after diving needs oxygen and medical help, fast. The PADI destination guide lists a hyperbaric chamber at Port Blair for the Andamans. Know where your nearest chamber is before you dive, and consider dive insurance (for example through DAN).</p></div>
+        <details class="check"><summary>You planned a 30 m dive on EAN36. Is that OK?</summary>
+        <p>30 m = 4 bar, and 0.36 × 4 = <strong>1.44 bar</strong>, just over the 1.4 working limit. Use EAN32 (1.28 bar at 30 m) or plan shallower (MOD ≈ 29 m).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-ears">
+      <header><span class="chno">CH 5</span><h3>Ears, sinuses &amp; equalising</h3></header>
+      <p class="hook">Why ears hurt at 2 m, and why the deep end is easier.</p>
+      <div class="body">
+        <p>Behind each eardrum is the <strong>middle ear</strong>, a small pocket of air connected to the back of your throat by the narrow <strong>Eustachian tube</strong>. As you descend, water pushes the eardrum inward. The air behind it stays at surface pressure until you open the tube and let higher-pressure air in. That's <em>equalising</em>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the force on your eardrum at 2 m</span>
+          <p style="margin:0">Pressure difference at 2 m: 0.2 bar = 20,000 Pa. An eardrum's working area is well under a square centimetre (say ~0.7 cm² = 0.00007 m²). Force = 20,000 × 0.00007 ≈ <strong>1.4 newtons</strong>, about the weight of a <strong>140 g</strong> object balanced on a membrane thinner than paper. At 2 m you're barely below the surface, and it already hurts.</p>
+        </div>
+        <p>Remember the Boyle table: the change from 0 to 2 m (1 → 1.2 bar) squeezes an air space by about 17%. From 30 to 32 m it's only 5%. <strong>The shallows are where equalising matters most.</strong></p>
+        <div class="feel"><span class="ico">👂</span><div><span class="lbl">Feel the number</span>If the pressure difference builds too far, soft tissue around the tube's opening can press it shut, and then no amount of blowing opens it. Diving-medicine texts commonly put this around <b>90 mmHg ≈ 0.12 bar, about 1.2 m of seawater</b>. Wait until it hurts and you may already be past the point where equalising works.</div></div>
+
+        <h4>How to equalise: early, often, gently</h4>
+        <ul>
+          <li><strong>Start before you leave the surface</strong>, then equalise every half-metre to metre in the first few metres, and keep going all the way down.</li>
+          <li><strong>Valsalva</strong>: pinch your nose and blow gently against it. Never hard.</li>
+          <li><strong>Toynbee</strong>: pinch your nose and swallow. <strong>Frenzel</strong>: pinch your nose and push air up with your tongue like a piston. It takes a bit of practice but is very gentle.</li>
+          <li>Wiggle your jaw. Descend feet-first, which helps air rise into the tubes.</li>
+          <li><strong>If it hurts, go up a metre and try again.</strong> Never push through pain, because a burst eardrum or inner-ear injury can end your diving.</li>
+          <li>Don't dive congested. Decongestants can wear off mid-dive and trap air on the way up (a "reverse block").</li>
+        </ul>
+        <p>The same physics applies to your <strong>sinuses</strong> (which equalise on their own through small openings, so congestion blocks them) and your <strong>mask</strong>: breathe out a little through your nose on descent, or the mask "squeezes" your face.</p>
+        <details class="check"><summary>Why is equalising easier between 20 and 30 m than between 0 and 10 m?</summary>
+        <p>0 → 10 m doubles the pressure (1 → 2 bar, a 100% change). 20 → 30 m goes from 3 → 4 bar, only 33%. Smaller relative change means smaller volume change, so less air to add per metre.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-light">
+      <header><span class="chno">CH 6</span><h3>Light, colour, sound &amp; heat</h3></header>
+      <p class="hook">Water is a filter, a lens, a speaker and a heat sink.</p>
+      <div class="body">
+        <h4>Why reds vanish first</h4>
+        <p>Water molecules absorb light, and they absorb long wavelengths (red) far more strongly than short ones (blue). Light fades exponentially with distance (the Beer–Lambert law): <span class="eq">I = I₀ × e^(−a·d)</span>, where <em>a</em> is the absorption coefficient for that colour. Using laboratory values for pure water:</p>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Colour</th><th>a (per m)</th><th>5 m</th><th>10 m</th><th>20 m</th><th>30 m</th></tr></thead>
+          <tbody>
+            <tr><td>🔴 Red 700 nm</td><td class="num">0.62</td><td class="num">4.4%</td><td class="num">0.2%</td><td class="num">≈0</td><td class="num">≈0</td></tr>
+            <tr><td>🟠 Orange 600 nm</td><td class="num">0.22</td><td class="num">33%</td><td class="num">11%</td><td class="num">1.2%</td><td class="num">0.1%</td></tr>
+            <tr><td>🟢 Green 550 nm</td><td class="num">0.057</td><td class="num">75%</td><td class="num">57%</td><td class="num">32%</td><td class="num">18%</td></tr>
+            <tr><td>🔵 Blue 450 nm</td><td class="num">0.009</td><td class="num">95%</td><td class="num">91%</td><td class="num">83%</td><td class="num">76%</td></tr>
+          </tbody>
+        </table></div>
+        <p class="small muted">Share of surface sunlight left travelling straight down through pure water (coefficients: Pope &amp; Fry, 1997). Real seawater also has plankton and sediment, which absorb and scatter more, especially along India's west-coast mainland sites.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the red snapper at 15 m</span>
+          <p style="margin:0">Sunlight reaching 15 m keeps <span class="eq">e^(−0.624 × 15) ≈ 0.009%</span> of its red, essentially none. So the fish has no red light to reflect and looks grey-brown. Then you switch on a torch 1 m away. The light travels 1 m out and 1 m back: <span class="eq">e^(−0.624 × 2) ≈ 29%</span> of the red survives. The fish suddenly turns scarlet. That's why underwater photographers use strobes and get close.</p>
+        </div>
+
+        <h4>The mask is a magnifying glass</h4>
+        <p>Light bends where it passes from water (refractive index ≈ 1.33) through your flat mask into air. Objects appear at about <strong>three-quarters of their real distance</strong>, so they look <strong>about a third bigger</strong>. That "2-metre" fish was probably 1.5 m, and the reef you're about to touch is further away than it looks.</p>
+
+        <h4>Sound: louder, faster, directionless</h4>
+        <p>Sound travels at about <strong>1,500 m/s in seawater versus ~343 m/s in air</strong>, roughly 4.4× faster. Your brain locates sounds mostly from the tiny difference in when they reach each ear. Underwater that difference shrinks by the same factor, and sound also travels through your skull bones straight to both inner ears. Result: you hear a boat engine clearly but can't tell where it is. <strong>Treat engine noise as "look up, stay close to the line or reef, and surface carefully"</strong>, ideally with a surface marker buoy.</p>
+
+        <h4>Heat: why 28 °C water still chills you</h4>
+        <p>Water conducts heat about <strong>25× faster than air</strong> (≈0.6 vs ≈0.025 W/m·K) and holds vastly more heat per litre. Your body is at 37 °C, so even the warm 26–30 °C seas of the Andamans and Lakshadweep steadily pull heat out on a long dive or a third dive of the day. A wetsuit works by trapping a thin layer of water that your body warms. Cold also raises your air consumption (Chapter 3).</p>
+        <details class="check"><summary>A diver at 25 m says the blood from a small cut looks green. Is something wrong?</summary>
+        <p>No. Blood's red has been absorbed by 25 m of water, so what's left reflecting is mostly green. Shine a torch on it and it's red again. Pure Beer–Lambert.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. CERTIFICATIONS =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · Certifications &amp; skill levels</span>
+      <h2>The ladder, from first breath to pro</h2>
+      <p>Most of the world's recreational divers train with one of a handful of agencies. Their courses map closely onto the international ISO 24801 levels, so a PADI, SSI or CMAS card is accepted at dive centres everywhere, including all the Indian centres listed below. Figures are taken from each agency's published standards (checked 3 Oct 2026).</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 0 · Try it</span><b>Try dive (not a certification)</b><span class="iso">ISO 11121 · intro experience</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Discover Scuba Diving</span><ul><li>Min age 10</li><li>Max 12 m, with a PADI pro at all times</li><li>One day; no card, no independent diving</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Try Scuba</span><ul><li>Min age 8</li><li>Pool / confined water only, max 5 m</li><li>No set duration</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Try Scuba · Introductory Scuba Experience</span><ul><li>Both standards are published by CMAS (2023)</li><li class="muted">Age/depth details not extracted (image-only PDF). Check the standard.</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Supervised</span><b>Supervised diver</b><span class="iso">ISO 24801-1 · Level 1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Scuba Diver</span><ul><li>Min age 15 (10 for Junior)</li><li>Max 12 m, under direct supervision of a PADI pro</li><li>A subset of Open Water that you can upgrade later</li></ul></div>
+          <div class="ag na"><span class="an">SSI</span><span class="cn">Scuba Diver</span>Offered by SSI centres (e.g. Dive Netrani lists it). Official SSI limits not verified here.</div>
+          <div class="ag na"><span class="an">CMAS</span><span class="cn">—</span>No direct equivalent; CMAS training starts at One Star.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Autonomous</span><b>Open Water: your first real licence</b><span class="iso">ISO 24801-2 · Level 2</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Open Water Diver</span><ul><li>Min age 10 (Junior until 15)</li><li>Max 18 m (10–11 yr olds: 12 m with a pro/parent)</li><li>2–4 days: eLearning 5–10 h, pool, 4 open-water dives</li><li>Swim 200 m (or 300 m with mask, fins, snorkel) + 10-min float</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Open Water Diver</span><ul><li>Min age 10</li><li>Max 18 m (10–11 yr olds: 12 m)</li><li>16–32 recommended hours; 4+ open-water dives, ≥80 min total</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">One Star Diver ★</span><ul><li>Min age 14 (with guardian consent)</li><li>Max 20 m with a buddy of the same level or higher</li><li>4+ open-water dives (5–20 m, ≥20 min each); swim 200 m</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Experienced</span><b>Advanced</b><span class="iso">Agency level (no single ISO level)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Advanced Open Water Diver</span><ul><li>Min age 12 (Junior) / 15</li><li>Max 30 m (12–14 yr olds: 21 m)</li><li>5 dives: Deep + Navigation + 3 electives; ~2 days</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Advanced Adventurer → Advanced Open Water / "Advanced Specialty Diver"</span><ul><li>Advanced Adventurer: 5 adventure dives, max 30 m (deep dive min age 12)</li><li>Advanced rating: 4 specialties + 24 logged dives</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Two Star Diver ★★</span><ul><li>Min age 15 (with consent)</li><li>Max 30 m (40 m with extra deep training)</li><li>10 logged dives since One Star; 8 training dives at 10–30 m</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Look after others</span><b>Rescue</b><span class="iso">Agency level</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Rescue Diver</span><ul><li>Min age 12 (Junior) / 15</li><li>Needs Advanced (or Adventure Diver with Navigation) + EFR first-aid/CPR within 24 months</li><li>~3 days at Indian centres</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Diver Stress &amp; Rescue</span><ul><li>Min age 12</li><li>Needs Open Water + first aid no older than 2 years</li><li>Training max 18 m</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Rescue Diver</span><ul><li>Min age 15 (with consent)</li><li>One Star + 20 logged dives + oxygen administration + valid first aid/CPR</li><li>Training dives at 5–15 m</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Professional</span><b>Divemaster / Dive leader</b><span class="iso">ISO 24801-3 · Level 3</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">PADI</span><span class="cn">Divemaster</span><ul><li>Min age 18</li><li>Advanced + Rescue + EFR (24 months) + medical clearance (12 months)</li><li>40 logged dives to start, 60 to certify</li><li>Weeks to months (centres list up to ~3 months)</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Divemaster</span><ul><li>Min age 18</li><li>40 dives / 25 h to start; 60 dives / 40 h to certify</li><li>Stress &amp; Rescue + Deep, Navigation, Night (or 5 dives each); 35–45 recommended hours</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Three Star Diver ★★★ <span class="muted small">(and a separate CMAS Divemaster)</span></span><ul><li>Three Star: min age 18; Two Star + CMAS Rescue + navigation specialty + CPR/first aid/oxygen; 50 logged dives incl. deep &amp; night</li><li>Max 40 m</li><li>Commonly mapped to ISO dive-leader level</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout note" style="margin-top:24px"><h4>Two Indian twists to know</h4>
+      <p><strong>Andaman &amp; Nicobar rules split dive centres into two categories.</strong> "Category A" centres follow WRSTC/ISO agency standards (the PADI/SSI/CMAS limits above). "Category B" centres follow National Institute of Water Sports (NIWS) norms instead. For Category B, the A&amp;N guidelines set a <strong>12–60 age band</strong> and a <strong>12 m limit for introductory dives</strong>. The A&amp;N rules also allow <strong>only no-decompression diving</strong>, and require an <strong>orientation dive</strong> if you have fewer than 30 logged dives or haven't dived in 3 months. Ask your centre which category it is.</p>
+      <p style="margin:0"><strong>Equivalence is approximate.</strong> Agencies recognise each other's cards for continuing education, but prerequisites differ (for example, CMAS One Star allows 20 m where PADI/SSI Open Water stop at 18 m). The table aligns them by role, not by identical rules.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Recreational scuba has no single world regulator. Standards come from training agencies, coordinated through the WRSTC and written into ISO standards. Countries and states add their own operating rules on top. In India, training follows agency standards, while state and UT tourism departments register and regulate operators. Every body below was checked on its official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>CMAS: World Underwater Federation</h4><p>The international federation for underwater sports (finswimming, freediving, underwater hockey and more) and a diver-training system with the One/Two/Three Star ladder. Its training standards are published free on its site.</p><a class="url" href="https://www.cmas.org/" target="_blank" rel="noopener">cmas.org</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>PADI</h4><p>Professional Association of Diving Instructors. The largest agency, with over 30 million certifications since 1966 (PADI's own figure). Most dive centres in India are PADI.</p><a class="url" href="https://www.padi.com/" target="_blank" rel="noopener">padi.com</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>SSI: Scuba Schools International</h4><p>Global agency whose Open Water and Divemaster programmes are aligned to ISO 24801-2 and -3. DIVEIndia (Andamans) and Barracuda Diving (Goa) teach SSI.</p><a class="url" href="https://www.divessi.com/" target="_blank" rel="noopener">divessi.com</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>NAUI</h4><p>National Association of Underwater Instructors: a long-established, US-based training agency. Named in the A&amp;N guidelines as a recognised instructor agency.</p><a class="url" href="https://www.naui.org/" target="_blank" rel="noopener">naui.org</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>BSAC: British Sub-Aqua Club</h4><p>UK club-based training system. Also listed by the A&amp;N administration among agencies whose instructors a dive centre may employ.</p><a class="url" href="https://www.bsac.com/" target="_blank" rel="noopener">bsac.com</a></div>
+      <div class="card"><span class="tag std">Standards council</span><h4>WRSTC</h4><p>World Recreational Scuba Training Council. Develops worldwide <em>minimum</em> training standards, through member councils RSTC (US), RSTC Europe, Canada and Japan. Indian A&amp;N rules refer to "WRSTC member agencies".</p><a class="url" href="https://wrstc.com/" target="_blank" rel="noopener">wrstc.com</a></div>
+      <div class="card"><span class="tag std">ISO standards</span><h4>ISO 24801-1 / -2 / -3</h4><p>Requirements for training recreational scuba divers: Level 1 Supervised diver, Level 2 Autonomous diver, Level 3 Dive leader (2014 editions).</p><a class="url" href="https://www.iso.org/standard/60461.html" target="_blank" rel="noopener">iso.org/standard/60461 (Level 2)</a><a class="url" href="https://www.iso.org/standard/60460.html" target="_blank" rel="noopener">…/60460 (L1)</a> <a class="url" href="https://www.iso.org/standard/60462.html" target="_blank" rel="noopener">…/60462 (L3)</a></div>
+      <div class="card"><span class="tag std">ISO standard</span><h4>ISO 11121:2017</h4><p>Requirements for introductory programmes to scuba diving: the "try dive" standard. It covers supervised open-water intro dives in daylight, no deeper than 12 m.</p><a class="url" href="https://www.iso.org/standard/68275.html" target="_blank" rel="noopener">iso.org/standard/68275</a></div>
+      <div class="card"><span class="tag">Safety &amp; medicine</span><h4>DAN: Divers Alert Network</h4><p>Not a regulator: a non-profit diving-safety organisation (research, emergency hotline, dive insurance). Source of the widely used flying-after-diving guidance.</p><a class="url" href="https://dan.org/" target="_blank" rel="noopener">dan.org</a> · <a class="url" href="https://www.daneurope.org/" target="_blank" rel="noopener">daneurope.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag in">Central government</span><h4>Ministry of Tourism: Indian Adventure Tourism Guidelines</h4><p>National safety guidelines for adventure activities (Version 2.0, 2018), with a dedicated scuba diving section covering operator, equipment and staff requirements. Listed under the Ministry's guidelines page.</p><a class="url" href="https://tourism.gov.in/schemes-and-guidelines/guidelines" target="_blank" rel="noopener">tourism.gov.in › guidelines</a></div>
+      <div class="card"><span class="tag in">Central institute</span><h4>NIWS: National Institute of Water Sports, Goa</h4><p>Government water-sports training institute under the Ministry of Tourism (via IITTM). Runs a scuba course and sets the safety "norms" that A&amp;N Category B centres and Goa's water-sports policy refer to.</p><a class="url" href="https://niws.nic.in/" target="_blank" rel="noopener">niws.nic.in</a><span class="small muted">Site was intermittently unreachable when checked on 3 Oct 2026.</span></div>
+      <div class="card"><span class="tag in">UT regulator</span><h4>Andaman &amp; Nicobar Administration: Directorate of Tourism</h4><p>Registers every scuba centre. Publishes guidelines covering the Category A/B split, depth and age limits, no-decompression-only diving, the list of areas open for diving, and the charges for diving inside Marine National Parks (see the official site).</p><a class="url" href="https://tourism.andamannicobar.gov.in/" target="_blank" rel="noopener">tourism.andamannicobar.gov.in</a></div>
+      <div class="card"><span class="tag in">State regulator</span><h4>Goa: Department of Tourism</h4><p>Water-sports operators register under the Goa Registration of Tourist Trade Act, 1982. Goa's water-sports regulation policy requires safety certification from NIWS (or another government-approved agency) for activities not licensed by the ports authorities.</p><a class="url" href="https://goatourism.gov.in/" target="_blank" rel="noopener">goatourism.gov.in</a></div>
+      <div class="card"><span class="tag in">UT administration</span><h4>Lakshadweep Administration &amp; SPORTS</h4><p>The UT administration's tourism pages list scuba facilities at Kadmat, Kavaratti and Bangaram. SPORTS (Society for Promotion of Nature Tourism and Sports) is the UT's tourism society that runs packages and dive centres.</p><a class="url" href="https://lakshadweep.gov.in/tourism/adventures/" target="_blank" rel="noopener">lakshadweep.gov.in</a> · <a class="url" href="https://www.lakshadweeptourism.com/" target="_blank" rel="noopener">lakshadweeptourism.com</a></div>
+      <div class="card"><span class="tag in">Sport federations</span><h4>USAI &amp; USFI (underwater sport, not dive training)</h4><p><strong>Underwater Sport Association India (USAI)</strong> is CMAS's listed Indian affiliate, for finswimming and target shooting. <strong>Underwater Sports Federation of India (USFI)</strong> runs national finswimming championships. Neither certifies recreational scuba divers.</p><a class="url" href="https://www.cmas.org/national-federations/asia/india-asai.html" target="_blank" rel="noopener">cmas.org › India (USAI)</a> · <a class="url" href="https://www.usfi.in/" target="_blank" rel="noopener">usfi.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to go</span>
+      <h2>Pick your level. We'll point you to the water.</h2>
+      <p>Real Indian dive centres, each checked on its own website or official agency listing. For courses, dates and fees, follow the link to each centre's own site and confirm directly with them before booking.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+    <div class="season">
+      <div><b>Andamans (Havelock, Neil)</b>Oct–May; peak Dec–Mar. Monsoon Jun–Sep limits diving. <span class="muted small">(PADI guide)</span></div>
+      <div><b>Lakshadweep</b>Oct–May; rough seas Jun–Sep. Kadmat school runs 1 Oct–1 May. <span class="muted small">(PADI; Lakshadweep Admin)</span></div>
+      <div><b>Netrani (Karnataka)</b>Oct–May; visibility usually 15–25 m. <span class="muted small">(Dive Netrani)</span></div>
+      <div><b>Pondicherry</b>Open all year; best Feb–Apr and Sep–Nov (20–30 m visibility). <span class="muted small">(Temple Adventures)</span></div>
+      <div><b>Goa (Grande Island)</b>Goa's policy bars water sports in monsoon or unsafe weather; no fixed dates are published. Confirm dates with your centre.</div>
+      <div><b>Tarkarli / Malvan</b>Maritime Board closed all water sports and scuba 26 May–31 Aug 2026 (news reports). Plan for roughly Sep/Oct–May.</div>
+      <div><b>Barren Island</b>Ideal window mid-Feb to mid-May (DIVEIndia).</div>
+      <div><b>Water temperature</b>About 26–30 °C across these sites in season (PADI guides; Dive Netrani).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-try" id="tab-try">① Try dive (no card)</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-ow" id="tab-ow">② Open Water</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-adv" id="tab-adv">③ Advanced</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-pro" id="tab-pro">④ Rescue &amp; Pro</button>
+    </div>
+
+    <!-- TRY -->
+    <div class="lvl-panel show" id="lvl-try" role="tabpanel" aria-labelledby="tab-try">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never dived and want to feel what breathing underwater is like before committing to a course. Expect a briefing, shallow skills practice and one guided dive with a professional beside you, to a maximum of 12 m. Read <a href="#ch-pressure">Ch 1</a> and <a href="#ch-ears">Ch 5</a> first. Equalising is the #1 thing that ends first dives early.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How long will I actually be underwater? (Some centres promise 40–50 min; some "dives" are 15 min.) One-to-one instructor? Max depth? In the Andamans: are you a Category A (agency-standard) or Category B (NIWS-norm) centre?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>The Dive Master Havelock</h4><span class="loc">Beach No. 2 (next to Nemo Reef), Havelock / Swaraj Dweep</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>Shore and boat try dives with a personal instructor. Shallow shore dives at Nemo Reef (5–8 m), boat dives to 12 m.</p>
+          <a class="url" href="https://www.thedivemasterhavelock.com/" target="_blank" rel="noopener">thedivemasterhavelock.com</a></div>
+        <div class="school"><div class="top"><div><h4>Barefoot Scuba</h4><span class="loc">Beach No. 3, Havelock / Swaraj Dweep</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>PADI Discover Scuba Diving with 1-on-1 instructor supervision, suitable for non-swimmers. Diving here since 2005.</p>
+          <a class="url" href="https://www.barefootscuba.in/" target="_blank" rel="noopener">barefootscuba.in</a></div>
+        <div class="school"><div class="top"><div><h4>Goa Diving</h4><span class="loc">Bogmalo, South Goa → Grande Island</span></div><span class="badge padi">PADI</span></div>
+          <p>Beginner dive at Grande Island with a guaranteed 40–50 minutes underwater. Age 10+. Private boat from Bogmalo.</p>
+          <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Colas Nagar, Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>Discover Scuba Diving to 12 m, no swimming needed, plus a 2-day Scuba Diver course. Describes itself as India's first east-coast dive centre. Open 365 days.</p>
+          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Temple Road, Murudeshwar → Netrani Island</span></div><span class="badge padi">PADI / SSI</span></div>
+          <p>Boat try-dive packages to Netrani with snorkelling and photos (30–40 min dive), plus pool experiences. Operating since 2009.</p>
+          <a class="url" href="https://netraniadventures.com/" target="_blank" rel="noopener">netraniadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>MTDC Indian Institute of Scuba Diving &amp; Aquatic Sports (IISDA)</h4><span class="loc">Tarkarli, Malvan, Sindhudurg (Maharashtra)</span></div><span class="badge gov">State-run · PADI 5★</span></div>
+          <p>Maharashtra Tourism's dive school, with a dedicated 25-ft training pool, classrooms and a beach resort. A gentle place to try diving in a pool before the sea.</p>
+          <a class="url" href="https://www.mtdc.co/en/stays/mtdc-tarkarli-iisda" target="_blank" rel="noopener">mtdc.co › Tarkarli IISDA</a></div>
+      </div>
+      <h4 style="margin-top:26px">Sites that suit a first dive</h4>
+      <div class="sites">
+        <div class="site"><b>Nemo Reef</b><span class="meta">Havelock · shore · ~4–16 m</span><p>Shallow, calm shore reef used for first dives and training.</p></div>
+        <div class="site"><b>Suzy's Wreck (SS Rita)</b><span class="meta">Grande Island, Goa · ~2–12 m</span><p>Sheltered shallow wreck, a classic Goan beginner site.</p></div>
+        <div class="site"><b>The Nursery</b><span class="meta">Netrani · 6–10 m</span><p>Shallow site full of juvenile fish, ideal for beginners.</p></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Havelock in Dec–Mar (calmest, clearest). Do a try dive on day 1, and if you love it, roll straight into an Open Water course. Ask whether the centre will credit your try dive toward the course.</p></div>
+    </div>
+
+    <!-- OPEN WATER -->
+    <div class="lvl-panel" id="lvl-ow" role="tabpanel" aria-labelledby="tab-ow">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want a lifetime licence to dive to 18 m (20 m for CMAS One Star) with a buddy, anywhere in the world. Budget 3–4 days: theory (or eLearning), a pool day and four open-water dives. Must swim 200 m and float for 10 minutes. Read <a href="#ch-buoyancy">Ch 2</a> and <a href="#ch-air">Ch 3</a>. Buoyancy and gas planning are the core skills.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Group size (2–4 is ideal)? Is there a full pool day before the sea? Which agency (PADI / SSI / CMAS)? Every centre below issues internationally recognised cards.</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>DIVEIndia</h4><span class="loc">Havelock &amp; Neil (Swaraj &amp; Shaheed Dweep), Andamans</span></div><span class="badge ssi">SSI Diamond ITC</span></div>
+          <p>India's largest dive school by its own count (since 2003; 18,000+ students certified). SSI Open Water at two islands, with ecology programmes alongside.</p>
+          <a class="url" href="https://diveindia.com/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>ScubaLov</h4><span class="loc">Havelock &amp; Neil, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>PADI 5-Star IDC Resort on Havelock and 5-Star Dive Resort on Neil (PADI listing). Choose busy, iconic Havelock or quieter Neil.</p>
+          <a class="url" href="https://www.scubalov.in/" target="_blank" rel="noopener">scubalov.in</a></div>
+        <div class="school"><div class="top"><div><h4>Lacadives</h4><span class="loc">Havelock (Taj Exotica) &amp; Chidiya Tapu, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>Describes itself as India's first scuba diving company, founded at Kadmat (Lakshadweep). Open Water runs 4–5 days. A "SCUBA in the City" option lets you do pool skills in Mumbai first.</p>
+          <a class="url" href="https://www.lacadives.com/activities/padi-open-water-diver-course/" target="_blank" rel="noopener">lacadives.com</a></div>
+        <div class="school"><div class="top"><div><h4>Goa Diving</h4><span class="loc">Bogmalo, South Goa</span></div><span class="badge padi">PADI</span></div>
+          <p>3-day PADI Open Water in small groups or one-to-one. Includes the digital manual and logbook. 35+ years in Goa.</p>
+          <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Barracuda Diving India</h4><span class="loc">Aldona, Goa → Grande Island</span></div><span class="badge ssi">SSI Diamond</span></div>
+          <p>SSI Try Scuba, Scuba Diver and Open Water. Also runs dive travel to Netrani, the Andamans and Lakshadweep.</p>
+          <a class="url" href="https://www.barracudadiving.com/" target="_blank" rel="noopener">barracudadiving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Murudeshwar, Karnataka</span></div><span class="badge padi">PADI / SSI</span></div>
+          <p>4-day Open Water: 1 classroom day, 1 pool day, 4 ocean dives over 2 days. Age 12+, 200 m swim.</p>
+          <a class="url" href="https://netraniadventures.com/padi-ssi-courses/" target="_blank" rel="noopener">netraniadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Dive Netrani</h4><span class="loc">Murudeshwar, Karnataka</span></div><span class="badge padi">PADI / SSI</span></div>
+          <p>Diving Netrani since 2008. PADI and SSI Open Water (4 days), with intro dives and Scuba Diver options.</p>
+          <a class="url" href="https://divenetrani.com/" target="_blank" rel="noopener">divenetrani.com</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>Open Water over 3–4 days, with one full day in a pool or freshwater lake. Dives off Pondicherry's artificial and natural reefs.</p>
+          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>MTDC IISDA</h4><span class="loc">Tarkarli, Maharashtra</span></div><span class="badge gov">State-run · PADI 5★</span></div>
+          <p>PADI scuba courses with on-site pool, classrooms and accommodation, plus EFR first aid.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/mtdcs-indian-institute-of-scuba-diving-aquatic/" target="_blank" rel="noopener">PADI listing</a> · <a class="url" href="https://www.mtdc.co/en/stays/mtdc-tarkarli-iisda" target="_blank" rel="noopener">mtdc.co</a></div>
+      </div>
+      <h4 style="margin-top:26px">Sites for new Open Water divers</h4>
+      <div class="sites">
+        <div class="site"><b>Aquarium</b><span class="meta">Havelock · boat · ~2–15 m</span><p>Calm, shallow and fishy. A favourite for training dives.</p></div>
+        <div class="site"><b>Margherita's Mischief &amp; K-Rock</b><span class="meta">Neil · ~6–19 m</span><p>Boulder reef and a volcanic rock on sand, suited to beginner–intermediate divers.</p></div>
+        <div class="site"><b>Grand Central Station</b><span class="meta">Netrani · gradual slope to ~20 m</span><p>Rabbitfish, parrotfish, batfish and barracuda. Stay within your 18 m.</p></div>
+        <div class="site"><b>Umma Gumma reef</b><span class="meta">Grande Island, Goa · to ~12 m</span><p>Rocky reef with a wall. Currents can run either way.</p></div>
+        <div class="site"><b>Kadmat</b><span class="meta">Lakshadweep · 20–50 m visibility</span><p>Calm lagoon on one side, coral wall on the other. Rays, turtles and reef sharks (Lakshadweep Admin).</p></div>
+        <div class="site"><b>Bus Stop</b><span class="meta">Neil · ~13–20 m</span><p>Gently sloping reef for certified divers. Plan depth carefully near your 18 m limit.</p></div>
+      </div>
+    </div>
+
+    <!-- ADVANCED -->
+    <div class="lvl-panel" id="lvl-adv" role="tabpanel" aria-labelledby="tab-adv">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're certified, have some logged dives, and want deeper (to 30 m), currents, wrecks, night and navigation. Read <a href="#ch-gas">Ch 4</a>: at 30 m your no-stop time is about 20 minutes, your air lasts a quarter as long as at the surface, and narcosis starts to appear.</p></div>
+        <div class="box"><h4>Physics-smart upgrade</h4><p class="small" style="margin:0">Add an Enriched Air Nitrox course. It's short, extends no-stop times at 18–30 m, and some Indian trips (Barren Island) require it.</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>The Dive Master Havelock</h4><span class="loc">Havelock, Andamans</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>PADI Advanced Open Water over 2–3 days: 5 dives (3 boat, 2 shore) plus a night dive.</p>
+          <a class="url" href="https://www.thedivemasterhavelock.com/" target="_blank" rel="noopener">thedivemasterhavelock.com</a></div>
+        <div class="school"><div class="top"><div><h4>Barefoot Scuba</h4><span class="loc">Havelock, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>PADI Advanced Open Water and specialties for certified divers, plus fun diving across Havelock's reefs.</p>
+          <a class="url" href="https://www.barefootscuba.in/" target="_blank" rel="noopener">barefootscuba.in</a></div>
+        <div class="school"><div class="top"><div><h4>DIVEIndia</h4><span class="loc">Havelock &amp; Neil</span></div><span class="badge ssi">SSI Diamond ITC</span></div>
+          <p>SSI Advanced Adventurer (intro to 5 specialties), nitrox, deep, plus XR (extended range), sidemount and rebreathers for later.</p>
+          <a class="url" href="https://diveindia.com/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Goa Diving</h4><span class="loc">Bogmalo, Goa</span></div><span class="badge padi">PADI</span></div>
+          <p>2-day PADI Advanced Open Water (Deep + Navigation + 3 electives). Also organises Netrani dive trips for certified divers.</p>
+          <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Murudeshwar</span></div><span class="badge padi">PADI / SSI</span></div>
+          <p>Advanced Open Water: 5 ocean dives over 2 days, max 30 m.</p>
+          <a class="url" href="https://netraniadventures.com/padi-ssi-courses/" target="_blank" rel="noopener">netraniadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>Advanced Open Water and Deep. Pondicherry has unusually many deep sites (its PADI listing cites 17+ sites from 5 to 40 m), and Temple pioneered PADI TecRec here.</p>
+          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Lacadives Kadmat</h4><span class="loc">Kadmat, Lakshadweep</span></div><span class="badge cmas">CMAS</span></div>
+          <p>The Lakshadweep Administration names Lacadives as operator of Kadmat's full dive centre. It runs beginner-to-advanced courses each season (1 Oct–1 May) and is described as offering CMAS courses up to instructor level.</p>
+          <a class="url" href="https://lakshadweep.gov.in/tourist-place/kadmath/" target="_blank" rel="noopener">lakshadweep.gov.in › Kadmat</a> · <a class="url" href="https://www.lacadives.com/" target="_blank" rel="noopener">lacadives.com</a></div>
+        <div class="school"><div class="top"><div><h4>SPORTS Lakshadweep dive centres</h4><span class="loc">Bangaram &amp; Kavaratti, Lakshadweep</span></div><span class="badge gov">UT tourism</span></div>
+          <p>Bangaram Dive Center is a PADI Resort run via SPORTS (Lakshadweep Tourism). Kavaratti's Dolphin Dive Centre is listed on the UT tourism site. Book as part of SPORTS packages.</p>
+          <a class="url" href="https://lakshadweeptourism.com/watersports.html" target="_blank" rel="noopener">lakshadweeptourism.com</a> · <a class="url" href="https://www.padi.com/dive-center/india/bangaram-dive-center/" target="_blank" rel="noopener">PADI listing</a></div>
+      </div>
+      <h4 style="margin-top:26px">Sites that need Advanced skills</h4>
+      <div class="sites">
+        <div class="site"><b>Dixon's Pinnacle</b><span class="meta">Havelock · ~16–35 m · current</span><p>Pinnacles in blue water. Deep-dive training and good air management needed.</p></div>
+        <div class="site"><b>Johnny's Gorge</b><span class="meta">Havelock · ~22–35 m</span><p>Known for whitetip reef sharks and schooling fish. Advanced divers only.</p></div>
+        <div class="site"><b>The Abyss</b><span class="meta">Netrani · ~35 m</span><p>Netrani's deep site. Also a small fishing-boat wreck resting at ~22 m.</p></div>
+        <div class="site"><b>Davy Jones Locker</b><span class="meta">St George's Island, Goa · ~12–16 m</span><p>Steel-hulled wreck. Possible strong current and low visibility, so it suits experienced divers.</p></div>
+        <div class="site"><b>Aravind's Wall</b><span class="meta">Pondicherry</span><p>Big fan corals on one of Temple Adventures' signature deeper sites.</p></div>
+        <div class="site"><b>Bangaram drop-offs</b><span class="meta">Lakshadweep</span><p>Reef walls falling into deep blue: manta rays, reef sharks, turtles (PADI guide).</p></div>
+      </div>
+      <div class="callout"><h4>Bucket-list getaway: Barren Island (India's only active volcano)</h4><p style="margin:0">DIVEIndia runs a 3-dive expedition from Havelock: 2 dives on nitrox, 1 on air. Prerequisites: Advanced/Deep + Nitrox, at least 30 logged dives and 2 days of check dives. Window mid-Feb to mid-May. <a href="https://diveindia.com/course/barren-island-diving/" target="_blank" rel="noopener">diveindia.com › Barren Island</a></p></div>
+    </div>
+
+    <!-- RESCUE & PRO -->
+    <div class="lvl-panel" id="lvl-pro" role="tabpanel" aria-labelledby="tab-pro">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to look after other divers (Rescue), or work in diving (Divemaster, the first pro level, min age 18, 60 logged dives to certify). These centres run Instructor Development or Instructor Training programmes, so they have deep teaching benches.</p></div>
+        <div class="box"><h4>Before you sign up</h4><p class="small" style="margin:0">Rescue needs current first aid/CPR (PADI EFR or SSI React Right) within 24 months. Divemaster internships often take weeks to months on-site. Ask about dive count, staff ratio and what "internship" includes.</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Barefoot Scuba</h4><span class="loc">Havelock, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>Describes itself as India's first PADI 5-Star Instructor Development centre, having trained "hundreds of dive professionals".</p>
+          <a class="url" href="https://www.barefootscuba.in/" target="_blank" rel="noopener">barefootscuba.in</a></div>
+        <div class="school"><div class="top"><div><h4>DIVEIndia</h4><span class="loc">Havelock &amp; Neil</span></div><span class="badge ssi">SSI Diamond ITC</span></div>
+          <p>SSI Diamond Instructor Training Center: 200+ dive pros trained (its figure). Stress &amp; Rescue, Divemaster, instructor courses, XR.</p>
+          <a class="url" href="https://diveindia.com/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>ScubaLov</h4><span class="loc">Havelock &amp; Neil</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>PADI 5-Star IDC Resort on Havelock. Pro-level PADI courses including Divemaster and instructor development.</p>
+          <a class="url" href="https://www.scubalov.in/" target="_blank" rel="noopener">scubalov.in</a></div>
+        <div class="school"><div class="top"><div><h4>Lacadives</h4><span class="loc">Havelock &amp; Chidiya Tapu</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>PADI 5-Star Instructor Development Center at Taj Exotica, Havelock, with a dedicated training pool.</p>
+          <a class="url" href="https://www.lacadives.com/" target="_blank" rel="noopener">lacadives.com</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★ · IDC</span></div>
+          <p>PADI Instructor Development Centre since 2014. Rescue, Divemaster, TecRec and rebreather diving. Runs the Temple Reef Foundation (artificial reef, clean-ups).</p>
+          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Goa Diving</h4><span class="loc">Bogmalo, Goa</span></div><span class="badge padi">PADI</span></div>
+          <p>3-day PADI Rescue Diver, EFR first aid, and PADI Divemaster (on enquiry).</p>
+          <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Murudeshwar</span></div><span class="badge padi">PADI / SSI</span></div>
+          <p>Rescue Diver course and Emergency First Response (first aid/CPR).</p>
+          <a class="url" href="https://netraniadventures.com/padi-ssi-courses/" target="_blank" rel="noopener">netraniadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>National Institute of Water Sports (NIWS)</h4><span class="loc">Caranzalem, Goa</span></div><span class="badge gov">Govt · Ministry of Tourism</span></div>
+          <p>Government institute that lists a scuba diving course among its water-sports training. It also sets the national safety norms used by regulators. A route for people heading into dive-operations careers in India.</p>
+          <a class="url" href="https://niws.nic.in/" target="_blank" rel="noopener">niws.nic.in</a></div>
+      </div>
+      <div class="callout note" style="margin-top:20px"><h4>Events worth knowing</h4><p style="margin:0"><strong>PADI Women's Dive Day</strong> is held every July worldwide (the 2026 edition was 18 July). July is monsoon on most Indian coasts, so Pondicherry, open all year, is the realistic Indian option. Temple Adventures' Temple Reef Foundation runs beach clean-ups and reef work, a good way to dive with purpose.</p></div>
+    </div>
+
+    <!-- GLOBAL BONUS -->
+    <div class="lab" style="margin-top:44px">
+      <span class="eyebrow">Bonus · Beyond India</span>
+      <h3>Five world-class trips from India</h3>
+      <div class="global">
+        <div class="g"><b>Maldives</b>Diveable year-round. Aug–Nov for mantas and whale sharks, Jan–Apr for the best visibility. <br><a href="https://www.padi.com/diving-in/maldives/" target="_blank" rel="noopener">PADI guide →</a></div>
+        <div class="g"><b>Sri Lanka</b>West/south-west coast Oct–Apr; north-east (Trincomalee) Feb–Nov. <br><a href="https://www.padi.com/diving-in/sri-lanka/" target="_blank" rel="noopener">PADI guide →</a></div>
+        <div class="g"><b>Thailand</b>Andaman Sea side Oct–Apr, Gulf side May–Sep, so somewhere is always in season. <br><a href="https://www.padi.com/diving-in/thailand/" target="_blank" rel="noopener">PADI guide →</a></div>
+        <div class="g"><b>Egypt (Red Sea)</b>Year-round, 20–50 m visibility. Hammerheads Jun–Sep. <br><a href="https://www.padi.com/diving-in/egypt/" target="_blank" rel="noopener">PADI guide →</a></div>
+        <div class="g"><b>Raja Ampat, Indonesia</b>Best Oct–Apr. Among the richest reefs on Earth, best for Advanced divers. <br><a href="https://www.padi.com/diving-in/raja-ampat/" target="_blank" rel="noopener">PADI guide →</a></div>
+      </div>
+    </div>
+
+    <div class="callout warn" style="margin-top:26px"><p style="margin:0"><strong>Safety note.</strong> This page explains the science; it is not dive training. Learn with a certified instructor, dive within your certification and your computer's limits, and complete the medical questionnaire honestly. A "yes" on the questionnaire means you need a doctor's clearance, and some Andaman centres (e.g. ScubaLov) also ask for medical clearance for divers over 50.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. Next up: paragliding, ice skating, skating…</div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
