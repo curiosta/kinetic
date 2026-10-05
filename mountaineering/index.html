@@ -144,6 +144,22 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">At 4,450 m: (1 − 2.256 × 10⁻⁵ × 4450)<sup>5.256</sup> ≈ 0.57, so 0.57 × 101.3 ≈ 58.1 kPa, and 0.2095 × 58.1 ≈ 12.2 kPa. Real pressure also shifts with weather and season. Our <a href="../running/#ch-altitude">Running page</a> shows what thin air does to your pace.</p>
         </div>
+        <h4>Real Himalayan air is a little kinder than the standard atmosphere</h4>
+        <p>The standard atmosphere is a mid-latitude average. Near the tropics, especially in summer, the air column is warmer and the pressure falls off more slowly with height. Physiologist John West showed in 1996 that a model atmosphere for these latitudes predicts measured high-altitude pressures to within about 1%: <span class="eq">P (mmHg) = e<sup>6.63268 − 0.1112 h − 0.00149 h²</sup></span>, with h in kilometres (<a href="https://journals.physiology.org/doi/10.1152/jappl.1996.81.4.1850" target="_blank" rel="noopener">J Appl Physiol, 1996</a>). He warns it shouldn't be used above about 45° latitude; all of the Indian Himalaya lies far south of that.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · standard atmosphere vs West's low-latitude model</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Place</th><th>Altitude</th><th>Standard atmosphere</th><th>West model</th><th>Difference</th></tr></thead>
+            <tbody>
+              <tr><td>Tshoka</td><td class="num">3,050 m</td><td class="num">69.7 kPa</td><td class="num">71.1 kPa</td><td class="num">+2%</td></tr>
+              <tr><td>Chaurikhang base camp</td><td class="num">4,450 m</td><td class="num">58.1 kPa</td><td class="num">59.9 kPa</td><td class="num">+3%</td></tr>
+              <tr><td>Everest base camp</td><td class="num">≈ 5,364 m</td><td class="num">51.4 kPa</td><td class="num">53.4 kPa</td><td class="num">+4%</td></tr>
+              <tr><td>South Col, Everest</td><td class="num">7,986 m</td><td class="num">35.7 kPa</td><td class="num">37.9 kPa (284 mmHg)</td><td class="num">+6%</td></tr>
+              <tr><td>Everest summit</td><td class="num">8,849 m</td><td class="num">31.4 kPa</td><td class="num">33.7 kPa (253 mmHg)</td><td class="num">+7%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Measured checks (<a href="https://journals.physiology.org/doi/10.1152/jappl.1999.86.3.1062" target="_blank" rel="noopener">West, J Appl Physiol 1999</a>): the summit barometer read 253 mmHg in October 1981 and within about 1 mmHg of that in May 1997; a barometer left on the South Col in 1998 averaged 284 mmHg in May, rising to 287 mmHg by August. 1 mmHg = 0.1333 kPa. The difference is small at trekking heights and matters most near 8,000 m, where every few percent of oxygen counts. Our Altitude Lab keeps the standard atmosphere, so it's slightly pessimistic up high.</p>
+        </div>
         <div class="feel"><span class="ico">🏔️</span><div><span class="lbl">Feel the number</span>At HMI's base camp, every breath holds a little more than half the oxygen of a breath in Mumbai or Chennai. Walking uphill there feels like running at home.</div></div>
         <details class="check"><summary>About what share of sea-level oxygen is in each breath at 5,400 m (Everest base camp)?</summary>
         <p>(1 − 2.256 × 10⁻⁵ × 5400)<sup>5.256</sup> ≈ <strong>0.51</strong>: about half.</p></details>
@@ -173,6 +189,20 @@
             </tbody>
           </table></div>
           <p class="small" style="margin:10px 0 0">2,000 m ÷ 500 m = 4 days of climbing, plus 2 extra nights. The CDC notes these rules can still be too fast for some people and too slow for others.</p>
+        </div>
+        <h4>What the 2024 guidelines say, and how AMS is scored</h4>
+        <p>The Wilderness Medical Society updated its guidelines in 2024 (<a href="https://wms.org/magazine/1463/2024-Altitude-Summary/default.aspx" target="_blank" rel="noopener">WMS summary</a>). The ascent advice is the same idea, phrased slightly differently: above 3,000 m, raise your sleeping altitude by no more than 500 m a day, and take a rest day (no higher sleep) <strong>every 3–4 days</strong>. Sleeping one night at an intermediate altitude also lowers the risk. It found no benefit from "forcing" fluids, coca products or short puffs from oxygen canisters. For HAPE it advises descending at least 1,000 m, or until symptoms resolve, with as little exertion as possible.</p>
+        <p>Doctors and expedition leaders often use the <strong>Lake Louise AMS score</strong> (2018 version, used by the WMS): four symptoms, each scored 0 (none) to 3 (severe): headache, stomach upset (poor appetite, nausea, vomiting), fatigue or weakness, and dizziness or light-headedness. A total of <strong>3–5 with a headache</strong> is mild AMS; <strong>6–12</strong> is moderate to severe.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · scoring two trekkers on the evening they reach 4,000 m</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th></th><th>Headache</th><th>Stomach</th><th>Fatigue</th><th>Dizziness</th><th>Total</th><th>Reading</th></tr></thead>
+            <tbody>
+              <tr><td>Trekker A</td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">3</td><td>Mild AMS: don't go higher</td></tr>
+              <tr><td>Trekker B</td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td class="num">1</td><td class="num">7</td><td>Moderate–severe: rest, get medical advice; descend if worse</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The score helps a group talk about symptoms honestly; it doesn't diagnose HACE. Stumbling (failing a heel-to-toe walk) or confusion is a sign of HACE whatever the score: that person goes down. Medicines for altitude are a decision for a doctor, not for this page.</p>
         </div>
         <div class="callout warn"><h4>The three rules that prevent deaths</h4><p style="margin:0">From the CDC: know the early symptoms and admit to them; never go up to sleep higher with any symptoms of altitude illness, however mild; and go down if symptoms get worse despite rest or treatment. AMS usually improves quickly after descending 300 m or more. Discuss any altitude medicine with a doctor before you go.</p></div>
         <details class="check"><summary>You sleep at 3,000 m tonight. Using the 500 m rule, which is the earliest night you can sleep at 4,000 m?</summary>
@@ -225,6 +255,21 @@
             </tbody>
           </table></div>
           <p class="small" style="margin:10px 0 0">85 × 9.81 × 1000 ≈ 834 kJ; ÷ 0.20 ≈ 4,169 kJ; ÷ 4.184 ≈ 996 kcal. This is only the lifting: walking, keeping warm and the descent cost more.</p>
+        </div>
+        <h4>Walking costs too, and the ground matters</h4>
+        <p>Lifting work is only part of the bill. Army researchers Pandolf, Givoni and Goldman fitted an equation to measurements of soldiers walking with loads (<a href="https://journals.physiology.org/doi/10.1152/jappl.1977.43.4.577" target="_blank" rel="noopener">J Appl Physiol, 1977</a>): <span class="eq">M = 1.5W + 2.0(W + L)(L/W)² + η(W + L)(1.5V² + 0.35VG)</span>, in watts, with body mass W and load L in kg, speed V in m/s, grade G in % and a terrain factor η measured by Soule and Goldman (<a href="https://journals.physiology.org/doi/10.1152/jappl.1972.32.5.706" target="_blank" rel="noopener">1972</a>): 1.1 for a dirt road, 1.5 for heavy brush, 2.5 for 15 cm of soft snow, 3.3 for 25 cm.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 70 kg trekker, 15 kg pack, 0.8 m/s up a 15% trail (432 m of height an hour)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Ground (η)</th><th>Metabolic rate</th><th>To gain 1,000 m (2 h 19 min)</th><th>Share that's lifting</th></tr></thead>
+            <tbody>
+              <tr><td>Dirt road (1.1)</td><td class="num">595 W</td><td class="num">≈ 1,190 kcal</td><td class="num">17%</td></tr>
+              <tr><td>Heavy brush, rough trail (1.5)</td><td class="num">771 W</td><td class="num">≈ 1,540 kcal</td><td class="num">13%</td></tr>
+              <tr><td>Soft snow, 15 cm (2.5)</td><td class="num">1,209 W</td><td class="num">≈ 2,410 kcal</td><td class="num">8%</td></tr>
+              <tr><td>Soft snow, 25 cm (3.3)</td><td class="num">1,560 W</td><td class="num">≈ 3,110 kcal</td><td class="num">6%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Standing terms: 1.5 × 70 + 2 × 85 × (15/70)² ≈ 113 W. Walking term: 85 × (1.5 × 0.8² + 0.35 × 0.8 × 15) ≈ 439 W, × η. Lifting power is 85 × 9.81 × 0.12 ≈ 100 W. On a good trail the equation's answer is close to our 20% rule of thumb above; in deep snow the same climb costs two to three times as much, which is why nobody keeps 0.8 m/s in it. Later studies found the equation <em>under</em>-predicts for heavy loads and fast paces, and it doesn't account for altitude, so treat these as minimums.</p>
         </div>
         <p>That's why the institutes ask for fitness before you arrive. NIM recommends a month of walking at least 5 km with a 15 kg pack, 30 minutes of cardio a day, and being able to do 20 push-ups and 5 pull-ups, and it tests trainees on a 10 km walk with a 10 kg load before they go into the mountains. ABVIMAS suggests at least two months of cardio and strength training.</p>
         <details class="check"><summary>A 60 kg climber with a 10 kg pack gains 500 m. About how much energy at 20% efficiency?</summary>
@@ -359,11 +404,12 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National body</span><h4>Indian Mountaineering Foundation (IMF)</h4><p>The apex national body for mountaineering and allied sports, formed on 5 January 1961, a UIAA member (according to the IMF), and the office that runs the expedition application process for Indian peaks.</p><a class="url" href="https://indmount.org/IMF/trekking" target="_blank" rel="noopener">indmount.org</a></div>
-      <div class="card"><span class="tag">Institute</span><h4>Nehru Institute of Mountaineering (NIM), Uttarkashi</h4><p>Set up after a 1964 proposal by the Ministry of Defence and the Uttar Pradesh government, and headed by a principal chosen by the Ministry of Defence; runs adventure, Basic, Advanced, instructor, rescue, skiing and sport climbing courses.</p><a class="url" href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a></div>
-      <div class="card"><span class="tag">Institute</span><h4>Himalayan Mountaineering Institute (HMI), Darjeeling</h4><p>Founded on 4 November 1954 to mark the first ascent of Everest by Tenzing Norgay and Edmund Hillary; field training in West Sikkim.</p><a class="url" href="https://hmidarjeeling.com/courses/basic-course/" target="_blank" rel="noopener">hmidarjeeling.com</a></div>
-      <div class="card"><span class="tag">Institute</span><h4>ABVIMAS, Manali</h4><p>Founded on 16 September 1961 as the Western Himalayan Mountaineering Institute; mountaineering, skiing, water sports and rescue training across Himachal Pradesh.</p><a class="url" href="https://www.abvimas.org/course/mountaineering-course-list/" target="_blank" rel="noopener">abvimas.org</a></div>
-      <div class="card"><span class="tag">Institute</span><h4>Jawahar Institute of Mountaineering &amp; Winter Sports, Pahalgam</h4><p>Basic and Advanced mountaineering, instructor, skiing and snowboarding courses in Jammu &amp; Kashmir.</p><a class="url" href="https://www.jawaharinstitutepahalgam.com/Mountaineering.php" target="_blank" rel="noopener">jawaharinstitutepahalgam.com</a></div>
+      <div class="card"><span class="tag">National body</span><h4>Indian Mountaineering Foundation (IMF)</h4><p>The apex national body for mountaineering and allied sports, formed on 5 January 1961, a UIAA member, and the office that runs the expedition application process for Indian peaks.</p><div class="accred"><span class="ac ok">✓ UIAA full member (since 1981)</span><span class="acsrc">Listed in the member table of the <a href="https://www.theuiaa.org/documents/members/UIAAAnnualReport-2017_WEB.pdf" target="_blank" rel="noopener">UIAA's 2017 annual report</a>; the UIAA's current online directory didn't load for us (5 Oct 2026).</span></div><a class="url" href="https://indmount.org/IMF/trekking" target="_blank" rel="noopener">indmount.org</a></div>
+      <div class="card"><span class="tag">Institute</span><h4>Nehru Institute of Mountaineering (NIM), Uttarkashi</h4><p>Set up after a 1964 proposal by the Ministry of Defence and the Uttar Pradesh government, and headed by a principal chosen by the Ministry of Defence; runs adventure, Basic, Advanced, instructor, rescue, skiing and sport climbing courses.</p><div class="accred"><span class="ac ok">✓ Government institute (Ministry of Defence)</span><span class="ac ok">✓ UIAA associate member (2017 list)</span><span class="acsrc">Listed among the <a href="https://igod.gov.in/organization/Ste83XQBYNG-XPnvjOsx/AUTBDY/list" target="_blank" rel="noopener">Department of Defence autonomous bodies (IGOD)</a> on the government's directory; associate member since 2011 in the UIAA's 2017 report.</span></div><a class="url" href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a></div>
+      <div class="card"><span class="tag">Institute</span><h4>Himalayan Mountaineering Institute (HMI), Darjeeling</h4><p>Founded on 4 November 1954 to mark the first ascent of Everest by Tenzing Norgay and Edmund Hillary; field training in West Sikkim.</p><div class="accred"><span class="ac ok">✓ Government institute (Ministry of Defence &amp; West Bengal)</span><span class="ac ok">✓ UIAA associate member (2017 list)</span><span class="acsrc">Listed among the <a href="https://igod.gov.in/organization/Ste83XQBYNG-XPnvjOsx/AUTBDY/list" target="_blank" rel="noopener">Department of Defence autonomous bodies (IGOD)</a>; HMI's own site says it's run jointly by the Government of India and West Bengal, with the Defence Minister as president.</span></div><a class="url" href="https://hmidarjeeling.com/courses/basic-course/" target="_blank" rel="noopener">hmidarjeeling.com</a></div>
+      <div class="card"><span class="tag">Institute</span><h4>ABVIMAS, Manali</h4><p>Founded on 16 September 1961 as the Western Himalayan Mountaineering Institute; mountaineering, skiing, water sports and rescue training across Himachal Pradesh.</p><div class="accred"><span class="ac ok">✓ State institute (Himachal)</span><span class="acsrc">Courses listed on its official site, abvimas.org.</span></div><a class="url" href="https://www.abvimas.org/course/mountaineering-course-list/" target="_blank" rel="noopener">abvimas.org</a></div>
+      <div class="card"><span class="tag">Institute</span><h4>Jawahar Institute of Mountaineering &amp; Winter Sports, Pahalgam</h4><p>Basic and Advanced mountaineering, instructor, skiing and snowboarding courses in Jammu &amp; Kashmir.</p><div class="accred"><span class="ac ok">✓ Government institute (Ministry of Defence &amp; J&amp;K)</span><span class="acsrc">Its <a href="https://jawaharinstitutepahalgam.com/Aboutus.php" target="_blank" rel="noopener">About page</a>: the Defence Minister is president and the J&amp;K Chief Minister vice-president; instructors are posted by the Ministry of Defence. It isn't on the IGOD autonomous-bodies page we checked.</span></div><a class="url" href="https://www.jawaharinstitutepahalgam.com/Mountaineering.php" target="_blank" rel="noopener">jawaharinstitutepahalgam.com</a></div>
+      <div class="card"><span class="tag">Institute</span><h4>NIMAS, Dirang (Arunachal Pradesh)</h4><p>The National Institute of Mountaineering and Adventure Sports runs Basic (28 days), Advanced (32 days), Search &amp; Rescue and Method of Instruction courses in the Eastern Himalaya, plus sport climbing, MTB, paragliding, rafting, kayaking and scuba.</p><div class="accred"><span class="ac ok">✓ Government institute (Ministry of Defence)</span><span class="acsrc">Listed among the <a href="https://igod.gov.in/organization/Ste83XQBYNG-XPnvjOsx/AUTBDY/list" target="_blank" rel="noopener">Department of Defence autonomous bodies (IGOD)</a>.</span></div><a class="url" href="https://nimasdirang.com/courses/mountaineering" target="_blank" rel="noopener">nimasdirang.com</a></div>
     </div>
   </div>
 </section>
@@ -376,6 +422,7 @@
       <h2>Pick your level. We'll point you to the mountains.</h2>
       <p>Real institutes, courses and official sources, each checked on its own website. Follow the link and confirm dates, age limits, eligibility and medical rules directly. Wherever you go: go up slowly, and come down if you feel worse.</p>
     </div>
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> Every course below is run by a government institute, so each card says which government: <span class="ac ok">✓ Government institute</span> means we found it on an official list (the government's directory of Ministry of Defence autonomous bodies) or on the institute's own official page, and the label names it. Where only an operator's own site makes a claim, we'd mark it <span class="ac claim">School's claim — …</span>, and <span class="ac unv">Accreditation: unverified</span> where we found nothing. The UIAA labels come from its 2017 annual report. Private trek and expedition companies aren't listed here; use the IMF's advisory questions for any organiser. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -414,6 +461,7 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>NIM · Adventure Course</h4><span class="loc">Uttarkashi, Uttarakhand</span></div><span class="badge gov">14 days</span></div>
           <p>Trekking, rock climbing, camping, cooking, navigation and conservation; 2026 batches on 17–30 Nov (ages 20–50) and 2–15 Dec (14–20).</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course on nimindia.net; NIM is on the Ministry of Defence autonomous-bodies list.</span></div>
           <a class="url" href="https://www.nimindia.net/adventurecourse" target="_blank" rel="noopener">nimindia.net</a></div>
       </div>
       <div class="sites">
@@ -430,16 +478,24 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>NIM · Basic Mountaineering Course</h4><span class="loc">Uttarkashi, Uttarakhand</span></div><span class="badge gov">28 days</span></div>
           <p>The foundation course in rock, snow and ice. The 2026 programme lists a batch on 19 Oct–15 Nov 2026 (ages 16–40); the 2027 programme starts on 22 Mar 2027.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course on nimindia.net; NIM is on the Ministry of Defence autonomous-bodies list.</span></div>
           <a class="url" href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a></div>
         <div class="school"><div class="top"><div><h4>HMI · Basic Course</h4><span class="loc">Darjeeling &amp; West Sikkim</span></div><span class="badge gov">28 days</span></div>
           <p>Rock training in Darjeeling, a trek via Yuksum, Tshoka and Dzongri, then glacier and ice work at Chaurikhang base camp and a height-gain climb.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (HMI)</span><span class="acsrc">Course on hmidarjeeling.com; HMI is on the Ministry of Defence autonomous-bodies list.</span></div>
           <a class="url" href="https://hmidarjeeling.com/courses/basic-course/" target="_blank" rel="noopener">hmidarjeeling.com</a></div>
         <div class="school"><div class="top"><div><h4>ABVIMAS · Basic Mountaineering Course</h4><span class="loc">Manali &amp; Dharamshala, Himachal Pradesh</span></div><span class="badge gov">BMC</span></div>
           <p>Basic and Advanced courses at Manali and Dharamshala; its site shows booking for the 384th BMC (1–26 Oct 2026). Needs matriculation and a doctor's certificate valid for 90 days.</p>
+          <div class="accred"><span class="ac ok">✓ State institute (Himachal)</span><span class="acsrc">Course on abvimas.org.</span></div>
           <a class="url" href="https://www.abvimas.org/course/mountaineering-course-list/" target="_blank" rel="noopener">abvimas.org</a></div>
         <div class="school"><div class="top"><div><h4>JIM&amp;WS · Basic Mountaineering Course</h4><span class="loc">Pahalgam, Jammu &amp; Kashmir</span></div><span class="badge gov">24 days</span></div>
           <p>Four summer batches from May to August (ages 17–40); all 2026 batches are completed or full, so check the next programme.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (JIM&amp;WS)</span><span class="acsrc">Course on the institute's official site; run under the Ministry of Defence and J&amp;K.</span></div>
           <a class="url" href="https://www.jawaharinstitutepahalgam.com/Mountaineering.php" target="_blank" rel="noopener">jawaharinstitutepahalgam.com</a></div>
+        <div class="school"><div class="top"><div><h4>NIMAS · Basic Mountaineering Course</h4><span class="loc">Dirang, Arunachal Pradesh</span></div><span class="badge gov">28 days</span></div>
+          <p>Training from Dirang and forward camps (New Melling, Mago, Jithang, Meerathang) up to an advance base camp at about 16,000 ft in the Eastern Himalaya. Check the course page for batch dates and eligibility.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIMAS)</span><span class="acsrc">On the Ministry of Defence autonomous-bodies list; course listed on nimasdirang.com.</span></div>
+          <a class="url" href="https://nimasdirang.com/courses/mountaineering" target="_blank" rel="noopener">nimasdirang.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-adv" role="tabpanel" aria-labelledby="tab-adv">
@@ -450,15 +506,19 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>NIM · Advance Mountaineering Course</h4><span class="loc">Uttarkashi &amp; Garhwal</span></div><span class="badge gov">28 days</span></div>
           <p>Trains lead climbers and expedition members; trainees plan and climb a peak above 5,500 m. 2027 batches start 26 Apr, 27 May (ladies) and 14 Sep.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course on nimindia.net; NIM is on the Ministry of Defence autonomous-bodies list.</span></div>
           <a class="url" href="https://www.nimindia.net/advancemountaineering" target="_blank" rel="noopener">nimindia.net</a></div>
         <div class="school"><div class="top"><div><h4>NIM · Method of Instruction &amp; Search and Rescue</h4><span class="loc">Uttarkashi, Uttarakhand</span></div><span class="badge gov">21 days each</span></div>
           <p>For AMC 'A' graders from recognised institutes: MOI on 19 Oct–8 Nov 2026; Search &amp; Rescue on 22 Mar–11 Apr 2027.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course on nimindia.net; NIM is on the Ministry of Defence autonomous-bodies list.</span></div>
           <a class="url" href="https://www.nimindia.net/methodofinstruction" target="_blank" rel="noopener">nimindia.net</a></div>
         <div class="school"><div class="top"><div><h4>ABVIMAS · Method of Instruction (Mountaineering)</h4><span class="loc">Manali, Himachal Pradesh</span></div><span class="badge gov">MOI</span></div>
           <p>Its site shows booking for the 60th MOI (29 Sep–26 Oct 2026); needs an AMC 'A' grade and 10+2.</p>
+          <div class="accred"><span class="ac ok">✓ State institute (Himachal)</span><span class="acsrc">Course on abvimas.org.</span></div>
           <a class="url" href="https://www.abvimas.org/course/joining-instructions/" target="_blank" rel="noopener">abvimas.org</a></div>
         <div class="school"><div class="top"><div><h4>JIM&amp;WS · Advance Mountaineering Course</h4><span class="loc">Pahalgam, Jammu &amp; Kashmir</span></div><span class="badge gov">24 days</span></div>
           <p>Advanced rock and ice craft, expedition planning and summiting an 18,000 ft peak (ages 17–42).</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (JIM&amp;WS)</span><span class="acsrc">Course on the institute's official site; run under the Ministry of Defence and J&amp;K.</span></div>
           <a class="url" href="https://www.jawaharinstitutepahalgam.com/Mountaineering.php" target="_blank" rel="noopener">jawaharinstitutepahalgam.com</a></div>
       </div>
     </div>
@@ -528,7 +588,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 4 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

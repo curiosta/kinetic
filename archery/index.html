@@ -183,6 +183,21 @@
       <p class="hook">The arrow bends around the bow and still flies straight. That's no accident.</p>
       <div class="body">
         <p>On release, the string drives the back of the arrow forward while the front sits beside the riser. The shaft bends and oscillates as it clears the bow: the <strong>archer's paradox</strong>. An arrow with the right stiffness (<strong>spine</strong>) for the bow's draw weight recovers and flies true; too stiff or too weak and it leaves at an angle.</p>
+        <h4>What a spine number means</h4>
+        <p>"Spine" is measured, not guessed. The industry test (ASTM F2031, used by makers such as <a href="https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/" target="_blank" rel="noopener">Easton</a>; ASTM <a href="https://store.astm.org/f2031-05r14.html" target="_blank" rel="noopener">withdrew</a> the written standard in 2023 but the method is still the reference) rests the shaft on two supports 28 inches apart, hangs a 1.94 lb (880 g) weight from the middle and measures how far it sags. The sag in thousandths of an inch is the spine number, so a <strong>lower number is a stiffer arrow</strong>. Simple beam theory turns that sag into a bending stiffness: <span class="eq">EI = F L³ ÷ (48 δ)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · spine number to bending stiffness (F = 8.63 N, L = 0.711 m)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Spine</th><th>Sag δ</th><th>Bending stiffness EI</th><th>Typical use (rule of thumb)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">700</td><td class="num">17.8 mm</td><td class="num">3.6 N·m²</td><td>Light recurve draw weights</td></tr>
+              <tr><td class="num">600</td><td class="num">15.2 mm</td><td class="num">4.2 N·m²</td><td>↓</td></tr>
+              <tr><td class="num">500</td><td class="num">12.7 mm</td><td class="num">5.1 N·m²</td><td>↓</td></tr>
+              <tr><td class="num">400</td><td class="num">10.2 mm</td><td class="num">6.4 N·m²</td><td>Heavier draw weights, longer draws</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">500 spine: δ = 0.500 in = 12.7 mm; EI = 8.63 × 0.711³ ÷ (48 × 0.0127) ≈ 5.1 N·m². Going from 700 to 400 makes the shaft about 75% stiffer. The right spine for you also depends on arrow length, point weight and your release, which is why makers publish selection charts and coaches tune arrows by test-shooting.</p>
+        </div>
         <h4>Fletching keeps the point forward</h4>
         <p>Vanes or feathers at the back move the centre of drag behind the centre of mass. If the arrow turns sideways, the extra drag on the tail swings it back in line, like a weathervane. Slightly angled vanes also spin the arrow, averaging out small flaws.</p>
         <div class="worked">
@@ -273,6 +288,21 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">½ × 0.020 × 57.1² ≈ 32.6 J. Launched at 45°, a no-drag arrow from this bow could fly about v² ÷ g ≈ 330 m: one reason ranges need clear zones well behind the targets.</p>
         </div>
+        <h4>How much drag, really? A wind-tunnel answer</h4>
+        <p>Miyazaki and colleagues measured an Easton A/C/E target arrow in Japan's JAXA magnetic-suspension wind tunnel (the arrow floats in a magnetic field, so no support disturbs the air) and in free flight (<a href="https://www.bisp-surf.de/Record/PU201304002489" target="_blank" rel="noopener">Sports Engineering, 2013</a>). With a smooth, <strong>laminar</strong> boundary layer the drag coefficient was about <strong>1.5</strong>; once the flow along the shaft turned <strong>turbulent</strong>, at higher speeds and depending on the point and vanes, it rose to about <strong>2.6</strong>. A typical target arrow at 57 m/s sits right in the speed range where that switch happens.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · our 20 g arrow at 57.1 m/s, 5.5 mm shaft (illustrative), sea-level air</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Distance</th><th>Speed left (Cd 1.5 / 2.6)</th><th>Extra flight time vs no drag</th><th>Drift in a 3 m/s crosswind</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30 m</td><td class="num">55.3 / 54.0 m/s</td><td class="num">0.009 / 0.015 s</td><td class="num">≈ 3 / 4 cm</td></tr>
+              <tr><td class="num">50 m</td><td class="num">54.1 / 52.0 m/s</td><td class="num">0.024 / 0.042 s</td><td class="num">≈ 7 / 13 cm</td></tr>
+              <tr><td class="num">70 m</td><td class="num">53.0 / 50.2 m/s</td><td class="num">0.047 / 0.083 s</td><td class="num">≈ 14 / 25 cm</td></tr>
+              <tr><td class="num">90 m</td><td class="num">51.9 / 48.3 m/s</td><td class="num">0.078 / 0.139 s</td><td class="num">≈ 23 / 42 cm</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Drag force F = ½ ρ v² C<sub>d</sub> A, with A = π × (0.00275 m)² ≈ 2.4 × 10⁻⁵ m²: at launch about 0.07 N (laminar) or 0.12 N (turbulent). Speed falls as v = v₀ e<sup>−kx</sup> with k = ρ C<sub>d</sub> A ÷ 2m. For drift we use the "lag time" rule from ballistics: sideways drift ≈ wind speed × (real flight time − flight time with no drag). It assumes the fletching keeps the arrow pointing along its flight path; gusts, vane shape and spin all add their own effects. At 70 m a 25 cm drift is two 10-rings wide, which is why archers read flags and aim off.</p>
+        </div>
         <div class="callout warn"><h4>Range rules</h4><p style="margin:0">Shoot only at a supervised range. Nock and draw only on the shooting line and only towards the targets. Nobody goes forward of the line until every archer has stopped and the signal is given. Never "dry-fire" a bow (release without an arrow): the energy goes into the limbs and can break them.</p></div>
         <details class="check"><summary>Doubling arrow speed multiplies its energy by how much?</summary>
         <p>E ∝ v², so by <strong>4</strong>.</p></details>
@@ -359,8 +389,8 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National federation</span><h4>Archery Association of India (AAI)</h4><p>Founded on 8 August 1973; recognised by the Ministry of Youth Affairs and Sports; affiliated to World Archery, World Archery Asia, the South Asian Archery Federation and the Indian Olympic Association. Oversees recurve, compound, Indian round and para archery.</p><a class="url" href="https://www.indianarchery.org/about" target="_blank" rel="noopener">indianarchery.org</a></div>
-      <div class="card"><span class="tag">State associations</span><h4>AAI member units</h4><p>35 state and UT archery associations plus 9 sports boards and institutions; they host national events such as the 2026 junior nationals (Rajasthan) and senior nationals (Meghalaya).</p><a class="url" href="https://www.indianarchery.org/organization/member-unit" target="_blank" rel="noopener">indianarchery.org</a></div>
+      <div class="card"><span class="tag">National federation</span><h4>Archery Association of India (AAI)</h4><p>Founded on 8 August 1973; recognised by the Ministry of Youth Affairs and Sports; affiliated to World Archery, World Archery Asia, the South Asian Archery Federation and the Indian Olympic Association. Oversees recurve, compound, Indian round and para archery.</p><div class="accred"><span class="ac ok">✓ World Archery member association (Active)</span><span class="ac ok">✓ On the IOA's member list</span><span class="acsrc">World Archery's own <a href="https://api.worldarchery.sport/?v=3&amp;content=MEMBERASSOCIATIONS&amp;RBP=200" target="_blank" rel="noopener">member-association data</a> lists "Archery Association of India", NOC IND, status Active, in World Archery Asia; the Indian Olympic Association's <a href="https://olympic.ind.in/members/" target="_blank" rel="noopener">members page</a> lists it too (5 Oct 2026).</span></div><a class="url" href="https://www.indianarchery.org/about" target="_blank" rel="noopener">indianarchery.org</a></div>
+      <div class="card"><span class="tag">State associations</span><h4>AAI member units</h4><p>35 state and UT archery associations plus 9 sports boards and institutions; they host national events such as the 2026 junior nationals (Rajasthan) and senior nationals (Meghalaya).</p><div class="accred"><span class="ac ok">✓ Listed by the AAI</span><span class="acsrc">On the AAI's member-unit page.</span></div><a class="url" href="https://www.indianarchery.org/organization/member-unit" target="_blank" rel="noopener">indianarchery.org</a></div>
     </div>
   </div>
 </section>
@@ -373,6 +403,7 @@
       <h2>Pick your level. We'll point you to the range.</h2>
       <p>Real coaching, competitions and academies, each checked on an official website. Follow the link and confirm timings, eligibility and entry rules directly.</p>
     </div>
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> The AAI is <strong>verified</strong> on World Archery's member list, World Archery runs coach and judge courses, and the government's Khelo India scheme publishes a list of accredited academies, which we checked archery entries against. <span class="ac ok">✓ Verified</span> means we found the programme or body on an official list or page, and the label names it. <span class="ac claim">School's claim — …</span> means only the operator's own site says so. <span class="ac unv">Accreditation: unverified</span> means we found neither. A listing isn't a safety guarantee: look for a supervised range and a range officer. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -411,6 +442,7 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>DDA Yamuna Sports Complex archery coaching</h4><span class="loc">Surajmal Vihar, Delhi</span></div><span class="badge gov">Public complex</span></div>
           <p>Archery is one of the coaching programmes the Delhi Development Authority's sports complex runs for members and non-members.</p>
+          <div class="accred"><span class="ac ok">✓ Government sports complex (DDA)</span><span class="ac unv">Coach certification: not stated</span><span class="acsrc">Listed on the Delhi Development Authority's own Yamuna Sports Complex page.</span></div>
           <a class="url" href="https://dda.gov.in/yamuna-sports-complex" target="_blank" rel="noopener">dda.gov.in</a></div>
       </div>
       <div class="sites">
@@ -425,6 +457,7 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>AAI archer registration</h4><span class="loc">Through your state association</span></div><span class="badge gov">Federation</span></div>
           <p>AAI keeps a register of archers; competition entries go through member units.</p>
+          <div class="accred"><span class="ac ok">✓ AAI register</span><span class="acsrc">Run by the federation on World Archery's list.</span></div>
           <a class="url" href="https://www.indianarchery.org/registered-archers" target="_blank" rel="noopener">indianarchery.org</a></div>
       </div>
       <div class="sites">
@@ -440,9 +473,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Tata Archery Academy</h4><span class="loc">Jamshedpur, Jharkhand</span></div><span class="badge">Residential academy</span></div>
           <p>Set up by Tata Steel in October 1996 as a residential centre of excellence to train archers scientifically for national and international competition.</p>
+          <div class="accred"><span class="ac ok">✓ Khelo India accredited (recurve)</span><span class="acsrc">Listed as "Tata Archery Academy, Jamshedpur (Recurve)" on Khelo India's <a href="https://dashboard.kheloindia.gov.in/public/front/assets/Khelo_India_Academies_State_wise_td.pdf" target="_blank" rel="noopener">state-wise list of accredited academies</a>; run by Tata Steel, which calls it its centre of excellence.</span></div>
           <a class="url" href="https://www.tatasteel.com/corporate/our-organisation/sports-19/" target="_blank" rel="noopener">tatasteel.com</a></div>
         <div class="school"><div class="top"><div><h4>DDA Archery Promotion Scheme</h4><span class="loc">Yamuna Sports Complex, Delhi</span></div><span class="badge gov">Public scheme</span></div>
           <p>Launched in July 2015; boys and girls are selected through trials held at the complex, which are advertised in the media.</p>
+          <div class="accred"><span class="ac ok">✓ Government scheme (DDA)</span><span class="acsrc">Described on the DDA's own sports-talent page.</span></div>
           <a class="url" href="https://dda.gov.in/nuturing-sports-talent" target="_blank" rel="noopener">dda.gov.in</a></div>
       </div>
     </div>
@@ -454,9 +489,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>AAI West Zone Level-1 Coaches Workshop</h4><span class="loc">Nadiad, Gujarat · 12–15 Oct 2026</span></div><span class="badge gov">Coaching</span></div>
           <p>Listed in the AAI calendar, organised by the Gujarat State Archery Association.</p>
+          <div class="accred"><span class="ac ok">✓ AAI calendar</span><span class="acsrc">Listed on the federation's own calendar.</span></div>
           <a class="url" href="https://www.indianarchery.org/calendar" target="_blank" rel="noopener">indianarchery.org</a></div>
         <div class="school"><div class="top"><div><h4>World Archery coach education &amp; judging</h4><span class="loc">Lausanne, regional hubs and on request</span></div><span class="badge gov">Education</span></div>
           <p>Coaching courses from beginner to elite level and coach-trainer courses; judges need a current international accreditation for major events.</p>
+          <div class="accred"><span class="ac ok">✓ World Archery programme</span><span class="acsrc">Run by the international federation itself.</span></div>
           <a class="url" href="https://www.worldarchery.sport/sport/education" target="_blank" rel="noopener">worldarchery.sport</a></div>
       </div>
     </div>
@@ -515,7 +552,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

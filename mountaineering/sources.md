@@ -47,3 +47,27 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - **Avalanche bulletins for India**: no current public bulletin page verified. Not linked.
 - **IMF's own acclimatisation rule** ("for every 2000 ft gain at least two days"): it differs from the CDC/WMS rule; the page uses the CDC/WMS rule only, to avoid mixed messages.
 - **Fees, insurance amounts, bank details, phone numbers** on NIM, HMI, ABVIMAS, JIM&WS and IMF pages: deliberately not reproduced.
+
+## 5. Deep research (5 Oct 2026, batch deep6)
+
+| Item | Source | Status |
+|---|---|---|
+| Low-latitude model atmosphere: P (mmHg) = exp(6.63268 − 0.1112 h − 0.00149 h²), h in km; predicts measured high-altitude pressures within ~1%; not for > ~45° latitude | J. B. West, *Prediction of barometric pressures at high altitudes with the use of model atmospheres*, *J Appl Physiol* 81(4):1850–1854 (1996), https://journals.physiology.org/doi/10.1152/jappl.1996.81.4.1850 | ✓ abstract; standard-atmosphere vs West table (Tshoka, Chaurikhang BC, EBC, South Col, summit) computed by us |
+| Measured checks: summit 253 mmHg (Oct 1981), within ~1 mmHg in May 1997; South Col barometer 1998 averaged 284 mmHg in May, 287 mmHg by August | J. B. West, *Barometric pressures on Mt. Everest: new data and physiological significance*, *J Appl Physiol* 86(3):1062–1066 (1999), https://journals.physiology.org/doi/10.1152/jappl.1999.86.3.1062 | ✓ abstract |
+| WMS 2024 update: above 3,000 m ≤ 500 m/day sleeping-altitude gain, rest day every 3–4 days; intermediate-altitude night helps; no benefit from forced fluids, coca or short oxygen-canister puffs; HAPE: descend ≥ 1,000 m or until symptoms resolve | Wilderness Medical Society, *2024 Altitude Summary*, https://wms.org/magazine/1463/2024-Altitude-Summary/default.aspx | ✓ read; **no drug doses reproduced** (page says medicines are a doctor's decision) |
+| 2018 Lake Louise AMS score (4 items × 0–3; 3–5 with headache mild; 6–12 moderate–severe); two-trekker worked example | Roach et al., *High Alt Med Biol* 2018 (as used by WMS) | ✓; trekker scores **illustrative** |
+| Load-carriage metabolic equation M = 1.5W + 2.0(W+L)(L/W)² + η(W+L)(1.5V² + 0.35VG) | Pandolf, Givoni, Goldman, *J Appl Physiol* 43(4):577–581 (1977), https://journals.physiology.org/doi/10.1152/jappl.1977.43.4.577 | ✓ abstract/equation |
+| Terrain factors η: dirt road 1.1, heavy brush 1.5, soft snow 15 cm 2.5, 25 cm 3.3 | Soule & Goldman, *Terrain coefficients for energy cost prediction*, *J Appl Physiol* 32(5):706–708 (1972), https://journals.physiology.org/doi/10.1152/jappl.1972.32.5.706 | ✓; table (595/771/1,209/1,560 W; ≈1,190/1,540/2,410/3,110 kcal per 1,000 m) computed by us for a 70 kg + 15 kg trekker at 0.8 m/s, 15% |
+| **IMF: UIAA full member since 1981** | UIAA Annual Report 2017, member table, https://www.theuiaa.org/documents/members/UIAAAnnualReport-2017_WEB.pdf (curl 5 Oct 2026); UIAA's live online directory did not load | **✓ Verified (2017 list)** — noted on card |
+| NIM, HMI, NIMAS listed as Department of Defence autonomous bodies | IGOD (National Portal of India) list, https://igod.gov.in/organization/Ste83XQBYNG-XPnvjOsx/AUTBDY/list | **✓ Verified** |
+| NIM and HMI as UIAA associate members (since 2011) | UIAA Annual Report 2017 | ✓ (2017 list) |
+| JIM&WS Pahalgam: Defence Minister president, J&K CM vice-president, instructors posted by MoD; not on the IGOD page we checked | https://jawaharinstitutepahalgam.com/Aboutus.php | institute's own official page (label says so) |
+| ABVIMAS Manali: Himachal Pradesh state institute | abvimas.org (already cited) | ✓ state institute |
+| NIMAS Dirang: Basic (28 d), Advanced (32 d), Search & Rescue, MoI courses; forward camps New Melling, Mago, Jithang, Meerathang; ABC ~16,000 ft — new body card + Basic course card | https://nimasdirang.com/courses/mountaineering (curl 5 Oct 2026; fees not reproduced) | ✓ institute's own site + IGOD |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- IMF → ✓ UIAA full member (since 1981)
+- NIM → ✓ Government institute (Ministry of Defence) + ✓ UIAA associate (2017 list); HMI → ✓ Government institute (MoD & West Bengal) + ✓ UIAA associate (2017 list)
+- NIMAS (new) → ✓ Government institute (Ministry of Defence); ABVIMAS → ✓ State institute (Himachal); JIM&WS → ✓ Government institute (MoD & J&K, own About page)
+- Every course card labelled with its institute; accreditation key callout added under "Where to train".

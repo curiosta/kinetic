@@ -69,3 +69,26 @@ Link check (4 Oct 2026): 16 external links on the page; 15 return 200 to curl; a
 - **Coaching folklore** (e.g. take-off "one fence-height away", what a left-behind rider does to the horse): not used; the jump chapter sticks to projectile physics and the handbook's seat description.
 - **Fall and injury statistics**: none quoted; no single current source was checked.
 - **Prices, lesson packages, membership charges, phone numbers and emails** (EIRS, ARC, Japalouppe, Kings and EFI pages all show some): deliberately not reproduced.
+
+## 5. Deep research (5 Oct 2026, batch deep6)
+
+| Item | Source | Status |
+|---|---|---|
+| Gait energetics: each gait has a speed range with a minimum energy cost per distance; horses' freely chosen speeds sit near those minima | D. F. Hoyt & C. R. Taylor, *Gait and the energetics of locomotion in horses*, *Nature* 292:239–240 (1981), https://ui.adsabs.harvard.edu/abs/1981Natur.292..239H/abstract | ✓ abstract; used **qualitatively** (the study's speeds were for small treadmill horses, so not quoted as targets) |
+| Jump landing over a 1 m vertical: 6 horses (mean 599 kg), usual riders (mean 74 kg); peak vertical force ≈ 1.5 × body weight per foreleg; stance 171 ms (trailing) / 218 ms (leading); peak fetlock flexor moment 2.44 / 1.93 N·m/kg; leading leg brakes for first ~60% of stance; coffin- and fetlock-joint moments 82% and 45% above published trot values | L. S. Meershoek, H. C. Schamhardt, L. Roepstorff, C. Johnston, *Forelimb tendon loading during jump landings and the influence of fence height*, *Equine Vet J Suppl* 33 (2001) — VU Amsterdam repository full text https://research.vu.nl/ws/files/1800048/143814.pdf | ✓ full text read; 8.8 kN = 599 × 9.81 × 1.5 computed by us |
+| Riding-helmet standards: VG1 and PAS 015 250 g, ASTM F1163 300 g at 1.8 m / 5.9 m/s flat anvil; Snell 2.0 m / 6.26 m/s, 300 g; PAS 015 3-impact average < 225 g; hazard anvil 5.4 m/s | Virginia Tech Helmet Lab, equestrian helmet ratings methodology (VTechWorks), https://vtechworks.lib.vt.edu/bitstreams/a4c7151c-6d04-4378-a12c-f41a63a3fc0e/download | ✓ read; (6.9 ÷ 5.9)² ≈ 1.37 computed by us from the page's own head-drop example |
+| EFI's FEI membership | EFI's own page showing its FEI membership certificate, https://efinf.org/FEI.php ; FEI database entry https://data.fei.org/NFPages/NF/Details/Federation/57/EQUESTRIAN-FEDERATION-OF-INDIA- returned a bot check to curl/WebFetch | Federation's own page (labelled); **FEI directory not machine-readable → not marked ✓**. EFI is not on the IOA members page (olympic.ind.in/members/, 5 Oct 2026) |
+| EIRS trainers teach "on the same level as the BHS"; Pony Club programme based on the British Pony Club | EIRS's own lessons pages (already cited) | School's claim (not BHS approval; no BHS listing found) |
+| Chennai Equitation Centre: coaches "certified internationally" (no body named) | CEC's own home page (already cited) | School's claim |
+| Amateur Riders' Club (ARC) site failed to load 5 Oct 2026; Japalouppe Equestrian Centre showed a bot check | — | Accreditation: unverified |
+| Ashish Limaye named by the EFI for the Asian Games team | EFI news (already cited) | ✓ Named by the EFI |
+| BHS approved-centre finder | BHS's own finder (already cited) | ✓ official list |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- EFI → Federation's own page — FEI membership certificate; FEI directory: not machine-readable for us
+- EIRS → School's claim — "on the same level as the BHS"; EIRS Pony Club → School's claim — based on the British Pony Club
+- ARC (×2) → Accreditation: unverified (site down); Japalouppe (×2) → Accreditation: unverified (bot check)
+- Chennai Equitation Centre (×2) → School's claim — "certified internationally" coaches
+- Limaye → ✓ Named by the EFI; BHS finder → ✓ BHS's own approved-centre finder; Spanish Riding School → "Not a riding school for visitors"
+- Accreditation key callout added under "Where to train".

@@ -52,3 +52,21 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - 2027 IRONMAN 70.3 World Championship venue: not verified; the page says only "2027 slots".
 - Specific glycogen store numbers, CdA values, running cost and wetsuit dimensions are illustrative and marked as such.
 - Cross-links: ../swimming/, ../cycling-mtb/ and ../running/ (Ch 3–5 and the first where-tab).
+
+## 5. Deep research (5 Oct 2026, batch deep7)
+
+| Item | Source | Status |
+|---|---|---|
+| Wetsuit and active drag: 12 swimmers (8 M, 4 F), MAD-system push-off pads; at 1.25 m/s drag 48.7 → 41.8 N (−14%); at 1.50 m/s −12%; effect similar for lighter women, so not buoyancy alone | H. M. Toussaint et al., *Effect of a triathlon wet suit on drag during swimming*, *Med Sci Sports Exerc* 21(3):325–328 (1989), PMID 2733583 — https://pubmed.ncbi.nlm.nih.gov/2733583/ | ✓ abstract (NCBI E-utilities, 5 Oct 2026) |
+| Same-power swim-time table (factor (48.7/41.8)^(1/3) ≈ 1.052; 750 m / 1.5 / 1.9 / 3.8 km) | computed by us, simple drag ∝ v² model | computed, **rough** (stated) |
+| Drafting CFD (validated in wind tunnel), separations 0.01–1 m: trailing rider drag −27.1% (upright), −23.1% (dropped), −13.8% (time trial) at 0.01 m; TT −11.7% at 1 m; leading rider up to −2.6% (TT); isolated TT drag area 0.135 m², trailing 0.116 (0.01 m) / 0.119 (1 m), leading 0.131 | B. Blocken, T. Defraeye, E. Koninckx, J. Carmeliet, P. Hespel, *CFD simulations of the aerodynamic drag of two drafting cyclists*, *Computers & Fluids* 71:435–445 (2013) — TU/e portal https://research.tue.nl/en/publications/cfd-simulations-of-the-aerodynamic-drag-of-two-drafting-cyclists/ ; preprint read in full at https://urbanphysics.net/2013_CAF_BB_TD_EK_JC_PH__Preprint.pdf (Tables 2–4) | ✓ read; power table at 40 km/h (111 / 98 / 95 / 108 W) computed by us |
+| **ITF on World Triathlon**: status Affiliated, founded 1990, region Asia, NF group 3A, NOC IND | https://triathlon.org/federations/indian-triathlon-federation (rendered 5 Oct 2026) | **✓ Verified** |
+| ITF on the IOA's member list | https://olympic.ind.in/members/ | **✓ Verified** |
+| IRONMAN 70.3 Goa and Kona: organiser's own pages (already cited) | ironman.com | labelled "IRONMAN race (organiser's own rules)" |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- World Triathlon → ✓ World governing body; The IRONMAN Group → Commercial organiser (company's own site); ITF → ✓ World Triathlon member (Affiliated) + ✓ On the IOA's member list; ITF on triathlon.org → ✓ World Triathlon's own listing
+- ITF pathways → ✓ National federation; ITF Nationals → ✓ ITF championship; World Triathlon age-group racing / worlds → ✓ World Triathlon programme
+- IRONMAN 70.3 Goa, Kona → IRONMAN race (organiser's own rules); Kinetic Swimming card → "Kinetic guide, not a course provider"
+- Accreditation key callout added under "Where to race".

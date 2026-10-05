@@ -151,6 +151,21 @@
           <li><strong>Conditions:</strong> cool, dry air beats heat and humidity. Climbers at Badami start very early, even in January, because direct sun makes rock and rubber greasy.</li>
           <li><strong>Rock type:</strong> Hampi's granite and Badami's sandstone feel completely different: rough crystals versus a finer, sometimes softer surface. Wet sandstone can be weakened, so let it dry after rain.</li>
         </ul>
+        <h4>Does chalk really help? What a measurement found</h4>
+        <p>Climbers swear by chalk, but one early lab study (Li and colleagues, 2001) found chalk <em>lowered</em> fingertip friction on sandstone, granite and slate. That test pressed a fingertip onto a small sliding block, with forces far below a hanging climber's. A more climbing-like test, by Amca, Vigouroux, Aritan and Berton (<a href="https://www.ingentaconnect.com/content/routledg/sb/2012/00000011/00000004/art00004" target="_blank" rel="noopener">Sports Biomechanics, 2012</a>), had eleven experienced climbers hang from real limestone and sandstone holds on a hang board that slowly tilted until their hands slipped; the tilt at the moment of slip gives the friction coefficient. Chalk raised it by <strong>18.7% on limestone</strong> and <strong>21.6% on sandstone</strong>, and sandstone was about 16–18% grippier than limestone. They found no clear link with the day's humidity or temperature.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · what +19% and +22% mean on a sloping hold (illustrative starting μ)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Hold</th><th>μ (illustrative)</th><th>Steepest slope you can hold by friction alone</th></tr></thead>
+            <tbody>
+              <tr><td>Limestone, no chalk</td><td class="num">0.60</td><td class="num">arctan 0.60 ≈ 31°</td></tr>
+              <tr><td>Limestone, chalk (+18.7%)</td><td class="num">0.71</td><td class="num">≈ 35°</td></tr>
+              <tr><td>Sandstone, no chalk (+15.6% vs limestone)</td><td class="num">0.69</td><td class="num">≈ 35°</td></tr>
+              <tr><td>Sandstone, chalk (+21.6%)</td><td class="num">0.84</td><td class="num">≈ 40°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Only the percentages come from the study; the starting μ of 0.60 is our round number to show the effect. 0.60 × 1.187 = 0.712; 0.60 × 1.156 = 0.694; 0.694 × 1.216 = 0.843. A few degrees of slope is often the difference between a sloper you can hang and one you slide off. Both studies agree on one thing: a thick, caked layer of chalk on the hold acts like loose grit, so brush holds and use a thin coat.</p>
+        </div>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Stand on a sloping roof-like surface in sports shoes and slowly lean back: the point where you start to slide tells you the angle where your shoes' μ equals tan α.</div></div>
         <details class="check"><summary>Your shoes give μ ≈ 0.84 on a smooth slab. What's the steepest angle you can stand on with no holds?</summary>
         <p>α = arctan 0.84 ≈ <strong>40°</strong>. Steeper than that, and you need an edge or a hold.</p></details>
@@ -241,6 +256,21 @@
         </div>
         <h4>Why the top bolt sees more than you</h4>
         <p>In a lead fall, the rope runs from you, up through the top quickdraw, and back down to the belayer. The bolt holds both strands: your side and the belayer's side (a bit less, because of friction over the carabiner). That's why it can see well over your own peak force; the Fall Lab uses an illustrative 1.6 ×.</p>
+        <p>Where does 1.6 come from? A physics group at the University of Alabama (R. Schad and colleagues, <a href="https://pages.physics.ua.edu/faculty/schad/research/Manuscript%20A.pdf" target="_blank" rel="noopener">"Safety Analysis of Sport Climbing Falls"</a>) fitted accelerometers to a real lead climber and belayer on an outdoor route and took repeated falls of 1.3 to 3.2 m with a GriGri. The rope pulled on the climber <strong>1.7 to 1.9 times</strong> harder than on the belayer, in every fall: the bend over the carabiner acts as a brake. The bolt holds both strands, so it sees the climber's force × (1 + 1 ÷ 1.7…1.9).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · top-bolt load for a 4.2 kN pull on the climber (the f = 0.35 fall from Ch 3)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Climber side ÷ belayer side</th><th>Belayer side</th><th>Bolt = sum</th><th>Bolt ÷ climber</th></tr></thead>
+            <tbody>
+              <tr><td>1.0 (a frictionless pulley)</td><td class="num">4.2 kN</td><td class="num">8.4 kN</td><td class="num">2.0 ×</td></tr>
+              <tr><td>1.7 (measured, low end)</td><td class="num">2.5 kN</td><td class="num">6.7 kN</td><td class="num">1.59 ×</td></tr>
+              <tr><td>1.9 (measured, high end)</td><td class="num">2.2 kN</td><td class="num">6.4 kN</td><td class="num">1.53 ×</td></tr>
+              <tr><td>"8 : 5 : 3" rule of thumb (bolt : climber : belayer)</td><td class="num">2.5 kN</td><td class="num">6.7 kN</td><td class="num">1.6 ×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">4.2 ÷ 1.7 = 2.47 kN; 4.2 + 2.47 = 6.67 kN. If you model the bend as rope friction round a 180° turn (T<sub>climber</sub> = T<sub>belayer</sub> × e<sup>μπ</sup>), a ratio of 1.8 means an effective μ ≈ ln 1.8 ÷ π ≈ 0.19. In the Alabama falls themselves, the climber felt up to about 4 × body weight and the bolt never saw more than 4.5 kN.</p>
+        </div>
+        <p>The same study found two things every new leader should know. The climber fell about <strong>1.8 times</strong> the "nominal" distance, because the rope stretched about 12% and the belayer was lifted up to about 1 m, and that was with no slack and a locking belay device. And belayer weight matters: a belayer much lighter than the climber gets pulled up hard (the authors put the limit for catching at all near 55% of the climber's mass), while a much heavier one gives a harsher, more static catch. That's why gyms teach weight-matched belaying, ground anchors and a soft catch, in person.</p>
         <h4>Sport versus trad</h4>
         <ul>
           <li><strong>Sport climbing:</strong> you clip pre-placed bolts. At Badami, local climbers report that some bottom bolts have been stolen or chopped, so a stick clip (a pole for clipping the first bolt from the ground) is recommended.</li>
@@ -308,6 +338,19 @@
         <h4>The pump</h4>
         <p>Squeezing a hold hard and continuously compresses the blood vessels inside your forearm muscles. Less oxygen gets in and waste products build up; the muscles swell and your grip fades. The fixes are mostly technique: climb smoothly, rest on big holds with straight arms, shake out each arm in turn, and grip only as hard as you need.</p>
         <h4>Fingers need time</h4>
+        <p>In a crimp (fingertip on a small edge, middle joint bent to about 90°), the flexor tendons try to bowstring away from the bone and press on the A2 "pulley", a band of tissue that holds them in. Andreas Schweizer measured this directly in climbers' fingers (<a href="https://isbweb.org/images/conf/2001/Longabstracts/PDF/1000_1099/1046.pdf" target="_blank" rel="noopener">Journal of Biomechanics, 2001</a>): the edge of the A2 pulley carried about <strong>3 times</strong> the force at the fingertip. Extrapolating his data, 118 N at one fingertip would put about 373 N on the pulley, close to the roughly 400 N breaking strength reported for A2 pulleys in earlier cadaver tests.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · A2 pulley load ≈ 3 × fingertip force (crimp grip)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Situation (illustrative)</th><th>Force at one fingertip</th><th>Pulley load ≈ 3 ×</th></tr></thead>
+            <tbody>
+              <tr><td>70 kg climber, feet on, about 25% of body weight shared by 8 fingers</td><td class="num">≈ 21 N</td><td class="num">≈ 64 N</td></tr>
+              <tr><td>Steep wall, half body weight on 4 fingers of one hand</td><td class="num">≈ 86 N</td><td class="num">≈ 258 N</td></tr>
+              <tr><td>Schweizer's extrapolated point</td><td class="num">118 N</td><td class="num">≈ 373 N (his figure)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">70 × 9.81 = 687 N. 687 × 0.25 ÷ 8 ≈ 21 N; 687 × 0.5 ÷ 4 ≈ 86 N. Real fingers don't share load equally (the middle and ring fingers often take more), so a single finger can be worse off. Schweizer found the open-hand ("slope") grip bowstrings much less. This is why a sudden foot slip while crimping is the classic pulley injury.</p>
+        </div>
         <p>Tendons and the finger "pulleys" that hold them adapt much more slowly than muscles. Sharp pain in a finger during a hard crimp is a reason to stop. Warm up on easy climbs, build up volume gradually, and get finger injuries checked by a professional.</p>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Climbing a 20 m route lifts you the height of a six- or seven-storey building, but the mechanical work is only about 3 kcal. The tiredness you feel is grip, not height.</div></div>
         <details class="check"><summary>A 55 kg climber does five laps of a 15 m route. How much lifting work is that?</summary>
@@ -399,8 +442,8 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National federation</span><h4>Indian Mountaineering Foundation (IMF)</h4><p>Represents India in World Climbing and coordinates sport climbing in India under IFSC guidelines, through a National Sport Climbing Committee and zonal committees. India's first national championship was held in New Delhi in 1996.</p><a class="url" href="https://indmount.org/IMF/sportclimbing" target="_blank" rel="noopener">indmount.org</a></div>
-      <div class="card"><span class="tag">Training institute</span><h4>National Institute of Mountaineering (NIM), Uttarkashi</h4><p>Runs a Sport Climbing Course (indoor and outdoor) and a Basic Mountaineering Course that covers movement on rock, snow and ice.</p><a class="url" href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a></div>
+      <div class="card"><span class="tag">National federation</span><h4>Indian Mountaineering Foundation (IMF)</h4><p>Represents India in World Climbing and coordinates sport climbing in India under IFSC guidelines, through a National Sport Climbing Committee and zonal committees. India's first national championship was held in New Delhi in 1996.</p><div class="accred"><span class="ac ok">✓ On World Climbing's national-federations list</span><span class="acsrc">World Climbing's <a href="https://www1.ifsc-climbing.org/national-federations/nf-ind/ind-info" target="_blank" rel="noopener">India page</a> names the Indian Mountaineering Foundation (IMF), indmount.org (checked 5 Oct 2026).</span></div><a class="url" href="https://indmount.org/IMF/sportclimbing" target="_blank" rel="noopener">indmount.org</a></div>
+      <div class="card"><span class="tag">Training institute</span><h4>Nehru Institute of Mountaineering (NIM), Uttarkashi</h4><p>Runs a Sport Climbing Course (indoor and outdoor) and a Basic Mountaineering Course that covers movement on rock, snow and ice.</p><div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Courses listed on the institute's own site, nimindia.net. NIM doesn't issue IFSC qualifications.</span></div><a class="url" href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a></div>
     </div>
   </div>
 </section>
@@ -411,8 +454,9 @@
     <div class="section-head">
       <span class="eyebrow">05 · Where to climb</span>
       <h2>Pick your level. We'll point you to the wall.</h2>
-      <p>Real gyms, boulder fields, crags and courses, each checked on its own website. For timings, eligibility and fees, follow the link and confirm directly with the gym, operator or institute.</p>
+      <p>Real gyms, boulder fields, crags and courses, each checked on its own website, and each card carries an accreditation label. For timings, eligibility and fees, follow the link and confirm directly with the gym, operator or institute.</p>
     </div>
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> India has no accreditation scheme for climbing gyms or guides that we could verify. IMF is <strong>verified</strong> on World Climbing's national-federations list, and NIM is a government institute. <span class="ac ok">✓ Verified</span> means we found the body or course on an official list or page, and the label names it. <span class="ac claim">School's claim — …</span> means only the operator's own site says so, for example "certified instructors" with no body named. <span class="ac unv">Accreditation: unverified</span> means we found neither. A listing isn't a safety guarantee: ask who checks belaying and how gear is inspected. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -450,10 +494,16 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>BoulderBox</h4><span class="loc">Vasant Kunj, New Delhi</span></div><span class="badge">Bouldering gym</span></div>
           <p>A bouldering gym with walls over two floors, up to 7 m. First-timers register online and watch a safety induction video; there's a free 15-minute "Intro to Climbing" induction class.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">The gym's site mentions coaches but names no instructor certification or affiliation (5 Oct 2026).</span></div>
           <a class="url" href="https://www.boulderbox.in/first-visit" target="_blank" rel="noopener">boulderbox.in</a></div>
         <div class="school"><div class="top"><div><h4>Let's Play Climbing</h4><span class="loc">Bengaluru (four centres)</span></div><span class="badge">Gyms &amp; coaching</span></div>
           <p>Climbing coaching across four centres in Bengaluru, with guided outdoor trips once you're ready.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">No instructor certification or affiliation named on its pages (5 Oct 2026).</span></div>
           <a class="url" href="https://mytribe.in/letsplayclimbing/climbing-coaching-training/outdoor-rock-adventures" target="_blank" rel="noopener">mytribe.in/letsplayclimbing</a></div>
+        <div class="school"><div class="top"><div><h4>Equilibrium Climbing Station</h4><span class="loc">Bengaluru (Hoodi, Indiranagar) &amp; Anjuna, Goa</span></div><span class="badge">Gyms &amp; coaching</span></div>
+          <p>Running since 2013. Bouldering at all three gyms, and roped climbing at Hoodi. First-timers are fitted with shoes and gear and climb with an instructor beside them, learning how to move and fall before they get on the wall.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">The gym's site names no instructor certification or affiliation (5 Oct 2026).</span></div>
+          <a class="url" href="https://www.equilibriumclimbing.com/" target="_blank" rel="noopener">equilibriumclimbing.com</a></div>
       </div>
       <div class="callout note"><p style="margin:0">Other cities have climbing gyms too. Whichever you choose, look for an induction, staff who check belaying, and good matting.</p></div>
     </div>
@@ -464,7 +514,8 @@
       </div>
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Golden Boulders</h4><span class="loc">Hampi, Karnataka</span></div><span class="badge">Classes &amp; gear</span></div>
-          <p>Runs climbing classes for all levels with certified instructors, and rents or sells gear. Hampi's granite boulders sit beside the Tungabhadra river, within a UNESCO World Heritage site.</p>
+          <p>Runs climbing classes for all levels and rents or sells gear. Hampi's granite boulders sit beside the Tungabhadra river, within a UNESCO World Heritage site.</p>
+          <div class="accred"><span class="ac claim">School's claim — "certified instructors"</span><span class="acsrc">Its site says classes are run by "trusted and certified" instructors but doesn't name the certifying body, so we can't check it (5 Oct 2026).</span></div>
           <a class="url" href="https://www.goldenboulders.com/" target="_blank" rel="noopener">goldenboulders.com</a></div>
       </div>
       <div class="sites">
@@ -479,6 +530,7 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Guided Badami trips</h4><span class="loc">Let's Play Climbing, Bengaluru</span></div><span class="badge">Guided trips</span></div>
           <p>Guided sport-climbing trips to Badami (and bouldering trips to Hampi) that teach clipping, cleaning routes and crash-pad placement.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">No guide or instructor certification named for the trips (5 Oct 2026).</span></div>
           <a class="url" href="https://mytribe.in/letsplayclimbing/climbing-coaching-training/outdoor-rock-adventures" target="_blank" rel="noopener">mytribe.in/letsplayclimbing</a></div>
       </div>
       <div class="sites">
@@ -494,12 +546,15 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Sport Climbing Course</h4><span class="loc">NIM, Uttarkashi</span></div><span class="badge gov">Institute</span></div>
           <p>A comprehensive introduction to sport climbing, indoor and outdoor, run in batches in July and August.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course page on <a href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a>.</span></div>
           <a class="url" href="https://www.nimindia.net/sportclimbing" target="_blank" rel="noopener">nimindia.net</a></div>
         <div class="school"><div class="top"><div><h4>Basic Mountaineering Course</h4><span class="loc">NIM, Uttarkashi</span></div><span class="badge gov">Institute</span></div>
           <p>Teaches movement on rock, snow and ice: the bridge from crag climbing to the mountains.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="acsrc">Course page on <a href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a>.</span></div>
           <a class="url" href="https://www.nimindia.net/basic-mountaineering-course-bmc" target="_blank" rel="noopener">nimindia.net</a></div>
         <div class="school"><div class="top"><div><h4>IMF sport climbing</h4><span class="loc">Zonal &amp; national championships</span></div><span class="badge gov">Federation</span></div>
           <p>Zonal committees select athletes for the annual national championship. Since 2018 IMF has also held Open National Championships in Lead, Speed and Bouldering.</p>
+          <div class="accred"><span class="ac ok">✓ IMF championships</span><span class="acsrc">Run by the federation on World Climbing's list.</span></div>
           <a class="url" href="https://indmount.org/IMF/sportclimbing" target="_blank" rel="noopener">indmount.org</a></div>
       </div>
       <div class="sites">
@@ -561,7 +616,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

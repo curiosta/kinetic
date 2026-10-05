@@ -56,3 +56,26 @@ URL: https://backoffice.issf-sports.org/getfile.aspx?mod=docf&pane=1&inst=455&fi
 - **NRAI "Introduction"/"History" pages and the affiliated state list** are menu items we could not open directly (JS menu), so NRAI's founding year and the number of state units are **not stated**.
 - **Exact dates of the Bhopal India Open (rifle/pistol)** were not given in the notices we read. **Not stated.**
 - **Shotgun World Championship dates** in Doha were not confirmed. Only the rifle/pistol month (Nov 2026) is given.
+
+## 5. Deep research (5 Oct 2026, batch deep6)
+
+| Item | Source | Status |
+|---|---|---|
+| Hold vs score: 58 novices, 30 standing air-rifle shots at 10 m; body sway (force plate) and aiming-point deviation; correlations with score −0.29 to −0.45; mediolateral sway velocity + horizontal aim deviation explained 26% of score variance; relationship held between shooters only, not within a shooter | K. Mononen, N. Konttinen, J. Viitasalo, P. Era, *Relationships between postural balance, rifle stability and shooting accuracy among novice rifle shooters*, *Scand J Med Sci Sports* 17(2):180–185 (2007), PMID 17394480 — https://pubmed.ncbi.nlm.nih.gov/17394480/ (abstract read via NCBI E-utilities, 5 Oct 2026) | ✓ abstract |
+| Trigger timing and the cardiac cycle: 6 Finnish rifle/pistol champions fired during diastole; 3 beginners fired in both phases, with better results in diastole | P. Helin, T. Sihvonen, O. Hänninen, *Timing of the triggering action of shooting in relation to the cardiac cycle*, *Br J Sports Med* 21(1):33–36 (1987), PMID 3580727 — https://bjsm.bmj.com/content/21/1/33 | ✓ abstract |
+| Diastole window table (60/72/90/120 bpm → ≈ 700/530/370/200 ms) | computed by us: beat = 60,000 ÷ HR, systole held at ≈ 300 ms (textbook resting value) | **illustrative** (stated on page) |
+| ISSF minimum trigger pull: 10 m air pistol 500 g; 25 m pistols 1,000 g; 300 m standard rifle 1,500 g; 10 m air rifle unlimited; measured with barrel vertical, dead test weight; 10 m air pistol max weight 1,500 g | *ISSF Rule Book, Edition 2025 (Second Print 07/2026), effective 1 July 2026* — pistol specification table (8.12), rifle table item L, 10.4.4 a), 8.4.2 — linked from https://www.issf-sports.org/rules (PDF downloaded 5 Oct 2026) | ✓ read in the rule book; N conversions (× 9.81) computed by us |
+| **NRAI: ISSF member federation** ("The National Rifle Association of India", IND, Asia, federationType Member) | https://issf-sports.org/issf/organisation/member-federations (curl 5 Oct 2026) | **✓ Verified** |
+| NRAI on the IOA's member list | https://olympic.ind.in/members/ (curl 5 Oct 2026) | **✓ Verified** |
+| **Khelo India accredited academies (shooting)**: "Gun for Glory Academy" Pune, Jabalpur, Gachibowli; "NCOE KSSR, Delhi" (Dr Karni Singh Shooting Ranges) | Khelo India, *State-wise – Academies accredited under Khelo India*, https://dashboard.kheloindia.gov.in/public/front/assets/Khelo_India_Academies_State_wise_td.pdf (curl 5 Oct 2026). The older list at kheloindia.gov.in/uploads/list-of-kiaa-…pdf returned an HTML redirect to our fetcher | **✓ Verified** for those centres; Gun for Glory's own site says "A Khelo India Accredited Institution" and lists more centres than the official list |
+| Gun for Glory card badge changed from "Khelo India-accredited" to "Academy"; accreditation now carried by the label naming the three listed centres | — | correction |
+| Aim High India school programme (Gagan Narang Sports Promotion Foundation) | gunforglory.in (already cited) | Accreditation: unverified |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- ISSF → ✓ World governing body; NRAI → ✓ ISSF member federation + ✓ On the IOA's member list
+- Dr Karni Singh Shooting Ranges (body + elite cards) → ✓ Government range (SAI) + ✓ Khelo India accredited (NCOE KSSR)
+- Gun for Glory Foundation Course → ✓ Khelo India accredited (Pune, Jabalpur, Gachibowli centres) + "Other centres: unverified"; Gun for Glory high-performance → ✓ Khelo India accredited (three centres)
+- Aim High India → Accreditation: unverified
+- State rifle associations → ✓ NRAI-affiliated units; India Open → ✓ NRAI competition; NRAI coaches course → ✓ NRAI course; ISSF Academy licences → ✓ ISSF programme
+- Accreditation key callout added under "Where to train".

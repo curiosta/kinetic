@@ -202,6 +202,21 @@
             </tbody>
           </table></div>
         </div>
+        <h4>How much does a wetsuit really help? A measurement</h4>
+        <p>Dutch researchers measured the drag on 12 swimmers (eight men, four women) doing front crawl over a row of instrumented push-off pads, with and without a triathlon wetsuit (<a href="https://pubmed.ncbi.nlm.nih.gov/2733583/" target="_blank" rel="noopener">Toussaint et al., Med Sci Sports Exerc, 1989</a>). At <strong>1.25 m/s</strong>, a typical triathlon swim speed, the wetsuit cut drag by <strong>14%</strong>, from 48.7 N to 41.8 N; at 1.50 m/s by 12%. Most of that came from extra buoyancy (the lift in the table above), but the suit helped the lighter women as much as the heavier men, so a smoother surface probably helps too.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · same effort, 14% less drag (simple model: drag ∝ v², power = drag × speed)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Swim</th><th>No wetsuit, 1.25 m/s</th><th>Wetsuit, same power</th><th>Time saved</th></tr></thead>
+            <tbody>
+              <tr><td>Sprint, 750 m</td><td class="num">10:00</td><td class="num">≈ 9:30</td><td class="num">≈ 30 s</td></tr>
+              <tr><td>Olympic, 1.5 km</td><td class="num">20:00</td><td class="num">≈ 19:00</td><td class="num">≈ 1 min</td></tr>
+              <tr><td>70.3, 1.9 km</td><td class="num">25:20</td><td class="num">≈ 24:04</td><td class="num">≈ 1 min 15 s</td></tr>
+              <tr><td>Full, 3.8 km</td><td class="num">50:40</td><td class="num">≈ 48:09</td><td class="num">≈ 2 min 30 s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Power to beat drag = F × v = 48.7 × 1.25 ≈ 61 W without the suit, 41.8 × 1.25 ≈ 52 W with it. If drag grows with v², power grows with v³, so at the same 61 W the wetsuit swimmer goes (48.7 ÷ 41.8)<sup>1/3</sup> ≈ 1.052 times faster: about 1.32 m/s. Real swimmers also change their stroke in a suit, so treat this as a rough guide; it shows why rules decide who may wear one.</p>
+        </div>
         <h4>Wetsuit rules (IRONMAN 2026 Competition Rules)</h4>
         <ul>
           <li>Age-group athletes may wear wetsuits in water up to and including <strong>24.5 °C</strong>.</li>
@@ -236,6 +251,21 @@
         </div>
         <h4>Why drafting is banned in most age-group racing</h4>
         <p>Riding close behind another rider puts you in their slipstream and can cut your drag a lot, so non-drafting races keep riders apart. World Triathlon's updated competition rules unified the draft zone to <strong>12 m</strong>, with <strong>25 s</strong> to pass; IRONMAN's 2026 rules use 12 m (about six bike lengths of clear space) and 25 s for age-group athletes, and 20 m for professionals. Once you enter the zone you must keep moving through it; if you're passed, you must drop back out of the passer's zone.</p>
+        <h4>How big is the slipstream? A computer-simulation answer</h4>
+        <p>Blocken and colleagues (TU Eindhoven, KU Leuven and ETH Zürich) simulated the airflow around two riders, checked against wind-tunnel tests, with the riders 1 cm to 1 m apart (<a href="https://research.tue.nl/en/publications/cfd-simulations-of-the-aerodynamic-drag-of-two-drafting-cyclists/" target="_blank" rel="noopener">Computers &amp; Fluids, 2013</a>). In the time-trial position (the one triathletes use), the rider behind had <strong>13.8%</strong> less drag at 1 cm, still <strong>11.7%</strong> less at 1 m. Upright, the saving was up to 27%. Surprisingly, the rider in front gained too, up to 2.6%, because the follower fills the low-pressure pocket behind them.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · air-drag power at 40 km/h in the time-trial position (study's drag areas, air 1.2 kg/m³)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Rider</th><th>Drag area C<sub>d</sub>A</th><th>Power against air</th><th>Saving</th></tr></thead>
+            <tbody>
+              <tr><td>Riding alone</td><td class="num">0.135 m²</td><td class="num">≈ 111 W</td><td class="num">n/a</td></tr>
+              <tr><td>Following at 1 m</td><td class="num">0.119 m²</td><td class="num">≈ 98 W</td><td class="num">≈ 13 W</td></tr>
+              <tr><td>Following at 1 cm</td><td class="num">0.116 m²</td><td class="num">≈ 95 W</td><td class="num">≈ 16 W</td></tr>
+              <tr><td>Leading, follower at 1 cm</td><td class="num">0.131 m²</td><td class="num">≈ 108 W</td><td class="num">≈ 3 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">P = ½ ρ C<sub>d</sub>A v³ = 0.5 × 1.2 × 0.135 × 11.11³ ≈ 111 W. Rolling resistance (not shown) is unchanged by drafting. The study's rider was a single person in a tight position, so your own numbers will differ; the study didn't test gaps beyond 1 m. The 12 m draft zone keeps age-groupers far outside the gaps it measured.</p>
+        </div>
         <div class="feel"><span class="ico">🚴</span><div><span class="lbl">Feel the number</span>To clear 12 m in 25 s you need to ride at least 12 ÷ 25 = 0.48 m/s (about 1.7 km/h) faster than the rider ahead. At 33 km/h in the hoods that takes roughly 27 W more for those 25 seconds.</div></div>
         <details class="check"><summary>A pass takes you 30 s through someone's 12 m draft zone. What's wrong?</summary>
         <p>The limit is <strong>25 s</strong>: that would be a drafting violation and a time penalty.</p></details>
@@ -376,15 +406,15 @@
 
     <h3 class="subhead">Global</h3>
     <div class="cards">
-      <div class="card"><span class="tag">World federation</span><h4>World Triathlon</h4><p>The international federation for triathlon and its multisport family (duathlon, aquathlon, cross and long-distance triathlon). Sets the Competition Rules, including the unified 12 m / 25 s draft zone, and runs age-group world championships through national federations.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
-      <div class="card"><span class="tag">Race organiser (not a governing body)</span><h4>The IRONMAN Group</h4><p>A commercial company that owns and organises the IRONMAN and IRONMAN 70.3 race series, including the Kona and 70.3 world championships, under its own competition rules. It isn't a sports federation.</p><a class="url" href="https://www.ironman.com/" target="_blank" rel="noopener">ironman.com</a></div>
+      <div class="card"><span class="tag">World federation</span><h4>World Triathlon</h4><p>The international federation for triathlon and its multisport family (duathlon, aquathlon, cross and long-distance triathlon). Sets the Competition Rules, including the unified 12 m / 25 s draft zone, and runs age-group world championships through national federations.</p><div class="accred"><span class="ac ok">✓ World governing body</span><span class="acsrc">Facts from World Triathlon's own site.</span></div><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+      <div class="card"><span class="tag">Race organiser (not a governing body)</span><h4>The IRONMAN Group</h4><p>A commercial company that owns and organises the IRONMAN and IRONMAN 70.3 race series, including the Kona and 70.3 world championships, under its own competition rules. It isn't a sports federation.</p><div class="accred"><span class="ac claim">Commercial organiser (company's own site)</span><span class="acsrc">Not a federation; its races run under the IRONMAN Competition Rules.</span></div><a class="url" href="https://www.ironman.com/" target="_blank" rel="noopener">ironman.com</a></div>
       <div class="card"><span class="tag">Nutrition guidance</span><h4>ACSM / AND / Dietitians of Canada</h4><p>The 2016 joint position statement on nutrition and athletic performance: carbohydrate per hour, loading and hydration guidance used in Ch 1 and Ch 6.</p><a class="url" href="https://pubmed.ncbi.nlm.nih.gov/26891166/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></div>
     </div>
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National federation</span><h4>Indian Triathlon Federation (ITF)</h4><p>The national federation for triathlon in India, with Kids, Age Group, Pro and Para pathways. It lists affiliations with the Ministry of Youth Affairs &amp; Sports, the Sports Authority of India, World Triathlon and Asia Triathlon.</p><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
-      <div class="card"><span class="tag">World Triathlon listing</span><h4>ITF on triathlon.org</h4><p>World Triathlon's page for its Indian member federation, and its event listing for the 2026 Indian Sprint Triathlon National Championships (16 Aug 2026).</p><a class="url" href="https://triathlon.org/federations/indian-triathlon-federation" target="_blank" rel="noopener">triathlon.org</a></div>
+      <div class="card"><span class="tag">National federation</span><h4>Indian Triathlon Federation (ITF)</h4><p>The national federation for triathlon in India, with Kids, Age Group, Pro and Para pathways. It lists affiliations with the Ministry of Youth Affairs &amp; Sports, the Sports Authority of India, World Triathlon and Asia Triathlon.</p><div class="accred"><span class="ac ok">✓ World Triathlon member (status: Affiliated)</span><span class="ac ok">✓ On the IOA's member list</span><span class="acsrc">World Triathlon's <a href="https://triathlon.org/federations/indian-triathlon-federation" target="_blank" rel="noopener">federation page</a> lists the Indian Triathlon Federation: status Affiliated, founded 1990, region Asia, NOC IND; the Indian Olympic Association's <a href="https://olympic.ind.in/members/" target="_blank" rel="noopener">members page</a> lists it too (5 Oct 2026).</span></div><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
+      <div class="card"><span class="tag">World Triathlon listing</span><h4>ITF on triathlon.org</h4><p>World Triathlon's page for its Indian member federation, and its event listing for the 2026 Indian Sprint Triathlon National Championships (16 Aug 2026).</p><div class="accred"><span class="ac ok">✓ World Triathlon's own listing</span><span class="acsrc">The official source for membership.</span></div><a class="url" href="https://triathlon.org/federations/indian-triathlon-federation" target="_blank" rel="noopener">triathlon.org</a></div>
     </div>
   </div>
 </section>
@@ -397,6 +427,7 @@
       <h2>Pick your distance. We'll point you to the start line.</h2>
       <p>Real federations and races, each checked on an official website. Follow the link and confirm dates, cut-offs, eligibility and entry rules directly.</p>
     </div>
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> In triathlon the check that matters is who sanctions a race. The ITF is <strong>verified</strong> on World Triathlon's member list, so ITF events are federation races; IRONMAN races run under IRONMAN's own rules. <span class="ac ok">✓ Verified</span> means we found the race or body on an official list or page, and the label names it. <span class="ac claim">Organiser's own rules / claim</span> means only the organiser's site says so. <span class="ac unv">Unverified</span> means we found neither. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -435,10 +466,12 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Indian Triathlon Federation · Age Group &amp; Kids pathways</h4><span class="loc">India</span></div><span class="badge gov">Federation</span></div>
           <p>Start here for ITF events, the ITF account you need to enter them, and pathways for kids (from age 9) and adult age-group athletes.</p>
+          <div class="accred"><span class="ac ok">✓ National federation (World Triathlon member)</span><span class="acsrc">ITF is on World Triathlon's federation list and the IOA's member list.</span></div>
           <a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>Learn open-water swimming first</b><span class="meta">Kinetic Swimming page</span><p>Drag, buoyancy, currents and open-water safety: the skills behind the first leg of every triathlon.</p><a class="url" href="../swimming/" target="_blank" rel="noopener">Swimming page</a></div>
+        <div class="site"><b>Learn open-water swimming first</b><span class="meta">Kinetic Swimming page</span><p>Drag, buoyancy, currents and open-water safety: the skills behind the first leg of every triathlon.</p>
+          <div class="accred"><span class="ac unv">Kinetic guide, not a course provider</span><span class="acsrc">For real open-water lessons, see the labelled listings on our Swimming page.</span></div><a class="url" href="../swimming/" target="_blank" rel="noopener">Swimming page</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
@@ -447,8 +480,10 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which ITF events count for selection? What are this year's age-group selection criteria for the Asian and world championships?</p></div>
       </div>
       <div class="sites">
-        <div class="site"><b>ITF National Triathlon Championship</b><span class="meta">Shree Shiv Chhatrapati Sports Complex, Balewadi, Pune · 15–16 Aug 2026</span><p>ITF's 2026 national championship, after which it named India's squad for the Asian Elite &amp; Age Group Triathlon Championships in Aqaba, Jordan.</p><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
-        <div class="site"><b>World Triathlon age-group racing</b><span class="meta">Sprint, standard, aquabike, mixed relay and multisport worlds</span><p>Age-group athletes race for their country in national kit; your national federation runs qualification and the registration pathway.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+        <div class="site"><b>ITF National Triathlon Championship</b><span class="meta">Shree Shiv Chhatrapati Sports Complex, Balewadi, Pune · 15–16 Aug 2026</span><p>ITF's 2026 national championship, after which it named India's squad for the Asian Elite &amp; Age Group Triathlon Championships in Aqaba, Jordan.</p>
+          <div class="accred"><span class="ac ok">✓ ITF championship</span><span class="acsrc">Run by the federation on World Triathlon's list; also listed on triathlon.org.</span></div><a class="url" href="https://www.triathlonindia.com/" target="_blank" rel="noopener">triathlonindia.com</a></div>
+        <div class="site"><b>World Triathlon age-group racing</b><span class="meta">Sprint, standard, aquabike, mixed relay and multisport worlds</span><p>Age-group athletes race for their country in national kit; your national federation runs qualification and the registration pathway.</p>
+          <div class="accred"><span class="ac ok">✓ World Triathlon programme</span><span class="acsrc">Run by the international federation itself.</span></div><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-long" role="tabpanel" aria-labelledby="tab-long">
@@ -457,7 +492,8 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What are the cut-offs? What's the expected water temperature and the wetsuit rule? What will the aid stations serve, so I can train with it?</p></div>
       </div>
       <div class="sites">
-        <div class="site"><b>IRONMAN 70.3 Goa</b><span class="meta">Miramar Beach, Goa · 1 Nov 2026</span><p>Ocean swim and a hilly bike course, with a rolling start from 7:00 AM; IRONMAN lists air temperatures of about 21–32 °C and water around 26 °C. Registration is sold out; 2027 IRONMAN 70.3 World Championship slots are awarded at the race.</p><a class="url" href="https://www.ironman.com/races/im703-goa" target="_blank" rel="noopener">ironman.com</a></div>
+        <div class="site"><b>IRONMAN 70.3 Goa</b><span class="meta">Miramar Beach, Goa · 1 Nov 2026</span><p>Ocean swim and a hilly bike course, with a rolling start from 7:00 AM; IRONMAN lists air temperatures of about 21–32 °C and water around 26 °C. Registration is sold out; 2027 IRONMAN 70.3 World Championship slots are awarded at the race.</p>
+          <div class="accred"><span class="ac claim">IRONMAN race (organiser's own rules)</span><span class="acsrc">Details from IRONMAN's own race page; it runs under the IRONMAN Competition Rules.</span></div><a class="url" href="https://www.ironman.com/races/im703-goa" target="_blank" rel="noopener">ironman.com</a></div>
         <div class="site"><b>IRONMAN distances explained</b><span class="meta">IRONMAN</span><p>Sprint, Olympic, 70.3 and full distance compared, with typical finish times and cut-offs.</p><a class="url" href="https://www.ironman.com/stories/intro-triathlon/ironman-distances-explained-how-pick-your-perfect-race" target="_blank" rel="noopener">ironman.com</a></div>
       </div>
       <div class="callout note"><p style="margin:0">IRONMAN is a commercial race brand, not a governing body: its races run under the IRONMAN Competition Rules, so read them and the race's athlete guide.</p></div>
@@ -468,9 +504,11 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How many slots does my qualifying race have? How does the roll-down work? What's the deadline to accept a slot?</p></div>
       </div>
       <div class="sites">
-        <div class="site"><b>IRONMAN World Championship · Kona</b><span class="meta">Kailua-Kona, Hawai'i · 10 Oct 2026</span><p>From 2026 a single-day race for men and women together, in Kona only, with nearly 3,000 athletes.</p><a class="url" href="https://www.ironman.com/stories/news-updates/2026-ironman-world-championship-returns-hawaiian-roots-kona-exclusive-location" target="_blank" rel="noopener">ironman.com</a></div>
+        <div class="site"><b>IRONMAN World Championship · Kona</b><span class="meta">Kailua-Kona, Hawai'i · 10 Oct 2026</span><p>From 2026 a single-day race for men and women together, in Kona only, with nearly 3,000 athletes.</p>
+          <div class="accred"><span class="ac claim">IRONMAN race (organiser's own rules)</span><span class="acsrc">IRONMAN's own announcement.</span></div><a class="url" href="https://www.ironman.com/stories/news-updates/2026-ironman-world-championship-returns-hawaiian-roots-kona-exclusive-location" target="_blank" rel="noopener">ironman.com</a></div>
         <div class="site"><b>How Kona age-group slots work</b><span class="meta">IRONMAN</span><p>Automatic slots for each age-group winner, then Performance Pool slots ranked by age-graded time against the Kona Standard.</p><a class="url" href="https://www.ironman.com/races/im-world-championship-kona/age-group-slot-allocation-how-it-works" target="_blank" rel="noopener">ironman.com</a></div>
-        <div class="site"><b>World Triathlon age-group world championships</b><span class="meta">Through your national federation</span><p>Sprint and standard world titles for amateurs; ask the ITF about selection.</p><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
+        <div class="site"><b>World Triathlon age-group world championships</b><span class="meta">Through your national federation</span><p>Sprint and standard world titles for amateurs; ask the ITF about selection.</p>
+          <div class="accred"><span class="ac ok">✓ World Triathlon programme</span><span class="acsrc">Entries go through the ITF.</span></div><a class="url" href="https://triathlon.org/agegroup" target="_blank" rel="noopener">triathlon.org</a></div>
       </div>
     </div>
   </div>
@@ -528,7 +566,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

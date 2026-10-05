@@ -36,3 +36,24 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from the source listed he
 - **Tata Archery Academy trial criteria** (age, height) were only in a 2024 news report. **Not stated.**
 - **World Archery rulebook pages** (rulebook.worldarchery.org) did not load, so no rule-article details beyond the target-archery page are used.
 - **Indoor 18 m face sizes** were not checked, so they aren't given (18 m appears only as a lab distance).
+
+## 5. Deep research (5 Oct 2026, batch deep6)
+
+| Item | Source | Status |
+|---|---|---|
+| Static spine test: shaft on supports 28 in apart, 1.94 lb (880 g) weight at the centre; sag in thousandths of an inch = spine number (lower = stiffer) | Easton Archery, *Making sense of arrow spine*, https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/ ; ASTM F2031-05(2014) *Standard Test Method for Measurement of Arrow Shaft Static Spine*, https://store.astm.org/f2031-05r14.html (store page shows the standard as withdrawn, 2023) | ✓ maker's page + ASTM store page |
+| Spine → bending stiffness EI = F L³ ÷ 48δ (F = 8.63 N, L = 0.711 m): 700 → 3.6, 600 → 4.2, 500 → 5.1, 400 → 6.4 N·m² | simple-beam formula, computed by us | computed; "typical use" column is a rule of thumb (stated) |
+| Arrow drag measured in JAXA magnetic-suspension wind tunnel and free flight: Cd ≈ 1.5 with laminar boundary layer, ≈ 2.6 turbulent; transition depends on speed, point and vanes | T. Miyazaki et al., *Aerodynamic properties of an archery arrow*, *Sports Engineering* 16:43–54 (2013) — abstract https://www.bisp-surf.de/Record/PU201304002489 | ✓ abstract |
+| Speed loss v = v₀e^(−kx), k = ρCdA ÷ 2m, and crosswind drift by the ballistic "lag time" rule, for the page's 20 g arrow at 57.1 m/s, 5.5 mm shaft (illustrative), 3 m/s wind: 70 m ≈ 14 / 25 cm | computed by us | computed; shaft diameter and wind **illustrative** (stated) |
+| **AAI: World Archery member association, status Active** ("Archery Association of India", NOC IND, World Archery Asia) | World Archery API, https://api.worldarchery.sport/?v=3&content=MEMBERASSOCIATIONS&RBP=200 (curl 5 Oct 2026) | **✓ Verified** |
+| AAI on the IOA's member list | https://olympic.ind.in/members/ (curl 5 Oct 2026) | **✓ Verified** |
+| **Tata Archery Academy, Jamshedpur (Recurve)** on Khelo India's "State-wise – Academies accredited under Khelo India" | https://dashboard.kheloindia.gov.in/public/front/assets/Khelo_India_Academies_State_wise_td.pdf (curl 5 Oct 2026) | **✓ Verified** |
+| DDA Yamuna Sports Complex coaching; DDA Archery Promotion Scheme | DDA's own pages (already cited) | ✓ government (coach certification not stated) |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- AAI → ✓ World Archery member association (Active) + ✓ On the IOA's member list; AAI member units → ✓ Listed by the AAI; AAI register → ✓ AAI register
+- DDA Yamuna Sports Complex → ✓ Government sports complex (DDA) + "Coach certification: not stated"; DDA scheme → ✓ Government scheme (DDA)
+- Tata Archery Academy → ✓ Khelo India accredited (recurve)
+- AAI West Zone coaches workshop → ✓ AAI calendar; World Archery coach education → ✓ World Archery programme
+- Accreditation key callout added under "Where to train".
