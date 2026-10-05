@@ -54,3 +54,19 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - **AS/NZS 5848 and ANSI/ACCT 03-2019 content** (e.g. g limits, cord testing rules): the standards are paid documents and weren't read, so nothing from inside them is quoted; only their scope and status.
 - **Operator claims** (speeds, "longest", "first", audit results, jump counts) are attributed to the operator, not presented as independent fact. Jump-count totals were not used.
 - **Prices, booking offers, cashback, entry charges, phone numbers and emails**: deliberately not reproduced.
+
+## 5. Deep research (5 Oct 2026, batch deep3)
+
+| Item | Source | Status |
+|---|---|---|
+| Rubber hysteresis energy table (illustrative 20% loss on 70 kg example) | materials physics + prior lab numbers | worked on page |
+| Catenary / sag slope deepen (start steep, finish may rise) | cable statics (already on page) | deepened narrative |
+| Operator top-speed claims (140 / 160 km/h) | Jumpin Heights / Jais Flight sites (prior) | labelled **operator’s claim** |
+| ERCA / ACCT public directories for Jumpin Heights or Flying Fox | search 5 Oct 2026 | **not found** → unverified / school’s claim only |
+| Jumpin Heights safety (AS/NZS-style, NZ audit May 2024) | https://www.jumpinheights.com/safety/ | School’s claim |
+| MoT / ATOAI guidelines | PIB + atoai.org/sops (prior) | operator norms, not a school stamp directory |
+
+### Accreditation labels (5 Oct 2026)
+- Flying Fox Jodhpur / Kikar → Accreditation: unverified
+- Jumpin Heights (Flying Fox zip, Goa, Rishikesh, Running Valley) → School’s claim — AS/NZS-style / NZ audit
+- AJ Hackett cards → Accreditation: unverified (this pass)

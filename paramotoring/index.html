@@ -142,7 +142,21 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">Weight = 110 × 9.81 = 1,079 N; ÷ 6 ≈ 180 N. Climb = (400 − 180) × 10 ÷ 1,079 ≈ 2.0 m/s. Propellers aren't perfectly efficient, so the engine must make more than this power.</p>
         </div>
-        <div class="feel"><span class="ico">🪂</span><div><span class="lbl">Feel the number</span>Holding a paramotor level takes about 1.8 kW in our example: roughly the power of an electric kettle, delivered as a gentle 18 kg push.</div></div>
+        <h4>Why thrust falls as you speed up</h4>
+        <p>A static thrust figure (propeller pushing hard while you stand still) is not what you get in flight. In the simple momentum picture, the propeller accelerates a disk of air; as your airspeed rises, the same power adds less extra speed to that stream, so <strong>available thrust drops</strong>. Climb is hardest just after lift-off, when you still want full thrust and the wing is slow — then improves a little as you accelerate, then falls again as drag rises with speed. Density altitude (hot, high, humid) cuts both propeller thrust and wing lift, so the same field can feel short on a hot afternoon.</p>
+        <div class="worked">
+          <span class="lbl">Order of magnitude · disk loading (illustrative 1.25 m propeller)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>What</th><th>Number</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><td>Propeller disk area</td><td class="num">≈ 1.23 m²</td><td>π (0.625)²</td></tr>
+              <tr><td>400 N static thrust on that disk</td><td class="num">≈ 325 N/m²</td><td>About 3% of atmospheric pressure — a firm breeze through the cage</td></tr>
+              <tr><td>Ideal power for that thrust at zero speed (momentum theory)</td><td class="num">≈ 2.3 kW</td><td>√(T³ ÷ (2 ρ A)); real engines need more because props are not ideal</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">ρ ≈ 1.2 kg/m³. The Thrust Lab's 400 N is an all-up push you dial in; real static thrust depends on prop, reduction drive and density. Use the lab to feel how climb collapses when mass rises or L/D falls — not as an engine-dyno sheet.</p>
+        </div>
+        <div class="feel"><span class="ico">🪂</span><div><span class="lbl">Feel the number</span>Holding a paramotor level takes about 1.8 kW in our example: roughly the power of an electric kettle, delivered as a gentle 18 kg push. Full climb power is several times that, and much of it goes into spinning air rather than into your altitude.</div></div>
         <details class="check"><summary>A 150 kg tandem on a 6 : 1 wing: what drag in level flight?</summary>
         <p>150 × 9.81 ÷ 6 ≈ <strong>245 N</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -168,6 +182,8 @@
         </div>
         <h4>Certified wings</h4>
         <p>The Safety Guidelines for Paramotoring and powered parachutes (Version E5) say wings should be EN, LTF, DHV or DGAC certified and recommended for powered flying, with annual airworthiness checks and records kept.</p>
+        <h4>Trimmers, speedbar and reflex</h4>
+        <p>Many PPG wings add <strong>trimmers</strong> (risers you lengthen or shorten in flight to change the angle of attack) and a <strong>speedbar</strong> (a foot stirrup that pulls the A-risers forward). Released trimmers and a speedbar let you fly faster for cruise or into wind; pulled-in trimmers slow you for launch and landing. Some PPG wings are <strong>reflex</strong>: the aerofoil is shaped so that at speed the nose wants to pitch up if the wing is unloaded, which helps resist collapses in rough air — at the cost of different stall and recovery behaviour than a classic free-flight wing. The USPPA's PPG2 syllabus expects pilots to explain speedbar and trimmers, their use, risks and limitations, including for reflex wings. Learn each wing from its manual and from an instructor who knows that model.</p>
         <details class="check"><summary>Your all-up mass rises by a quarter. Roughly how much faster does the wing trim?</summary>
         <p>√1.25 ≈ 1.12, so about <strong>12% faster</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -191,7 +207,21 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">3,200 rpm = 335 rad/s; 15,000 ÷ 335 ≈ 45 N·m: like a 4.5 kg mass hanging on a 1 m lever. Torque is strongest at full power, which is during take-off and climb, close to the ground.</p>
         </div>
-        <p>The USPPA's PPG2 rating (a US reference) requires pilots to understand torque effects and to train on a simulator, a frame hung from a hang point so you can feel the controls on the ground.</p>
+        <h4>Thrust line and pitch</h4>
+        <p>Reaction torque tries to <em>roll</em> you. A separate effect is <strong>pitch</strong>: if the thrust line does not pass through the hang points (where the wing holds you), adding power creates a couple. Thrust above the hang points pitches the pilot back (harder to push the wing overhead on launch; a climb attitude that can stall if you also hold brakes); thrust below pitches you forward. Frames, hang-point adjustments and harness geometry are designed to keep that couple manageable — which is why copying a friend's settings onto a different motor can surprise you.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · pitch couple from a thrust-line offset (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Offset of thrust above hang points</th><th>Thrust</th><th>Pitch couple</th><th>Like…</th></tr></thead>
+            <tbody>
+              <tr><td class="num">5 cm</td><td class="num">400 N</td><td class="num">20 N·m</td><td>About 2 kg on a 1 m lever, pitching you back</td></tr>
+              <tr><td class="num">10 cm</td><td class="num">400 N</td><td class="num">40 N·m</td><td>Nearly the same size as the 45 N·m roll torque above</td></tr>
+              <tr><td class="num">10 cm</td><td class="num">200 N (cruise)</td><td class="num">20 N·m</td><td>Half the thrust, half the couple</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Couple = thrust × offset. Real hang-point charts matter more than this toy model; the point is that a few centimetres at full power are not trivial when you are running with a wing overhead.</p>
+        </div>
+        <p>The USPPA's PPG2 rating (a US reference) requires pilots to understand torque effects and to train on a simulator, a frame hung from a hang point so you can feel the controls on the ground. It also asks them to explain how centre of gravity and wing connection location on the harness affect the machine.</p>
         <details class="check"><summary>Same 15 kW but the propeller turns at 2,400 rpm. More or less torque?</summary>
         <p>More: 15,000 ÷ (2,400 × 2π ÷ 60) ≈ <strong>60 N·m</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -275,7 +305,7 @@
           <li><strong>Engines:</strong> instruments for cylinder-head temperature and RPM.</li>
           <li><strong>Permissions:</strong> an NOC through the district collector's office (with police clearance), Airports Authority of India clearance and a NOTAM giving the radius and height ceiling, then daily permission from local ATC.</li>
         </ul>
-        <div class="callout warn"><h4>The rules in India</h4><p style="margin:0">The Ministry of Civil Aviation told Parliament in 2026 that the National Air Sports Guidelines (NASG) 2023, which replaced the National Air Sports Policy 2022, set a framework through the Air Sports Federation of India (ASFI). DGCA regulates safety and licensing for gliders, microlights, light sport aircraft, gyroplanes, balloons and powered hang gliders; powered paragliders aren't on that list. The Safety Guidelines for Paramotoring and powered parachutes (Version E5) state that PPG and powered parachutes are not regulated in India, so officially no licence is required, but that pilots should keep a logbook and schools should certify their students' level. Training, it says, should follow BHPA, USPPA, APPI PPG or another recommended body. Check the current position with the school, the state tourism department and the airspace authorities before you fly.</p></div>
+        <div class="callout warn"><h4>The rules in India</h4><p style="margin:0">NASG 2023 superseded the 2022 air-sports policy (confirmed in a July 2026 Lok Sabha reply). Press reports of Civil Aviation answers the same year describe ASFI as the NASG framework body, and list DGCA's safety/licensing remit for gliders, microlights, LSA, gyroplanes, balloons and powered hang gliders — not powered paragliders. The Version E5 safety guideline says PPG and powered parachutes are not regulated in India, so officially no licence is required, but pilots should keep a logbook and schools should certify level; it recommends BHPA, USPPA, APPI PPG or similar. ACI's organogram names a Microlight &amp; Paramotor commissioner; that is not the same as a verified national PPG licence. Check the current position with the school, state tourism and airspace authorities before you fly.</p></div>
         <details class="check"><summary>From 300 m on a 6 : 1 wing at 36 km/h, with a 20 km/h headwind, how far can you glide over the ground?</summary>
         <p>300 × 6 × (36 − 20) ÷ 36 = <strong>800 m</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -290,7 +320,7 @@
     <div class="section-head">
       <span class="eyebrow">03 · The paramotor ladder</span>
       <h2>Learn to paraglide → paramotor course → PPG1 student → PPG2 novice → PPG3 experienced → tandem &amp; instructor</h2>
-      <p>India has no national paramotor licence that we could verify. Schools set their own courses and, as the state safety guideline recommends, base them on international rating systems (BHPA, USPPA, APPI PPG). We use the USPPA ratings as a published reference: they are voluntary US ratings, not Indian law.</p>
+      <p>India has no DGCA-issued national paramotor licence that we could verify. Schools set their own courses and, as the Version E5 safety guideline recommends, often base them on BHPA, USPPA or APPI PPG. ACI’s organogram names a Microlight &amp; Paramotor commissioner; that is not the same as a public, verified national PPG licence scheme. We use the USPPA ratings below as a published reference: they are voluntary US ratings, not Indian law.</p>
     </div>
 
     <div class="ladder">
@@ -352,14 +382,16 @@
     <h3 class="subhead">Global</h3>
     <div class="cards">
       <div class="card"><span class="tag">World federation</span><h4>FAI Microlight and Paramotor Commission (CIMA)</h4><p>The FAI commission for microlights and paramotors: world championships, records and competition rules. (Paragliding without an engine is under CIVL.)</p><a class="url" href="https://www.fai.org/commission/cima" target="_blank" rel="noopener">fai.org</a></div>
-      <div class="card"><span class="tag">Rating system (reference)</span><h4>United States Powered Paragliding Association (USPPA)</h4><p>Publishes voluntary PPG1–PPG3 pilot ratings and tandem instructor requirements, based on the US FAA's Part 103 rules and advisory circular 103-7.</p><a class="url" href="https://usppa.org/usppa-program/" target="_blank" rel="noopener">usppa.org</a></div>
+      <div class="card"><span class="tag">Rating system (reference)</span><h4>United States Powered Paragliding Association (USPPA)</h4><p>Publishes voluntary PPG1–PPG3 pilot ratings and tandem instructor requirements, based on the US FAA's Part 103 rules and advisory circular 103-7. Its public school directory is US-centred; we found no Indian school named there (checked 5 Oct 2026).</p><a class="url" href="https://usppa.org/usppa-program/" target="_blank" rel="noopener">usppa.org</a></div>
+      <div class="card"><span class="tag">National association (UK)</span><h4>British Hang Gliding &amp; Paragliding Association (BHPA)</h4><p>Runs a Powered Paragliding pathway (wing first, then motor, air law and navigation). BHPA Power qualifications are for solo flight only — no dual/passenger power qualification. Registered schools are listed on BHPA's site (UK-focused).</p><a class="url" href="https://www.bhpa.co.uk/sport/ppg/" target="_blank" rel="noopener">bhpa.co.uk</a></div>
     </div>
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">Ministry</span><h4>Ministry of Civil Aviation · NASG 2023</h4><p>Its 2026 reply to Parliament says the National Air Sports Guidelines 2023 replaced the 2022 policy and give a framework through the Air Sports Federation of India (ASFI).</p><a class="url" href="https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1311_OsAJQG.pdf" target="_blank" rel="noopener">sansad.in</a></div>
-      <div class="card"><span class="tag">Regulator</span><h4>Directorate General of Civil Aviation (DGCA)</h4><p>Regulates safety and licensing for gliders, microlights, light sport aircraft, gyroplanes, balloons and powered hang gliders, as the ministry described in 2026; powered paragliders weren't on that list.</p><a class="url" href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a></div>
-      <div class="card"><span class="tag">Safety guideline</span><h4>Safety Guidelines for Paramotoring &amp; powered parachutes (Version E5)</h4><p>A Maharashtra-focused guideline; the same text appears in Maharashtra Tourism's air-activity safety guidelines. Covers sites, NOC/AAI/NOTAM permissions, training, equipment and tandem limits.</p><a class="url" href="https://safetyguidelines.co.in/Documents/English/Air/Paramotoring.pdf" target="_blank" rel="noopener">safetyguidelines.co.in</a></div>
+      <div class="card"><span class="tag">Ministry</span><h4>Ministry of Civil Aviation · NASG 2023</h4><p>A July 2026 Lok Sabha reply (Youth Affairs) confirms NASG 2023 superseded the National Air Sports Policy 2022. Separate Civil Aviation answers reported in the press (Aug 2026) describe NASG as the framework through ASFI. Read the primary documents; press summaries can blur which ministry answered what.</p><a class="url" href="https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1311_OsAJQG.pdf" target="_blank" rel="noopener">sansad.in (AU1311)</a></div>
+      <div class="card"><span class="tag">Regulator</span><h4>Directorate General of Civil Aviation (DGCA)</h4><p>As reported from the ministry's 2026 answers, DGCA continues to regulate safety and licensing for gliders, microlights, light sport aircraft, gyroplanes, balloons and powered hang gliders under the Aircraft Rules; powered paragliders were not on that list. Confirm the current CAR position before you rely on it.</p><a class="url" href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a></div>
+      <div class="card"><span class="tag">Safety guideline</span><h4>Safety Guidelines for Paramotoring &amp; powered parachutes (Version E5)</h4><p>A Maharashtra-focused guideline; the same text appears in Maharashtra Tourism's air-activity safety guidelines. States PPG/PPC are not regulated so officially no licence is required, recommends BHPA/USPPA/APPI PPG-style training, logbooks and school-issued levels.</p><a class="url" href="https://safetyguidelines.co.in/Documents/English/Air/Paramotoring.pdf" target="_blank" rel="noopener">safetyguidelines.co.in</a></div>
+      <div class="card"><span class="tag">National aero club</span><h4>Aero Club of India · Microlight &amp; Paramotor seat</h4><p>ACI's published organogram includes a Commissioner for Microlight &amp; Paramotor (and an ACI membership category for microlights &amp; paramotors). The site mpci.in presents itself as that commission. We have not verified a public DGCA-recognised national PPG licence issued through it — treat school claims about MPCI licensing carefully.</p><a class="url" href="https://aeroclubofindia.com/about/organogram/" target="_blank" rel="noopener">aeroclubofindia.com</a></div>
     </div>
   </div>
 </section>
@@ -370,7 +402,7 @@
     <div class="section-head">
       <span class="eyebrow">05 · Where to train</span>
       <h2>Pick your level. We'll point you to the field.</h2>
-      <p>Real schools and official sources, each checked on its own website. Follow the link and confirm course content, prerequisites and permissions directly.</p>
+      <p>Real schools and official sources, each checked on its own website or an official directory. Every school card says whether its accreditation is verified on an official list, only the school’s claim, or unverified. Follow the link and confirm course content, prerequisites and permissions directly. Paramotoring needs permissions for the site: build spare days into any plan.</p>
     </div>
 
     <h3 class="subhead">When to go</h3>
@@ -383,6 +415,7 @@
   <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-paramotoring">Full season calendar →</a></div>
 </div>
 <!-- season-strip:end -->
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> <span class="ac ok">✓ APPI POWER-listed</span> means we found the school named on <a href="https://appipower.org/schools_worldwide/" target="_blank" rel="noopener">APPI Power’s worldwide school list</a>. <span class="ac claim">School’s claim — body</span> means only the school’s own site says so. <span class="ac unv">Accreditation: unverified</span> means neither. We also checked <a href="https://usppa.org/schools/" target="_blank" rel="noopener">USPPA’s school directory</a> (no Indian school named, 5 Oct 2026) and BHPA’s registered PPG schools list (UK-focused; no Indian school named). A listing is not a safety guarantee. Checked 5 Oct 2026.</p></div>
     <div class="season">
       <div><b>Mornings &amp; evenings</b>The guideline says smooth, laminar air makes early morning and evening generally suitable for training.</div>
       <div><b>Coasts</b>Beaches are popular for their laminar sea breeze, the guideline notes, but avoid crowded ones.</div>
@@ -403,8 +436,9 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which paragliding rating do I need before your paramotor course? Can I do both at your school?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>PG Gurukul · P1–P3 paragliding courses</h4><span class="loc">Bir, Himachal Pradesh</span></div><span class="badge">Paragliding first</span></div>
-          <p>Runs P1 to P3 paragliding courses at Bir (P1 + P2 in 8 days); its paramotoring course needs a P3 rating first.</p>
+        <div class="school"><div class="top"><div><h4>PG Gurukul · P1–P3 paragliding courses</h4><span class="loc">Bir, Himachal Pradesh</span></div><span class="badge" data-acc="v">ACI (paragliding)</span></div>
+          <p>Runs P1 to P3 paragliding courses at Bir (P1 + P2 in 8 days on its site); its paramotoring course needs a P3 rating first. See our <a href="../paragliding/#where">Paragliding page</a> for the verified ACI / BHPA labelling on the free-flight side.</p>
+          <div class="accred"><span class="ac ok">✓ ACI-accredited (paragliding)</span><span class="ac claim">School’s claim — BHPA instructor</span><span class="acsrc">Named on <a href="https://www.aeroclubofindia.com/accredited-schools/pg-gurukul" target="_blank" rel="noopener">ACI’s accredited schools (PG Gurukul)</a> for paragliding (see also our <a href="../paragliding/#where">Paragliding page</a>). BHPA-certified instructor is the school’s own statement; BHPA’s registered-schools list is UK-focused and did not name this school when we checked.</span></div>
           <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
       </div>
       <div class="sites">
@@ -417,14 +451,25 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which rating system is your course based on (BHPA, USPPA, APPI PPG)? What certificate and logbook do I get? Which permissions does the school hold for its site?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>PG Gurukul · Paramotoring course</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge">6 days</span></div>
-          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating.</p>
+        <div class="school"><div class="top"><div><h4>Flying World Aviation</h4><span class="loc">IMT Manesar / Gurugram, Haryana</span></div><span class="badge padi" data-acc="v">APPI Power</span></div>
+          <p>Listed by APPI Power as a school (since 2022). The APPI listing names Nitin Kumar as manager and describes foot-launch / paratrike activity; confirm course syllabus, prerequisites and site permissions directly.</p>
+          <div class="accred"><span class="ac ok">✓ APPI POWER-listed</span><span class="acsrc">Named on <a href="https://appipower.org/school/2955/" target="_blank" rel="noopener">APPI Power school listing 2955</a> (checked 5 Oct 2026). APPI ratings give no legal right to fly in a country unless the local authority recognises them.</span></div>
+          <a class="url" href="https://appipower.org/school/2955/" target="_blank" rel="noopener">appipower.org listing</a></div>
+        <div class="school"><div class="top"><div><h4>PG Gurukul · Paramotoring course</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge" data-acc="u">6 days · P3 required</span></div>
+          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating (school site). We found no USPPA or APPI Power school listing for this paramotor course.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified (paramotor)</span><span class="acsrc">Not on <a href="https://usppa.org/schools/" target="_blank" rel="noopener">USPPA’s school directory</a> or the APPI Power listing we checked for this course. The school’s ACI accreditation applies to its paragliding programmes (see above).</span></div>
           <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
-        <div class="school"><div class="top"><div><h4>SkyThrill · Paramotor training</h4><span class="loc">Sohna and Gurgaon, Haryana</span></div><span class="badge">Basic &amp; intermediate</span></div>
-          <p>A 4-day orientation for newcomers, a 10-day basic course for pilots with basic paragliding, then intermediate and refresher courses; age 16+, with an exam on safety, equipment, aviation knowledge, flying skills and weather.</p>
+        <div class="school"><div class="top"><div><h4>SkyThrill · Paramotor training</h4><span class="loc">Sohna and Gurgaon, Haryana</span></div><span class="badge" data-acc="u">Basic &amp; intermediate</span></div>
+          <p>Its site describes a 4-day orientation, a 10-day basic course for pilots with basic paragliding, then intermediate and refresher courses; age 16+, with an exam on safety, equipment, aviation knowledge, flying skills and weather.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Own site only. Not named on USPPA’s school directory or the APPI Power listing we checked (5 Oct 2026).</span></div>
           <a class="url" href="http://www.skythrill.in/skythrill-paramotoring-training-course" target="_blank" rel="noopener">skythrill.in</a></div>
-        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">PPG &amp; PPC</span></div>
+        <div class="school"><div class="top"><div><h4>Space Apple</h4><span class="loc">Vasai / Virar, Maharashtra</span></div><span class="badge" data-acc="u">PPG1–PPG2 syllabus</span></div>
+          <p>Offers foot-launch and trike-launch programmes it labels PPG1 / PPG2, plus a PG-to-PPG conversion. Its rules page says training follows curricula inspired by FAI, BHPA, USPPA and APPI — that is the school’s description, not a directory listing we verified.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Not named on <a href="https://usppa.org/schools/" target="_blank" rel="noopener">USPPA’s school directory</a> or the APPI Power listing we checked. Confirm permissions and syllabus on spaceapple.com (fees on that page are not reproduced here).</span></div>
+          <a class="url" href="https://www.spaceapple.com/flying-courses" target="_blank" rel="noopener">spaceapple.com</a></div>
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge" data-acc="u">PPG &amp; PPC</span></div>
           <p>Starts students on powered paratrikes and powered parachutes, which it says fall under a non-licensed category in India, with progression to licensed microlight and light-aircraft training.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="ac claim">School’s claim — non-licensed PPG/PPC</span><span class="acsrc">Regulatory wording is the club’s own. Not on USPPA or APPI Power directories we checked.</span></div>
           <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
       </div>
     </div>
@@ -504,7 +549,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

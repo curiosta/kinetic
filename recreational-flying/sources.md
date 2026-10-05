@@ -64,3 +64,23 @@ Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft,
 - **No prices, fares, fees or tie-up line**; no emails or phone numbers.
 - **The Balloon Lab is illustrative.** It is not a load or flight-planning tool; the page says so.
 - A hidden, empty `#gear` placeholder sits before the footer for a future Gear section (not built).
+
+## 5. Deep research (5 Oct 2026, batch deep3)
+
+| Item | Source | Status |
+|---|---|---|
+| Aspect-ratio / induced-drag order-of-magnitude (CDi ≈ CL²/(π AR e)) | standard aerodynamics | worked on page (illustrative AR) |
+| Speed-to-fly note in sink/lift | soaring practice | brief deepen, Ch 2 |
+| Paramotor Thrust Lab cross-link | ../paramotoring/#pm-lab | on-site |
+| Flying World Aviation APPI Power listing | https://appipower.org/school/2955/ | ✓ APPI POWER-listed (same as paramotoring deep3) |
+| SkyWaltz MoCA licence claim | skywaltz.com/about-us | School’s claim — not re-fetched live certificate |
+| TNIBF official festival | https://tnibf.com/ | ✓ Official festival site (identity) |
+| GFZ / SkyVentures / PG Gurukul paramotor | own sites | Accreditation: unverified (+ GFZ school’s claim non-licensed) |
+| Hadapsar | Hindustan Times Nov 2025 (prior source) | Reported — DGCA gliding centre; confirm status |
+
+### Accreditation labels (5 Oct 2026)
+- SkyWaltz → School’s claim — MoCA licensed (Jan 2008)
+- TNIBF → ✓ Official festival site
+- Flying World Aviation → ✓ APPI POWER-listed
+- GFZ (both cards), PG Gurukul paramotor, SkyVentures → Accreditation: unverified
+- Hadapsar → Reported — DGCA gliding centre (press)

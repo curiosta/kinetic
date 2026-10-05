@@ -39,3 +39,21 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - British Skydiving licence/category details: not verified (homepage only), so not described.
 - Minimum deployment altitudes and oxygen rules: not verified; the page tells readers to ask their dropzone.
 - Static-line programmes at specific dropzones beyond Skyhigh's menu listing: not verified.
+
+## 5. Deep research (5 Oct 2026, batch deep3)
+
+| Item | Source | Status |
+|---|---|---|
+| USPA licence detail refresh (A oral/practical; B canopy card 10 m / 33 ft ×10; track ≥100 ft; freefall table) | https://www.uspa.org/SIM/3-1 | re-fetched 5 Oct 2026 |
+| British Skydiving site under maintenance | https://www.britishskydiving.org/ | checked 5 Oct 2026 — name kept; details not expanded |
+| Skyhigh India claims (USPA affiliated, DGCA certified, Sigma, AFF menu); fees on site **not reproduced** | https://www.skyhighindia.com/ | curl 5 Oct 2026 — **School’s claim** for USPA/DGCA |
+| USPA Drop Zone Locator | https://www.uspa.org/DZLocator | interactive; no India confirmation this pass |
+| Skydive India / Macsen Aviation (Manpur / Mount Abu area); staff USPA lines are site’s | https://skydives.in/about-us/ | fetched 5 Oct 2026 |
+| Macsen Aviation on MoCA-reported aerial-work list | freepressjournal.in 22 Aug 2026 (as reported) | **✓ Named on MoCA-reported list** (press, not live DGCA directory) |
+| NASG / Parliament wording | AU1311 PDF + press of Aug 2026 MoCA reply | softened: “as reported”; AU1311 for NASG supersession |
+| Freefall density effect; tracking; opening KE ~129 kJ; flare / wing loading | standard physics + USPA SIM | worked on page (illustrative) |
+
+### Accreditation labels (5 Oct 2026)
+- Skyhigh India (tandem + AFF) → School’s claim — USPA affiliated; School’s claim — DGCA certified
+- Skydive India / Macsen → ✓ Named on MoCA-reported aerial-work list (Macsen Aviation); School’s claim — USPA ratings on staff
+- Skydive Dubai cards → Accreditation: unverified (this pass)

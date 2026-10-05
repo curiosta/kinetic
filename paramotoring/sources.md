@@ -40,3 +40,27 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - BHPA and APPI PPG rating details not checked; they appear only as names cited by the Version E5 guideline.
 - Typical paramotor airspeeds (30–45 km/h), motor power, propeller rpm and fuel figures are illustrative.
 - Cross-links: ../paragliding/ and ../recreational-flying/ (both pages now link back to this page).
+
+## 5. Deep research (5 Oct 2026, batch deep3)
+
+| Item | Source | Status |
+|---|---|---|
+| USPPA PPG1–3 syllabus detail (inflations, 25/90 flights, torque, trimmers/reflex, hang-point CG) | https://usppa.org/usppa-program/ | re-fetched 5 Oct 2026 |
+| USPPA school directory (no Indian school named) | https://usppa.org/schools/ | checked 5 Oct 2026 |
+| BHPA paramotoring pathway; Power quals solo-only | https://www.bhpa.co.uk/sport/ppg/ | fetched 5 Oct 2026 |
+| BHPA registered PPG schools (UK-focused) | https://www.bhpa.co.uk/schools/schools.php?category=ppg&region=both | search index 5 Oct 2026 |
+| APPI Power school: Flying World Aviation / Nitin Kumar (Manesar) | https://appipower.org/school/2955/ | fetched 5 Oct 2026 — **✓ APPI POWER-listed** |
+| Space Apple Vasai courses (PPG1/PPG2 labels; inspired-by wording); fees on page **not reproduced** | https://www.spaceapple.com/flying-courses | fetched 5 Oct 2026 — Accreditation: unverified |
+| Space Apple rules page (NASG / MPCI narrative — school's framing) | https://www.spaceapple.com/rules-regulations | fetched; used only as context, not as official law |
+| ACI organogram: Commissioner Microlight & Paramotor | https://aeroclubofindia.com/about/organogram/ | fetched 5 Oct 2026 |
+| mpci.in presents itself as that commission | https://www.mpci.in/ | fetched; **not** treated as verified DGCA PPG licence issuer |
+| NASG 2023 superseded NASP 2022 | Lok Sabha AU1311 (27 Jul 2026) PDF | already on page; wording softened to name the Youth Affairs reply |
+| DGCA remits (press of MoCA Aug 2026 reply) | indianaviationnews.net / freepressjournal | kept as “as reported”; powered paragliders not on list |
+| Propeller disk / available thrust; thrust-line pitch couple; reflex/trimmers | standard momentum theory + USPPA PPG2 knowledge items | worked on page (illustrative) |
+| Seasons | unchanged (YYYYYYYYYYYY + mornings/evenings guideline) | no verified published season calendar for Indian PPG sites |
+
+### Accreditation labels on school cards (5 Oct 2026)
+- Flying World Aviation → ✓ APPI POWER-listed (appipower.org/school/2955/)
+- PG Gurukul (Bir paragliding) → ✓ ACI-accredited (paragliding) + School’s claim — BHPA instructor
+- PG Gurukul (Kotkapura paramotor) → Accreditation: unverified (paramotor)
+- SkyThrill, Space Apple, GFZ → Accreditation: unverified (GFZ also School’s claim — non-licensed PPG/PPC)

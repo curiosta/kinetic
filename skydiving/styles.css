@@ -314,3 +314,10 @@ footer a{color:#7fd8cd}
 .cards>*,.schools>*,.sites>*{min-width:0}
 .school a.url,.site a.url{overflow-wrap:anywhere}
 @media (max-width:640px){.school .top{flex-wrap:wrap}}
+
+/* accreditation labels (deep3, 5 Oct 2026) */
+.accred{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:.6em 0 .2em;min-width:0}
+.ac{display:inline-block;font:600 .64rem var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:normal;overflow-wrap:anywhere;max-width:100%}
+.ac.ok{background:#e3f4ee;color:#0f6b56}.ac.claim{background:#fff1d6;color:#8a5a00}.ac.unv{background:#efede7;color:#4f6270}
+.acsrc{flex:1 1 100%;font-size:.8rem;line-height:1.45;color:var(--muted);overflow-wrap:anywhere}
+.accred-key .ac{vertical-align:1px}

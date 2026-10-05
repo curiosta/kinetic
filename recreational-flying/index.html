@@ -149,6 +149,20 @@
           </tbody>
         </table></div>
         <p class="small">Long, slender wings (high aspect ratio) cut induced drag, which is why sailplanes have such long wings. A headwind shortens the glide over the ground; sinking air can shorten it far more.</p>
+        <h4>Aspect ratio: why sailplane wings are so long</h4>
+        <p>Induced drag coefficient scales roughly as <span class="eq">C<sub>Di</sub> ≈ C<sub>L</sub>² ÷ (π × AR × e)</span>, where aspect ratio AR = span² ÷ area and e is an efficiency factor near 0.8–0.9 for a clean wing. Doubling AR roughly halves induced drag at the same C<sub>L</sub>. That is why a training sailplane with a long slender wing can glide 30:1 while a stubby microlight wing might manage ~10:1 with the engine off — and why folding a hang-glider's tips (or flying a small PPG wing) costs glide.</p>
+        <div class="worked">
+          <span class="lbl">Order of magnitude · same C<sub>L</sub> = 0.8, e = 0.85</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wing</th><th>Illustrative AR</th><th>C<sub>Di</sub> ≈ C<sub>L</sub>²/(π AR e)</th><th>Relative induced drag</th></tr></thead>
+            <tbody>
+              <tr><td>PPG / short microlight wing</td><td class="num">≈ 5</td><td class="num">≈ 0.048</td><td class="num">baseline</td></tr>
+              <tr><td>Hang glider</td><td class="num">≈ 8</td><td class="num">≈ 0.030</td><td class="num">≈ 0.63×</td></tr>
+              <tr><td>Training sailplane</td><td class="num">≈ 20</td><td class="num">≈ 0.012</td><td class="num">≈ 0.25×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Illustrative geometry only — real wings add fuselage, wires and tip devices. The point is the AR lever: span is expensive on the ground and priceless in the air.</p>
+        </div>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A glide ratio of 40 is a slope of 1.4°, gentler than almost any road. From the height of a tall building (100 m), a good sailplane could glide 4 km in still air.</div></div>
         <details class="check"><summary>A sailplane glides at 90 km/h (25 m/s) with L/D 40. How fast is it sinking?</summary>
         <p>Sink rate = speed ÷ glide ratio = 25 ÷ 40 ≈ <strong>0.6 m/s</strong>. Any air rising faster than that, and the glider climbs (<a href="#ch-soar">Ch 2</a>).</p></details>
@@ -181,7 +195,7 @@
           <p class="small" style="margin:10px 0 0">String climbs and glides together and you have cross-country soaring: India's Hadapsar Gliding Centre in Pune, for example, is reported to hold records for distances over 500 km and heights over 20,000 ft.</p>
         </div>
         <h4>The sinking air you don't see</h4>
-        <p>What goes up must come down: around every thermal there is sinking air, often 1–2 m/s or more. A glider crossing it loses height much faster than its still-air sink rate. That's why pilots speed up through sink (to spend less time in it) and slow down in lift.</p>
+        <p>What goes up must come down: around every thermal there is sinking air, often 1–2 m/s or more. A glider crossing it loses height much faster than its still-air sink rate. That's why pilots speed up through sink (to spend less time in it) and slow down in lift — the same idea as the classic "speed-to-fly" rules of thumb: in strong expected lift ahead, fly faster between thermals; in weak days, preserve height.</p>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>1.7 m/s up is a calm lift ride: about a floor of a building every two seconds, with no engine anywhere.</div></div>
         <details class="check"><summary>A hang glider sinks at 1.1 m/s while circling. The thermal is rising at 1.0 m/s. What happens?</summary>
         <p>1.0 − 1.1 = <strong>−0.1 m/s</strong>: it still sinks slowly, just more slowly than in still air. Weak thermals that keep a sailplane up may not keep a less efficient wing up.</p></details>
@@ -240,7 +254,7 @@
               <tr><td>Extra power to climb</td><td class="num">needs rising air (<a href="#ch-soar">Ch 2</a>)</td><td class="num">+11 kW for 2.5 m/s</td><td class="num">+1.6 kW for 1.5 m/s</td></tr>
             </tbody>
           </table></div>
-          <p class="small" style="margin:10px 0 0">Propellers are not perfectly efficient (often roughly 60–80%), so the engine has to deliver more than these figures, plus a margin for take-off and hot, high days (<a href="#ch-weather">Ch 5</a>). The paramotor's L/D is lower than a free-flying paraglider's because the motor, cage and higher speed add drag.</p>
+          <p class="small" style="margin:10px 0 0">Propellers are not perfectly efficient (often roughly 60–80%), so the engine has to deliver more than these figures, plus a margin for take-off and hot, high days (<a href="#ch-weather">Ch 5</a>). The paramotor's L/D is lower than a free-flying paraglider's because the motor, cage and higher speed add drag. Our <a href="../paramotoring/#pm-lab">Paramotoring Thrust Lab</a> lets you dial mass, L/D, thrust and wind to see climb and engine-off glide — the same force balance as this table, with a fabric wing on your back.</p>
         </div>
         <h4>What the engine changes, and what it doesn't</h4>
         <ul>
@@ -426,7 +440,7 @@
     <div class="section-head">
       <span class="eyebrow">05 · Where to fly</span>
       <h2>Pick your level. We'll point you to the airfield.</h2>
-      <p>Real Indian operators, schools, clubs and a festival, each checked on its own website, or in a news report where no official page exists. For current courses, fees, approvals and dates, follow the link and confirm with the operator directly. For paragliding, see our <a href="../paragliding/">paragliding page</a>.</p>
+      <p>Real Indian operators, schools, clubs and a festival, each checked on its own website, or in a news report where no official page exists. Every school/operator card says whether an approval is verified on an official source, only the operator’s claim, or unverified. Confirm courses, approvals and dates with the operator directly. For paragliding and paramotoring detail, see our <a href="../paragliding/">paragliding</a> and <a href="../paramotoring/">paramotoring</a> pages.</p>
     </div>
 
     <h3 class="subhead">When to go</h3>
@@ -442,6 +456,7 @@
   <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-recreational-flying">Full season calendar →</a></div>
 </div>
 <!-- season-strip:end -->
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> <span class="ac claim">School’s claim — body</span> means only the operator’s own site (or a news report) says so. <span class="ac unv">Accreditation: unverified</span> means we found no official directory listing this pass. Government / festival identity badges name what the organisation is, not a third-party adventure stamp. DGCA approvals for pilot training should be confirmed on <a href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a>. Checked 5 Oct 2026.</p></div>
     <div class="season">
       <div><b>Balloon season</b>Drier months: SkyWaltz lists 1 September to 30 April; Coimbatore's balloon festival is held in mid-January.</div>
       <div><b>Soaring</b>Sunny, dry days build the best thermals by late morning (<a href="#ch-soar">Ch 2</a>). Very hot afternoons bring thin air and rough thermals (<a href="#ch-weather">Ch 5</a>).</div>
@@ -463,11 +478,13 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What wind limits do you fly in? What happens if the morning is too windy (<a href="#ch-weather">Ch 5</a>)? How do you choose a landing field, given that a balloon goes where the wind goes? How many people does this envelope carry on a warm day?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>SkyWaltz</h4><span class="loc">Jaipur (Kukas) base · other locations listed on its site</span></div><span class="badge gov">Licensed balloon operator</span></div>
-          <p>Describes itself as India's first fully licensed commercial hot-air balloon operator, authorised by the Ministry of Civil Aviation in January 2008 (a brand of E Factor Adventure Tourism). Flights last about an hour around sunrise or sunset, in balloons for 2 to 22 people, flown by internationally licensed pilots; season 1 September to 30 April.</p>
+        <div class="school"><div class="top"><div><h4>SkyWaltz</h4><span class="loc">Jaipur (Kukas) base · other locations listed on its site</span></div><span class="badge" data-acc="c">Balloon operator</span></div>
+          <p>Describes itself as India's first fully licensed commercial hot-air balloon operator, authorised by the Ministry of Civil Aviation in January 2008 (a brand of E Factor Adventure Tourism). Flights last about an hour around sunrise or sunset, in balloons for 2 to 22 people, flown by internationally licensed pilots; season 1 September to 30 April (school site).</p>
+          <div class="accred"><span class="ac claim">School’s claim — MoCA licensed (Jan 2008)</span><span class="acsrc">Authorisation date and “fully licensed” wording are from <a href="https://www.skywaltz.com/about-us/" target="_blank" rel="noopener">skywaltz.com</a>. We did not re-fetch a live MoCA/DGCA operator certificate this pass — confirm current approval before you book.</span></div>
           <a class="url" href="https://www.skywaltz.com/about-us/" target="_blank" rel="noopener">skywaltz.com</a></div>
-        <div class="school"><div class="top"><div><h4>Tamil Nadu International Balloon Festival</h4><span class="loc">Coimbatore · 11th edition 15–18 Jan 2026 · Jallikattu Grounds, L&amp;T Bypass Road</span></div><span class="badge">Festival</span></div>
-          <p>A balloon display supported by the Tamil Nadu Department of Tourism. Visitors watch the balloons; a limited number of tethered rides rise 60–80 ft, depending on the weather, and the pilot's decision is final. Balloons do not take off on free flights at the festival.</p>
+        <div class="school"><div class="top"><div><h4>Tamil Nadu International Balloon Festival</h4><span class="loc">Coimbatore · 11th edition 15–18 Jan 2026 · Jallikattu Grounds, L&amp;T Bypass Road</span></div><span class="badge gov" data-acc="v">Tourism festival</span></div>
+          <p>A balloon display supported by the Tamil Nadu Department of Tourism (official festival site). Visitors watch the balloons; a limited number of tethered rides rise 60–80 ft, depending on the weather, and the pilot's decision is final. Balloons do not take off on free flights at the festival.</p>
+          <div class="accred"><span class="ac ok">✓ Official festival site</span><span class="acsrc">Identity badge for the event at <a href="https://tnibf.com/" target="_blank" rel="noopener">tnibf.com</a> — not a pilot-school accreditation.</span></div>
           <a class="url" href="https://tnibf.com/" target="_blank" rel="noopener">tnibf.com</a></div>
       </div>
       <div class="callout note"><p style="margin:0"><strong>Tandem flights in a wing:</strong> the easiest way to try a fabric wing is a tandem paraglide with a qualified pilot. Our <a href="../paragliding/">paragliding page</a> lists verified sites and schools.</p></div>
@@ -480,14 +497,21 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the current legal position for this aircraft type, and can you show me? What's the instructor-to-student ratio? How do you teach engine-failure landings? What wind and thermal limits do students fly in? What happens to the wing in a stall?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">PPG, PPC, microlight &amp; LSA</span></div>
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge" data-acc="u">PPG, PPC, microlight &amp; LSA</span></div>
           <p>Starts students on powered paratrikes and powered parachutes, which it says fall under a non-licensed flex-wing category in India, then offers progression to licensed flying on powered hang gliders, fixed-wing microlights, light sport aircraft and motor gliders.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="ac claim">School’s claim — non-licensed PPG/PPC</span><span class="acsrc">Regulatory wording is the club’s own. Confirm the current legal position with DGCA / ACI before you train. Also listed on our <a href="../paramotoring/#where">paramotoring page</a>.</span></div>
           <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
-        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge">Paramotor course</span></div>
-          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating, so you learn to fly the wing before adding an engine. Our <a href="../paramotoring/">Paramotoring page</a> covers more courses, the physics and the rules.</p>
+        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Kotkapura, Punjab</span></div><span class="badge" data-acc="u">Paramotor course</span></div>
+          <p>A 6-day paramotoring course for pilots who already hold a P3 paragliding rating, so you learn to fly the wing before adding an engine. Our <a href="../paramotoring/#where">Paramotoring page</a> covers more courses, physics and accreditation labels.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified (paramotor)</span><span class="acsrc">Paramotor course not on USPPA / APPI Power directories we checked. ACI accreditation on the school’s Bir paragliding side is covered on the <a href="../paragliding/#where">paragliding page</a>.</span></div>
           <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
-        <div class="school"><div class="top"><div><h4>SkyVentures</h4><span class="loc">Rajasthan</span></div><span class="badge">Hang gliding</span></div>
+        <div class="school"><div class="top"><div><h4>Flying World Aviation</h4><span class="loc">IMT Manesar / Gurugram</span></div><span class="badge padi" data-acc="v">APPI Power</span></div>
+          <p>APPI Power-listed paramotor school (see paramotoring page for the listing link and caveats). Keep the paramotor link for powered fabric-wing training.</p>
+          <div class="accred"><span class="ac ok">✓ APPI POWER-listed</span><span class="acsrc">Verified on <a href="https://appipower.org/school/2955/" target="_blank" rel="noopener">APPI Power listing 2955</a>. Detail on our <a href="../paramotoring/#where">paramotoring page</a>.</span></div>
+          <a class="url" href="https://appipower.org/school/2955/" target="_blank" rel="noopener">appipower.org listing</a></div>
+        <div class="school"><div class="top"><div><h4>SkyVentures</h4><span class="loc">Rajasthan</span></div><span class="badge" data-acc="u">Hang gliding</span></div>
           <p>Calls itself Rajasthan's first and only hang-gliding school. A 5-day basic course covers rigging, pre-flight checks, ground handling and assisted launches and landings; intermediate training moves on to ridge soaring (for example, gaining height above a 300 ft hill) and thermal soaring. Also offers paramotor training and winch towing.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Own site only. Not on BHPA’s registered-schools list (UK-focused) when we checked for related free-flight bodies.</span></div>
           <a class="url" href="https://skyventures.in/hang-glider-training-india/" target="_blank" rel="noopener">skyventures.in</a></div>
       </div>
     </div>
@@ -499,11 +523,13 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the school approved by DGCA for this licence, and can I see the approval? Which aircraft will I train on, and how is it maintained? How do you teach stalls and spins (<a href="#ch-stall">Ch 6</a>), and field landings after engine failure (<a href="#ch-power">Ch 4</a>)?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>Hadapsar Gliding Centre</h4><span class="loc">Hadapsar, Pune · established 7 Nov 1950</span></div><span class="badge gov">DGCA gliding centre</span></div>
+        <div class="school"><div class="top"><div><h4>Hadapsar Gliding Centre</h4><span class="loc">Hadapsar, Pune · established 7 Nov 1950</span></div><span class="badge gov" data-acc="c">Historic gliding centre</span></div>
           <p>India's oldest civil-aviation training base, founded by the Indian Gliding Association. A November 2025 news report describes it as the sole surviving operational gliding centre under DGCA (once one of 18), with only two gliders left, and notes a plan announced in January 2025 for the Airports Authority of India to take it over under a PPP model, with officials saying the intent is to preserve it. Check its current status before planning training.</p>
+          <div class="accred"><span class="ac claim">Reported — DGCA gliding centre</span><span class="acsrc">History and “last operational DGCA gliding centre” wording come from press coverage (e.g. Hindustan Times, Nov 2025), not a live DGCA centre directory we re-fetched. Check current status before you travel.</span></div>
           <a class="url" href="https://www.hindustantimes.com/cities/pune-news/as-hadapsar-gliding-centre-turns-75-india-s-oldest-civil-aviation-training-base-fights-to-stay-aloft-101762281454591.html" target="_blank" rel="noopener">hindustantimes.com (news report)</a></div>
-        <div class="school"><div class="top"><div><h4>GFZ Flying Club: licensed categories</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge">Microlight, LSA &amp; motor glider</span></div>
-          <p>After the no-licence categories, GFZ lists training on powered hang gliders, fixed-wing microlights, light sport aircraft and motor gliders. Ask which DGCA licence each course leads to and confirm its approval.</p>
+        <div class="school"><div class="top"><div><h4>GFZ Flying Club: licensed categories</h4><span class="loc">Near Jaipur, Rajasthan</span></div><span class="badge" data-acc="u">Microlight, LSA &amp; motor glider</span></div>
+          <p>After the no-licence categories, GFZ lists training on powered hang gliders, fixed-wing microlights, light sport aircraft and motor gliders. Ask which DGCA licence each course leads to and confirm its approval on dgca.gov.in.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">DGCA training approval not confirmed on a public directory this pass — ask the club and DGCA before you enrol.</span></div>
           <a class="url" href="https://gfzclub.in/" target="_blank" rel="noopener">gfzclub.in</a></div>
       </div>
       <div class="callout note"><p style="margin:0"><strong>Check approvals at the source:</strong> licences and approved training organisations are DGCA matters. Before paying for training, confirm the school's approval for your licence type on <a href="https://www.dgca.gov.in/" target="_blank" rel="noopener">dgca.gov.in</a> or with DGCA directly.</p></div>
@@ -582,7 +608,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>
