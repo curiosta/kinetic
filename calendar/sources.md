@@ -36,6 +36,12 @@ Page: `/calendar/` ("When to go") and the season strip on each sport page. Gener
 | kolad | [Kolad.in, rafting on the Kundalika](https://www.kolad.in/blogs/rafting-in-kundalika-info/river-kundalika-and-timings-for-rafting-at-kolad) | curl 5 Oct 2026: runs on the Bhira dam's morning release; best time is the monsoon, when water rises; warns of stronger undercurrents |
 | quest | [Quest Adventure Sports Academy, near Rameswaram (windsurfing and kitesurfing schools)](https://www.quest-asia.com/windsurfing) | curl 5 Oct 2026 (also /kitesurfing-school): 18-25 kn all day in the summer season Apr-Sep; afternoon winds 10-15 kn in the winter season Dec-Mar |
 | yai-goa | [YAI, All India Windsurfing & Kiteboarding Championship 2026, Morjim, Goa (18-22 Mar 2026)](https://www.yai.org.in/) | Windsurfing/Kitesurfing page sources (3 Oct 2026). Context only |
+| gethnaa-centres | [GETHNAA (Govt of Karnataka), Our Centres: Karwar Water Sports Centre](https://gethnaa.org/our-centres) | WebFetch + reader + centre poster image 5 Oct 2026: 'Located at the mouth of the Kali River on the Arabian Sea ... sailing, windsurfing, kayaking etc.' |
+| gethnaa-bac | [GETHNAA, Basic Aqua Sports Course 2026 (includes an introduction to windsurfing)](https://gethnaa.org/basic-aqua-sports-course) | reader 5 Oct 2026: 10 days, beginner; Batch 02 1-10 Nov 2026 at Karwar (fee on page: not reproduced) |
+| gethnaa-summer | [GETHNAA, Adventure Summer Camp 2026](https://gethnaa.org/summer-camp-2026) | WebFetch 5 Oct 2026: 'Wind Surfing & Kayaking Camp, 23-27 April 2026, Karwar, Uttarakannada' |
+| uk-ban | [S.O. News (sahilonline) on Uttara Kannada's 2026 monsoon water-sports ban](https://sahilonline.org/uttara-kannada-bans-boating-rafting-and-water-sports-till-august-31) | WebFetch 5 Oct 2026: DDMA order (DC Lakshmi Priya K, Disaster Management Act) suspends river, coastal and sea water sports 1 Jun-31 Aug 2026; also reported by Deccan Herald (1 Jun 2026). News report, not the order itself |
+| yai-sailgoa | [YAI / Goa Yachting Association, Notice of Race: Sail Goa 2026 (13-17 Apr 2026, Dona Paula)](http://www.yai.org.in/images/pdf/2025/Sail-Goa-26-NOR_%20EntryForm.pdf) | PDF read 5 Oct 2026: YAI zonal championship, national ranking event for iQFOiL and Techno 293 OD; open windsurf foil and Raceboard |
+| yai-sn26 | [YAI, Notice of Race: YAI Senior Nationals 2026 (14-20 Nov 2026, INWTC Mumbai)](https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf) | PDF read 5 Oct 2026: racing 16-20 Nov at INWTC (Mbi), Colaba; up to 15 races for iQ Foil (M & W) |
 | yai-monsoon | [YAI, Notice of Race: Monsoon Regatta 2025 (8-14 Jun 2025, Hyderabad)](https://www.yai.org.in/news/other-news/item/243-nor-for-the-monsoon-regatta-2025-scheduled-from-08-14-jun-2025-at-hyderabad.html) | curl 5 Oct 2026; same page lists the Monsoon Regatta 2026 (1-7 Jun) and a youth ranking regatta 20-25 Jul 2026 on Hussain Sagar |
 | billingpaul | [Billing Paul Adventure, Bir (learn paragliding)](https://www.billingpauladventure.com/learn-paragliding) | curl 5 Oct 2026: courses all year except 15 Jul-15 Sep; FAQ 'October to June is the paragliding season; the monsoon period from July 16th to September 14th is closed for safety reasons' (page shows prices: not reproduced) |
 | pwca-bir | [PWCA, PWCA Asian Tour India Bir 2024 (2-9 Nov 2024)](https://pwca.org/events/2024-pwca-asian-tour-india-bir-2024) | Paragliding page source (3 Oct 2026). Context only: no Bir PWCA event in 2025 or 2026 |
@@ -87,7 +93,8 @@ Page: `/calendar/` ("When to go") and the season strip on each sport page. Gener
 | Kitesurfing | Goa (Morjim) and the west coast | none | Oct-May | Jun-Sep | goa-policy, yai-goa | - |
 | Windsurfing | Palk Bay near Rameswaram: summer wind season | Apr-Sep | none | Oct-Mar | quest | - |
 | Windsurfing | Palk Bay near Rameswaram: winter wind season | Dec-Mar | none | Apr-Nov | quest | - |
-| Windsurfing | Goa (Morjim) and the west coast | none | Oct-May | Jun-Sep | goa-policy, yai-goa | - |
+| Windsurfing | Goa (Morjim, Dona Paula) | none | Oct-May | Jun-Sep | goa-policy, yai-goa, yai-sailgoa | - |
+| Windsurfing | Karwar (Uttara Kannada, Karnataka) | none | Oct-May | Jun-Sep | gethnaa-centres, gethnaa-bac, gethnaa-summer, uk-ban, imd-normals | District ban: 1 Jun-31 Aug 2026; IMD: monsoon until mid-October. September shown as Off. |
 | Sailing | Lakes: Hussain Sagar (Hyderabad), Upper Lake (Bhopal) | none | all year | none | yai-monsoon | - |
 | Sailing | Coast: Goa | none | Oct-May | Jun-Sep | goa-policy | - |
 | Paragliding | Bir Billing (Himachal Pradesh) | Oct-Jun | Jul, Sep | Aug | billingpaul, pwca-bir | - |
@@ -154,6 +161,7 @@ Exact dates are shown only where the next edition is officially announced (all o
 | Nov | Karting & motorsport | Indian National Car Racing Championship, round 3 | 13-15 Nov 2026 | https://www.jktyremotorsport.com/calendar | JK Tyre calendar, curl 5 Oct 2026 |
 | Nov | Swimming | Aquamoga: the Goa Swimathon | 14-15 Nov 2026 | https://www.endurosportsgoa.com/schedule | organiser's schedule (updated 31 Aug 2026), curl 5 Oct 2026 |
 | Nov | Sailing | YAI Senior Nationals | 14-20 Nov 2026 | https://www.yai.org.in/ | YAI home page: Notice of Race, 14-20 Nov at INWTC Mumbai (curl 5 Oct 2026) |
+| Nov | Windsurfing | YAI Senior Nationals (iQFOiL, men and women) | 14-20 Nov 2026 | https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf | YAI Notice of Race PDF: 14-20 Nov 2026 at INWTC (Mbi); up to 15 races for iQ Foil (M & W) (curl 5 Oct 2026) |
 | Nov | Archery | 4th National Ranking Archery Tournament | 21-30 Nov 2026 | https://www.indianarchery.org/calendar | AAI calendar rendered in IST (5 Oct 2026) |
 | Nov | Running | Malnad Ultra | 28 Nov 2026 | https://malnadultra.com/ | organiser's home page ('Our next Race Day is November 28, 2026'), curl 5 Oct 2026 |
 | Nov | Rock climbing | IMF National Sport Climbing Championship | usually November to December | https://indmount.org/IMF/sportclimbing | IMF: 'held annually in Nov-Dec every year' (curl 5 Oct 2026) |
@@ -163,12 +171,14 @@ Exact dates are shown only where the next edition is officially announced (all o
 | Dec | Karting & motorsport | Indian National Car Racing Championship, finale | 11-13 Dec 2026 | https://www.jktyremotorsport.com/calendar | JK Tyre calendar, curl 5 Oct 2026 |
 | Dec | Sport shooting | National Shooting Championship Competitions (NRAI) | usually December | https://www.thenrai.in/details.aspx?view=7344 | 68th NSCC (rifle) 11-31 Dec 2025, Bhopal (NRAI notice, curl 5 Oct 2026); 2026 dates not announced |
 
-Sports with no verified recurring event (their strips say so): Scuba, Kitesurfing, Windsurfing, Paragliding, Paramotoring, Skydiving, Bungee & zipline, Trekking & mountaineering, Horse riding.
+Sports with no verified recurring event (their strips say so): Scuba, Kitesurfing, Paragliding, Paramotoring, Skydiving, Bungee & zipline, Trekking & mountaineering, Horse riding.
 
 ## Events dropped (not verified as still running, or not recurring)
 
 - **Bir Billing paragliding competitions (PWCA Asian Tour / Paragliding World Cup)**: PWCA events ran at Bir in Oct-Nov 2023 and Nov 2024, but none was held in 2025 and none is announced for 2026 (pwca.org events list). Not shown as a recurring event.
 - **YAI national kitesurfing / windsurfing championship, Morjim**: Held 18-22 Mar 2026, but we could not confirm it recurs in a set month.
+- **GETHNAA Wind Surfing & Sailing Camp, Sadashivgad, Karwar (18-22 Oct 2026)**: Seen on a flyer, but not on gethnaa.org: its 2026-27 calendar, camps, events, summer-camp and gallery pages (checked 5 Oct 2026) list only the April 2026 Karwar camp and a 1-10 Nov 2026 Basic Aqua Sports Course batch at Karwar. Not shown; the Karwar row and the windsurfing page link to GETHNAA instead.
+- **CESC Regatta, Pawna Dam, Pune (23-28 Oct 2026; Techno 293, Raceboard, iQFOiL)**: On YAI's 2026 calendar, but we could not confirm it recurs in a set month. Mentioned on the windsurfing page only.
 - **WSL Shore Temple Classic, Mahabalipuram**: Held 12-16 Aug 2026, only the second WSL event in India (after 2023): not an annual event.
 - **Paragliding pre-World Cup / festival in Manali or Bir**: No official page or announcement found.
 - **Jebel Jais / Jumpin Heights adventure festivals**: No festival dates or months published by Jumpin Heights; the bungee strips show the operators' seasons only.

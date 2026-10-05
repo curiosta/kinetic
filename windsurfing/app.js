@@ -10,12 +10,12 @@
     disclaimer: "<strong>Self-check only.</strong> This quiz is a learning aid. It is not a certification, a course level or a replacement for lessons. Learn at a recognised centre with a qualified instructor and rescue cover, wear a buoyancy aid while learning, be able to swim, and check the wind direction before you go out."
   };
   const CHAPTERS = {
-    "ch-apparent": "Ch 1 · Apparent wind",
-    "ch-sail":     "Ch 2 · Sail force & the harness",
-    "ch-steer":    "Ch 3 · Steering with the rig",
+    "ch-apparent": "Ch 1 · Apparent wind & the wind window",
+    "ch-sail":     "Ch 2 · The sail as a wing & the harness",
+    "ch-steer":    "Ch 3 · Steering, fin & daggerboard",
     "ch-plane":    "Ch 4 · Hull speed, planing & foiling",
     "ch-upwind":   "Ch 5 · Tacking, gybing & VMG",
-    "ch-safety":   "Ch 6 · Wind, weather & self-rescue"
+    "ch-safety":   "Ch 6 · Uphaul, waterstart & self-rescue"
   };
   const QUESTIONS = [
     { ch: "ch-apparent",
@@ -31,9 +31,9 @@
       o: ["1.5 times", "2.25 times", "6 times", "It stays the same"], a: 1,
       e: "Sail force goes with v²: (18 ÷ 12)² = 2.25." },
     { ch: "ch-sail",
-      q: "What does a harness do?",
-      o: ["Makes the sail bigger", "Keeps you from falling in", "Steers the board", "Lets your body weight hold the sail's pull instead of your arms"], a: 3,
-      e: "The harness hooks into lines on the boom, so you lean back against the force with your body weight." },
+      q: "Hooked into your harness lines, your front hand is still doing most of the work. What's the usual fix?",
+      o: ["Use a bigger sail", "Let go with the back hand", "Lean further forward", "Move the harness lines forward, so they straddle the sail's centre of effort"], a: 3,
+      e: "The harness lets your body weight hold the sail's pull instead of your arms, but only if the lines sit around the centre of effort. A heavy front hand means the pull is centred ahead of the lines." },
     { ch: "ch-sail",
       q: "Why do windsurfers own sails of different sizes?",
       o: ["Bigger sails are only for racing", "Small sails are faster in light wind", "Force grows with sail area and with v², so a smaller sail keeps strong wind manageable", "Sail size doesn't change the force"], a: 2,
@@ -46,6 +46,10 @@
       q: "A 300 N sail force acts 0.3 m behind the centre of lateral resistance. What turning moment does it make?",
       o: ["1,000 N·m", "90 N·m, turning you into the wind", "0.3 N·m", "300 N·m"], a: 1,
       e: "Moment = force × lever arm = 300 × 0.3 = 90 N·m. With the rig tilted back, the nose turns into the wind." },
+    { ch: "ch-steer",
+      q: "Why do learner longboards have a big daggerboard, while fast boards manage with just a small fin?",
+      o: ["Underwater grip grows with speed squared: at low speed a small fin can't stop the board sliding sideways", "Daggerboards make the board float", "Fins only work in salt water", "Daggerboards are for steering"], a: 0,
+      e: "Fins and daggerboards are underwater wings: side force = ½ ρ v² A C_L. Halve the speed and you get a quarter of the grip, so slow boards need much more area. At speed, riders pull the daggerboard up." },
     { ch: "ch-plane",
       q: "Why does a displacement board struggle to go faster than its hull speed?",
       o: ["The fin stalls", "The sail gets smaller", "Water gets thicker", "It's climbing its own bow wave, whose speed depends on its length"], a: 3,
@@ -54,18 +58,14 @@
       q: "Why can a hydrofoil wing of only about 0.1 m² lift a rider and board?",
       o: ["Foils use magnets", "The board floats it up", "Water is about 800 times denser than air, and lift grows with density and speed²", "The sail lifts the board"], a: 2,
       e: "Lift = ½ ρ v² A C_L with ρ ≈ 1,025 kg/m³. In our lab the foil lifts an 85 kg rider and board at about 13 kn." },
-    { ch: "ch-plane",
-      q: "If a foil just lifts you at 13 kn, about how much of that lift does it make at 6.5 kn?",
-      o: ["25%", "50%", "100%", "200%"], a: 0,
-      e: "Lift goes with speed squared: (6.5 ÷ 13)² = 0.25." },
     { ch: "ch-upwind",
       q: "You sail at 8 kn, 45° off the wind. How fast are you making progress upwind (VMG)?",
       o: ["8 kn", "About 5.7 kn", "0 kn", "About 11 kn"], a: 1,
       e: "VMG = 8 × cos 45° ≈ 5.7 kn." },
     { ch: "ch-upwind",
-      q: "What is a tack?",
-      o: ["A turn with the wind behind you", "A kind of fin", "A sail size", "Turning the nose through the wind to sail upwind on the other side"], a: 3,
-      e: "A tack turns through the wind; a gybe turns with the wind behind you. Zig-zagging with tacks is how you get upwind." },
+      q: "In a carve gybe at 20 kn, you tighten the turn. What must you do, and why?",
+      o: ["Stand up straight: the turn is easier", "Pull the daggerboard down", "Sheet out completely", "Lean further into the turn: a tighter arc needs more centripetal force, m v² ÷ r"], a: 3,
+      e: "Like a cyclist, you balance by leaning: tan(lean) = v² ÷ (g r). At 20 kn on a 10 m radius that's about 47°. A gybe is a turn with the wind behind you; a tack turns through the wind." },
     { ch: "ch-safety",
       q: "Why is an offshore wind (blowing from the land out to sea) dangerous for a beginner?",
       o: ["It's always too strong", "If you can't sail back, it carries you away from the beach", "It makes the water colder", "It isn't dangerous"], a: 1,
@@ -75,9 +75,9 @@
       o: ["Stay with the board: drop or de-rig the sail and paddle in, or signal for help", "Leave the board and swim", "Stand up and wait", "Try a bigger sail"], a: 0,
       e: "The board floats and is easier to see than a swimmer. Self-rescue drills are part of beginner courses such as Quest's Level 1." },
     { ch: "ch-safety",
-      q: "A gust takes the wind from 15 to 21 kn. About how much more sail force?",
-      o: ["About 1.4 times", "No change", "About 1.96 times: nearly double", "6 times"], a: 2,
-      e: "(21 ÷ 15)² ≈ 1.96. A 40% gust nearly doubles the force." }
+      q: "Why are waterstarts learned in stronger wind than uphauling?",
+      o: ["Water is warmer when it's windy", "The board floats higher in wind", "The sail has to pull you up out of the water, and its force grows with the wind speed squared", "Uphauling is banned in strong wind"], a: 2,
+      e: "Standing still, a 6 m² sail pulls about 62 N at 8 kn but about 219 N at 15 kn: nearly four times as much. Uphauling uses your legs instead, so it suits light wind." }
   ];
 
   // ---------- QUIZ RENDER ----------
