@@ -217,10 +217,12 @@ details.check[open] summary{margin-bottom:8px}
 .lvl-intro .box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
 .schools{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .school{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
-.school .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.school .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;min-width:0}
+.school .top>div{min-width:0;flex:1 1 auto}
+.school .top h4{overflow-wrap:anywhere}
 .school h4{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0}
 .school .loc{font-size:.84rem;color:var(--muted)}
-.badge{font:600 .66rem var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:#eef3f6;color:var(--sea-700);white-space:nowrap}
+.badge{font:600 .66rem var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:#eef3f6;color:var(--sea-700);white-space:nowrap;flex:0 1 auto;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .badge.padi{background:#e6eefc;color:#1f4aa8}.badge.ssi{background:#e8f6ee;color:#16784a}.badge.cmas{background:#fdeee6;color:#a5441f}.badge.gov{background:#fff1d6;color:#8a5a00}
 .school p{font-size:.92rem;margin:.6em 0;color:var(--ink-2)}
 .school a.url{font:500 .82rem var(--mono);word-break:break-all}

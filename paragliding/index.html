@@ -91,11 +91,11 @@
     </div>
 
     <nav class="chapters-index" aria-label="Chapters">
-      <a href="#ch-lift"><span class="n">CHAPTER 1</span><span class="t">Lift, drag &amp; the wing</span><span class="d">Why a fabric bag becomes an aerofoil, and the speed-squared law</span></a>
-      <a href="#ch-glide"><span class="n">CHAPTER 2</span><span class="t">Glide ratio, sink &amp; wind</span><span class="d">How far 1,000 m takes you, and what headwind does to it</span></a>
-      <a href="#ch-thermals"><span class="n">CHAPTER 3</span><span class="t">Thermals &amp; ridge lift</span><span class="d">Buoyant bubbles, cloud base and wind on a slope</span></a>
+      <a href="#ch-lift"><span class="n">CHAPTER 1</span><span class="t">Lift, drag &amp; the wing</span><span class="d">Lift equation, drag, polar and speed bar</span></a>
+      <a href="#ch-glide"><span class="n">CHAPTER 2</span><span class="t">Glide ratio, sink &amp; wind</span><span class="d">L/D, polar, speed-to-fly and headwind arithmetic</span></a>
+      <a href="#ch-thermals"><span class="n">CHAPTER 3</span><span class="t">Thermals &amp; ridge lift</span><span class="d">Buoyant bubbles, cloud streets, wave and wind on a slope</span></a>
       <a href="#ch-loading"><span class="n">CHAPTER 4</span><span class="t">Wing loading &amp; altitude</span><span class="d">Why size, weight and thin mountain air change your speed</span></a>
-      <a href="#ch-stall"><span class="n">CHAPTER 5</span><span class="t">Stalls, collapses &amp; turns</span><span class="d">Angle of attack, g-force in turns, SIV and reserves</span></a>
+      <a href="#ch-stall"><span class="n">CHAPTER 5</span><span class="t">Stalls, collapses &amp; turns</span><span class="d">Collapses, spiral vs spin, load factor, SIV and reserves</span></a>
       <a href="#ch-weather"><span class="n">CHAPTER 6</span><span class="t">Weather &amp; micro-meteorology</span><span class="d">Wind gradient, rotor, storms, sea breeze and seasons</span></a>
     </nav>
 
@@ -152,6 +152,10 @@
         <p>Because v is squared, 20% more airspeed means 1.2² = 1.44× the lift at the same angle of attack, and 20% less means only 0.64×. Drag follows the same law. This is why gusts feel so strong, and why a wing that loses airspeed close to the ground loses its lift quickly.</p>
         <h4>Drag: the cost of making lift</h4>
         <p>Drag is the force pulling backwards along the flight path. Part is <em>parasitic</em> (lines, pilot, harness, fabric), part is <em>induced</em> (the unavoidable cost of making lift with a finite wing, including the swirling wingtip vortices). In steady glide the pilot's weight is balanced by lift (up) and drag (back), and the glider descends at exactly the angle where they balance. For the reference wing, drag = weight ÷ glide ratio = 981 ÷ 8.5 ≈ 115 N.</p>
+        <h4>The polar, briefly</h4>
+        <p>Plot sink rate against airspeed and you get the wing's <strong>polar curve</strong>. At low speed, sink is high (you are near the stall). As you speed up, sink falls to a minimum (best for staying up in weak lift), then rises again as parasitic drag grows with v². The shallowest line from the origin to the polar touches at <strong>best glide</strong> (best L/D). Those two speeds are different: min-sink is slower than best-glide. That is why Chapter 2 spends time on "speed to fly".</p>
+        <h4>Speed bar and angle of attack</h4>
+        <p>The speed bar (speed system) shortens the front risers, lowers the angle of attack, and lets the wing fly faster along its polar. Lift still equals weight, but at a lower C<sub>L</sub> and higher v. Pushing bar in still air trades some glide for speed; into a headwind or through sinking air, that trade often improves glide <em>over the ground</em> (see Ch 2).</p>
         <details class="check"><summary>A pilot flies at 30 km/h instead of 37 km/h at the same weight. Roughly what lift coefficient is needed now?</summary>
         <p>Lift must still equal weight, so C<sub>L</sub> scales with 1/v²: 0.72 × (37/30)² ≈ <strong>1.1</strong>. That's a much higher angle of attack, closer to the stall (Chapter 5). Slow flight is not "safer" by default.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -178,6 +182,18 @@
         </div>
         <h4>The polar curve and the speed bar</h4>
         <p>Every wing has a "polar": a graph of sink rate against airspeed. Minimum sink comes at a slow speed (best for staying up in weak lift); best glide comes at a slightly faster speed (best for going far in still air). Into a headwind or through sinking air, pilots speed up with the speed bar to get through the bad air faster. They give up a little glide through the air to gain glide over the ground.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · speed-to-fly (illustrative numbers)</span>
+          <p style="margin:0 0 8px">Suppose the reference wing at trim (37 km/h) sinks 1.2 m/s (L/D 8.5). On half bar at 45 km/h it might sink about 1.6 m/s (L/D ≈ 7.8) — worse through the air. Into a 15 km/h headwind:</p>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Choice</th><th>Ground speed</th><th>Sink</th><th>Glide over ground</th></tr></thead>
+            <tbody>
+              <tr><td>Trim</td><td class="num">22 km/h</td><td class="num">1.2 m/s</td><td class="num">≈ 5.1 : 1</td></tr>
+              <tr><td>Half bar (illustrative)</td><td class="num">30 km/h</td><td class="num">1.6 m/s</td><td class="num">≈ 5.2 : 1</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The bar helps you punch the headwind even though air L/D fell. Real polars are measured in certification and published by manufacturers; these numbers are teaching examples only.</p>
+        </div>
         <div class="feel"><span class="ico">🧭</span><div><span class="lbl">Feel the number</span>A 30 km/h headwind against a 37 km/h wing leaves you crawling forward at 7 km/h, slower than a brisk walk. Wind stronger than your trim speed means you go <b>backwards</b> over the ground. That is why every school sets conservative wind limits for students.</div></div>
         <details class="check"><summary>You're 300 m above a landing field 2 km upwind. Wind is 15 km/h. Can you make it with the reference wing?</summary>
         <p>Ground glide into a 15 km/h headwind ≈ 5.1 : 1, so 300 m buys about 300 × 5.1 ≈ <strong>1.5 km</strong>. Not enough, so pick a landing option downwind or nearer. This is the reasoning behind "always have a landable field within glide".</p></details>
@@ -198,6 +214,10 @@
           <span class="lbl">Worked example · predicting cloud base</span>
           <p style="margin:0">Cloud base above ground ≈ 125 m × (temperature − dew point). On a day of 30 °C with dew point 14 °C: 125 × 16 = <strong>≈ 2,000 m above the ground</strong>. With dew point 22 °C (humid, post-monsoon), only 125 × 8 = 1,000 m. A humid day means low, often weak thermals.</p>
         </div>
+        <h4>Cloud streets</h4>
+        <p>On a windy, unstable day, thermals can line up downwind into long rows marked by streets of cumulus. Fly along the sunny side of a street and you stay in lift for kilometres; cross the blue gap between streets and you sink. The physics is the same buoyancy as a single thermal, organised by the wind into a roll pattern in the boundary layer.</p>
+        <h4>Wave lift (mountain lee waves)</h4>
+        <p>When a stable layer of air flows over a mountain range, it can oscillate downwind in standing waves, sometimes marked by lens-shaped (lenticular) clouds. The rising side of each wave can be smooth and strong — the same phenomenon sailplane pilots ride to great height. Paragliders occasionally use the lower, gentler parts of wave, but rotor under the wave and strong winds aloft make it an advanced, site-specific skill, not a beginner tool.</p>
         <h4>Ridge (dynamic) lift</h4>
         <p>When wind blows onto a slope, the air has to go up. The upward component near the face is roughly wind speed × sin(slope angle).</p>
         <div class="table-scroll"><table class="data">
@@ -252,7 +272,9 @@
         <h4>Too much angle of attack: the stall</h4>
         <p>Lift coefficient rises with angle of attack, but only up to a critical angle. Beyond it the airflow can no longer follow the curved top surface, separates, and lift collapses. On a paraglider this usually comes from too much brake for too long. The wing slows, falls back behind the pilot, and recovery needs exactly the right, trained response. A stall happens at a <em>critical angle</em>, not at a fixed speed you can read.</p>
         <h4>Too little angle of attack: collapses</h4>
-        <p>A paraglider holds its shape only by internal air pressure. If turbulence suddenly reduces the angle of attack (for example a strong gust from above, or flying fast into sinking air), part of the leading edge can fold under: an asymmetric or frontal collapse. Modern wings are tested to reopen by themselves. Under EN 926-2, beginner wings are class A (most passive); B, C and D demand progressively more skill.</p>
+        <p>A paraglider holds its shape only by internal air pressure. If turbulence suddenly reduces the angle of attack (for example a strong gust from above, or flying fast into sinking air), part of the leading edge can fold under: an asymmetric or frontal collapse. Modern wings are tested to reopen by themselves. Under EN 926-2 (and the related DHV LTF classes), beginner wings are class A (most passive); B, C and D demand progressively more skill — see the governing-bodies section.</p>
+        <h4>Collapse recovery physics (what schools drill)</h4>
+        <p>An asymmetric collapse reduces lift on one side, so the wing yaws and rolls toward the collapsed side and can enter a dive. Trained response: weight-shift and brake toward the open side to stop the turn, keep the open side flying (not stalled), and let the collapsed side reinflate — then damp the surge as the wing dives forward and reinflates. A frontal (symmetric) collapse usually reinflates if you keep hands up; deep brake on a collapsed wing risks a stall. These are instructor-taught manoeuvres; the quiz and chapters are not a substitute for SIV.</p>
         <h4>Turning costs height: load factor</h4>
         <p>In a banked turn the lift must hold you up <em>and</em> pull you round the circle, so the wing has to make more lift than your weight. Load factor n = 1 ÷ cos(bank).</p>
         <div class="table-scroll"><table class="data">
@@ -264,8 +286,10 @@
           </tbody>
         </table></div>
         <p>Stall speed scales with √n, and sink at the same lift coefficient scales with n<sup>1.5</sup>. A spiral dive, used deliberately to lose height fast, can reach several g and heavy sink rates. That's why it's taught under supervision and why pilots must know how to exit it.</p>
+        <h4>Spiral dive versus spin</h4>
+        <p>A <strong>spiral</strong> is a steep, banked, high-speed descending turn with the wing still flying (high load factor, high airspeed, high sink). Exit by gradually reducing inside brake and weight-shift, then damping the surge. A <strong>spin</strong> (stall-spin) is different: one side of the wing is stalled and the glider autorotates with low airspeed and the wing back. Recovery needs a different, trained input (weight-shift and outside brake, then damp). Confusing the two is dangerous — another reason SIV exists.</p>
         <h4>The safety layers</h4>
-        <p><strong>SIV</strong> (Simulation d'Incident en Vol) courses teach collapses, stalls and recoveries over water with an instructor on the radio and a rescue boat below. Pilots also carry an <strong>emergency (reserve) parachute</strong>; APPI's rules require a certified reserve on high flights from APPI 2 onward. Himachal Pradesh's 2025 amendment to its Aero Sports Rules requires tandem pilots to complete a safety (SIV) course; already-registered tandem pilots were given until 31 August 2026 (news reports; see sources.md).</p>
+        <p><strong>SIV</strong> (Simulation d'Incident en Vol) courses teach collapses, stalls and recoveries over water with an instructor on the radio and a rescue boat below. Pilots also carry an <strong>emergency (reserve) parachute</strong>. Deploying it is a last resort when the wing is unrecoverable or you are too low to fix it: look, clear, pull the reserve handle, and then try to keep the main wing from interfering (schools teach specific techniques). Descent under a reserve is still fast — typically several metres per second — so you need height. APPI's rules require a certified reserve on high flights from APPI 2 onward. Himachal Pradesh's 2025 amendment to its Aero Sports Rules requires tandem pilots to complete a safety (SIV) course; already-registered tandem pilots were given until 31 August 2026 (news reports; see sources.md).</p>
         <details class="check"><summary>Why does a pilot who pulls a lot of brake to "slow down for safety" in turbulence risk making things worse?</summary>
         <p>More brake = higher angle of attack, closer to the stall, while the gusts keep changing the angle. Instructors teach <strong>active flying</strong>: small, quick brake inputs to keep the wing overhead and pressurised, not a big constant pull.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -288,6 +312,8 @@
           <div><b>Kamshet (Western Ghats)</b>Oct–May (Temple Pilots); Nov–mid-June (Nirvana Adventures). East winds in winter, west sea-breeze in summer. Monsoon suspends flying for about four months.</div>
           <div><b>Bir Billing (Dhauladhar)</b>Billing Paul Adventure runs courses all year except 15 Jul–15 Sep. International competitions have been held here in late Oct–Nov (PWCA, 2023 and 2024).</div>
           <div><b>Panchgani (Sahyadri)</b>The 2026 Paragliding World Cup page describes February as the best month: mild temperatures, strong thermals and sea-breeze convergence lines.</div>
+          <div><b>Nandi Hills (near Bengaluru)</b>Local club flying (Xtacee Paragliding Club). No published month-by-month calendar on the club site — confirm wind and cloud with the operator; Karnataka's monsoon typically interrupts hill flying in mid-year.</div>
+          <div><b>Manali / Solang · Yelagiri</b>ABVIMAS lists aero sports among its activities at Manali/Solang, but its paragliding course list was still "coming soon" when checked. Yelagiri has historical training mentions; no current school site was verified this pass. Ask locally and check state rules before you go.</div>
         </div>
         <div class="callout warn"><h4>Know your limits, then halve them</h4><p>Most accidents in free flight trace back to a decision on the ground: flying in conditions beyond the pilot's skill. Talk to your instructor and local pilots, check the forecast, and remember that not flying is always an option. Tandem passengers: in Himachal Pradesh, operators and tandem pilots must be registered with the state tourism department. Ask to see the registration.</p></div>
         <details class="check"><summary>A forecast says ground temperature 26 °C, dew point 22 °C, light winds. What kind of thermal day do you expect?</summary>
@@ -359,8 +385,9 @@
     </div>
 
     <div class="callout note" style="margin-top:24px"><h4>How it works in India</h4>
-      <p><strong>There is no single national licence ladder yet.</strong> The Aero Club of India (ACI) is India's National Air Sports Control (NAC-India), recognised by the Ministry of Civil Aviation under the National Air Sports Guidelines 2023, and it issues FAI sporting licences. A Lok Sabha reply (27 Jul 2026) confirms the 2022 policy was superseded by those 2023 guidelines, and that the sports ministry has not recognised any national sports federation for paragliding.</p>
-      <p style="margin:0"><strong>Schools use different systems.</strong> Temple Pilots and Nirvana Adventures (Kamshet) run APPI courses. PG Gurukul (Bir) says it follows BHPA training with a BHPA-certified instructor and issues ACI licences carrying an IPPI rating. Other Bir schools issue local "P1–P4" certificates, some via the Billing Paragliding Association. Before you book, ask: <em>which system, which IPPI stage, and who signs it?</em></p>
+      <p><strong>National air sports sit under MoCA guidelines; schools still use mixed systems.</strong> The Aero Club of India (ACI) is India's National Air Sports Control (NAC-India), recognised by the Ministry of Civil Aviation under the National Air Sports Guidelines 2023, and it issues FAI sporting licences. A Lok Sabha reply (27 Jul 2026) confirms the 2022 National Air Sports Policy was superseded by those 2023 guidelines, and that the sports ministry has not recognised any national sports federation for paragliding. We found no air-sports body named "HAPAI"; the pilots' association with a published national rating ladder is the <strong>Paragliding Association of India (PAI)</strong>.</p>
+      <p><strong>PAI National Rating System (NPRS)</strong> — published on PAI's site — lists paragliding levels P1 Introduction, P2 Student Pilot, P3 Novice, P4 Intermediate, P5 Advanced, then P7 Tandem Pilot through P10 Examiner, and says the skill levels follow the FAI SafePro Para system. Ask whether a school's "P1–P4" means PAI NPRS, APPI, or a local certificate.</p>
+      <p style="margin:0"><strong>Schools use different systems.</strong> Temple Pilots and Nirvana Adventures (Kamshet) run APPI courses. PG Gurukul (Bir) says it follows BHPA training with a BHPA-certified instructor and issues ACI licences carrying an IPPI rating. Skylark School of Paragliding and Antigravity (Bir) publish local P1–P3/P4 courses. Billing Paul Adventure offers both local Pilot Levels and APPI 1–3. Before you book, ask: <em>which system, which IPPI stage (if any), and who signs it?</em></p>
     </div>
   </div>
 </section>
@@ -380,16 +407,17 @@
       <div class="card"><span class="tag">Training system</span><h4>APPI</h4><p>Association of Paragliding Pilots and Instructors: an international school and instructor system with five pilot levels mapped to IPPI. APPI states its ratings give no legal right to fly in a country unless the local authority recognises them.</p><a class="url" href="https://flyappi.org/education_system/appi_1_discover/" target="_blank" rel="noopener">flyappi.org › education system</a></div>
       <div class="card"><span class="tag">National federation</span><h4>BHPA (UK)</h4><p>British Hang Gliding and Paragliding Association. Runs the Pilot Rating Scheme (EP, Club Pilot, Pilot, Advanced Pilot) and explains IPPI conversion for pilots flying abroad.</p><a class="url" href="https://bhpa.co.uk/safety/prs/" target="_blank" rel="noopener">bhpa.co.uk › Pilot Rating Scheme</a></div>
       <div class="card"><span class="tag">National federation</span><h4>USHPA (US)</h4><p>United States Hang Gliding &amp; Paragliding Association, with a P1–P5 paragliding rating system (Beginner to Master).</p><a class="url" href="https://www.ushpa.org/" target="_blank" rel="noopener">ushpa.org</a><span class="small muted">Ratings page didn't load from our network; levels per search index.</span></div>
+      <div class="card"><span class="tag">Wing certification</span><h4>EN 926-2 · DHV LTF classes A–D</h4><p>European standard EN 926-2 (current amendment A1:2022) and the German DHV LTF scheme classify <em>wings</em> by flight-test behaviour, not pilots. Class A is maximum passive safety (suitable including in training); B is still forgiving; C needs active, regular pilots familiar with recoveries; D is demanding with potentially violent reactions. The overall class is the hardest single manoeuvre rating. These classes say nothing about glide performance.</p><a class="url" href="https://www.dhv.de/en/type-inspection/classification/" target="_blank" rel="noopener">dhv.de › classification</a></div>
       <div class="card"><span class="tag">Competition</span><h4>PWCA: Paragliding World Cup Association</h4><p>Organises the Paragliding World Cup series and its regional tours, including events at Bir (2023 Pre-World Cup, 2024 Asian Tour) and Panchgani (Feb 2026).</p><a class="url" href="https://pwca.org/" target="_blank" rel="noopener">pwca.org</a></div>
     </div>
 
     <h3 class="subhead">India</h3>
     <div class="cards">
       <div class="card"><span class="tag in">National air sports control</span><h4>Aero Club of India (NAC-India)</h4><p>India's designated National Air Sports Control, recognised by the Ministry of Civil Aviation under the National Air Sports Guidelines 2023. Handles ACI membership and FAI sporting licences, and says it works only through its official website.</p><a class="url" href="https://www.aeroclubofindia.com/" target="_blank" rel="noopener">aeroclubofindia.com</a></div>
-      <div class="card"><span class="tag in">Pilots' association</span><h4>Paragliding Association of India (PAI)</h4><p>Registered in Goa in 2010 under the Societies Registration Act. Describes itself as a national platform "of pilots, for pilots and by pilots" to promote and regulate safe paragliding.</p><a class="url" href="https://paraglidingassociationofindia.org/" target="_blank" rel="noopener">paraglidingassociationofindia.org</a></div>
+      <div class="card"><span class="tag in">Pilots' association</span><h4>Paragliding Association of India (PAI)</h4><p>Registered in Goa on 26 May 2010 under the Societies Registration Act. Publishes a National Rating System (NPRS) for PG and PPG with levels mapped toward FAI SafePro, plus membership, school affiliation and group accident insurance. Has helped organise FAI/CIVL-framework competitions in India (including CAT-2 events).</p><a class="url" href="https://paraglidingassociationofindia.org/" target="_blank" rel="noopener">paraglidingassociationofindia.org</a></div>
       <div class="card"><span class="tag in">Central government</span><h4>Ministry of Civil Aviation · National Air Sports Guidelines 2023</h4><p>The 2023 guidelines replaced the National Air Sports Policy 2022 as the framework for air sports, including paragliding (confirmed in a Lok Sabha reply of 27 Jul 2026).</p><a class="url" href="https://www.civilaviation.gov.in/" target="_blank" rel="noopener">civilaviation.gov.in</a> · <a class="url" href="https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1311_OsAJQG.pdf" target="_blank" rel="noopener">Lok Sabha reply (PDF)</a></div>
       <div class="card"><span class="tag in">State regulator</span><h4>Himachal Pradesh: Tourism &amp; Civil Aviation Department</h4><p>Administers the HP Aero Sports Rules 2022: operators and pilots register with the department, with technical-committee approval. The 2025 amendment made a safety (SIV) course mandatory for tandem pilots.</p><a class="url" href="https://himachaltourism.gov.in/" target="_blank" rel="noopener">himachaltourism.gov.in</a><span class="small muted">Site timed out when checked; rule details via The Tribune (see sources.md).</span></div>
-      <div class="card"><span class="tag in">State institute</span><h4>ABVIMAS, Manali</h4><p>Atal Bihari Vajpayee Institute of Mountaineering and Allied Sports (founded 1961) runs aero sports among its activities, with centres including Solang and Bilaspur. In 2026 it advertised for a visiting paragliding instructor for SIV courses.</p><a class="url" href="https://www.abvimas.org/" target="_blank" rel="noopener">abvimas.org</a></div>
+      <div class="card"><span class="tag in">State institute</span><h4>ABVIMAS, Manali</h4><p>Atal Bihari Vajpayee Institute of Mountaineering and Allied Sports (founded 1961) runs aero sports among its activities, with centres including Solang and Bilaspur. Its dedicated paragliding course list page still said "coming soon" when checked (5 Oct 2026); earlier notices covered SIV instructor recruitment. Confirm any Manali/Solang course directly on the institute site.</p><a class="url" href="https://www.abvimas.org/" target="_blank" rel="noopener">abvimas.org</a> · <a class="url" href="https://www.abvimas.org/course/paragliding-course-list/" target="_blank" rel="noopener">paragliding course list</a></div>
       <div class="card"><span class="tag in">Local association</span><h4>Billing Paragliding Association (BPA)</h4><p>Society based at Chougan, Bir (since 2007). Organised the 2024 PWCA Asian Tour event with the HP government and tourism department, and says it is a member of ACI, FAI and PWCA.</p><a class="url" href="https://billingparaglidingassociation.com/" target="_blank" rel="noopener">billingparaglidingassociation.com</a></div>
     </div>
   </div>
@@ -419,6 +447,7 @@
       <div><b>Kamshet, Maharashtra</b>Oct–May (Temple Pilots) or Nov–mid-June (Nirvana Adventures). Winter: east-facing sites; summer: west sea-breeze sites. Closed in monsoon.</div>
       <div><b>Bir Billing, Himachal</b>Courses year-round except 15 Jul–15 Sep (Billing Paul Adventure). PWCA competitions held late Oct–Nov in 2023 and 2024.</div>
       <div><b>Panchgani, Maharashtra</b>February called "the best time" by the 2026 Paragliding World Cup organisers: mild, thermic, with convergence lines.</div>
+      <div><b>Nandi Hills, Karnataka</b>Club flying with Xtacee (Bengaluru). Confirm conditions on the day; no published season strip from the club.</div>
       <div><b>Monsoon (Jun–Sep)</b>Expect most western and Himalayan sites to stop or reduce flying. Confirm dates with your school.</div>
     </div>
 
@@ -439,17 +468,25 @@
         <div class="school"><div class="top"><div><h4>Temple Pilots</h4><span class="loc">Kamshet, near Lonavala (Maharashtra)</span></div><span class="badge padi">APPI</span></div>
           <p>Classic, instructional (you take the controls if weather permits) and acro tandem flights with APPI-certified instructors. Site chosen on the day: Tower East in winter; Tower West, Pawna or Shelar in summer. Children above 6 allowed with special equipment.</p>
           <a class="url" href="https://www.templepilots.com/kamshet-paragliding/" target="_blank" rel="noopener">templepilots.com › Kamshet</a></div>
-        <div class="school"><div class="top"><div><h4>Nirvana Adventures</h4><span class="loc">Kamshet (Maharashtra)</span></div><span class="badge padi">APPI · ISO 9001</span></div>
+        <div class="school"><div class="top"><div><h4>Nirvana Adventures</h4><span class="loc">Kamshet (Maharashtra)</span></div><span class="badge padi">APPI · ISO</span></div>
           <p>Flying in Kamshet since 1997, with sites for every wind direction within about 15 km of its base (Tower Hill, Shelar, Shinde Hill). Runs tandem flights and courses from the same base and guesthouse.</p>
           <a class="url" href="https://www.flynirvana.com/" target="_blank" rel="noopener">flynirvana.com</a></div>
+        <div class="school"><div class="top"><div><h4>Skylark School of Paragliding</h4><span class="loc">Bir Billing (Himachal Pradesh)</span></div><span class="badge">Tandem</span></div>
+          <p>Led by Manu Bedi; school based in the Bir Billing region with a Chandigarh office. Offers tandem joy rides (specialised since 2006) and pilot courses. Instructors described as competition-active. Ask for Himachal tourism registration of the tandem pilot.</p>
+          <a class="url" href="https://skylarkparagliding.in/" target="_blank" rel="noopener">skylarkparagliding.in</a> · <a class="url" href="https://skylarkparagliding.in/tandem/" target="_blank" rel="noopener">tandem</a></div>
+        <div class="school"><div class="top"><div><h4>Xtacee Paragliding Club</h4><span class="loc">Nandi Hills · Bengaluru (Karnataka)</span></div><span class="badge">Club</span></div>
+          <p>Club founded in 2006 by instructor Narendra Raman. Offers tandem flights as a first introduction and structured training programmes at sites around Bengaluru, including Nandi Hills.</p>
+          <a class="url" href="https://flynandi.com/" target="_blank" rel="noopener">flynandi.com</a></div>
       </div>
       <h4 style="margin-top:26px">Sites you'll hear about</h4>
       <div class="sites">
         <div class="site"><b>Tower Hill</b><span class="meta">Kamshet · east face in winter</span><p>Smooth morning and evening conditions; a good place to practise top landing (Nirvana).</p></div>
         <div class="site"><b>Shelar</b><span class="meta">Kamshet · west wind, Mar–Jun</span><p>The summer site once west winds take over; evening sea breeze creates soaring lift bands.</p></div>
         <div class="site"><b>Pawna</b><span class="meta">near Kamshet · summer</span><p>Lakeside summer site used for tandem flights (Temple Pilots).</p></div>
+        <div class="site"><b>Billing → Bir</b><span class="meta">Kangra · tandem hub</span><p>Himalayan tandem site used by Bir schools including Skylark. Confirm HP operator/pilot registration.</p></div>
+        <div class="site"><b>Nandi Hills</b><span class="meta">near Bengaluru</span><p>Club tandem and training site for Xtacee Paragliding Club.</p></div>
       </div>
-      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Kamshet is about 45 km from Pune and 110 km from Mumbai (Temple Pilots' figures), with trains to Kamshet station. Book a weekday tandem in Dec–Feb, and keep the next morning free in case the wind says no.</p></div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Kamshet is about 45 km from Pune and 110 km from Mumbai (Temple Pilots' figures), with trains to Kamshet station. Book a weekday tandem in Dec–Feb, and keep the next morning free in case the wind says no. For a Himalayan first flight, Bir Billing with a registered tandem pilot is the classic alternative.</p></div>
     </div>
 
     <!-- LEARN -->
@@ -465,17 +502,23 @@
         <div class="school"><div class="top"><div><h4>Nirvana Adventures</h4><span class="loc">Kamshet (Maharashtra)</span></div><span class="badge padi">APPI</span></div>
           <p>2-day intro and 3-day taster courses, a 4-day Elementary Pilot course, and 7-day APPI 1 Discover and 11-day APPI 2 Explore programmes.</p>
           <a class="url" href="https://www.flynirvana.com/" target="_blank" rel="noopener">flynirvana.com</a></div>
-        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Bir, Kangra (Himachal Pradesh)</span></div><span class="badge ssi">BHPA instructor</span></div>
+        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Bir, Kangra (Himachal Pradesh)</span></div><span class="badge ssi">BHPA</span></div>
           <p>Led by Gurpreet Singh, flying since 1993, a BHPA-certified instructor and competition pilot. P1+P2 course (8 days) with strong theory. Says it issues ACI licences carrying an IPPI rating, and that it does not work under APPI. Takes students aged 16 to 60+.</p>
           <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
-        <div class="school"><div class="top"><div><h4>Billing Paul Adventure</h4><span class="loc">Bir, Kangra (Himachal Pradesh)</span></div><span class="badge padi">APPI + local levels</span></div>
+        <div class="school"><div class="top"><div><h4>Billing Paul Adventure</h4><span class="loc">Bir, Kangra (Himachal Pradesh)</span></div><span class="badge padi">APPI · local</span></div>
           <p>Paul International Paragliding School, run by Arvind Paul (flying since 2001). Pilot Level 1–3 and APPI 1–3 courses, about 7 days for the basic course.</p>
           <a class="url" href="https://www.billingpauladventure.com/learn-paragliding" target="_blank" rel="noopener">billingpauladventure.com</a></div>
         <div class="school"><div class="top"><div><h4>Antigravity Paragliding School</h4><span class="loc">Bir (Himachal Pradesh)</span></div><span class="badge">Local P-levels</span></div>
           <p>7-day P1 + P2 basic course: equipment, forward/alpine launch, glider control, radio, then solo flights with S- and U-turns and approach planning. Says it trains 100+ students a year.</p>
           <a class="url" href="https://www.antigravityparagliding.com/paragliding-course" target="_blank" rel="noopener">antigravityparagliding.com</a></div>
+        <div class="school"><div class="top"><div><h4>Skylark School of Paragliding</h4><span class="loc">Bir Billing (Himachal Pradesh)</span></div><span class="badge">P1–P3</span></div>
+          <p>Beginner Course (P1 &amp; P2): about 5–7 days at the landing ground/Billing — basic flight physics, ground practice, radio-assisted 3–6 solo flights, emergency landing techniques and theory. Refreshment training also offered for returning P1–P3 pilots. Led by Manu Bedi; school states instructors compete at high levels.</p>
+          <a class="url" href="https://skylarkparagliding.in/courses/" target="_blank" rel="noopener">skylarkparagliding.in › courses</a></div>
+        <div class="school"><div class="top"><div><h4>Xtacee Paragliding Club</h4><span class="loc">Nandi Hills · Bengaluru</span></div><span class="badge">Club</span></div>
+          <p>Ground-handling / glider-management programme (about 4 days) and a Basic P1 course (about 10 days: theory, five flights from a ~30 m hill, turns, evaluation). Intermediate P2 adds dynamic soaring, big ears and speed-bar descent practice. Founded 2006 by Narendra Raman.</p>
+          <a class="url" href="https://flynandi.com/" target="_blank" rel="noopener">flynandi.com</a></div>
       </div>
-      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> A beginner course in Kamshet in Dec–Feb, when winter east winds are steady, then a later trip to Bir in Oct–Nov to fly bigger mountains once you have more airtime.</p></div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> A beginner course in Kamshet in Dec–Feb, when winter east winds are steady, then a later trip to Bir in Oct–Nov to fly bigger mountains once you have more airtime. Nandi Hills is a shorter hop from Bengaluru for ground handling and early solos.</p></div>
     </div>
 
     <!-- PILOT -->
@@ -491,12 +534,18 @@
         <div class="school"><div class="top"><div><h4>Nirvana Adventures</h4><span class="loc">Kamshet → Bir</span></div><span class="badge padi">Clinics</span></div>
           <p>4-day thermalling clinic, a 3-day intermediate and 4-day club-pilot course, and a 5-day intro to cross-country flying in Bir Billing.</p>
           <a class="url" href="https://www.flynirvana.com/" target="_blank" rel="noopener">flynirvana.com</a></div>
-        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Bir</span></div><span class="badge ssi">BHPA instructor</span></div>
+        <div class="school"><div class="top"><div><h4>PG Gurukul</h4><span class="loc">Bir</span></div><span class="badge ssi">BHPA</span></div>
           <p>P3 course for P1+P2 graduates and an integrated P1–P3 + thermalling programme.</p>
           <a class="url" href="https://www.paragliding.guru/" target="_blank" rel="noopener">paragliding.guru</a></div>
         <div class="school"><div class="top"><div><h4>Antigravity Paragliding School</h4><span class="loc">Bir</span></div><span class="badge">P3–P4</span></div>
           <p>Intermediate P3 course for better take-offs, landings and flying, and a 30-day P4 advanced course toward independent flying.</p>
           <a class="url" href="https://www.antigravityparagliding.com/paragliding-course" target="_blank" rel="noopener">antigravityparagliding.com</a></div>
+        <div class="school"><div class="top"><div><h4>Skylark School of Paragliding</h4><span class="loc">Bir Billing</span></div><span class="badge">P3</span></div>
+          <p>Course (P3): about 5–7 days at Billing — descending techniques, take-off and landing without radio assistance, 7–14 solo flights, air-traffic awareness and advanced weather theory. School also offers refreshment training and coaching for thermalling and flight control. Combined P1–P3 in one stay is offered if you have about 14 days.</p>
+          <a class="url" href="https://skylarkparagliding.in/courses/" target="_blank" rel="noopener">skylarkparagliding.in › courses</a></div>
+        <div class="school"><div class="top"><div><h4>Xtacee Paragliding Club</h4><span class="loc">Nandi Hills</span></div><span class="badge">P2</span></div>
+          <p>Intermediate P2 (about 10 days): reverse launch, site/weather assessment, dynamic soaring flights, stalls/spins/deflations recognition, big ears and speed-bar descents, precision approaches.</p>
+          <a class="url" href="https://flynandi.com/" target="_blank" rel="noopener">flynandi.com</a></div>
       </div>
       <h4 style="margin-top:26px">Sites that suit newly independent pilots</h4>
       <div class="sites">
@@ -587,7 +636,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>
