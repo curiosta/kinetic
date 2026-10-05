@@ -1,6 +1,6 @@
 # Kitesurfing: sources and verification log
 
-Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**.
+Checked 3 Oct 2026 (IST); deepen pass 5 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**.
 
 ## 1. Physics (worked on the page)
 
@@ -37,3 +37,33 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - Kitesurfing Goa (Morjim, IKO school listing): own site unreachable; left off.
 - GKA (Global Kitesports Association) site not reached; left off.
 - Kite line lengths and real-world kite CL values not verified; the lab uses illustrative values.
+
+## 5. Deepen pass (5 Oct 2026)
+
+### Physics additions
+
+| Claim | Basis |
+|---|---|
+| Kite swooping airspeed order-of-magnitude (~40 kn in 15 kn true wind) vs rider apparent wind | Vector teaching; kite airspeed **illustrative**, labelled |
+| Wind-window clock (12 overhead, 9/3 edges, 6 power zone); waterstart dives then parks at edge | Standard kite-instruction teaching; matches IKO Level 1 window / Level 2 waterstart progression |
+| Water relaunch: LEI at window edge, upper wingtip to wind, sheeted out; self-rescue pack-down | IKO Level 2 Intermediate syllabus (water relaunch; self-rescue and pack-down introduction) — https://www.ikointl.com/course/kiteboarder/intermediate (WebFetch 5 Oct 2026) |
+| Board edge as underwater wing; density ~800×; soft vs firm edge paths; cross-link to sailing centreboard chapter | Same density argument as sailing Ch 4; qualitative table **illustrative** |
+
+### Schools re-check
+
+| Item | URL | Status |
+|---|---|---|
+| Quest: L1–L3 content (wind window; body-drag, water relaunch, self-rescue, board start; edging, up/downwind, self-launch); min age 10; swim 100 m / 200 m with PFD; Apr–Sep 18–25 kn, Dec–Mar 10–15 kn afternoons | https://www.quest-asia.com/kitesurfing-school | WebFetch 5 Oct 2026 (prices not reproduced). Card wording refreshed |
+| Aqua Outback: IKO-certified instructors, ~4 ft lagoons, rescue boats, min age 12 / 30 kg, basic swim; hosts national kite events | https://aquaoutback.com/activities/kitesurfing/ | WebFetch 5 Oct 2026 (prices/phone not reproduced) |
+| IKO Intermediate course page (Level 2F water relaunch) | https://www.ikointl.com/course/kiteboarder/intermediate | WebFetch 5 Oct 2026 |
+| IKO school listing "Kitesurfing Goa" (Morjim) | https://www.ikointl.com/school/india/morjim/kitesurfing-goa | Listing exists in search index; page is an app shell to our fetchers. Own site kitesurfinggoa.com returned a browser error page — **still left off** (same as 3 Oct note) |
+| Kiteguru (Mandrem): claims "first professional IKO-registered school in India" | https://www.kiteguru.in/about | loaded 5 Oct 2026, but **not found** on an IKO school URL we could confirm — **left off** |
+
+### Seasons
+Quest wind seasons and Goa monsoon row unchanged (already in seasons.py). No new kite events verified beyond those already on the calendar.
+
+## Accreditation labelling (deep2 · 5 Oct 2026)
+
+- Quest Adventure Sports Academy and Aqua Outback: IKO (and Quest’s PADI / ISA) affiliations appear on the schools’ own sites only. IKO school-directory pages for these centres were not confirmed as live listings this pass → badges **IKO — school’s claim**.
+- YAI national kite event hosting at Aqua Outback: verified via YAI calendar (separate from IKO centre status).
+- IKO / VDWS instructor pathway cards link the bodies’ own course pages (not school accreditation).

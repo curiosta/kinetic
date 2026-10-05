@@ -1,6 +1,6 @@
 # Sailing: sources and verification log
 
-Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked out on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**, even where a source page shows them. Claims a club makes about itself are attributed to that club.
+Checked 4 Oct 2026 (IST); deepen refresh 5 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked out on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**, even where a source page shows them. Claims a club makes about itself are attributed to that club.
 
 ## 1. Physics (worked on the page)
 
@@ -60,3 +60,34 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - **"More than 2,400 RYA training centres in 58+ countries"**: appears only on DOSC's page, not checked on an RYA page. Not used as a number.
 - **Season and monsoon closures for Mumbai and Chennai clubs**: no club page states them. Not used.
 - **Course fees and phone numbers** shown on the MSC, RMYC, 24Seven and YAI NOR pages: deliberately not reproduced.
+
+## 5. Deepen refresh (5 Oct 2026)
+
+### Physics additions
+
+| Claim | Basis |
+|---|---|
+| Dinghy vs keelboat righting: ballast pendulum ≈ 5.0 kN·m at 20° (1,000 kg × 1.5 m) vs hiker ≈ 0.77 kN·m (70 kg × 1.2 m); dinghy rights mainly from crew weight / form | Statics (**illustrative** class-agnostic models, labelled) |
+| Turtle: air pocket can linger under an inverted hull but must not be relied on; YAI proficiency includes turtle and trapped-crew drills | YAI proficiency levels (already cited); safety teaching |
+| Froude Fr = v/√(gL); Fr ≈ 0.40 at hull speed; 4 m dinghy at 3 / 4.9 / 7 / 10 kn → Fr ≈ 0.25 / 0.40 / 0.57 / 0.82 | Same wave-dispersion / Fr framework as swimming deepen; recomputed |
+| Cross-link to swimming Ch (drag / hull-speed Fr) | Internal |
+
+### GETHNAA cross-link re-check
+
+| Item | Status |
+|---|---|
+| GETHNAA about: Govt of Karnataka, Dept of Youth Empowerment & Sports; established 23 Mar 1989 | WebFetch 5 Oct 2026 https://gethnaa.org/about |
+| Karwar Water Sports Centre: sailing, windsurfing, kayaking at mouth of Kali (centre poster) | Already verified 5 Oct on windsurfing pass (sources.md there); box TLS to gethnaa.org often fails — WebFetch used |
+| Sailing page GETHNAA card kept; wording tightened; now also points to kayaking Level 1 and windsurfing Karwar detail | Card still present with `../windsurfing/#where` and `../kayaking-rafting/#where` |
+| Clubs re-touched: Mumbai Sailing Club learn-to-sail page HTTP 200; RMYC HTTP 200 | curl 5 Oct 2026 |
+
+### Not added
+- No new sailing season rows (lakes + Goa already covered; Karwar windsurfing row stays on the windsurfing page).
+- GETHNAA Optimist / Wind Surfing & Sailing Camp flyer still unconfirmed on gethnaa.org (same as windsurfing sources note).
+
+## Accreditation labelling (deep2 · 5 Oct 2026)
+
+- Mumbai Sailing Club and Royal Madras Yacht Club: YAI coach / YAITC claims appear on the clubs’ own sites. The public YAITC centres page (`trg.yai.org.in/training-centrescertified-training-centres.html`) describes the scheme but did not name these clubs in the content we loaded → **YAI — school’s claim**.
+- Dubai Offshore Sailing Club: RYA recognition stated on DOSC’s own site; live RYA centre finder not re-checked this pass → **RYA — school’s claim**.
+- Aquasail, 24Seven Sailing, Yacht Club of Hyderabad: no federation directory listing checked → **Accreditation: unverified**.
+- GETHNAA and MP State Water Sports Academy: government academies (identity badges). Tamil Nadu Sailing Association: state association identity badge.

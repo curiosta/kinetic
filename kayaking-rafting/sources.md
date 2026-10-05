@@ -1,6 +1,6 @@
 # Kinetic · Kayaking & rafting: sources and verification notes
 
-All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices or fees**. Operator pages (Red Chilli Adventure, Sea Hawk Adventures) and the Uttarakhand rules show prices, fees or fines in rupees; none are reproduced.
+All checks done **3 Oct 2026 (IST)**; deepen pass **5 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices or fees**. Operator pages (Red Chilli Adventure, Sea Hawk Adventures) and the Uttarakhand rules show prices, fees or fines in rupees; none are reproduced.
 
 ## 1. Physics (chapters, quiz, River Lab)
 
@@ -47,3 +47,50 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loa
 - The earlier "Kolad kayaking" card was replaced by ABVIMAS: the Kolad source only says operators also offer kayaking, not instruction.
 - **IKCA national championships:** couldn't verify (IKCA site suspended).
 - A separate "Indian Rafting Foundation" appears in search snippets as a World Rafting member; the worldrafting.com India page returned 404, so it's **not listed**.
+
+## 5. Deepen pass (5 Oct 2026)
+
+### Physics additions (computed / teaching)
+
+| Claim | Basis |
+|---|---|
+| River features: standing waves, wave trains, pillows, laterals, tongues; subcritical vs supercritical jump builds waves/holes | Standard whitewater hydrology teaching (**not fetched** as a single glossary page; American Whitewater scale page re-loaded for the grade caveats already cited) |
+| Wrap / hydrostatic push F ≈ ρ g h A on 2 m × 0.6 m at h = 0.4 m → ≈ 4,710 N | Computed; area and depth **illustrative**, labelled |
+| Hole / keeper: recirculating surface backwash; low-head dams; escape deep or to the edge | General whitewater-safety knowledge (**not fetched**); links to Ch 2 drop-speed table |
+| Metacentric BM = I/V with I ≈ L B³/12; kayak BM ≈ 0.15–0.21 m vs raft ≈ 5.7 m at V = 0.3 m³ | Standard naval-architecture teaching formula (**computed**); beams/lengths and V **illustrative**, labelled |
+
+### Bodies re-check
+
+| Item | URL | Status |
+|---|---|---|
+| IRF members: Rafting Federation of India still Provisional, 2013–present; Indian Rafting Foundation listed as Past (2004–2008) | https://internationalrafting.com/about/membership/ | loaded 5 Oct 2026 |
+| World Rafting India member page (search hit for Indian Rafting Foundation as Full Member) | https://worldrafting.com/federation/members/44-asian-council/109-india | **404** on 5 Oct 2026 — not listed as a current body on our page |
+| ICF / IKCA directory entry still live; ikca.in behind a Cloudflare interstitial | https://www.canoeicf.com/federation/indian-kayaking-canoeing-association | loaded; own site not used as a link |
+| United Rafting GTE requirements page still live | https://worldrafting.com/gte/certification-requirements-processes-and-fees | curl 200 |
+
+### Rivers, seasons and schools
+
+| Item | URL | Status |
+|---|---|---|
+| Himachal Pradesh Water Sports and Allied Activities Rules, 2021: Season excludes 15 Jul–15 Sep (+ Technical Committee / DM closures); Beas listed among rivers; kayaking & canoeing in activity list | https://www.legitquest.com/act/himachal-pradesh-water-sports-and-allied-activities-rules-2021/a381 | HTML of notified rules read 5 Oct 2026. **Added as seasons.py row "Beas (Kullu / Pirdi)"** with states YYYYYYOOYYYY |
+| ABVIMAS Pirdi Center: est. 2004; river rafting & kayaking training | https://www.abvimas.org/center/pirdi/ | curl 5 Oct 2026 — linked from first-trips panel |
+| ABVIMAS water-sports course list (Basic River Rafting 14 days; Intermediate Kayaking; Advance River Rafting Guide) | https://www.abvimas.org/course/water-sports-course-list/ | curl 5 Oct 2026 (already on page) |
+| IISM White Water River Rafting (Rishikesh): 14 days, ages 15–45; 2026 batches 11 Oct–25 Oct (Basic) and 25 Oct–8 Nov (Basic/Advance) | https://www.iismgulmarg.in/Courses_By_IISM | curl 5 Oct 2026 — card wording updated to these dates |
+| Red Chilli, Kolad, Sea Hawk | existing URLs | curl 200 on 5 Oct 2026 |
+| Teesta (Sikkim / Darjeeling): Sikkim Tourism Adventure Tourism page returned unrelated award content; WB Tourism destination URL returned 500; darjeeling-tourism.com behind bot check | — | **No official season verified** — page notes the corridor and tells readers to confirm with a licensed operator / district administration; **no seasons.py row** |
+| GETHNAA our-centres: earlier (same day) windsurfing pass verified Karwar sailing/windsurfing/kayaking via centre poster; re-fetch on this pass returned a thinner page without the Karwar blurb | https://gethnaa.org/our-centres | Kayaking Level 1 course page verified later the same day → school card added; Karwar centre detail remains on sailing/windsurfing pages |
+
+
+| GETHNAA Kayaking Level 1: 7-day beginner (equipment/PFD, strokes, launch/land, water awareness, capsize & rescue); batches listed 3–9 Sep and 17–23 Oct 2026; GETHNAA certificate | https://gethnaa.org/kayaking-level-1-course | WebFetch 5 Oct 2026 (fee and phone **not reproduced**). **Added school card** |
+
+### Looked at, not used
+- Commercial Teesta grade/season pages (travel blogs, resort pages): not official enough for a seasons row or grade claim.
+- kullu.net / travel blogs quoting Beas Grade II–IV stretches: not used for grades; Beas card sticks to ABVIMAS + HP rules.
+- "IAF" as a named current body: not found as a live canoe/raft federation acronym on the pages we checked (ICF + IRF / United Rafting already covered).
+
+## Accreditation labelling (deep2 · 5 Oct 2026)
+
+- School / operator cards now follow: verified on an official accreditor or association directory → badge with link; claim only on the school’s own site → “X — school’s claim”; no evidence → “Accreditation: unverified”.
+- Sea Hawk Adventures: no IRF / WRF / GTE operator listing found this pass → **Accreditation: unverified**.
+- ABVIMAS, GETHNAA, IISM, UTDB: identity badges (state institute / academy / Ministry / regulator) — these name the organisation itself, not a third-party sport accreditation stamp.
+- GTE / United Rafting: certification-body card (pathway link), not a school accreditation badge.
