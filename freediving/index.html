@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Freediving · Physics of Breath-Hold, Pressure & Buoyancy · Kinetic by Curiosta</title>
+<meta name="description" content="Test your freediving physics in 15 questions, learn the dive reflex, oxygen and CO₂, hypoxia and blackout, Boyle's law and lung squeeze, equalisation, buoyancy and the disciplines, then follow the ladder from AIDA1 to AIDA4, PADI, SSI and Molchanovs courses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Freediving</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Course ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to freedive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Freediving</span>
+      <h1>One breath. <em>Pressure, oxygen and calm do the rest.</em></h1>
+      <p class="lede">Freediving is physics you can feel: water pressure squeezing the air in your body, oxygen and carbon dioxide racing each other, and buoyancy that flips as you go deeper. Take the challenge, learn the science with a Depth &amp; Breath Lab, then find courses in India and abroad. And never freedive alone.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First breath-hold</span><span class="bar"></span><span>AIDA4 · 38 m</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">4 bar</span><span class="l">total pressure at 30 m in the sea</span></div>
+      <div class="hero-stat"><span class="n">¼</span><span class="l">of your surface lung volume at 30 m (Boyle's law)</span></div>
+      <div class="hero-stat"><span class="n">20 m</span><span class="l">maximum depth on an AIDA2 course</span></div>
+      <div class="hero-stat"><span class="n">Last ⅓</span><span class="l">of the ascent: where DAN says most problems happen</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of freediving?</h2>
+      <p>15 questions on the dive reflex, oxygen and CO₂, hypoxia and blackout, Boyle's law and lung squeeze, equalisation, and buoyancy, freefall and the disciplines. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Freediving physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace a freediving course with a qualified instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Depth &amp; Breath Lab to see how depth, lungs, weights and suits change the dive.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-reflex"><span class="n">CHAPTER 1</span><span class="t">The dive reflex</span><span class="d">Your body's oxygen saver</span></a>
+      <a href="#ch-gases"><span class="n">CHAPTER 2</span><span class="t">Oxygen, CO₂ &amp; the urge to breathe</span><span class="d">Why the alarm is CO₂</span></a>
+      <a href="#ch-blackout"><span class="n">CHAPTER 3</span><span class="t">Hypoxia &amp; blackout</span><span class="d">The risky last metres</span></a>
+      <a href="#ch-boyle"><span class="n">CHAPTER 4</span><span class="t">Boyle's law &amp; lung squeeze</span><span class="d">Pressure and air spaces</span></a>
+      <a href="#ch-equalise"><span class="n">CHAPTER 5</span><span class="t">Equalisation</span><span class="d">Ears, Frenzel and mouthfill</span></a>
+      <a href="#ch-buoyancy"><span class="n">CHAPTER 6</span><span class="t">Buoyancy, freefall &amp; the disciplines</span><span class="d">Neutral depth, STA to CWT</span></a>
+    </nav>
+
+    <!-- DEPTH & BREATH LAB -->
+    <div class="lab" id="fd-lab">
+      <span class="eyebrow">Interactive · Depth &amp; Breath Lab</span>
+      <h3>Pick a depth, your lung volume, your weighting, your wetsuit and how much oxygen is left in your lungs, then see the pressure, how far your lungs are squeezed, your buoyancy and what happens to oxygen on the way up</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: sea water adds 1 bar per 10 m; gas volume follows Boyle's law (P × V constant); residual volume fixed at 1.5 L; the body without air is 2.2 kg heavier than the water it displaces; a 3 mm suit holds gas worth 3 L of buoyancy at the surface and a 5 mm suit 5 L, compressing like the lungs. Learning values only (illustrative): real bodies, suits and lungs vary.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="fd-d">Depth</label><input type="range" id="fd-d" min="0" max="40" step="1" value="20"><output id="fd-d-o">20 m</output></div>
+        <div class="ctl"><label for="fd-v">Lung volume at the surface</label><input type="range" id="fd-v" min="4" max="8" step="0.5" value="6"><output id="fd-v-o">6.0 L</output></div>
+        <div class="ctl"><label for="fd-lead">Lead weight</label><input type="range" id="fd-lead" min="0" max="5" step="1" value="2"><output id="fd-lead-o">2 kg</output></div>
+        <div class="ctl"><label>Wetsuit</label><div class="seg" id="fd-suit"><button type="button" data-l="0" aria-pressed="false">None</button><button type="button" data-l="3" aria-pressed="true">3 mm</button><button type="button" data-l="5" aria-pressed="false">5 mm</button></div><span></span></div>
+        <div class="ctl"><label for="fd-o2">Oxygen left in your lungs</label><input type="range" id="fd-o2" min="6" max="21" step="1" value="10"><output id="fd-o2-o">10%</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Total pressure</span><span class="v" id="fd-p">3.0 bar</span><span class="s">Ch 4 · 1 bar per 10 m, plus the air</span></div>
+        <div class="lab-card"><span class="k">Lung volume here</span><span class="v" id="fd-vol">2.0 L</span><span class="s" id="fd-vol-s">Ch 4 · 33% of surface volume</span></div>
+        <div class="lab-card"><span class="k">Lungs reach 1.5 L at</span><span class="v" id="fd-rv">30 m</span><span class="s">Ch 4 · residual volume depth</span></div>
+        <div class="lab-card"><span class="k">Lung O₂: here → at the surface</span><span class="v" id="fd-o2d">30.4 → 10.1 kPa</span><span class="s">Ch 3 · why blackouts happen on the way up</span></div>
+        <div class="lab-card"><span class="k">Net buoyancy here</span><span class="v" id="fd-b">−1.1 kg (sinks)</span><span class="s">Ch 6 · + floats, − sinks</span></div>
+        <div class="lab-card"><span class="k">Neutral depth</span><span class="v" id="fd-n">12 m</span><span class="s">Ch 6 · below it, you freefall</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="fd-bar"></span></div>
+      <p class="fine">Bar = lung volume as a share of the surface volume. Try 30 m, then take the weight off, then lower the oxygen. Real limits come from training with an instructor and a buddy, never from a calculator (Ch 3).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-reflex">
+      <header><span class="chno">CH 1</span><h3>The dive reflex</h3></header>
+      <p class="hook">Hold your breath with your face in water and your body quietly switches to saving oxygen.</p>
+      <div class="body">
+        <p>All mammals, humans included, share a <strong>diving response</strong>. When you hold your breath, and more strongly with a cold, wet face, the vagus nerve <strong>slows the heart</strong> (bradycardia) and the sympathetic nerves <strong>narrow blood vessels</strong> in the limbs, skin and gut (peripheral vasoconstriction). Oxygen-rich blood is kept for the heart and brain. A 2021 physiology review reports heart rates as low as 20–30 beats a minute in deep dives, and describes the <strong>spleen</strong> contracting to push extra red blood cells into circulation.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · an oxygen budget in the lungs (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Lung volume after a full breath</td><td class="num">6 L</td><td>illustrative adult</td></tr>
+              <tr><td>Oxygen you can use, from 21% down to 10%</td><td class="num">0.66 L</td><td>6 × (0.21 − 0.10)</td></tr>
+              <tr><td>Lasts at 0.25 L/min (resting)</td><td class="num">≈ 2.6 min</td><td>0.66 ÷ 0.25</td></tr>
+              <tr><td>Lasts at 0.20 L/min (reflex saving 20%)</td><td class="num">≈ 3.3 min</td><td>0.66 ÷ 0.20</td></tr>
+              <tr><td>Lasts at 0.75 L/min (kicking hard)</td><td class="num">≈ 0.9 min</td><td>0.66 ÷ 0.75</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Blood and muscle hold more oxygen than this, so real breath-holds can be longer. The lesson stands: relaxing and moving efficiently stretch the budget; effort burns it.</p>
+        </div>
+        <h4>Where the rest of the oxygen is</h4>
+        <p>The lungs aren't your only tank. Haemoglobin in your blood carries most of the body's oxygen, and muscle has its own store (myoglobin). The diving response decides who gets it: by narrowing vessels in the limbs it leaves working muscles to run on their own store and on anaerobic energy, which is why a hard swim up leaves lactate behind.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · oxygen carried by the blood (illustrative)</span>
+          <p style="margin:0">The 2021 review models fully saturated blood with 15 g of haemoglobin per decilitre, each gram carrying 1.36 mL of oxygen: <span class="eq">15 × 1.36 ≈ 20 mL per 100 mL of blood</span>. An adult with about 5 L of blood (illustrative) therefore carries roughly <strong>1 L of oxygen</strong>, more than the lungs' usable 0.66 L above. The review's model adds about 5% more oxygenated haemoglobin from the spleen during the dive: <span class="eq">0.75 g/dL × 50 dL × 1.36 ≈ 0.05 L</span>. Small, but it arrives when you need it most. You can't use all of it, though: the brain fails long before the blood is empty (Ch 3).</p>
+        </div>
+        <div class="feel"><span class="ico">🫧</span><div><span class="lbl">Feel the number</span>Kicking hard can use oxygen about three times as fast as lying still. That's why freedivers train to be calm and streamlined.</div></div>
+        <details class="check"><summary>With 0.66 L of usable lung oxygen at 0.33 L/min, how long does it last?</summary>
+        <p>0.66 ÷ 0.33 = <strong>2 min</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-gases">
+      <header><span class="chno">CH 2</span><h3>Oxygen, CO₂ &amp; the urge to breathe</h3></header>
+      <p class="hook">The urge to breathe is a CO₂ alarm, not an oxygen gauge.</p>
+      <div class="body">
+        <p>During a breath-hold, oxygen falls and <strong>carbon dioxide rises</strong>. CO₂ is a powerful stimulus to breathe; low oxygen is a much weaker one. Divers Alert Network (DAN) defines <strong>hyperventilation</strong> as any breathing that drops your CO₂, such as fast or deep breathing or long exhalations. It doesn't add useful oxygen, but it delays the alarm, so you can run low on oxygen before you feel the need to breathe. DAN's advice: breathe normally until the final breath, and never hyperventilate.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · why a delayed alarm is dangerous (illustrative numbers)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Start</th><th>CO₂ at start</th><th>Urge to breathe (at 6.7 kPa, rising 0.4 kPa/min)</th><th>Oxygen runs low (from Ch 1)</th></tr></thead>
+            <tbody>
+              <tr><td>Normal breathing</td><td class="num">5.3 kPa</td><td class="num">≈ 3.5 min</td><td class="num">≈ 3.3 min</td></tr>
+              <tr><td>After hyperventilating</td><td class="num">3.5 kPa</td><td class="num">≈ 8 min</td><td class="num">≈ 3.3 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">(6.7 − 5.3) ÷ 0.4 = 3.5 min; (6.7 − 3.5) ÷ 0.4 = 8 min. The numbers are made up to show the idea: after hyperventilating, the alarm can come long after the oxygen has run low, with no warning in between.</p>
+        </div>
+        <h4>Contractions: the alarm getting louder</h4>
+        <p>Partway through a long hold, most people feel the diaphragm start to jerk on its own. The 2021 review calls these <strong>involuntary breathing movements</strong>: they mark the body's "break-point", and they get stronger as CO₂ climbs, oxygen falls and blood pressure rises. They are a signal from your chemistry, not a performance target. How long you hold after they start is exactly the kind of limit you only explore in training, with an instructor and a buddy watching.</p>
+        <details class="check"><summary>If CO₂ starts at 4.5 kPa and rises 0.4 kPa a minute, when does it reach 6.7 kPa?</summary>
+        <p>(6.7 − 4.5) ÷ 0.4 = <strong>5.5 min</strong>, later than the oxygen budget in Ch 1.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-blackout">
+      <header><span class="chno">CH 3</span><h3>Hypoxia &amp; blackout</h3></header>
+      <p class="hook">The danger isn't at the bottom. It's in the last few metres, and at the surface.</p>
+      <div class="body">
+        <p>What pushes oxygen into your blood is its <strong>partial pressure</strong>: the oxygen fraction × the total pressure. At depth, the squeezed lungs raise it; on the way up it falls with the pressure, while you keep using oxygen. Too little reaching the brain (<strong>hypoxia</strong>) can cause a sudden loss of consciousness: a <strong>blackout</strong>. A DAN article says 99 percent of blackouts happen at the surface or within 16 feet (about 5 m) of it, and that most problems happen in the last third of the ascent.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 10% oxygen left in the lungs on a dive to 30 m (from our Depth &amp; Breath Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Total pressure</th><th>Lung oxygen partial pressure</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">0.40 bar (40.5 kPa)</td></tr>
+              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">0.30 bar (30.4 kPa)</td></tr>
+              <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">0.20 bar (20.3 kPa)</td></tr>
+              <tr><td class="num">Surface</td><td class="num">1 bar</td><td class="num">0.10 bar (10.1 kPa)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Same gas, same oxygen: only the pressure changes. From 10 m to the surface the partial pressure halves, which is why the end of the ascent is the riskiest part.</p>
+        </div>
+        <h4>A margin of a few millimetres of mercury</h4>
+        <p>Before a breath-hold, the oxygen pressure in your arteries is around 97 mmHg (13 kPa; the figure the 2021 review starts its model from). The review cites a study of competitive divers in which those who surfaced with about <strong>20 mmHg (2.7 kPa)</strong> of oxygen in their exhaled air lost motor control, while those at about <strong>23 mmHg (3.1 kPa)</strong> did not. That's a gap of roughly 3 mmHg between "fine" and "can't hold your own head up", which is why no one, however experienced, can feel their way safely to the edge. Now add Boyle: lung gas holding 5.4 kPa of oxygen at 10 m holds only 2.7 kPa at the surface.</p>
+        <h4>Surfacing: the dive isn't over yet</h4>
+        <p>In competition, AIDA only accepts a dive if the diver shows control on surfacing: take off the mask or goggles and nose clip, give the OK sign and say "I am OK", in that order, keeping the airway out of the water throughout. Recreational freedivers use the same idea every time. Divers also take deliberate recovery breaths on surfacing to help restore blood flow and oxygen to the brain, because the risk doesn't end when your face clears the water: remember DAN's figure that almost all blackouts happen at or near the surface. Your buddy stays within arm's reach and watches your face, not the view.</p>
+        <div class="callout warn"><h4>Never freedive alone</h4><p style="margin:0">DAN's two most repeated rules: never breath-hold dive alone, and don't hyperventilate. That includes the pool: DAN's advice is a capable buddy closely watching you <strong>throughout any pool or open-water freedive at any depth</strong>. A trained buddy watches every dive, meets you on the way up (for deeper dives, DAN describes buddies meeting the diver at a third of their depth), stays within reach for your recovery breaths at the surface, and knows how to bring you back. One DAN author advises staying out of the water for at least 24 hours after a blackout or loss of motor control.</p></div>
+        <details class="check"><summary>With 8% oxygen in the lungs at 20 m (3 bar), what's the partial pressure there and at the surface?</summary>
+        <p>0.08 × 3 = <strong>0.24 bar</strong> at 20 m; 0.08 × 1 = <strong>0.08 bar</strong> at the surface.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-boyle">
+      <header><span class="chno">CH 4</span><h3>Boyle's law &amp; lung squeeze</h3></header>
+      <p class="hook">Every 10 m of sea adds another atmosphere. Your lungs feel every one of them.</p>
+      <div class="body">
+        <p>Sea water adds about 1 bar of pressure for every 10 m, on top of 1 bar of air. <strong>Boyle's law</strong> says a gas's pressure × volume stays constant at a fixed temperature, so the air in your lungs, sinuses, ears and mask shrinks as you go down: <span class="eq">V = V<sub>0</sub> ÷ P</span>. When the lungs reach the volume left after a full exhale (<strong>residual volume</strong>), simple physics would predict trouble. The 2021 review puts that depth around 40–50 m after a full breath, and describes a <strong>blood shift</strong> into the chest that limits the effect; going too deep too fast can still injure the lungs (<strong>lung squeeze</strong>).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 6 L of air in the lungs at the surface (from our Depth &amp; Breath Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Pressure</th><th>Lung volume</th><th>Share of surface volume</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">6.0 L</td><td class="num">100%</td></tr>
+              <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">3.0 L</td><td class="num">50%</td></tr>
+              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.0 L</td><td class="num">33%</td></tr>
+              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">1.5 L</td><td class="num">25%</td></tr>
+              <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">1.2 L</td><td class="num">20%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">6 L × 1 bar = V × 4 bar → V = 1.5 L at 30 m. With an illustrative residual volume of 1.5 L, this diver's lungs reach it at 30 m; a bigger breath (8 L) moves that to about 43 m.</p>
+        </div>
+        <h4>Exhale dives, lung packing and the blood shift</h4>
+        <p>The residual-volume depth depends on how much air you start with. Dive after a relaxed exhale (an "FRC" dive, at functional residual capacity) with, say, 3 L in your lungs and the same 1.5 L residual volume, and you reach it at <span class="eq">3 ÷ 1.5 = 2 bar = 10 m</span>. That's why AIDA leaves FRC dives to its AIDA4 course. Going the other way, many deep divers "pack" extra air with mouth-and-throat gulps on the last breath: the review reports gains of 11–26% (up to 3 L). Packing a 6 L breath by 20% to 7.2 L moves the residual-volume depth from 30 m to <span class="eq">(7.2 ÷ 1.5 − 1) × 10 = 38 m</span>, but the review warns that too much packing raises the risk of lung injury and of fainting before the dive even starts.</p>
+        <p>The body also fights back. As the lungs shrink, blood moves into the chest and takes up some of the space: one classic study estimated about <strong>850 mL</strong> shifted into the chest on a 40 m dive. It doesn't make the lungs invincible. Modelling suggests the lowest parts of the lungs can start to close from about 18 m, and the review describes <strong>lung squeeze</strong> showing up soon after surfacing as coughing, coughing up blood, chest tightness or breathlessness. Any of those means stop diving and get medical help.</p>
+        <div class="callout"><h4>Nitrogen still counts on one breath</h4><p style="margin:0">Each breath-hold dive loads a little nitrogen at depth, as on scuba. Decompression sickness, known in breath-hold diving as <strong>taravana</strong>, can happen to freedivers, especially with repeated dives and short surface intervals (spearfishing, safety diving, underwater scooters) or extreme depths, and the review notes nitrogen narcosis is not unusual beyond about 70–90 m. On a mixed trip, DIVEIndia's advice is to freedive first and scuba after, not the other way round.</p></div>
+        <p>Your mask is an air space too: breathe a little air into it through your nose on the way down, or it squeezes your face. Unlike scuba divers, freedivers don't breathe compressed air at depth; our <a href="../scuba/">Scuba page</a> covers what changes when you do.</p>
+        <details class="check"><summary>A 7 L breath at 25 m (3.5 bar): what volume?</summary>
+        <p>7 ÷ 3.5 = <strong>2 L</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-equalise">
+      <header><span class="chno">CH 5</span><h3>Equalisation</h3></header>
+      <p class="hook">The first 10 m are the hardest on your ears.</p>
+      <div class="body">
+        <p>Your middle ears and sinuses are air spaces with stiff walls. As you descend, you have to push air into them to match the water pressure, or the eardrum bends painfully. In the <strong>Valsalva</strong> method you pinch your nose and push with your chest muscles; it gets harder head-down and as the lungs compress. In the <strong>Frenzel</strong> method you close the airway to the lungs and use the tongue and throat as a piston on the air in your mouth and nose, so a small amount of air does the job. AIDA teaches Frenzel in its AIDA3 course, and deeper techniques such as <strong>mouthfill</strong> (storing air in the mouth for the deep part of the dive) in AIDA4.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how much an air space shrinks over each 10 m</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth change</th><th>Pressure change</th><th>Volume change</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 → 10 m</td><td class="num">1 → 2 bar</td><td class="num">−50%</td></tr>
+              <tr><td class="num">10 → 20 m</td><td class="num">2 → 3 bar</td><td class="num">−33%</td></tr>
+              <tr><td class="num">20 → 30 m</td><td class="num">3 → 4 bar</td><td class="num">−25%</td></tr>
+              <tr><td class="num">30 → 40 m</td><td class="num">4 → 5 bar</td><td class="num">−20%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Volume ratio = P<sub>before</sub> ÷ P<sub>after</sub>: 2 ÷ 3 = 0.67, a 33% drop. Equalise early and often near the surface; never force it.</p>
+        </div>
+        <h4>Why freedivers use small masks</h4>
+        <p>Keeping an air space at its size takes extra gas as you go down: <span class="eq">volume × (P − 1)</span> in surface litres. A 200 mL scuba-style mask held at full size to 30 m (4 bar) needs <span class="eq">0.2 × 3 = 0.6 L</span> of surface air, 10% of a 6 L breath. A 100 mL low-volume freediving mask needs half that. The ears need far less, but every millilitre comes from lungs that are shrinking too.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the mouthfill shrinks as well</span>
+          <p style="margin:0">Frenzel works while the lungs can still push air up into the mouth. Deeper, divers take a <strong>mouthfill</strong>: a pocket of air in the mouth, "charged" from the lungs before they get too small, and then used for every equalisation below. Charge 0.5 L at 30 m (4 bar) and by 50 m (6 bar) it has shrunk to <span class="eq">0.5 × 4 ÷ 6 ≈ 0.33 L</span>, before you've spent any of it on your ears. That is why mouthfill is an AIDA4-level skill, taught with a coach and a line.</p>
+        </div>
+        <details class="check"><summary>By how much does an air space shrink from 40 m to 50 m?</summary>
+        <p>5 ÷ 6 ≈ 0.83, a <strong>17%</strong> drop.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-buoyancy">
+      <header><span class="chno">CH 6</span><h3>Buoyancy, freefall &amp; the disciplines</h3></header>
+      <p class="hook">Swim hard for the first few metres, then let the sea pull you down.</p>
+      <div class="body">
+        <p>Near the surface, air in your lungs and wetsuit makes you float. As both compress, you displace less water; at the <strong>neutral depth</strong> buoyancy equals weight, and below it you sink without kicking: <strong>freefall</strong>. The 2021 review says this usually happens within the first 20 m or so, depending on body, suit, weights, lung volume and water. A DAN article warns against overweighting and advises weighting so that a blacked-out diver would end up at the surface.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 6 L lungs, 3 mm suit, 2 kg of lead (from our Depth &amp; Breath Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Lungs + suit gas</th><th>Net buoyancy</th></tr></thead>
+            <tbody>
+              <tr><td class="num">Surface</td><td class="num">9.0 L</td><td class="num">+5.0 kg (floats)</td></tr>
+              <tr><td class="num">10 m</td><td class="num">4.5 L</td><td class="num">+0.4 kg</td></tr>
+              <tr><td class="num">12 m</td><td class="num">4.1 L</td><td class="num">≈ 0 (neutral)</td></tr>
+              <tr><td class="num">20 m</td><td class="num">3.0 L</td><td class="num">−1.1 kg (sinks)</td></tr>
+              <tr><td class="num">30 m</td><td class="num">2.3 L</td><td class="num">−1.9 kg (sinks)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Net = 1.025 × gas volume ÷ P − 2 kg lead − 2.2 kg body. At 20 m: 1.025 × 9 ÷ 3 − 4.2 ≈ −1.1 kg.</p>
+        </div>
+        <h4>How fast is freefall?</h4>
+        <p>Below the neutral depth you sink until water drag balances your net weight. Drag rises with the square of speed (<span class="eq">½ ρ C<sub>d</sub>A v²</span>), so speed settles at <span class="eq">v = √(2W ÷ (ρ C<sub>d</sub>A))</span>. With an illustrative streamlined C<sub>d</sub>A of 0.036 m², the diver above sinks at about <strong>0.76 m/s</strong> at 20 m (1.1 kg heavy) and <strong>1.0 m/s</strong> at 30 m (1.9 kg heavy), close to the 1 m/s the 2021 review uses in its model dive. The same numbers bite on the way up: you start the ascent at your heaviest, so every kick has to beat that weight plus drag. Good streamlining (head neutral, arms tidy) lowers C<sub>d</sub>A and saves oxygen both ways; our <a href="../swimming/">Swimming page</a> works through drag in more detail.</p>
+        <h4>The disciplines</h4>
+        <p>AIDA's competition disciplines: <strong>STA</strong> (static apnea: a breath-hold at the surface, the only one timed); <strong>DYN</strong>, <strong>DYNB</strong> and <strong>DNF</strong> (dynamic: horizontal distance with a monofin or fins, with bifins, or with no fins); and depth: <strong>CWT</strong> (constant weight with fins or monofin), <strong>CWTB</strong> (with bifins), <strong>CNF</strong> (no fins) and <strong>FIM</strong> (free immersion: pulling down and up the rope). AIDA also lists variable weight (VWT) and no limits (NLT), and says it stopped sanctioning NLT attempts in 2015 because of the extreme risks.</p>
+        <details class="check"><summary>Same diver, 4 kg of lead instead of 2: about where's the neutral depth?</summary>
+        <p>P = 1.025 × 9 ÷ (4 + 2.2) ≈ 1.49 bar → about <strong>5 m</strong>. More lead means sinking sooner, and a harder swim up.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The freediving ladder</span>
+      <h2>Try it → first certification → advanced → master → competition &amp; instructor</h2>
+      <p>Four agencies dominate recreational freediving: AIDA, PADI, SSI and Molchanovs. Their levels line up roughly as below; the requirements are the ones each agency publishes. Crossovers between agencies need an evaluation by an instructor.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Try it</span><b>An introduction, no certification needed to start</b><span class="iso">Intro courses</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">AIDA</span><span class="cn">AIDA1 Introduction to Freediving</span><ul><li>18+ (16+ with parental consent); swim 100 m non-stop</li><li>At least 1 day (6 h), maximum depth 10 m</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Try Freediving · Basic Freediver</span><ul><li>Basic Freediver certifies you to freedive with a buddy in a pool or confined water to 5 m</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">The dive reflex</span><ul><li><a href="#ch-reflex">Ch 1</a> and <a href="#ch-gases">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · First certification</span><b>Freedive with a buddy in open water</b><span class="iso">AIDA2 · Freediver · Wave 1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">AIDA</span><span class="cn">AIDA2 Freediver</span><ul><li>At least 3 days; pool and depth sessions; maximum 20 m</li><li>To pass: 2:00 breath-hold, 40 m underwater swim with bifins, 12 m dive, 10 m buddying, rescue from 5–10 m</li></ul></div>
+          <div class="ag"><span class="an">PADI / SSI</span><span class="cn">Freediver</span><ul><li>PADI: 12+, swim 200 m</li><li>SSI: 12+, 2 pool and 2 open-water sessions, maximum training depth 20 m</li></ul></div>
+          <div class="ag"><span class="an">Molchanovs</span><span class="cn">Wave 1</span><ul><li>Swim 200 m; 1:30 breath-hold, 30 m underwater swim with bifins; dives of 12–20 m; buddying and rescue from 6–10 m</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Advanced</span><b>Frenzel, freefall and planning your own dives</b><span class="iso">AIDA3 · Advanced · Wave 2</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">AIDA</span><span class="cn">AIDA3 Advanced Freediver</span><ul><li>Maximum 30 m; 2:45 breath-hold, 55 m with bifins, 24 m dive, 50 m surface tow, self-rescue skills</li></ul></div>
+          <div class="ag"><span class="an">SSI / PADI</span><span class="cn">Advanced Freediver</span><ul><li>SSI: 15+, 4 open-water sessions, to 30 m</li><li>PADI also runs an Advanced Freediver course</li></ul></div>
+          <div class="ag"><span class="an">Molchanovs</span><span class="cn">Wave 2</span><ul><li>2:30 breath-hold, 50 m underwater swim with bifins (35 m without fins); dives of 24–30 m; buddying and rescue from 10–15 m</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Equalisation &amp; freefall</span><ul><li><a href="#ch-equalise">Ch 5</a> and <a href="#ch-buoyancy">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Master</span><b>Deep technique: mouthfill and FRC dives</b><span class="iso">AIDA4 · Master · Wave 3</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">AIDA</span><span class="cn">AIDA4 Master Freediver</span><ul><li>18+, first aid and CPR within 2 years; maximum 38 m</li><li>3:30 breath-hold, 70 m with bifins, 32 m dive, 20 m blackout rescue</li></ul></div>
+          <div class="ag"><span class="an">Molchanovs</span><span class="cn">Wave 3</span><ul><li>CPR / first aid; 3:30 breath-hold, 75 m underwater swim with bifins; dives of 34–40 m; buddying from 20 m</li></ul></div>
+          <div class="ag"><span class="an">PADI</span><span class="cn">Master Freediver</span><ul><li>Listed among PADI's freediving courses</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Lung squeeze</span><ul><li><a href="#ch-boyle">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Competition &amp; instructor</span><b>Compete, judge or teach</b><span class="iso">Wave 4 · AIDA Instructor</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Molchanovs</span><span class="cn">Wave 4 Competitive Freediving</span><ul><li>5:00 breath-hold, 100 m dynamic, a 50 m dive with bifins, rescue from 25 m</li></ul></div>
+          <div class="ag"><span class="an">AIDA</span><span class="cn">Instructor · Judge</span><ul><li>Instructor course needs AIDA4 (or crossover) and first aid; open-water dives of 40–50 m</li><li>AIDA Judge courses for competitions</li></ul></div>
+          <div class="ag"><span class="an">Real competition</span><span class="cn">World Apnea 2026</span><ul><li>The 37th AIDA Depth World Championship, rebranded World Apnea, in Limassol, Cyprus (27 Sep–10 Oct 2026)</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Competitive freediving has two world bodies, AIDA and CMAS, with different rules and records; training comes from agencies such as AIDA, PADI, SSI and Molchanovs. In India, a new AIDA national body was accepted as an observer in 2026. We checked each on an official source.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World body</span><h4>AIDA International</h4><p>Sets competition rules, ratifies world records and runs an education system from AIDA1 to instructor. Its national members form an assembly.</p><a class="url" href="https://www.aidainternational.org/" target="_blank" rel="noopener">aidainternational.org</a></div>
+      <div class="card"><span class="tag">World federation</span><h4>CMAS · World Underwater Federation</h4><p>The world federation for underwater sports, including freediving: its own world championships, world cups, records and freediving courses.</p><a class="url" href="https://www.cmas.org/freediving" target="_blank" rel="noopener">cmas.org</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>PADI Freediving</h4><p>Basic Freediver, Freediver, Advanced and Master Freediver courses, plus instructor levels.</p><a class="url" href="https://www.padi.com/education/freediving" target="_blank" rel="noopener">padi.com</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>SSI Freediving</h4><p>Try Freediving, Basic Freediver, Freediver (to 20 m) and Advanced Freediver (to 30 m), plus specialties.</p><a class="url" href="https://www.divessi.com/en/get-certified/freediving" target="_blank" rel="noopener">divessi.com</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>Molchanovs</h4><p>A freediving education system with Lap (pool) and Wave (pool and depth) courses from level 1 to 4.</p><a class="url" href="https://www.molchanovs.com/pages/molchanovs-freediving-education" target="_blank" rel="noopener">molchanovs.com</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National body</span><h4>Freediving Association of India (AIDA India)</h4><p>Launched in 2026 as India's AIDA national body; a March 2026 announcement says India was accepted as an AIDA observer member, with plans for national competitions.</p><a class="url" href="https://freedivingindia.org/" target="_blank" rel="noopener">freedivingindia.org</a></div>
+      <div class="card"><span class="tag">Listing</span><h4>AIDA India on AIDA's member list</h4><p>AIDA's Board and Assembly page lists AIDA India among its observers (members that take part in the assembly but don't yet vote).</p><a class="url" href="https://www.aidainternational.org/BoardANDMembers" target="_blank" rel="noopener">aidainternational.org</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to freedive</span>
+      <h2>Pick your level. We'll point you to the water.</h2>
+      <p>Real schools, events and official sources, each checked on its own website. Follow the link and confirm dates, eligibility, the agency and medical requirements directly. Wherever you go: never freedive alone.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="freediving">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Andamans (Havelock)</span><span class="ss-cells" role="img" aria-label="Andamans (Havelock): peak December to March; possible April to May, October to November; off June to September"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Goa (Grande Island)</span><span class="ss-cells" role="img" aria-label="Goa (Grande Island): peak November to May; possible October; off June to September"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in September, October"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="September: AIDA Depth World Championships">◆</span><span class="ss-c E" title="October: AIDA Depth World Championships; CMAS Red Sea Open Cup">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span></span></div>
+  <ul class="ss-events">
+    <li><b>AIDA Depth World Championships</b> (global) · <span class="ss-when">27 Sep-10 Oct 2026</span> · Limassol, Cyprus · <a href="https://www.visitcyprus.com/event/world-apnea-championships-2026-27-9-10-10-2026/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>CMAS Red Sea Open Cup</b> (global) · <span class="ss-when">26-30 Oct 2026</span> · Dahab, Egypt · <a href="https://www.cmas.org/freediving" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-freediving">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Andaman</b>DIVEIndia (Havelock) says you can dive all year, with conditions set by tides and currents.</div>
+      <div><b>Goa</b>iDive lists Jan–May and Oct–Dec as peak season, and suggests avoiding Jul–Aug.</div>
+      <div><b>Deeper is colder</b>At Limassol during the 2026 worlds, Molchanovs reported 25–28 °C water at the surface but 17–19 °C at 70 m.</div>
+      <div><b>Every dive</b>A trained buddy, one up, one down, and no hyperventilating.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① First course</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-adv" id="tab-adv">② Advanced</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-deep" id="tab-deep">③ Deep water</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-comp" id="tab-comp">④ Competitions</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to try freediving or earn your first certification (Steps 1–2). Read <a href="#ch-gases">Ch 2</a> and <a href="#ch-blackout">Ch 3</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which agency and level is the course? How many pool and open-water sessions? What's the student-to-instructor ratio in the water? How is safety and rescue taught?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>DIVEIndia · SSI Freediver</h4><span class="loc">Havelock &amp; Neil, Andaman Islands</span></div><span class="badge">SSI · 3 days</span></div>
+          <p>3 days of theory, pool and open water; minimum age 12; swim 100 m (or 200 m with mask, fins and snorkel); reach 10 m to certify, then dive to 20 m after certification.</p>
+          <a class="url" href="https://diveindia.com/course/freediver/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Octopus Garden · PADI Freediver courses</h4><span class="loc">Havelock (Swaraj Dweep), Andaman Islands</span></div><span class="badge">PADI</span></div>
+          <p>Beginner freediving courses with theory, breathing, equalisation and sea sessions in small groups.</p>
+          <a class="url" href="https://www.octopusgarden.in/courses/padi-freediver-courses" target="_blank" rel="noopener">octopusgarden.in</a></div>
+        <div class="school"><div class="top"><div><h4>The Dive Master · Havelock</h4><span class="loc">Havelock (Swaraj Dweep), Andaman Islands</span></div><span class="badge">PADI centre</span></div>
+          <p>A PADI 5 Star centre whose PADI listing includes PADI Freediving and freediving gear rental.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/the-dive-master/" target="_blank" rel="noopener">padi.com</a></div>
+        <div class="school"><div class="top"><div><h4>iDive · SSI freediving</h4><span class="loc">Candolim and Grande Island, Goa</span></div><span class="badge">SSI</span></div>
+          <p>Lists SSI Try Freediving, Basic Freediver, Freediver and Advanced Freediver; classroom and pool in Candolim, sea sessions at Grande Island.</p>
+          <a class="url" href="https://idive.in/destinations/goa/" target="_blank" rel="noopener">idive.in</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge">PADI</span></div>
+          <p>A Pondicherry dive centre whose PADI listing includes PADI Freediving and freediving gear rental, alongside an onsite training pool. Its own website showed a blank placeholder when we checked on 5 Oct 2026, so we link the PADI listing.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">padi.com</a></div>
+        <div class="school"><div class="top"><div><h4>Epic Freediving</h4><span class="loc">Near Pondicherry</span></div><span class="badge">PADI</span></div>
+          <p>Independent PADI freediving instructors teaching Basic Freediver to Master Freediver in a deep, disused granite quarry.</p>
+          <a class="url" href="https://epicfreediving.com/" target="_blank" rel="noopener">epicfreediving.com</a></div>
+        <div class="school"><div class="top"><div><h4>Bond Safari Kovalam</h4><span class="loc">Kovalam, Kerala (also Lakshadweep)</span></div><span class="badge">PADI</span></div>
+          <p>A PADI 5 Star IDC dive resort whose academy lists the PADI freediving ladder from Basic Freediver and Freediver to Advanced and Master Freediver, plus freediving instructor courses.</p>
+          <a class="url" href="https://bondadventureacademy.com/course-overview/" target="_blank" rel="noopener">bondadventureacademy.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-adv" role="tabpanel" aria-labelledby="tab-adv">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're certified and want to go deeper with Frenzel and freefall (Step 3). Read <a href="#ch-equalise">Ch 5</a> and <a href="#ch-buoyancy">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What depth does the course train to? How do you teach Frenzel? Is there a buoy, a line and a lanyard on every depth session?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>DIVEIndia · SSI Advanced Freediver</h4><span class="loc">Havelock &amp; Neil, Andaman Islands</span></div><span class="badge">SSI · 4 days</span></div>
+          <p>4 days; minimum age 15; Freediver first; Frenzel, freefall and buddy safety; 4 students per instructor; open-water dives to 20 m and beyond.</p>
+          <a class="url" href="https://diveindia.com/course/advanced-freediver/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Epic Freediving · PADI Advanced Freediver</h4><span class="loc">Near Pondicherry</span></div><span class="badge">PADI</span></div>
+          <p>Advanced and Master Freediver courses, plus line-training sessions for certified freedivers.</p>
+          <a class="url" href="https://epicfreediving.com/" target="_blank" rel="noopener">epicfreediving.com</a></div>
+        <div class="school"><div class="top"><div><h4>ORO Freediving Phuket</h4><span class="loc">Phuket, Thailand</span></div><span class="badge">Molchanovs</span></div>
+          <p>An official Molchanovs partner running Wave courses, starting with Wave 1 Beginner.</p>
+          <a class="url" href="https://freedivingphuket.com/courses/wave1" target="_blank" rel="noopener">freedivingphuket.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-deep" role="tabpanel" aria-labelledby="tab-deep">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're aiming for AIDA3–4 or Wave 3 depths (Steps 3–4). Read <a href="#ch-boyle">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the maximum depth at the site? Is there a safety diver for every athlete and a counterweight system? How close is medical help?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Vertical Blue</h4><span class="loc">Dean's Blue Hole, Long Island, Bahamas</span></div><span class="badge">AIDA courses</span></div>
+          <p>A school at a 203 m-deep blue hole running AIDA 2 Star and 3 Star courses, no-fins courses, training camps and an AIDA Instructor course (2027 season listed).</p>
+          <a class="url" href="https://www.verticalblue.net/" target="_blank" rel="noopener">verticalblue.net</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Limassol, Cyprus</b><span class="meta">World championship venue</span><p>Host of the AIDA depth world championship in 2021, 2023, 2025 and 2026; Molchanovs reports 30–40 m visibility and a dive site 1.6 km from the beach.</p><a class="url" href="https://www.molchanovs.com/blogs/latest/world-apnea-2026-depth-world-championships" target="_blank" rel="noopener">molchanovs.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-comp" role="tabpanel" aria-labelledby="tab-comp">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to watch, judge or compete (Step 5).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which rules apply, AIDA or CMAS? How do I enter as an Indian athlete? What safety diving is provided?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Freediving Association of India (AIDA India)</h4><span class="loc">India</span></div><span class="badge gov">National body</span></div>
+          <p>India's AIDA observer member, set up to organise national competitions and support Indian athletes at international events.</p>
+          <a class="url" href="https://freedivingindia.org/" target="_blank" rel="noopener">freedivingindia.org</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>World Apnea 2026 Depth World Championships</b><span class="meta">Limassol, Cyprus · 27 Sep–10 Oct 2026</span><p>The 37th AIDA Depth World Championship, rebranded World Apnea, with more than 180 athletes in CNF, CWTB, FIM and CWT.</p><a class="url" href="https://www.visitcyprus.com/event/world-apnea-championships-2026-27-9-10-10-2026/" target="_blank" rel="noopener">visitcyprus.com</a></div>
+        <div class="site"><b>2026 CMAS World Cup · Vertical Blue</b><span class="meta">Dean's Blue Hole, Bahamas · 20–30 Jun 2026</span><p>Vertical Blue ran as a CMAS depth World Cup event in 2026.</p><a class="url" href="https://www.cmas.org/freediving-events/2026-cmas-world-cup-freediving-depth,-vertical-blue.html" target="_blank" rel="noopener">cmas.org</a></div>
+        <div class="site"><b>CMAS freediving calendar</b><span class="meta">CMAS</span><p>Upcoming CMAS events, including the 2026 Red Sea Open Cup in Dahab, Egypt (26–30 Oct 2026).</p><a class="url" href="https://www.cmas.org/freediving" target="_blank" rel="noopener">cmas.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

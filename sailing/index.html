@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sailing · Physics of Lift, Apparent Wind & Heeling · Kinetic by Curiosta</title>
+<meta name="description" content="Test your sailing physics in 15 questions, learn how sails make lift, apparent wind, points of sail, tacking and gybing, centreboards and leeway, heeling and hiking, and hull speed and planing, then follow the YAI and RYA dinghy ladders to clubs in India and abroad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Sailing</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Course ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to sail</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Sailing</span>
+      <h1>Harness the wind. <em>A sail is a wing standing on its end.</em></h1>
+      <p class="lede">Sailing is physics you can steer: a sail that works like a wing, a wind that changes as you speed up, a fin underwater that stops you sliding sideways, and your own weight holding the boat upright. Take the challenge, learn the science with a Wind &amp; Sail Lab, then find courses and clubs in India and abroad.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First sail</span><span class="bar"></span><span>Racing Skills · Nationals</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">4×</span><span class="l">the sail force when the wind speed doubles</span></div>
+      <div class="hero-stat"><span class="n">1.41×</span><span class="l">the distance you sail beating to a mark at 45°</span></div>
+      <div class="hero-stat"><span class="n">≈ 840×</span><span class="l">how much denser water is than air</span></div>
+      <div class="hero-stat"><span class="n">4.9 kn</span><span class="l">hull speed of a 4 m waterline</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of sailing?</h2>
+      <p>15 questions on how sails make lift, apparent wind, points of sail, tacking and gybing, centreboards and leeway, heeling and hiking, and hull speed and planing. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Sailing physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace a sailing course with a qualified instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Wind &amp; Sail Lab to see how wind, course, speed and sail area change the forces on the boat.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-lift"><span class="n">CHAPTER 1</span><span class="t">How a sail makes lift</span><span class="d">A wing on its end</span></a>
+      <a href="#ch-apparent"><span class="n">CHAPTER 2</span><span class="t">Apparent wind</span><span class="d">The wind you feel</span></a>
+      <a href="#ch-points"><span class="n">CHAPTER 3</span><span class="t">Points of sail, tacking &amp; gybing</span><span class="d">Why you zigzag upwind</span></a>
+      <a href="#ch-board"><span class="n">CHAPTER 4</span><span class="t">Centreboard, keel &amp; sideways slip</span><span class="d">The wing underwater</span></a>
+      <a href="#ch-heel"><span class="n">CHAPTER 5</span><span class="t">Heeling, hiking &amp; capsize</span><span class="d">Moments and balance</span></a>
+      <a href="#ch-planing"><span class="n">CHAPTER 6</span><span class="t">Hull speed, planing &amp; the boats</span><span class="d">Climbing the bow wave</span></a>
+    </nav>
+
+    <!-- WIND & SAIL LAB -->
+    <div class="lab" id="sl-lab">
+      <span class="eyebrow">Interactive · Wind &amp; Sail Lab</span>
+      <h3>Set the true wind, your course, your boat speed and your sail area, then see the wind you actually feel, how hard the sail pulls, how much of that pull drives you forward and how much tips you over</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: apparent wind is the true wind plus the headwind from your own speed; the sail works like a wing with a lift coefficient of 1.0 and no drag, pulling at right angles to the apparent wind; the heeling force acts 2.5 m above the centreboard, and the crew sits 1 m out from the centreline. Learning values only (illustrative): real sails, boats and crews vary. Courses from close-hauled (40°) to a beam reach (90°).</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="sl-tws">True wind speed</label><input type="range" id="sl-tws" min="4" max="20" step="1" value="12"><output id="sl-tws-o">12 kn</output></div>
+        <div class="ctl"><label for="sl-twa">Course to the true wind</label><input type="range" id="sl-twa" min="40" max="90" step="5" value="90"><output id="sl-twa-o">90°</output></div>
+        <div class="ctl"><label for="sl-bs">Boat speed</label><input type="range" id="sl-bs" min="0" max="8" step="0.5" value="5"><output id="sl-bs-o">5.0 kn</output></div>
+        <div class="ctl"><label for="sl-area">Sail area</label><input type="range" id="sl-area" min="4" max="12" step="0.5" value="7"><output id="sl-area-o">7.0 m²</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Apparent wind speed</span><span class="v" id="sl-aws">13.0 kn</span><span class="s">Ch 2 · the wind you feel on board</span></div>
+        <div class="lab-card"><span class="k">Apparent wind angle</span><span class="v" id="sl-awa">67°</span><span class="s">Ch 2 · always further forward than the true wind</span></div>
+        <div class="lab-card"><span class="k">Total sail force</span><span class="v" id="sl-f">192 N</span><span class="s">Ch 1 · ½ρV² × area × C<sub>L</sub></span></div>
+        <div class="lab-card"><span class="k">Driving force (forward)</span><span class="v" id="sl-drive">177 N</span><span class="s">Ch 3 · F × sin(apparent angle)</span></div>
+        <div class="lab-card"><span class="k">Heeling force (sideways)</span><span class="v" id="sl-heel">74 N</span><span class="s">Ch 4 · what the centreboard must resist</span></div>
+        <div class="lab-card"><span class="k">Crew weight to balance it</span><span class="v" id="sl-hike">19 kg</span><span class="s">Ch 5 · sitting 1 m out</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sl-bar"></span></div>
+      <p class="fine">Bar = share of the sail force that drives you forward. Try 45°, then drop the boat speed to 0, then raise the wind to 18 kn. Real limits come from learning with an instructor and reading the conditions, never from a calculator (Ch 5).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-lift">
+      <header><span class="chno">CH 1</span><h3>How a sail makes lift</h3></header>
+      <p class="hook">Upwind, a sail isn't pushed. It's a wing standing on its end.</p>
+      <div class="body">
+        <p>A curved sail set at a small angle to the wind <strong>turns the airflow</strong>. To bend the air around it, the sail needs lower pressure on its curved, downwind (leeward) side and higher pressure on its windward side; that pressure difference is the sail's force, called <strong>lift</strong> even though it acts sideways and forward. The air on the two sides doesn't have to "meet up" at the back: the sail simply turns the flow, like a wing. The force grows with the air's density ρ, the sail area A, the square of the wind speed V and a lift coefficient C<sub>L</sub> that depends on the sail's shape and angle: <span class="eq">F = ½ ρ V² A C<sub>L</sub></span>. India's Yachting Association teaches "how sails work" in its Racing Skills course.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 7 m² sail, C<sub>L</sub> = 1.0, air at 1.225 kg/m³ (from our Wind &amp; Sail Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wind</th><th>In m/s</th><th>½ρV² (pressure)</th><th>Force on 7 m²</th></tr></thead>
+            <tbody>
+              <tr><td class="num">6 kn</td><td class="num">3.09</td><td class="num">5.8 Pa</td><td class="num">41 N</td></tr>
+              <tr><td class="num">12 kn</td><td class="num">6.17</td><td class="num">23.3 Pa</td><td class="num">163 N</td></tr>
+              <tr><td class="num">18 kn</td><td class="num">9.26</td><td class="num">52.5 Pa</td><td class="num">368 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1 knot = 0.514 m/s. At 12 kn: ½ × 1.225 × 6.17² ≈ 23.3 Pa; × 7 m² ≈ 163 N. Double the wind and the force goes up four times; triple it and the force is nine times bigger.</p>
+        </div>
+        <div class="feel"><span class="ico">⛵</span><div><span class="lbl">Feel the number</span>163 N is roughly the weight of a 17 kg bag. In a gust from 12 to 18 kn, it becomes the weight of a 37 kg bag, which is why sailors ease the sheet when a gust hits.</div></div>
+        <details class="check"><summary>Same 7 m² sail: what's the force at 12 kn on a 10 m² sail instead?</summary>
+        <p>23.3 Pa × 10 m² ≈ <strong>233 N</strong>. Force grows in step with area.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-apparent">
+      <header><span class="chno">CH 2</span><h3>Apparent wind</h3></header>
+      <p class="hook">The wind you feel on a moving boat isn't the wind on the shore.</p>
+      <div class="body">
+        <p>When you move, you feel a headwind from your own speed. On board, it adds to the <strong>true wind</strong> (the wind a moored boat feels) to make the <strong>apparent wind</strong>, and that's the wind your sails actually use. It's a vector sum: <span class="eq">AWS = √(TWS² + BS² + 2·TWS·BS·cos TWA)</span>, where TWS is the true wind speed, BS the boat speed and TWA the angle between your course and the true wind. Speeding up always swings the apparent wind <strong>forward</strong>, so you trim your sails in as you accelerate. Sailing upwind, the apparent wind is stronger than the true wind; sailing downwind, it's weaker.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 12 kn of true wind from the side (a beam reach, 90°), from our Wind &amp; Sail Lab</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Boat speed</th><th>Apparent wind speed</th><th>Apparent wind angle</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 kn</td><td class="num">12.0 kn</td><td class="num">90°</td></tr>
+              <tr><td class="num">3 kn</td><td class="num">12.4 kn</td><td class="num">76°</td></tr>
+              <tr><td class="num">5 kn</td><td class="num">13.0 kn</td><td class="num">67°</td></tr>
+              <tr><td class="num">8 kn</td><td class="num">14.4 kn</td><td class="num">56°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 90°, cos TWA = 0, so AWS = √(12² + 5²) = 13.0 kn, and the angle is cos⁻¹(5 ÷ 13) ≈ 67°. The faster the boat, the further forward the wind.</p>
+        </div>
+        <details class="check"><summary>True wind 8 kn at 90°, boat speed 6 kn: apparent wind speed?</summary>
+        <p>√(8² + 6²) = √100 = <strong>10 kn</strong>, at cos⁻¹(6 ÷ 10) ≈ 53°.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-points">
+      <header><span class="chno">CH 3</span><h3>Points of sail, tacking &amp; gybing</h3></header>
+      <p class="hook">You can't sail straight into the wind, so you zigzag.</p>
+      <div class="body">
+        <p>The sail force acts at right angles to the apparent wind, so only part of it drives you forward: <span class="eq">drive = F × sin(apparent angle)</span>. Point too close to the wind and the drive vanishes; the sails flap and the boat stops in the <strong>no-go zone</strong> (stuck there, you're "in irons"). Our examples use 45° either side of the wind, a typical figure for a dinghy. Bearing away, you pass through <strong>close-hauled</strong>, <strong>close reach</strong>, <strong>beam reach</strong> (wind at 90°), <strong>broad reach</strong> and the <strong>run</strong> (wind from behind). To get upwind you <strong>beat</strong>, zigzagging and turning the bow through the wind (a <strong>tack</strong>). Downwind, turning the stern through the wind is a <strong>gybe</strong>: the boom swings across fast, so the crew must duck and the helm must control it. YAI's Basic Skills 2 course covers tacking and gybing on a triangle course.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · reaching a mark 1 km straight upwind (illustrative boat speeds)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Angle to the true wind</th><th>Distance sailed</th><th>Boat speed</th><th>Speed made good upwind</th></tr></thead>
+            <tbody>
+              <tr><td class="num">40°</td><td class="num">1.31 km</td><td class="num">3.6 kn</td><td class="num">2.76 kn</td></tr>
+              <tr><td class="num">45°</td><td class="num">1.41 km</td><td class="num">4.0 kn</td><td class="num">2.83 kn</td></tr>
+              <tr><td class="num">50°</td><td class="num">1.56 km</td><td class="num">4.3 kn</td><td class="num">2.76 kn</td></tr>
+              <tr><td class="num">60°</td><td class="num">2.00 km</td><td class="num">4.8 kn</td><td class="num">2.40 kn</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Distance = 1 km ÷ cos(angle); speed made good (VMG) = boat speed × cos(angle). Pointing higher shortens the path but slows the boat; sailing lower is faster but longer. Here, 45° wins.</p>
+        </div>
+        <p>When two boats meet on opposite tacks while racing, the Racing Rules of Sailing (Rule 10) say the boat on port tack (wind over its left side) keeps clear of the boat on starboard tack. YAI teaches Rule 10 and its neighbours in its Racing Skills course.</p>
+        <details class="check"><summary>How far do you sail to reach a mark 2 km upwind, tacking at 45°?</summary>
+        <p>2 ÷ cos 45° = 2 × 1.41 ≈ <strong>2.83 km</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-board">
+      <header><span class="chno">CH 4</span><h3>Centreboard, keel &amp; sideways slip</h3></header>
+      <p class="hook">The sail pulls sideways. A fin underwater says no.</p>
+      <div class="body">
+        <p>Close-hauled, more of the sail's force pushes sideways than forward. Without something to resist it, the boat would just slide downwind. A dinghy's <strong>centreboard</strong> (or daggerboard) and a yacht's <strong>keel</strong> are underwater wings: the boat slips sideways a little (<strong>leeway</strong>), so water meets the board at a small angle, and the board makes lift that opposes the sail's sideways pull. Water is about 840 times denser than air (1025 vs 1.225 kg/m³), so a board much smaller than the sail can balance it, but only once the boat is moving: like the sail's, the board's force grows with the square of the speed. Downwind there's little sideways force, so dinghy sailors raise the board part of the way to cut drag.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 0.25 m² board with a lift coefficient of 0.3 (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Boat speed</th><th>In m/s</th><th>½ρV² in sea water</th><th>Sideways force the board can make</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1 kn</td><td class="num">0.51</td><td class="num">136 Pa</td><td class="num">10 N</td></tr>
+              <tr><td class="num">3 kn</td><td class="num">1.54</td><td class="num">1,220 Pa</td><td class="num">92 N</td></tr>
+              <tr><td class="num">5 kn</td><td class="num">2.57</td><td class="num">3,391 Pa</td><td class="num">254 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Force = ½ × 1025 × V² × 0.25 m² × 0.3. Compare the air: 13 kn of apparent wind gives only 27 Pa, about 124 times less than water at 5 kn. At 1 kn the board can't hold the sail's pull (74 N on our beam reach, more close-hauled), so a boat that has stalled slides sideways until it builds speed again.</p>
+        </div>
+        <details class="check"><summary>What sideways force can the same board make at 2 kn (1.03 m/s)?</summary>
+        <p>½ × 1025 × 1.03² ≈ 543 Pa; × 0.25 × 0.3 ≈ <strong>41 N</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-heel">
+      <header><span class="chno">CH 5</span><h3>Heeling, hiking &amp; capsize</h3></header>
+      <p class="hook">The sail pushes high up, the board pushes low down: the boat wants to tip.</p>
+      <div class="body">
+        <p>The sail's sideways force acts high on the mast, and the board's opposing force acts low in the water. Together they make a <strong>heeling moment</strong>: force × the height between them. In a dinghy, the crew's weight is the main thing that pushes back (the <strong>righting moment</strong>), so you sit on the windward side and lean out (<strong>hike</strong>), or stand out on a wire (<strong>trapeze</strong>), which YAI teaches in Basic Skills 3. When a gust hits, you can also <strong>ease the sheet</strong> to spill wind. If the heeling moment wins, you capsize.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 7 m² sail, heeling force 2.5 m above the board, crew 1 m out (from our Wind &amp; Sail Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Situation</th><th>Heeling force</th><th>Heeling moment</th><th>Crew weight to balance</th></tr></thead>
+            <tbody>
+              <tr><td>12 kn wind, beam reach, 5 kn</td><td class="num">74 N</td><td class="num">185 N·m</td><td class="num">19 kg</td></tr>
+              <tr><td>12 kn wind, close-hauled (45°), 5 kn</td><td class="num">244 N</td><td class="num">610 N·m</td><td class="num">62 kg</td></tr>
+              <tr><td>18 kn wind, close-hauled (45°), 5 kn</td><td class="num">439 N</td><td class="num">1,098 N·m</td><td class="num">112 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Weight = moment ÷ (9.81 × lever). 244 N × 2.5 m = 610 N·m; ÷ (9.81 × 1 m) ≈ 62 kg. In 18 kn, one sailor sitting 1 m out isn't enough: hike further out, trapeze, ease the sheet, or stay ashore.</p>
+        </div>
+        <h4>Why a dinghy rights (or doesn't) without a keel</h4>
+        <p>A yacht's lead keel puts the centre of mass deep under the water, so heel lifts that weight and creates a strong righting moment even with nobody on board. A dinghy is different: almost all the righting comes from <strong>crew weight</strong> on the windward side (and a little from the hull's form as it heels and immerses more beam). That is why hiking and trapezing matter so much on a Laser, 420 or Optimist, and why an empty dinghy blown over stays over until someone climbs on the centreboard.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · same heeling moment, keel vs dinghy (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Boat</th><th>How it rights</th><th>Rough righting available at 20° heel</th></tr></thead>
+            <tbody>
+              <tr><td>Keelboat, 1,000 kg bulb 1.5 m below waterline</td><td>Ballast pendulum</td><td class="num">≈ 1,000 × 9.81 × 1.5 × sin 20° ≈ 5.0 kN·m</td></tr>
+              <tr><td>Dinghy, 70 kg crew hiking 1.2 m out</td><td>Crew on the rail</td><td class="num">≈ 70 × 9.81 × 1.2 × cos 20° ≈ 0.77 kN·m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The keelboat's ballast alone dwarfs one hiker; a dinghy needs the crew outboard, or a trapeze, or an eased sheet. Numbers are teaching models, not a particular class.</p>
+        </div>
+        <div class="callout warn"><h4>Learn capsize recovery before you need it</h4><p style="margin:0">Capsizing is a normal part of dinghy sailing, and courses teach it early: RYA Level 2 includes capsize recovery, and YAI's syllabus moves from actions on capsize to man-overboard drills, a fully inverted ("turtle") boat and what to do if a crew member is trapped underneath. Under a turtled hull an air pocket can linger, but you cannot count on it — get out, stay with the boat, and follow the drill you practised. YAI's syllabus starts with clothing and safety equipment, including a buoyancy aid, and teaches you to find and read weather forecasts. Wear a buoyancy aid every time.</p></div>
+        <details class="check"><summary>With a heeling moment of 610 N·m, how much crew weight balances it sitting 1.5 m out?</summary>
+        <p>610 ÷ (9.81 × 1.5) ≈ <strong>41 kg</strong>. A longer lever needs less weight, which is why a trapeze works.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-planing">
+      <header><span class="chno">CH 6</span><h3>Hull speed, planing &amp; the boats</h3></header>
+      <p class="hook">A heavy hull gets trapped in its own wave. A light one climbs out.</p>
+      <div class="body">
+        <p>A boat pushing through the water makes a bow wave. Deep-water waves travel at <span class="eq">v = √(gλ ÷ 2π)</span>, so a wave as long as the boat's waterline moves at about <strong>1.25 × √L m/s</strong>, or <strong>2.43 × √L knots</strong> (the old rule: 1.34 × √(length in feet)). At this <strong>hull speed</strong> the boat sits in a trough between its own bow and stern waves, and going faster means climbing the bow wave. A heavy displacement hull rarely can. A light dinghy with enough power can lift onto the water's surface and skim on it: <strong>planing</strong>. Racing dinghies and skiffs are built light for exactly this.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · hull speed for different waterline lengths</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Waterline length</th><th>Wave speed (m/s)</th><th>Hull speed</th></tr></thead>
+            <tbody>
+              <tr><td class="num">3 m</td><td class="num">2.16</td><td class="num">4.2 kn</td></tr>
+              <tr><td class="num">4 m</td><td class="num">2.50</td><td class="num">4.9 kn</td></tr>
+              <tr><td class="num">5 m</td><td class="num">2.79</td><td class="num">5.4 kn</td></tr>
+              <tr><td class="num">6 m</td><td class="num">3.06</td><td class="num">6.0 kn</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(9.81 × 4 ÷ 6.283) ≈ 2.50 m/s ≈ 4.9 kn. Doubling the length raises hull speed by only √2 ≈ 1.41 times.</p>
+        </div>
+        <h4>Froude number: when a dinghy starts to climb its wave</h4>
+        <p>Naval architects track <span class="eq">Fr = v ÷ √(g L)</span>. Around Fr ≈ 0.4 the bow wave is about as long as the waterline — hull speed. A light dinghy that can reach Fr ≈ 0.5–0.7 begins to climb onto that wave and plane; a heavy keelboat usually cannot. (The same Fr idea shows up for swimmers on our <a href="../swimming/#ch-drag">swimming page</a>.)</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 4 m waterline dinghy (hull speed ≈ 4.9 kn from the table above)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Boat speed</th><th>Fr = v ÷ √(gL)</th><th>What it feels like</th></tr></thead>
+            <tbody>
+              <tr><td class="num">3.0 kn (1.54 m/s)</td><td class="num">≈ 0.25</td><td>Displacement: pushing a bow wave ahead</td></tr>
+              <tr><td class="num">4.9 kn (2.50 m/s)</td><td class="num">≈ 0.40</td><td>Hull speed: sitting between bow and stern wave</td></tr>
+              <tr><td class="num">7.0 kn (3.60 m/s)</td><td class="num">≈ 0.57</td><td>Climbing out: planing if the boat is light enough</td></tr>
+              <tr><td class="num">10 kn (5.14 m/s)</td><td class="num">≈ 0.82</td><td>Fully planing skiff / sportsboat territory</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(9.81 × 4) ≈ 6.26 m/s. Fr = 2.50 ÷ 6.26 ≈ 0.40 at hull speed; Fr = 3.60 ÷ 6.26 ≈ 0.57 at 7 kn. Flat sections, light weight and enough sail power (or a kite / foil) decide whether you get there.</p>
+        </div>
+        <h4>The Olympic boats</h4>
+        <p>At the LA28 Olympics, World Sailing's programme has ten sailing events. Six are boats at the Port of Los Angeles: the <strong>ILCA 7</strong> (men) and <strong>ILCA 6</strong> (women) one-person dinghies, the mixed <strong>470</strong> dinghy, the mixed <strong>Nacra 17</strong> catamaran, and the <strong>49er</strong> and <strong>49erFX</strong> skiffs. The other four are boards at Long Beach (iQFOiL windsurfing and Formula Kite); see our <a href="../windsurfing/">Windsurfing</a> and <a href="../kitesurfing/">Kitesurfing</a> pages.</p>
+        <details class="check"><summary>What's the hull speed of a 9 m waterline?</summary>
+        <p>2.43 × √9 = 2.43 × 3 ≈ <strong>7.3 kn</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The sailing ladder</span>
+      <h2>First sail → basic skills → better sailing → day sailing → racing &amp; instructor</h2>
+      <p>In India, the Yachting Association of India (YAI) runs a Small Boat Sailing Scheme of five modules, taught at YAI training centres and clubs. Many centres abroad teach the UK's RYA National Sailing Scheme. The two ladders line up roughly as below; the content is what each body publishes.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · First sail</span><b>Get afloat under supervision</b><span class="iso">YAI Basic Skills 1 · RYA Level 1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">YAI</span><span class="cn">Basic Skills 1</span><ul><li>An introduction for novices; no prerequisites</li><li>Parts of the boat, steering and crewing in light winds under supervision, a reaching course, basic rules and wind awareness</li></ul></div>
+          <div class="ag"><span class="an">RYA</span><span class="cn">Dinghy Level 1 · Start Sailing</span><ul><li>For complete beginners: about 2 days (16 h) or sessions</li><li>Sailing in all directions, with an awareness of launching and recovery</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Lift &amp; apparent wind</span><ul><li><a href="#ch-lift">Ch 1</a> and <a href="#ch-apparent">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Basic skills</span><b>Sail on your own in light winds and sheltered water</b><span class="iso">YAI Basic Skills 2 · RYA Level 2</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">YAI</span><span class="cn">Basic Skills 2</span><ul><li>Sail a small boat safely without guidance in light winds and enclosed waters</li><li>Tacking and gybing on a triangle course; right-of-way rules; spotting storm clouds</li></ul></div>
+          <div class="ag"><span class="an">RYA</span><span class="cn">Dinghy Level 2 · Basic Skills</span><ul><li>Needs Level 1 standard; about 2 days (16 h)</li><li>Rigging, launching, sailing in all directions, capsize recovery and essential safety knowledge</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Points of sail</span><ul><li><a href="#ch-points">Ch 3</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Better sailing</span><b>Light to moderate winds, all points of sail</b><span class="iso">YAI Basic Skills 3 · RYA Level 3</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">YAI</span><span class="cn">Basic Skills 3</span><ul><li>Needs Basic Skills 2 or equivalent experience</li><li>Roll tacks and gybes, spinnaker and trapeze in light to moderate winds; weather reports; sea and land breezes</li></ul></div>
+          <div class="ag"><span class="an">RYA</span><span class="cn">Dinghy Level 3 · Better Sailing</span><ul><li>Needs Level 2 standard; about 2 days (16 h)</li><li>Consolidates Levels 1–2, with tasters of advanced modules</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Board &amp; heeling</span><ul><li><a href="#ch-board">Ch 4</a> and <a href="#ch-heel">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Day sailing &amp; seamanship</span><b>Plan and sail a short trip</b><span class="iso">YAI Day Sailing · RYA advanced modules</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">YAI</span><span class="cn">Day Sailing</span><ul><li>Needs Basic Skills 3 or equivalent experience</li><li>Passage plans from charts, tides and forecasts; anchoring; rudderless sailing</li></ul></div>
+          <div class="ag"><span class="an">RYA</span><span class="cn">Seamanship Skills · Day Sailing</span><ul><li>Seamanship Skills needs Level 3: launching and recovering in different conditions, stopping, reducing sail</li><li>Other advanced modules include Day Sailing, Sailing with Spinnakers and Performance Sailing</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Racing &amp; instructor</span><b>Race, then teach</b><span class="iso">YAI Racing Skills · Instructor</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">YAI</span><span class="cn">Racing Skills</span><ul><li>Builds on Basic Skills 3: starts with flags and sound signals, mark roundings, speed in gusty conditions</li><li>How sails work, sail power control, racing rules 10, 11, 12, 18, 29 and 31, wind shifts</li></ul></div>
+          <div class="ag"><span class="an">YAI</span><span class="cn">Instructor courses</span><ul><li>Assistant Instructor, Instructor and Senior Instructor, run in Mumbai</li><li>40 h of mentored instructing before assessment</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Planing</span><ul><li><a href="#ch-planing">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">Real competition</span><span class="cn">YAI Senior Nationals 2026</span><ul><li>14–20 Nov 2026, Indian Naval Watermanship Training Centre, Mumbai; Olympic classes</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>World Sailing governs the sport worldwide and writes the racing rules; national bodies run training and championships. In India that's the Yachting Association of India, with state associations and academies below it. We checked each on an official source.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World body</span><h4>World Sailing</h4><p>The world governing body: it publishes the Racing Rules of Sailing every four years (the current edition is RRS 2025–2028) and runs Olympic sailing.</p><a class="url" href="https://www.sailing.org/racingrules/" target="_blank" rel="noopener">sailing.org</a></div>
+      <div class="card"><span class="tag">Training scheme</span><h4>RYA · Royal Yachting Association</h4><p>The UK's national body. Its National Sailing Scheme runs from Level 1 Start Sailing to advanced modules, taught at RYA training centres around the world.</p><a class="url" href="https://www.rya.org.uk/training/small-boat-sailing-dinghy" target="_blank" rel="noopener">rya.org.uk</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National body</span><h4>Yachting Association of India (YAI)</h4><p>India's national sailing body. National championships and ranking regattas run under its aegis, such as the 2026 Senior Nationals in Mumbai.</p><a class="url" href="https://www.yai.org.in/" target="_blank" rel="noopener">yai.org.in</a></div>
+      <div class="card"><span class="tag">Training scheme</span><h4>YAI Training · Small Boat Sailing Scheme</h4><p>Five modules, Basic Skills 1–3, Day Sailing and Racing Skills, taught at YAI Training Centres (YAITC) by YAI-assessed instructors, plus instructor courses.</p><a class="url" href="https://trg.yai.org.in/training/small-boat-schemes.html" target="_blank" rel="noopener">trg.yai.org.in</a></div>
+      <div class="card"><span class="tag">State association</span><h4>Tamil Nadu Sailing Association</h4><p>A not-for-profit formed in Chennai in 2002 to make sailing accessible to all and to run races and training.</p><a class="url" href="http://tnsa.in/" target="_blank" rel="noopener">tnsa.in</a></div>
+      <div class="card"><span class="tag">State academy</span><h4>MP State Water Sports Academy, Bhopal</h4><p>A Madhya Pradesh government academy, inaugurated in January 2007, with sailing on the Upper Lake, sailing coaches and talent selection for its sailing academy (2024–25 programme listed).</p><a class="url" href="https://dsywmp.gov.in/Academy/En_Water_Sports_Academy" target="_blank" rel="noopener">dsywmp.gov.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to sail</span>
+      <h2>Pick your level. We'll point you to the water.</h2>
+      <p>Real clubs, schools, events and official sources, each checked on its own website. Follow the link and confirm dates, eligibility, the scheme and safety rules directly. Wherever you sail: buoyancy aid on, forecast checked.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="sailing">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Lakes: Hussain Sagar (Hyderabad), Upper Lake (Bhopal)</span><span class="ss-cells" role="img" aria-label="Lakes: Hussain Sagar (Hyderabad), Upper Lake (Bhopal): possible all year"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Coast: Goa</span><span class="ss-cells" role="img" aria-label="Coast: Goa: possible October to May; off June to September"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in June, November"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="June: YAI Monsoon Regatta">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="November: YAI Senior Nationals">◆</span><span class="ss-c e0"></span></span></div>
+  <ul class="ss-events">
+    <li><b>YAI Senior Nationals</b> · <span class="ss-when">14-20 Nov 2026</span> · Mumbai · <a href="https://www.yai.org.in/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>YAI Monsoon Regatta</b> · <span class="ss-when ss-usual">Usually June</span> · Hussain Sagar, Hyderabad · <a href="https://www.yai.org.in/news/other-news/item/243-nor-for-the-monsoon-regatta-2025-scheduled-from-08-14-jun-2025-at-hyderabad.html" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-sailing">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Sea breeze</b>Dubai Offshore Sailing Club teaches beginners in the lighter morning winds and advanced groups in the afternoon sea breeze; YAI's Basic Skills 3 explains how sea and land breezes form.</div>
+      <div><b>Lake regattas</b>Hyderabad's Hussain Sagar hosted the YAI Monsoon Regatta on 1–7 Jun 2026 and a YAI national ranking youth regatta on 20–25 Jul 2026.</div>
+      <div><b>Racing season</b>The YAI Senior Nationals run 14–20 Nov 2026 in Mumbai.</div>
+      <div><b>Every sail</b>A buoyancy aid, a forecast check, and capsize drills learned with an instructor.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① First sail</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-adv" id="tab-adv">② Better sailing</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-race" id="tab-race">③ Racing</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-elite" id="tab-elite">④ Olympic pathway</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to try sailing or take your first course (Steps 1–2). Read <a href="#ch-apparent">Ch 2</a> and <a href="#ch-points">Ch 3</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which scheme and level is the course, YAI or RYA? How many sessions, and how long on the water? Is there a safety boat on the water during lessons? Are buoyancy aids provided?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Mumbai Sailing Club · Introduction &amp; Learn to Sail (Basic)</h4><span class="loc">Gateway of India, Mumbai</span></div><span class="badge">YAI — school’s claim</span></div>
+          <p>A 2-hour introductory sail in Mumbai harbour, or Learn to Sail (Basic) in 5 sessions of 2 hours on a club boat. The club’s own site says its coaches are certified by the YAI — we did not find this club named on the public YAITC centres page, so treat that as a <strong>school’s claim</strong>.</p>
+          <a class="url" href="https://www.mumbaisailingclub.com/courses/learn-to-sail/" target="_blank" rel="noopener">mumbaisailingclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>Aquasail Yachting Academy</h4><span class="loc">Mumbai</span></div><span class="badge">Accreditation: unverified</span></div>
+          <p><strong>Accreditation: unverified</strong> on a federation directory this pass. Courses for adults and children from basic to advanced, on dinghies, a 25-foot sports keelboat and, for kids, the Laser Pico.</p>
+          <a class="url" href="https://www.aquasailindia.com/learn-to-sail/" target="_blank" rel="noopener">aquasailindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Royal Madras Yacht Club · Basic Sailing Course</h4><span class="loc">Chennai</span></div><span class="badge">YAI — school’s claim</span></div>
+          <p>The club’s own site describes it as a YAI-accredited training centre — we did not find it named on the public YAITC centres page this pass, so that is a <strong>school’s claim</strong>. 5-day Basic Sailing Course and a 3-day programme for children aged 7–16 per the club.</p>
+          <a class="url" href="https://rmycindia.com/" target="_blank" rel="noopener">rmycindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>24Seven Sailing · Chennai</h4><span class="loc">Chennai</span></div><span class="badge">Accreditation: unverified</span></div>
+          <p><strong>Accreditation: unverified</strong> on a federation directory this pass. Structured programmes for children with no experience: a trial sail, a 5-session first solo and a 12-session Learn to Sail programme, in small groups with safety support.</p>
+          <a class="url" href="https://www.24sevensailing.com/chennai-sailing" target="_blank" rel="noopener">24sevensailing.com</a></div>
+        <div class="school"><div class="top"><div><h4>GETHNAA · Karwar Water Sports Centre</h4><span class="loc">Mouth of the Kali River, Karwar, Karnataka</span></div><span class="badge gov">State academy</span></div>
+          <p>The Government of Karnataka's adventure academy (est. 1989, Dept of Youth Empowerment &amp; Sports) lists sailing, windsurfing and kayaking at its Karwar centre on the Arabian Sea. Camps and aqua-sports batches change each season: check GETHNAA's own calendar. For the Karwar windsurfing / Basic Aqua Sports detail we verified, see our <a href="../windsurfing/#where">windsurfing page</a>; for GETHNAA's beginner kayak course, see <a href="../kayaking-rafting/#where">kayaking &amp; rafting</a>.</p>
+          <a class="url" href="https://gethnaa.org/" target="_blank" rel="noopener">gethnaa.org</a></div>
+        <div class="school"><div class="top"><div><h4>Dubai Offshore Sailing Club</h4><span class="loc">Dubai, UAE</span></div><span class="badge">RYA — school’s claim</span></div>
+          <p>The club’s own site describes it as an RYA recognised training centre teaching RYA Levels 1–3 for adults and Stages 1–4 for youth — we did not re-check the live RYA centre finder for this school this pass, so treat the recognition as a <strong>school’s claim</strong> until you confirm on RYA’s list. After Level 2 you can hire certain dinghies to sail on your own, per the club.</p>
+          <a class="url" href="https://dosc.ae/trainingcentre/dinghy/" target="_blank" rel="noopener">dosc.ae</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-adv" role="tabpanel" aria-labelledby="tab-adv">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can sail and want stronger winds, faster boats or longer trips (Steps 3–4). Read <a href="#ch-board">Ch 4</a> and <a href="#ch-heel">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What wind strength does the course sail in? Will I learn a trapeze and spinnaker? Does the certificate come from the club, the YAI or the RYA?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Mumbai Sailing Club · Learn to Sail (Advanced)</h4><span class="loc">Gateway of India, Mumbai</span></div><span class="badge">YAI cert — school’s claim</span></div>
+          <p>10 sessions of 2 hours with a club certificate; the club’s own site says a YAI certificate is also available, applied for separately through the YAI (<strong>school’s claim</strong> — confirm with YAI).</p>
+          <a class="url" href="https://www.mumbaisailingclub.com/courses/learn-to-sail/" target="_blank" rel="noopener">mumbaisailingclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>Aquasail · multihull &amp; cruising</h4><span class="loc">Mumbai</span></div><span class="badge">Accreditation: unverified</span></div>
+          <p><strong>Accreditation: unverified</strong> on a federation directory this pass. Multihull sailing on Hobie Cat and Laser Dart beach catamarans, and a Learn to Cruise course on a Beneteau First 34.7.</p>
+          <a class="url" href="https://www.aquasailindia.com/learn-to-sail/" target="_blank" rel="noopener">aquasailindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Royal Madras Yacht Club · Advanced Sailing Techniques</h4><span class="loc">Chennai</span></div><span class="badge">YAI — school’s claim</span></div>
+          <p>Advanced technique, weather reading and racing strategy, plus a 14-day instructor course, according to the club’s site (same <strong>YAI — school’s claim</strong> as the Basic course card — not found on the public YAITC centres page this pass).</p>
+          <a class="url" href="https://rmycindia.com/" target="_blank" rel="noopener">rmycindia.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>RYA: find a course venue</b><span class="meta">RYA · worldwide</span><p>The RYA's search for recognised training centres and clubs offering each course, including centres outside the UK.</p><a class="url" href="https://www.rya.org.uk/wheres-my-nearest/" target="_blank" rel="noopener">rya.org.uk</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-race" role="tabpanel" aria-labelledby="tab-race">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to race at club, ranking or national level (Step 5). Read <a href="#ch-points">Ch 3</a> for Rule 10.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which classes race at the club? Do I need YAI membership through an affiliated club? Can I charter a boat, or must I bring my own?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>The Yacht Club of Hyderabad</h4><span class="loc">Hussain Sagar, Hyderabad</span></div><span class="badge">Accreditation: unverified</span></div>
+          <p><strong>Accreditation: unverified</strong> on a federation directory this pass. A charitable club that trains children from government schools free of charge; it reports a fleet of 209 boats and hosts the Monsoon Regatta.</p>
+          <a class="url" href="https://ychyderabad.com/" target="_blank" rel="noopener">ychyderabad.com</a></div>
+        <div class="school"><div class="top"><div><h4>Tamil Nadu Sailing Association</h4><span class="loc">Chennai</span></div><span class="badge">State association</span></div>
+          <p>Runs boat races and annual sailing programmes and trains people of all ages, aiming to keep the sport accessible.</p>
+          <a class="url" href="http://tnsa.in/" target="_blank" rel="noopener">tnsa.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>YAI Senior Nationals 2026</b><span class="meta">INWTC, Mumbai · 14–20 Nov 2026</span><p>Run by the Indian Naval Watermanship Training Centre under the YAI and INSA, for the 49er, 49erFX, Nacra 17, iQFOiL, ILCA 7, ILCA 6, 470 and Formula Kite. Sailors must be YAI members through affiliated clubs and bring their own boats.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/272-notice-of-race-for-the-yai-senior-nationals-2026-scheduled-from-14-20-nov-at-inwtc-mbi.html" target="_blank" rel="noopener">yai.org.in</a></div>
+        <div class="site"><b>YAI Monsoon Regatta</b><span class="meta">Hussain Sagar, Hyderabad · 1–7 Jun 2026</span><p>The 2026 edition was held at Hussain Sagar under the YAI; watch the YAI site for the next notice of race.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/269-notice-of-race-for-the-monsoon-regatta-2026-scheduled-from-01-07-jun-2026-at-hussain-sagar-hyderabad.html" target="_blank" rel="noopener">yai.org.in</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-elite" role="tabpanel" aria-labelledby="tab-elite">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to know where top-level sailing leads (Step 5 and beyond). Read <a href="#ch-planing">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which classes does the academy train in? How are sailors selected? Which national ranking events count?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>MP State Water Sports Academy · Sailing</h4><span class="loc">Upper Lake, Bhopal</span></div><span class="badge gov">State academy</span></div>
+          <p>A Madhya Pradesh government academy with sailing coaches on the Upper Lake and talent selection for its sailing academy (the 2024–25 programme is listed).</p>
+          <a class="url" href="https://dsywmp.gov.in/Academy/En_Water_Sports_Academy" target="_blank" rel="noopener">dsywmp.gov.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>LA28 Olympic sailing</b><span class="meta">Los Angeles · 16–28 Jul 2028</span><p>World Sailing's schedule: boards first at Belmont Shore, Long Beach, then the six boat events (ILCA 7, ILCA 6, 470, Nacra 17, 49er, 49erFX) at the Port of Los Angeles.</p><a class="url" href="https://www.sailing.org/la28/la28-schedule/" target="_blank" rel="noopener">sailing.org</a></div>
+        <div class="site"><b>Racing Rules of Sailing 2025–2028</b><span class="meta">World Sailing</span><p>The rules that govern sailboat and sailboard racing worldwide, revised every four years.</p><a class="url" href="https://www.sailing.org/racingrules/" target="_blank" rel="noopener">sailing.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

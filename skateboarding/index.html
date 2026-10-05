@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skateboarding · Physics of Ollies, Ramps & Falls · Kinetic by Curiosta</title>
+<meta name="description" content="Test your skateboarding physics in 15 questions, learn rolling, balance, the ollie, ramps and pumping, and how to fall, then find skateparks, competitions and coaching pathways in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Skateboarding</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Skate ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to skate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Skateboarding</span>
+      <h1>Pop, roll, drop in. <em>Physics all the way down.</em></h1>
+      <p class="lede">An ollie is a projectile, a ramp is an energy swap, and a good fall is a long stop. Take the challenge, learn the science with a Ramp &amp; Ollie Lab, then find parks and the competition pathway in India.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First push</span><span class="bar"></span><span>Park final</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">2.4 m/s</span><span class="l">upward pop to ollie a 30 cm obstacle</span></div>
+      <div class="hero-stat"><span class="n">2.7 g</span><span class="l">at the bottom of a 1.5 m drop-in</span></div>
+      <div class="hero-stat"><span class="n">20 g → 2 g</span><span class="l">stiff-arm landing vs rolling out of a fall</span></div>
+      <div class="hero-stat"><span class="n">2</span><span class="l">Olympic disciplines: street and park</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of skateboarding?</h2>
+      <p>15 questions on pushing and rolling, balance and turning, the ollie, ramps and pumping, falling safely, and wheels and scoring. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Skateboarding physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace practice, a coach or a helmet.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Ramp &amp; Ollie Lab to see the speed, g-force and airtime behind your tricks.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-roll"><span class="n">CHAPTER 1</span><span class="t">Pushing, rolling &amp; coasting</span><span class="d">Push, coast and stop</span></a>
+      <a href="#ch-balance"><span class="n">CHAPTER 2</span><span class="t">Balance, stance &amp; turning</span><span class="d">Centre of mass and trucks</span></a>
+      <a href="#ch-ollie"><span class="n">CHAPTER 3</span><span class="t">The ollie</span><span class="d">Pop, airtime and height</span></a>
+      <a href="#ch-ramps"><span class="n">CHAPTER 4</span><span class="t">Ramps, bowls &amp; pumping</span><span class="d">Speed, g-force and energy</span></a>
+      <a href="#ch-falls"><span class="n">CHAPTER 5</span><span class="t">Falling safely</span><span class="d">Long stops and helmets</span></a>
+      <a href="#ch-wheels"><span class="n">CHAPTER 6</span><span class="t">Wheels, bearings &amp; contests</span><span class="d">Spin rates and scoring</span></a>
+    </nav>
+
+    <!-- RAMP & OLLIE LAB -->
+    <div class="lab" id="sb-lab">
+      <span class="eyebrow">Interactive · Ramp &amp; Ollie Lab</span>
+      <h3>Drop into a ramp and pop an ollie, and see the speed, the g-force and the airtime</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An idealised model: no friction or air drag, and you drop from rest. Speed at the bottom comes from energy (v = √(2gh)); the push from the ramp at the bottom of a curve of radius r is your weight × (1 + 2h ÷ r). The ollie section treats the jump as a simple projectile. For learning only; it is not a guide to what you're ready to ride.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="sb-h">Drop-in height</label><input type="range" id="sb-h" min="0.5" max="2.5" step="0.1" value="1.5"><output id="sb-h-o">1.5 m</output></div>
+        <div class="ctl"><label for="sb-r">Transition radius</label><input type="range" id="sb-r" min="1.5" max="4" step="0.1" value="1.8"><output id="sb-r-o">1.8 m</output></div>
+        <div class="ctl"><label for="sb-m">Skater mass</label><input type="range" id="sb-m" min="20" max="100" step="1" value="60"><output id="sb-m-o">60 kg</output></div>
+        <div class="ctl"><label for="sb-o">Ollie obstacle height</label><input type="range" id="sb-o" min="0.05" max="0.6" step="0.05" value="0.3"><output id="sb-o-o">30 cm</output></div>
+        <div class="ctl"><label for="sb-s">Rolling speed</label><input type="range" id="sb-s" min="1" max="6" step="0.5" value="4"><output id="sb-s-o">4.0 m/s</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Speed at the bottom</span><span class="v" id="sb-v">19.5 km/h</span><span class="s">Ch 4 · height becomes speed</span></div>
+        <div class="lab-card"><span class="k">G-force in the transition</span><span class="v" id="sb-g">2.67 g</span><span class="s">Ch 4 · 1 + 2h ÷ r</span></div>
+        <div class="lab-card"><span class="k">Push through your legs</span><span class="v" id="sb-f">1,570 N</span><span class="s">Ch 4 · bend your knees</span></div>
+        <div class="lab-card"><span class="k">Ollie take-off speed (up)</span><span class="v" id="sb-vz">2.43 m/s</span><span class="s">Ch 3 · √(2gH)</span></div>
+        <div class="lab-card"><span class="k">Airtime</span><span class="v" id="sb-air">0.49 s</span><span class="s">Ch 3 · 2v ÷ g</span></div>
+        <div class="lab-card"><span class="k">Distance travelled in the air</span><span class="v" id="sb-dist">1.98 m</span><span class="s">Ch 3 · speed × airtime</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sb-bar"></span></div>
+      <p class="fine">Bar = g-force in the transition on a 0–5 g scale. Real ramps lose some speed to friction, and real skaters add or lose energy by pumping (Ch 4). Start small, wear a helmet and learn to fall (Ch 5).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-roll">
+      <header><span class="chno">CH 1</span><h3>Pushing, rolling &amp; coasting</h3></header>
+      <p class="hook">Every push is a short burst of force. Then rolling resistance slowly takes it back.</p>
+      <div class="body">
+        <p>When you push, your foot shoves the ground backwards and the ground shoves you forwards. Once you're coasting, rolling resistance (<span class="eq">C<sub>rr</sub> × m g</span>) slows you at <span class="eq">a = C<sub>rr</sub> × g</span>, so you roll a distance <span class="eq">d = v² ÷ (2 C<sub>rr</sub> g)</span> before stopping (ignoring air drag).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · coasting distance after a push (illustrative C<sub>rr</sub>)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed after pushing</th><th>Surface</th><th>C<sub>rr</sub></th><th>Rolls about</th></tr></thead>
+            <tbody>
+              <tr><td class="num">4 m/s (14 km/h)</td><td>Smooth skatepark concrete</td><td class="num">0.01</td><td class="num">≈ 82 m</td></tr>
+              <tr><td class="num">4 m/s</td><td>Rougher concrete</td><td class="num">0.02</td><td class="num">≈ 41 m</td></tr>
+              <tr><td class="num">3 m/s (11 km/h)</td><td>Rougher concrete</td><td class="num">0.02</td><td class="num">≈ 23 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">4² ÷ (2 × 0.02 × 9.81) ≈ 41 m. Speed squared means a slightly harder push carries you much further. Air drag and small stones shorten real distances.</p>
+        </div>
+        <h4>Pushing well</h4>
+        <ul>
+          <li><strong>Weight on the front foot,</strong> over the front truck, so the board stays under you while the back foot pushes.</li>
+          <li><strong>Short, smooth pushes</strong> beat big lunges: you stay balanced and can stop.</li>
+          <li><strong>Learn to stop first:</strong> foot-brake (drag the back foot), or step off safely at low speed.</li>
+        </ul>
+        <details class="check"><summary>To coast twice as far, how much faster do you need to be going?</summary>
+        <p>d ∝ v², so <strong>√2 ≈ 1.4 times</strong> faster.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-balance">
+      <header><span class="chno">CH 2</span><h3>Balance, stance &amp; turning</h3></header>
+      <p class="hook">Keep your centre of mass over the board, and the board does what you ask.</p>
+      <div class="body">
+        <p>You stay up as long as your centre of mass is above the area between the wheels. Drift outside it and gravity creates a turning moment that tips you off. Bent knees lower your centre of mass and give you room to correct. Whether you ride left foot forward (regular) or right foot forward (goofy) is simply what feels natural.</p>
+        <h4>How trucks steer</h4>
+        <p>Skateboard trucks are built so that tilting the deck swings the axles: lean toe-side or heel-side and the board carves that way. To hold a curve of radius r at speed v you must lean into it at <span class="eq">tan φ = v² ÷ (g r)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · lean angle for a carve</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Carve radius</th><th>Lean angle</th></tr></thead>
+            <tbody>
+              <tr><td class="num">4 m/s (14 km/h)</td><td class="num">3 m</td><td class="num">≈ 29°</td></tr>
+              <tr><td class="num">5 m/s (18 km/h)</td><td class="num">4 m</td><td class="num">≈ 33°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">tan φ = 4² ÷ (9.81 × 3) ≈ 0.54 → φ ≈ 29°. Looser trucks turn more for the same lean, but wobble more at speed.</p>
+        </div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Speed wobbles happen when small side-to-side oscillations grow faster than you correct them. Weight forward, knees bent and a lower speed calm them down.</div></div>
+        <details class="check"><summary>At 3 m/s, what lean angle holds a 2 m carve?</summary>
+        <p>tan φ = 9 ÷ (9.81 × 2) ≈ 0.46 → φ ≈ <strong>25°</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-ollie">
+      <header><span class="chno">CH 3</span><h3>The ollie</h3></header>
+      <p class="hook">Snap, jump, slide, level. Physics does the rest.</p>
+      <div class="body">
+        <p>Snapping the tail down pivots the board over the back wheels; the ground pushes back on the tail and the board pops up. You jump at the same moment and slide your front foot forward, which drags the nose up and levels the board under you. Once you're in the air you're a projectile: to clear a height H you need an upward speed of <span class="eq">v = √(2 g H)</span>, and you'll be airborne for about <span class="eq">t = 2v ÷ g</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · what an ollie needs (rolling at 4 m/s)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Obstacle height</th><th>Take-off speed (up)</th><th>Airtime</th><th>Forward distance in the air</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 cm</td><td class="num">≈ 1.40 m/s</td><td class="num">≈ 0.29 s</td><td class="num">≈ 1.1 m</td></tr>
+              <tr><td class="num">20 cm</td><td class="num">≈ 1.98 m/s</td><td class="num">≈ 0.40 s</td><td class="num">≈ 1.6 m</td></tr>
+              <tr><td class="num">30 cm</td><td class="num">≈ 2.43 m/s</td><td class="num">≈ 0.49 s</td><td class="num">≈ 2.0 m</td></tr>
+              <tr><td class="num">50 cm</td><td class="num">≈ 3.13 m/s</td><td class="num">≈ 0.64 s</td><td class="num">≈ 2.6 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">30 cm: √(2 × 9.81 × 0.3) ≈ 2.43 m/s; airtime 2 × 2.43 ÷ 9.81 ≈ 0.49 s; 4 × 0.49 ≈ 1.98 m. Idealised: it assumes you land at take-off height and the board rises with you.</p>
+        </div>
+        <h4>Why practice matters more than strength</h4>
+        <p>Height needs √h more speed, so twice the height needs only about 1.4 times the pop. Timing (snapping the tail exactly as you jump) matters more than force. Practise standing still on grass or carpet first, then rolling slowly.</p>
+        <details class="check"><summary>You pop with 2 m/s upward speed. How high can you clear?</summary>
+        <p>H = v² ÷ (2g) = 4 ÷ 19.62 ≈ <strong>0.20 m</strong> (20 cm).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-ramps">
+      <header><span class="chno">CH 4</span><h3>Ramps, bowls &amp; pumping</h3></header>
+      <p class="hook">A ramp swaps height for speed and back again. The curve pushes back hard.</p>
+      <div class="body">
+        <p>Dropping in from height h, you reach the bottom at <span class="eq">v = √(2 g h)</span> (ignoring friction). Following a curve of radius r needs a centripetal force <span class="eq">m v² ÷ r</span>, so at the bottom of the transition the ramp pushes on you with <span class="eq">m g (1 + 2h ÷ r)</span>: more than your weight.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · dropping into a 1.8 m-radius transition, 60 kg skater</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Drop height</th><th>Speed at the bottom</th><th>G-force at the bottom</th><th>Push through your legs</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">≈ 11.3 km/h</td><td class="num">≈ 1.56 g</td><td class="num">≈ 916 N</td></tr>
+              <tr><td class="num">1.0 m</td><td class="num">≈ 15.9 km/h</td><td class="num">≈ 2.11 g</td><td class="num">≈ 1,243 N</td></tr>
+              <tr><td class="num">1.5 m</td><td class="num">≈ 19.5 km/h</td><td class="num">≈ 2.67 g</td><td class="num">≈ 1,570 N</td></tr>
+              <tr><td class="num">2.0 m</td><td class="num">≈ 22.6 km/h</td><td class="num">≈ 3.22 g</td><td class="num">≈ 1,897 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1.5 m: v = √(2 × 9.81 × 1.5) ≈ 5.42 m/s; g-load = 1 + 2 × 1.5 ÷ 1.8 ≈ 2.67; push = 60 × 9.81 × 2.67 ≈ 1,570 N. Friction makes real speeds a little lower.</p>
+        </div>
+        <h4>Pumping</h4>
+        <p>Crouch as you go into the curve, then stand up through it while the ramp is pushing hardest. You do work against that extra force and gain energy, like pumping a swing. That's how bowl skaters keep going without pushing.</p>
+        <div class="callout warn"><h4>Drop in small first</h4><p style="margin:0">Commit with your weight over the front truck; leaning back is the classic fall. Start on low ramps with a helmet and pads, and give other skaters their turn.</p></div>
+        <details class="check"><summary>A bigger transition radius (say 3 m) for the same 1.5 m drop: what g-force?</summary>
+        <p>1 + 2 × 1.5 ÷ 3 = <strong>2.0 g</strong>: bigger curves are gentler.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-falls">
+      <header><span class="chno">CH 5</span><h3>Falling safely</h3></header>
+      <p class="hook">Everyone falls. The trick is to stop slowly.</p>
+      <div class="body">
+        <p>Average force during a stop depends on how far you take to stop: <span class="eq">average deceleration = v² ÷ (2 × stopping distance)</span>. Falling from standing, your body (centre of mass about 1 m up) reaches the ground at about <span class="eq">√(2 × 9.81 × 1) ≈ 4.4 m/s</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · stopping from 4.4 m/s</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>How you land</th><th>Stopping distance</th><th>Average deceleration</th></tr></thead>
+            <tbody>
+              <tr><td>Stiff arm on concrete</td><td class="num">≈ 5 cm</td><td class="num">≈ 20 g</td></tr>
+              <tr><td>Knee pads, slide</td><td class="num">≈ 20 cm</td><td class="num">≈ 5 g</td></tr>
+              <tr><td>Roll out of it</td><td class="num">≈ 50 cm</td><td class="num">≈ 2 g</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">For a fall from 1 m, deceleration in g = 1 m ÷ stopping distance: 1 ÷ 0.05 = 20 g. Illustrative distances.</p>
+        </div>
+        <h4>How to fall</h4>
+        <ul>
+          <li><strong>Get low</strong> when you feel it going: less height, less speed.</li>
+          <li><strong>Roll</strong> onto your shoulder or side instead of reaching out with a straight arm.</li>
+          <li><strong>On a ramp,</strong> slide down on your knee pads.</li>
+          <li><strong>Helmet always.</strong> World Skate's competition rules (used in the RSFI rulebook) require all park skaters, and street skaters under 18, to wear a helmet in practice and competition.</li>
+        </ul>
+        <details class="check"><summary>Halving your stopping distance does what to the average force?</summary>
+        <p>It <strong>doubles</strong> it.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-wheels">
+      <header><span class="chno">CH 6</span><h3>Wheels, bearings &amp; contests</h3></header>
+      <p class="hook">Small wheels spin fast. And in contests, five judges decide.</p>
+      <div class="body">
+        <p>A wheel turns once per circumference: <span class="eq">revs per second = v ÷ (π d)</span>. Smaller wheels spin faster for the same speed, and the bearings take it.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · wheel spin at 15 km/h (4.17 m/s)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wheel diameter</th><th>Turns per km</th><th>Spin at 15 km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">52 mm</td><td class="num">≈ 6,121</td><td class="num">≈ 1,530 rpm</td></tr>
+              <tr><td class="num">54 mm</td><td class="num">≈ 5,895</td><td class="num">≈ 1,474 rpm</td></tr>
+              <tr><td class="num">60 mm</td><td class="num">≈ 5,305</td><td class="num">≈ 1,326 rpm</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">54 mm: circumference π × 0.054 ≈ 0.170 m; 4.17 ÷ 0.170 ≈ 24.6 turns per second ≈ 1,474 rpm.</p>
+        </div>
+        <h4>Hard or soft wheels?</h4>
+        <p>Bigger, softer wheels deform over stones and cracks and meet them at a gentler angle, so they suit rough streets and cruising. Smaller, harder wheels are lighter and slide more predictably on smooth park surfaces.</p>
+        <h4>How contests are scored</h4>
+        <p>The RSFI skateboarding rulebook follows World Skate rules for the two Olympic disciplines, <strong>street</strong> and <strong>park</strong>, with no age limits. In park, skaters get at least two runs of 30–50 seconds; five judges score each run from 0 to 100, the highest and lowest scores are dropped and the remaining three averaged. The best run counts. In the Olympic street format, skaters do 2 runs of 45 seconds and 5 single tricks; the best run plus the 2 best tricks make the score.</p>
+        <details class="check"><summary>Judges score 70, 74, 76, 80 and 91. What's the run score?</summary>
+        <p>Drop 91 and 70: (74 + 76 + 80) ÷ 3 = <strong>76.67</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The skate ladder</span>
+      <h2>First push → flat-ground basics → ramps &amp; bowls → registered skater → national competition → coach or judge</h2>
+      <p>Skateboarding has no licence to ride. The formal ladder starts when you compete: in India that runs through the Roller Skating Federation of India, under World Skate's rules. The steps below show the real requirement we found at each one.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · First push</span><b>Stand, push, stop, fall</b><span class="iso">No qualification needed</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real place</span><span class="cn">Janwaar Castle, Madhya Pradesh</span><ul><li>A village skatepark that opened in 2015, built by visiting skaters with villagers and now run by the local youth; its founding rules were "No school, no skateboarding" and "Girls first"</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Rolling and balance</span><ul><li><a href="#ch-roll">Ch 1</a> and <a href="#ch-balance">Ch 2</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Before you start</span>Helmet, wrist guards and pads; learn to stop and to fall first.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Flat-ground basics</span><b>Carving, kickturns, the ollie</b><span class="iso">Practice</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">The ollie</span><ul><li><a href="#ch-ollie">Ch 3</a>: take-off speed and airtime</li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Practise the ollie standing still on grass or carpet, then rolling slowly.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Ramps &amp; bowls</span><b>Drop-ins, pumping, transitions</b><span class="iso">Skatepark sessions</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Energy and g-force</span><ul><li><a href="#ch-ramps">Ch 4</a> and <a href="#ch-falls">Ch 5</a></li></ul></div>
+          <div class="ag"><span class="an">Real rule</span><span class="cn">Helmets in park</span><ul><li>World Skate rules (RSFI rulebook) require every park skater to wear a helmet in practice and competition</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Registered skater</span><b>Join a club, register, enter events</b><span class="iso">RSFI annual registration</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Roller Skating Federation of India</span><ul><li>RSFI runs a Skater Annual Registration for 2026–27, through its state and UT units</li></ul></div>
+          <div class="ag"><span class="an">Real rule</span><span class="cn">No age limits</span><ul><li>Under the rulebook, all skaters of the same gender compete in one division per discipline</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · National &amp; international</span><b>Nationals, then World Skate events</b><span class="iso">Street or park</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real event</span><span class="cn">64th National Roller Skating Championships</span><ul><li>5–15 December 2026 in Karnataka, hosted by the Karnataka Roller Skating Association; RSFI has issued technical-official letters for skateboarding</li></ul></div>
+          <div class="ag"><span class="an">Real format</span><span class="cn">World Skate rules</span><ul><li>Park: best of two or more 30–50 s runs, scored 0–100 by five judges</li><li>Olympic street: 2 runs of 45 s + 5 single tricks</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything</span><ul><li>Especially <a href="#ch-wheels">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Coach or judge</span><b>Teach skaters or judge contests</b><span class="iso">World Skate Academy</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">World Skate Academy</span><ul><li>Coach and skate-instructor courses, online and on site</li><li>Judge courses: only Academy judges and referees get an international licence to judge sanctioned competitions</li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Ask first</span>Ask RSFI or your state unit how to be nominated for a World Skate Academy course.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Skateboarding is governed with the roller sports, from the world federation down to state units. We checked each on an official website. We could not verify a separate "Skateboarding Federation of India", so it is not listed.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Skate</h4><p>The governing body for skateboarding and roller sports, recognised by the International Olympic Committee. Sets the competition rules for street and park.</p><a class="url" href="https://www.worldskate.org/skateboarding.html" target="_blank" rel="noopener">worldskate.org</a></div>
+      <div class="card"><span class="tag">Education</span><h4>World Skate Academy</h4><p>World Skate's education arm: coach and skate-instructor courses, and judge and referee courses that lead to an international licence.</p><a class="url" href="https://www.worldskate.org/about/world-skate-academy.html" target="_blank" rel="noopener">worldskate.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Roller Skating Federation of India (RSFI)</h4><p>Describes itself as "the governing body for skateboarding and roller sports in India". Publishes the skateboarding rulebook (2022, based on World Skate rules), runs skater registration and the national championships.</p><a class="url" href="https://indiaskate.com/skateboarding/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      <div class="card"><span class="tag">State units</span><h4>RSFI state and UT associations</h4><p>Each state or union territory has an RSFI unit, such as the Karnataka Roller Skating Association, which hosts the 2026 nationals. Clubs register skaters through them.</p><a class="url" href="https://indiaskate.com/karnataka/" target="_blank" rel="noopener">indiaskate.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to skate</span>
+      <h2>Pick your level. We'll point you to the park.</h2>
+      <p>India has few public skateparks, and they change fast. Every listing here was checked against an official, founder or news source. Confirm opening hours and rules before you travel.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="skateboarding">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Outdoor skateparks</span><span class="ss-cells" role="img" aria-label="Outdoor skateparks: peak November to February; possible March to October"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="December: 64th National Roller Skating Championships (incl. skateboarding)">◆</span></span></div>
+  <ul class="ss-events">
+    <li><b>64th National Roller Skating Championships (incl. skateboarding)</b> · <span class="ss-when">5-15 Dec 2026</span> · Karnataka · <a href="https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-skateboarding">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Weather</b>Outdoor parks are wet and slippery in the monsoon; skate early or late in summer heat.</div>
+      <div><b>December 2026</b>64th National Roller Skating Championships, Karnataka, 5–15 December (skateboarding included).</div>
+      <div><b>Closed</b>Bengaluru's Cave Skatepark, built by the Holystoked collective, closed in January 2026 (Newstrail), so it isn't listed.</div>
+      <div><b>Every session</b>Helmet on, check your wheels and trucks, and look before you drop in (<a href="#ch-falls">Ch 5</a>).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① Find a park</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-club" id="tab-club">② Join a club</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-compete" id="tab-compete">③ Compete</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-coach" id="tab-coach">④ Coach or judge</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want somewhere safe to learn, away from traffic (Steps 1–3). Read <a href="#ch-roll">Ch 1</a> and <a href="#ch-falls">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is there a beginner area? Are boards and helmets available? Are there sessions or coaching for beginners? When is it least crowded?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Janwaar Castle</b><span class="meta">Janwaar village, Madhya Pradesh · community skatepark</span><p>Built from December 2014 by 12 skateboarders from seven countries together with villagers, and run by the village youth's non-profit, which also runs skateboarding sessions and homestays, according to founder Ulrike Reinhard. The skater Asha Gond learned here.</p><a class="url" href="https://ulrikereinhard.com/blog/2026/07/04/what-janwaar-learned-what-telc-can-use/" target="_blank" rel="noopener">ulrikereinhard.com</a></div>
+        <div class="site"><b>Lohia Park skate zone</b><span class="meta">Gomti Nagar, Lucknow · Lucknow Development Authority</span><p>An open-air skate park built by the LDA at Dr Ram Manohar Lohia Park, described in March 2026 as complete and designed for beginners and young skaters (Times of India).</p><a class="url" href="https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms" target="_blank" rel="noopener">Times of India</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">A public skatepark at Jawahar Bal Bhavan in Cubbon Park, Bengaluru, was announced in January 2026 for April–May 2026. We couldn't confirm that it has opened, so check before you go.</p></div>
+    </div>
+    <div class="lvl-panel" id="lvl-club" role="tabpanel" aria-labelledby="tab-club">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You skate regularly and want to train with others and register (Step 4).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the club affiliated to the state RSFI unit? Does it have skateboarding coaches, or only roller skating? How do I register for 2026–27?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>RSFI state and UT units</h4><span class="loc">Every state and UT</span></div><span class="badge gov">Federation</span></div>
+          <p>The route to registered clubs and events in your state. For example, the Karnataka Roller Skating Association hosts the 2026 nationals.</p>
+          <a class="url" href="https://indiaskate.com/karnataka/" target="_blank" rel="noopener">indiaskate.com</a></div>
+        <div class="school"><div class="top"><div><h4>RSFI skater registration 2026–27</h4><span class="loc">Online, via your state unit</span></div><span class="badge gov">Registration</span></div>
+          <p>RSFI's annual skater registration, needed to take part in its championships.</p>
+          <a class="url" href="https://indiaskate.com/registered-skaters-2026-27/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can ride a park or street course cleanly and want to compete (Step 5). Read <a href="#ch-wheels">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which discipline and division do I enter? How long are runs at this event? What protective gear is required?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>RSFI skateboarding rulebook</h4><span class="loc">Street and park</span></div><span class="badge gov">Rules</span></div>
+          <p>World Skate rules for both Olympic disciplines: formats, judging, helmet rules and the concussion protocol.</p>
+          <a class="url" href="https://indiaskate.com/skateboarding/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>64th National Roller Skating Championships</b><span class="meta">Karnataka · 5–15 December 2026</span><p>Hosted by the Karnataka Roller Skating Association under RSFI. RSFI's letters of technical officials cover inline freestyle, skateboarding and roller derby.</p><a class="url" href="https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-coach" role="tabpanel" aria-labelledby="tab-coach">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're an experienced skater who wants to teach or judge (Step 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which World Skate Academy course is right for me? Is there an Indian nomination route? Is the course online or in person?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>World Skate Academy coach &amp; instructor courses</h4><span class="loc">Online and on site</span></div><span class="badge gov">Education</span></div>
+          <p>Coach and skate-instructor courses that teach skating from introduction to competition level.</p>
+          <a class="url" href="https://www.worldskate.org/about/world-skate-academy.html" target="_blank" rel="noopener">worldskate.org</a></div>
+        <div class="school"><div class="top"><div><h4>World Skate Academy judge courses</h4><span class="loc">Online and on site</span></div><span class="badge gov">Education</span></div>
+          <p>Only Academy-trained judges and referees receive an international licence to judge sanctioned competitions; refresher courses are offered.</p>
+          <a class="url" href="https://www.worldskate.org/about/world-skate-academy.html" target="_blank" rel="noopener">worldskate.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

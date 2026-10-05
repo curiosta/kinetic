@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Windsurfing · Physics of Apparent Wind, Sail Force & Planing · Kinetic by Curiosta</title>
+<meta name="description" content="Test your windsurfing physics in 15 questions, learn apparent wind, sail force, steering with the rig, planing and foiling, tacking and VMG, and wind safety, then follow the ladder from first lessons to YAI championships, the Olympic iQFOiL and instructing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Windsurfing</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Windsurf ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to learn</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Windsurfing</span>
+      <h1>Tilt the rig. Trust the wind. <em>Let the physics plane you out.</em></h1>
+      <p class="lede">A windsurf sail is a wing you hold in your hands, and you steer by moving it. Take the challenge, learn the science with a Sail Lab, then find windsurfing schools in Tamil Nadu, Goa, Karnataka and Mumbai, national championships and instructor courses at your level.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First lesson</span><span class="bar"></span><span>iQFOiL</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">2.25×</span><span class="l">the sail force when the wind goes from 12 to 18 kn</span></div>
+      <div class="hero-stat"><span class="n">3.8 kn</span><span class="l">hull speed of a 2.5 m board</span></div>
+      <div class="hero-stat"><span class="n">18–25 kn</span><span class="l">summer winds at Quest's Palk Bay school (Apr–Sep)</span></div>
+      <div class="hero-stat"><span class="n">2028</span><span class="l">iQFOiL windsurfing at the LA Olympics</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of windsurfing?</h2>
+      <p>15 questions on apparent wind, the sail as a wing and the harness, steering with the fin and daggerboard, planing and foiling, tacking, gybing and VMG, and waterstarts, wind and self-rescue. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Windsurfing physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace lessons with a qualified instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Sail Lab to see how wind, speed, heading and sail size change the forces.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-apparent"><span class="n">CHAPTER 1</span><span class="t">Apparent wind &amp; the wind window</span><span class="d">What your sail feels, and where you can sail</span></a>
+      <a href="#ch-sail"><span class="n">CHAPTER 2</span><span class="t">The sail as a wing &amp; the harness</span><span class="d">Lift, stall, v² and harness lines</span></a>
+      <a href="#ch-steer"><span class="n">CHAPTER 3</span><span class="t">Steering, fin &amp; daggerboard</span><span class="d">Centre of effort vs lateral resistance</span></a>
+      <a href="#ch-plane"><span class="n">CHAPTER 4</span><span class="t">Hull speed, planing &amp; foiling</span><span class="d">Float, skim or fly</span></a>
+      <a href="#ch-upwind"><span class="n">CHAPTER 5</span><span class="t">Tacking, gybing &amp; VMG</span><span class="d">Getting upwind, carving downwind</span></a>
+      <a href="#ch-safety"><span class="n">CHAPTER 6</span><span class="t">Uphaul, waterstart &amp; self-rescue</span><span class="d">Getting up, gusts and getting home</span></a>
+    </nav>
+
+    <!-- SAIL LAB -->
+    <div class="lab" id="ws-lab">
+      <span class="eyebrow">Interactive · Sail Lab</span>
+      <h3>Set the true wind, your board speed, your heading and the sail size, then see the apparent wind, the sail's pull, your upwind progress and the lift a foil would give</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: sail force = ½ ρ v² A C<sub>L</sub> with air density 1.225 kg/m³ and C<sub>L</sub> 1.0; foil lift = ½ ρ<sub>water</sub> v² A C<sub>L</sub> for a 0.1 m² front wing in seawater (1,025 kg/m³) with C<sub>L</sub> 0.4, compared with an 85 kg rider and board. Learning values only (illustrative), not equipment advice.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="ws-w">True wind</label><input type="range" id="ws-w" min="6" max="30" step="1" value="15"><output id="ws-w-o">15 kn</output></div>
+        <div class="ctl"><label for="ws-b">Board speed</label><input type="range" id="ws-b" min="0" max="25" step="1" value="10"><output id="ws-b-o">10 kn</output></div>
+        <div class="ctl"><label for="ws-a">Sail size</label><input type="range" id="ws-a" min="3" max="10" step="0.5" value="6"><output id="ws-a-o">6.0 m²</output></div>
+        <div class="ctl"><label>Heading off the wind</label><div class="seg" id="ws-hd"><button type="button" data-th="45" aria-pressed="false">45° upwind</button><button type="button" data-th="90" aria-pressed="true">90° beam reach</button><button type="button" data-th="135" aria-pressed="false">135° broad reach</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Apparent wind</span><span class="v" id="ws-aw">18.0 kn</span><span class="s">Ch 1 · vector sum</span></div>
+        <div class="lab-card"><span class="k">Apparent wind angle</span><span class="v" id="ws-ang">56°</span><span class="s">Ch 1 · from your nose</span></div>
+        <div class="lab-card"><span class="k">Sail force</span><span class="v" id="ws-f">316 N</span><span class="s">Ch 2 · ½ ρ v² A C<sub>L</sub></span></div>
+        <div class="lab-card"><span class="k">Progress upwind (VMG)</span><span class="v" id="ws-vmg">0.0 kn</span><span class="s">Ch 5 · speed × cos θ</span></div>
+        <div class="lab-card"><span class="k">Foil lift at this speed</span><span class="v" id="ws-foil">543 N</span><span class="s">Ch 4 · water is 800× denser</span></div>
+        <div class="lab-card"><span class="k">Foil lift ÷ rider + board weight</span><span class="v" id="ws-fly">65%</span><span class="s">Ch 4 · 100% = flying</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="ws-bar"></span></div>
+      <p class="fine">Bar = foil lift ÷ the weight of an 85 kg rider and board. Try 13 kn of board speed, then switch to 45° upwind. Learn on the water with a qualified instructor (Ch 6).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-apparent">
+      <header><span class="chno">CH 1</span><h3>Apparent wind &amp; the wind window</h3></header>
+      <p class="hook">Your sail never feels the true wind once you move.</p>
+      <div class="body">
+        <p>When you sail, your own motion makes a headwind. The sail feels the vector sum of that and the true wind: the <strong>apparent wind</strong>. Sailing upwind it's stronger than the true wind; sailing downwind it's weaker. In every direction, the faster you go, the further forward it swings, so you sheet the sail in as you speed up.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · true wind 15 kn, board speed 10 kn (from our Sail Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Heading off the wind</th><th>Apparent wind</th><th>Angle from your nose</th><th>Sail force (6 m²)</th></tr></thead>
+            <tbody>
+              <tr><td>45° (upwind)</td><td class="num">≈ 23.2 kn</td><td class="num">≈ 27°</td><td class="num">≈ 522 N</td></tr>
+              <tr><td>90° (beam reach)</td><td class="num">≈ 18.0 kn</td><td class="num">≈ 56°</td><td class="num">≈ 316 N</td></tr>
+              <tr><td>135° (broad reach)</td><td class="num">≈ 10.6 kn</td><td class="num">≈ 93°</td><td class="num">≈ 110 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Beam reach: √(15² + 10²) ≈ 18.0 kn, at arctan(15 ÷ 10) ≈ 56° from the nose. 1 kn = 1.852 km/h.</p>
+        </div>
+        <div class="feel"><span class="ico">🏄</span><div><span class="lbl">Feel the number</span>Same wind, same speed: heading upwind your sail feels more than twice the wind it feels on a broad reach, and almost five times the force.</div></div>
+        <p><strong>Speed pulls the wind forward.</strong> Stay on a broad reach (135° off the true wind) and let the board accelerate. The apparent wind swings round towards the nose, which is why a planing windsurfer sheets in hard even when heading downwind.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · broad reach, true wind 15 kn, board speeding up (Sail Lab model)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Board speed</th><th>Apparent wind</th><th>Angle from your nose</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 kn (standing still)</td><td class="num">15.0 kn</td><td class="num">135°</td></tr>
+              <tr><td class="num">5 kn</td><td class="num">≈ 12.0 kn</td><td class="num">≈ 118°</td></tr>
+              <tr><td class="num">10 kn</td><td class="num">≈ 10.6 kn</td><td class="num">≈ 93°</td></tr>
+              <tr><td class="num">20 kn (planing)</td><td class="num">≈ 14.2 kn</td><td class="num">≈ 48°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 20 kn: x = 15 cos 135° + 20 ≈ 9.4, y = 15 sin 135° ≈ 10.6, so √(9.4² + 10.6²) ≈ 14.2 kn at arctan(10.6 ÷ 9.4) ≈ 48°.</p>
+        </div>
+        <p><strong>The wind window: where you can sail.</strong> Picture a clock face with the true wind blowing from 12 o'clock. You can't sail straight at it: there's a <strong>no-go zone</strong> of very roughly 45° on either side. Every other heading is a <strong>point of sail</strong>: close-hauled just outside the no-go zone, then beam reach (wind on your side), broad reach and finally a run (wind from behind). Close-hauled and beam reaches are driven mainly by lift from the sail as a wing (Ch 2). On a run, the wind mostly just pushes on the sail, and you can never go faster downwind than the wind itself. That's why fast windsurfers reach across the wind rather than run straight before it.</p>
+        <details class="check"><summary>True wind 12 kn on the beam, board speed 9 kn. What apparent wind?</summary>
+        <p>√(12² + 9²) = <strong>15 kn</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-sail">
+      <header><span class="chno">CH 2</span><h3>The sail as a wing &amp; the harness</h3></header>
+      <p class="hook">A sail is a vertical wing. You are the mast's anchor.</p>
+      <div class="body">
+        <p>A windsurf sail is an <strong>aerofoil</strong>. Battens and the curve of the mast give it a built-in camber, like an aircraft wing standing on its end. Air flowing round the curved sail speeds up on the curved downwind (leeward) side and slows on the windward side, so pressure is lower to leeward. That pressure difference makes a force, <span class="eq">F = ½ ρ v² A C<sub>L</sub></span>, roughly at right angles to the apparent wind. Part of it drives you forward; part pushes you sideways, which the fin (and a daggerboard, on some boards) resists (Ch 3).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · sail size and wind (C<sub>L</sub> 1.0, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Sail</th><th>12 kn apparent</th><th>18 kn apparent</th></tr></thead>
+            <tbody>
+              <tr><td class="num">4.5 m²</td><td class="num">≈ 105 N</td><td class="num">≈ 236 N</td></tr>
+              <tr><td class="num">6.0 m²</td><td class="num">≈ 140 N</td><td class="num">≈ 315 N</td></tr>
+              <tr><td class="num">7.5 m²</td><td class="num">≈ 175 N</td><td class="num">≈ 394 N</td></tr>
+              <tr><td class="num">9.0 m²</td><td class="num">≈ 210 N</td><td class="num">≈ 473 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">18 kn = 9.26 m/s: 0.5 × 1.225 × 9.26² × 6 ≈ 315 N. Going from 12 to 18 kn multiplies the force by (18 ÷ 12)² = 2.25. Spread over 6 m², 315 N is a pressure difference of only about 53 Pa, around 1/2000 of atmospheric pressure, yet it can pull a person across the water.</p>
+        </div>
+        <p>That v² is why sailors carry several sails: a big sail for light wind, a small one when it's strong.</p>
+        <p><strong>Angle of attack, sheeting and stall.</strong> Pulling in with your back hand (sheeting in) increases the sail's angle to the apparent wind, its <strong>angle of attack</strong>. Up to a point, more angle means more lift. Too much, and the airflow can no longer follow the leeward curve: it breaks away, lift collapses and drag soars. That's a <strong>stall</strong>. Too little angle and the front of the sail flaps (luffs) and the force fades. Good sailors keep the sail just short of stalling, and re-trim as the apparent wind shifts with every change of speed (Ch 1).</p>
+        <p><strong>The harness and harness lines.</strong> You hold the rig up and lean against its pull. A <strong>harness</strong> (worn round your waist or seat) has a hook that clips into a <strong>harness line</strong>, a loop of rope on each side of the boom, so your body weight takes the load instead of your arms. The line needs to straddle the sail's centre of effort. If your front hand is doing most of the work, the force is centred ahead of the lines: move the line forward. If your back hand is, move it back. When it's set right you can hook in and briefly let go with both hands.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how far you lean, 75 kg rider (simplified, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Sideways pull from the sail</th><th>Lean from vertical to balance it</th></tr></thead>
+            <tbody>
+              <tr><td class="num">219 N (15 kn, standing still)</td><td class="num">≈ 17°</td></tr>
+              <tr><td class="num">316 N (18 kn apparent)</td><td class="num">≈ 23°</td></tr>
+              <tr><td class="num">522 N (23 kn apparent)</td><td class="num">≈ 35°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Treat yourself as a straight body pivoting at your feet, with the pull at your centre of mass: tan(lean) = pull ÷ weight. 75 × 9.81 ≈ 736 N, so 316 ÷ 736 ≈ 0.43 and arctan 0.43 ≈ 23°. Real riders also bend their legs and move their hips, but the idea holds: more pull, lean further out.</p>
+        </div>
+        <details class="check"><summary>The apparent wind rises from 10 to 15 kn. How much more sail force?</summary>
+        <p>(15 ÷ 10)² = <strong>2.25 times</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-steer">
+      <header><span class="chno">CH 3</span><h3>Steering, fin &amp; daggerboard</h3></header>
+      <p class="hook">No rudder. You steer by moving the sail.</p>
+      <div class="body">
+        <p>The sail's force acts through its <strong>centre of effort (CE)</strong>. The water's sideways resistance acts through the board's <strong>centre of lateral resistance (CLR)</strong>, near the fin or daggerboard. If the CE is directly above the CLR the board goes straight. Tilt the rig <strong>forward</strong> and the CE moves ahead of the CLR: the force turns the nose away from the wind (bearing away). Tilt it <strong>back</strong> and the tail is pushed away, turning the nose into the wind (heading up).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a turning moment (illustrative values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Rig tilt</th><th>CE ahead (+) or behind (−) the CLR</th><th>Turning moment at 300 N</th><th>Board turns</th></tr></thead>
+            <tbody>
+              <tr><td>Upright</td><td class="num">0 m</td><td class="num">0 N·m</td><td>Straight</td></tr>
+              <tr><td>Forward</td><td class="num">+0.3 m</td><td class="num">90 N·m</td><td>Away from the wind</td></tr>
+              <tr><td>Back</td><td class="num">−0.3 m</td><td class="num">90 N·m the other way</td><td>Into the wind</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Moment = force × lever arm: 300 N × 0.3 m = 90 N·m. On a planing board, riders also steer by tilting the board onto its rail.</p>
+        </div>
+        <p><strong>Fins and daggerboards are underwater wings.</strong> Without them, the sideways part of the sail force would just push the board sideways across the water. A fin meets the water at a small angle as the board slips very slightly sideways (leeway), and makes sideways lift with the same formula as the sail, <span class="eq">½ ρ v² A C<sub>L</sub></span>, but in water about 840 times denser than air. So a fin a fraction of the sail's size can balance the sail, <em>if</em> the board is moving fast.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · sideways grip from a 0.04 m² fin, C<sub>L</sub> 0.3 (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Board speed</th><th>Fin side force</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td class="num">5 kn</td><td class="num">≈ 41 N</td><td>Too little: a learner's board would slide sideways</td></tr>
+              <tr><td class="num">10 kn</td><td class="num">≈ 163 N</td><td>Getting there</td></tr>
+              <tr><td class="num">20 kn</td><td class="num">≈ 651 N</td><td>Plenty: why fast boards need only a fin</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 20 kn (10.3 m/s): 0.5 × 1,025 × 10.3² × 0.04 × 0.3 ≈ 651 N. Side force grows with speed squared, so halving your speed leaves a quarter of the grip.</p>
+        </div>
+        <p>That's why beginner and racing longboards (such as the Raceboard and Techno 293 classes) carry a <strong>daggerboard</strong>: a much larger blade through the middle of the board that gives grip at low speed and lets you point upwind. When the board is going fast on a reach, riders pull the daggerboard up. Left down at speed, its own lift tends to tip the board onto its rail.</p>
+        <details class="check"><summary>You want to turn towards the wind. Which way do you tilt the rig?</summary>
+        <p><strong>Back</strong>, towards the tail.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-plane">
+      <header><span class="chno">CH 4</span><h3>Hull speed, planing &amp; foiling</h3></header>
+      <p class="hook">Push water aside, skim over it, or fly above it.</p>
+      <div class="body">
+        <p>A board pushing through the water makes a bow wave. A wave's speed depends on its length, <span class="eq">v = √(g L ÷ 2π)</span>, so once the bow wave is as long as the board, going faster means climbing your own wave. That's the <strong>hull speed</strong>. With enough wind, a light board climbs onto the surface and <strong>planes</strong>, skimming instead of pushing water aside. A <strong>hydrofoil</strong> (as on the Olympic iQFOiL) goes further: an underwater wing lifts the whole board clear of the water.</p>
+        <p><strong>Floating first: volume.</strong> Standing still, the board floats by buoyancy: it must displace its own weight plus yours in water. Each litre of seawater it pushes under supports about 1 kg, so a 100 kg load of rider plus rig sinks a board to its deck at about 98 litres. Learner boards carry far more volume than that, so they float high and stable while you uphaul (Ch 6). Fast boards carry less, and only work once they're planing.</p>
+        <p><strong>Planing: from floating to skimming.</strong> Naval architects compare speed with length using the <strong>Froude number</strong>, <span class="eq">Fr = v ÷ √(g L)</span>. Hull speed is Fr ≈ 0.4. Somewhere above Fr ≈ 1, the flat underside acts like a water-ski: it deflects water downwards, the reaction lifts the board, and most of it rises out of the water. The wetted area shrinks, drag falls, and the board accelerates, which raises the apparent wind (Ch 1) and the sail force (Ch 2). That's why "getting on the plane" feels like a sudden surge. Riders help it happen by bearing away onto a reach, moving back into the footstraps, hooking into the harness, and pumping the sail in marginal wind.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 2.5 m board (rules of thumb, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Regime</th><th>Froude number</th><th>Board speed</th></tr></thead>
+            <tbody>
+              <tr><td>Displacement (hull speed)</td><td class="num">≈ 0.4</td><td class="num">≈ 3.8 kn</td></tr>
+              <tr><td>Planing begins (roughly)</td><td class="num">≈ 1</td><td class="num">≈ 9.6 kn</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Hull speed of a 2.5 m board: √(9.81 × 2.5 ÷ 6.28) ≈ 1.98 m/s ≈ 3.8 kn, which is Fr = 1 ÷ √(2π) ≈ 0.4. Fr = 1: √(9.81 × 2.5) ≈ 4.95 m/s ≈ 9.6 kn. Real boards vary with shape, weight and rider.</p>
+        </div>
+        <div class="worked">
+          <span class="lbl">Worked example · foil lift, 0.1 m² wing, C<sub>L</sub> 0.4, 85 kg rider and board (from our Sail Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Board speed</th><th>Foil lift</th><th>Share of weight (834 N)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">8 kn</td><td class="num">≈ 347 N</td><td class="num">42%</td></tr>
+              <tr><td class="num">10 kn</td><td class="num">≈ 543 N</td><td class="num">65%</td></tr>
+              <tr><td class="num">12 kn</td><td class="num">≈ 781 N</td><td class="num">94%</td></tr>
+              <tr><td class="num">13 kn</td><td class="num">≈ 917 N</td><td class="num">110%: flying</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Foil: 0.5 × 1,025 × (10 × 0.514)² × 0.1 × 0.4 ≈ 543 N. Water is about 800 times denser than air (1,025 ÷ 1.225 ≈ 840), which is why such a small wing can lift a person.</p>
+        </div>
+        <details class="check"><summary>Lift grows with speed squared. If the foil just flies at 13 kn, about what share of the lift does it give at 6.5 kn?</summary>
+        <p>(6.5 ÷ 13)² = <strong>25%</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-upwind">
+      <header><span class="chno">CH 5</span><h3>Tacking, gybing &amp; VMG</h3></header>
+      <p class="hook">To go upwind, you zig-zag. Angle and speed trade off.</p>
+      <div class="body">
+        <p>No sail can drive you straight into the wind: there's a "no-go zone" on either side of it (Ch 1). To reach a point upwind you sail at an angle, then turn through the wind (a <strong>tack</strong>) and sail the other way. Turning with the wind behind you is a <strong>gybe</strong>. Your upwind progress is the <strong>velocity made good</strong>, <span class="eq">VMG = speed × cos(angle off the wind)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · pointing high vs sailing fast (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Angle off the wind</th><th>Board speed</th><th>VMG</th></tr></thead>
+            <tbody>
+              <tr><td class="num">40°</td><td class="num">6 kn</td><td class="num">≈ 4.6 kn</td></tr>
+              <tr><td class="num">45°</td><td class="num">8 kn</td><td class="num">≈ 5.7 kn</td></tr>
+              <tr><td class="num">55°</td><td class="num">10 kn</td><td class="num">≈ 5.7 kn</td></tr>
+              <tr><td class="num">90°</td><td class="num">10 kn</td><td class="num">0 kn</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">8 × cos 45° ≈ 5.7 kn. Pointing higher isn't always better: sailing a little lower and faster can make the same progress.</p>
+        </div>
+        <p>Beginner courses teach turning the board slowly (Quest's Level 2 introduces tacks and gybes in non-planing conditions). Then comes turning at speed: Quest's Level 3 and its "turning with speed" course cover tacks and gybes in planing conditions, and the RYA scheme runs carve gybe clinics.</p>
+        <p><strong>The carve gybe: a banked turn on water.</strong> A planing board turns by tipping onto its inside rail, so the rail and fin carve an arc. Turning in a circle of radius r at speed v takes a sideways (centripetal) force <span class="eq">m v² ÷ r</span> towards the centre of the turn. You lean into the turn, like a cyclist, until your weight and that force balance: <span class="eq">tan(lean) = v² ÷ (g r)</span>. As you head downwind through the turn, the apparent wind drops and swings behind you (Ch 1), so the rig goes light. That's the moment to flip the sail onto the new side and keep planing out of the turn.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · lean angle in a carve gybe (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Turn radius</th><th>Lean from vertical</th></tr></thead>
+            <tbody>
+              <tr><td class="num">15 kn</td><td class="num">15 m</td><td class="num">≈ 22°</td></tr>
+              <tr><td class="num">15 kn</td><td class="num">8 m</td><td class="num">≈ 37°</td></tr>
+              <tr><td class="num">20 kn</td><td class="num">10 m</td><td class="num">≈ 47°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">20 kn = 10.3 m/s: 10.3² ÷ (9.81 × 10) ≈ 1.08, and arctan 1.08 ≈ 47°. Faster or tighter turns need more lean. If you lean too little, the board can't hold the arc and the rail lets go.</p>
+        </div>
+        <details class="check"><summary>At 12 kn and 60° off the wind, what's your VMG?</summary>
+        <p>12 × cos 60° = <strong>6 kn</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-safety">
+      <header><span class="chno">CH 6</span><h3>Uphaul, waterstart &amp; self-rescue</h3></header>
+      <p class="hook">Know how you'll get up, and how you'd get home without the wind.</p>
+      <div class="body">
+        <p><strong>Uphauling: a lift with your legs.</strong> Beginners start standing on a floaty board with the rig lying in the water downwind. You pull the <strong>uphaul</strong> rope hand over hand, keeping your back straight and leaning back so your body weight and legs do the lifting, not your arms. It's hardest at the start: water lying on the sail adds weight until the top of the mast clears and the water drains. Once the clew (back corner) is out of the water, you're lifting only the rig's own weight and can bring it up to the sailing position.</p>
+        <p><strong>Waterstarting: let the wind lift you.</strong> Better sailors skip the uphaul. Floating beside the board, you raise the rig into the wind, put your feet on the board, and let the sail's pull lift you up and on. That only works when the sail can pull hard enough, and sail force grows with the wind speed squared (Ch 2). Quest's Level 3 introduces stronger winds and the steps for beach and water starts, and its waterstart course is about getting up "in windy conditions".</p>
+        <div class="worked">
+          <span class="lbl">Worked example · pull of a 6 m² sail while you're not moving (C<sub>L</sub> 1.0, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>True wind</th><th>Sail force</th><th>Share of a 75 kg rider's weight (736 N)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">8 kn</td><td class="num">≈ 62 N</td><td class="num">≈ 8%</td></tr>
+              <tr><td class="num">12 kn</td><td class="num">≈ 140 N</td><td class="num">≈ 19%</td></tr>
+              <tr><td class="num">15 kn</td><td class="num">≈ 219 N</td><td class="num">≈ 30%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The water still supports most of you, and the board starts moving as you rise, which raises the apparent wind. But nearly four times the pull at 15 kn as at 8 kn is why waterstarts are taught in stronger wind and uphauling in light wind.</p>
+        </div>
+        <p><strong>Wind and weather.</strong> Sail force grows with the square of the wind (Ch 2), so a gust that's 40% stronger nearly doubles it. And wind direction decides where you drift if something goes wrong: offshore wind (land to sea) carries you away from the beach. Learn in steady, moderate wind, ideally cross-shore, with rescue cover.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the wind at Quest's Palk Bay school</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Season (Quest)</th><th>Wind</th><th>Force on a 6 m² sail (at the wind speed, illustrative)</th></tr></thead>
+            <tbody>
+              <tr><td>Dec–Mar, afternoons</td><td class="num">10–15 kn</td><td class="num">≈ 97–219 N</td></tr>
+              <tr><td>Apr–Sep, all day</td><td class="num">18–25 kn</td><td class="num">≈ 315–608 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">0.5 × 1.225 × (25 × 0.514)² × 6 ≈ 608 N. Stronger seasons suit planing and smaller sails; lighter winds suit first lessons.</p>
+        </div>
+        <ul>
+          <li><strong>Self-rescue:</strong> if you can't sail back, you can drop or de-rig the sail onto the board and paddle in. Quest's Level 1 course includes self-rescue drills.</li>
+          <li><strong>Swimming:</strong> Quest asks Level 1 students to swim 100 m unaided, or 200 m with a personal flotation device.</li>
+          <li><strong>Stay with the board.</strong> It floats, and it's easier to spot than a swimmer.</li>
+          <li><strong>Monsoon:</strong> on the west coast, Goa's water-sports policy bars water sports in the monsoon, and in 2026 Uttara Kannada (Karwar) banned sea water sports from 1 June to 31 August.</li>
+        </ul>
+        <div class="callout warn"><h4>Learn with a school</h4><p style="margin:0">Take lessons at a recognised centre with a qualified instructor and a rescue boat, wear a buoyancy aid while learning, and tell someone ashore when you go out.</p></div>
+        <details class="check"><summary>A gust takes the wind from 15 to 21 kn. About how much more sail force?</summary>
+        <p>(21 ÷ 15)² ≈ <strong>1.96 times</strong>: nearly double.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The windsurf ladder</span>
+      <h2>Start windsurfing → intermediate → planing &amp; advanced → national racing → Olympic iQFOiL → instructor</h2>
+      <p>Indian schools and Karnataka's state adventure academy run their own level courses, and the RYA (UK) scheme is a widely used reference; YAI's own National Windsurfing Scheme is listed as "yet to come". National racing runs under the Yachting Association of India. The steps below show the real content and requirements we found.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Start windsurfing</span><b>Uphaul, balance, steer, self-rescue</b><span class="iso">RYA Start Windsurfing · school Level 1</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">Quest Windsurfing Level 1</span><ul><li>4 hours over 2 days: weather conditions, setup, uphauling, direction control and self-rescue drills</li><li>Age 10+; swim 100 m unaided or 200 m with a personal flotation device</li></ul></div>
+          <div class="ag"><span class="an">Real course</span><span class="cn">GETHNAA Basic Aqua Sports Course (Karnataka)</span><ul><li>10-day beginner course; its windsurfing module covers equipment, sail handling, board balance, basic wind awareness and safe movement on the water</li><li>Also swimming and water skills, kayaking, rafting, dragon boat and water-rescue awareness; next Karwar batch 1–10 Nov 2026 (GETHNAA)</li></ul></div>
+          <div class="ag"><span class="an">Real scheme</span><span class="cn">RYA</span><ul><li>Start Windsurfing is the first course of the RYA Windsurfing Scheme</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Steering &amp; uphauling</span><ul><li><a href="#ch-steer">Ch 3</a> and <a href="#ch-safety">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Intermediate</span><b>Tacks, gybes and stronger wind</b><span class="iso">RYA Intermediate (non-planing) · school Level 2</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">Quest Windsurfing Level 2</span><ul><li>6 hours over 2 days: riding upwind and downwind, and an introduction to tacks and gybes in non-planing conditions; Quest's 4-day bootcamp covers Levels 1 and 2</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Apparent wind &amp; VMG</span><ul><li><a href="#ch-apparent">Ch 1</a> and <a href="#ch-upwind">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Planing &amp; advanced</span><b>Harness, footstraps, waterstart, carve gybe</b><span class="iso">RYA Intermediate (planing) &amp; Advanced</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">Quest Level 3 &amp; speciality courses</span><ul><li>Level 3: stronger winds, planing, tacks and gybes in planing conditions, the steps for beach and water starts, float plans and self-preservation</li><li>Waterstart focus course and a "turning with speed" course (tacks and gybes while planing)</li></ul></div>
+          <div class="ag"><span class="an">Real scheme</span><span class="cn">RYA</span><ul><li>Intermediate planing certificate, then Advanced, including waterstart and carve gybe clinics</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Planing, harness, carve gybe</span><ul><li><a href="#ch-plane">Ch 4</a>, <a href="#ch-sail">Ch 2</a> and <a href="#ch-upwind">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · National racing</span><b>Raceboard, T293 and iQFOiL</b><span class="iso">YAI domestic calendar</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real event</span><span class="cn">YAI All India Windsurfing &amp; Kiteboarding Championship</span><ul><li>Morjim, Goa, 18–22 Mar 2026: classes T293, Raceboard and iQFOiL (plus kite classes); a YAI ranking event</li></ul></div>
+          <div class="ag"><span class="an">Real event</span><span class="cn">Sail Goa 2026</span><ul><li>Dona Paula, Goa, 13–17 Apr 2026: a YAI ranking event for iQFOiL and Techno 293 OD, plus open windsurf foil and Raceboard</li></ul></div>
+          <div class="ag"><span class="an">Coming up</span><span class="cn">YAI Senior Nationals 2026</span><ul><li>INWTC, Colaba, Mumbai, 14–20 Nov 2026, with up to 15 races for iQFOiL men and women (Notice of Race)</li><li>YAI's 2026 calendar also lists Sail India / Asian Games selection trials with iQFOiL at Girgaon Chowpatty, Mumbai</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Olympic iQFOiL</span><b>Foiling windsurf racing</b><span class="iso">World Sailing Olympic event</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real event</span><span class="cn">LA28</span><ul><li>Men's and women's windsurfing (iQFOiL) at Belmont Shore, Long Beach, 17–20 July 2028</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Foil lift</span><ul><li><a href="#ch-plane">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Instructor</span><b>Teach windsurfing</b><span class="iso">RYA instructor pathway (reference)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">RYA</span><ul><li>Start Windsurfing Instructor: minimum age 16, 5-day course</li><li>Intermediate Instructor: 16+, 4-day course, 50 hours logged</li><li>Advanced Instructor: 18+, 5-day course, 100 hours logged; first aid and RYA Powerboat Level 2 needed</li></ul></div>
+          <div class="ag"><span class="an">Real status</span><span class="cn">YAI</span><ul><li>YAI's training site lists its National Windsurfing Scheme as "yet to come" and points learners to YAI Training Centres</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Olympic windsurfing comes under World Sailing, and the IWA represents the windsurfing classes; training schemes come from bodies such as the RYA and VDWS; in India, competition runs through the Yachting Association of India, with state associations and Karnataka's state academy running training. We checked each on an official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Sailing</h4><p>The world governing body for sailing; iQFOiL is the Olympic windsurfing class, raced at LA28.</p><a class="url" href="https://www.sailing.org/classes/iqfoil/" target="_blank" rel="noopener">sailing.org</a></div>
+      <div class="card"><span class="tag">Training scheme</span><h4>Royal Yachting Association (RYA)</h4><p>The UK's national body; its Windsurfing Scheme runs from Start Windsurfing through Intermediate to Advanced, with an instructor pathway.</p><a class="url" href="https://www.rya.org.uk/training/windsurfing" target="_blank" rel="noopener">rya.org.uk</a></div>
+      <div class="card"><span class="tag">Class association</span><h4>International Windsurfing Association (IWA)</h4><p>Represents windsurfing's member class associations, including Raceboard, Techno 293, Formula Windsurfing, Funboard and Speed, to World Sailing, event organisers and the industry.</p><a class="url" href="https://internationalwindsurfing.com/member-classes/" target="_blank" rel="noopener">internationalwindsurfing.com</a></div>
+      <div class="card"><span class="tag">Training standard</span><h4>VDWS</h4><p>An international association for windsurfing, kitesurfing, sailing, SUP and wing foiling, with its own courses and instructor licences.</p><a class="url" href="https://www.vdws.de/en/" target="_blank" rel="noopener">vdws.de</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Yachting Association of India (YAI)</h4><p>Describes itself as the governing authority for sailing, power boating and PWC in India; runs the national windsurfing championships on its domestic calendar.</p><a class="url" href="https://www.yai.org.in/" target="_blank" rel="noopener">yai.org.in</a></div>
+      <div class="card"><span class="tag">Training scheme</span><h4>YAI National Windsurfing Scheme</h4><p>Listed on YAI's training site as "yet to come", with progressive levels planned; for now it points learners to YAI Training Centres.</p><a class="url" href="https://trg.yai.org.in/training/windsurfing-schemes.html" target="_blank" rel="noopener">trg.yai.org.in</a></div>
+      <div class="card"><span class="tag">State academy · Karnataka</span><h4>General Thimayya National Academy of Adventure (GETHNAA)</h4><p>Set up by the Government of Karnataka in 1989 and run under its Department of Youth Empowerment and Sports. Its Karwar Water Sports Centre, at the mouth of the Kali River, offers sailing, windsurfing and kayaking. GETHNAA issues its own course certificates.</p><a class="url" href="https://gethnaa.org/about" target="_blank" rel="noopener">gethnaa.org</a></div>
+      <div class="card"><span class="tag">State association · Tamil Nadu</span><h4>Tamil Nadu Sailing Association (TNSA)</h4><p>A Chennai association, founded in 2002, that trains sailors and promotes sailing, windsurfing and allied water sports; it co-organised the 2024 All India Windsurfing Championships at Chennai harbour.</p><a class="url" href="http://tnsa.in/" target="_blank" rel="noopener">tnsa.in</a></div>
+      <div class="card"><span class="tag">Event organiser</span><h4>Board Sailing Association</h4><p>Named, with the Premier Kiteboarding Association and under YAI's aegis, as organising authority for the 2026 All India Windsurfing &amp; Kiteboarding Championship.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/261-notice-of-race-for-the-yai-all-india-windsurfing--kiteboarding-championship-2026-scheduled-from-18-22-mar-2026-at-morjim-goa.html" target="_blank" rel="noopener">yai.org.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to learn</span>
+      <h2>Pick your level. We'll point you to the water.</h2>
+      <p>Real schools and competitions, each checked on an official website. Follow the link and confirm dates, conditions, eligibility and course content directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="windsurfing">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Palk Bay near Rameswaram: summer wind season</span><span class="ss-cells" role="img" aria-label="Palk Bay near Rameswaram: summer wind season: peak April to September; off October to March"><span class="ss-c O" title="January: Off">✕</span><span class="ss-c O" title="February: Off">✕</span><span class="ss-c O" title="March: Off">✕</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c P" title="June: Peak">●</span><span class="ss-c P" title="July: Peak">●</span><span class="ss-c P" title="August: Peak">●</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c O" title="October: Off">✕</span><span class="ss-c O" title="November: Off">✕</span><span class="ss-c O" title="December: Off">✕</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Palk Bay near Rameswaram: winter wind season</span><span class="ss-cells" role="img" aria-label="Palk Bay near Rameswaram: winter wind season: peak December to March; off April to November"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c O" title="April: Off">✕</span><span class="ss-c O" title="May: Off">✕</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c O" title="October: Off">✕</span><span class="ss-c O" title="November: Off">✕</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Goa (Morjim, Dona Paula)</span><span class="ss-cells" role="img" aria-label="Goa (Morjim, Dona Paula): possible October to May; off June to September"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Karwar (Uttara Kannada, Karnataka)</span><span class="ss-cells" role="img" aria-label="Karwar (Uttara Kannada, Karnataka): possible October to May; off June to September"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in November"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="November: YAI Senior Nationals (iQFOiL, men and women)">◆</span><span class="ss-c e0"></span></span></div>
+  <ul class="ss-events">
+    <li><b>YAI Senior Nationals (iQFOiL, men and women)</b> · <span class="ss-when">14-20 Nov 2026</span> · INWTC, Colaba, Mumbai · <a href="https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-windsurfing">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>April–September</b>Quest says Palk Bay winds average 18–25 kn all day: planing season.</div>
+      <div><b>December–March</b>Quest describes afternoon winds of 10–15 kn: good for first lessons.</div>
+      <div><b>Karwar, Karnataka</b>GETHNAA lists a Basic Aqua Sports Course batch with an introduction to windsurfing on 1–10 Nov 2026. In 2026, sea water sports in Uttara Kannada were banned from 1 June to 31 August.</div>
+      <div><b>Goa, Mar–Apr 2026</b>YAI's national windsurfing &amp; kiteboarding championship ran at Morjim, and Sail Goa at Dona Paula.</div>
+      <div><b>Every session</b>Check the wind direction and gusts; tell someone ashore when you go out.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-learn" id="tab-learn">① First lessons</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-improve" id="tab-improve">② Improve</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-race" id="tab-race">③ Race</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-teach" id="tab-teach">④ Instruct</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never windsurfed (Step 1). Read <a href="#ch-steer">Ch 3</a> and <a href="#ch-safety">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is there a rescue boat? Do you provide buoyancy aids and beginner boards? What's the swimming requirement?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Quest Adventure Sports Academy · Windsurfing School</h4><span class="loc">Near Rameswaram, Tamil Nadu (Palk Bay)</span></div><span class="badge">Level courses</span></div>
+          <p>From a 2-hour Discover session (age 10+, swimming not required) to a 2-day Level 1 course and a 4-day Level 1–2 bootcamp, in shallow Palk Bay waters at Pirappanvalasai.</p>
+          <a class="url" href="https://www.quest-asia.com/windsurfing" target="_blank" rel="noopener">quest-asia.com</a></div>
+        <div class="school"><div class="top"><div><h4>GETHNAA · Karwar Water Sports Centre</h4><span class="loc">Mouth of the Kali River near Sadashivgad, Karwar, Uttara Kannada, Karnataka</span></div><span class="badge gov">State academy</span></div>
+          <p>Karnataka's state adventure academy teaches sailing, windsurfing and kayaking here. Its 10-day Basic Aqua Sports Course includes an introduction to windsurfing, with a Karwar batch on 1–10 Nov 2026; it also ran a Wind Surfing &amp; Kayaking summer camp at Karwar in April 2026. Check camp dates, eligibility and fees on GETHNAA's own site.</p>
+          <a class="url" href="https://gethnaa.org/basic-aqua-sports-course" target="_blank" rel="noopener">gethnaa.org</a></div>
+        <div class="school"><div class="top"><div><h4>Aquasail India · Start Windsurfing</h4><span class="loc">Grand Hyatt, Bambolim Beach, Goa (also Mumbai and Mandwa)</span></div><span class="badge">Sailing centre</span></div>
+          <p>Sailing, windsurfing and kayaking; its Goa centre runs a Start Windsurfing course.</p>
+          <a class="url" href="https://www.aquasailindia.com/sailing-kayaking-and-windsurfing-in-goa/" target="_blank" rel="noopener">aquasailindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Mumbai Sailing Club · Learn to Windsurf</h4><span class="loc">Gateway of India, Mumbai</span></div><span class="badge">Club course</span></div>
+          <p>Five 2-hour sessions for ages 13–50.</p>
+          <a class="url" href="https://www.mumbaisailingclub.com/courses/learn-to-windsurf/" target="_blank" rel="noopener">mumbaisailingclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>The Alampara · windsurfing</h4><span class="loc">Kottaikadu, near Alamparai Fort, Chengalpattu district, Tamil Nadu</span></div><span class="badge">Resort</span></div>
+          <p>A resort between Chennai and Puducherry that lists windsurfing among its water sports. A place to try it; ask about instruction and rescue cover before you book.</p>
+          <a class="url" href="https://thealampara.com/water-sports/" target="_blank" rel="noopener">thealampara.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-improve" role="tabpanel" aria-labelledby="tab-improve">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can sail back and forth and want to tack, gybe and plane (Steps 2–3). Read <a href="#ch-upwind">Ch 5</a> and <a href="#ch-plane">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which skills does the next level cover? Do you have harness lines and planing boards for intermediates?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Quest · Windsurfing Level 2 &amp; bootcamp</h4><span class="loc">Near Rameswaram, Tamil Nadu</span></div><span class="badge">Courses</span></div>
+          <p>Level 2 introduces tacks and gybes; the bootcamp takes you from Level 1 to Level 2.</p>
+          <a class="url" href="https://www.quest-asia.com/windsurfing" target="_blank" rel="noopener">quest-asia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Quest · Level 3, waterstart &amp; turning with speed</h4><span class="loc">Near Rameswaram, Tamil Nadu</span></div><span class="badge">Speciality courses</span></div>
+          <p>Level 3 brings stronger winds, planing, planing tacks and gybes and the steps for beach and water starts; two-day speciality courses focus on the waterstart and on turning at speed.</p>
+          <a class="url" href="https://www.quest-asia.com/windsurfing" target="_blank" rel="noopener">quest-asia.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>RYA Windsurfing Scheme</b><span class="meta">Reference syllabus</span><p>Start Windsurfing, Intermediate non-planing and planing, then Advanced (waterstart and carve gybe clinics).</p><a class="url" href="https://www.rya.org.uk/training/windsurfing" target="_blank" rel="noopener">rya.org.uk</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-race" role="tabpanel" aria-labelledby="tab-race">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You plane confidently and want to race (Steps 4–5).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which classes run at the nationals? How do I enter through my club or association? Which events count for ranking?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>YAI All India Windsurfing &amp; Kiteboarding Championship</b><span class="meta">Morjim, Goa · 18–22 Mar 2026</span><p>A YAI ranking event with T293, Raceboard and iQFOiL windsurfing classes.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/261-notice-of-race-for-the-yai-all-india-windsurfing--kiteboarding-championship-2026-scheduled-from-18-22-mar-2026-at-morjim-goa.html" target="_blank" rel="noopener">yai.org.in</a></div>
+        <div class="site"><b>Sail Goa 2026</b><span class="meta">GYA Boat Club, Dona Paula, Goa · 13–17 Apr 2026</span><p>A YAI zonal championship and national ranking event for iQFOiL and Techno 293 OD, with open windsurf foil and Raceboard fleets.</p><a class="url" href="http://www.yai.org.in/images/pdf/2025/Sail-Goa-26-NOR_%20EntryForm.pdf" target="_blank" rel="noopener">yai.org.in (Notice of Race)</a></div>
+        <div class="site"><b>YAI Senior Nationals 2026</b><span class="meta">INWTC, Colaba, Mumbai · 14–20 Nov 2026</span><p>Includes iQFOiL for men and women, with up to 15 races scheduled. Entries go through YAI membership and the organising club.</p><a class="url" href="https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf" target="_blank" rel="noopener">yai.org.in (Notice of Race)</a></div>
+        <div class="site"><b>YAI domestic calendar</b><span class="meta">Yachting Association of India</span><p>Lists national championships and selection trials, including iQFOiL trials at Girgaon Chowpatty, Mumbai, and the CESC Regatta at Pawna Dam, Pune (23–28 Oct 2026) with Techno 293, Raceboard and iQFOiL.</p><a class="url" href="http://www.yai.org.in/events.html" target="_blank" rel="noopener">yai.org.in</a></div>
+        <div class="site"><b>Tamil Nadu Sailing Association</b><span class="meta">Chennai</span><p>Promotes windsurfing on the Chennai coast; the 2024 All India Windsurfing Championships, with Raceboard, Techno 293, RS:X and iQFOiL races, were held at Chennai harbour.</p><a class="url" href="http://tnsa.in/" target="_blank" rel="noopener">tnsa.in</a></div>
+        <div class="site"><b>LA28 Olympic windsurfing (iQFOiL)</b><span class="meta">Belmont Shore, Long Beach · 17–20 July 2028</span><p>Men's and women's iQFOiL medals are decided the day after the kite events.</p><a class="url" href="https://www.sailing.org/2025/11/13/la28-kicks-off-with-kites-olympic-sailing-event-programme-and-schedule-announced/" target="_blank" rel="noopener">sailing.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-teach" role="tabpanel" aria-labelledby="tab-teach">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're an experienced windsurfer who wants to teach (Step 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which instructor qualification does your centre recognise? What first-aid and powerboat requirements apply?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>RYA windsurf instructor pathway</h4><span class="loc">International reference</span></div><span class="badge gov">Instructor</span></div>
+          <p>Start Windsurfing, Intermediate and Advanced Instructor courses, with minimum ages, logged hours, first aid and RYA Powerboat Level 2.</p>
+          <a class="url" href="https://www.rya.org.uk/training/windsurfing" target="_blank" rel="noopener">rya.org.uk</a></div>
+        <div class="school"><div class="top"><div><h4>YAI training centres</h4><span class="loc">India</span></div><span class="badge gov">Federation</span></div>
+          <p>YAI's National Windsurfing Scheme is "yet to come"; its training site points learners to YAI Training Centres.</p>
+          <a class="url" href="https://trg.yai.org.in/training/windsurfing-schemes.html" target="_blank" rel="noopener">trg.yai.org.in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitesurfing · Physics of Apparent Wind, Kite Power & Riding Upwind · Kinetic by Curiosta</title>
+<meta name="description" content="Test your kitesurfing physics in 15 questions, learn apparent wind, kite lift and power, the wind window, edging and planing, riding upwind and gust safety, then follow the IKO levels to independent riding, YAI championships and instructing in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Kitesurfing</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Kite ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to learn</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Kitesurfing</span>
+      <h1>Feel the window. Edge the board. <em>Let the wind do the work.</em></h1>
+      <p class="lede">A kite is a wing on long lines, and it pulls with the square of the wind it feels. Take the challenge, learn the science with a Kite Lab, then find kite schools in Tamil Nadu (check each school’s accreditation claim), national championships and instructor courses at your level.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>First lesson</span><span class="bar"></span><span>Formula Kite</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">4×</span><span class="l">the pull when the wind doubles</span></div>
+      <div class="hero-stat"><span class="n">Level 3</span><span class="l">IKO Independent: ride on your own</span></div>
+      <div class="hero-stat"><span class="n">18–25 kn</span><span class="l">summer winds at Quest's Palk Bay school (Apr–Sep)</span></div>
+      <div class="hero-stat"><span class="n">2028</span><span class="l">Formula Kite at the LA Olympics</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of kitesurfing?</h2>
+      <p>15 questions on apparent wind, kite lift and power, the wind window, edging and planing, riding upwind, and wind, weather and safety. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Kitesurfing physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace lessons with a certified instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Kite Lab to see how wind, kite size and position change the pull.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-apparent"><span class="n">CHAPTER 1</span><span class="t">Apparent wind</span><span class="d">The wind you actually feel</span></a>
+      <a href="#ch-lift"><span class="n">CHAPTER 2</span><span class="t">Kite lift &amp; power</span><span class="d">Why pull grows with v²</span></a>
+      <a href="#ch-window"><span class="n">CHAPTER 3</span><span class="t">The wind window</span><span class="d">Edge, mid-window and power zone</span></a>
+      <a href="#ch-board"><span class="n">CHAPTER 4</span><span class="t">Edging, leaning &amp; planing</span><span class="d">Balancing the pull</span></a>
+      <a href="#ch-upwind"><span class="n">CHAPTER 5</span><span class="t">Riding upwind</span><span class="d">Velocity made good</span></a>
+      <a href="#ch-safety"><span class="n">CHAPTER 6</span><span class="t">Wind, weather &amp; safety</span><span class="d">Gusts, wind direction and safety systems</span></a>
+    </nav>
+
+    <!-- KITE LAB -->
+    <div class="lab" id="ks-lab">
+      <span class="eyebrow">Interactive · Kite Lab</span>
+      <h3>Set the wind, your kite size, your weight and where the kite sits in the wind window, then see how hard it pulls and what a gust does</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: pull = ½ ρ v² S C<sub>L</sub>, with air density 1.225 kg/m³ and a lift coefficient of 0.6. A kite moving across the power zone sees faster wind than the true wind; we use 1.0× at the edge, 1.3× mid-window and 1.6× deep in the power zone. Learning values only (illustrative): real kites, bars and depower settings vary.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="ks-w">True wind</label><input type="range" id="ks-w" min="8" max="30" step="1" value="15"><output id="ks-w-o">15 kn</output></div>
+        <div class="ctl"><label for="ks-s">Kite size</label><input type="range" id="ks-s" min="5" max="17" step="1" value="12"><output id="ks-s-o">12 m²</output></div>
+        <div class="ctl"><label for="ks-m">Rider mass</label><input type="range" id="ks-m" min="40" max="110" step="5" value="75"><output id="ks-m-o">75 kg</output></div>
+        <div class="ctl"><label>Kite position</label><div class="seg" id="ks-pos"><button type="button" data-f="1" aria-pressed="false">Edge of window</button><button type="button" data-f="1.3" aria-pressed="true">Mid-window</button><button type="button" data-f="1.6" aria-pressed="false">Power zone</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Wind the kite feels</span><span class="v" id="ks-aw">19.5 kn</span><span class="s">Ch 1 · apparent wind</span></div>
+        <div class="lab-card"><span class="k">Kite pull</span><span class="v" id="ks-f">444 N</span><span class="s">Ch 2 · ½ ρ v² S C<sub>L</sub></span></div>
+        <div class="lab-card"><span class="k">Pull as weight</span><span class="v" id="ks-kg">45 kg</span><span class="s">Ch 2 · N ÷ 9.81</span></div>
+        <div class="lab-card"><span class="k">Pull ÷ your weight</span><span class="v" id="ks-bw">60%</span><span class="s">Ch 4 · how far you lean</span></div>
+        <div class="lab-card"><span class="k">Pull in a 40% stronger gust</span><span class="v" id="ks-gust">870 N</span><span class="s">Ch 6 · force grows with v²</span></div>
+        <div class="lab-card"><span class="k">Wind power through 1 m²</span><span class="v" id="ks-pw">281 W</span><span class="s">Ch 2 · ½ ρ v³</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="ks-bar"></span></div>
+      <p class="fine">Bar = gust pull ÷ your body weight (full bar = equal to your weight). Try 25 kn with a 12 m² kite in the power zone: that's why riders pick a smaller kite as the wind rises. Learn with an instructor whose qualifications you can check — ask the school, and prefer a listing on the IKO (or equivalent) directory when one exists (Ch 6).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-apparent">
+      <header><span class="chno">CH 1</span><h3>Apparent wind</h3></header>
+      <p class="hook">The wind you feel isn't the wind that's blowing.</p>
+      <div class="body">
+        <p>As soon as you move, you add your own "headwind" to the true wind. The wind you and your kite actually feel, the <strong>apparent wind</strong>, is the vector sum of the two: stronger, and swung towards the front, the faster you go. Kites go further: a kite swooping across the sky moves faster than you, so it feels even more wind (Ch 3).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · true wind 15 kn from the side (beam reach)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Your speed</th><th>Apparent wind</th><th>Angle from your nose</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 kn (standing)</td><td class="num">15.0 kn</td><td class="num">90°</td></tr>
+              <tr><td class="num">10 kn</td><td class="num">≈ 18.0 kn</td><td class="num">≈ 56°</td></tr>
+              <tr><td class="num">15 kn</td><td class="num">≈ 21.2 kn</td><td class="num">45°</td></tr>
+              <tr><td class="num">20 kn</td><td class="num">25.0 kn</td><td class="num">≈ 37°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At right angles the two winds add like the sides of a right triangle: √(15² + 20²) = 25 kn. Angle = arctan(15 ÷ 20) ≈ 37°. 1 knot = 1.852 km/h.</p>
+        </div>
+        <h4>The kite feels even more wind than you do</h4>
+        <p>While you ride at board speed, the kite is often <strong>swooping</strong> across the window much faster. Its apparent wind is the vector sum of the true wind and the kite's own flight speed through the air — and pull follows that speed squared (Ch 2).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · true wind 15 kn; kite diving across the window at 40 kn (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Where</th><th>Speed through the air</th><th>Relative to standing still</th></tr></thead>
+            <tbody>
+              <tr><td>You, standing on the beach</td><td class="num">15 kn</td><td class="num">1×</td></tr>
+              <tr><td>You, riding at 20 kn beam-reach</td><td class="num">25 kn (Ch 1 table)</td><td class="num">≈ 1.7×</td></tr>
+              <tr><td>Kite swooping at ~40 kn across 15 kn wind</td><td class="num">≈ 40–45 kn (order of)</td><td class="num">≈ 3× the beach wind</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">A kite diving from the edge through the power zone briefly flies several times faster than the true wind. That is why a small dive can yank you onto the board — and why the same dive in a gust can loft you (Ch 6). Exact kite airspeed depends on design and line length; the numbers here are teaching orders of magnitude.</p>
+        </div>
+        <div class="feel"><span class="ico">🪁</span><div><span class="lbl">Feel the number</span>Ride across a 15 kn wind at 20 kn and you feel 25 kn on your face: two-thirds more wind than is actually blowing. Send the kite diving and <em>it</em> briefly feels more like 40 kn.</div></div>
+        <details class="check"><summary>True wind 12 kn from the side, you ride at 16 kn. What apparent wind?</summary>
+        <p>√(12² + 16²) = <strong>20 kn</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-lift">
+      <header><span class="chno">CH 2</span><h3>Kite lift &amp; power</h3></header>
+      <p class="hook">Double the wind and the kite pulls four times as hard.</p>
+      <div class="body">
+        <p>A kite is a wing. Its pull is <span class="eq">F = ½ ρ v² S C<sub>L</sub></span>: air density ρ, the apparent wind speed v at the kite, the kite area S and a lift coefficient C<sub>L</sub> that depends on its shape and angle. Because of the <strong>v²</strong>, small changes in wind make big changes in pull. The energy the wind carries grows even faster, with <strong>v³</strong>: <span class="eq">½ ρ v³</span> watts through each square metre.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 12 m² kite, C<sub>L</sub> 0.6 (from our Kite Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>True wind</th><th>Edge of window (1.0×)</th><th>Mid-window (1.3×)</th><th>Power zone (1.6×)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">12 kn</td><td class="num">≈ 168 N (17 kg)</td><td class="num">≈ 284 N (29 kg)</td><td class="num">≈ 430 N (44 kg)</td></tr>
+              <tr><td class="num">15 kn</td><td class="num">≈ 263 N (27 kg)</td><td class="num">≈ 444 N (45 kg)</td><td class="num">≈ 672 N (69 kg)</td></tr>
+              <tr><td class="num">20 kn</td><td class="num">≈ 467 N (48 kg)</td><td class="num">≈ 789 N (80 kg)</td><td class="num">≈ 1,195 N (122 kg)</td></tr>
+              <tr><td class="num">25 kn</td><td class="num">≈ 729 N (74 kg)</td><td class="num">≈ 1,233 N (126 kg)</td><td class="num">≈ 1,867 N (190 kg)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">15 kn = 7.72 m/s; × 1.3 = 10.0 m/s. F = 0.5 × 1.225 × 10.0² × 12 × 0.6 ≈ 444 N. The kg figures are the pull divided by 9.81.</p>
+        </div>
+        <h4>Why kites come in sizes</h4>
+        <p>Pull scales with area, so riders choose a smaller kite in stronger wind. In our model a 7 m² kite at 20 kn pulls about as hard as a 12 m² kite at about 15 kn mid-window. Bars also <strong>depower</strong> the kite: pushing the bar away lowers its angle of attack and its C<sub>L</sub>.</p>
+        <details class="check"><summary>The wind rises from 12 kn to 24 kn. How much more does the kite pull?</summary>
+        <p>(24 ÷ 12)² = <strong>4 times</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-window">
+      <header><span class="chno">CH 3</span><h3>The wind window</h3></header>
+      <p class="hook">Where the kite sits in the sky decides how hard it pulls.</p>
+      <div class="body">
+        <p>Stand with your back to the wind. The <strong>wind window</strong> is the quarter-sphere of sky downwind of you where the kite can fly. At its <strong>edge</strong> (out to the sides and overhead, called the neutral zone) the kite sits almost still and feels only about the true wind, so it pulls gently. Deep in the middle, the <strong>power zone</strong>, the kite flies across the wind, moves fast and feels much more apparent wind (Ch 1), so it pulls hard.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · same wind, different spots (15 kn, 12 m², illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Kite position</th><th>Wind at kite</th><th>Pull</th><th>Compared with edge</th></tr></thead>
+            <tbody>
+              <tr><td>Edge / overhead (neutral)</td><td class="num">≈ 15 kn</td><td class="num">≈ 263 N</td><td class="num">1×</td></tr>
+              <tr><td>Mid-window</td><td class="num">≈ 19.5 kn</td><td class="num">≈ 444 N</td><td class="num">≈ 1.7×</td></tr>
+              <tr><td>Power zone</td><td class="num">≈ 24 kn</td><td class="num">≈ 672 N</td><td class="num">≈ 2.6×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1.3² ≈ 1.69 and 1.6² = 2.56: pull follows the square of the wind the kite feels.</p>
+        </div>
+        <h4>Clock positions and the relaunch</h4>
+        <p>Schools often map the window like a clock facing downwind: <strong>12 o'clock</strong> is overhead (neutral), <strong>9 and 3</strong> are the side edges, and <strong>6</strong> is deep in the power zone on the water. Launch and land near 9 or 3 (or 12) so the kite pulls gently. A waterstart dives the kite through the power zone once, then parks it back toward the edge so you aren't constantly yanked.</p>
+        <p>When the kite falls in the water, an LEI (leading-edge inflatable) kite usually needs to sit at the <strong>edge of the window</strong> with one wingtip up so the wind can refill it. Steering the upper wingtip into the wind and sheeted-out (depowered) lets it climb back to 9 or 3 — the IKO's Level 2 <strong>water relaunch</strong> skill, before you body-drag or waterstart. If it won't relaunch, the Level 2 self-rescue packs the kite down and uses it as a float while you swim in.</p>
+        <p>That's why the IKO's Level 1 course starts on the beach: flying the kite at the edge of the window, launching and landing it there, and learning the safety systems, including the <strong>quick release</strong>, before you ever stand on a board.</p>
+        <details class="check"><summary>Your kite is pulling too hard. Which way do you steer it?</summary>
+        <p>Towards the <strong>edge of the window</strong> (overhead or out to the side), and push the bar out to depower.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-board">
+      <header><span class="chno">CH 4</span><h3>Edging, leaning &amp; planing</h3></header>
+      <p class="hook">You're a lever between a kite and a fin-shaped edge.</p>
+      <div class="body">
+        <p>The kite pulls you sideways and up through the harness. You resist by leaning back and digging the board's <strong>edge</strong> into the water, which acts like a keel. To balance, the angle you lean from vertical follows <span class="eq">tan θ ≈ pull ÷ weight</span> (ignoring the kite's lift upward). Once the board moves fast enough, water pressure under it lifts it up to <strong>plane</strong> on the surface, and drag falls.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 75 kg rider (736 N of weight, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Horizontal pull</th><th>Pull ÷ weight</th><th>Lean from vertical</th></tr></thead>
+            <tbody>
+              <tr><td class="num">284 N</td><td class="num">39%</td><td class="num">≈ 21°</td></tr>
+              <tr><td class="num">444 N</td><td class="num">60%</td><td class="num">≈ 31°</td></tr>
+              <tr><td class="num">672 N</td><td class="num">91%</td><td class="num">≈ 42°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">θ = arctan(444 ÷ 736) ≈ 31°. A lighter rider on the same kite has to lean further or depower more.</p>
+        </div>
+        <h4>What the edge is doing</h4>
+        <p>The board's rail and fins are an underwater wing, just as a dinghy's centreboard is (see our <a href="../sailing/#ch-board">sailing page</a>). Dig the heelside (or toeside) rail and the board makes a sideways force that balances the kite's pull. Ease the edge and you accelerate downwind; dig harder and you slow, climb upwind and load the lines. That edge pressure is what IKO Level 3 calls <strong>control of speed by edging</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · same 444 N pull, different edge (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Edge</th><th>What you feel</th><th>Board path</th></tr></thead>
+            <tbody>
+              <tr><td>Soft (board flatter)</td><td>Less sideways resistance; kite accelerates you</td><td>Drift downwind; easy to overpower</td></tr>
+              <tr><td>Firm heelside</td><td>Rail + fins make ~hundreds of N of side force once planing</td><td>Hold a line; climb toward the wind</td></tr>
+              <tr><td>Too hard, too slow</td><td>Board stalls; fins lose grip</td><td>Slide, tip or stop — then restart</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Water is ~800× denser than air, so a small fin area can balance a large kite once you have speed — the same density gap that lets a dinghy's centreboard fight a sail. Stall the board and that balance vanishes until you waterstart again.</p>
+        </div>
+        <h4>Planing</h4>
+        <p>The lift the water gives the board also grows with speed squared. If a board just planes at 8 kn with you on it (illustrative), at 6 kn it gets only (6 ÷ 8)² ≈ 56% of that lift and sinks back into the water. A <strong>waterstart</strong> (an IKO Level 2 skill) uses a dive of the kite through the power zone to get you up to planing speed fast.</p>
+        <details class="check"><summary>A 60 kg rider (589 N) feels 444 N of horizontal pull. About what lean angle?</summary>
+        <p>arctan(444 ÷ 589) ≈ <strong>37°</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-upwind">
+      <header><span class="chno">CH 5</span><h3>Riding upwind</h3></header>
+      <p class="hook">Every beginner drifts downwind. Independent riders don't.</p>
+      <div class="body">
+        <p>You can't ride straight into the wind, but you can ride at an angle to it, zig-zagging upwind. What counts is your <strong>velocity made good (VMG)</strong>: the part of your speed that takes you upwind, <span class="eq">VMG = speed × cos(angle off the wind)</span>. Edging harder and pointing higher swaps a little speed for a lot of upwind progress.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · riding at 15 kn (illustrative angles)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Angle off the wind</th><th>Upwind progress (VMG)</th><th>What happens</th></tr></thead>
+            <tbody>
+              <tr><td class="num">50°</td><td class="num">≈ 9.6 kn</td><td>Climbing upwind</td></tr>
+              <tr><td class="num">70°</td><td class="num">≈ 5.1 kn</td><td>Slowly gaining</td></tr>
+              <tr><td class="num">90°</td><td class="num">0 kn</td><td>Holding ground</td></tr>
+              <tr><td class="num">110°</td><td class="num">≈ −5.1 kn</td><td>Drifting downwind</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">15 × cos 50° ≈ 9.6 kn. Keep the kite lower and further forward in the window, and the edge steady.</p>
+        </div>
+        <p>Riding upwind and controlling speed by edging are both IKO <strong>Level 3 (Independent)</strong> skills. That level is what the IKO says lets you ride on your own and rent equipment, because you can get back to where you started.</p>
+        <details class="check"><summary>At 12 kn and 60° off the wind, what's your VMG?</summary>
+        <p>12 × cos 60° = <strong>6 kn</strong> upwind.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-safety">
+      <header><span class="chno">CH 6</span><h3>Wind, weather &amp; safety</h3></header>
+      <p class="hook">A gust is a force multiplier. Respect the v².</p>
+      <div class="body">
+        <p>Because pull grows with the square of the wind, gusts hit hard. A gust from 15 to 21 kn (40% stronger) nearly <strong>doubles</strong> the pull: (21 ÷ 15)² ≈ 1.96. In the power zone, on a kite sized for the lull, that can be enough to drag or lift a rider (often called being "lofted").</p>
+        <div class="worked">
+          <span class="lbl">Worked example · gusts on a 12 m² kite, mid-window (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Steady wind → gust</th><th>Pull multiplier</th><th>Pull</th></tr></thead>
+            <tbody>
+              <tr><td class="num">15 → 18 kn</td><td class="num">1.44×</td><td class="num">≈ 444 → 639 N</td></tr>
+              <tr><td class="num">15 → 21 kn</td><td class="num">1.96×</td><td class="num">≈ 444 → 870 N</td></tr>
+              <tr><td class="num">15 → 25 kn</td><td class="num">2.78×</td><td class="num">≈ 444 → 1,233 N</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <ul>
+          <li><strong>Wind direction:</strong> offshore wind (blowing from land to sea) carries you away from the beach; onshore wind pushes you towards obstacles. Learn in steady, cross-shore wind with clear space downwind.</li>
+          <li><strong>Safety systems:</strong> know your quick release and leash, and practise self-landing and self-rescue (IKO Levels 1–3).</li>
+          <li><strong>Spot conditions:</strong> the IKO's Level 1 starts with an assessment of the spot, the environment and the activity's risks. Shallow, flat water helps beginners.</li>
+          <li><strong>Right of way:</strong> IKO Level 2 introduces the rules for passing other riders.</li>
+        </ul>
+        <div class="callout warn"><h4>Learn with a school</h4><p style="margin:0">Take lessons from an instructor the school says is IKO-certified (or equivalent — confirm on the IKO / VDWS directory when you can) with a rescue boat on the water, be able to swim, and never fly a kite near power lines, roads or crowds.</p></div>
+        <details class="check"><summary>The wind rises from 14 to 21 kn. About how much harder does your kite pull?</summary>
+        <p>(21 ÷ 14)² = 1.5² = <strong>2.25 times</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The kite ladder</span>
+      <h2>IKO Level 1 Discovery → Level 2 Intermediate → Level 3 Independent → Levels 4–5 → national championships → instructor</h2>
+      <p>Kite schools in India teach to the IKO (International Kiteboarding Organization) levels; national competition runs under the Yachting Association of India's calendar. The steps below show the real content and requirements we found.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · IKO Level 1 Discovery</span><b>On the beach: kite control and safety</b><span class="iso">IKO Level 1 (1A–1E)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real syllabus</span><span class="cn">IKO</span><ul><li>Spot, environment and activity assessment; equipment setup and safety systems</li><li>Launching and landing (as assistant, then pilot), first piloting at the edge of the window, wind-window theory, quick release, self-landing, packing up</li></ul></div>
+          <div class="ag"><span class="an">Real course</span><span class="cn">Quest Adventure Sports Academy</span><ul><li>Level 1 Discovery course near Rameswaram, Tamil Nadu</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">The window</span><ul><li><a href="#ch-window">Ch 3</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · IKO Level 2 Intermediate</span><b>In the water: body-drag to waterstart</b><span class="iso">IKO Level 2 (2F–2I)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real syllabus</span><span class="cn">IKO</span><ul><li>Water entry and exit, water relaunch, body-dragging (including upwind and with the board), introduction to self-rescue and right-of-way rules, steady pull, waterstart, controlled stop</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Planing</span><ul><li><a href="#ch-board">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · IKO Level 3 Independent</span><b>Ride upwind, on your own</b><span class="iso">IKO Level 3 (3J–3N)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real syllabus</span><span class="cn">IKO</span><ul><li>Control speed by edging, ride upwind, transitions, riding toeside, self-launch, self-rescue and pack-down in deep water</li><li>Minimum age 12; the IKO says this level lets you ride on your own and rent equipment</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">VMG</span><ul><li><a href="#ch-upwind">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · IKO Levels 4–5</span><b>Advanced and Evolution</b><span class="iso">IKO Level 4 Advanced, Level 5 Evolution</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">IKO</span><ul><li>The IKO lists Level 4 (Advanced) and Level 5 (Evolution) for riders developing advanced skills after Independent</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Power</span><ul><li><a href="#ch-lift">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · National championships</span><b>Twin tip and Formula Kite racing</b><span class="iso">YAI domestic calendar</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real events</span><span class="cn">YAI 2026</span><ul><li>All India Kiteboarding &amp; Formula Kite Championship, Thoothukudi, 18–21 Feb 2026 (twin tip and Formula Kite)</li><li>YAI All India Windsurfing &amp; Kiteboarding Championship, Morjim, Goa, 18–22 Mar 2026: a YAI ranking event</li></ul></div>
+          <div class="ag"><span class="an">Real event</span><span class="cn">Olympics</span><ul><li>Men's and women's Formula Kite open the LA28 Olympic sailing programme at Belmont Shore, Long Beach, 16–19 July 2028</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Instructor</span><b>Teach kitesurfing</b><span class="iso">IKO instructor pathway</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real courses</span><span class="cn">IKO</span><ul><li>Assistant Instructor, Instructor Levels 1–3 and Coach courses</li></ul></div>
+          <div class="ag"><span class="an">Real alternative</span><span class="cn">VDWS</span><ul><li>The German-based VDWS runs its own beginner, advanced and instructor courses and licences for kitesurfing</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Kitesurfing's training levels come from the IKO; Olympic racing comes under World Sailing; in India, competition runs through the Yachting Association of India. We checked each on an official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Training standard</span><h4>International Kiteboarding Organization (IKO)</h4><p>Sets the Level 1–5 rider courses and the instructor pathway used by schools worldwide, including in India.</p><a class="url" href="https://www.ikointl.com/en/courses" target="_blank" rel="noopener">ikointl.com</a></div>
+      <div class="card"><span class="tag">World federation</span><h4>World Sailing</h4><p>The world governing body for sailing; Formula Kite is the Olympic kite event at LA28, with Formula Kite equipment licensed by World Sailing.</p><a class="url" href="https://www.sailing.org/2025/11/13/la28-kicks-off-with-kites-olympic-sailing-event-programme-and-schedule-announced/" target="_blank" rel="noopener">sailing.org</a></div>
+      <div class="card"><span class="tag">Training standard</span><h4>VDWS</h4><p>An international association for windsurfing, kitesurfing, sailing, SUP and wing foiling, with its own courses and instructor licences.</p><a class="url" href="https://www.vdws.de/en/" target="_blank" rel="noopener">vdws.de</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Yachting Association of India (YAI)</h4><p>Describes itself as the governing authority for sailing, power boating and PWC in India. Its domestic calendar includes the national kiteboarding championships.</p><a class="url" href="https://www.yai.org.in/" target="_blank" rel="noopener">yai.org.in</a></div>
+      <div class="card"><span class="tag">Event organisers</span><h4>Premier Kiteboarding Association &amp; Board Sailing Association</h4><p>Named in YAI's Notice of Race as the organising authority, under YAI's aegis, for the 2026 All India Windsurfing &amp; Kiteboarding Championship at Morjim, Goa.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/261-notice-of-race-for-the-yai-all-india-windsurfing--kiteboarding-championship-2026-scheduled-from-18-22-mar-2026-at-morjim-goa.html" target="_blank" rel="noopener">yai.org.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to learn</span>
+      <h2>Pick your level. We'll point you to the beach.</h2>
+      <p>Real schools, spots and competitions, each checked on an official website. Follow the link and confirm dates, conditions, eligibility and course content directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="kitesurfing">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Palk Bay near Rameswaram: summer wind season</span><span class="ss-cells" role="img" aria-label="Palk Bay near Rameswaram: summer wind season: peak April to September; off October to March"><span class="ss-c O" title="January: Off">✕</span><span class="ss-c O" title="February: Off">✕</span><span class="ss-c O" title="March: Off">✕</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c P" title="June: Peak">●</span><span class="ss-c P" title="July: Peak">●</span><span class="ss-c P" title="August: Peak">●</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c O" title="October: Off">✕</span><span class="ss-c O" title="November: Off">✕</span><span class="ss-c O" title="December: Off">✕</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Palk Bay near Rameswaram: winter wind season</span><span class="ss-cells" role="img" aria-label="Palk Bay near Rameswaram: winter wind season: peak December to March; off April to November"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c O" title="April: Off">✕</span><span class="ss-c O" title="May: Off">✕</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c O" title="October: Off">✕</span><span class="ss-c O" title="November: Off">✕</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Goa (Morjim) and the west coast</span><span class="ss-cells" role="img" aria-label="Goa (Morjim) and the west coast: possible October to May; off June to September"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <p class="ss-none">No annual event for this sport that we could confirm is still running, so none is shown.</p>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-kitesurfing">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>April–September</b>Quest says Palk Bay winds average 18–25 kn all day: strong, steady summer season.</div>
+      <div><b>December–March</b>Quest describes afternoon winds of 10–15 kn: lighter, good for lessons.</div>
+      <div><b>Feb–Mar</b>YAI's national kiteboarding championships ran in Thoothukudi (Feb) and Goa (Mar) in 2026.</div>
+      <div><b>Every session</b>Check the forecast and the gusts, not just the average wind (Ch 6).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-learn" id="tab-learn">① First lessons</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-independent" id="tab-independent">② Ride on your own</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-compete" id="tab-compete">③ Compete</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-teach" id="tab-teach">④ Instruct</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never flown a kite, or only a trainer kite (Steps 1–2). Read <a href="#ch-window">Ch 3</a> and <a href="#ch-safety">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Can you show an IKO (or equivalent) instructor / school listing, or is that only on your own site? Is there a rescue boat? How shallow is the teaching area? What's the minimum age and swimming requirement?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Quest Adventure Sports Academy · Kitesurfing School</h4><span class="loc">Near Rameswaram, Tamil Nadu (Palk Bay)</span></div><span class="badge">IKO — school’s claim</span></div>
+          <p>Runs Discover (Level 1: wind window, trainer then 4-line kite), Intermediate (Level 2: body-drag, water relaunch, self-rescue, board start) and Independent (Level 3) courses. Quest states a minimum age of 10 and a swim of 100 m unaided (or 200 m with a flotation device). The academy’s own site lists affiliations with IKO, PADI and ISA — we did not find a live IKO school-directory listing for this centre, so treat those as <strong>school’s claims</strong>.</p>
+          <a class="url" href="https://www.quest-asia.com/kitesurfing-school" target="_blank" rel="noopener">quest-asia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Aqua Outback · Kitesurfing</h4><span class="loc">Gulf of Mannar, near Thoothukudi (Tuticorin), Tamil Nadu</span></div><span class="badge">IKO — school’s claim</span></div>
+          <p>Shallow lagoons averaging about 4 ft deep, rescue boats on standby. The school’s own site says instructors are IKO-certified — we could not confirm a live IKO centre listing for this school, so that is a <strong>school’s claim</strong>. Minimum age 12 (and at least 30 kg for children), basic swimming needed. Hosted YAI's 2026 All India Kiteboarding &amp; Formula Kite Championship (YAI calendar).</p>
+          <a class="url" href="https://aquaoutback.com/activities/kitesurfing/" target="_blank" rel="noopener">aquaoutback.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>IKO spot guide · Rameswaram</b><span class="meta">IKO destinations</span><p>The IKO's spot page for Rameswaram describes flat, shallow water and small waves.</p><a class="url" href="https://www.ikointl.com/destinations/kitesurfing-india/spots/rameswaram" target="_blank" rel="noopener">ikointl.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-independent" role="tabpanel" aria-labelledby="tab-independent">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can waterstart and want to ride upwind (Step 3). Read <a href="#ch-upwind">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which Level 3 skills will we cover? Can I get my IKO card updated? Can I rent equipment after the course?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Quest · Level 2 &amp; Level 3 courses</h4><span class="loc">Near Rameswaram, Tamil Nadu</span></div><span class="badge">Courses</span></div>
+          <p>Level 2 covers body-dragging, water relaunch, self-rescue and board starts; Level 3 covers edging, upwind and downwind riding, turning and self-launching.</p>
+          <a class="url" href="https://www.quest-asia.com/kitesurfing-school" target="_blank" rel="noopener">quest-asia.com</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>IKO Level 3 Independent</b><span class="meta">IKO course page</span><p>Speed control by edging, riding upwind, transitions, self-launch and deep-water self-rescue: the level that lets you ride on your own.</p><a class="url" href="https://www.ikointl.com/course/kiteboarder/independent" target="_blank" rel="noopener">ikointl.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You ride confidently and want to race (Step 5).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which classes run at the nationals (twin tip, Formula Kite)? What's the entry process through my club or association?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>YAI All India Kiteboarding &amp; Formula Kite Championship</b><span class="meta">Thoothukudi, Tamil Nadu · 18–21 Feb 2026</span><p>On YAI's 2026 domestic calendar, hosted by Aqua Outback, with twin tip and Formula Kite racing.</p><a class="url" href="http://www.yai.org.in/events.html" target="_blank" rel="noopener">yai.org.in</a></div>
+        <div class="site"><b>YAI All India Windsurfing &amp; Kiteboarding Championship</b><span class="meta">Morjim, Goa · 18–22 Mar 2026</span><p>A YAI ranking event for iQFOiL and Formula Kite; classes included Formula Kite and Twin Tip.</p><a class="url" href="https://www.yai.org.in/news/other-news/item/261-notice-of-race-for-the-yai-all-india-windsurfing--kiteboarding-championship-2026-scheduled-from-18-22-mar-2026-at-morjim-goa.html" target="_blank" rel="noopener">yai.org.in</a></div>
+        <div class="site"><b>LA28 Olympic Formula Kite</b><span class="meta">Belmont Shore, Long Beach · 16–19 July 2028</span><p>Men's and women's kite are the first sailing medals to be decided at LA28.</p><a class="url" href="https://www.sailing.org/2025/11/13/la28-kicks-off-with-kites-olympic-sailing-event-programme-and-schedule-announced/" target="_blank" rel="noopener">sailing.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-teach" role="tabpanel" aria-labelledby="tab-teach">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're an independent rider who wants to teach (Step 6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What level do I need to start the instructor course? What first-aid and rescue requirements apply?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>IKO instructor pathway</h4><span class="loc">International</span></div><span class="badge gov">Instructor</span></div>
+          <p>Assistant Instructor, then Instructor Levels 1–3 and Coach courses.</p>
+          <a class="url" href="https://www.ikointl.com/en/courses" target="_blank" rel="noopener">ikointl.com</a></div>
+        <div class="school"><div class="top"><div><h4>VDWS instructor licences</h4><span class="loc">International</span></div><span class="badge gov">Instructor</span></div>
+          <p>VDWS runs instructor training and licences for kitesurfing alongside its rider courses.</p>
+          <a class="url" href="https://www.vdws.de/en/" target="_blank" rel="noopener">vdws.de</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

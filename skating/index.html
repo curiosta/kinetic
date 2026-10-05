@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roller &amp; inline skating: the physics, explained | Kinetic</title>
+<meta name="description" content="Take the roller and inline skating science challenge, then learn the physics on wheels: rolling resistance, bearings, wheel durometer, balance, stride power, braking and ramps. Plus skill levels, governing bodies and where to skate in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Skating</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Skill levels</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to skate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Roller &amp; inline skating</span>
+      <h1>Eight small wheels, <em>a lot of physics.</em></h1>
+      <p class="lede">Quad or inline, every roll is a contest between your push and three thieves: rolling resistance, air drag and gravity. Learn bearings, wheels, balance, braking and ramps with real numbers, and you'll know exactly why that hill feels faster than it looks.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>rolling</span><span class="bar"></span><span>stopped</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 84 W</span><span class="l">to cruise at 20 km/h on smooth ground, about easy-cycling effort</span></div>
+      <div class="hero-stat"><span class="n">4×</span><span class="l">the braking distance when your speed doubles</span></div>
+      <div class="hero-stat"><span class="n">≈ 23 km/h</span><span class="l">at the bottom of a 2 m-high ramp, before friction</span></div>
+      <div class="hero-stat"><span class="n">1,330 rpm</span><span class="l">for an 80 mm wheel at 20 km/h</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>Do you know what's really slowing you down?</h2>
+      <p>15 questions on the physics of rolling. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Your session log</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification, skating grade or fitness assessment.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters, from first roll to the bottom of the ramp</h2>
+      <p>Each chapter takes one idea and follows it onto the tarmac, with worked numbers you can check on a calculator. Our reference skater weighs 70 kg (686 N) with gear. Rolling-resistance coefficients, drag areas and braking decelerations are illustrative round values; real ones depend on wheels, surface, posture and skill.</p>
+    </div>
+
+    <div class="callout note" style="margin-bottom:22px"><h4>Why this page doesn't cover skateboarding</h4><p style="margin:0">Skateboarding shares wheels and bearings with roller sports, and the same bodies govern it: World Skate globally, and in India the RSFI, which calls itself "the governing body for skateboarding and roller sports". But the core physics is different. The board isn't attached to your feet, so tricks like the ollie (popping the tail to make the board leap) and riding with both feet sideways on one deck are a different set of problems from striding on two skates. Its skill ladder and its Olympic events (street and park) are also separate. It deserves its own page, so here we stick to quad (roller) and inline skates.</p></div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-rolling"><span class="n">CHAPTER 1</span><span class="t">Rolling resistance &amp; bearings</span><span class="d">The 7 N thief, and what ABEC really means</span></a>
+      <a href="#ch-wheels"><span class="n">CHAPTER 2</span><span class="t">Wheels, size &amp; durometer</span><span class="d">78A vs 85A, 80 mm vs 110 mm, quad vs inline</span></a>
+      <a href="#ch-balance"><span class="n">CHAPTER 3</span><span class="t">Balance, lean &amp; centre of mass</span><span class="d">Staying upright on a tiny base, and leaning into turns</span></a>
+      <a href="#ch-stride"><span class="n">CHAPTER 4</span><span class="t">The stride, power &amp; drag</span><span class="d">Why you push sideways, and the cost of speed</span></a>
+      <a href="#ch-braking"><span class="n">CHAPTER 5</span><span class="t">Braking &amp; stopping distance</span><span class="d">Heel brake, T-stop, plough, and the v² rule</span></a>
+      <a href="#ch-ramps"><span class="n">CHAPTER 6</span><span class="t">Hills, ramps &amp; falling</span><span class="d">Energy, terminal speed on a slope, and falling well</span></a>
+    </nav>
+
+    <!-- ROLL LAB -->
+    <div class="lab" id="roll-lab">
+      <span class="eyebrow">Interactive · Roll Lab</span>
+      <h3>Change the speed, surface and stance, and see what it costs to go and to stop</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An illustrative model: constant rolling resistance, air drag at density 1.2 kg/m³, and a constant braking deceleration you choose. Flat ground, no wind. For learning only; it is not a safety calculator.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="rl-speed">Speed</label><input type="range" id="rl-speed" min="5" max="35" step="1" value="20"><output id="rl-speed-o">20 km/h</output></div>
+        <div class="ctl"><label for="rl-mass">Skater + gear</label><input type="range" id="rl-mass" min="40" max="110" step="1" value="70"><output id="rl-mass-o">70 kg</output></div>
+        <div class="ctl"><label for="rl-dec">Braking deceleration</label><input type="range" id="rl-dec" min="1" max="3.5" step="0.1" value="2"><output id="rl-dec-o">2.0 m/s²</output></div>
+        <div class="ctl"><label for="rl-rt">Reaction time</label><input type="range" id="rl-rt" min="0.5" max="1.5" step="0.1" value="0.7"><output id="rl-rt-o">0.7 s</output></div>
+        <div class="ctl"><label>Surface</label><div class="seg" id="rl-surface"><button type="button" data-crr="0.005" aria-pressed="false">Smooth rink</button><button type="button" data-crr="0.01" aria-pressed="true">Smooth concrete</button><button type="button" data-crr="0.02" aria-pressed="false">Rough asphalt</button></div><span></span></div>
+        <div class="ctl"><label>Stance</label><div class="seg" id="rl-posture"><button type="button" data-cda="0.45" aria-pressed="true">Upright</button><button type="button" data-cda="0.3" aria-pressed="false">Low tuck</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Rolling resistance</span><span class="v" id="rl-roll">6.9 N</span><span class="s">Ch 1 · Crr × weight</span></div>
+        <div class="lab-card"><span class="k">Air drag</span><span class="v" id="rl-drag">8.3 N</span><span class="s">Ch 4 · ½ρv²·CdA</span></div>
+        <div class="lab-card"><span class="k">Power to hold speed</span><span class="v" id="rl-power">84 W</span><span class="s">Ch 4 · force × speed</span></div>
+        <div class="lab-card"><span class="k">Coast distance (no push)</span><span class="v" id="rl-coast">103 m</span><span class="s">Ch 1 &amp; 4 · rolling + drag</span></div>
+        <div class="lab-card"><span class="k">Braking distance</span><span class="v" id="rl-brake">7.7 m</span><span class="s">Ch 5 · v² ÷ 2a</span></div>
+        <div class="lab-card"><span class="k">Total stopping distance</span><span class="v" id="rl-total">11.6 m</span><span class="s">Ch 5 · incl. reaction <span id="rl-react">3.9 m</span></span></div>
+        <div class="lab-card"><span class="k">Same energy as a drop of</span><span class="v" id="rl-drop">1.57 m</span><span class="s">Ch 6 · v² ÷ 2g</span></div>
+        <div class="lab-card"><span class="k">80 mm wheel speed</span><span class="v" id="rl-rpm">1326 rpm</span><span class="s">Ch 2 · v ÷ circumference</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="rl-bar"></span></div>
+      <p class="fine">Bar = total stopping distance on a 0–40 m scale. Real braking depends on technique, wheel grip, brake-pad wear, slope and surface (wet, sandy or oily ground can halve your grip). Treat every number as a teaching example.</p>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-rolling">
+      <header><span class="chno">CH 1</span><h3>Rolling resistance &amp; bearings</h3></header>
+      <p class="hook">A wheel doesn't roll for free. It squashes, a little, every turn.</p>
+      <div class="body">
+        <p>Skate wheels are made of polyurethane. Where the wheel meets the ground it flattens slightly, then springs back as it rolls on, but not perfectly: some energy is lost as heat (materials scientists call it <em>hysteresis</em>). Bumps and grit add small impacts. Together they create <strong>rolling resistance</strong>, a nearly constant force: <span class="eq">F = Crr × weight</span>, where Crr is the rolling-resistance coefficient.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the same skater on three surfaces (illustrative Crr)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Surface</th><th>Crr</th><th>Force (70 kg)</th><th>Coast from 15 km/h, rolling only</th></tr></thead>
+            <tbody>
+              <tr><td>Smooth indoor rink</td><td class="num">≈ 0.005</td><td class="num">≈ 3.4 N</td><td class="num">≈ 177 m</td></tr>
+              <tr><td>Smooth concrete</td><td class="num">≈ 0.01</td><td class="num">≈ 6.9 N</td><td class="num">≈ 88 m</td></tr>
+              <tr><td>Rough asphalt</td><td class="num">≈ 0.02</td><td class="num">≈ 13.7 N</td><td class="num">≈ 44 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Coasting distance from rolling resistance alone = v² ÷ (2 × Crr × g). With 15 km/h = 4.17 m/s and Crr 0.01: 17.4 ÷ 0.196 ≈ 88 m. Add air drag (Chapter 4) and the real figure is shorter. Notice the surface matters more than almost any upgrade you could buy.</p>
+        </div>
+        <h4>Bearings: the bit everyone over-thinks</h4>
+        <p>Almost all inline and most quad wheels use the same bearing size, the <strong>608</strong>: 8 mm bore, 22 mm outside diameter, 7 mm wide. Each wheel takes two, with a spacer between, so a pair of 4-wheel inline skates or quads carries 16 bearings.</p>
+        <p>The <strong>ABEC</strong> number (1, 3, 5, 7, 9) printed on many bearings is a scale of manufacturing <em>tolerance</em>: how precisely the parts are made. It is not a speed rating. Wheel rpm on skates is modest (Chapter 2), and at those speeds a clean, lightly lubricated bearing loses far less energy than the wheel's own rolling resistance. Dirt, sand and water are what really slow bearings down, and they ruin them.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>6.9 N is about the weight of a 700 g bag of sugar. It's what you'd feel pulling a skater along smooth concrete at walking pace with a luggage scale. Drag it across rough asphalt and the scale reads twice as much.</div></div>
+        <details class="check"><summary>A 90 kg skater rolls on rough asphalt (Crr 0.02). What's the rolling resistance, and does it change how far they coast from 15 km/h?</summary>
+        <p>Force = 0.02 × 90 × 9.81 ≈ <strong>17.7 N</strong>. But coast distance = v² ÷ (2 × Crr × g) has no mass in it: still ≈ <strong>44 m</strong> on rolling resistance alone. More weight, more force, but more momentum to match.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-wheels">
+      <header><span class="chno">CH 2</span><h3>Wheels, size &amp; durometer</h3></header>
+      <p class="hook">Soft or hard, big or small: every wheel is a trade-off.</p>
+      <div class="body">
+        <h4>Durometer: how hard the urethane is</h4>
+        <p>Wheel hardness is measured on the <strong>Shore A durometer</strong> scale, printed as a number and the letter A (e.g. 78A, 85A). <em>Lower is softer.</em> Soft wheels (roughly the high 70s A) deform around pebbles and cracks: better grip, a smoother ride, a little more rolling resistance and faster wear. Harder wheels (mid-80s A and up) deform less on smooth floors: faster, more willing to slide, but harsh and skittish on rough tarmac. Outdoor recreational wheels sit at the soft end; rink and slide wheels at the hard end.</p>
+        <h4>Diameter: big rolls easier, small turns quicker</h4>
+        <p>A bigger wheel meets each bump at a gentler angle and spreads its contact patch over a longer, narrower area, so it typically carries speed better. That's why speed and marathon skaters use large wheels (often 100–125 mm). Smaller wheels (around 72–80 mm) sit lower and accelerate and turn more nimbly, favoured for hockey, freestyle slalom and learning.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how fast do the wheels spin at 20 km/h (5.56 m/s)?</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wheel diameter</th><th>Circumference</th><th>Revolutions per second</th><th>rpm</th></tr></thead>
+            <tbody>
+              <tr><td class="num">80 mm</td><td class="num">0.251 m</td><td class="num">≈ 22.1</td><td class="num">≈ 1,326</td></tr>
+              <tr><td class="num">90 mm</td><td class="num">0.283 m</td><td class="num">≈ 19.6</td><td class="num">≈ 1,179</td></tr>
+              <tr><td class="num">100 mm</td><td class="num">0.314 m</td><td class="num">≈ 17.7</td><td class="num">≈ 1,061</td></tr>
+              <tr><td class="num">110 mm</td><td class="num">0.346 m</td><td class="num">≈ 16.1</td><td class="num">≈ 965</td></tr>
+              <tr><td class="num">125 mm</td><td class="num">0.393 m</td><td class="num">≈ 14.1</td><td class="num">≈ 849</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">For comparison, a typical car tyre about 65 cm across turns at roughly 800 rpm at 100 km/h, so a skate wheel at jogging-plus speed spins faster than a car wheel on the highway. Bearings handle that easily, as long as they're clean.</p>
+        </div>
+        <h4>Quad vs inline</h4>
+        <p><strong>Quad</strong> skates put two wheels side by side at the front and back, giving a wider side-to-side base and a short front-to-back one. They're stable standing still and agile for dance and rink skating, and they usually have a toe stop for braking. <strong>Inline</strong> skates line three to five wheels in a single row: narrow side-to-side (you balance like on a bicycle, steering under yourself) but long front-to-back, which makes them stable at speed and efficient for distance. Most inline skates for learners carry a <em>heel brake</em>.</p>
+        <details class="check"><summary>Your 80 mm wheels are at 1,326 rpm. You swap to 100 mm wheels and skate at the same speed. New rpm?</summary>
+        <p>rpm scales with 1/diameter: 1,326 × 80 ÷ 100 ≈ <strong>1,061 rpm</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-balance">
+      <header><span class="chno">CH 3</span><h3>Balance, lean &amp; centre of mass</h3></header>
+      <p class="hook">You're an upside-down pendulum on wheels. Bend your knees.</p>
+      <div class="body">
+        <p>Standing on skates, your body behaves like an <strong>inverted pendulum</strong>: the centre of mass (roughly at your navel) sits about a metre above a very small support base. If your centre of mass drifts outside that base, gravity starts toppling you, and the further it drifts the faster you go. Balancing on skates means keeping it over the wheels, by moving the wheels back under you (steering) or by shifting your body.</p>
+        <h4>Why the "ready position" works</h4>
+        <p>Coaches teach a stance with knees bent, hips back, weight over the middle-to-front of the foot and hands forward. Three physics gains: the centre of mass is lower, so small tilts take longer to grow; bent legs act as springs, soaking up bumps; and weight forward stops the classic beginner fall, where the wheels roll ahead and you sit down hard behind them.</p>
+        <h4>Leaning into turns</h4>
+        <p>Just like on ice or a bicycle, a turn needs a force toward the centre, m × v² ÷ r, supplied by wheel grip, so you must lean in: <span class="eq">tan θ = v² ÷ (g × r)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · lean angles on wheels</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Turn radius</th><th>Centripetal acceleration</th><th>Lean from vertical</th></tr></thead>
+            <tbody>
+              <tr><td class="num">15 km/h</td><td class="num">10 m</td><td class="num">1.7 m/s²</td><td class="num">≈ 10°</td></tr>
+              <tr><td class="num">15 km/h</td><td class="num">5 m</td><td class="num">3.5 m/s²</td><td class="num">≈ 19.5°</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">5 m</td><td class="num">6.2 m/s²</td><td class="num">≈ 32°</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Halve the radius and the lean roughly doubles at gentle angles. Wheels have far less sideways grip on dusty, wet or painted surfaces than on clean concrete, so a lean that's fine on a dry rink can slide out on a wet road marking.</p>
+        </div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 32° lean puts your hips (about 1 m up) roughly 0.6 m inside your skates. That's a dramatic, committed position, which is why tight turns at speed are an intermediate skill and not a first-day one.</div></div>
+        <details class="check"><summary>You're comfortable leaning 15°. What's the tightest turn you can make at 15 km/h?</summary>
+        <p>r = v² ÷ (g × tan θ) = 17.4 ÷ (9.81 × 0.268) ≈ <strong>6.6 m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-stride">
+      <header><span class="chno">CH 4</span><h3>The stride, power &amp; drag</h3></header>
+      <p class="hook">Wheels roll forward freely, so you push sideways.</p>
+      <div class="body">
+        <p>A wheel rolls easily along its direction and grips hard sideways. Push straight back and the skate just rolls back. So skaters angle the pushing skate outward and drive it sideways. The ground pushes back perpendicular to the wheels, and the forward share of that push propels you, while the gliding skate carries you on. Good skaters make each push long, low and sideways, then bring the leg back under the body.</p>
+        <h4>The cost of going faster</h4>
+        <p>Two forces resist you on the flat: rolling resistance (constant, Chapter 1) and air drag, <span class="eq">½ × ρ × v² × CdA</span>, which grows with the square of speed. Power is force × speed.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · power to cruise, 70 kg, smooth concrete (Crr 0.01), upright CdA ≈ 0.45 m²</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Air drag</th><th>Rolling</th><th>Power needed</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 km/h</td><td class="num">2.1 N</td><td class="num">6.9 N</td><td class="num">≈ 25 W</td></tr>
+              <tr><td class="num">15 km/h</td><td class="num">4.7 N</td><td class="num">6.9 N</td><td class="num">≈ 48 W</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">8.3 N</td><td class="num">6.9 N</td><td class="num">≈ 84 W</td></tr>
+              <tr><td class="num">25 km/h</td><td class="num">13.0 N</td><td class="num">6.9 N</td><td class="num">≈ 138 W</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">18.8 N</td><td class="num">6.9 N</td><td class="num">≈ 213 W</td></tr>
+              <tr><td class="num">30 km/h, low tuck (CdA 0.30)</td><td class="num">12.5 N</td><td class="num">6.9 N</td><td class="num">≈ 161 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Air drag overtakes rolling resistance at about 18 km/h for this skater. From 10 to 30 km/h, speed triples but power rises more than eight-fold. Tucking low saves about a quarter of the effort at 30 km/h, which is why speed skaters skate bent double with their hands behind their backs.</p>
+        </div>
+        <details class="check"><summary>A 15 km/h headwind hits you while you skate at 15 km/h. What air speed does the drag "see"?</summary>
+        <p>30 km/h: drag goes from 4.7 N to <strong>≈ 18.8 N</strong>, four times as much, while your ground speed hasn't changed. Headwinds are brutal on skates.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-braking">
+      <header><span class="chno">CH 5</span><h3>Braking &amp; stopping distance</h3></header>
+      <p class="hook">Learn to stop before you learn to go fast. The maths explains why.</p>
+      <div class="body">
+        <p>Every stop turns your kinetic energy, ½mv², into heat, either in a rubber brake pad or in wheels scrubbing sideways across the ground. The common methods, roughly in the order they're taught:</p>
+        <ul>
+          <li><strong>Heel brake</strong> (inline) or <strong>toe stop</strong> (quad): scissor one foot forward and press the pad down. Simple and controllable; the first stop most instructors teach.</li>
+          <li><strong>Plough / A-frame and spin stops</strong>: steer the skates to scrub speed or turn it into a circle.</li>
+          <li><strong>T-stop</strong>: drag the back skate at right angles behind the front one. Effective, but wears wheels and needs balance.</li>
+          <li><strong>Powerslide and hockey-style stops</strong>: advanced. The wheels are deliberately slid sideways.</li>
+          <li><strong>Grass stop</strong>: roll off onto grass and let the high rolling resistance slow you, with weight back and knees bent.</li>
+        </ul>
+        <div class="worked">
+          <span class="lbl">Worked example · stopping distances, braking distance = v² ÷ (2 × deceleration)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Gentle 1 m/s²</th><th>Good 2 m/s²</th><th>Strong 3.5 m/s²</th><th>+ reaction (0.7 s)</th><th>Same energy as a drop of</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 km/h</td><td class="num">3.9 m</td><td class="num">1.9 m</td><td class="num">1.1 m</td><td class="num">+1.9 m</td><td class="num">0.39 m</td></tr>
+              <tr><td class="num">15 km/h</td><td class="num">8.7 m</td><td class="num">4.3 m</td><td class="num">2.5 m</td><td class="num">+2.9 m</td><td class="num">0.88 m</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">15.4 m</td><td class="num">7.7 m</td><td class="num">4.4 m</td><td class="num">+3.9 m</td><td class="num">1.57 m</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">34.7 m</td><td class="num">17.4 m</td><td class="num">9.9 m</td><td class="num">+5.8 m</td><td class="num">3.54 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Decelerations are illustrative: a beginner's heel brake may manage ~1 m/s²; skilled skaters can do much better on good surfaces. The last column is the height you'd have to fall from to hit the ground at the same speed. At 30 km/h, hitting something is like falling from a first-floor window.</p>
+        </div>
+        <div class="callout warn"><h4>Rule of thumb</h4><p>Only skate as fast as you can stop in the clear space you can see ahead. On a path with pedestrians, at 20 km/h that's more than 11 metres even with a good brake.</p></div>
+        <details class="check"><summary>At 25 km/h with a 2 m/s² brake and 0.7 s reaction, what's the total stopping distance?</summary>
+        <p>v = 6.94 m/s. Reaction 6.94 × 0.7 ≈ 4.9 m; braking 48.2 ÷ 4 ≈ 12.1 m. Total ≈ <strong>17 m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-ramps">
+      <header><span class="chno">CH 6</span><h3>Hills, ramps &amp; falling</h3></header>
+      <p class="hook">Gravity is a free engine. It has no brakes.</p>
+      <div class="body">
+        <h4>Ramps: height becomes speed</h4>
+        <p>Rolling down from rest, potential energy (mgh) becomes kinetic energy (½mv²), so <span class="eq">v = √(2gh)</span>. Mass cancels: heavy and light skaters reach the same speed, if we ignore friction and air.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · speed at the bottom (no friction)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Drop height</th><th>Speed</th><th>In km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">3.1 m/s</td><td class="num">≈ 11 km/h</td></tr>
+              <tr><td class="num">1 m</td><td class="num">4.4 m/s</td><td class="num">≈ 16 km/h</td></tr>
+              <tr><td class="num">2 m</td><td class="num">6.3 m/s</td><td class="num">≈ 23 km/h</td></tr>
+              <tr><td class="num">3 m</td><td class="num">7.7 m/s</td><td class="num">≈ 28 km/h</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <h4>Long hills: the terminal speed</h4>
+        <p>On a long slope, you speed up until air drag plus rolling resistance balance the downhill pull of gravity. For our 70 kg upright skater (CdA 0.45, Crr 0.01), the speed you'd settle at with no braking is:</p>
+        <div class="table-scroll"><table class="data">
+          <thead><tr><th>Slope (gradient)</th><th>Terminal speed, no braking</th></tr></thead>
+          <tbody>
+            <tr><td class="num">3% (3 m drop per 100 m)</td><td class="num">≈ 26 km/h</td></tr>
+            <tr><td class="num">5%</td><td class="num">≈ 36 km/h</td></tr>
+            <tr><td class="num">8%</td><td class="num">≈ 48 km/h</td></tr>
+          </tbody>
+        </table></div>
+        <p>A 5% slope barely looks like a hill, but left alone it takes you to 36 km/h, faster than most recreational skaters can stop from safely. Heavier skaters go faster still, because drag is a smaller share of their weight. Control speed on hills from the top (slaloming turns, plough or brake), and walk down anything you're unsure of.</p>
+        <h4>Falling well</h4>
+        <p>From a standing centre-of-mass height of about 1 m, a fall reaches ≈ 4.4 m/s, before adding any forward speed. Instructors teach falling forward and low onto knee pads, then elbows, then wrist guards, rather than backwards onto the tailbone or head. Protective gear works by sliding and spreading the impact: a longer stopping time means a smaller peak force for the same change in momentum. Helmet, wrist guards, elbow and knee pads are standard requirements in instructor programmes and many clubs.</p>
+        <details class="check"><summary>A skate park bowl is 1.5 m deep. Ignoring friction, how fast are you moving at the bottom if you drop in from the top?</summary>
+        <p>v = √(2 × 9.81 × 1.5) ≈ <strong>5.4 m/s ≈ 19.5 km/h</strong>, and it all turns back into height on the far side.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. SKILL LEVELS =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · Skill levels</span>
+      <h2>The ladder, from first roll to the national championships</h2>
+      <p>Unlike diving or paragliding, roller and inline skating has <strong>no single international learner grading</strong>. So we've built a clearly labelled <strong>Kinetic milestone ladder</strong>, anchored to something real: the skills an instructor must be able to teach under the Inline Certification Program (ICP) Level 1. Alongside it, we show India's actual competitive pathway under the Roller Skating Federation of India (RSFI). Instructor certifications (ICP, Skate IA) are explained below the ladder.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 0 · Stand &amp; roll</span><b>Gear on, stance, first rolls</b><span class="iso">Kinetic milestone (not an official grade)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">Ready position</span><ul><li>Helmet, wrist guards, elbow and knee pads on</li><li>Stance and balance, rolling slowly with control, getting up after a fall, learning how to fall safely</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Centre of mass over a tiny base</span><ul><li>Balance: <a href="#ch-balance">Ch 3</a></li><li>Falling well: <a href="#ch-ramps">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">Beginner sessions</span><ul><li>Adult-beginner meetups (e.g. Delhi Skate Life) and academy beginner batches</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 1 · Stride, stop, turn</span><b>The fundamentals</b><span class="iso">Matches ICP Level 1 "teachable skills"</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">ICP Level 1 teachable skills</span><ul><li>Forward stride (stages 1–2), forward swizzle</li><li>Heel brake, spin stop, grass stop</li><li>A-frame turn, parallel turn</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Sideways push, v² braking</span><ul><li>Stride: <a href="#ch-stride">Ch 4</a></li><li>Stops: <a href="#ch-braking">Ch 5</a></li></ul></div>
+          <div class="ag na"><span class="an">In India</span><span class="cn">Academy beginner levels</span>Each academy uses its own level names. Ask which of these skills each level covers.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 2 · Confident recreational skater</span><b>Backwards, crossovers, T-stop</b><span class="iso">Matches ICP Level 1 "additional skills"</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">ICP Level 1 additional skills</span><ul><li>Forward stride 3, forward slalom, forward crossovers</li><li>Backward swizzle and backward movement; forward-to-backward transitions</li><li>T-stop, backward powerslide</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Lean, edges and wheel grip</span><ul><li>Turns: <a href="#ch-balance">Ch 3</a></li><li>Wheels and grip: <a href="#ch-wheels">Ch 2</a></li></ul></div>
+          <div class="ag"><span class="an">Instructor benchmark</span><span class="cn">ICP candidates</span><ul><li>To start ICP Level 1 instructor training you must already show "intermediate skating skills including backward skating, forward to backward transitions and crossovers"</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 3 · Roads, hills &amp; distance</span><b>Speed control in the real world</b><span class="iso">Kinetic milestone (not an official grade)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">Control at speed</span><ul><li>Reading surfaces, controlling speed on slopes with turns and brakes</li><li>Efficient long strides and a low tuck for distance</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Drag, terminal speed</span><ul><li>Power and drag: <a href="#ch-stride">Ch 4</a></li><li>Hills: <a href="#ch-ramps">Ch 6</a></li></ul></div>
+          <div class="ag na"><span class="an">In India</span><span class="cn">Coach-led</span>Learn hill and road skills from a coach, on closed or quiet routes, never in traffic.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 4 · Pick a discipline</span><b>Speed, hockey, artistic, freestyle, derby…</b><span class="iso">World Skate disciplines</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">World Skate disciplines</span><span class="cn">Roller &amp; inline</span><ul><li>Speed skating (track, road, marathon), skate cross</li><li>Artistic, inline freestyle (slalom), downhill</li><li>Inline hockey, rink hockey, roller derby</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">All six chapters</span><ul><li>Speed: <a href="#ch-stride">Ch 4</a> · freestyle and artistic: <a href="#ch-balance">Ch 3</a></li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">RSFI disciplines</span><ul><li>RSFI's state units field skaters in speed (quad and inline), roller hockey, inline freestyle, artistic, roller derby and more</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Milestone 5 · Compete</span><b>District → state → national</b><span class="iso">The RSFI pathway</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Registration</span><span class="cn">RSFI Skater Annual Registration</span><ul><li>Mandatory to take part in any Club, District, State, National or International championship (2026–27 cycle)</li></ul></div>
+          <div class="ag"><span class="an">Age categories</span><span class="cn">As used in RSFI events</span><ul><li>Cadet (5–7, 7–9, 9–11), Sub-Junior (11–14), Junior (14–17)</li><li>Senior (above 17), Master (above 30)</li></ul></div>
+          <div class="ag"><span class="an">Top events</span><span class="cn">Nationals &amp; beyond</span><ul><li>64th National Roller Skating Championships: 5–15 Dec 2026, Karnataka</li><li>Indian squad selected for the World Skate Games 2026, Paraguay</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subhead" style="margin-top:34px">Instructor certifications: how to recognise a trained coach</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Instructor certification</span><h4>ICP: Inline Certification Program</h4><p>Levels 1–3 for inline instructors. Level 1 covers teaching gliding, striding, stopping and turning, and is offered online and in person. Candidates must wear full protective gear and a heel brake, and pass theory (85%), practical teaching (80%) and skating-skills assessments.</p><a class="url" href="https://www.inlinecertificationprogram.org/icp-level-1" target="_blank" rel="noopener">inlinecertificationprogram.org</a></div>
+      <div class="card"><span class="tag">Instructor certification</span><h4>Skate IA: Skate Instructors Association</h4><p>Certifies inline and quad (roller) instructors: Level 1 Core Certification, Level 2A (Mastery of the Classroom), Level 2B (Advanced Technical Skills), plus Skate Park and Freestyle Slalom programmes, in person or online.</p><a class="url" href="https://www.skateia.org/programs" target="_blank" rel="noopener">skateia.org › programs</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>World Skate governs roller sports and skateboarding worldwide. In India, the Roller Skating Federation of India (RSFI) is the national body, working through state associations and district units that affiliate clubs and register skaters. Every body below was checked on its official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Skate</h4><p>International federation for roller sports and skateboarding. Its discipline commissions cover speed (track, road, marathon), skate cross, artistic, inline and rink hockey, downhill, freestyle, roller derby, scootering and skateboarding.</p><a class="url" href="https://www.worldskate.org/about/organisation/discipline-commission.html" target="_blank" rel="noopener">worldskate.org › disciplines</a></div>
+      <div class="card"><span class="tag">Instructor body</span><h4>ICP (Inline Certification Program)</h4><p>International instructor-certification system for inline skating, Levels 1–3, with standardised teaching progressions.</p><a class="url" href="https://www.inlinecertificationprogram.org/icp-level-1" target="_blank" rel="noopener">inlinecertificationprogram.org</a></div>
+      <div class="card"><span class="tag">Instructor body</span><h4>Skate IA</h4><p>Skate Instructors Association: certifications for inline and quad instructors, recognised internationally per the association, with a worldwide instructor search.</p><a class="url" href="https://www.skateia.org/programs" target="_blank" rel="noopener">skateia.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Roller Skating Federation of India (RSFI)</h4><p>"The governing body for skateboarding and roller sports in India." Runs the national championships (64th edition: 5–15 Dec 2026, hosted by the Karnataka Roller Skating Association), the Federation Cup (roller derby, Bikaner, Sep 2026) and the mandatory Skater Annual Registration.</p><a class="url" href="https://indiaskate.com/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      <div class="card"><span class="tag">State association (example)</span><h4>Delhi Skating Association</h4><p>The RSFI-affiliated registered state body for roller skating in Delhi. Its national-player lists show the disciplines and age groups used in RSFI events.</p><a class="url" href="https://indiaskate.com/delhi/" target="_blank" rel="noopener">indiaskate.com › Delhi</a></div>
+      <div class="card"><span class="tag">State association (example)</span><h4>Karnataka Roller Skating Association (KRSA)</h4><p>Host of the 64th National Roller Skating Championships (Dec 2026), per RSFI. Bengaluru clubs such as Sree Ram Skating Club list KRSA and the Bangalore District Roller Skating Association among the bodies recognising them.</p><a class="url" href="https://indiaskate.com/" target="_blank" rel="noopener">via indiaskate.com</a><span class="small muted">KRSA's own website wasn't checked.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to skate</span>
+      <h2>Pick your level. We'll point you to the rink.</h2>
+      <p>Real Indian academies, clubs and events, each checked on its own website or the RSFI's. For batch timings, locations and fees, follow the link to each academy's own site and confirm directly with them.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="skating">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Indoor and covered rinks<span class="ss-yr">Year-round</span></span><span class="ss-cells" role="img" aria-label="Indoor and covered rinks: peak all year"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c P" title="June: Peak">●</span><span class="ss-c P" title="July: Peak">●</span><span class="ss-c P" title="August: Peak">●</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c P" title="October: Peak">●</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Outdoors (most of India)</span><span class="ss-cells" role="img" aria-label="Outdoors (most of India): peak November to February; possible March to October"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="December: 64th National Roller Skating Championships (RSFI)">◆</span></span></div>
+  <ul class="ss-events">
+    <li><b>64th National Roller Skating Championships (RSFI)</b> · <span class="ss-when">5-15 Dec 2026</span> · Karnataka · <a href="https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-skating">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Outdoors, most of India</b>Cooler months and early mornings or evenings: less heat, fewer people. Avoid midday summer heat.</div>
+      <div><b>Monsoon</b>Wet surfaces cut wheel grip sharply and ruin bearings (<a href="#ch-rolling">Ch 1</a>). Skate indoors or wait for dry ground.</div>
+      <div><b>Indoor and covered rinks</b>All year. Ask your academy whether its rink is covered.</div>
+      <div><b>Competition season</b>RSFI's 64th Nationals run 5–15 Dec 2026, with district and state championships before them.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① First roll (adults welcome)</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-academy" id="tab-academy">② Lessons &amp; academies</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-disc" id="tab-disc">③ Disciplines &amp; clubs</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-comp" id="tab-comp">④ Competitions</button>
+    </div>
+
+    <!-- FIRST ROLL -->
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never skated, or haven't since childhood. Start on a smooth, flat, traffic-free surface with full protective gear, ideally with a coach or a beginner group. Read <a href="#ch-balance">Ch 3</a> and <a href="#ch-braking">Ch 5</a> first.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Do you teach stopping in the first session? Is the practice surface smooth and flat (a low Crr, <a href="#ch-rolling">Ch 1</a>)? Are helmets and pads mandatory? Quad or inline for a beginner, and what wheel hardness for outdoor use?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Delhi Skate Life</h4><span class="loc">Delhi</span></div><span class="badge">Adult beginners</span></div>
+          <p>Community-led inline skating sessions focused on adults, late starters and beginners. First-session skills: stance and balance, rolling with control, stopping (heel brake, T-stop), turning and falling safely. A helmet is "non-negotiable", with wrist, knee and elbow pads.</p>
+          <a class="url" href="https://delhiskatelife.wordpress.com/" target="_blank" rel="noopener">delhiskatelife.wordpress.com</a></div>
+        <div class="school"><div class="top"><div><h4>Chennai Skating Academy</h4><span class="loc">Chennai (Tamil Nadu)</span></div><span class="badge">Adults 16+</span></div>
+          <p>Classes by age, including a Seniors (16+) fitness and recreational track for teens and adults: speed variations, coordination drills and balance training. Group and personal sessions at locations across Chennai.</p>
+          <a class="url" href="https://chennaiskatingacademy.com/" target="_blank" rel="noopener">chennaiskatingacademy.com</a></div>
+        <div class="school"><div class="top"><div><h4>The Skate Academy</h4><span class="loc">Mumbai (Maharashtra)</span></div><span class="badge">All ages</span></div>
+          <p>Inline and roller skating for all ages and levels, founded by coach Ajay Shivlani (teaching since 1991). Also runs a corporate programme bringing skating to workplace teams.</p>
+          <a class="url" href="https://www.theskateacademy.in/" target="_blank" rel="noopener">theskateacademy.in</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Make your first session a weekend morning with a beginner group, then come back mid-week to practise just the heel brake for twenty minutes. Stopping is the skill that unlocks everything else.</p></div>
+    </div>
+
+    <!-- ACADEMIES -->
+    <div class="lvl-panel" id="lvl-academy" role="tabpanel" aria-labelledby="tab-academy">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can roll and stop and want structured coaching: better strides, crossovers, backward skating and confident turns (Milestones 1–3 on our ladder). Read <a href="#ch-stride">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the coach's background (competitive, ICP or Skate IA certified)? How do your levels map to skills like crossovers and T-stops? Do you coach both quad and inline?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>The Skate Academy</h4><span class="loc">Mumbai · several centres</span></div><span class="badge padi">Beginner → elite</span></div>
+          <p>Programmes from beginners to elite athletes at centres including Wadala, Bandra West, Ghatkopar East, Goregaon West, Andheri West and Santacruz West. Founder Ajay Shivlani's coaching career inspired the 2014 film <em>Hawaa Hawaai</em>.</p>
+          <a class="url" href="https://www.theskateacademy.in/" target="_blank" rel="noopener">theskateacademy.in</a></div>
+        <div class="school"><div class="top"><div><h4>Chennai Skating Academy</h4><span class="loc">Chennai</span></div><span class="badge padi">Quad &amp; inline</span></div>
+          <p>Structured levels by age, covering gliding, turning, footwork, stopping and speed drills, plus quad and inline speed training alongside competitive athletes. Running for over 8 years.</p>
+          <a class="url" href="https://chennaiskatingacademy.com/" target="_blank" rel="noopener">chennaiskatingacademy.com</a></div>
+        <div class="school"><div class="top"><div><h4>Sree Ram Skating Club</h4><span class="loc">Bengaluru (Karnataka)</span></div><span class="badge gov">RSFI-recognised</span></div>
+          <p>Established 2008 and recognised by the Karnataka government, RSFI, KRSA and the Bangalore District Roller Skating Association. Says it was one of the first rinks in India with granite flooring.</p>
+          <a class="url" href="https://www.sreeramasportsassociation.com/sree-ram-skating-club" target="_blank" rel="noopener">sreeramasportsassociation.com</a></div>
+      </div>
+    </div>
+
+    <!-- DISCIPLINES -->
+    <div class="lvl-panel" id="lvl-disc" role="tabpanel" aria-labelledby="tab-disc">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're a confident skater and want a discipline: speed, hockey, freestyle slalom, artistic or roller derby. Clubs affiliated through RSFI's district and state units can register you for competitions. Read <a href="#ch-wheels">Ch 2</a>: each discipline uses different wheels.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the club affiliated with the district or state association? What frame and wheel set-up does this discipline use? What protective gear is mandatory for hockey or derby?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Sree Ram Skating Club</h4><span class="loc">Bengaluru</span></div><span class="badge ssi">Roller &amp; inline hockey</span></div>
+          <p>Coaches who have competed at state and national level; the club highlights players who represented Karnataka in roller and inline hockey for 8–10 years, and encourages state, national and international entries.</p>
+          <a class="url" href="https://www.sreeramasportsassociation.com/sree-ram-skating-club" target="_blank" rel="noopener">sreeramasportsassociation.com</a></div>
+        <div class="school"><div class="top"><div><h4>Chennai Skating Academy</h4><span class="loc">Chennai</span></div><span class="badge ssi">Speed · artistic</span></div>
+          <p>Coaching in speed, artistic and roller sports, including competition-preparation batches with speed mechanics, obstacle tracks and race routines.</p>
+          <a class="url" href="https://chennaiskatingacademy.com/" target="_blank" rel="noopener">chennaiskatingacademy.com</a></div>
+        <div class="school"><div class="top"><div><h4>The Skate Academy</h4><span class="loc">Mumbai</span></div><span class="badge ssi">Speed</span></div>
+          <p>Says it has a record of training national and international champions, and has mentored skaters to world rankings.</p>
+          <a class="url" href="https://www.theskateacademy.in/" target="_blank" rel="noopener">theskateacademy.in</a></div>
+      </div>
+    </div>
+
+    <!-- COMPETITIONS -->
+    <div class="lvl-panel" id="lvl-comp" role="tabpanel" aria-labelledby="tab-comp">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to race, play or perform at district, state or national level. First step: the RSFI Skater Annual Registration, mandatory for every championship from club level up. Adults can compete too: RSFI events include Senior (above 17) and Master (above 30) categories.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which age category and discipline will I enter? What's the track surface (banked track, road, rink)? How do wheel hardness and size change for this surface (<a href="#ch-wheels">Ch 2</a>)?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>64th National Roller Skating Championships</b><span class="meta">5–15 Dec 2026 · Karnataka</span><p>Hosted by the Karnataka Roller Skating Association under RSFI, with separate schedules for disciplines such as artistic and inline freestyle.</p><a class="url" href="https://indiaskate.com/" target="_blank" rel="noopener">indiaskate.com</a></div>
+        <div class="site"><b>Federation Cup: Roller Derby</b><span class="meta">6–8 Sep 2026 · Bikaner, Rajasthan</span><p>RSFI's Federation Cup for roller derby, the full-contact team sport on quad skates.</p><a class="url" href="https://indiaskate.com/" target="_blank" rel="noopener">indiaskate.com</a></div>
+        <div class="site"><b>World Skate Games 2026</b><span class="meta">Paraguay</span><p>RSFI named an Indian squad after speed selection trials in Noida.</p><a class="url" href="https://www.worldskate.org/" target="_blank" rel="noopener">worldskate.org</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Before you commit to racing, ask your club whether you can watch a district or state championship as a spectator. Seeing skilled skaters lean through corners at speed is <a href="#ch-balance">Chapter 3</a> come to life.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

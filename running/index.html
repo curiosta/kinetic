@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Running, road to high altitude: the science, explained | Kinetic</title>
+<meta name="description" content="Take the running science challenge, then learn the physiology: running economy, ground forces, VO2 max, energy systems, altitude and heat. Plus the 5K-to-ultra ladder with real qualification rules, governing bodies, and verified Indian races from Mumbai to the Ladakh Marathon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Running</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Race ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to run</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Road, trail &amp; high-altitude running</span>
+      <h1>From your first 5K to Khardung La, <em>it's all physiology.</em></h1>
+      <p class="lede">Every stride is a small collision with the ground, every kilometre a bill paid in oxygen, and every race at altitude a negotiation with thin air. Learn running economy, ground forces, VO₂ max, fuel, altitude and heat with real numbers, then pick your race.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>easy jog</span><span class="bar"></span><span>race pace</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 2,950 kcal</span><span class="l">for a 70 kg runner's full marathon</span></div>
+      <div class="hero-stat"><span class="n">2–3×</span><span class="l">body weight through your leg at each footstrike</span></div>
+      <div class="hero-stat"><span class="n">≈ 65%</span><span class="l">of sea-level air pressure in Leh; about half at Khardung La</span></div>
+      <div class="hero-stat"><span class="n">≈ 1 kg/h</span><span class="l">of sweat to evaporate at an easy 10 km/h</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>Do you know what your body is doing at race pace?</h2>
+      <p>15 questions on the science of running, from the footstrike to the high passes. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Your training log</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification, race qualification, medical clearance or fitness assessment.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters, from the first stride to the highest pass</h2>
+      <p>Each chapter takes one idea and follows it onto the road, with worked numbers you can check on a calculator. Our reference runner weighs 70 kg and has a VO₂ max of 45 mL/kg/min. Energy and oxygen costs are textbook round values for adults; real ones vary between people, shoes, surfaces and conditions. This page is for adults; it is not medical advice.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-economy"><span class="n">CHAPTER 1</span><span class="t">Running economy &amp; energy cost</span><span class="d">1 kcal per kg per km, and why it barely depends on speed</span></a>
+      <a href="#ch-forces"><span class="n">CHAPTER 2</span><span class="t">Ground forces, cadence &amp; stride</span><span class="d">Why each footstrike carries 2–3× your weight</span></a>
+      <a href="#ch-vo2"><span class="n">CHAPTER 3</span><span class="t">VO₂ max, thresholds &amp; pacing</span><span class="d">Your aerobic ceiling, and how close you can run to it</span></a>
+      <a href="#ch-fuel"><span class="n">CHAPTER 4</span><span class="t">Energy systems &amp; the wall</span><span class="d">Phosphocreatine, glycolysis, aerobic, and glycogen</span></a>
+      <a href="#ch-altitude"><span class="n">CHAPTER 5</span><span class="t">Altitude: thin air &amp; AMS</span><span class="d">Partial pressure, acclimatisation and the Ladakh rules</span></a>
+      <a href="#ch-heat"><span class="n">CHAPTER 6</span><span class="t">Heat, sweat &amp; hydration</span><span class="d">Watts of heat, kilograms of sweat, and humidity</span></a>
+    </nav>
+
+    <!-- PACE & ALTITUDE LAB -->
+    <div class="lab" id="run-lab">
+      <span class="eyebrow">Interactive · Pace &amp; Altitude Lab</span>
+      <h3>Pick a race, a pace and an altitude, and see what your body has to deliver</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An illustrative model: energy ≈ 1 kcal per kg per km, oxygen cost ≈ 200 mL per kg per km, cadence 170 steps/min, peak foot force ≈ 2.5 × body weight, and a rule-of-thumb VO₂ max loss of about 7% per 1,000 m above 1,000 m. Standard-atmosphere air pressure. For learning only; it is not a training, medical or acclimatisation tool.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="rn-pace">Pace</label><input type="range" id="rn-pace" min="180" max="480" step="5" value="360"><output id="rn-pace-o">6:00 /km</output></div>
+        <div class="ctl"><label for="rn-mass">Body mass</label><input type="range" id="rn-mass" min="40" max="110" step="1" value="70"><output id="rn-mass-o">70 kg</output></div>
+        <div class="ctl"><label for="rn-vo2">Your VO₂ max at sea level (mL/kg/min)</label><input type="range" id="rn-vo2" min="30" max="75" step="1" value="45"><output id="rn-vo2-o">45</output></div>
+        <div class="ctl"><label>Race</label><div class="seg" id="rn-dist"><button type="button" data-km="5" aria-pressed="false">5K</button><button type="button" data-km="10" aria-pressed="false">10K</button><button type="button" data-km="21.0975" aria-pressed="true">Half</button><button type="button" data-km="42.195" aria-pressed="false">Marathon</button></div><span></span></div>
+        <div class="ctl"><label>Altitude</label><div class="seg" id="rn-alt"><button type="button" data-alt="0" aria-pressed="true">Sea level (Mumbai)</button><button type="button" data-alt="3505" aria-pressed="false">Leh · 3,505 m</button><button type="button" data-alt="5370" aria-pressed="false">Khardung La · 5,370 m</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Finish time</span><span class="v" id="rn-time">2:06:35</span><span class="s">pace × distance</span></div>
+        <div class="lab-card"><span class="k">Energy used</span><span class="v" id="rn-energy">1,477 kcal</span><span class="s">Ch 1 · ≈ 1 kcal/kg/km</span></div>
+        <div class="lab-card"><span class="k">Steps</span><span class="v" id="rn-steps">≈ 21,500</span><span class="s">Ch 2 · 170 per minute</span></div>
+        <div class="lab-card"><span class="k">Peak force per footstrike</span><span class="v" id="rn-grf">1,717 N</span><span class="s">Ch 2 · ≈ 2.5 × body weight</span></div>
+        <div class="lab-card"><span class="k">Oxygen this pace needs</span><span class="v" id="rn-need">33.3</span><span class="s">Ch 3 · mL/kg/min</span></div>
+        <div class="lab-card"><span class="k">Your VO₂ max here</span><span class="v" id="rn-vmax">45.0</span><span class="s">Ch 5 · altitude rule of thumb</span></div>
+        <div class="lab-card"><span class="k">Share of your ceiling</span><span class="v" id="rn-pct">74%</span><span class="s" id="rn-pct-s">Ch 3 · need ÷ ceiling</span></div>
+        <div class="lab-card"><span class="k">Air pressure vs sea level</span><span class="v" id="rn-press">100.0%</span><span class="s">Ch 5 · O₂ partial pressure <span id="rn-po2">21.2 kPa</span></span></div>
+        <div class="lab-card"><span class="k">Sweat to evaporate</span><span class="v" id="rn-sweat">0.96 kg/h</span><span class="s">Ch 6 · if every drop evaporates</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="rn-bar"></span></div>
+      <p class="fine">Bar = share of your aerobic ceiling (0–110%). Real numbers vary a lot between people: altitude effects in particular differ by individual and improve with acclimatisation. Treat every number as a teaching example, and follow your race's acclimatisation rules and medical advice, not this lab.</p>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-economy">
+      <header><span class="chno">CH 1</span><h3>Running economy &amp; energy cost</h3></header>
+      <p class="hook">A kilometre costs about the same whether you jog it or race it. Racing just pays faster.</p>
+      <div class="body">
+        <p>A long-standing rule of thumb from exercise physiology: running on the flat costs about <strong>1 kcal per kilogram of body mass per kilometre</strong> (≈ 4.2 kJ/kg/km), and the figure changes surprisingly little with speed. In oxygen terms, that's about <strong>200 mL of oxygen per kg per km</strong>; each litre of oxygen you use releases about 5 kcal from food, so the two rules agree. Individual runners vary by roughly ±10–20%: that spread is <strong>running economy</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · energy for our 70 kg reference runner</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Race</th><th>Distance</th><th>Energy (≈ 1 kcal/kg/km)</th><th>Oxygen used</th></tr></thead>
+            <tbody>
+              <tr><td>5K</td><td class="num">5 km</td><td class="num">≈ 350 kcal</td><td class="num">≈ 70 L</td></tr>
+              <tr><td>10K</td><td class="num">10 km</td><td class="num">≈ 700 kcal</td><td class="num">≈ 140 L</td></tr>
+              <tr><td>Half marathon</td><td class="num">21.1 km</td><td class="num">≈ 1,480 kcal</td><td class="num">≈ 295 L</td></tr>
+              <tr><td>Marathon</td><td class="num">42.2 km</td><td class="num">≈ 2,950 kcal</td><td class="num">≈ 590 L</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Oxygen = 200 mL × 70 kg × distance. For the marathon: 0.2 × 70 × 42.2 ≈ 590 litres of oxygen, about 2,800 litres of air's worth of oxygen at sea level, all drawn in through your lungs.</p>
+        </div>
+        <h4>What changes your economy</h4>
+        <ul>
+          <li><strong>Training:</strong> years of running, plus strength and plyometric work, generally improve economy.</li>
+          <li><strong>Technique and springiness:</strong> tendons such as the Achilles store and return elastic energy each stride (<a href="#ch-forces">Ch 2</a>).</li>
+          <li><strong>Shoes:</strong> lighter shoes cost less to swing, and studies of some modern foam-and-plate racing shoes report a few per cent better economy for many runners. The size of the effect varies by person.</li>
+          <li><strong>Hills, wind and surface:</strong> uphill costs extra; trails and sand cost more than smooth roads; a headwind adds air drag, which is small for most runners at everyday paces but grows with speed squared.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 70 kg runner's 10K costs about 700 kcal, roughly what's in three or four plates of rice. A marathon costs more than most people eat in a day.</div></div>
+        <details class="check"><summary>A 55 kg runner and an 85 kg runner both finish a marathon. Roughly how much energy did each use?</summary>
+        <p>55 × 42.2 ≈ <strong>2,320 kcal</strong>; 85 × 42.2 ≈ <strong>3,590 kcal</strong>. Energy scales with the mass you carry.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-forces">
+      <header><span class="chno">CH 2</span><h3>Ground forces, cadence &amp; stride</h3></header>
+      <p class="hook">Running is a series of short collisions. The shorter the contact, the harder the hit.</p>
+      <div class="body">
+        <p>Walking always keeps one foot on the ground. Running has a <strong>flight phase</strong>, when both feet are off it. Over a whole stride you don't accelerate up or down on average, so the ground's average push must equal your weight (Newton's second law). But the ground only gets to push while your foot is down, so during contact the force has to be much larger.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · cadence 170 steps/min, so each step takes 60 ÷ 170 ≈ 0.353 s</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Ground contact time</th><th>Average force during contact</th><th>Peak force (half-sine shape)</th><th>For 70 kg (687 N)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.30 s (easy jog)</td><td class="num">≈ 1.18 × BW</td><td class="num">≈ 1.85 × BW</td><td class="num">≈ 1,270 N</td></tr>
+              <tr><td class="num">0.25 s</td><td class="num">≈ 1.41 × BW</td><td class="num">≈ 2.22 × BW</td><td class="num">≈ 1,530 N</td></tr>
+              <tr><td class="num">0.20 s (faster running)</td><td class="num">≈ 1.76 × BW</td><td class="num">≈ 2.77 × BW</td><td class="num">≈ 1,900 N</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Average during contact = body weight × step time ÷ contact time. A force curve shaped like half a sine wave peaks at π/2 ≈ 1.57 times its average. This simple model lands right in the 2–3 × body weight range measured in running studies (walking is about 1.2 ×).</p>
+        </div>
+        <h4>Springs in your legs</h4>
+        <p>When your foot lands, tendons (especially the Achilles) and the arch of the foot stretch and store elastic energy, then release much of it as you push off, like a bouncing ball. That's a big part of why running is cheaper than its forces suggest. Fatigue, very stiff or very soft surfaces, and long downhills change how well this works.</p>
+        <h4>Cadence and step length</h4>
+        <p>Speed = cadence × step length. At 5:00/km (200 m per minute) and 170 steps per minute, each step is about 1.18 m: about 36,000 steps in a marathon. Many coaches suggest a slightly quicker cadence for runners who overstride (landing with the foot far ahead of the body), and studies find that modest cadence increases reduce loading at the knee and hip. There's no single "correct" footstrike: changing how you land mostly shifts load between the knee and hip and the calf and Achilles, so change gradually.</p>
+        <div class="callout note"><h4>Downhill bites later</h4><p style="margin:0">Running downhill makes the thigh muscles brake each step while lengthening (eccentric contractions). That's what causes the deep soreness after hilly races, including long mountain descents such as the drop from Khardung La. Train on descents before a hilly race.</p></div>
+        <details class="check"><summary>You speed up to 4:30/km keeping 170 steps per minute. What's your new step length?</summary>
+        <p>4:30/km = 1,000 m ÷ 4.5 min ≈ 222 m/min. Step length = 222 ÷ 170 ≈ <strong>1.31 m</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-vo2">
+      <header><span class="chno">CH 3</span><h3>VO₂ max, thresholds &amp; pacing</h3></header>
+      <p class="hook">Your aerobic ceiling sets the limit. Economy and pacing decide how close you live to it.</p>
+      <div class="body">
+        <p><strong>VO₂ max</strong> is the most oxygen your body can take up and use per minute, usually in mL per kg per minute. It depends on how much blood your heart pumps and how well your muscles extract oxygen. Many untrained adults are in the 30s to 40s; elite endurance runners can exceed 70. Training raises it, especially in the first months; age gradually lowers it.</p>
+        <p>The oxygen a pace needs is simply <span class="eq">economy × speed</span>. With 200 mL/kg/km:</p>
+        <div class="worked">
+          <span class="lbl">Worked example · oxygen needed vs a VO₂ max of 45 (sea level)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Pace</th><th>Speed</th><th>Oxygen needed</th><th>Share of VO₂ max 45</th></tr></thead>
+            <tbody>
+              <tr><td class="num">7:00 /km</td><td class="num">8.6 km/h</td><td class="num">≈ 28.6 mL/kg/min</td><td class="num">≈ 63%</td></tr>
+              <tr><td class="num">6:00 /km</td><td class="num">10 km/h</td><td class="num">≈ 33.3</td><td class="num">≈ 74%</td></tr>
+              <tr><td class="num">5:00 /km</td><td class="num">12 km/h</td><td class="num">40.0</td><td class="num">≈ 89%</td></tr>
+              <tr><td class="num">4:00 /km</td><td class="num">15 km/h</td><td class="num">50.0</td><td class="num">≈ 111%: not sustainable</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <h4>Thresholds: how close can you run to the ceiling?</h4>
+        <p>As effort rises, there's a point where lactate starts building up in the blood faster than your body can clear it. Above this <strong>lactate threshold</strong>, fatigue accumulates quickly. Trained runners can hold a higher share of their VO₂ max before they reach it, so they can race longer at a higher percentage. Very roughly, short races are run near the top of the range and marathons well below it.</p>
+        <h4>Pacing</h4>
+        <p>Because oxygen cost rises with speed and anything above threshold accumulates fatigue, an <strong>even pace</strong> (or a slightly faster second half) is usually the most economical way to race. Starting too fast borrows from later and spends carbohydrate quickly (<a href="#ch-fuel">Ch 4</a>). Heat and altitude lower the pace you can hold at the same effort (<a href="#ch-altitude">Ch 5</a>, <a href="#ch-heat">Ch 6</a>).</p>
+        <details class="check"><summary>A runner with a VO₂ max of 52 races at 5:00/km. What share of their ceiling is that?</summary>
+        <p>Need = 200 × (1 ÷ 5) = 40 mL/kg/min. 40 ÷ 52 ≈ <strong>77%</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-fuel">
+      <header><span class="chno">CH 4</span><h3>Energy systems &amp; the wall</h3></header>
+      <p class="hook">Three engines, one tank that runs low, and a wall at around 30 km.</p>
+      <div class="body">
+        <p>Muscles run on ATP, and they only hold a few seconds' worth, so three systems keep refilling it:</p>
+        <div class="worked">
+          <span class="lbl">The three energy systems (approximate time scales)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>System</th><th>Fuel</th><th>Dominates</th><th>Running example</th></tr></thead>
+            <tbody>
+              <tr><td>Phosphocreatine</td><td>Stored creatine phosphate</td><td class="num">first ~10 s</td><td>A sprint to the finish line</td></tr>
+              <tr><td>Anaerobic glycolysis</td><td>Glycogen/glucose, without oxygen</td><td class="num">~10 s to ~2 min</td><td>A 400 m or 800 m race</td></tr>
+              <tr><td>Aerobic metabolism</td><td>Carbohydrate and fat, with oxygen</td><td class="num">beyond ~2 min</td><td>Everything from 5K to ultras</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The systems overlap; none switches off. But a 5K is already mostly aerobic, and a marathon is overwhelmingly so.</p>
+        </div>
+        <h4>Why the wall arrives</h4>
+        <p>A well-fed runner stores very roughly 400–500 g of glycogen in muscle and about 100 g in the liver: around 2,000 kcal. A 70 kg runner's marathon costs about 2,950 kcal (<a href="#ch-economy">Ch 1</a>), and at race pace a large share of it comes from carbohydrate. Fat stores are enormous, but fat releases energy more slowly and needs more oxygen per kcal. When glycogen runs low, often around 30–35 km, the pace you can hold drops sharply: <strong>the wall</strong>.</p>
+        <p>Two levers delay it: start with full stores (carbohydrate-rich meals in the days before), and take carbohydrate during the race. Sports-nutrition guidance commonly suggests about 30–60 g of carbohydrate per hour for long races, and up to about 90 g per hour for some athletes using mixed sugars. Practise race-day fuelling in training: guts adapt too.</p>
+        <details class="check"><summary>You start with 2,000 kcal of glycogen and burn carbohydrate at 600 kcal/h at marathon pace. Without eating, roughly when do you run low?</summary>
+        <p>2,000 ÷ 600 ≈ <strong>3.3 hours</strong>. For a 4-hour marathoner, that's around the 33–35 km mark: right where the wall is reported. 45 g of carbohydrate an hour (≈ 180 kcal) pushes it well past the finish.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-altitude">
+      <header><span class="chno">CH 5</span><h3>Altitude: thin air, acclimatisation &amp; AMS</h3></header>
+      <p class="hook">The air is still 21% oxygen. There's just less air.</p>
+      <div class="body">
+        <p>What drives oxygen into your blood is its <strong>partial pressure</strong>: about 21% of the total air pressure. Total pressure falls with height, so every breath carries fewer oxygen molecules, even though the percentage hasn't changed.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · International Standard Atmosphere</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Place</th><th>Altitude</th><th>Air pressure</th><th>vs sea level</th><th>Oxygen partial pressure</th></tr></thead>
+            <tbody>
+              <tr><td>Mumbai</td><td class="num">sea level</td><td class="num">101.3 kPa</td><td class="num">100%</td><td class="num">21.2 kPa</td></tr>
+              <tr><td>(for comparison)</td><td class="num">2,000 m</td><td class="num">79.5 kPa</td><td class="num">≈ 78%</td><td class="num">16.7 kPa</td></tr>
+              <tr><td>Leh</td><td class="num">≈ 3,505 m (11,500 ft)</td><td class="num">65.7 kPa</td><td class="num">≈ 65%</td><td class="num">13.8 kPa</td></tr>
+              <tr><td>Khardung La top</td><td class="num">≈ 5,370 m (17,618 ft)</td><td class="num">51.4 kPa</td><td class="num">≈ 51%</td><td class="num">10.8 kPa</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The Ladakh Marathon organisers describe it simply: oxygen drops to about 50% at Khardung La top. Real pressure also varies with weather and season by a few per cent.</p>
+        </div>
+        <h4>What your body does about it</h4>
+        <p>Within hours you breathe faster and deeper, and your heart rate rises at any given effort. Over days, your kidneys rebalance your blood chemistry so you can keep breathing harder. Over weeks, your body makes more red blood cells. That's <strong>acclimatisation</strong>, and it takes time whatever your fitness: the Ladakh organisers stress it is "not determined by individual fitness levels". Even acclimatised, your aerobic ceiling is lower up high: as a rough rule of thumb, VO₂ max falls by several per cent per 1,000 m above about 1,000 m (the Lab uses 7%), so the same pace feels much harder.</p>
+        <div class="worked">
+          <span class="lbl">The Ladakh Marathon's own rules (13th edition, 2026)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Race</th><th>Arrive in Leh at least</th><th>Notes from the organisers</th></tr></thead>
+            <tbody>
+              <tr><td>5 km Run for Fun, 11.2 km Run</td><td class="num">7 days before</td><td>Even the shortest race is "an altogether different experience" at 11,500 ft</td></tr>
+              <tr><td>Half marathon, marathon</td><td class="num">10 days before</td><td>Bib collection in person on 5–6 Sep 2026</td></tr>
+              <tr><td>Khardung La Challenge (72 km), Silk Route Ultra (122 km)</td><td class="num">15 days before (mandatory)</td><td>Bib collection 29–30 Aug 2026; medical check of vitals at the start; supplementary oxygen not permitted</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The organisers also advise complete rest on day 1, going slow, staying hydrated, avoiding alcohol for the first few days, monitoring your oxygen saturation, and visiting SNM Hospital in Leh if you feel any signs of altitude sickness. Their page mentions that many people take Diamox (acetazolamide); it's a prescription medicine, so discuss it with your doctor.</p>
+        </div>
+        <h4>Altitude sickness</h4>
+        <p><strong>Acute mountain sickness (AMS)</strong> usually begins within hours to a day of arriving high: headache with nausea, fatigue, dizziness or poor sleep. Mild AMS often settles with rest and no further ascent. Two rarer conditions are emergencies: <strong>HAPE</strong> (fluid in the lungs: breathlessness at rest, cough, falling exercise tolerance) and <strong>HACE</strong> (swelling of the brain: confusion, unsteadiness, drowsiness). Both need immediate descent and medical care. Flying straight into Leh puts you at 3,500 m in an hour, with no gradual climb, which is exactly why the organisers ask for 7–15 days on the ground first.</p>
+        <details class="check"><summary>Using the Lab's rule of thumb, what's the VO₂ max at Leh of a runner who has 50 at sea level? And what share of it does a 6:00/km pace need?</summary>
+        <p>50 × (1 − 0.07 × 2.505) ≈ <strong>41.2</strong>. 6:00/km needs ≈ 33.3, so ≈ <strong>81%</strong>, against 67% at sea level. Same pace, much harder.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-heat">
+      <header><span class="chno">CH 6</span><h3>Heat, sweat &amp; hydration</h3></header>
+      <p class="hook">Most of the energy you burn becomes heat. Sweat only helps when it evaporates.</p>
+      <div class="body">
+        <p>Muscles turn only around a fifth to a quarter of their energy into movement; the rest becomes heat. Our 70 kg runner at 10 km/h burns about 700 kcal per hour ≈ 810 W, so roughly <strong>650 W of heat</strong>: like a small room heater inside you. Your body sheds it mainly by evaporating sweat, which takes about 2.4 MJ per kilogram.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · sweat needed if all of it evaporates (80% of energy as heat)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Runner</th><th>Speed</th><th>Heat produced</th><th>Sweat to evaporate</th></tr></thead>
+            <tbody>
+              <tr><td>55 kg</td><td class="num">10 km/h</td><td class="num">≈ 510 W</td><td class="num">≈ 0.76 kg/h</td></tr>
+              <tr><td>70 kg</td><td class="num">10 km/h</td><td class="num">≈ 650 W</td><td class="num">≈ 0.96 kg/h</td></tr>
+              <tr><td>70 kg</td><td class="num">12 km/h</td><td class="num">≈ 780 W</td><td class="num">≈ 1.16 kg/h</td></tr>
+              <tr><td>85 kg</td><td class="num">12 km/h</td><td class="num">≈ 950 W</td><td class="num">≈ 1.40 kg/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Heavier and faster runners make more heat. Sweat that drips off cools you very little, so real sweat losses in humid heat are often higher than these numbers.</p>
+        </div>
+        <h4>Humidity is the real enemy</h4>
+        <p>Evaporation needs dry air to carry vapour away. On a humid coastal morning, you sweat just as hard but cool less, so your core temperature and heart rate climb at the same pace. Indian city races start early in the cooler months for this reason: the Vedanta Delhi Half Marathon is in October and the Tata Mumbai Marathon in January. Heat adaptation (training gradually in warm conditions over a week or two) increases sweat rate and lowers heart rate in the heat.</p>
+        <h4>Hydration: neither too little nor too much</h4>
+        <p>Losing a lot of body water raises heart rate and body temperature. But drinking far more than you sweat, especially plain water over many hours, can dilute blood sodium (<strong>hyponatraemia</strong>), which is dangerous too. Weigh yourself before and after long training runs to learn your own sweat rate, and drink to a plan. At high altitude the air is cold and very dry, so you lose extra water just by breathing hard; the Ladakh organisers make hydration packs mandatory for ultra runners.</p>
+        <div class="callout warn"><h4>Heat illness is an emergency</h4><p style="margin:0">Confusion, stopping sweating, collapse or a very high body temperature during a run can mean heat stroke. Stop, get into shade, cool the person rapidly, and call the race medical team or emergency services.</p></div>
+        <details class="check"><summary>You weigh 70.0 kg before an hour's run and 68.9 kg after, having drunk 0.4 L. What was your sweat loss?</summary>
+        <p>Mass lost 1.1 kg + 0.4 kg drunk = <strong>about 1.5 L of sweat per hour</strong>, higher than the "all evaporates" estimate, as expected when some sweat drips off.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. RACE LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The race ladder</span>
+      <h2>5K → 10K → half → full → ultra → high altitude</h2>
+      <p>Running has no licence or grading. The real "certificates" are <strong>timing certificates</strong> from your previous races, and India's big events increasingly ask for them. Below, each step shows the real entry rules we found on the organisers' own pages, so you can see what the next rung asks of you. Courses themselves get certified too: see "What makes a course official" below the ladder.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · 5K &amp; fun runs</span><b>Run 5 km without stopping</b><span class="iso">No qualification needed</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Example events</span><span class="cn">Short, untimed or lightly timed</span><ul><li>Ladakh Marathon's 5 km Run for Fun (minimum age 12, not timed)</li><li>TCS World 10K Bengaluru's Majja Run (4.2 km)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Economy and forces</span><ul><li>Energy cost: <a href="#ch-economy">Ch 1</a></li><li>Building up load gradually: <a href="#ch-forces">Ch 2</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Run-walk is fine. Build up time on your feet gradually over several weeks, and keep most runs at an easy, conversational pace.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · 10K</span><b>Your first timed race</b><span class="iso">Timing certificates start to matter</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real entry rules</span><span class="cn">TCS World 10K Bengaluru</span><ul><li>From 2026, the Open 10K accepts only entrants who submit a valid timing certificate, per the event's qualification criteria</li><li>By contrast, the Vedanta Delhi Half Marathon's Open 10K needs no prior timing certificate (minimum age 15); a certificate only sets your start wave</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">VO₂ max and pacing</span><ul><li><a href="#ch-vo2">Ch 3</a>: a 10K is run near the top of your aerobic range</li></ul></div>
+          <div class="ag"><span class="an">At altitude</span><span class="cn">Ladakh 11.2 km Run</span><ul><li>Two 10 km races under 1 h 45 min, or one half marathon under 3 h 30 min, in the eligibility window</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Half marathon</span><b>21.0975 km</b><span class="iso">Entry against a timing certificate</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real entry rules</span><span class="cn">Vedanta Delhi Half Marathon</span><ul><li>Entry only against a timing certificate (except limited charity places); minimum age 18</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Threshold and fuel</span><ul><li>Pacing below threshold: <a href="#ch-vo2">Ch 3</a></li><li>Fuel for 2 hours: <a href="#ch-fuel">Ch 4</a></li></ul></div>
+          <div class="ag"><span class="an">At altitude</span><span class="cn">Ladakh Half Marathon</span><ul><li>One half marathon under 3 h, or two 10 km races under 1 h 30 min, in the eligibility window; minimum age 16</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Marathon</span><b>42.195 km</b><span class="iso">Certified courses, timing certificates, start waves</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real entry rules</span><span class="cn">Tata Mumbai Marathon</span><ul><li>Entry only against a timing certificate; your latest, fastest certificate decides your start wave; minimum age 18</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">The wall and the heat</span><ul><li>Glycogen and fuelling: <a href="#ch-fuel">Ch 4</a></li><li>Humidity: <a href="#ch-heat">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">At altitude</span><span class="cn">Ladakh Marathon</span><ul><li>One marathon under 6 h (after 1 Jan 2025), or two half marathons under 3 h; minimum age 18</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Trail &amp; ultra</span><b>Beyond the marathon, often off-road</b><span class="iso">Proof of marathon or ultra finishes; ITRA points for trail</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real entry rules</span><span class="cn">Tata Ultra Marathon (Lonavala)</span><ul><li>35 km: a half marathon under 3 h; 50 km: a full marathon under 6 h; certificates from the 18 months before the race; minimum age 18; head torch mandatory</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything, plus descents</span><ul><li>Eccentric loading on downhills: <a href="#ch-forces">Ch 2</a></li><li>Fat and carbohydrate over many hours: <a href="#ch-fuel">Ch 4</a></li></ul></div>
+          <div class="ag"><span class="an">Trail points</span><span class="cn">ITRA</span><ul><li>The International Trail Running Association awards points to trail races by difficulty; the Ladakh ultras accept ITRA points as one route to eligibility</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · High-altitude ultra</span><b>Khardung La Challenge (72 km) → Silk Route Ultra (122 km)</b><span class="iso">The Ladakh Marathon's toughest rungs</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Khardung La Challenge</span><span class="cn">Any one of eight routes, e.g.</span><ul><li>A 2025 Ladakh Marathon (42 km) finish under 6 h</li><li>A full marathon under 5 h plus a 50 km ultra under 6 h</li><li>8 ITRA points from two ultra-trail races; minimum age 20; max 300 runners</li></ul></div>
+          <div class="ag"><span class="an">Silk Route Ultra</span><span class="cn">Any one of six routes, e.g.</span><ul><li>A 2025 Khardung La Challenge finish under 13 h</li><li>An earlier KC finish under 13 h plus a 100 km ultra under 14 h</li><li>Minimum age 24; max 100 runners; 22-hour final cut-off</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Altitude above all</span><ul><li><a href="#ch-altitude">Ch 5</a>: 15 days in Leh first, vitals checked at the start, no supplementary oxygen</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subhead" style="margin-top:34px">What makes a course (and a time) official</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Course measurement</span><h4>AIMS–World Athletics measurement</h4><p>AIMS and World Athletics accept only the calibrated bicycle method for measuring road races, by accredited Grade A or B measurers. For world records, a course may drop no more than 1 m per km and the start and finish may be no more than 50% of the distance apart. The Ladakh Marathon says it is AIMS-certified.</p><a class="url" href="https://aims-worldrunning.org/course-measurement.html" target="_blank" rel="noopener">aims-worldrunning.org › measurement</a></div>
+      <div class="card"><span class="tag">Race labels</span><h4>World Athletics Label road races</h4><p>World Athletics grants labels to road races meeting its standards. The TCS World 10K Bengaluru describes itself as a World Athletics Gold Label Road Race.</p><a class="url" href="https://worldathletics.org/competitions/world-athletics-label-road-races" target="_blank" rel="noopener">worldathletics.org › label road races</a></div>
+      <div class="card"><span class="tag">Qualifying times abroad</span><h4>Boston Marathon qualifying standards</h4><p>A real example of a qualifying ladder: for the 2027 race, men 18–34 need 2:55:00 and women 3:25:00, with slower standards by age group. Times must come from a course certified by USATF, AIMS or a national governing body, and meeting the standard doesn't guarantee entry (the 2027 cut-off was 5 min 17 s faster than standard).</p><a class="url" href="https://www.baa.org/races/boston-marathon/qualify" target="_blank" rel="noopener">baa.org › qualify</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>World Athletics governs athletics worldwide, including road running, and works with AIMS on course measurement. Trail running has its own points system through ITRA. In India, the Athletics Federation of India (AFI) is the national body. Every body below was checked on its official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Athletics</h4><p>The international federation for athletics, including road running and the marathon. Runs the Label road-race programme and recognises road records on courses measured to AIMS–World Athletics standards.</p><a class="url" href="https://worldathletics.org/" target="_blank" rel="noopener">worldathletics.org</a></div>
+      <div class="card"><span class="tag">Road-race association</span><h4>AIMS (Association of International Marathons and Distance Races)</h4><p>Partners with World Athletics on course measurement; accurate measurement is a basic requirement of AIMS membership. The Ladakh Marathon's non-ultra races follow AIMS rules.</p><a class="url" href="https://aims-worldrunning.org/course-measurement.html" target="_blank" rel="noopener">aims-worldrunning.org</a></div>
+      <div class="card"><span class="tag">Trail running</span><h4>ITRA (International Trail Running Association)</h4><p>Rates trail races and awards ITRA points by difficulty. Indian ultras, including the Ladakh Marathon's two ultra races, accept ITRA points as proof of experience.</p><a class="url" href="https://itra.run/" target="_blank" rel="noopener">itra.run</a></div>
+      <div class="card"><span class="tag">Marathon series</span><h4>Abbott World Marathon Majors</h4><p>A series of eight major marathons across the globe, with age-group world rankings for runners aged 40+ across more than 350 events.</p><a class="url" href="https://www.worldmarathonmajors.com/" target="_blank" rel="noopener">worldmarathonmajors.com</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Athletics Federation of India (AFI)</h4><p>India's national governing body for athletics, based in New Delhi. It publishes a list of AFI-approved races and marathons, and is among the bodies supporting the TCS World 10K Bengaluru.</p><a class="url" href="https://indianathletics.in/approved-races-marathons/" target="_blank" rel="noopener">indianathletics.in › approved races</a><span class="small muted">The approved-races page returned no list to our checker; check it directly.</span></div>
+      <div class="card"><span class="tag">High-altitude organiser</span><h4>High Altitude Sports Foundation Ladakh</h4><p>The not-for-profit organiser of the Ladakh Marathon, which it calls the world's highest marathon. It sets the eligibility, acclimatisation and medical rules for its six races; the two ultras run under the Race Director's own rules.</p><a class="url" href="https://ladakhmarathon.com/race-information/" target="_blank" rel="noopener">ladakhmarathon.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to run</span>
+      <h2>Pick your level. We'll point you to the start line.</h2>
+      <p>Real Indian races, plus a few global goals, each checked on the organiser's own website. Dates are for the edition we found. For entry rules, fees and the next edition, follow the link and confirm with the organiser directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="running">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Road races, plains cities</span><span class="ss-cells" role="img" aria-label="Road races, plains cities: peak October to February; possible March to September"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c P" title="October: Peak">●</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">High altitude: Ladakh</span><span class="ss-cells" role="img" aria-label="High altitude: Ladakh: peak September; possible June to August; off October to May"><span class="ss-c O" title="January: Off">✕</span><span class="ss-c O" title="February: Off">✕</span><span class="ss-c O" title="March: Off">✕</span><span class="ss-c O" title="April: Off">✕</span><span class="ss-c O" title="May: Off">✕</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c O" title="October: Off">✕</span><span class="ss-c O" title="November: Off">✕</span><span class="ss-c O" title="December: Off">✕</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in January, February, April, September, October, November"><span class="ss-c E" title="January: Tata Mumbai Marathon">◆</span><span class="ss-c E" title="February: Tata Ultra Marathon">◆</span><span class="ss-c e0"></span><span class="ss-c E" title="April: TCS World 10K Bengaluru">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="September: Ladakh Marathon">◆</span><span class="ss-c E" title="October: Vedanta Delhi Half Marathon">◆</span><span class="ss-c E" title="November: Malnad Ultra">◆</span><span class="ss-c e0"></span></span></div>
+  <ul class="ss-events">
+    <li><b>Vedanta Delhi Half Marathon</b> · <span class="ss-when">18 Oct 2026</span> · New Delhi · <a href="https://vedantadelhihalfmarathon.procam.in/race-categories/half-marathon/information" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Malnad Ultra</b> · <span class="ss-when">28 Nov 2026</span> · Western Ghats, Karnataka · <a href="https://malnadultra.com/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Tata Mumbai Marathon</b> · <span class="ss-when">17 Jan 2027</span> · Mumbai · <a href="https://tatamumbaimarathon.procam.in/race-categories/marathon/information" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Tata Ultra Marathon</b> · <span class="ss-when">21 Feb 2027</span> · Lonavala · <a href="https://tataultra.com/race.html" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>TCS World 10K Bengaluru</b> · <span class="ss-when">25 Apr 2027</span> · Bengaluru · <a href="https://tcsworld10k.procam.in/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Ladakh Marathon</b> · <span class="ss-when ss-usual">Usually September</span> · Leh, Ladakh · <a href="https://ladakhmarathon.com/race-information/" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-running">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>City road season</b>Cooler months: Delhi's half marathon in October, Mumbai's marathon in January, Bengaluru's 10K in April. Early starts beat the heat (<a href="#ch-heat">Ch 6</a>).</div>
+      <div><b>Western Ghats trails</b>Lonavala's Tata Ultra in February (with a 1:30 am start); Malnad Ultra in late November.</div>
+      <div><b>High altitude</b>The Ladakh Marathon runs in September, with 7–15 days of acclimatisation in Leh beforehand (<a href="#ch-altitude">Ch 5</a>).</div>
+      <div><b>Monsoon</b>Few big road races. Train on safe, well-lit routes and watch your footing on wet surfaces.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① First races (5K–10K)</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-road" id="tab-road">② Half &amp; full marathons</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-trail" id="tab-trail">③ Trail &amp; ultra</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-high" id="tab-high">④ High altitude: Ladakh</button>
+    </div>
+
+    <!-- FIRST RACES -->
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You run a few times a week and want your first race, or your first timing certificate (Steps 1–2). Read <a href="#ch-forces">Ch 2</a> before upping your mileage.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the course measured, and will I get a timing certificate (I'll need one later)? What time does it start, and what's the usual temperature and humidity then? Where are the water stations?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>TCS World 10K Bengaluru</b><span class="meta">Bengaluru · 18th edition 26 Apr 2026 · Open 10K, Majja Run 4.2 km · Procam International</span><p>A World Athletics Gold Label road race, starting and finishing on Cubbon Road. From 2026, Open 10K entries need a valid timing certificate; the 4.2 km Majja Run is the gentler way in, and virtual 5K/10K finishers could earn on-ground spots for 2027.</p><a class="url" href="https://tcsworld10k.procam.in/news-media/latest-news/tata-consultancy-services-world-10-k-bengaluru-the-world-s-premier-10-k-is-scheduled-for-sunday-26th-april-2026-registrations-now-open" target="_blank" rel="noopener">tcsworld10k.procam.in</a></div>
+        <div class="site"><b>Vedanta Delhi Half Marathon: Open 10K</b><span class="meta">New Delhi · 18 Oct 2026 · Sansad Marg → Jawaharlal Nehru Stadium · minimum age 15</span><p>A big-city 10K that doesn't need a prior timing certificate: submitting one just earns you a start wave. 2026 registrations are closed apart from limited categories, so this is one to plan for next year. Bibs are collected in person at the expo, and confirmed participants get a free Delhi Metro band for race-day travel.</p><a class="url" href="https://vedantadelhihalfmarathon.procam.in/race-categories/open-10k/information" target="_blank" rel="noopener">vedantadelhihalfmarathon.procam.in</a></div>
+        <div class="site"><b>Ladakh Marathon: 5 km Run for Fun</b><span class="meta">Leh · 12 Sep 2026 · minimum age 12 · untimed</span><p>The gentlest way to run in Ladakh, but still at 11,500 ft: the organisers advise arriving at least 7 days early, and say the 5 km "may sound to be the easiest" but is "an altogether different experience" at altitude.</p><a class="url" href="https://ladakhmarathon.com/eligibility-criteria/" target="_blank" rel="noopener">ladakhmarathon.com › eligibility</a></div>
+      </div>
+    </div>
+
+    <!-- HALF & FULL -->
+    <div class="lvl-panel" id="lvl-road" role="tabpanel" aria-labelledby="tab-road">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've run 10Ks and want to go long (Steps 3–4). Plan your fuel (<a href="#ch-fuel">Ch 4</a>) and practise your race-day drinks in training (<a href="#ch-heat">Ch 6</a>).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which timing certificates do you accept, and how recent? What's the start-wave system? What's the cut-off time? Is the course AIMS-measured (useful if you want a qualifying time)?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Vedanta Delhi Half Marathon</b><span class="meta">New Delhi · 18 Oct 2026 · 21.097 km · start and finish at JLN Stadium</span><p>Entry only against a timing certificate (except limited charity places), minimum age 18. 2026 registrations ran 23 Jul–8 Sep and are now closed apart from limited categories. First-time half marathoners get a "Debutant Bib".</p><a class="url" href="https://vedantadelhihalfmarathon.procam.in/race-categories/half-marathon/information" target="_blank" rel="noopener">vedantadelhihalfmarathon.procam.in</a></div>
+        <div class="site"><b>Tata Mumbai Marathon</b><span class="meta">Mumbai · 17 Jan 2027 · 42.195 km · Procam International</span><p>Registration for the marathon runs from 31 Jul 2026 to 5 Nov 2026 (or until full). Entry only against a timing certificate, which also sets your start wave; minimum age 18. Bibs must be collected in person at the expo, 14–16 Jan 2027. First-time marathoners can ask for a Debutant Bib.</p><a class="url" href="https://tatamumbaimarathon.procam.in/race-categories/marathon/information" target="_blank" rel="noopener">tatamumbaimarathon.procam.in</a></div>
+        <div class="site"><b>Ladakh Marathon: half and full</b><span class="meta">Leh · 13 Sep 2026 · cut-offs 3 h 45 min (half), 6 h 45 min (full)</span><p>Run in accordance with AIMS rules. Eligibility: a half marathon under 3 h or two 10Ks under 1 h 30 min for the half; a marathon under 6 h or two halves under 3 h for the full. Arrive in Leh at least 10 days before.</p><a class="url" href="https://ladakhmarathon.com/race-information/" target="_blank" rel="noopener">ladakhmarathon.com › race information</a></div>
+        <div class="site"><b>Global goal: Boston Marathon</b><span class="meta">Boston, USA · 19 Apr 2027 · qualifying times required</span><p>The best-known qualifying standard in running: 2:55:00 (men) and 3:25:00 (women) for ages 18–34 in 2027, slower for older age groups, on a USATF-, AIMS- or nationally certified course. For 2027, qualifiers needed to beat their standard by 5 min 17 s to be accepted.</p><a class="url" href="https://www.baa.org/races/boston-marathon/qualify" target="_blank" rel="noopener">baa.org › qualify</a></div>
+        <div class="site"><b>Global goal: Abbott World Marathon Majors</b><span class="meta">Eight Majors worldwide</span><p>A series of eight major city marathons. Finishing all of them is a popular long-term goal, and runners aged 40+ can appear in age-group world rankings across more than 350 events.</p><a class="url" href="https://www.worldmarathonmajors.com/" target="_blank" rel="noopener">worldmarathonmajors.com</a></div>
+      </div>
+    </div>
+
+    <!-- TRAIL & ULTRA -->
+    <div class="lvl-panel" id="lvl-trail" role="tabpanel" aria-labelledby="tab-trail">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've finished road marathons and want trails, night running or ultra distances (Step 5). Train on descents (<a href="#ch-forces">Ch 2</a>) and practise eating on the move (<a href="#ch-fuel">Ch 4</a>).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How much climbing is there, and how steep are the descents? What are the cut-offs at each checkpoint? What kit is mandatory (head torch, hydration)? Are poles allowed? What's the weather risk?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Tata Ultra Marathon</b><span class="meta">Lonavala (Maharashtra) · 22 Feb 2026 · 50 km and 35 km</span><p>Flags off in the dark (1:30 am for 50 km, 3:00 am for 35 km), so head torches are mandatory; trekking poles are not allowed. Time limits: 8 h (50 km), 6 h (35 km). Eligibility: a full marathon under 6 h (50 km) or a half under 3 h (35 km), from the 18 months before the race.</p><a class="url" href="https://tataultra.com/race.html" target="_blank" rel="noopener">tataultra.com › race details</a></div>
+        <div class="site"><b>Malnad Ultra</b><span class="meta">Western Ghats, Karnataka · 28 Nov 2026 · 30 km, 50 km (day), 50 km (night), 100 km</span><p>Rolling hills, uneven terrain and exposed ridges: 30 km (6 h, +951 m of climbing), 50 km (10 h day or 11 h night, +1,705 m), 100 km (21 h, +3,410 m). Expect cold starts, hot days, fog, rain, slush and wildlife. Entries for the 30 km and 50 km categories were already closed when we checked.</p><a class="url" href="https://malnadultra.com/" target="_blank" rel="noopener">malnadultra.com</a></div>
+      </div>
+    </div>
+
+    <!-- HIGH ALTITUDE -->
+    <div class="lvl-panel" id="lvl-high" role="tabpanel" aria-labelledby="tab-high">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to run high. The Ladakh Marathon offers six races from 5 km to 122 km, in and around Leh (11,500 ft) and over Khardung La (17,618 ft). Read <a href="#ch-altitude">Ch 5</a> twice, and talk to your doctor before you book.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How many days will I really have in Leh before race day? How will I monitor my oxygen saturation? What does the medical check at the start involve? What happens if I feel AMS symptoms (headache, nausea) during acclimatisation?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Ladakh Marathon, 13th edition</b><span class="meta">Leh, UT Ladakh · 10–13 Sep 2026 · organised by High Altitude Sports Foundation Ladakh</span><p>Six races: Silk Route Ultra 122 km (Thu 10 Sep), Khardung La Challenge 72 km (Fri 11 Sep), 5 km Run for Fun (Sat 12 Sep), and the marathon, half marathon and 11.2 km Run (Sun 13 Sep). AIMS rules for all but the ultras; qualifying races had to be run between 5 Sep 2024 and 23 Mar 2026; stadium, 24-hour and virtual races, and personal GPS-watch times, don't count.</p><a class="url" href="https://ladakhmarathon.com/race-information/" target="_blank" rel="noopener">ladakhmarathon.com › race information</a></div>
+        <div class="site"><b>Khardung La Challenge (72 km)</b><span class="meta">Starts at Khardung village · over Khardung La (≈ 17,618 ft) · max 300 runners</span><p>Stage cut-offs: Khardung La top by 11:00 am (8 h), South Pulu by 1:30 pm, Mendak turn by 3:00 pm, finish by 5:00 pm (14 h). Arrive in Leh at least 15 days early, carry your own hydration pack, and expect a medical check of vitals at the start.</p><a class="url" href="https://ladakhmarathon.com/eligibility-criteria/" target="_blank" rel="noopener">ladakhmarathon.com › eligibility</a></div>
+        <div class="site"><b>Silk Route Ultra (122 km)</b><span class="meta">Starts at Kyagar village · overnight · max 100 runners</span><p>An overnight race: the stage cut-offs imply an evening start (Khalsar village by 11:00 pm, 4 h in), then Khardung village by 3:00 am, over the pass by 11:00 am and the finish by 5:00 pm (22 h). Eligibility requires a strong Khardung La Challenge finish or equivalent ultra experience. Citizens of some countries and diplomatic passport holders can't enter because of the restricted-area permit for the pass.</p><a class="url" href="https://ladakhmarathon.com/eligibility-criteria/" target="_blank" rel="noopener">ladakhmarathon.com › eligibility</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Turn the acclimatisation into the holiday. Take complete rest on day 1, then easy walks around Leh for the first few days. The organisers suggest using the time to see Ladakh (trekking, rafting, monasteries) while your body adapts, before any hard running.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

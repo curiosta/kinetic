@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cycling & Mountain Biking · Physics of Power, Drag & Grip · Kinetic by Curiosta</title>
+<meta name="description" content="Test your cycling physics in 15 questions, learn power, drag, climbing, gears, braking and trail riding, then follow the ladder from Sunday rides and brevets to MTB courses and national races in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Cycling &amp; MTB</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Ride ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to ride</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Cycling &amp; mountain biking</span>
+      <h1>Every watt goes somewhere. <em>Learn where.</em></h1>
+      <p class="lede">On the flat you fight the air; uphill you fight gravity; off-road you fight the ground. Take the challenge, learn the science with a Power Lab, then find rides, brevets, courses and races in India at your level.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Sunday ride</span><span class="bar"></span><span>MTB race</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 80%</span><span class="l">of your power goes into air drag on the flat at 34 km/h</span></div>
+      <div class="hero-stat"><span class="n">8×</span><span class="l">the drag power when you double your speed</span></div>
+      <div class="hero-stat"><span class="n">13.5 h</span><span class="l">the time limit for a 200 km brevet (Audax India Randonneurs)</span></div>
+      <div class="hero-stat"><span class="n">25,000+</span><span class="l">locations for one Fit India Sundays on Cycle (PIB, Aug 2026)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of cycling?</h2>
+      <p>15 questions on power, air drag and drafting, climbing, gears and cadence, cornering and braking, and trail riding. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Cycling physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace road sense, a skills course or a coach.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Power Lab to see where your watts go on the flat, uphill and off-road.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-power"><span class="n">CHAPTER 1</span><span class="t">Power &amp; the three resistances</span><span class="d">Rolling, gravity and air</span></a>
+      <a href="#ch-drag"><span class="n">CHAPTER 2</span><span class="t">Air drag, position &amp; drafting</span><span class="d">Why your body is a parachute</span></a>
+      <a href="#ch-climb"><span class="n">CHAPTER 3</span><span class="t">Climbing &amp; watts per kilo</span><span class="d">Gravity on a gradient</span></a>
+      <a href="#ch-gears"><span class="n">CHAPTER 4</span><span class="t">Gears &amp; cadence</span><span class="d">Trading force for speed</span></a>
+      <a href="#ch-brake"><span class="n">CHAPTER 5</span><span class="t">Cornering &amp; braking</span><span class="d">Grip, lean and stopping distance</span></a>
+      <a href="#ch-trail"><span class="n">CHAPTER 6</span><span class="t">Trails, tyres &amp; suspension</span><span class="d">Rolling off-road and landing drops</span></a>
+    </nav>
+
+    <!-- POWER LAB -->
+    <div class="lab" id="cy-lab">
+      <span class="eyebrow">Interactive · Power Lab</span>
+      <h3>Set your watts, the slope, the surface and your position, and see where every watt goes</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: your power is shared between rolling resistance (C<sub>rr</sub> × weight), climbing (weight × sin θ) and air drag (½ρC<sub>d</sub>Av², with sea-level air and no wind). It ignores drivetrain losses, so real speeds are a little lower. Drag areas and rolling coefficients are illustrative. For learning only.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="cy-p">Your power</label><input type="range" id="cy-p" min="50" max="400" step="10" value="200"><output id="cy-p-o">200 W</output></div>
+        <div class="ctl"><label for="cy-g">Gradient</label><input type="range" id="cy-g" min="0" max="12" step="1" value="0"><output id="cy-g-o">0%</output></div>
+        <div class="ctl"><label for="cy-m">Rider + bike mass</label><input type="range" id="cy-m" min="50" max="130" step="1" value="85"><output id="cy-m-o">85 kg</output></div>
+        <div class="ctl"><label>Position</label><div class="seg" id="cy-pos"><button type="button" data-cda="0.6" aria-pressed="false">Upright (MTB)</button><button type="button" data-cda="0.32" aria-pressed="true">Hands on the hoods</button><button type="button" data-cda="0.27" aria-pressed="false">Low, on the drops</button></div><span></span></div>
+        <div class="ctl"><label>Surface</label><div class="seg" id="cy-surf"><button type="button" data-crr="0.005" aria-pressed="true">Smooth road</button><button type="button" data-crr="0.012" aria-pressed="false">Gravel</button><button type="button" data-crr="0.025" aria-pressed="false">Dirt trail</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Steady speed</span><span class="v" id="cy-v">33.9 km/h</span><span class="s">Ch 1 · power = force × speed</span></div>
+        <div class="lab-card"><span class="k">Watts per kilo</span><span class="v" id="cy-wkg">2.35 W/kg</span><span class="s">Ch 3 · what climbing rewards</span></div>
+        <div class="lab-card"><span class="k">Power to air drag</span><span class="v" id="cy-drag">80%</span><span class="s">Ch 2 · grows with v³</span></div>
+        <div class="lab-card"><span class="k">Power to climbing</span><span class="v" id="cy-climb">0%</span><span class="s">Ch 3 · m g sin θ × v</span></div>
+        <div class="lab-card"><span class="k">Power to rolling</span><span class="v" id="cy-roll">20%</span><span class="s">Ch 6 · tyres and surface</span></div>
+        <div class="lab-card"><span class="k">Time for 10 km</span><span class="v" id="cy-t">17.7 min</span><span class="s">at this steady speed</span></div>
+        <div class="lab-card"><span class="k">Height gained per hour</span><span class="v" id="cy-vam">0 m/h</span><span class="s">Ch 3 · climbing rate</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="cy-bar"></span></div>
+      <p class="fine">Bar = speed on a 0–50 km/h scale. Try 8% with each mass, then flat with each position, then the dirt trail. Ride at speeds that suit the road, the traffic and your brakes (Ch 5).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-power">
+      <header><span class="chno">CH 1</span><h3>Power &amp; the three resistances</h3></header>
+      <p class="hook">Every watt you make goes into rolling, climbing or pushing air.</p>
+      <div class="body">
+        <p>Power is force × speed: <span class="eq">P = F × v</span>. On a bike, three forces resist you: <strong>rolling resistance</strong> (<span class="eq">C<sub>rr</sub> × m g</span>, from tyres squashing), <strong>gravity</strong> on a slope (<span class="eq">m g sin θ</span>), and <strong>air drag</strong> (<span class="eq">½ ρ C<sub>d</sub>A v²</span>). Rolling and gravity grow in step with speed in power terms; drag power grows with <em>v³</em>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 85 kg rider + bike, flat smooth road, C<sub>rr</sub> 0.005, C<sub>d</sub>A 0.32 m², ρ 1.2 kg/m³</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Rolling power</th><th>Drag power</th><th>Total</th></tr></thead>
+            <tbody>
+              <tr><td class="num">20 km/h</td><td class="num">≈ 23 W</td><td class="num">≈ 33 W</td><td class="num">≈ 56 W</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">≈ 35 W</td><td class="num">≈ 111 W</td><td class="num">≈ 146 W</td></tr>
+              <tr><td class="num">40 km/h</td><td class="num">≈ 46 W</td><td class="num">≈ 263 W</td><td class="num">≈ 309 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 30 km/h (8.33 m/s): rolling = 0.005 × 85 × 9.81 × 8.33 ≈ 35 W; drag = ½ × 1.2 × 0.32 × 8.33³ ≈ 111 W. Doubling speed from 20 to 40 km/h needs more than five times the power. Drag areas and C<sub>rr</sub> are typical illustrative values.</p>
+        </div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A bright household LED bulb uses about 10 W. Cruising at 30 km/h on the flat takes about 150 W: fifteen of them, from your legs, for as long as you ride.</div></div>
+        <details class="check"><summary>You hold 300 W against 30 N of total resistance. How fast are you going?</summary>
+        <p>v = P ÷ F = 300 ÷ 30 = <strong>10 m/s = 36 km/h</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-drag">
+      <header><span class="chno">CH 2</span><h3>Air drag, position &amp; drafting</h3></header>
+      <p class="hook">Your body, not the bike, makes most of the drag. How you sit changes everything.</p>
+      <div class="body">
+        <p>The drag area C<sub>d</sub>A combines how big you look from the front and how streamlined you are. Sitting upright on a mountain bike, you're a parachute; low on the drops of a road bike, you slice through. The same power then gives very different speeds.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 200 W, 85 kg, flat smooth road (from our Power Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Position</th><th>C<sub>d</sub>A (illustrative)</th><th>Steady speed</th><th>10 km takes</th></tr></thead>
+            <tbody>
+              <tr><td>Upright (MTB)</td><td class="num">0.60 m²</td><td class="num">≈ 27.9 km/h</td><td class="num">≈ 21.5 min</td></tr>
+              <tr><td>Hands on the hoods</td><td class="num">0.32 m²</td><td class="num">≈ 33.9 km/h</td><td class="num">≈ 17.7 min</td></tr>
+              <tr><td>Low, on the drops</td><td class="num">0.27 m²</td><td class="num">≈ 35.7 km/h</td><td class="num">≈ 16.8 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Solve 200 = v(0.005 × 85 × 9.81) + ½ × 1.2 × C<sub>d</sub>A × v³ for v. With C<sub>d</sub>A 0.32: v ≈ 9.42 m/s ≈ 33.9 km/h; about 80% of the 200 W goes into drag.</p>
+        </div>
+        <h4>Drafting</h4>
+        <p>A rider ahead pushes the air aside and leaves a wake of slower-moving air. Ride in it and your drag falls, which is why groups ride in lines and take turns at the front. The cost: you're centimetres from another wheel, with little time to react. Ride close only with riders you trust, never on a busy road, and always signal hazards.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Sitting up into a headwind feels like hitting a wall because drag depends on your speed through the air, not over the ground. A 15 km/h headwind at 25 km/h feels like riding at 40 km/h in still air.</div></div>
+        <details class="check"><summary>If you go 10% faster, by roughly how much does your drag power rise?</summary>
+        <p>1.1³ ≈ <strong>1.33</strong>: about a third more power, for a tenth more speed.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-climb">
+      <header><span class="chno">CH 3</span><h3>Climbing &amp; watts per kilo</h3></header>
+      <p class="hook">Uphill, the air hardly matters. Your weight does.</p>
+      <div class="body">
+        <p>On a gradient, gravity pulls back with <span class="eq">m g sin θ</span>, where tan θ = gradient ÷ 100. Climbing is slow, so drag is small and most of your power lifts you and the bike. That's why climbers talk about <strong>watts per kilo</strong> and <strong>height gained per hour</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 200 W steady, smooth road, hoods position</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Gradient</th><th>Rider + bike</th><th>Speed</th><th>Share of power lifting you</th><th>Height gained per hour</th></tr></thead>
+            <tbody>
+              <tr><td class="num">5%</td><td class="num">85 kg</td><td class="num">≈ 14.7 km/h</td><td class="num">≈ 85%</td><td class="num">≈ 734 m</td></tr>
+              <tr><td class="num">8%</td><td class="num">85 kg</td><td class="num">≈ 10.0 km/h</td><td class="num">≈ 92%</td><td class="num">≈ 796 m</td></tr>
+              <tr><td class="num">8%</td><td class="num">75 kg</td><td class="num">≈ 11.2 km/h</td><td class="num">≈ 92%</td><td class="num">≈ 894 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">8%, 85 kg: gravity = 85 × 9.81 × sin(arctan 0.08) ≈ 66 N. At 2.77 m/s that's ≈ 184 W of the 200 W. Height per hour = v sin θ × 3,600 ≈ 796 m.</p>
+        </div>
+        <h4>Pacing a climb</h4>
+        <ul>
+          <li><strong>Steady beats surges:</strong> because drag barely matters uphill, extra watts go almost entirely into climbing, but a surge you can't sustain costs you later.</li>
+          <li><strong>Gear down early</strong> to keep a comfortable cadence (Ch 4).</li>
+          <li><strong>Descents:</strong> the height you gain becomes speed on the way down. Brake before bends, not in them (Ch 5).</li>
+        </ul>
+        <details class="check"><summary>A 70 kg rider holds 210 W. What's their power-to-weight ratio?</summary>
+        <p>210 ÷ 70 = <strong>3.0 W/kg</strong> (using rider mass; the lab uses rider + bike).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-gears">
+      <header><span class="chno">CH 4</span><h3>Gears &amp; cadence</h3></header>
+      <p class="hook">Gears don't make power. They trade force for pedalling speed.</p>
+      <div class="body">
+        <p>The gear ratio is <span class="eq">chainring teeth ÷ cog teeth</span>: how many times the rear wheel turns per pedal revolution. Multiply by the wheel's circumference and you get how far one pedal stroke moves you. Then <span class="eq">speed = distance per stroke × cadence</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · distance per pedal turn and speed at 90 rpm</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Bike and gear</th><th>Ratio</th><th>Per pedal turn</th><th>Speed at 90 rpm</th></tr></thead>
+            <tbody>
+              <tr><td>Road, 50 × 11 (top gear)</td><td class="num">4.55</td><td class="num">≈ 9.5 m</td><td class="num">≈ 51 km/h</td></tr>
+              <tr><td>Road, 34 × 28 (climbing gear)</td><td class="num">1.21</td><td class="num">≈ 2.6 m</td><td class="num">≈ 14 km/h</td></tr>
+              <tr><td>MTB, 32 × 10</td><td class="num">3.20</td><td class="num">≈ 7.4 m</td><td class="num">≈ 40 km/h</td></tr>
+              <tr><td>MTB, 32 × 50 (lowest)</td><td class="num">0.64</td><td class="num">≈ 1.5 m</td><td class="num">≈ 8 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Road wheel circumference taken as 2.1 m; 29-inch MTB wheel as 2.3 m. 50 ÷ 11 × 2.1 ≈ 9.55 m; × 90 per minute × 60 ÷ 1,000 ≈ 51.5 km/h. Real circumferences vary with tyre size.</p>
+        </div>
+        <h4>Why cadence matters</h4>
+        <p>For a given power, a higher cadence means less force on each pedal stroke (<span class="eq">P = torque × pedalling speed</span>). Spinning a lower gear is gentler on your knees and lets you respond to changes in gradient. Shift before the climb gets steep, while you can still ease the pressure on the pedals.</p>
+        <details class="check"><summary>At 80 rpm in a gear that moves you 5 m per pedal turn, how fast are you going?</summary>
+        <p>5 × 80 = 400 m per minute = <strong>24 km/h</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-brake">
+      <header><span class="chno">CH 5</span><h3>Cornering &amp; braking</h3></header>
+      <p class="hook">Two thin contact patches handle every turn and every stop.</p>
+      <div class="body">
+        <p>Stopping distance = reaction distance + braking distance: <span class="eq">d = v t<sub>react</sub> + v² ÷ (2a)</span>. Under braking, weight transfers to the front wheel, so the front brake does most of the work, until the rear lifts. A rough limit: maximum deceleration ≈ g × (horizontal distance from your centre of mass to the front contact patch ÷ its height).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · stopping at 0.5 g after a 1-second reaction</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Reaction distance</th><th>Braking distance</th><th>Total</th></tr></thead>
+            <tbody>
+              <tr><td class="num">20 km/h</td><td class="num">≈ 5.6 m</td><td class="num">≈ 3.1 m</td><td class="num">≈ 8.7 m</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">≈ 8.3 m</td><td class="num">≈ 7.1 m</td><td class="num">≈ 15.4 m</td></tr>
+              <tr><td class="num">40 km/h</td><td class="num">≈ 11.1 m</td><td class="num">≈ 12.6 m</td><td class="num">≈ 23.7 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">30 km/h = 8.33 m/s; braking = 8.33² ÷ (2 × 0.5 × 9.81) ≈ 7.1 m. Tip-over limit example: centre of mass 1.0 m high and 0.6 m behind the front contact patch gives about 0.6 g. On gravel or a wet road, grip can be far lower.</p>
+        </div>
+        <h4>Cornering</h4>
+        <p>To follow a bend of radius r at speed v you lean at <span class="eq">tan φ = v² ÷ (g r)</span>: at 10 m/s on a 20 m bend, about 27°; at 8 m/s on a 10 m bend, about 33°. Braking and cornering share the same tyre grip, so brake in a straight line before the bend and release as you lean.</p>
+        <div class="callout warn"><h4>On the road</h4><p style="margin:0">Wear a helmet, use front and rear lights after dark, ride with the traffic and be predictable. Check brakes and tyres before every ride.</p></div>
+        <details class="check"><summary>Doubling your speed multiplies braking distance by how much?</summary>
+        <p>d ∝ v², so by <strong>4</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-trail">
+      <header><span class="chno">CH 6</span><h3>Trails, tyres &amp; suspension</h3></header>
+      <p class="hook">Off-road, the ground fights back. Tyres and suspension decide how much.</p>
+      <div class="body">
+        <p>On dirt, tyres sink and knobs squirm, so rolling resistance rises steeply. Low pressures let the tyre wrap around rocks and roots for grip; suspension and bent legs spread out impacts so the wheels stay on the ground.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · surface vs speed at 200 W, 85 kg, upright position (from our Power Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Surface</th><th>C<sub>rr</sub> (illustrative)</th><th>Speed</th><th>Power to rolling</th></tr></thead>
+            <tbody>
+              <tr><td>Smooth road</td><td class="num">0.005</td><td class="num">≈ 27.9 km/h</td><td class="num">≈ 16%</td></tr>
+              <tr><td>Gravel</td><td class="num">0.012</td><td class="num">≈ 25.6 km/h</td><td class="num">≈ 36%</td></tr>
+              <tr><td>Dirt trail</td><td class="num">0.025</td><td class="num">≈ 21.4 km/h</td><td class="num">≈ 62%</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <h4>Drops and landings</h4>
+        <div class="worked">
+          <span class="lbl">Worked example · average deceleration while landing a drop</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Drop height</th><th>Landing speed</th><th>Stopped over</th><th>Average deceleration</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m</td><td class="num">≈ 3.1 m/s</td><td class="num">0.25 m</td><td class="num">≈ 2 g</td></tr>
+              <tr><td class="num">1.0 m</td><td class="num">≈ 4.4 m/s</td><td class="num">0.25 m</td><td class="num">≈ 4 g</td></tr>
+              <tr><td class="num">1.0 m</td><td class="num">≈ 4.4 m/s</td><td class="num">0.40 m</td><td class="num">≈ 2.5 g</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Landing speed = √(2 g h); average deceleration = h ÷ stopping distance × g (vertical drop onto flat ground). Landing on a downslope (a proper landing ramp) turns much of that into forward speed instead.</p>
+        </div>
+        <div class="callout warn"><h4>Learn trail skills properly</h4><p style="margin:0">Walk features before riding them, start small, wear a helmet (and gloves and pads for technical trails), and don't ride remote trails alone. A course such as NIM's mountain terrain biking course is a good place to start.</p></div>
+        <details class="check"><summary>How much faster do you land from a 2 m drop than from a 0.5 m drop?</summary>
+        <p>v ∝ √h, so √4 = <strong>2 times</strong> faster (about 6.3 m/s against 3.1 m/s), with four times the energy.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The ride ladder</span>
+      <h2>Regular rides → first brevet → multi-day &amp; ultra → mountain biking → racing → coaching</h2>
+      <p>There's no single cycling licence for riding for fun. Long-distance riding has its own ladder of timed brevets, mountain biking has courses, and racing goes through the national federation. The steps below show the real requirement we found at each one.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Ride regularly</span><b>Short, safe, social rides</b><span class="iso">No qualification needed</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real programme</span><span class="cn">Fit India Sundays on Cycle</span><ul><li>A weekly Ministry of Youth Affairs and Sports cycling drive; its 88th edition on 30 August 2026 ran at more than 25,000 locations, according to PIB</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Power and drag</span><ul><li><a href="#ch-power">Ch 1</a> and <a href="#ch-drag">Ch 2</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Before every ride</span>Check brakes, tyres and lights, and wear a helmet.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · First brevet</span><b>100–200 km against the clock</b><span class="iso">Audax India Randonneurs BRM</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Audax India Randonneurs</span><ul><li>Brevets are fixed-distance rides through time controls; non-competitive and self-sufficient</li><li>Time limits: 100 km in 7.5 h, 200 km in 13.5 h</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Gears and pacing</span><ul><li><a href="#ch-gears">Ch 4</a> and <a href="#ch-climb">Ch 3</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Multi-day &amp; ultra</span><b>300 km to 1,200 km, or a supported tour</b><span class="iso">Longer BRMs and tours</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Audax India Randonneurs</span><ul><li>300 km in 20 h, 400 km in 27 h, 600 km in 40 h, 1,000 km in 75 h, 1,200 km in 90 h</li><li>Paris-Brest-Paris: 1,230 km in 90 hours, every four years</li></ul></div>
+          <div class="ag"><span class="an">Real event</span><span class="cn">Tour of the Nilgiris</span><ul><li>A fully supported 7-day tour of 700+ km across Karnataka, Kerala and Tamil Nadu; 2026 edition 6–12 December</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything so far</span><ul><li>Especially <a href="#ch-climb">Ch 3</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Mountain biking</span><b>Trail skills and safety</b><span class="iso">MTB course</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">NIM, Uttarkashi</span><ul><li>Mountain terrain biking course teaching techniques, skills and safety protocols for rugged mountain terrain; for beginners and experienced riders</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Grip and impacts</span><ul><li><a href="#ch-brake">Ch 5</a> and <a href="#ch-trail">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Racing</span><b>Licensed races and national championships</b><span class="iso">CFI licence</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Cycling Federation of India</span><ul><li>CFI publishes licence guidelines and a licence form for riders</li><li>Its mission includes national championships for senior and junior men and women, and an inter-state championship</li></ul></div>
+          <div class="ag"><span class="an">Real event</span><span class="cn">National MTB Championship</span><ul><li>In October 2026, about 800 riders took part in the four-day national mountain bike championship at Mahendragiri, Odisha, under CFI (Times of India)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Everything</span><ul><li>Drag, climbing and cornering: <a href="#ch-drag">Ch 2</a>–<a href="#ch-brake">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Coaching &amp; international</span><b>Coach riders or race abroad</b><span class="iso">CFI coaching course · UCI</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">CFI coaching</span><ul><li>CFI runs an online coaching course and lists its Level 1 certified coaches</li></ul></div>
+          <div class="ag"><span class="an">Real pathway</span><span class="cn">UCI</span><ul><li>The UCI governs international road, track, mountain bike, BMX, trials, cyclo-cross, indoor and para-cycling</li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Ask first</span>Check current requirements with CFI or your state association before you plan a season.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Racing, long-distance riding and recreational cycling are run by different bodies. We checked each on an official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>Union Cycliste Internationale (UCI)</h4><p>The world governing body for cycling: road, track, mountain bike, BMX racing and freestyle, trials, cyclo-cross, indoor cycling and para-cycling.</p><a class="url" href="https://www.uci.org/" target="_blank" rel="noopener">uci.org</a></div>
+      <div class="card"><span class="tag">Randonneuring</span><h4>Audax Club Parisien (ACP)</h4><p>The Paris club, founded in 1904, that approves and oversees Brevets de Randonneurs Mondiaux (BRMs) worldwide and organises Paris-Brest-Paris.</p><a class="url" href="https://www.audax-club-parisien.com/en/" target="_blank" rel="noopener">audax-club-parisien.com</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Cycling Federation of India (CFI)</h4><p>Affiliated to the Indian Olympic Association, the Asian Cycling Confederation and the UCI, and recognised by the Ministry of Youth Affairs and Sports. Runs national championships, rider licences, selection and coaching courses.</p><a class="url" href="https://www.cfiindia.in/about-1" target="_blank" rel="noopener">cfiindia.in</a></div>
+      <div class="card"><span class="tag">Randonneuring</span><h4>Audax India Randonneurs (AIR)</h4><p>Recognised by Audax Club Parisien to conduct and oversee all BRMs and Audax events in India. India's first brevet was a 200 km ride in Mumbai on 31 January 2010.</p><a class="url" href="https://www.audaxindia.in/" target="_blank" rel="noopener">audaxindia.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to ride</span>
+      <h2>Pick your level. We'll point you to the ride.</h2>
+      <p>Real rides, events and courses, each checked on an official website. Follow the link and confirm dates, rules and entry details directly with the organiser.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="cycling-mtb">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Road and audax rides (plains)</span><span class="ss-cells" role="img" aria-label="Road and audax rides (plains): peak November to February; possible March to October"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="December: Tour of the Nilgiris">◆</span></span></div>
+  <ul class="ss-events">
+    <li><b>Tour of the Nilgiris</b> · <span class="ss-when">6-12 Dec 2026</span> · Karnataka, Kerala, Tamil Nadu · <a href="https://www.tourofnilgiris.com/" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-cycling-mtb">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Sundays</b>Fit India Sundays on Cycle is a weekly ride; it runs across all states and union territories through the SAI and Khelo India network, with CFI as a partner.</div>
+      <div><b>All year</b>Audax India's calendar runs year-round: October 2026 alone lists brevets from 100 km to 1,200 km in cities across India.</div>
+      <div><b>December</b>Tour of the Nilgiris 2026: pre-tour briefing 5 December, riding 6–12 December.</div>
+      <div><b>Every ride</b>Brakes, tyres and lights checked; helmet on; water and a plan for heat (<a href="#ch-brake">Ch 5</a>).</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-first" id="tab-first">① Regular rides</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-long" id="tab-long">② Long distance</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-mtb" id="tab-mtb">③ Mountain biking</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-race" id="tab-race">④ Racing &amp; coaching</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You ride now and then and want to ride more, with others (Step 1). Read <a href="#ch-power">Ch 1</a> and <a href="#ch-brake">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the route and distance? Is it on closed or open roads? Is there a sweep rider at the back? What's the group's average speed?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Fit India Sundays on Cycle</b><span class="meta">Nationwide · weekly · Ministry of Youth Affairs and Sports</span><p>A weekly mass cycling drive; the 88th edition on 30 August 2026 ran at more than 25,000 locations across the country, according to PIB.</p><a class="url" href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304633&lang=1&reg=48" target="_blank" rel="noopener">pib.gov.in</a></div>
+        <div class="site"><b>100 km brevets</b><span class="meta">Audax India Randonneurs · 7.5 h limit</span><p>AIR's calendar includes 100 km rides alongside the full brevets, a gentle first step towards a 200.</p><a class="url" href="https://www.audaxindia.in/events-ec-2026" target="_blank" rel="noopener">audaxindia.in</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-long" role="tabpanel" aria-labelledby="tab-long">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can ride 50–100 km and want a real challenge (Steps 2–3). Read <a href="#ch-climb">Ch 3</a> and <a href="#ch-gears">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What are the control points and closing times? Is the route open-road or supported? What lights and reflective gear are required for night riding?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Audax India BRMs</h4><span class="loc">Clubs across India</span></div><span class="badge gov">Brevets</span></div>
+          <p>200, 300, 400, 600, 1,000 and 1,200 km brevets, each with a fixed time limit (200 km in 13.5 h). Non-competitive and self-supported; complete a 200 and you're a randonneur.</p>
+          <a class="url" href="https://www.audaxindia.in/events-ec-2026" target="_blank" rel="noopener">audaxindia.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>Tour of the Nilgiris</b><span class="meta">Karnataka · Kerala · Tamil Nadu · 6–12 Dec 2026</span><p>A fully supported 7-day tour of more than 700 km through the Nilgiri hills, with transport, food, accommodation, bike maintenance and medical backup; first held in 2008.</p><a class="url" href="https://www.tourofnilgiris.com/" target="_blank" rel="noopener">tourofnilgiris.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-mtb" role="tabpanel" aria-labelledby="tab-mtb">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to ride trails safely and with skill (Step 4). Read <a href="#ch-trail">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What level of trail does the course ride? Are bikes and helmets provided? What fitness do you recommend before joining?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>NIM Mountain Terrain Biking course</h4><span class="loc">Uttarkashi, Uttarakhand</span></div><span class="badge gov">Institute</span></div>
+          <p>Teaches techniques, skills and safety protocols for rugged mountain terrain, for beginners and experienced riders; NIM publishes physical-conditioning advice for the course.</p>
+          <a class="url" href="https://www.nimindia.net/mtbcourse" target="_blank" rel="noopener">nimindia.net</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>CFI MTB events</b><span class="meta">National federation</span><p>CFI's page for national mountain bike championships and other MTB events.</p><a class="url" href="https://www.cfiindia.in/mtb-events" target="_blank" rel="noopener">cfiindia.in</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">Walk technical features before you ride them, start small and never ride remote trails alone.</p></div>
+    </div>
+    <div class="lvl-panel" id="lvl-race" role="tabpanel" aria-labelledby="tab-race">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to race or coach (Steps 5–6).</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which state association do I register with? What do I need for a CFI licence? Which national championships match my category?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>CFI rider licence</h4><span class="loc">Cycling Federation of India</span></div><span class="badge gov">Federation</span></div>
+          <p>CFI publishes licence guidelines and the current licence form for riders.</p>
+          <a class="url" href="https://www.cfiindia.in/license-procedure" target="_blank" rel="noopener">cfiindia.in</a></div>
+        <div class="school"><div class="top"><div><h4>CFI coaching course</h4><span class="loc">Online</span></div><span class="badge gov">Coaching</span></div>
+          <p>CFI's online coaching course, with its list of Level 1 certified coaches.</p>
+          <a class="url" href="https://www.cfiindia.in/online-coaching-course-2024" target="_blank" rel="noopener">cfiindia.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>National MTB Championship 2026</b><span class="meta">Mahendragiri, Gajapati, Odisha · October 2026</span><p>About 800 riders and coaches at a four-day national mountain bike championship under CFI, hosted by the Odisha Cycling Association.</p><a class="url" href="https://timesofindia.indiatimes.com/city/bhubaneswar/800-cyclists-converge-on-mahendragiri-for-national-mtb-championship/articleshow/134622002.cms" target="_blank" rel="noopener">Times of India</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

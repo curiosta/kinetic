@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Karting & Motorsport · Physics of Grip, Corners, Braking & Downforce · Kinetic by Curiosta</title>
+<meta name="description" content="Test your karting and motorsport physics in 15 questions, learn tyre grip, slip angle and the friction circle, cornering force, weight transfer, the racing line and apex, braking distance, g-forces and downforce, then see the FMSCI and FIA licence grades and where to drive on track in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Karting &amp; Motorsport</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Licences &amp; levels</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to drive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Karting &amp; Motorsport</span>
+      <h1>Grip, turn, brake, repeat. <em>Four patches of rubber decide how fast you can go.</em></h1>
+      <p class="lede">Karting and circuit racing are a running argument between speed and the friction your tyres can give. Take the challenge, learn the science with a Grip &amp; Corner Lab, then see the FMSCI and FIA licence grades and where to start on track, from an arrive-and-drive kart to a national championship. On closed tracks only: never on public roads.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Arrive &amp; drive</span><span class="bar"></span><span>International licence</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">1.2 g</span><span class="l">sideways at the limit with tyre grip μ = 1.2 (illustrative)</span></div>
+      <div class="hero-stat"><span class="n">4 ×</span><span class="l">the braking distance when you double your speed</span></div>
+      <div class="hero-stat"><span class="n">8–11</span><span class="l">the age band of Micro MAX, the youngest class in India's 2026 national karting championship</span></div>
+      <div class="hero-stat"><span class="n">G → A</span><span class="l">the FIA's international grades on the way to a Super Licence</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of karting and motorsport?</h2>
+      <p>15 questions on tyre grip, slip angle and the friction circle, cornering force, weight transfer, the racing line and apex, braking distance and g-forces, and downforce and tyre temperature. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Karting &amp; motorsport physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: competition licences in India are issued by FMSCI.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Grip &amp; Corner Lab to see how the corner, the tyres and the wings change the limit.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-grip"><span class="n">CHAPTER 1</span><span class="t">Tyre grip, slip angle &amp; the friction circle</span><span class="d">F = μ N</span></a>
+      <a href="#ch-corner"><span class="n">CHAPTER 2</span><span class="t">Cornering force: m v² ÷ r</span><span class="d">v = √(μ g r)</span></a>
+      <a href="#ch-transfer"><span class="n">CHAPTER 3</span><span class="t">Weight transfer</span><span class="d">ΔF = m a h ÷ L</span></a>
+      <a href="#ch-line"><span class="n">CHAPTER 4</span><span class="t">The racing line &amp; the apex</span><span class="d">Bigger radius, more speed</span></a>
+      <a href="#ch-brake"><span class="n">CHAPTER 5</span><span class="t">Braking distance &amp; g-forces on the driver</span><span class="d">d = v² ÷ 2μg</span></a>
+      <a href="#ch-aero"><span class="n">CHAPTER 6</span><span class="t">Downforce &amp; tyre temperature</span><span class="d">F = ½ ρ C<sub>L</sub>A v²</span></a>
+    </nav>
+
+    <!-- GRIP & CORNER LAB -->
+    <div class="lab" id="mk-lab">
+      <span class="eyebrow">Interactive · Grip &amp; Corner Lab</span>
+      <h3>Pick a corner radius, your tyre grip, a straight-line speed, wings and the weight of kart or car plus driver, then see your limit speed through the corner, the g you'd pull, how far and how long it takes to stop, and how much the wings press you down</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: a flat corner taken at the grip limit, with the tyres giving μ times the load on them (Ch 1, Ch 2); downforce ½ ρ C<sub>L</sub>A v² adds to that load (Ch 6), with air at 1.2 kg/m³. Braking is in a straight line at constant grip, ignoring downforce and reaction time (Ch 5). Learning values only (illustrative): real tyres, tracks and cars are far more complicated, and the limit is found gradually with an instructor, never with a calculator.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="mk-r">Corner radius</label><input type="range" id="mk-r" min="10" max="150" step="5" value="30"><output id="mk-r-o">30 m</output></div>
+        <div class="ctl"><label for="mk-mu">Tyre grip μ</label><input type="range" id="mk-mu" min="0.6" max="1.8" step="0.1" value="1.2"><output id="mk-mu-o">1.2</output></div>
+        <div class="ctl"><label for="mk-v">Speed before braking</label><input type="range" id="mk-v" min="40" max="200" step="10" value="100"><output id="mk-v-o">100 km/h</output></div>
+        <div class="ctl"><label for="mk-cl">Wings: downforce area C<sub>L</sub>A</label><input type="range" id="mk-cl" min="0" max="4" step="0.5" value="0"><output id="mk-cl-o">0 (no wings)</output></div>
+        <div class="ctl"><label for="mk-m">Kart or car + driver</label><input type="range" id="mk-m" min="150" max="800" step="50" value="150"><output id="mk-m-o">150 kg</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Limit speed through the corner</span><span class="v" id="mk-vc">68 km/h</span><span class="s">Ch 2 · v = √(μ g r)</span></div>
+        <div class="lab-card"><span class="k">Sideways g at the limit</span><span class="v" id="mk-lat">1.20 g</span><span class="s">Ch 2 · v² ÷ (g r)</span></div>
+        <div class="lab-card"><span class="k">Time through a 90° bend</span><span class="v" id="mk-t90">2.51 s</span><span class="s">Ch 4 · (π r ÷ 2) ÷ v</span></div>
+        <div class="lab-card"><span class="k">Braking distance</span><span class="v" id="mk-bd">32.8 m</span><span class="s">Ch 5 · d = v² ÷ (2 μ g)</span></div>
+        <div class="lab-card"><span class="k">Braking time</span><span class="v" id="mk-bt">2.36 s</span><span class="s">Ch 5 · t = v ÷ (μ g)</span></div>
+        <div class="lab-card"><span class="k">Downforce at that speed</span><span class="v" id="mk-df">none (no wings)</span><span class="s">Ch 6 · ½ ρ C<sub>L</sub>A v² ÷ m g</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="mk-bar"></span></div>
+      <p class="fine">Bar = sideways g at the limit, out of 3 g. Try a 120 m corner, then change the weight with no wings (nothing changes: Ch 2). Then set 700 kg, wings of 3 m², a 100 m corner and 200 km/h, and watch downforce lift the limit (Ch 6).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-grip">
+      <header><span class="chno">CH 1</span><h3>Tyre grip, slip angle &amp; the friction circle</h3></header>
+      <p class="hook">Four patches of rubber, each about the size of a hand or a postcard, do all the work.</p>
+      <div class="body">
+        <p>Everything a kart or car does (accelerate, brake, turn) is a force from the track on the tyres. A simple model says a tyre can give at most <span class="eq">F = μ N</span>, where N is the load pressing it down and μ is the grip coefficient. Racing tyres on dry tarmac can give μ above 1, so they can hold more than the car's weight in sideways force (we use μ = 1.2 as an illustrative value throughout this page).</p>
+        <p>That grip is a <strong>budget</strong> shared between braking or accelerating and cornering. Draw the forward and sideways forces as arrows: their combination has to stay inside a circle of radius μ N, the <strong>friction circle</strong>. Brake at 80% of the limit and only about 60% is left for turning, because <span class="eq">√(1 − 0.8²) = 0.6</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · sharing one tyre's grip (friction circle)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Grip used for braking</th><th>Grip left for cornering</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0%</td><td class="num">100%</td></tr>
+              <tr><td class="num">50%</td><td class="num">87%</td></tr>
+              <tr><td class="num">80%</td><td class="num">60%</td></tr>
+              <tr><td class="num">100%</td><td class="num">0%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(1 − 0.5²) ≈ 0.87. Grip left falls slowly at first, then very quickly: that's why the last bit of braking into a corner has to be released so smoothly.</p>
+        </div>
+        <p>How does a tyre make a sideways force at all? When you steer, the wheel points slightly inside the direction it is actually travelling. The difference is the <strong>slip angle</strong>, usually a few degrees. The rubber in the contact patch twists, and that twist pushes the kart sideways. More slip angle gives more force up to a peak; beyond it the tyre slides and the force drops away. That drop is why the limit arrives so suddenly.</p>
+        <details class="check"><summary>You're using 50% of the grip for braking. How much is left for turning?</summary>
+        <p>√(1 − 0.5²) ≈ <strong>87%</strong>: far more than the 50% you might guess.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-corner">
+      <header><span class="chno">CH 2</span><h3>Cornering force: m v² ÷ r</h3></header>
+      <p class="hook">A corner is a constant sideways push towards its centre, and only the tyres can give it.</p>
+      <div class="body">
+        <p>Following a curve of radius r at speed v needs a centripetal force <span class="eq">F = m v² ÷ r</span>. On a flat track the tyres provide it, up to μ m g. Setting the two equal gives the limit speed: <span class="eq">v = √(μ g r)</span>. The mass cancels, so in this simple model a heavy car and a light kart on the same tyres have the same limit (real tyres lose a little grip per kilo at high loads, so weight still costs a bit). The sideways acceleration at the limit is <span class="eq">v² ÷ r = μ g</span>: 1.2 g for μ = 1.2.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · limit speed through different corners (no downforce, from our Grip &amp; Corner Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Corner radius</th><th>Dry, μ = 1.2</th><th>Less grip, μ = 0.8</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 m</td><td class="num">39 km/h</td><td class="num">32 km/h</td></tr>
+              <tr><td class="num">30 m</td><td class="num">68 km/h</td><td class="num">55 km/h</td></tr>
+              <tr><td class="num">60 m</td><td class="num">96 km/h</td><td class="num">78 km/h</td></tr>
+              <tr><td class="num">120 m</td><td class="num">135 km/h</td><td class="num">110 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">For 30 m: √(1.2 × 9.81 × 30) ≈ 18.8 m/s × 3.6 ≈ 68 km/h. Four times the radius only doubles the speed, because v grows with √r.</p>
+        </div>
+        <div class="feel"><span class="ico">🏎️</span><div><span class="lbl">Feel the number</span>For a 150 kg kart and driver at 68 km/h on a 30 m radius, the tyres push sideways with about 150 × 18.8² ÷ 30 ≈ 1,780 N: more than the whole weight of kart and driver, on every corner.</div></div>
+        <details class="check"><summary>With μ = 1.2, what's the limit speed through a 20 m radius corner?</summary>
+        <p>√(1.2 × 9.81 × 20) ≈ 15.3 m/s, about <strong>55 km/h</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-transfer">
+      <header><span class="chno">CH 3</span><h3>Weight transfer</h3></header>
+      <p class="hook">Brake, and the nose dips; turn, and the outside tyres take the load.</p>
+      <div class="body">
+        <p>The tyres push on the ground, but the mass of the car sits higher up, at its centre of mass. When you brake at deceleration a, that height creates a turning effect that moves load from the rear tyres to the front ones: <span class="eq">ΔF = m a h ÷ L</span>, where h is the height of the centre of mass and L the wheelbase. Accelerating moves load to the rear, and cornering moves it to the outside tyres (with the track width in place of L).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 1,000 kg car, centre of mass 0.5 m high, wheelbase 2.5 m (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Braking at</th><th>Load moved to the front</th><th>Like moving…</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 g</td><td class="num">≈ 980 N</td><td class="num">100 kg</td></tr>
+              <tr><td class="num">1.0 g</td><td class="num">≈ 1,960 N</td><td class="num">200 kg</td></tr>
+              <tr><td class="num">1.2 g</td><td class="num">≈ 2,350 N</td><td class="num">240 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1,000 × 9.81 × 0.5 ÷ 2.5 ≈ 1,960 N at 1 g. A lower centre of mass, or a longer wheelbase, means less transfer.</p>
+        </div>
+        <p>Weight transfer is why technique matters. Loaded front tyres grip better, so the car turns in eagerly just as you come off the brakes; lift off the throttle suddenly mid-corner and the rear goes light and can slide. Karts are an extreme case: they have no differential (the rear axle is solid), so the chassis is designed to flex and lift the inside rear wheel a little in corners, letting the kart turn. And because grip is shared (Ch 1), drivers do most of their braking in a straight line, then trade brake for steering as they turn in.</p>
+        <details class="check"><summary>Same car, braking at 0.5 g. How much load moves forwards?</summary>
+        <p>1,000 × 0.5 × 9.81 × 0.5 ÷ 2.5 ≈ <strong>980 N</strong>, about 100 kg.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-line">
+      <header><span class="chno">CH 4</span><h3>The racing line &amp; the apex</h3></header>
+      <p class="hook">The fastest way round a corner is the one with the biggest radius you can fit on the track.</p>
+      <div class="body">
+        <p>Because the limit speed is <span class="eq">√(μ g r)</span> (Ch 2), drivers use the whole width of the track to make the arc as large as possible: <strong>outside</strong> on the way in, the <strong>apex</strong> (the point nearest the inside) in the middle, and <strong>outside</strong> again on the way out. For a 90° bend with inside radius a on a track of width w, the biggest arc that fits has a radius of about <span class="eq">a + 3.4 w</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 90° bend, 8 m-wide track, 5 m inside radius, μ = 1.2 (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Line</th><th>Radius</th><th>Limit speed</th></tr></thead>
+            <tbody>
+              <tr><td>Hugging the inside</td><td class="num">5 m</td><td class="num">28 km/h</td></tr>
+              <tr><td>Down the middle</td><td class="num">9 m</td><td class="num">37 km/h</td></tr>
+              <tr><td>Outside–inside–outside</td><td class="num">≈ 32 m</td><td class="num">70 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">5 + 3.41 × 8 ≈ 32.3 m; √(1.2 × 9.81 × 32.3) ≈ 19.5 m/s ≈ 70 km/h. The wide arc is slightly longer, but you cover it much faster.</p>
+        </div>
+        <p>The perfect geometric arc isn't always the fastest lap, though. A corner that leads onto a long straight is often taken with a <strong>late apex</strong>: you turn in a little later and do most of the turning early, so the car is straightened up sooner and you can accelerate earlier. The extra exit speed is carried all the way down the straight, which is worth more than a slightly slower entry.</p>
+        <details class="check"><summary>Why does hugging the inside of a bend feel short but lap slowly?</summary>
+        <p>Its radius is the smallest, so the grip limit √(μ g r) is the lowest: <strong>28 km/h</strong> instead of 70 km/h in our example.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-brake">
+      <header><span class="chno">CH 5</span><h3>Braking distance &amp; g-forces on the driver</h3></header>
+      <p class="hook">Twice the speed needs four times the room to stop.</p>
+      <div class="body">
+        <p>At the grip limit the tyres can slow you at about μ g, so stopping from speed v takes a distance <span class="eq">d = v² ÷ (2 μ g)</span> and a time <span class="eq">t = v ÷ (μ g)</span>. Distance grows with the square of speed. On top of that comes the distance you travel before you even press the pedal, which is why track marshals wave flags well before a hazard.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · braking distance at the limit, no downforce, no reaction time (from our Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>From</th><th>Dry, μ = 1.2</th><th>Less grip, μ = 0.8</th><th>Time at μ = 1.2</th></tr></thead>
+            <tbody>
+              <tr><td class="num">60 km/h</td><td class="num">11.8 m</td><td class="num">17.7 m</td><td class="num">1.42 s</td></tr>
+              <tr><td class="num">100 km/h</td><td class="num">32.8 m</td><td class="num">49.2 m</td><td class="num">2.36 s</td></tr>
+              <tr><td class="num">150 km/h</td><td class="num">73.7 m</td><td class="num">110.6 m</td><td class="num">3.54 s</td></tr>
+              <tr><td class="num">200 km/h</td><td class="num">131.1 m</td><td class="num">196.6 m</td><td class="num">4.72 s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">100 km/h = 27.8 m/s; 27.8² ÷ (2 × 1.2 × 9.81) ≈ 32.8 m. Lose a third of your grip and the distance grows by half.</p>
+        </div>
+        <p>Every change of speed or direction is felt by the driver too. At 1.2 g sideways, a head and helmet of roughly 6 kg (a rough figure) need about 7 kg-force from the neck, on every corner of every lap; braking pushes the body forwards into the belts and seat. That's why racers train their necks and core, why the seat is fitted tightly, and why karting and racing schools insist on a proper helmet, gloves and closed shoes. Heat matters too: a closed helmet and race suit in an Indian summer make drinking water part of the plan.</p>
+        <details class="check"><summary>How far do you need to stop from 150 km/h at μ = 1.2?</summary>
+        <p>41.7² ÷ (2 × 1.2 × 9.81) ≈ <strong>73.7 m</strong>, more than twice the distance from 100 km/h.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-aero">
+      <header><span class="chno">CH 6</span><h3>Downforce &amp; tyre temperature</h3></header>
+      <p class="hook">Wings are upside-down aircraft wings: they push the car into the track.</p>
+      <div class="body">
+        <p>A wing that makes lift on an aircraft makes <strong>downforce</strong> when it's turned upside down: <span class="eq">F = ½ ρ C<sub>L</sub>A v²</span>, where ρ is the air density and C<sub>L</sub>A sums up the size and shape of the wings and floor. Downforce adds to the load on the tyres without adding mass, so the friction limit μ N rises while the force needed to turn, m v² ÷ r, doesn't. It grows with v², so it matters most in fast corners. Karts make very little; winged single-seaters make a lot.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · an illustrative winged car: 700 kg with driver, C<sub>L</sub>A = 3 m²</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Downforce</th><th>As a share of its weight</th></tr></thead>
+            <tbody>
+              <tr><td class="num">100 km/h</td><td class="num">≈ 1.4 kN</td><td class="num">0.20 ×</td></tr>
+              <tr><td class="num">150 km/h</td><td class="num">≈ 3.1 kN</td><td class="num">0.46 ×</td></tr>
+              <tr><td class="num">200 km/h</td><td class="num">≈ 5.6 kN</td><td class="num">0.81 ×</td></tr>
+              <tr><td class="num">250 km/h</td><td class="num">≈ 8.7 kN</td><td class="num">1.26 ×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">½ × 1.2 × 3 × 55.6² ≈ 5,560 N at 200 km/h. In a 100 m corner with μ = 1.2 the limit rises from 124 km/h without wings to about 149 km/h with them (1.74 g), as our Lab shows.</p>
+        </div>
+        <p>Grip also depends on <strong>temperature</strong>. Rubber is viscoelastic: as it rolls, it flexes and recovers a little out of step, turning some energy into heat (hysteresis), and that same property helps it key into the track's surface. Too cold and the rubber is hard and slides early; inside its working range it grips best; overheated, it goes greasy and wears fast. That's why drivers warm up on the first lap, why a session starts gently, and why grip changes as a track rubbers in or cools down.</p>
+        <details class="check"><summary>The illustrative car makes 1.4 kN at 100 km/h. What does it make at 200 km/h?</summary>
+        <p>Twice the speed, four times the force: about <strong>5.6 kN</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · Licences &amp; levels</span>
+      <h2>Arrive &amp; drive → karting academy &amp; first licence → national championships → cars → FIA international grades</h2>
+      <p>Recreational karting needs no licence. To race, you need a competition licence from your country's motorsport authority: in India that's FMSCI, whose licence portal lists One Event, Club Sport, National and International licences. International grades follow the FIA's Appendix L. The licence names and rules below come from FMSCI, the FIA and championship regulations; the order of the steps is our suggestion.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Arrive &amp; drive</span><b>A rental kart session on a closed track</b><span class="iso">No licence · briefing &amp; helmet</span></div>
+        <div class="cols">
+          <div class="ag na"><span class="an">Competition licence</span><span class="cn">None needed</span><ul><li>None: a recreational session isn't a competition</li><li>You get a briefing, a helmet and the track's rules instead</li></ul></div>
+          <div class="ag"><span class="an">Meco Kartopia, Bengaluru</span><span class="cn">Rental karts by level</span><ul><li>From a Level 1 kart (7 bhp) to a Level 2 Rotax kart (9 bhp); faster levels listed as coming soon</li></ul></div>
+          <div class="ag"><span class="an">Buddh International Circuit</span><span class="cn">Open Time Trial</span><ul><li>Bring your own car or motorcycle to the circuit; a driving licence and a helmet are required</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Grip &amp; corners</span><ul><li><a href="#ch-grip">Ch 1</a> and <a href="#ch-corner">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Karting academy &amp; first licence</span><b>A structured course, then an FMSCI competition licence</b><span class="iso">FMSCI licence · applied for online</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Meco Karting Academy</span><span class="cn">2-day programme</span><ul><li>Brakes, steering and throttle; body position; lines and braking points; race starts; flags and rules</li><li>Age groups 8–12, 12–15 and 15+</li></ul></div>
+          <div class="ag"><span class="an">FMSCI</span><span class="cn">Competition licences</span><ul><li>The licence portal lists One Event and Club Sport / National / International licences</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Lines &amp; braking</span><ul><li><a href="#ch-line">Ch 4</a> and <a href="#ch-brake">Ch 5</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · National karting</span><b>Racing in an FMSCI national karting championship</b><span class="iso">National or International karting licence</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Meco FMSCI National Karting Championship · RMC India 2026</span><span class="cn">Licence &amp; classes</span><ul><li>A National karting licence, or an International karting grade, issued by a CIK-FIA member body</li><li>Micro MAX 8–11, Mini MAX 10–13, Junior MAX 12–15, Senior MAX 14+</li></ul></div>
+          <div class="ag"><span class="an">CIK-FIA</span><span class="cn">International karting grades</span><ul><li>Grade G (about 12–14), Grade F (14, non-gearbox only), Grade E (15 and over)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Weight transfer</span><ul><li><a href="#ch-transfer">Ch 3</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Into cars</span><b>A racing academy, then national car racing</b><span class="iso">FMSCI competition licence</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Meco Racing Academy</span><span class="cn">2 days at Kari Motor Speedway</span><ul><li>Age 15 and above; formula cars (FLGB 1300, FLGB F4) and Polo cars; six theory and six practice sessions</li></ul></div>
+          <div class="ag"><span class="an">CTR-JK Tyre FMSCI Indian National Car Racing Championship</span><span class="cn">2026 season</span><ul><li>Rounds at Kari Motor Speedway, BREN Raceway and Madras International Circuit</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Downforce</span><ul><li><a href="#ch-aero">Ch 6</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · FIA international grades</span><b>Circuit grades D, C, B and A, then the Super Licence</b><span class="iso">FIA Appendix L · issued through your national authority</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Grades D &amp; C (circuits)</span><span class="cn">From age 16</span><ul><li>Grade D: cars over 3 kg/hp; Grade C: 2–3 kg/hp</li><li>Each needs results in ASN-sanctioned competitions first</li></ul></div>
+          <div class="ag"><span class="an">Grades B &amp; A</span><span class="cn">Faster cars</span><ul><li>Grade B: 1–2 kg/hp; Grade A: 1 kg/hp or less</li></ul></div>
+          <div class="ag"><span class="an">FIA Super Licence</span><span class="cn">Formula One</span><ul><li>Issued by the FIA; needs a current Grade A licence, age 18 (17 at the FIA's discretion) and qualifying results</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Motorsport has a clear chain of authority: the FIA governs world motor sport and sets the international licence grades, its karting arm runs international karting, and each country has one national authority that issues licences and sanctions events. We checked each on an official source.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World governing body</span><h4>FIA · Fédération Internationale de l'Automobile</h4><p>Governs world motor sport and publishes the International Sporting Code. Its Appendix L sets the international licence grades, from Grade G for young karters to Grade A and the FIA Super Licence.</p><a class="url" href="https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf" target="_blank" rel="noopener">fia.com · Appendix L 2026</a></div>
+      <div class="card"><span class="tag">Karting</span><h4>FIA Karting (CIK-FIA)</h4><p>The FIA's international karting body. Licences are issued by national authorities; three International Karting grades, G, F and E, depend on age, and taking part in an unauthorised event can cost you your licence.</p><a class="url" href="https://www.fiakarting.com/page/how-start" target="_blank" rel="noopener">fiakarting.com</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National authority</span><h4>FMSCI · Federation of Motor Sports Clubs of India</h4><p>India's member of the FIA, listed by the FIA for both sport and mobility. It issues competition licences, sanctions events and warns licence holders not to take part in unauthorised events, which have no insurance and no track safety.</p><a class="url" href="https://www.fia.com/members/region/asia-6/country/IN" target="_blank" rel="noopener">fia.com · members</a></div>
+      <div class="card"><span class="tag">Licences</span><h4>FMSCI licence portal</h4><p>Where drivers apply: it lists eSports, One Event, Club Sport / National / International, team entrant and international individual entrant licences.</p><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to drive</span>
+      <h2>Pick your level. We'll point you to the track.</h2>
+      <p>Real tracks, schools and championships, each checked on its own website or its organiser's. Follow the link and confirm opening days, age and height limits and licence rules directly. Wherever you go: wear the gear the track requires, listen to the briefing and obey the flags. Speed belongs on a closed track, never on a public road.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="motorsport-karting">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Kart tracks (e.g. Meco Kartopia, Bengaluru)<span class="ss-yr">Year-round</span></span><span class="ss-cells" role="img" aria-label="Kart tracks (e.g. Meco Kartopia, Bengaluru): peak all year"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c P" title="June: Peak">●</span><span class="ss-c P" title="July: Peak">●</span><span class="ss-c P" title="August: Peak">●</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c P" title="October: Peak">●</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in October, November, December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="October: National karting championship: final round; Indian National Car Racing Championship, round 2">◆</span><span class="ss-c E" title="November: Indian National Car Racing Championship, round 3">◆</span><span class="ss-c E" title="December: Indian National Car Racing Championship, finale">◆</span></span></div>
+  <ul class="ss-events">
+    <li><b>National karting championship: final round</b> · <span class="ss-when">17-18 Oct 2026</span> · Meco Kartopia, Bengaluru · <a href="https://www.mecomotorsports.co.in/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Indian National Car Racing Championship, round 2</b> · <span class="ss-when">23-25 Oct 2026</span> · Kari Motor Speedway, Coimbatore · <a href="https://www.jktyremotorsport.com/calendar" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Indian National Car Racing Championship, round 3</b> · <span class="ss-when">13-15 Nov 2026</span> · BREN Raceway, Bengaluru · <a href="https://www.jktyremotorsport.com/calendar" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Indian National Car Racing Championship, finale</b> · <span class="ss-when">11-13 Dec 2026</span> · Madras International Circuit, Chennai · <a href="https://www.jktyremotorsport.com/calendar" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-motorsport-karting">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>Meco Kartopia</b>Open Tuesday to Sunday; closed on Mondays, Meco says.</div>
+      <div><b>Buddh International Circuit</b>Open Monday to Saturday, 9 AM to 6 PM, the circuit says.</div>
+      <div><b>National karting, 2026</b>Meco's 2026 calendar runs from June to the final round on 17–18 October at Meco Kartopia.</div>
+      <div><b>National car racing, 2026</b>Four rounds from September to a finale on 11–13 December at Madras International Circuit.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-arrive" id="tab-arrive">① Arrive &amp; drive</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-academy" id="tab-academy">② Academy &amp; first licence</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-national" id="tab-national">③ National racing</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-intl" id="tab-intl">④ Track days &amp; international</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-arrive" role="tabpanel" aria-labelledby="tab-arrive">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never driven on a track, or want to feel the grip limit safely (Step 1). Read <a href="#ch-grip">Ch 1</a> and <a href="#ch-corner">Ch 2</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the minimum age and height? Which kart level suits a beginner? What safety gear do you provide? What do the flags mean here? Is there a briefing before the session?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Meco Kartopia</h4><span class="loc">Bengaluru, Karnataka</span></div><span class="badge">FMSCI-approved track</span></div>
+          <p>Opened on 24 May 2015 on 10 acres and built to international standards, Meco says; recreational karts run from a Level 1 kart (7 bhp) to a Level 2 Rotax kart (9 bhp), with faster levels listed as coming soon.</p>
+          <a class="url" href="https://www.mecomotorsports.co.in/Mecokartopia" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+        <div class="school"><div class="top"><div><h4>Meco Chicane Circuit &amp; Kartainment</h4><span class="loc">Secunderabad and Shamshabad, Hyderabad, Telangana</span></div><span class="badge">Recreational karting</span></div>
+          <p>Two more recreational karting tracks Meco lists alongside Meco Kartopia.</p>
+          <a class="url" href="https://www.mecomotorsports.co.in/" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-academy" role="tabpanel" aria-labelledby="tab-academy">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want proper coaching and your first competition licence (Step 2). Read <a href="#ch-line">Ch 4</a> and <a href="#ch-brake">Ch 5</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which licence will I be eligible for after the course? Which class suits my age and weight? What does the course cover on track and in theory? Do I need my own helmet and suit?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Meco Karting Academy</h4><span class="loc">Meco Kartopia, Bengaluru</span></div><span class="badge">2 days</span></div>
+          <p>Running since 2003, from basic licence programmes to intensive training: brakes, steering and throttle, body position and centre of gravity, lines and braking points, qualifying, race starts, flags and rules. Age groups 8–12, 12–15 and 15+.</p>
+          <a class="url" href="https://www.mecomotorsports.co.in/karting" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>FMSCI licence portal</b><span class="meta">Official · apply for a competition licence</span><p>Lists One Event and Club Sport / National / International licences, among others. Check the current requirements for your licence type here before you apply.</p><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
+        <div class="site"><b>FIA Karting · How to start</b><span class="meta">Official · how licences work</span><p>How national and international karting licences work, and the age bands of the three International Karting grades.</p><a class="url" href="https://www.fiakarting.com/page/how-start" target="_blank" rel="noopener">fiakarting.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-national" role="tabpanel" aria-labelledby="tab-national">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You hold a licence and want to race in a national championship, in karts or cars (Steps 3–4). Read <a href="#ch-transfer">Ch 3</a> and <a href="#ch-aero">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which licence grade does this championship need? Which class fits my age? Can I rent a kart or car through a team? What medical and insurance cover is required?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Meco FMSCI National Karting Championship · RMC India</h4><span class="loc">Coimbatore, Chennai and Bengaluru</span></div><span class="badge">Rotax MAX classes</span></div>
+          <p>Classes from Micro MAX (8–11) to Senior MAX (14+). The 2026 regulations require a National karting licence or an International karting grade, plus medical insurance for national-level events.</p>
+          <a class="url" href="https://www.mecomotorsports.co.in/" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+        <div class="school"><div class="top"><div><h4>Meco Racing Academy</h4><span class="loc">Kari Motor Speedway, Coimbatore, Tamil Nadu</span></div><span class="badge">Age 15+</span></div>
+          <p>A 2-day course in formula cars (FLGB 1300, FLGB F4) and Polo cars, with six theory and six practice sessions on lines, braking points, consistency and flags.</p>
+          <a class="url" href="https://www.mecomotorsports.co.in/racing" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026</b><span class="meta">Kari Motor Speedway · BREN Raceway · Madras International Circuit</span><p>India's national car racing championship, running since 1997. The 2026 rounds are at Kari Motor Speedway, Coimbatore, BREN Raceway, Bengaluru, and a finale on 11–13 December at Madras International Circuit, Chennai.</p><a class="url" href="https://www.jktyremotorsport.com/media/ctr-jk-tyre-fmsci-indian-national-car-racing-championship-2026-unveiled-one-nation-one-championship" target="_blank" rel="noopener">jktyremotorsport.com</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-intl" role="tabpanel" aria-labelledby="tab-intl">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to drive a full-size circuit, or you're aiming at an FIA international grade (Step 5). Read <a href="#ch-aero">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What gear and car checks does the circuit require? Is there a briefing and a session for my experience level? For an international grade: how many sanctioned results do I need, and which medical tests?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Buddh International Circuit · Open Time Trial</h4><span class="loc">Greater Noida, Uttar Pradesh</span></div><span class="badge">Bring your own car or bike</span></div>
+          <p>A circuit of 16 corners that it calls India's only Formula One race track. It runs time-trial and arrive-and-drive sessions for your own car or motorcycle after a briefing from its instructor. Drivers need a driving licence and a helmet; riders need full leathers.</p>
+          <a class="url" href="https://www.buddhinternationalcircuit.in/experiences/" target="_blank" rel="noopener">buddhinternationalcircuit.in</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>FIA · Appendix L (2026)</b><span class="meta">Official · international licence grades</span><p>The FIA's rules for every international grade, from G, F and E to the circuit grades D, C, B and A and the Super Licence, with the age, qualification and medical requirements.</p><a class="url" href="https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf" target="_blank" rel="noopener">fia.com</a></div>
+        <div class="site"><b>FIA Karting</b><span class="meta">Official · international karting</span><p>The FIA Karting championships, the international calendar and homologated circuits and equipment.</p><a class="url" href="https://www.fiakarting.com/" target="_blank" rel="noopener">fiakarting.com</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0">Never race on public roads. FMSCI warns licence holders not to take part in unauthorised events: they have no insurance, no track safety, no police permission and no crowd control.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 4 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

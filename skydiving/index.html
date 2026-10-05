@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skydiving · Physics of Free Fall, Terminal Velocity & Canopy Flight · Kinetic by Curiosta</title>
+<meta name="description" content="Test your skydiving physics in 15 questions, learn free fall and terminal velocity, body position, deployment and opening forces, canopy glide and flare, altitude and oxygen, and wind drift and spotting, then follow the ladder from tandem to AFF and USPA A–D licences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Skydiving</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Licence ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to jump</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Skydiving</span>
+      <h1>Exit. Arch. Open. <em>Let drag and lift bring you home.</em></h1>
+      <p class="lede">Skydiving is a balance of forces: gravity against drag in free fall, then lift and drag under a canopy that flies like a wing. Take the challenge, learn the science with a Freefall Lab, then find dropzones in India and abroad, from a first tandem to a licence.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Tandem</span><span class="bar"></span><span>D licence</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 193 km/h</span><span class="l">belly-to-earth terminal velocity (about 120 mph)</span></div>
+      <div class="hero-stat"><span class="n">≈ 57 s</span><span class="l">to fall 10,000 ft at 120 mph (USPA table)</span></div>
+      <div class="hero-stat"><span class="n">25 jumps</span><span class="l">for a USPA A licence</span></div>
+      <div class="hero-stat"><span class="n">68.8%</span><span class="l">of sea-level air pressure at 10,000 ft</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of skydiving?</h2>
+      <p>15 questions on free fall and terminal velocity, body position and fall rate, deployment and opening forces, canopy glide and flare, altitude and oxygen, and wind drift, spotting and the rules. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Skydiving physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace instruction at a dropzone or a skydiving licence.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Freefall Lab to see how altitude, position, mass and wind change the jump.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-freefall"><span class="n">CHAPTER 1</span><span class="t">Free fall &amp; terminal velocity</span><span class="d">When drag equals weight</span></a>
+      <a href="#ch-body"><span class="n">CHAPTER 2</span><span class="t">Body position &amp; fall rate</span><span class="d">Arching, CdA and mass</span></a>
+      <a href="#ch-canopy"><span class="n">CHAPTER 3</span><span class="t">Deployment &amp; opening forces</span><span class="d">Slowing down safely</span></a>
+      <a href="#ch-glide"><span class="n">CHAPTER 4</span><span class="t">Canopy flight: glide &amp; flare</span><span class="d">Landing a wing</span></a>
+      <a href="#ch-altitude"><span class="n">CHAPTER 5</span><span class="t">Altitude, air &amp; oxygen</span><span class="d">Thin air at 10,000 ft</span></a>
+      <a href="#ch-spot"><span class="n">CHAPTER 6</span><span class="t">Wind drift, spotting &amp; the rules</span><span class="d">Where to exit, and who's authorised</span></a>
+    </nav>
+
+    <!-- FREEFALL LAB -->
+    <div class="lab" id="sd-lab">
+      <span class="eyebrow">Interactive · Freefall Lab</span>
+      <h3>Pick an exit altitude, an opening altitude, your body position, your mass with gear and the wind, then see your terminal velocity, your freefall time and how far the wind carries you under the canopy</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">A simple model: drag = ½ ρ CdA v², with air density fixed at 1.1 kg/m³; belly-to-earth CdA 0.56 m² and head-down 0.31 m² (chosen so a 90 kg jumper falls at about 120 and 160 mph, the speeds in USPA's freefall table). Freefall from rest with that drag; canopy descent 5 m/s; air pressure from the standard atmosphere. Learning values only (illustrative).</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label>Exit altitude</label><div class="seg" id="sd-exit"><button type="button" data-ft="10000" aria-pressed="true">10,000 ft</button><button type="button" data-ft="13000" aria-pressed="false">13,000 ft</button><button type="button" data-ft="15000" aria-pressed="false">15,000 ft</button></div><span></span></div>
+        <div class="ctl"><label for="sd-open">Opening altitude</label><input type="range" id="sd-open" min="3000" max="6000" step="500" value="5000"><output id="sd-open-o">5,000 ft</output></div>
+        <div class="ctl"><label>Body position</label><div class="seg" id="sd-pos"><button type="button" data-cda="0.559" aria-pressed="true">Belly-to-earth</button><button type="button" data-cda="0.314" aria-pressed="false">Head-down</button></div><span></span></div>
+        <div class="ctl"><label for="sd-m">Mass with gear</label><input type="range" id="sd-m" min="60" max="130" step="5" value="90"><output id="sd-m-o">90 kg</output></div>
+        <div class="ctl"><label for="sd-w">Wind under canopy</label><input type="range" id="sd-w" min="0" max="40" step="1" value="20"><output id="sd-w-o">20 km/h</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Terminal velocity</span><span class="v" id="sd-vt">193 km/h</span><span class="s">Ch 1 · drag = weight</span></div>
+        <div class="lab-card"><span class="k">Time to reach 95% of it</span><span class="v" id="sd-t95">10.0 s</span><span class="s">Ch 1 · the acceleration phase</span></div>
+        <div class="lab-card"><span class="k">Freefall time to opening</span><span class="v" id="sd-ff">32 s</span><span class="s">Ch 1 · including the speed-up</span></div>
+        <div class="lab-card"><span class="k">Air pressure at exit</span><span class="v" id="sd-p">68.8%</span><span class="s">Ch 5 · of sea level</span></div>
+        <div class="lab-card"><span class="k">Time under canopy</span><span class="v" id="sd-can">5.1 min</span><span class="s">Ch 4 · at 5 m/s down</span></div>
+        <div class="lab-card"><span class="k">Wind drift under canopy</span><span class="v" id="sd-drift">1.69 km</span><span class="s">Ch 6 · why spotting matters</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sd-bar"></span></div>
+      <p class="fine">Bar = freefall time out of 75 s. Try head-down from 15,000 ft, then a stronger wind. Your first jumps are tandem or with instructors (Ch 6).</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-freefall">
+      <header><span class="chno">CH 1</span><h3>Free fall &amp; terminal velocity</h3></header>
+      <p class="hook">You speed up for about ten seconds. Then the air holds you at a steady speed.</p>
+      <div class="body">
+        <p>Leaving the aircraft, gravity accelerates you at 9.81 m/s². As you speed up, air drag <span class="eq">½ ρ CdA v²</span> grows until it equals your weight. Then you stop accelerating: that's <strong>terminal velocity</strong>, <span class="eq">v<sub>t</sub> = √(2 m g ÷ (ρ CdA))</span>. CdA is your drag area: spread out belly-down it's big, head-down it's small.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 90 kg with gear, ρ 1.1 kg/m³ (from our Freefall Lab, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Position</th><th>CdA</th><th>Terminal velocity</th><th>95% reached after</th></tr></thead>
+            <tbody>
+              <tr><td>Belly-to-earth</td><td class="num">0.56 m²</td><td class="num">≈ 193 km/h (≈ 120 mph)</td><td class="num">≈ 10 s, 341 m</td></tr>
+              <tr><td>Head-down</td><td class="num">0.31 m²</td><td class="num">≈ 257 km/h (≈ 160 mph)</td><td class="num">≈ 13 s, 606 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">v<sub>t</sub> = √(2 × 90 × 9.81 ÷ (1.1 × 0.56)) ≈ 53.6 m/s. Real terminal velocity changes with air density, so jumpers fall a little faster high up.</p>
+        </div>
+        <h4>Thinner air, faster fall</h4>
+        <p>Because <span class="eq">v<sub>t</sub> ∝ 1 ÷ √ρ</span>, a drop in density raises terminal speed. At about 10,000 ft the standard atmosphere is only ~69% of sea-level pressure (Ch 5); density is lower by a similar fraction, so the same belly position runs a little faster than our sea-level-ish lab value until you get lower.</p>
+        <div class="worked">
+          <span class="lbl">Order of magnitude · same 90 kg belly jumper if density were 0.9× the lab value</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Relative density ρ / ρ<sub>lab</sub></th><th>Terminal velocity</th><th>Compared with lab 193 km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1.00 (lab)</td><td class="num">≈ 193 km/h</td><td class="num">baseline</td></tr>
+              <tr><td class="num">0.90</td><td class="num">≈ 203 km/h</td><td class="num">≈ +5%</td></tr>
+              <tr><td class="num">0.75 (roughly high-exit air)</td><td class="num">≈ 223 km/h</td><td class="num">≈ +15%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(1/0.90) ≈ 1.054; √(1/0.75) ≈ 1.155. USPA's freefall-time table is still the practical planning tool; density is one reason real times vary.</p>
+        </div>
+        <h4>How long is the freefall?</h4>
+        <p>USPA's Skydiver's Information Manual gives freefall times at constant speed: at 120 mph, <strong>10,000 ft takes about 57 s</strong> and 5,000 ft about 28 s; at 160 mph, 10,000 ft takes about 43 s. It notes that many factors affect terminal velocity. Our lab includes the speed-up after exit, so it gives a little longer: about 32 s from 10,000 ft to an opening at 5,000 ft.</p>
+        <div class="feel"><span class="ico">🪂</span><div><span class="lbl">Feel the number</span>At 193 km/h you drop about 54 m every second: the height of a 15-storey building, each second.</div></div>
+        <details class="check"><summary>At a steady 120 mph (53.6 m/s), how long to fall 1,000 m?</summary>
+        <p>1,000 ÷ 53.6 ≈ <strong>19 s</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-body">
+      <header><span class="chno">CH 2</span><h3>Body position &amp; fall rate</h3></header>
+      <p class="hook">Your body is the control surface. Arch, and the air does the rest.</p>
+      <div class="body">
+        <p>A stable belly-to-earth <strong>arch</strong> (hips forward, arms and legs out) puts your centre of mass below your centre of drag, like a shuttlecock, so you settle face-down. Moving arms and legs changes how the air pushes on you: you can turn, move forward and change fall rate. Because <span class="eq">v<sub>t</sub> ∝ √m</span>, heavier jumpers fall faster in the same position, so groups match fall rates with jumpsuits and body position.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · same belly position (CdA 0.56 m², illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Mass with gear</th><th>Belly terminal velocity</th><th>Head-down terminal velocity</th></tr></thead>
+            <tbody>
+              <tr><td class="num">70 kg</td><td class="num">≈ 170 km/h</td><td class="num">≈ 227 km/h</td></tr>
+              <tr><td class="num">90 kg</td><td class="num">≈ 193 km/h</td><td class="num">≈ 257 km/h</td></tr>
+              <tr><td class="num">110 kg</td><td class="num">≈ 213 km/h</td><td class="num">≈ 285 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">193 × √(110 ÷ 90) ≈ 213 km/h. To match a 70 kg friend, the 110 kg jumper needs about 1.57 times the drag area, or the light jumper less.</p>
+        </div>
+        <h4>Tracking: falling forward on purpose</h4>
+        <p>After a formation breaks off, jumpers <strong>track</strong>: arms swept back, legs extended, body slightly de-arched so the air pushes you forward as well as up. You trade some vertical drag for horizontal speed, opening horizontal separation before deployment. The physics is the same drag equation with a tilted body: the relative wind is no longer straight up your chest. USPA's A-licence practical exam asks for a track of at least 100 ft after breakoff — distance that comes from that horizontal component of drag.</p>
+        <details class="check"><summary>A jumper's mass doubles. What happens to terminal velocity in the same position?</summary>
+        <p>It rises by √2, about <strong>41%</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-canopy">
+      <header><span class="chno">CH 3</span><h3>Deployment &amp; opening forces</h3></header>
+      <p class="hook">From 193 km/h to a gentle glide in a few seconds.</p>
+      <div class="body">
+        <p>At opening altitude you throw a small <strong>pilot chute</strong>, which pulls out the bag holding the main canopy; the lines stretch, then the canopy inflates. A fabric <strong>slider</strong> on the lines slows the inflation so the opening is a few seconds long rather than a snap. Spreading the deceleration over time lowers the force: <span class="eq">F = m (Δv ÷ Δt + g)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 90 kg, from 53.6 m/s to 5 m/s (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Opening time</th><th>Average deceleration</th><th>Average harness load</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1 s (too fast)</td><td class="num">≈ 5.0 g</td><td class="num">≈ 6.0 g (≈ 5.3 kN)</td></tr>
+              <tr><td class="num">3 s</td><td class="num">≈ 1.65 g</td><td class="num">≈ 2.65 g (≈ 2.3 kN)</td></tr>
+              <tr><td class="num">5 s</td><td class="num">≈ 1.0 g</td><td class="num">≈ 2.0 g (≈ 1.8 kN)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">(53.6 − 5) ÷ 3 ≈ 16.2 m/s² ≈ 1.65 g; plus 1 g to hold you up against gravity. Real openings peak above the average.</p>
+        </div>
+        <h4>Where the kinetic energy goes</h4>
+        <p>At 53.6 m/s a 90 kg jumper carries about <span class="eq">½ m v² ≈ 129 kJ</span> — roughly the energy of dropping that mass 146 m. The opening does not destroy that energy instantly; the slider and the stretching canopy dump it into heating and moving air over a few seconds. Halving the opening time roughly doubles the average force (same Δv, half Δt), which is why a snivelling, staged inflation is kinder than a hard snatch.</p>
+        <h4>Two canopies and a backup</h4>
+        <p>Sport rigs carry a main and a <strong>reserve</strong> canopy. An <strong>automatic activation device (AAD)</strong> fires the reserve if you're still falling fast at a set low altitude. Skyhigh India, for example, describes its tandem system as having a main, a reserve and an AAD.</p>
+        <details class="check"><summary>If the opening took 2 s instead of 3 s, what's the average deceleration?</summary>
+        <p>(53.6 − 5) ÷ 2 ≈ 24.3 m/s² ≈ <strong>2.5 g</strong> (3.5 g harness load).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-glide">
+      <header><span class="chno">CH 4</span><h3>Canopy flight: glide &amp; flare</h3></header>
+      <p class="hook">A modern canopy is a wing. You land it like a plane: into the wind, then flare.</p>
+      <div class="body">
+        <p>A ram-air canopy flies forward and down: its <strong>glide ratio</strong> is forward speed ÷ sink rate. Steering toggles pull down the trailing edge on one side to turn. Just before landing you <strong>flare</strong>: pulling both toggles down swaps forward speed for a moment of extra lift, slowing both your descent and your forward speed so you touch down gently. Landing into the wind cuts your groundspeed.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · canopy at 12 m/s forward, 5 m/s down (illustrative student canopy)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Item</th><th>Number</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Glide ratio (still air)</td><td class="num">2.4 : 1</td><td>12 ÷ 5</td></tr>
+              <tr><td>Airspeed</td><td class="num">≈ 43 km/h</td><td>12 × 3.6</td></tr>
+              <tr><td>Groundspeed landing into 15 km/h</td><td class="num">≈ 28 km/h</td><td>43 − 15</td></tr>
+              <tr><td>Groundspeed landing downwind</td><td class="num">≈ 58 km/h</td><td>43 + 15</td></tr>
+              <tr><td>Wing loading, 90 kg on 21 m² (≈ 226 ft²)</td><td class="num">≈ 4.3 kg/m²</td><td>heavier loading = faster canopy</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Kinetic energy rises with speed squared: landing downwind at 58 km/h carries (58 ÷ 28)² ≈ 4.3 times the energy of landing into wind.</p>
+        </div>
+        <h4>What the flare is doing</h4>
+        <p>In steady glide, lift ≈ weight and you sink at a few metres per second. A flare raises the wing's angle of attack: lift briefly exceeds weight, sink rate falls toward zero, and forward speed bleeds off as induced drag rises. Start too high and you float then sink hard; start too low and you still have forward speed at touchdown. Heavier wing loading (same canopy, more mass — or a smaller canopy) raises trim speed the same way a PPG wing does (<a href="../paramotoring/#ch-wing">paramotoring Ch 2</a>): landings become less forgiving, which is why student canopies are large and lightly loaded.</p>
+        <p>USPA's B licence needs a completed canopy proficiency card (including accuracy landings within 10 m / 33 ft on 10 jumps), and its C licence asks for 25 landings within 2 m of a target: canopy skill is trained, not assumed.</p>
+        <details class="check"><summary>A canopy flies 10 m/s forward and sinks 4 m/s. What glide ratio?</summary>
+        <p>10 ÷ 4 = <strong>2.5 : 1</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-altitude">
+      <header><span class="chno">CH 5</span><h3>Altitude, air &amp; oxygen</h3></header>
+      <p class="hook">At 10,000 ft every breath holds less oxygen.</p>
+      <div class="body">
+        <p>Air pressure falls with height. Oxygen is still about 21% of the air, but each breath carries less of it, because the <strong>partial pressure</strong> of oxygen, which drives it into your blood, falls with total pressure. Thinner air also means less drag, so you fall slightly faster high up. And it's colder: in the standard atmosphere, temperature falls about 6.5 °C per kilometre.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · standard atmosphere (from our Freefall Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Altitude</th><th>Pressure</th><th>Share of sea level</th><th>Oxygen partial pressure</th></tr></thead>
+            <tbody>
+              <tr><td class="num">Sea level</td><td class="num">101.3 kPa</td><td class="num">100%</td><td class="num">21.2 kPa</td></tr>
+              <tr><td class="num">5,000 ft</td><td class="num">84.3 kPa</td><td class="num">83.2%</td><td class="num">17.7 kPa</td></tr>
+              <tr><td class="num">10,000 ft</td><td class="num">69.7 kPa</td><td class="num">68.8%</td><td class="num">14.6 kPa</td></tr>
+              <tr><td class="num">13,000 ft</td><td class="num">61.9 kPa</td><td class="num">61.1%</td><td class="num">13.0 kPa</td></tr>
+              <tr><td class="num">15,000 ft</td><td class="num">57.2 kPa</td><td class="num">56.4%</td><td class="num">12.0 kPa</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">p = 101.325 × (1 − 2.256 × 10⁻⁵ h)<sup>5.256</sup> kPa, h in metres; O₂ partial pressure ≈ 0.2095 × p. At 10,000 ft (3,048 m) it's about 20 °C colder than at sea level.</p>
+        </div>
+        <p>Rules on extra oxygen for high jumps vary between countries and dropzones; ask yours. Tandem jumps at Skyhigh India are from 10,000 ft, the company says.</p>
+        <details class="check"><summary>At 13,000 ft, what share of sea-level pressure is there?</summary>
+        <p>About <strong>61%</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-spot">
+      <header><span class="chno">CH 6</span><h3>Wind drift, spotting &amp; the rules</h3></header>
+      <p class="hook">Jump from the right place in the sky, or the wind lands you somewhere else.</p>
+      <div class="body">
+        <p>Under canopy you drift with the wind for several minutes, so the aircraft drops jumpers <strong>upwind</strong> of the landing area. Choosing that exit point is called <strong>spotting</strong>. Winds aloft are often stronger and in a different direction from those on the ground, which is why dropzones check them before every load.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · opening at 5,000 ft (1,524 m), descending at 5 m/s (from our Freefall Lab)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wind</th><th>Time under canopy</th><th>Drift with the wind</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 km/h</td><td class="num">≈ 5.1 min</td><td class="num">≈ 0.85 km</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">≈ 5.1 min</td><td class="num">≈ 1.69 km</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">≈ 5.1 min</td><td class="num">≈ 2.54 km</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1,524 ÷ 5 ≈ 305 s ≈ 5.1 min; 20 km/h × 5.1 ÷ 60 h ≈ 1.69 km. Steering towards the landing area cancels some of this; spotting does the rest.</p>
+        </div>
+        <div class="callout warn"><h4>The rules in India</h4><p style="margin:0">NASG 2023 superseded the 2022 air-sports policy (Lok Sabha AU1311, July 2026). Press reports of a separate Civil Aviation Lok Sabha reply (August 2026) describe ASFI under NASG and name six authorised air-sports operators, three with aerial-work authorisation for aircraft used in skydiving: Global Konnect Aviation Services, Go Forth Adventures and Macsen Aviation. We have not re-fetched the original sansad.in annex for that Civil Aviation answer, so treat the operator list as <strong>as reported</strong>. Dropzones also publish their own approvals (USPA affiliation, DGCA certification and so on) — those are school claims unless we link an official directory. Confirm a dropzone's current authorisation before you book, and jump only under qualified instructors.</p></div>
+        <details class="check"><summary>Opening at 4,000 ft (1,219 m) at 5 m/s in a 24 km/h wind: about how far do you drift?</summary>
+        <p>1,219 ÷ 5 ≈ 244 s ≈ 0.068 h; × 24 ≈ <strong>1.6 km</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The skydiving ladder</span>
+      <h2>Tandem → AFF or static line → A licence → B → C → D &amp; instructor ratings</h2>
+      <p>Skydiving licences used around the world, including by Indian dropzones that follow USPA, are USPA's A to D licences, which USPA describes as FAI Parachutist Certificates of Proficiency recognised in FAI member countries. The steps below show the real requirements we found.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Tandem</span><b>Your first jump, attached to an instructor</b><span class="iso">Dropzone tandem</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real jump</span><span class="cn">Skyhigh India</span><ul><li>Tandem from 10,000 ft at Narnaul, Haryana; Sigma tandem system with main, reserve and AAD (the company's description)</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Free fall</span><ul><li><a href="#ch-freefall">Ch 1</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · AFF or static line</span><b>Student jumps with instructors</b><span class="iso">Student progression</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">Skyhigh India A-licence course</span><ul><li>25 jumps: tandem, IAD jumps, AFF levels 1–3 with two instructors and 4–7 with one, hop-and-pop, coach and consolidation jumps, plus a packing course and 6–8 h of ground school</li><li>Skyhigh also lists IAD and static-line jumps</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Body position</span><ul><li><a href="#ch-body">Ch 2</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · A licence</span><b>Jump without supervision</b><span class="iso">USPA A</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPA</span><ul><li>25 freefall jumps, a completed A-licence progression card, and written, oral and practical exams</li><li>You may then jump unsupervised and pack your own main</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · B licence</span><b>Canopy skills and more freefall</b><span class="iso">USPA B</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPA</span><ul><li>50 jumps, 30 min of controlled freefall, the B-licence canopy proficiency card and a written exam</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Canopy flight</span><ul><li><a href="#ch-glide">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · C licence</span><b>Accuracy and formation skydiving</b><span class="iso">USPA C</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPA</span><ul><li>200 jumps, 60 min of freefall, 25 landings within 2 m of target, 50 formation skydives</li><li>Eligible for USPA instructor ratings except tandem</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · D licence &amp; ratings</span><b>The highest USPA licence</b><span class="iso">USPA D</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">USPA</span><ul><li>500 jumps, 3 hours of freefall and two further skill items</li><li>Coach rating possible from 100 jumps</li></ul></div>
+          <div class="ag"><span class="an">Real competition</span><span class="cn">FAI ISC</span><ul><li>The FAI's International Skydiving Commission runs world championships and records</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Skydiving's world competitions and certificates come under the FAI; national associations such as USPA issue licences; in India, air sports sit under the Ministry of Civil Aviation's NASG 2023. We checked each on an official source.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>FAI International Skydiving Commission (ISC)</h4><p>The FAI commission for skydiving: international competitions, championships and world records.</p><a class="url" href="https://www.fai.org/commission/isc" target="_blank" rel="noopener">fai.org</a></div>
+      <div class="card"><span class="tag">Licences</span><h4>United States Parachute Association (USPA)</h4><p>Issues A, B, C and D licences, described as FAI Parachutist Certificates of Proficiency, and publishes the Skydiver's Information Manual.</p><a class="url" href="https://www.uspa.org/SIM/3-1" target="_blank" rel="noopener">uspa.org</a></div>
+      <div class="card"><span class="tag">National association (UK)</span><h4>British Skydiving (British Parachute Association)</h4><p>British Skydiving is the trading name of the British Parachute Association Ltd — the UK governing body for training, safety and competition. Its public site was under maintenance when we re-checked on 5 Oct 2026; keep the BPA/British Skydiving name as the UK reference, and confirm current category details on the live site before you cite them.</p><a class="url" href="https://www.britishskydiving.org/" target="_blank" rel="noopener">britishskydiving.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Ministry</span><h4>Ministry of Civil Aviation · NASG 2023</h4><p>NASG 2023 replaced NASP 2022 (Lok Sabha AU1311). Press coverage of a Civil Aviation Lok Sabha reply in August 2026 describes the ASFI framework under NASG. Prefer primary documents over headlines.</p><a class="url" href="https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1311_OsAJQG.pdf" target="_blank" rel="noopener">sansad.in (AU1311)</a></div>
+      <div class="card"><span class="tag">Authorised operators (as reported)</span><h4>Three aerial-work names for skydiving aircraft</h4><p>Press reports of the August 2026 Civil Aviation reply list Global Konnect Aviation Services, Go Forth Adventures and Macsen Aviation as holding aerial-work authorisation for aircraft used in skydiving. Original annex not re-fetched here — confirm before you rely on the list.</p><a class="url" href="https://www.freepressjournal.in/mumbai/only-6-air-sports-operators-are-authorised-in-the-country-to-provide-skydiving-hot-air-balloon-paragliding-services-confirms-civil-aviation-ministry" target="_blank" rel="noopener">freepressjournal.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to jump</span>
+      <h2>Pick your level. We'll point you to the dropzone.</h2>
+      <p>Real dropzones and official sources, each checked on its own website or a cited report. Every operator card says whether an affiliation is verified on an official directory, only the operator’s claim, or unverified. Follow the link and confirm dates, eligibility, medical requirements and current authorisation directly. Skydiving is weather-dependent: build spare days into any plan.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="skydiving">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Narnaul, Haryana (Skyhigh India)</span><span class="ss-cells" role="img" aria-label="Narnaul, Haryana (Skyhigh India): possible all year"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <p class="ss-none">No annual event for this sport that we could confirm is still running, so none is shown.</p>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-skydiving">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> <span class="ac ok">✓ Named on MoCA-reported aerial-work list</span> means the operator’s company name appears in press reports of the August 2026 Civil Aviation Lok Sabha reply (not a live DGCA online directory we could re-check). <span class="ac claim">School’s claim — body</span> means only the dropzone’s own site says so. <span class="ac unv">Accreditation: unverified</span> means neither. We could not confirm Skyhigh India on a public USPA Drop Zone Locator listing this pass (the locator is interactive). A listing is not a safety guarantee. Checked 5 Oct 2026.</p></div>
+    <div class="season">
+      <div><b>Weather</b>Jumps need clear skies and moderate wind; dropzones hold loads when it's too windy.</div>
+      <div><b>Narnaul</b>Skyhigh India lists Narnaul (Haryana), about 2 hours from Delhi, as open for bookings.</div>
+      <div><b>Coming</b>Skyhigh lists Ujjain (MP) and Jamshedpur (Jharkhand) as available in future.</div>
+      <div><b>Every jump</b>Briefing, gear check and wind check before boarding.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-tandem" id="tab-tandem">① Tandem</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-aff" id="tab-aff">② Learn to skydive</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-licensed" id="tab-licensed">③ Licensed skydiver</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-rules" id="tab-rules">④ Rules &amp; competition</button>
+    </div>
+
+    <div class="lvl-panel show" id="lvl-tandem" role="tabpanel" aria-labelledby="tab-tandem">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never jumped (Step 1). Read <a href="#ch-freefall">Ch 1</a> and <a href="#ch-glide">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is the operator currently authorised? What are the age, weight and medical requirements? What does the briefing cover?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Skyhigh India · Narnaul dropzone</h4><span class="loc">Narnaul, Haryana (about 2 h from Delhi)</span></div><span class="badge" data-acc="c">Tandem from 10,000 ft</span></div>
+          <p>Open for bookings at Narnaul; Ujjain and Jamshedpur listed as future. Describes a Sigma tandem system (main, reserve and AAD) and USPA-licensed instructors. Fees on its site are not reproduced here.</p>
+          <div class="accred"><span class="ac claim">School’s claim — USPA affiliated</span><span class="ac claim">School’s claim — DGCA certified</span><span class="acsrc">Own site only. We could not confirm a public USPA Drop Zone Locator entry for this DZ this pass. Confirm current authorisation before you book.</span></div>
+          <a class="url" href="https://www.skyhighindia.com/" target="_blank" rel="noopener">skyhighindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Skydive India · Macsen Aviation</h4><span class="loc">Manpur Airstrip, near Mount Abu (Rajasthan)</span></div><span class="badge" data-acc="v">Tandem · Macsen</span></div>
+          <p>Operated by Macsen Aviation Pvt. Ltd. per its about page; offers tandem, learn-to-skydive and sport programmes. Macsen Aviation is one of the three names in press reports of the August 2026 aerial-work authorisation list for skydiving aircraft.</p>
+          <div class="accred"><span class="ac ok">✓ Named on MoCA-reported aerial-work list (Macsen Aviation)</span><span class="ac claim">School’s claim — USPA ratings on staff</span><span class="acsrc">Operator name match is to press reports of the Lok Sabha reply, not a live DGCA web directory. Staff USPA Coach / TI / S&amp;TA lines are the site’s own statements. Confirm current operations and aircraft before you book.</span></div>
+          <a class="url" href="https://skydives.in/about-us/" target="_blank" rel="noopener">skydives.in</a></div>
+        <div class="school"><div class="top"><div><h4>Skydive Dubai · Palm Dropzone</h4><span class="loc">Dubai, UAE</span></div><span class="badge" data-acc="u">Tandem</span></div>
+          <p>Tandem skydives over the Palm; also a desert campus for licensed skydivers.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified (this pass)</span><span class="acsrc">Listed for context as a nearby international DZ. We did not re-check a UAE regulator directory here.</span></div>
+          <a class="url" href="https://www.skydivedubai.ae/" target="_blank" rel="noopener">skydivedubai.ae</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-aff" role="tabpanel" aria-labelledby="tab-aff">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to jump on your own (Steps 2–3). Read <a href="#ch-body">Ch 2</a> and <a href="#ch-canopy">Ch 3</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which progression do you use (AFF, IAD, static line)? How many jumps are in the course? Does it lead to a USPA A licence?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Skyhigh India · AFF and A-licence course</h4><span class="loc">Narnaul, Haryana</span></div><span class="badge" data-acc="c">25 jumps</span></div>
+          <p>Tandem, IAD jumps, AFF levels 1–7, hop-and-pop, coach and consolidation jumps, a packing course and 6–8 h of ground school (school site).</p>
+          <div class="accred"><span class="ac claim">School’s claim — USPA affiliated</span><span class="acsrc">Course menu is the school’s; USPA A licence is issued by USPA after requirements are met, not by the dropzone alone.</span></div>
+          <a class="url" href="https://www.skyhighindia.com/aff/" target="_blank" rel="noopener">skyhighindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Skydive India · Learn to skydive</h4><span class="loc">Manpur / Mount Abu area</span></div><span class="badge" data-acc="v">Macsen</span></div>
+          <p>Lists learn-to-skydive and sport programmes alongside tandem. Confirm syllabus (AFF / other) and which licence path they support before you book.</p>
+          <div class="accred"><span class="ac ok">✓ Named on MoCA-reported aerial-work list (Macsen Aviation)</span><span class="acsrc">Same Macsen Aviation link as the tandem card above.</span></div>
+          <a class="url" href="https://skydives.in/about-us/" target="_blank" rel="noopener">skydives.in</a></div>
+        <div class="school"><div class="top"><div><h4>Skydive Dubai · AFF course &amp; USPA A licence</h4><span class="loc">Dubai, UAE</span></div><span class="badge" data-acc="u">Student courses</span></div>
+          <p>Lists an AFF course and a USPA A-licence programme.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified (this pass)</span><span class="acsrc">International context only; UAE regulator directory not re-checked.</span></div>
+          <a class="url" href="https://www.skydivedubai.ae/" target="_blank" rel="noopener">skydivedubai.ae</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-licensed" role="tabpanel" aria-labelledby="tab-licensed">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You hold an A licence and want to progress (Steps 4–6). Read <a href="#ch-glide">Ch 4</a> and <a href="#ch-spot">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What do I need for my next licence card? Do you run canopy courses and formation coaching?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Skydive Dubai · Desert Campus</h4><span class="loc">Dubai, UAE</span></div><span class="badge" data-acc="u">Licensed skydivers</span></div>
+          <p>Skydive Dubai's dropzone for licensed jumpers.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified (this pass)</span><span class="acsrc">International context; UAE regulator directory not re-checked.</span></div>
+          <a class="url" href="https://www.skydivedubai.ae/" target="_blank" rel="noopener">skydivedubai.ae</a></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>USPA licences A–D</b><span class="meta">Skydiver's Information Manual, section 3-1</span><p>Jump numbers, freefall time and skills for each licence, plus the freefall-time table.</p><a class="url" href="https://www.uspa.org/SIM/3-1" target="_blank" rel="noopener">uspa.org</a></div>
+      </div>
+    </div>
+    <div class="lvl-panel" id="lvl-rules" role="tabpanel" aria-labelledby="tab-rules">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want to check who's authorised in India, or aim for competition.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which authorisation does the operator hold? Which aircraft do they use? How do I enter FAI competitions?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>MoCA: authorised air-sports operators</b><span class="meta">Lok Sabha reply, August 2026 (as reported in the press)</span><p>Press summaries name six authorised operators; three with aerial-work authorisation for skydiving aircraft: Global Konnect Aviation Services, Go Forth Adventures and Macsen Aviation. Confirm against primary documents before you rely on the list.</p><a class="url" href="https://www.freepressjournal.in/mumbai/only-6-air-sports-operators-are-authorised-in-the-country-to-provide-skydiving-hot-air-balloon-paragliding-services-confirms-civil-aviation-ministry" target="_blank" rel="noopener">freepressjournal.in</a></div>
+        <div class="site"><b>FAI International Skydiving Commission</b><span class="meta">FAI</span><p>The FAI commission for skydiving competitions, championships and world records.</p><a class="url" href="https://www.fai.org/commission/isc" target="_blank" rel="noopener">fai.org</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

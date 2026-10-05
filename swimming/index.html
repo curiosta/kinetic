@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swimming, pool to open water: the physics, explained | Kinetic</title>
+<meta name="description" content="Take the swimming science challenge, then learn the physics of the water: drag, buoyancy, propulsion, breathing, currents, sighting and cold. Plus learn-to-swim and lifesaving ladders, governing bodies, and swimathons and open-water events in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../calendar/strip.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Swimming</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Skill levels</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#where">Where to swim</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Pool &amp; open-water swimming</span>
+      <h1>Water is 800 times denser than air. <em>Swim smarter, not harder.</em></h1>
+      <p class="lede">Every length is a deal with the water: it holds you up, it holds you back, and it's the only thing you can push against. Learn drag, buoyancy, propulsion and breathing with real numbers, then take them to the sea, where currents, sighting and heat join in.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>pool</span><span class="bar"></span><span>open sea</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">4× · 8×</span><span class="l">the drag, and the power, when you double your speed</span></div>
+      <div class="hero-stat"><span class="n">≈ 4.5 kg</span><span class="l">of upthrust between full and empty lungs</span></div>
+      <div class="hero-stat"><span class="n">15 m</span><span class="l">the most you may swim underwater after a start or turn (freestyle, back, fly)</span></div>
+      <div class="hero-stat"><span class="n">≈ 25×</span><span class="l">better than air at conducting heat away from you</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>Do you know what the water is doing to you?</h2>
+      <p>15 questions on the physics of swimming, from the pool to the open sea. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Your swim log</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification, swimming grade, lifesaving award or fitness assessment.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters, from the first float to the open sea</h2>
+      <p>Each chapter takes one idea and follows it into the water, with worked numbers you can check on a calculator. Our reference swimmer weighs 70 kg and displaces about 72 litres with full lungs. Drag areas, body volumes and efficiencies are illustrative round values; real ones vary a lot between people and strokes.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-drag"><span class="n">CHAPTER 1</span><span class="t">Drag: form, friction &amp; waves</span><span class="d">Why speed costs v², and power v³</span></a>
+      <a href="#ch-float"><span class="n">CHAPTER 2</span><span class="t">Buoyancy &amp; body position</span><span class="d">Archimedes, full lungs and sinking legs</span></a>
+      <a href="#ch-propulsion"><span class="n">CHAPTER 3</span><span class="t">Propulsion: lift vs drag</span><span class="d">What the research actually says</span></a>
+      <a href="#ch-breath"><span class="n">CHAPTER 4</span><span class="t">Breathing &amp; energy</span><span class="d">CO₂, blackout risk and the cost of a kilometre</span></a>
+      <a href="#ch-open"><span class="n">CHAPTER 5</span><span class="t">Open water: currents &amp; sighting</span><span class="d">Vectors, rips and swimming straight</span></a>
+      <a href="#ch-cold"><span class="n">CHAPTER 6</span><span class="t">Cold, heat &amp; staying safe</span><span class="d">Wetsuit rules, warm Indian seas, jellyfish</span></a>
+    </nav>
+
+    <!-- SWIM LAB -->
+    <div class="lab" id="swim-lab">
+      <span class="eyebrow">Interactive · Swim Lab</span>
+      <h3>Set your speed, the current and the water, and see what it costs</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">An illustrative model: drag = ½ × water density × 0.06 m² × speed², a typical order of magnitude for adult front crawl. Reference swimmer 70 kg, 72 L with full lungs and 67.5 L after a full breath out. For learning only; it is not a planning or safety tool.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="sw-speed">Your swimming speed</label><input type="range" id="sw-speed" min="0.5" max="2" step="0.05" value="1"><output id="sw-speed-o">1.00 m/s</output></div>
+        <div class="ctl"><label for="sw-dist">Distance</label><input type="range" id="sw-dist" min="100" max="10000" step="100" value="1000"><output id="sw-dist-o">1.0 km</output></div>
+        <div class="ctl"><label for="sw-current">Current</label><input type="range" id="sw-current" min="0" max="1" step="0.05" value="0.3"><output id="sw-current-o">0.30 m/s</output></div>
+        <div class="ctl"><label>Current direction</label><div class="seg" id="sw-dir"><button type="button" data-dir="with" aria-pressed="false">With you</button><button type="button" data-dir="against" aria-pressed="true">Against you</button><button type="button" data-dir="across" aria-pressed="false">Across</button></div><span></span></div>
+        <div class="ctl"><label>Water</label><div class="seg" id="sw-water"><button type="button" data-rho="1000" aria-pressed="true">Pool (fresh)</button><button type="button" data-rho="1025" aria-pressed="false">Sea</button></div><span></span></div>
+        <div class="ctl"><label>Lungs</label><div class="seg" id="sw-lungs"><button type="button" data-vol="72" aria-pressed="true">Full breath</button><button type="button" data-vol="67.5" aria-pressed="false">Breathed out</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Drag at this speed</span><span class="v" id="sw-drag">30.0 N</span><span class="s">Ch 1 · ½ρ·CdA·v²</span></div>
+        <div class="lab-card"><span class="k">Useful power needed</span><span class="v" id="sw-power">30 W</span><span class="s">Ch 1 · drag × speed</span></div>
+        <div class="lab-card"><span class="k">…at double the speed</span><span class="v" id="sw-power2">240 W</span><span class="s">Ch 1 · power ∝ v³</span></div>
+        <div class="lab-card"><span class="k">Speed over the ground</span><span class="v" id="sw-ground">0.70 m/s</span><span class="s">Ch 5 · vector sum</span></div>
+        <div class="lab-card"><span class="k">Time for the distance</span><span class="v" id="sw-time">23.8 min</span><span class="s">Ch 5 · distance ÷ ground speed</span></div>
+        <div class="lab-card"><span class="k">Aim to hold a straight line</span><span class="v" id="sw-aim">—</span><span class="s">Ch 5 · cross-current only</span></div>
+        <div class="lab-card"><span class="k">Sideways drift if you don't aim</span><span class="v" id="sw-drift">—</span><span class="s">Ch 5 · current × time</span></div>
+        <div class="lab-card"><span class="k">Net upthrust, lying still</span><span class="v" id="sw-float">+2.0 kg</span><span class="s" id="sw-float-s">floats · Ch 2</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sw-bar"></span></div>
+      <p class="fine">Bar = time for the distance on a 0–2 hour scale. Real drag depends on your shape, stroke and skill, and measured values differ between research methods. Real currents vary with tide, wind and place. Treat every number as a teaching example, and get local advice from lifeguards or the event's safety team before any open-water swim.</p>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-drag">
+      <header><span class="chno">CH 1</span><h3>Drag: form, friction &amp; waves</h3></header>
+      <p class="hook">The water doesn't just slow you down. It charges by the square of your speed.</p>
+      <div class="body">
+        <p>Three kinds of drag act on a swimmer at the surface. <strong>Form (pressure) drag</strong> comes from the shape you push through the water: a head lifted high or hips dropped low present a bigger, blunter shape. <strong>Skin-friction drag</strong> is the water dragging along your skin and costume, small at swimming speeds but not zero. <strong>Wave drag</strong> is the energy you spend making waves; it rises steeply as you swim faster. Together they follow roughly <span class="eq">D = ½ × ρ × CdA × v²</span>, where ρ is water density and CdA lumps your shape and size into one "drag area".</p>
+        <div class="worked">
+          <span class="lbl">Worked example · our reference swimmer in a pool (CdA 0.06 m², illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>100 m in</th><th>Drag</th><th>Useful power (drag × speed)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.8 m/s</td><td class="num">2:05</td><td class="num">≈ 19 N</td><td class="num">≈ 15 W</td></tr>
+              <tr><td class="num">1.0 m/s</td><td class="num">1:40</td><td class="num">30 N</td><td class="num">30 W</td></tr>
+              <tr><td class="num">1.5 m/s</td><td class="num">1:07</td><td class="num">≈ 68 N</td><td class="num">≈ 101 W</td></tr>
+              <tr><td class="num">2.0 m/s</td><td class="num">0:50</td><td class="num">120 N</td><td class="num">240 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Doubling speed from 1.0 to 2.0 m/s: drag ×4 (v²), power ×8 (v³). "Useful power" is only the work that goes into moving forward. Your muscles burn many times more, because much of the effort just stirs water (Chapter 3) and the body turns only a small fraction of food energy into mechanical work (Chapter 4). Measured drag on real swimmers varies widely, and different research methods give different values, so treat 0.06 m² as a teaching number.</p>
+        </div>
+        <h4>Why streamlining beats strength</h4>
+        <p>Because drag scales with CdA, a small change in shape is worth as much as a big change in effort. A long, flat, narrow body (head in line with the spine, hips high, legs kicking inside the body's "shadow") lowers CdA. A 10% lower drag area gives 10% less drag at any speed. Getting the same gain from fitness alone would take 10% more power.</p>
+        <h4>Reynolds number: why friction is the small one</h4>
+        <p>Engineers judge a flow by its <strong>Reynolds number</strong>, <span class="eq">Re = v × L ÷ ν</span>: speed times length, divided by the water's kinematic viscosity ν (about 1.0 × 10⁻⁶ m²/s at 20 °C, 0.8 × 10⁻⁶ m²/s at 30 °C). For a 2 m swimmer at 1 m/s, Re ≈ 1.0 × 2 ÷ 0.000001 ≈ <strong>2 million</strong>. At numbers like that, viscosity only matters in a thin layer next to the skin. The flow can't follow the body's curves, so it breaks away behind the head, shoulders and hips and leaves a turbulent, low-pressure wake. That's why form drag and wave drag are the big terms, and why shape matters far more than a slippery costume.</p>
+        <h4>Waves, and why racers go underwater</h4>
+        <p>At the surface, part of your effort becomes the bow wave in front of your head and the trough behind. In towing tests with a mannequin (Vennell, Pease &amp; Wilson, 2006), total drag at the surface was up to <strong>2.4 times</strong> the drag fully submerged, and wave drag made up as much as 50–60% of the total at 1.7 m/s. It fell below 5% once the mannequin was deeper than <strong>0.5 m at 1 m/s</strong>, or <strong>0.7 m at 2 m/s</strong>. That's why racers glide and dolphin-kick after starts and turns. World Aquatics rules allow you to be fully submerged for no more than <strong>15 metres</strong> after the start and each turn in freestyle, backstroke and butterfly; by then your head must have broken the surface.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · your "hull speed" (Froude number Fr = v ÷ √(g × L), body 2.34 m fingertip to toe, as in the towing study)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Froude number</th><th>Depth needed to dodge most wave drag (study)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.9 m/s</td><td class="num">≈ 0.2</td><td class="num">1.8 chest depths (≈ 0.45 m)</td></tr>
+              <tr><td class="num">1.7 m/s</td><td class="num">≈ 0.36</td><td>at the surface, wave drag was up to 60% of the total here</td></tr>
+              <tr><td class="num">2.0 m/s</td><td class="num">≈ 0.42</td><td class="num">2.8 chest depths (≈ 0.7 m)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(9.81 × 2.34) ≈ 4.8 m/s, so Fr = speed ÷ 4.8. Boats share the same physics: as Fr nears about 0.4, the bow wave becomes about as long as the hull and the boat is effectively climbing its own wave. Naval architects call this "hull speed". A swimmer at the surface is a short, blunt hull, which is one reason fast surface swimming costs so much.</p>
+        </div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>30 N is about the weight of a 3 kg bag of rice. Swimming at an easy 1 m/s, the water pushes back on you that hard the whole time. Sprint at 2 m/s and it's like holding up a 12 kg suitcase.</div></div>
+        <details class="check"><summary>At 1.2 m/s, what are the drag and the useful power for our reference swimmer?</summary>
+        <p>Drag = ½ × 1,000 × 0.06 × 1.2² = <strong>43.2 N</strong>. Power = 43.2 × 1.2 ≈ <strong>52 W</strong>. A 20% speed-up cost 44% more drag and 73% more power.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-float">
+      <header><span class="chno">CH 2</span><h3>Buoyancy &amp; body position</h3></header>
+      <p class="hook">You're almost exactly as dense as water. Your lungs decide which side of the line you're on.</p>
+      <div class="body">
+        <p><strong>Archimedes:</strong> the water pushes up on you with a force equal to the weight of the water you displace. Fat is less dense than water and lean tissue and bone are denser, so people differ, but most adults end up very close to the density of water. The big variable is the air in your lungs: a full breath adds several litres of volume for a few grams of mass.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · our 70 kg reference swimmer, lying still (illustrative volumes)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Lungs</th><th>Volume</th><th>Upthrust in a pool (1.000 kg/L)</th><th>Net</th><th>Upthrust in the sea (1.025 kg/L)</th><th>Net</th></tr></thead>
+            <tbody>
+              <tr><td>Full breath</td><td class="num">72 L</td><td class="num">72.0 kg</td><td class="num">+2.0 kg (floats)</td><td class="num">73.8 kg</td><td class="num">+3.8 kg</td></tr>
+              <tr><td>Fully breathed out</td><td class="num">67.5 L</td><td class="num">67.5 kg</td><td class="num">−2.5 kg (sinks)</td><td class="num">69.2 kg</td><td class="num">−0.8 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The 4.5 L swing between full and empty lungs is a typical adult order of magnitude (it varies with size and fitness). Notice the sea adds about 1.8 kg of upthrust: most people feel noticeably more buoyant in salt water.</p>
+        </div>
+        <h4>Why the legs sink</h4>
+        <p>Upthrust acts at the <strong>centre of buoyancy</strong>, around your air-filled chest. Your weight acts at the <strong>centre of mass</strong>, nearer your hips. These two points are a few centimetres apart, so even when the forces balance, they twist you: chest up, legs down. With 687 N of weight and an offset of, say, 2 cm, that's a turning effect of about 14 N·m, enough to swing still legs towards the bottom.</p>
+        <p>Swimmers fight this with body position, not strength: head neutral (eyes down, not forward), a slight press of the chest into the water, a long reach in front (moving mass towards the head), and a small, steady kick. Lifting the head to look forward drops the hips and raises form drag (<a href="#ch-drag">Ch 1</a>). Scuba divers fine-tune exactly this balance with their lungs and weights (see <a href="../scuba/#ch-buoyancy">buoyancy on the scuba page</a>).</p>
+        <div class="callout note"><h4>For adult learners</h4><p style="margin:0">If you're a "sinker", that's physics, not failure. Learn to float with full lungs first, then practise breathing out slowly underwater (bubbles through the nose) so that each breath in is quick. Good coaches teach balance in the water before they teach strokes.</p></div>
+        <details class="check"><summary>A 60 kg swimmer displaces 61.5 L with full lungs. What's their net upthrust in a pool, and in the sea?</summary>
+        <p>Pool: 61.5 − 60 = <strong>+1.5 kg</strong>. Sea: 61.5 × 1.025 ≈ 63.0 kg, so <strong>+3.0 kg</strong>. Salt water doubles their spare buoyancy.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-propulsion">
+      <header><span class="chno">CH 3</span><h3>Propulsion: lift vs drag, stated honestly</h3></header>
+      <p class="hook">The only thing you can push against is the water. How exactly you do it is still being researched.</p>
+      <div class="body">
+        <p>Start with what's certain: <strong>Newton's third law</strong>. To move forward, you have to accelerate water backwards. The thrust you get equals the mass of water you move each second multiplied by how much you speed it up: <span class="eq">thrust = ṁ × Δv</span>.</p>
+        <h4>The two theories</h4>
+        <p><strong>Drag-based propulsion</strong> treats the hand and forearm as a paddle pushing water straight back. <strong>Lift-based propulsion</strong> treats the hand as a small hydrofoil: angled and moved partly sideways (sculling), it generates a force at right angles to its motion, like a wing. In the 1970s, the lift idea became very popular and coaches taught a pronounced S-shaped pull to "use" it.</p>
+        <p>Later research, with better measurement and flow visualisation, found the picture more mixed. In much of the front-crawl pull, pushing water backwards (drag) does a large share of the work, while lift contributes to varying degrees depending on hand angle, stroke phase and swimmer. Both simple models also assume steady flow, but a real stroke is <em>unsteady</em>: the hand accelerates, sheds vortices and drags water with it. The honest summary: <strong>both mechanisms contribute, the exact split varies, and it's still an active research topic</strong>. Coaching has moved towards a straighter, deeper pull with the forearm held near vertical early in the stroke, so a big surface pushes water backwards.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 30 N of thrust (Chapter 1's drag at 1 m/s), made three ways</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Water moved each second</th><th>Pushed back by</th><th>Thrust</th><th>Energy wasted in the moving water (½ṁΔv²)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">60 kg/s</td><td class="num">0.5 m/s</td><td class="num">30 N</td><td class="num">7.5 W</td></tr>
+              <tr><td class="num">30 kg/s</td><td class="num">1.0 m/s</td><td class="num">30 N</td><td class="num">15 W</td></tr>
+              <tr><td class="num">15 kg/s</td><td class="num">2.0 m/s</td><td class="num">30 N</td><td class="num">30 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Same thrust, very different waste. Moving a lot of water a little is more efficient than moving a little water a lot. That's the same reason ships use big, slow propellers, and why a good "catch" (getting the hand and forearm set early) matters more than a fast, slipping pull.</p>
+        </div>
+        <h4>Froude efficiency: how much of your stroke actually pushes you</h4>
+        <p>The table above gives the <strong>Froude (propelling) efficiency</strong>: useful power ÷ (useful power + power wasted in the water). The three rows work out at 30 ÷ 37.5 = <strong>80%</strong>, 30 ÷ 45 = <strong>67%</strong> and 30 ÷ 60 = <strong>50%</strong>. Real swimmers sit near the bottom row: a study that modelled the front-crawl arm stroke as a paddle wheel and included the legs found a Froude efficiency of <strong>about 0.5</strong> at 1.0–1.4 m/s (Zamparo et al., 2005). Over that range the power to overcome drag plus the power given to the water rose from 50 to 100 W, and moving the limbs themselves cost another 10–30 W. Fins cut the energy cost by 10–15% in the same study, for the reason in the table: a big, slow blade moves a lot of water a little. That's why divers wear them (see the <a href="../freediving/">freediving</a> and <a href="../scuba/">scuba</a> pages).</p>
+        <h4>Arms, legs and the rest of you</h4>
+        <p>In front crawl over distance, the arms provide most of the propulsion. For many distance swimmers the legs mainly keep the body level and balanced (<a href="#ch-float">Ch 2</a>), adding less thrust while costing a lot of energy, since leg muscles are big. Sprinters kick hard; open-water swimmers usually kick lightly.</p>
+        <details class="check"><summary>You need 43 N of thrust at 1.2 m/s. If you push 40 kg of water back each second, how fast must it leave your hand?</summary>
+        <p>Δv = thrust ÷ ṁ = 43 ÷ 40 ≈ <strong>1.1 m/s</strong> backwards, relative to the water around you.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-breath">
+      <header><span class="chno">CH 4</span><h3>Breathing &amp; energy</h3></header>
+      <p class="hook">Air comes in tiny, timed sips, and every kilometre costs more than you'd think.</p>
+      <div class="body">
+        <h4>Breathing in front crawl</h4>
+        <p>You breathe by rotating your head to the side, into the trough your head's bow wave makes beside your face, so your mouth clears the water without lifting your head. Breathe out steadily underwater so that the brief moment of turning is only for breathing in. Breathing every three strokes alternates sides and keeps the stroke symmetrical; every two strokes gives more air at higher effort. In open water, breathing to both sides lets you breathe away from waves and see more.</p>
+        <h4>Why breath-holding games are dangerous</h4>
+        <p>Your urge to breathe is driven mostly by rising <strong>carbon dioxide</strong>, not falling oxygen. Over-breathing (hyperventilating) before a long underwater swim washes out CO₂ but adds very little oxygen. The warning then comes too late: oxygen can fall low enough to cause a blackout underwater, without any feeling of distress first. Never hyperventilate, never do breath-hold challenges, and never swim underwater alone. Our <a href="../freediving/#ch-blackout">freediving page</a> explains blackout physiology in detail, and why even trained freedivers always have a buddy watching.</p>
+        <h4>The energy cost of a kilometre</h4>
+        <p>Measured energy costs for front crawl: <strong>0.6–0.8 kJ per metre</strong> at 1.0–1.4 m/s in one study, where metabolic power rose from 600 to 1,200 W across that speed range (Zamparo et al., 2005). In elite long-distance swimmers it rose from <strong>0.69 to 1.27 kJ per metre</strong> as speed went from 1.29 to 1.50 m/s. After a hard 2 km swim it was about 20% higher at the same speed, which the authors linked to a drop in propelling efficiency (stroke rate went up). Earlier studies put front-crawl efficiency at only a few per cent to about ten per cent; counting all the mechanical work, including moving the limbs and the water you throw backwards, the same group got about <strong>20%</strong>. For a 70 kg runner the cost is about 0.3 kJ per metre, so swimming costs roughly 2–4 times as much per kilometre, and beginners far more.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · energy for a good swimmer (≈ 0.8 kJ/m, illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Swim</th><th>Time at 1.1 m/s</th><th>Energy used</th><th>In food terms</th></tr></thead>
+            <tbody>
+              <tr><td>1 km</td><td class="num">≈ 15 min</td><td class="num">≈ 800 kJ</td><td class="num">≈ 190 kcal</td></tr>
+              <tr><td>5 km</td><td class="num">≈ 76 min</td><td class="num">≈ 4,000 kJ</td><td class="num">≈ 960 kcal</td></tr>
+              <tr><td>10 km</td><td class="num">≈ 2 h 32 min</td><td class="num">≈ 8,000 kJ</td><td class="num">≈ 1,900 kcal</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1 kcal = 4.184 kJ. Beyond about 90 minutes, your stored carbohydrate starts running low, which is why long sea swims include feeding and hydration stops (Goa's swimathon uses anchored boats; the Coastal Odyssey has support boats for nutrition and hydration).</p>
+        </div>
+        <details class="check"><summary>A beginner's cost is closer to 1.5 kJ/m. How much energy does their 2 km swim take?</summary>
+        <p>2,000 × 1.5 = <strong>3,000 kJ ≈ 720 kcal</strong>, almost as much as a good swimmer spends on 4 km.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-open">
+      <header><span class="chno">CH 5</span><h3>Open water: currents &amp; sighting</h3></header>
+      <p class="hook">In the sea, the water itself is moving, and there's no black line to follow.</p>
+      <div class="body">
+        <h4>Currents are just vector addition</h4>
+        <p>Your speed over the ground is your swimming speed plus the water's speed, with directions. With the current, they add; against it, they subtract. Across it, you have to aim upstream to hold a straight line, at an angle where <span class="eq">sin(angle) = current ÷ your speed</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 1 km at a swimming speed of 1.0 m/s</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Current</th><th>Speed over the ground</th><th>Time for 1 km</th></tr></thead>
+            <tbody>
+              <tr><td>None</td><td class="num">1.00 m/s</td><td class="num">≈ 16.7 min</td></tr>
+              <tr><td>0.5 m/s with you</td><td class="num">1.50 m/s</td><td class="num">≈ 11.1 min</td></tr>
+              <tr><td>0.5 m/s against you</td><td class="num">0.50 m/s</td><td class="num">≈ 33.3 min</td></tr>
+              <tr><td>0.5 m/s across, aiming 30° upstream</td><td class="num">0.87 m/s</td><td class="num">≈ 19.2 min</td></tr>
+              <tr><td>0.5 m/s across, not aiming</td><td class="num">1.00 m/s forward</td><td class="num">≈ 16.7 min, but 500 m off to the side</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Tides change currents through the day, so organisers time sea races and publish tide information (Goa's race rules link a tide chart). Try it yourself in the Swim Lab above.</p>
+        </div>
+        <div class="worked">
+          <span class="lbl">Worked example · real Indian races as vector sums</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Race</th><th>Winning time</th><th>Average speed over the ground</th><th>What it tells you</th></tr></thead>
+            <tbody>
+              <tr><td>SFI National Open Water Championships, 10 km open men (Thanirbhavi Beach, Mangaluru, 9 Jan 2026)</td><td class="num">2:26:13</td><td class="num">10,000 ÷ 8,773 s ≈ 1.14 m/s</td><td>A national-level sea pace, tide and chop included</td></tr>
+              <tr><td>Murshidabad 81 km river race, Bhagirathi (31 Aug 2025)</td><td class="num">10:35:37</td><td class="num">81,000 ÷ 38,137 s ≈ 2.12 m/s</td><td>Faster than any swimmer can go through still water: if he swam at a strong 1.3 m/s, the river was carrying him at about 0.8 m/s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The 1.3 m/s is our assumption, for illustration; only the distance and time are measured.</p>
+        </div>
+        <h4>Rip currents</h4>
+        <p>A rip is a narrow channel of water flowing out to sea from the beach, often faster than a swimmer. The US National Weather Service says rips have been measured at up to 8 feet per second (about <strong>2.4 m/s</strong>), faster than an Olympic swimmer sprints 50 m, although most of the time they are much slower. Swim straight for the beach at 1 m/s against a 2.4 m/s rip and you still go out to sea at 1.4 m/s. Swimming parallel to the shore takes you out of the channel sideways instead of fighting it. Fighting one head-on exhausts you. Stay calm, float to save energy, raise an arm to signal for help, and swim parallel to the shore to get out of the channel before heading in. Best of all, swim only in the zone the lifeguards mark with flags.</p>
+        <h4>Sighting: swimming straight without a line</h4>
+        <p>Every few strokes, lift your eyes just above the water to spot the next buoy or a big landmark behind it, then turn your head to breathe as normal. Small errors add up fast: drifting 10° off line over 1 km puts you 1,000 × sin 10° ≈ <strong>174 m</strong> off course. Goa's swimathon places sighting buoys every 150–200 m and asks swimmers to keep them on their left. Breathing to both sides helps you correct a stroke that pulls you one way.</p>
+        <h4>Mass starts and drafting</h4>
+        <p>Open-water races start in a crowd. Organisers ask swimmers to "self-seed": slower swimmers start towards the back, so nobody is swum over. Swimming just behind or beside another swimmer (drafting) means less effort for the same speed, because they've already set the water moving. It's allowed in most open-water races, but stay clear of other swimmers' feet. Triathlon swims start and draft the same way (see the <a href="../triathlon/#ch-swim">triathlon swim chapter</a>).</p>
+        <details class="check"><summary>You swim at 1.2 m/s across a 0.6 m/s current. What angle do you aim upstream, and what's your speed over the ground?</summary>
+        <p>sin(angle) = 0.6 ÷ 1.2 = 0.5, so <strong>30°</strong>. Ground speed = √(1.2² − 0.6²) ≈ <strong>1.04 m/s</strong>.</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-cold">
+      <header><span class="chno">CH 6</span><h3>Cold, heat &amp; staying safe</h3></header>
+      <p class="hook">Water moves heat 25 times better than air. In India, that usually means you overheat, not freeze.</p>
+      <div class="body">
+        <h4>Why water chills you so fast</h4>
+        <p>Water's thermal conductivity (about 0.6 W/m·K) is roughly 25 times that of air, and a litre of water soaks up far more heat than a litre of air. Air at 20 °C feels pleasant; water at 20 °C can chill a slim swimmer within an hour. Sudden immersion in cold water also triggers <strong>cold shock</strong>. The RNLI (the UK's lifeboat charity) treats water at 15 °C and below as cold: the skin's sudden cooling causes an involuntary gasp, breathing rate can rise as much as tenfold, and heart rate and blood pressure jump. Its advice, "Float to Live": the initial effects pass in less than a minute, so float on your back and wait before trying to swim. Enter cold water slowly.</p>
+        <div class="worked">
+          <span class="lbl">The rules, from the World Aquatics competition regulations</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Situation</th><th>Rule</th></tr></thead>
+            <tbody>
+              <tr><td>Open-water race temperature</td><td>Minimum 16.0 °C, maximum 31.0 °C, measured 2 hours before the start at a depth of 40 cm</td></tr>
+              <tr><td>Water below 18 °C</td><td>Wetsuits compulsory</td></tr>
+              <tr><td>Water 18 °C and above</td><td>Wetsuits not permitted (the Chief Referee may make them mandatory up to 20 °C if conditions are hazardous)</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <h4>Warm seas: the Indian problem is heat</h4>
+        <p>Swimming hard, your muscles produce several hundred watts of heat (most of the food energy in <a href="#ch-breath">Ch 4</a> ends up as heat). In cool water that heat drains away easily. In warm water there's little temperature difference to carry it off. Goa's swimathon expects water at around 26–28 °C and bans wetsuits, warning that they would make swimmers "dehydrate and overheat rapidly". Hydrate before the start, use the feed stations, and respect the sun on long swims. Triathletes face the same problem for hours longer (see <a href="../triathlon/#ch-heat">heat on the triathlon page</a>).</p>
+        <h4>Jellyfish, kit and good habits</h4>
+        <ul>
+          <li><strong>Jellyfish:</strong> Goa's organisers warn they're always possible, and suggest full-length suits or jammers and a barrier of coconut oil or petroleum jelly on exposed skin.</li>
+          <li><strong>Be seen:</strong> a bright cap (events issue one, and it's mandatory). Tow floats help visibility, but Goa allows them only in its 5 km and 10 km races, because lines tangle in crowded short races.</li>
+          <li><strong>Medical:</strong> Mumbai's Sunk Rock race asks every swimmer for a doctor-attested medical certificate; Goa asks swimmers over 60 for one for its longer races.</li>
+          <li><strong>Never alone:</strong> swim with lifeguards, a club or an organised event. Don't swim within 12 hours of drinking alcohol (a Goa race rule, and good advice anywhere).</li>
+        </ul>
+        <div class="callout warn"><h4>Rescues need training</h4><p style="margin:0">A panicking swimmer can push a would-be rescuer underwater. If someone is in trouble, raise the alarm and reach or throw something that floats rather than swimming out, unless you're trained. Lifesaving courses (see Skill levels) teach how to rescue without becoming a second casualty.</p></div>
+        <details class="check"><summary>The water is 17.5 °C on race morning. Under World Aquatics rules, do you wear a wetsuit?</summary>
+        <p>Yes: below 18 °C, wetsuits are <strong>compulsory</strong>. At 18 °C and above they're not allowed, unless the Chief Referee declares them mandatory for safety (up to 20 °C).</p></details>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. SKILL LEVELS =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · Skill levels</span>
+      <h2>The ladder, from first float to marathon swims</h2>
+      <p>India has no single national learn-to-swim grading for adults. So we've built a clearly labelled <strong>Kinetic ladder</strong>, anchored to real things: the Swim England Learn to Swim stages as a reference syllabus, Indian events' own entry requirements for each open-water distance, and the Swimming Federation of India (SFI) competitive pathway. Lifesaving awards, a separate track, are explained below the ladder.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Water confidence</span><b>Float, breathe, self-rescue</b><span class="iso">Reference: Swim England Stages 1–7</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">Learn to Swim Stages 1–7</span><ul><li>Swim England's Learn to Swim Programme teaches children and adults; it recommends completing Stages 1–7 as a minimum</li><li>English schools' benchmark: swim at least 25 m unaided, confidently and safely, and perform safe self-rescue</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Buoyancy and balance</span><ul><li>Floating and body position: <a href="#ch-float">Ch 2</a></li><li>Breathing out underwater: <a href="#ch-breath">Ch 4</a></li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">Survival swimming</span><ul><li>RLSS(I)'s Swim N Survive: aimed mainly at children, but "people of all ages should be able to meet this minimum standard"</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Stroke &amp; stamina</span><b>Continuous swimming, good technique</b><span class="iso">Reference: Swim England Stages 8–10 · Kinetic milestone</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What you learn</span><span class="cn">Kinetic milestone (not an official grade)</span><ul><li>Swim 400 m or more of front crawl without stopping, breathing to both sides</li><li>Streamlined push-offs; a relaxed, low head position</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Drag and propulsion</span><ul><li>Streamlining: <a href="#ch-drag">Ch 1</a></li><li>Catch and pull: <a href="#ch-propulsion">Ch 3</a></li></ul></div>
+          <div class="ag na"><span class="an">In India</span><span class="cn">Pool coaching</span>Coached sessions at a local pool or club. Ask the coach to assess your stroke against these skills before your first sea swim.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · First open water</span><b>250 m to 2 km in the sea</b><span class="iso">Real event entry rules</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Distances</span><span class="cn">Entry-level sea swims</span><ul><li>Goa Swimathon: 250 m splash-and-dash (untimed), 1 km (50-min cut-off), 2 km (80-min cut-off)</li><li>Sunk Rock to Gateway of India (Mumbai): 1 km and 2 km</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Sighting and currents</span><ul><li>Swimming straight: <a href="#ch-open">Ch 5</a></li><li>Heat and safety: <a href="#ch-cold">Ch 6</a></li></ul></div>
+          <div class="ag"><span class="an">Typical requirements</span><span class="cn">Paperwork, not just fitness</span><ul><li>Sunk Rock: doctor-attested medical certificate and indemnity bond for every swimmer</li><li>Goa: pre-event orientation swims with Goa Open Water Swimming Club</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · 5 km to 10 km</span><b>Marathon-swim distance</b><span class="iso">Proof of earlier open-water swims required</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Distances</span><span class="cn">Longer sea swims</span><ul><li>Goa Swimathon 5 km (3-hour cut-off) and 10 km (5.5-hour cut-off)</li><li>Sunk Rock 5 km; Coastal Odyssey 4 × 5 km and 2 × 10 km relays</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">Energy and feeding</span><ul><li>Energy cost: <a href="#ch-breath">Ch 4</a></li><li>Tides and drafting: <a href="#ch-open">Ch 5</a></li></ul></div>
+          <div class="ag"><span class="an">Entry requirements</span><span class="cn">Certificates of earlier swims</span><ul><li>Goa's 5 km and 10 km: open-water or sea-swim certificates from a registered club or race within the last 5 years; over-60s need a medical fitness certificate</li><li>Coastal Odyssey relays: a 2.5/3.8 km swim for 4 × 5 km; 5 km for 2 × 10 km</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 5 · Ultra &amp; expedition</span><b>20 km, channel-style and all-night swims</b><span class="iso">Escorted, invitation-style events</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Examples in India</span><span class="cn">Long escorted swims</span><ul><li>The Goan Coastal Odyssey: 20 km solo, Valor to Zalor beach, South Goa</li><li>Elephanta to Gateway of India expedition swim (OWSA, Mumbai)</li><li>Mumbai Sea Swimmers' Ultra Swim and 12-hour Dusk to Dawn</li><li>Murshidabad's 81 km race on the Bhagirathi (river), held since 1943</li></ul></div>
+          <div class="ag"><span class="an">Physics you're using</span><span class="cn">All six chapters</span><ul><li>Especially energy (<a href="#ch-breath">Ch 4</a>) and heat (<a href="#ch-cold">Ch 6</a>)</li></ul></div>
+          <div class="ag"><span class="an">Entry requirements</span><span class="cn">Coastal Odyssey solo</span><ul><li>A 10 km or 16 km timed swim to register; checkpoints of 5 km in 2.5 h, 10 km in 5 h, 20 km in 10 h</li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 6 · Compete</span><b>State → national → international</b><span class="iso">The SFI and World Aquatics pathway</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">India</span><span class="cn">Swimming Federation of India</span><ul><li>National championships in pool swimming, diving, water polo, artistic swimming and open water</li><li>National Open Water Swimming Championships 2026: 1, 3, 5, 7.5 and 10 km by age group, Thanirbhavi Beach, Mangaluru, 9–10 Jan 2026</li><li>1st SFI Short Course Nationals listed for 21–25 Oct 2026 on SFI's national calendar</li></ul></div>
+          <div class="ag"><span class="an">Global</span><span class="cn">World Aquatics</span><ul><li>Sets the rules for pool and open-water competition, including the 15 m underwater limit and wetsuit temperature rules</li></ul></div>
+          <div class="ag na"><span class="an">Masters</span><span class="cn">Adults welcome</span>SFI's remit includes masters swimming, and Indian sea swims run age groups from sub-juniors to 60+.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subhead" style="margin-top:34px">Lifesaving: a separate ladder, and the most useful one</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Volunteer level · RLSS(I)</span><h4>Pool Lifesaver &amp; Open Water and Beach Lifesaver</h4><p>For volunteers: safety, aquatic rescue and first aid at pools and inland water (Pool Lifesaver), or in ponds, dams, lakes, rivers and the ocean (Open Water &amp; Beach Lifesaver).</p><a class="url" href="https://www.lifesavingindia.org/training-programs/" target="_blank" rel="noopener">lifesavingindia.org › training</a></div>
+      <div class="card"><span class="tag">Professional level · RLSS(I)</span><h4>Pool Lifeguard &amp; Open Water and Beach Lifeguard</h4><p>For professionals who work in a team to keep a venue safe, and to prevent drownings at popular beaches. RLSS(I) also runs CPR, first aid, AED and Nippers (child beach-safety) courses.</p><a class="url" href="https://www.lifesavingindia.org/training-programs/" target="_blank" rel="noopener">lifesavingindia.org › training</a></div>
+      <div class="card"><span class="tag">International equivalence</span><h4>ILS equivalency table for India</h4><p>The International Life Saving Federation maps national awards to its international certificates. India's table pairs RLSS(I) Lifesaver with ILS Lifesaver and RLSS(I) Beach Lifeguard with ILS Beach Lifeguard (both approved Oct 2010), plus rescue-boat, AED and trainer awards.</p><a class="url" href="https://certificates.ilsf.org/public/equivalency-tables/india-27.pdf" target="_blank" rel="noopener">certificates.ilsf.org (PDF)</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>World Aquatics governs competitive swimming and open-water swimming worldwide. In India, the Swimming Federation of India (SFI) is the national body, working through state associations. Lifesaving has its own international and Indian bodies. Every body below was checked on its official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>World Aquatics (formerly FINA)</h4><p>FINA became World Aquatics in December 2022. It governs swimming, open-water swimming, diving, high diving, artistic swimming and water polo, and its competition regulations set rules such as the 15 m underwater limit and open-water temperature and wetsuit limits.</p><a class="url" href="https://www.worldaquatics.com/news/2979029/fina-becomes-world-aquatics-as-new-brand-launched" target="_blank" rel="noopener">worldaquatics.com</a></div>
+      <div class="card"><span class="tag">Lifesaving federation</span><h4>International Life Saving Federation (ILS)</h4><p>The world body for drowning prevention and lifesaving. RLSS(I) is a full member, and ILS publishes the national award equivalency tables.</p><a class="url" href="https://certificates.ilsf.org/public/equivalency-tables/india-27.pdf" target="_blank" rel="noopener">certificates.ilsf.org</a><span class="small muted">The main ilsf.org site didn't load from our checker; the certificates site did.</span></div>
+      <div class="card"><span class="tag">Reference syllabus</span><h4>Swim England Learn to Swim</h4><p>England's national governing body runs a widely used learn-to-swim syllabus for children and adults: Stages 1–7, then Stages 8–10, plus distance, water-safety and skills awards.</p><a class="url" href="https://www.swimming.org/learntoswim/" target="_blank" rel="noopener">swimming.org › learn to swim</a></div>
+      <div class="card"><span class="tag">Reference programme</span><h4>American Red Cross swimming</h4><p>Another long-running learn-to-swim and water-safety programme, with classes for children and adults in the US. A useful reference when an Indian coach says they follow "Red Cross levels".</p><a class="url" href="https://www.redcross.org/take-a-class/swimming" target="_blank" rel="noopener">redcross.org › swimming</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">National federation</span><h4>Swimming Federation of India (SFI)</h4><p>The governing body for aquatic sports in India, headquartered in Ahmedabad. Its remit covers swimming, diving, water polo, artistic swimming, open-water swimming and masters. It published the complete results of the National Open Water Swimming Championships 2026 (Thanirbhavi Beach, Mangaluru, 9–10 Jan 2026, organised by the Karnataka Swimming Association) in January 2026. Its national calendar lists the year's championships.</p><a class="url" href="https://www.swimming.org.in/national-calendar/" target="_blank" rel="noopener">swimming.org.in › national calendar</a></div>
+      <div class="card"><span class="tag">Lifesaving</span><h4>Rashtriya Life Saving Society (India) · RLSS(I)</h4><p>The "official" branch of the Royal Life Saving Society (Commonwealth) and a full member of ILS. Formed in 1998, headquartered in Pune. Runs water-safety, lifesaver, lifeguard, first-aid and flood-rescue training, and says it has trained over 400,000 young people.</p><a class="url" href="https://www.lifesavingindia.org/about-us/" target="_blank" rel="noopener">lifesavingindia.org</a></div>
+      <div class="card"><span class="tag">State association (example)</span><h4>Maharashtra State Amateur Aquatic Association (MSAAA)</h4><p>Runs Mumbai's Sunk Rock Lighthouse to Gateway of India Sea Swimming Race, whose 61st edition was held on 16 Feb 2025 over 1, 2 and 5 km, with a special category for Divyang swimmers.</p><a class="url" href="http://www.msaaa.co.in/events/" target="_blank" rel="noopener">msaaa.co.in</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 5. WHERE TO GO =========================== -->
+<section class="block" id="where">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Where to swim</span>
+      <h2>Pick your level. We'll point you to the water.</h2>
+      <p>Real Indian clubs, lifesaving training and open-water events, each checked on its organiser's own website (or an official tourism page; for the Murshidabad river race, news reports). Dates are for the edition we found. For entry rules, fees and the next edition, follow the link and confirm with the organiser directly.</p>
+    </div>
+
+    <h3 class="subhead">When to go</h3>
+<!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
+<div class="sstrip" data-sport="swimming">
+  <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
+  <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Pools (indoor and outdoor)<span class="ss-yr">Year-round</span></span><span class="ss-cells" role="img" aria-label="Pools (indoor and outdoor): peak all year"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c P" title="June: Peak">●</span><span class="ss-c P" title="July: Peak">●</span><span class="ss-c P" title="August: Peak">●</span><span class="ss-c P" title="September: Peak">●</span><span class="ss-c P" title="October: Peak">●</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Sea swims: west coast (Goa, Mumbai)</span><span class="ss-cells" role="img" aria-label="Sea swims: west coast (Goa, Mumbai): possible October to May; off June to September"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in February, August, September, October, November"><span class="ss-c e0"></span><span class="ss-c E" title="February: Sunk Rock Lighthouse to Gateway of India sea race">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="August: Murshidabad 81 km river swim (Bhagirathi)">◆</span><span class="ss-c E" title="September: Murshidabad 81 km river swim (Bhagirathi)">◆</span><span class="ss-c E" title="October: 1st SFI Short Course Nationals; Elephanta to Gateway of India expedition swim (OWSA)">◆</span><span class="ss-c E" title="November: Elephanta to Gateway of India expedition swim (OWSA); Aquamoga: the Goa Swimathon">◆</span><span class="ss-c e0"></span></span></div>
+  <ul class="ss-events">
+    <li><b>1st SFI Short Course Nationals</b> · <span class="ss-when">21-25 Oct 2026</span> · India (venue not yet listed) · <a href="https://www.swimming.org.in/national-calendar/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Elephanta to Gateway of India expedition swim (OWSA)</b> · <span class="ss-when">31 Oct-1 Nov 2026</span> · Mumbai · <a href="https://www.openwaterswimsindia.com/event" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Aquamoga: the Goa Swimathon</b> · <span class="ss-when">14-15 Nov 2026</span> · Goa · <a href="https://www.endurosportsgoa.com/schedule" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Sunk Rock Lighthouse to Gateway of India sea race</b> · <span class="ss-when ss-usual">Usually February</span> · Mumbai · <a href="http://www.msaaa.co.in/events/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>Murshidabad 81 km river swim (Bhagirathi)</b> · <span class="ss-when ss-usual">Usually late August or early September</span> · Jangipur to Berhampore, Murshidabad, West Bengal · <a href="https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/" target="_blank" rel="noopener">official page ↗</a></li>
+  </ul>
+  <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-swimming">Full season calendar →</a></div>
+</div>
+<!-- season-strip:end -->
+    <div class="season">
+      <div><b>West coast sea swims</b>Goa's swimathon runs in mid-November; Mumbai's Sunk Rock race in February; the Elephanta–Gateway expedition swim at the turn of October–November.</div>
+      <div><b>East coast</b>Chennai's AquaFest (Kovalam) was held on 24 May 2026: early starts beat the heat.</div>
+      <div><b>Monsoon</b>Rough seas: sea events avoid the monsoon months. Use the pool season to build distance (<a href="#ch-breath">Ch 4</a>). The exception is a river: Murshidabad's 81 km Bhagirathi race runs in late August or early September, downstream on a strong current (<a href="#ch-open">Ch 5</a>).</div>
+      <div><b>Pools</b>All year. Indoor or shaded pools help in peak summer.</div>
+    </div>
+
+    <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
+      <button role="tab" aria-selected="true" aria-controls="lvl-learn" id="tab-learn">① Learn, clubs &amp; lifesaving</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-first" id="tab-first">② First open water (250 m–2 km)</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-long" id="tab-long">③ 5 km–10 km</button>
+      <button role="tab" aria-selected="false" aria-controls="lvl-ultra" id="tab-ultra">④ Ultra &amp; expedition</button>
+    </div>
+
+    <!-- LEARN -->
+    <div class="lvl-panel show" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're learning, coming back to swimming, or a pool swimmer curious about the sea. Build confidence with a coach first (Steps 1–2 on our ladder), and read <a href="#ch-float">Ch 2</a> and <a href="#ch-breath">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Do you teach floating and breathing before strokes? Can I try sea swimming in a lifeguarded zone with instructors first? Do you teach sighting (<a href="#ch-open">Ch 5</a>)? Is there a lifesaving or CPR course I can take?</p></div>
+      </div>
+      <div class="schools">
+        <div class="school"><div class="top"><div><h4>Rashtriya Life Saving Society (India)</h4><span class="loc">HQ Pune · courses across India</span></div><span class="badge gov">Lifesaving</span></div>
+          <p>Swim N Survive (a survival-swimming minimum standard for all ages), Pool and Open Water &amp; Beach Lifesaver and Lifeguard courses, plus CPR, first aid and AED. Its Swimming &amp; Lifesaving Training Centres are part of the society.</p>
+          <a class="url" href="https://www.lifesavingindia.org/training-programs/" target="_blank" rel="noopener">lifesavingindia.org</a></div>
+        <div class="school"><div class="top"><div><h4>Goa Open Water Swimming Club</h4><span class="loc">Goa</span></div><span class="badge">Sea-swim club</span></div>
+          <p>Runs pre-event orientation swims for Goa's swimathon (a short briefing, then a swim in a designated zone with trained instructors from the club) and organises the Coastal Odyssey with lifeguards, kayakers and support boats.</p>
+          <a class="url" href="https://www.goaopenwaterswimmingclub.com/swim-with-us/upcoming-events/the-goan-coastal-odyssey" target="_blank" rel="noopener">goaopenwaterswimmingclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>Mumbai Sea Swimmers</h4><span class="loc">Mumbai</span></div><span class="badge">Community · since 2016</span></div>
+          <p>An open-water swimming community of 3,000+ swimmers. Its formats include group swims around Mumbai (Mumbai Open), a pool swimathon with a 1-hour time-trial format, and longer sea events.</p>
+          <a class="url" href="https://www.mumbaiseaswimmers.com" target="_blank" rel="noopener">mumbaiseaswimmers.com</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Getaway idea:</strong> Book a Goa trip around an orientation swim. Do a lifeguarded morning swim between the flags, then practise sighting on a beach landmark. It's the gentlest bridge from pool to sea.</p></div>
+    </div>
+
+    <!-- FIRST OPEN WATER -->
+    <div class="lvl-panel" id="lvl-first" role="tabpanel" aria-labelledby="tab-first">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You can swim 400 m or more without stopping and want your first sea swim (Step 3). Start short: a 250 m or 1 km course with buoys, boats and lifeguards. Read <a href="#ch-open">Ch 5</a> and <a href="#ch-cold">Ch 6</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">How far apart are the sighting buoys? What will the tide be doing at the start? What are the cut-off times? Where are the rest boats? Is a tow float allowed? What medical certificate do you need?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>The Goa Swimathon (part of Aquamoga 2026)</b><span class="meta">Goa · 14 Nov 2026 · 250 m, 1 km, 2 km · Enduro Sports Goa</span><p>The 1 km and 2 km races start at 7:30 am, with 50- and 80-minute cut-offs; the 250 m splash-and-dash is untimed. Land start and finish, buoys on your left, wetsuits not allowed. Orientation swims by Goa Open Water Swimming Club the day before.</p><a class="url" href="https://www.endurosportsgoa.com/schedule" target="_blank" rel="noopener">endurosportsgoa.com › schedule</a></div>
+        <div class="site"><b>Sunk Rock Lighthouse to Gateway of India Sea Swimming Race</b><span class="meta">Mumbai · February · 1 km, 2 km (and 5 km) · MSAAA</span><p>One of India's oldest sea swims: the 61st edition was on 16 Feb 2025, with a special category for Divyang swimmers. Every swimmer needs a doctor-attested medical certificate and an indemnity bond.</p><a class="url" href="http://www.msaaa.co.in/events/" target="_blank" rel="noopener">msaaa.co.in › events</a></div>
+        <div class="site"><b>TRI2CHAMP AquaFest</b><span class="meta">Chennai · Blue Flag Beach, Kovalam · 3rd edition 24 May 2026</span><p>An open-water swimming series anchored by a swimathon, alongside triathlon, aquathlon and duathlon. Supported by Tamil Nadu Tourism (TTDC) and the Tamil Nadu State Aquatic Association. Categories run from juniors and beginners to elite.</p><a class="url" href="https://www.incredibleindia.gov.in/en/festivals-and-events/tamil-nadu/trichamp---aquafest" target="_blank" rel="noopener">incredibleindia.gov.in</a></div>
+      </div>
+    </div>
+
+    <!-- 5–10 KM -->
+    <div class="lvl-panel" id="lvl-long" role="tabpanel" aria-labelledby="tab-long">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've finished shorter sea swims and have the certificates to prove it (Step 4). Plan for feeding and heat, and train with a group that swims in the sea. Read <a href="#ch-breath">Ch 4</a>.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Where are the feed boats, and what do they carry? How does the tide change over a 3–5 hour race? What are the intermediate cut-offs? Which earlier swims count as proof for entry?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>The Goa Swimathon 5 km &amp; 10 km</b><span class="meta">Goa · 15 Nov 2026 · Enduro Sports Goa</span><p>Flag-off at 7:30 am, with cut-offs of 3 hours (5 km) and 5.5 hours (10 km). Swimmers pass close to timing boats, where they can also hydrate and rest. Entry needs earlier open-water or sea-swim certificates, and over-60s need a medical fitness certificate. Tow floats are allowed in these two races.</p><a class="url" href="https://www.endurosportsgoa.com/race-rules-and-policies" target="_blank" rel="noopener">endurosportsgoa.com › race rules</a></div>
+        <div class="site"><b>Sunk Rock 5 km</b><span class="meta">Mumbai · February · MSAAA</span><p>The longest of the Sunk Rock distances, finishing at the Gateway of India.</p><a class="url" href="http://www.msaaa.co.in/events/" target="_blank" rel="noopener">msaaa.co.in › events</a></div>
+        <div class="site"><b>The Goan Coastal Odyssey relays</b><span class="meta">South Goa · Valor → Zalor beach · January</span><p>Swim your 5 km leg of a 4 × 5 km relay, or 10 km of a 2 × 10 km relay, along the South Goa coast with lifeguards, kayakers and boats. Prerequisites: a 2.5/3.8 km swim (5 km leg) or a 5 km swim (10 km leg).</p><a class="url" href="https://www.goaopenwaterswimmingclub.com/swim-with-us/upcoming-events/the-goan-coastal-odyssey" target="_blank" rel="noopener">goaopenwaterswimmingclub.com</a></div>
+        <div class="site"><b>SFI National Open Water Swimming Championships</b><span class="meta">Thanirbhavi Beach, Mangaluru · 9–10 Jan 2026 · SFI, organised by Karnataka Swimming Association</span><p>The national championship for competitive open-water swimmers. The 2026 results list 1, 3, 5 and 7.5 km races for age groups, plus 5 km and 10 km open races. This is the competitive pathway (Step 6), not a mass-participation swim.</p><a class="url" href="https://www.swimming.org.in/national-open-water-swimming-championships-2026/" target="_blank" rel="noopener">swimming.org.in › open water 2026</a></div>
+      </div>
+    </div>
+
+    <!-- ULTRA -->
+    <div class="lvl-panel" id="lvl-ultra" role="tabpanel" aria-labelledby="tab-ultra">
+      <div class="lvl-intro">
+        <div class="box"><h4>You're here if…</h4><p style="margin:0">You've swum 10 km in the sea and want point-to-point or all-night challenges (Step 5). These are escorted swims with strict prerequisites and safety crews.</p></div>
+        <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What escort (boat, kayak, lifeguard) will I have? How do you plan the swim around the tide (<a href="#ch-open">Ch 5</a>)? What are the checkpoint times? What's the plan if I overheat or get stung (<a href="#ch-cold">Ch 6</a>)?</p></div>
+      </div>
+      <div class="sites">
+        <div class="site"><b>The Goan Coastal Odyssey, 20 km solo</b><span class="meta">South Goa · 2nd edition (briefing 10 Jan 2026)</span><p>Billed by its organisers as India's longest open-water swimming challenge (in the sea; the Murshidabad river race below is longer): 20 km from Valor to Zalor beach. Solo swimmers need an earlier 10 km or 16 km timed swim, and must pass checkpoints at 5 km (2.5 h), 10 km (5 h) and 20 km (10 h).</p><a class="url" href="https://www.goaopenwaterswimmingclub.com/swim-with-us/upcoming-events/the-goan-coastal-odyssey" target="_blank" rel="noopener">goaopenwaterswimmingclub.com</a></div>
+        <div class="site"><b>Elephanta → Gateway of India expedition swim</b><span class="meta">Mumbai harbour · 31 Oct–1 Nov 2026 · OWSA</span><p>An expedition swim from Elephanta Island to the Gateway of India, organised by the Open Water Swimming Academy.</p><a class="url" href="https://www.openwaterswimsindia.com/event" target="_blank" rel="noopener">openwaterswimsindia.com › events</a></div>
+        <div class="site"><b>Mumbai Sea Swimmers: Ultra Swim &amp; Dusk to Dawn</b><span class="meta">Mumbai · Ultra Swim since 2022 · Dusk to Dawn since 2022</span><p>The Ultra Swim runs team relays and solo point-to-point sea swims together on one date. Dusk to Dawn is a 12-hour all-night marathon swim with solo and relay formats, run with Rupali Repale Swimming Academy.</p><a class="url" href="https://www.mumbaiseaswimmers.com" target="_blank" rel="noopener">mumbaiseaswimmers.com</a></div>
+        <div class="site"><b>Murshidabad 81 km river swim</b><span class="meta">Bhagirathi, Murshidabad, West Bengal · late Aug or early Sep · Murshidabad District Swimming Association</span><p>Billed as the world's longest swimming competition: 81 km downstream from Ahiran Ghat (Jangipur) to Berhampore, with a separate 19 km race. It began in 1943 over 74 km and has been 81 km since 1987. The 80th edition was on 6 Sep 2026 with 27 swimmers from several states and Bangladesh; the 2025 winner took 10 h 35 min 37 s (<a href="#ch-open">Ch 5</a>). Channel swimmers including Bula Chowdhury have raced it as preparation.</p><a class="url" href="https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/" target="_blank" rel="noopener">2026 report (ANI)</a></div>
+      </div>
+      <div class="callout note"><p style="margin:0"><strong>Andaman &amp; Nicobar:</strong> we looked for a recurring open-water event in the islands and found only one-off swims in news reports, so none is listed here. Andaman's clear water is still a beautiful place for lifeguarded recreational swimming and snorkelling (see our <a href="../scuba/">scuba page</a>).</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
