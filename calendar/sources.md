@@ -28,6 +28,8 @@ Page: `/calendar/` ("When to go") and the season strip on each sport page. Gener
 | temple | [Temple Adventures, Pondicherry (FAQ)](https://templeadventures.com/faqs/) | WebFetch 5 Oct 2026: open 365 days; Feb-Apr and Sep-Nov among the best months, 20-30 m visibility |
 | cocopelli | [Cocopelli Surf School, Gokarna](https://cocopelli.org/) | curl 5 Oct 2026: 'visit us between October and May, which is suitably the best time for beginners to surf' |
 | kallialay | [Kallialay Surf School, near Puducherry (FAQ)](https://surfschoolindia.com/surf-school-faq/) | Surfing page source (3 Oct 2026, WebFetch): lessons every day of the year, depending on sea conditions |
+| puri-sf | [Surf-Forecast, Puri Beach surf guide](https://www.surf-forecast.com/breaks/Puri-Beach) | WebFetch 5 Oct 2026: exposed beach break; autumn and winter best; October often best for clean waves (41% clean); NNW wind, S swell; lefts and rights; dangerous rips; surfable all tide stages |
+| surfingyogis | [Surfing Yogis Puri](https://surfingyogis.org/) | WebFetch/curl 5 Oct 2026: Puri-Konark Marine Drive near Balighai; surf & SUP lessons, Hatha yoga, Yoga on Water; pioneers of India Surf Festival; no published lesson season months on site |
 | sfi-events | [Surfing Federation of India, events](https://www.surfingfederationofindia.org/events) | curl 5 Oct 2026: 2026 Point Break Challenge 30 Jul, Covelong Classic 6-8 Aug, WSL Shore Temple Classic 12-16 Aug (2nd WSL event in India, after 2023) |
 | uk-rafting | [Uttarakhand river rafting/kayaking rules, 2015 amendment (seasons)](https://www.uttarakhandtourism.gov.in/assets/pdf/rafting_rules_in_english_7sept15-1.pdf) | Kayaking page source (3 Oct 2026): season 1 Sep-30 Jun on the Ganga, Alaknanda, Bhagirathi and Kali |
 | redchilli | [Red Chilli Adventure, Rishikesh rafting trips](https://www.redchilliadventure.com/collections/rafting-in-rishikesh) | curl 5 Oct 2026: season mid-September to end of June; wetsuit and splash jacket in winter; Dec-Jan trips take longer (page shows prices: not reproduced) |
@@ -77,6 +79,7 @@ Page: `/calendar/` ("When to go") and the season strip on each sport page. Gener
 | Swimming | Sea swims: west coast (Goa, Mumbai) | none | Oct-May | Jun-Sep | goa-policy, imd-normals, pages | - |
 | Surfing | West coast (Goa, Karnataka, Kerala) | Nov-May | Oct | Jun-Sep | cocopelli, goa-policy, imd-normals | Cocopelli: from October; IMD Goa withdrawal normal 14 Oct. October shown as Possible. |
 | Surfing | East coast (Tamil Nadu, Puducherry) | none | all year | none | kallialay, sfi-events, imd-nem | - |
+| Surfing | Odisha (Puri–Konark) | Oct-Dec | Jan-Feb, Sep | Mar-Aug | puri-sf, surfingyogis | Surfing Yogis does not publish month-by-month seasons; months follow Surf-Forecast's Puri Beach guide. |
 | Kayaking & rafting | Rishikesh and Uttarakhand rivers | Oct-Jun | Sep | Jul-Aug | uk-rafting, redchilli | Rules: from 1 Sep; Red Chilli: from mid-Sep. September shown as Possible. |
 | Kayaking & rafting | Kolad (Kundalika, Maharashtra) | Jun-Sep | Oct-May | none | kolad | - |
 | Kitesurfing | Palk Bay near Rameswaram: summer wind season | Apr-Sep | none | Oct-Mar | quest | - |

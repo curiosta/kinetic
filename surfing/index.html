@@ -36,7 +36,7 @@
     <div>
       <span class="eyebrow">Kinetic · Adventure science · Surfing</span>
       <h1>Ride the energy of <em>a storm far out at sea.</em></h1>
-      <p class="lede">Every wave you catch is energy that crossed an ocean. Learn how swell travels, why waves break where they do, why learner boards are so big and how to read a rip, then find an ISA-certified school on India's coast at your level.</p>
+      <p class="lede">Every wave you catch is energy that crossed an ocean. Learn how swell forms and refracts, why beach, reef and point breaks differ, how board volume, trim and rails work, and how to handle wipeouts and rips — then find a verified school on India's coast, from Puri to Covelong, at your level.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
         <a class="btn btn-ghost" href="#science">Skip to the science</a>
@@ -87,8 +87,16 @@
     <div class="section-head">
       <span class="eyebrow">02 · The science</span>
       <h2>Six chapters. Every number worked out.</h2>
-      <p>Each chapter explains one idea in plain language, then works a real example. Try the Wave Lab to follow a swell from a distant storm to the moment it breaks.</p>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Wave Lab to follow a swell from a distant storm to the moment it breaks over sand, reef or a point.</p>
     </div>
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-swell"><span class="n">CHAPTER 1</span><span class="t">Swell, formation &amp; refraction</span><span class="d">Wind, period, group speed and how coasts bend waves</span></a>
+      <a href="#ch-breaking"><span class="n">CHAPTER 2</span><span class="t">Breaks, shoaling &amp; tide</span><span class="d">Beach, reef and point; spilling vs plunging; wind and tide</span></a>
+      <a href="#ch-board"><span class="n">CHAPTER 3</span><span class="t">Buoyancy &amp; board volume</span><span class="d">Archimedes, litres and why learners ride foam</span></a>
+      <a href="#ch-ride"><span class="n">CHAPTER 4</span><span class="t">Planing, trim &amp; rails</span><span class="d">Catching speed, balance and turning on a rail</span></a>
+      <a href="#ch-rips"><span class="n">CHAPTER 5</span><span class="t">Rips, wipeouts &amp; hold-downs</span><span class="d">Escape physics, tumbling whitewater and staying calm</span></a>
+      <a href="#ch-energy"><span class="n">CHAPTER 6</span><span class="t">Wave energy &amp; impact</span><span class="d">Height squared, power and why leashes matter</span></a>
+    </nav>
 
     <nav class="chapters-index" aria-label="Chapters">
       <a href="#ch-swell"><span class="n">CHAPTER 1</span><span class="t">Swell: how waves travel</span><span class="d">Period, wavelength and group speed</span></a>
@@ -126,10 +134,10 @@
 
     <!-- CHAPTER 1 -->
     <article class="chapter" id="ch-swell">
-      <header><span class="chno">CH 1</span><h3>Swell: how waves travel</h3></header>
+      <header><span class="chno">CH 1</span><h3>Swell: formation &amp; refraction</h3></header>
       <p class="hook">The wave you ride may have started as a storm days ago and a thousand kilometres away.</p>
       <div class="body">
-        <p>Wind blowing over the sea makes waves. Far from the storm, they sort themselves into regular <strong>swell</strong>, described by its <strong>period</strong> T (seconds between crests) and height. Water itself barely travels: it moves round in circles as the wave's energy passes through. In deep water (deeper than about half a wavelength), linear wave theory gives <span class="eq">L = g T² ÷ 2π ≈ 1.56 T²</span> metres and crest speed <span class="eq">c = g T ÷ 2π ≈ 1.56 T</span> m/s. The energy moves at the <strong>group speed</strong>, half of c.</p>
+        <p>Wind blowing over the sea transfers energy through friction and pressure on the water surface. Close to the storm you get short, choppy <strong>wind swell</strong>. Farther away, waves sort themselves by speed into regular <strong>groundswell</strong>, described by its <strong>period</strong> T (seconds between crests) and height. Water itself barely travels: it moves in orbital circles as the wave's energy passes through. In deep water (deeper than about half a wavelength), linear wave theory gives <span class="eq">L = g T² ÷ 2π ≈ 1.56 T²</span> metres and crest speed <span class="eq">c = g T ÷ 2π ≈ 1.56 T</span> m/s. The energy moves at the <strong>group speed</strong>, half of c.</p>
         <div class="worked">
           <span class="lbl">Worked example · deep-water swell by period</span>
           <div class="table-scroll"><table class="data">
@@ -143,13 +151,28 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">T = 8 s: L = 9.81 × 64 ÷ 6.283 ≈ 99.9 m; c = 9.81 × 8 ÷ 6.283 ≈ 12.5 m/s; group speed ≈ 6.25 m/s; 1,000,000 m ÷ 6.25 m/s ≈ 160,000 s ≈ 44.5 h.</p>
         </div>
+        <h4>Refraction: why waves bend toward shallow water</h4>
+        <p>In shallow water the crest speed falls to about <span class="eq">c ≈ √(g d)</span>. The part of a wave front that reaches shallower water first slows down, so the whole front <strong>bends</strong> (refracts) toward the shallows — the same idea as Snell's law for light. That is why waves wrap around headlands and focus energy onto reefs and points, and why a bay can be calmer than the open coast next to it.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · shallow vs deep crest speed (same period)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Water depth</th><th>Approx. crest speed √(g d)</th><th>Compared with deep-water 8 s crest (12.5 m/s)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 m</td><td class="num">≈ 9.9 m/s</td><td>Already slower → front starts to bend</td></tr>
+              <tr><td class="num">4 m</td><td class="num">≈ 6.3 m/s</td><td>About half the deep-water speed</td></tr>
+              <tr><td class="num">1.3 m (near a 1 m break)</td><td class="num">≈ 3.5 m/s</td><td>Much slower: energy piles into a taller wave</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(9.81 × 4) ≈ 6.3 m/s. Refraction is why a point break can peel for a long ride while the same swell dumps on a straight beach nearby.</p>
+        </div>
         <h4>Reading a forecast</h4>
         <ul>
           <li><strong>Period matters as much as height:</strong> a 1 m, 12 s swell breaks with far more push than a 1 m, 6 s wind chop.</li>
           <li><strong>Long-period swell arrives first:</strong> because longer waves travel faster, the first sign of a distant storm is a long-period "forerunner".</li>
           <li><strong>Wind direction:</strong> light offshore wind (blowing from land to sea) grooms wave faces; onshore wind makes them crumbly and messy.</li>
+          <li><strong>Swell angle vs coast:</strong> if the swell is running nearly parallel to the beach, refraction may still bend some energy in — but expect weaker, more inconsistent surf.</li>
         </ul>
-        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Count the seconds between waves arriving at the beach: that's the period. Multiply it by itself and by 1.56, and you have roughly how far apart the crests were out at sea.</div></div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Count the seconds between waves at the beach: that's the period. Multiply it by itself and by 1.56, and you have roughly how far apart the crests were out at sea.</div></div>
         <details class="check"><summary>A 10-second swell: how long are the waves in deep water, and how fast does the energy travel?</summary>
         <p>L ≈ 1.56 × 100 = <strong>156 m</strong>. Crest speed ≈ 15.6 m/s, so the energy travels at about <strong>7.8 m/s (28 km/h)</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -158,10 +181,10 @@
 
     <!-- CHAPTER 2 -->
     <article class="chapter" id="ch-breaking">
-      <header><span class="chno">CH 2</span><h3>Shoaling &amp; breaking</h3></header>
-      <p class="hook">A wave breaks when the sea floor trips it up.</p>
+      <header><span class="chno">CH 2</span><h3>Breaks, shoaling &amp; tide</h3></header>
+      <p class="hook">A wave breaks when the sea floor trips it up — and the shape of that floor decides the ride.</p>
       <div class="body">
-        <p>Once the depth is less than about a twentieth of the wavelength, the wave "feels" the bottom and its speed becomes <span class="eq">c ≈ √(g d)</span>, where d is the depth. As it slows, the same energy is squeezed into a shorter, taller wave: <strong>shoaling</strong>. When the wave gets too tall for the depth, the crest outruns the base and spills or pitches forward. A widely used rule of thumb says this happens when the height is about <span class="eq">H ≈ 0.78 d</span>.</p>
+        <p>Once the depth is less than about a twentieth of the wavelength, the wave "feels" the bottom and its speed becomes <span class="eq">c ≈ √(g d)</span>, where d is the depth. As it slows, the same energy is squeezed into a shorter, taller wave: <strong>shoaling</strong>. When the wave gets too tall for the depth, the crest outruns the base and spills or pitches forward. A widely used rule of thumb says this happens when the height is about <span class="eq">H ≈ 0.78 d</span> (a McCowan-type estimate; real beaches vary).</p>
         <div class="worked">
           <span class="lbl">Worked example · where waves break (rule of thumb H ≈ 0.78 d)</span>
           <div class="table-scroll"><table class="data">
@@ -175,11 +198,18 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">1 m wave: d = 1 ÷ 0.78 ≈ 1.28 m; √(9.81 × 1.28) ≈ 3.5 m/s. Real breaking depth varies with beach slope and wave steepness; treat 0.78 as a classroom approximation.</p>
         </div>
-        <h4>Beaches, reefs and points</h4>
+        <h4>Beach, reef and point breaks</h4>
         <ul>
-          <li><strong>Beach breaks</strong> break over sandbars that shift with the seasons. Gentle slopes make soft, spilling waves: ideal for learning. Most Indian surf schools teach on beach breaks.</li>
-          <li><strong>Reef and point breaks</strong> break over rock or coral in the same place each time, often more powerfully and over shallow, hard bottoms.</li>
-          <li><strong>Steeper bottoms make plunging waves</strong> that pitch forward and can slam you down. That shallow impact zone is why you fall flat, never dive head-first, and protect your head as you surface.</li>
+          <li><strong>Beach breaks</strong> break over sandbars that shift with seasons and storms. Gentle slopes make soft, <strong>spilling</strong> waves (foam slides down the face): ideal for learning. Most Indian surf schools teach on beach breaks — Puri–Konark, Rushikonda, Mulki and Gokarna Main Beach are examples of this kind of setup.</li>
+          <li><strong>Reef breaks</strong> break over rock or coral in nearly the same place each time. They can be more powerful and hollow, and the bottom is hard and shallow.</li>
+          <li><strong>Point breaks</strong> peel along a headland or jetty as the wave refracts around it, often giving a long one-direction ride. Covelong (Kovalam, Tamil Nadu) has a point a short paddle from the beginner cove that Bay of Life describes as a nursery for beginners.</li>
+          <li><strong>Plunging (pitching) waves</strong> form on steeper bottoms: the crest curls and dumps. That shallow impact zone is why you fall flat, never dive head-first, and protect your head as you surface.</li>
+        </ul>
+        <h4>Tide and wind</h4>
+        <ul>
+          <li><strong>Tide changes depth:</strong> a spot that is friendly at mid or high tide can go shallow and close-out at low tide (or the reverse on some reefs). Ask how the local break changes through the tide cycle.</li>
+          <li><strong>Offshore wind</strong> holds the face up and makes it cleaner; <strong>onshore wind</strong> chops the surface and makes waves crumble early.</li>
+          <li><strong>Monsoon on the west coast</strong> brings big, messy seas — fine for experienced surfers in the right spots, not for first lessons (and Goa's water-sports policy bars surfboard sports in the monsoon).</li>
         </ul>
         <div class="callout warn"><h4>Know the bottom before you paddle out</h4><p style="margin:0">Ask your instructor what's under the waves: sand, rock or reef, and how the tide changes it. A spot that's friendly at high tide can be shallow and dangerous at low tide.</p></div>
         <details class="check"><summary>Waves are breaking in water about 2 m deep. Roughly how big are they?</summary>
@@ -193,7 +223,7 @@
       <header><span class="chno">CH 3</span><h3>Buoyancy &amp; board volume</h3></header>
       <p class="hook">Every litre of board holds up about a kilogram. Beginners need lots of litres.</p>
       <div class="body">
-        <p>Archimedes' principle: anything in water is pushed up by a force equal to the weight of the water it displaces. Seawater has a density of about 1.025 kg per litre, so <strong>each litre of board volume can support about 1 kg</strong> when pushed fully under. A board that floats you high on the surface paddles faster and wobbles less.</p>
+        <p>Archimedes' principle: anything in water is pushed up by a buoyant force equal to the weight of the fluid it displaces. In symbols, <span class="eq">F<sub>b</sub> = ρ V g</span>, where ρ is the density of seawater (about 1,025 kg/m³, or 1.025 kg per litre), V is the submerged volume and g ≈ 9.81 m/s². So <strong>each litre of board volume can support about 1 kg</strong> when pushed fully under. A board that floats you high paddles faster and wobbles less; a tiny performance board sits low and duck-dives easily.</p>
         <div class="worked">
           <span class="lbl">Worked example · maximum buoyant support in seawater</span>
           <div class="table-scroll"><table class="data">
@@ -204,13 +234,14 @@
               <tr><td>Big foam learner board</td><td class="num">≈ 80 L</td><td class="num">≈ 82 kg</td></tr>
             </tbody>
           </table></div>
-          <p class="small" style="margin:10px 0 0">80 L × 1.025 kg/L ≈ 82 kg. A 70 kg surfer's body also floats a little in seawater, so the board doesn't carry their whole weight, but the more volume to spare, the higher and steadier it sits. The board volumes here are typical examples, not a sizing guide; ask your school.</p>
+          <p class="small" style="margin:10px 0 0">80 L × 1.025 kg/L ≈ 82 kg. A 70 kg surfer's body also floats a little in seawater, so the board doesn't carry their whole weight, but the more volume to spare (freeboard), the higher and steadier it sits. The board volumes here are typical examples, not a sizing guide; ask your school.</p>
         </div>
         <h4>Why learner boards look the way they do</h4>
         <ul>
           <li><strong>Length and width:</strong> a long, wide board is stable side-to-side and glides into small waves early.</li>
-          <li><strong>Soft-top:</strong> a foam deck and flexible fins hurt far less when you fall on the board or it hits you. Kallialay Surf School, for example, provides soft-top boards for lessons.</li>
+          <li><strong>Soft-top:</strong> a foam deck and flexible fins hurt far less when you fall on the board or it hits you. Kallialay and Bay of Life, for example, put beginners on soft-tops.</li>
           <li><strong>Wax and rash vests:</strong> wax gives grip on hard decks; a rash vest protects skin from the deck and the sun.</li>
+          <li><strong>Progression:</strong> as you improve, schools move you to less volume so you can duck-dive and turn harder — Om Surf School in Vizag describes that soft-board → hard longboard → shortboard path for progressing students.</li>
         </ul>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 1-litre water bottle full of air takes a surprising push to hold under in a pool: about 1 kg-force. Your learner board is like 80 of them.</div></div>
         <details class="check"><summary>Roughly how much support could a 40 L board give if pushed fully under seawater?</summary>
@@ -221,10 +252,10 @@
 
     <!-- CHAPTER 4 -->
     <article class="chapter" id="ch-ride">
-      <header><span class="chno">CH 4</span><h3>Paddling, catching &amp; riding</h3></header>
-      <p class="hook">Surfing is falling down a hill that keeps moving towards the beach.</p>
+      <header><span class="chno">CH 4</span><h3>Planing, trim &amp; rails</h3></header>
+      <p class="hook">Surfing is falling down a hill that keeps moving towards the beach — then steering with the edge of your board.</p>
       <div class="body">
-        <p>To catch a wave you need to be moving towards the beach as it lifts the back of your board. Once you're on the sloping face, part of gravity, <span class="eq">g sin θ</span> for a face at angle θ, pulls you down the slope while the wave keeps rebuilding the slope underneath you. The board starts to <strong>plane</strong>, skimming on top of the water instead of pushing through it.</p>
+        <p>To catch a wave you need to be moving towards the beach as it lifts the back of your board. Once you're on the sloping face, gravity pulls you down the slope while the wave keeps rebuilding it underneath you. At enough speed the board stops ploughing through water and starts to <strong>plane</strong>: most of its weight is supported by dynamic pressure on the wetted underside, like a speedboat. Drag drops and you accelerate.</p>
         <div class="worked">
           <span class="lbl">Worked example · speed from dropping down the face (no friction)</span>
           <div class="table-scroll"><table class="data">
@@ -237,12 +268,17 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">1.5 m: √(2 × 9.81 × 1.5) ≈ 5.42 m/s × 3.6 ≈ 19.5 km/h. Friction and drag reduce this, but the wave keeps feeding you energy as long as you stay on the steep part of the face.</p>
         </div>
-        <h4>Where the physics shows up in a lesson</h4>
+        <h4>Trim: where you stand on the board</h4>
+        <ul>
+          <li><strong>Paddle trim:</strong> too far back and the nose lifts and drags; too far forward and the nose digs in ("pearling"). Find the spot where the board lies flat on the water.</li>
+          <li><strong>Ride trim:</strong> weight forward engages the front of the board and builds speed down the line; weight back releases the nose for turns and stalls. Small shifts of a few centimetres change how the board planes.</li>
+          <li><strong>Pop-up:</strong> hands under your chest, one smooth move to your feet, knees bent, weight centred. A low centre of mass is more stable.</li>
+        </ul>
+        <h4>Rail engagement: how you turn</h4>
+        <p>The long edges of the board are its <strong>rails</strong>. Leaning puts the board on a rail so water pushes sideways on the submerged edge and fins; that sideways force curves your path, like a bicycle leaning into a bend. More rail in the water → tighter turn and more spray; flat on the belly → speed and stability. Beginners stay flat on soft foam; progressing surfers learn to roll onto a rail for bottom turns and cutbacks.</p>
         <ul>
           <li><strong>Whitewater first:</strong> broken waves (foam) push you towards the beach with no need to match a wave's speed. Most schools start you here.</li>
-          <li><strong>Paddle position:</strong> too far back and the nose lifts and drags; too far forward and the nose digs in ("pearling"). Find the spot where the board lies flat.</li>
-          <li><strong>Pop-up:</strong> hands under your chest, one smooth move to your feet, knees bent, weight centred. A low centre of mass is more stable.</li>
-          <li><strong>Turning:</strong> leaning puts the board on its rail; the water's push on the tilted board and fins curves your path, like a bicycle leaning into a bend.</li>
+          <li><strong>Fins:</strong> they resist sideways slip so the board tracks when you lean; without them a flat board skids.</li>
         </ul>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 1 m drop gives you about 16 km/h: a brisk cycling pace, on a board, on water.</div></div>
         <details class="check"><summary>You drop 0.8 m down a face. Ignoring friction, what speed do you gain?</summary>
@@ -253,8 +289,8 @@
 
     <!-- CHAPTER 5 -->
     <article class="chapter" id="ch-rips">
-      <header><span class="chno">CH 5</span><h3>Rip currents</h3></header>
-      <p class="hook">The calm-looking gap between breaking waves is often the most dangerous water on the beach.</p>
+      <header><span class="chno">CH 5</span><h3>Rips, wipeouts &amp; hold-downs</h3></header>
+      <p class="hook">The calm-looking gap between breaking waves is often the most dangerous water on the beach — and a dumped wave can hold you under longer than it feels.</p>
       <div class="body">
         <p>Breaking waves carry water towards the shore. It has to return to sea, and it does so in narrow, fast channels: <strong>rip currents</strong>. They form in gaps between sandbars and along piers, groynes and rocks. The US National Weather Service says channel rips typically flow at about 1–2 feet per second (0.3–0.6 m/s) and can reach 8 feet per second (about 2.4 m/s), which NOAA notes is faster than an Olympic swimmer.</p>
         <div class="worked">
@@ -269,13 +305,27 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">Crossing time = 30 m ÷ 1.0 m/s = 30 s; seaward drift = 1.5 m/s × 30 s = 45 m. Once you're out of the channel, the breaking waves on either side help push you back in.</p>
         </div>
+        <h4>Wipeouts and hold-downs</h4>
+        <p>When a wave dumps you, whitewater is a tumbling mix of water and air. You are pushed around by turbulent flow, not held by a solid "hand". Hydrostatic pressure rises by about <span class="eq">10 kPa per metre of depth</span> (≈ 1 atmosphere per 10 m), but learner hold-downs are usually shallow and short. The danger is panic and swimming the wrong way while you are still in the foam.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a rough hold-down clock</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>What happens</th><th>Order of magnitude</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>Typical beginner dump in waist-to-chest whitewater</td><td>A few seconds of tumbling</td><td>Relax, cover your head, wait for the foam to pass, then surface</td></tr>
+              <tr><td>Two waves in a set (period ~8–12 s)</td><td>You may surface between them or take a second dunk</td><td>One breath at the surface is enough if you stay calm</td></tr>
+              <tr><td>Board on a leash yanking you</td><td>Sudden tug toward the wave or beach</td><td>Keep the leash; it is also your float once the set passes</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Illustrative only — not a dive table. Big reef hold-downs are a different sport and need coaching. On a learner beach, the physics lesson is: don't fight the first seconds of foam; protect your head; breathe when you can see air.</p>
+        </div>
         <h4>Spotting and escaping rips</h4>
         <ul>
           <li><strong>Look for:</strong> a darker, calmer-looking gap in the line of breaking waves, foam or sediment drifting seaward, or water flowing out along rocks and piers.</li>
           <li><strong>If caught:</strong> don't fight it. Stay calm and float, keep hold of your board, signal for help, and paddle or swim parallel to the shore until you're free.</li>
           <li><strong>Swimming matters:</strong> Kovalam Surf Club asks for basic swimming skills; Kallialay Surf School asks group-lesson students to swim at least 50 m confidently without touching the ground.</li>
         </ul>
-        <div class="callout warn"><h4>Monsoon seas on the west coast</h4><p style="margin:0">During the monsoon, much of India's west coast gets big, rough, unpredictable surf with strong currents. Learn in the calmer months, follow local warnings and lifeguards, and never surf alone in conditions you don't know.</p></div>
+        <div class="callout warn"><h4>Monsoon seas on the west coast</h4><p style="margin:0">During the monsoon, much of India's west coast gets big, rough, unpredictable surf with strong currents. Learn in the calmer months, follow local warnings and lifeguards, and never surf alone in conditions you don't know. Surf-Forecast also flags dangerous rips at Puri Beach on the Odisha coast — ask your school where the channels sit that day.</p></div>
         <details class="check"><summary>A rip is 20 m wide and flows at 1 m/s. You swim across it at 0.8 m/s. How far out are you carried?</summary>
         <p>Crossing takes 20 ÷ 0.8 = 25 s; drift = 1 × 25 = <strong>25 m</strong> seaward.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -287,7 +337,7 @@
       <header><span class="chno">CH 6</span><h3>Wave energy &amp; impact</h3></header>
       <p class="hook">Twice the height, four times the energy. That's why "just a bit bigger" can be a lot more.</p>
       <div class="body">
-        <p>In linear wave theory, the energy in each square metre of sea is <span class="eq">E = ⅛ ρ g H²</span>, and the power carried per metre of wave crest is <span class="eq">P = ρ g² H² T ÷ 64π</span> (ρ ≈ 1,025 kg/m³ for seawater). Energy grows with height squared, power also grows with period.</p>
+        <p>In linear wave theory, the energy in each square metre of sea is <span class="eq">E = ⅛ ρ g H²</span>, and the power carried per metre of wave crest is <span class="eq">P = ρ g² H² T ÷ 64π</span> (ρ ≈ 1,025 kg/m³ for seawater). Energy grows with height squared; power also grows with period. That is why a slightly bigger, longer-period day hits so much harder in a wipeout.</p>
         <div class="worked">
           <span class="lbl">Worked example · wave power per metre of crest</span>
           <div class="table-scroll"><table class="data">
@@ -303,7 +353,7 @@
         <h4>Staying safe with all that energy</h4>
         <ul>
           <li><strong>Leash on, board under control:</strong> a loose board pushed by whitewater can hit you or someone else hard. Keep it between you and the wave, never between you and other people.</li>
-          <li><strong>Wipeouts:</strong> relax, protect your head with your arms as you surface, and wait for the turbulence to pass.</li>
+          <li><strong>Wipeouts:</strong> relax, protect your head with your arms as you surface, and wait for the turbulence to pass (<a href="#ch-rips">Ch 5</a>).</li>
           <li><strong>Etiquette is safety:</strong> one surfer per wave (the one closest to the breaking part has priority), don't drop in, and paddle around the line-up, not through it.</li>
           <li><strong>Sun and heat:</strong> India's water is warm, but the sun is strong: rash vest, reef-safe sunscreen and water.</li>
         </ul>
@@ -331,14 +381,14 @@
         <div class="cols">
           <div class="ag"><span class="an">Real requirement</span><span class="cn">Kovalam Surf Club, Kerala</span><ul><li>Basic swimming skills; about 1.5 h with an internationally certified instructor</li><li>Theory on safety, ocean knowledge, paddling and balance, then pushed into whitewater; most students need 3–5 introduction classes</li></ul></div>
           <div class="ag"><span class="an">Real requirement</span><span class="cn">Kallialay Surf School, Puducherry</span><ul><li>Group lessons: swim at least 50 m confidently without touching the ground (non-swimmers can book a private lesson)</li><li>Children under 11 take private lessons</li></ul></div>
-          <div class="ag"><span class="an">Science you're using</span><span class="cn">Buoyancy and breaking</span><ul><li><a href="#ch-board">Ch 3</a> and <a href="#ch-breaking">Ch 2</a></li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Volume, breaks and tide</span><ul><li><a href="#ch-board">Ch 3</a> and <a href="#ch-breaking">Ch 2</a></li></ul></div>
         </div>
       </div>
       <div class="rung">
         <div class="lvl"><span class="step">Step 2 · Green waves</span><b>Paddling out past the whitewater</b><span class="iso">School's own level 2–3</span></div>
         <div class="cols">
           <div class="ag"><span class="an">Real progression</span><span class="cn">Kovalam Surf Club</span><ul><li>Basic class: wax your board, paddle through the waves, catch small rides from the line-up</li><li>Step-up class: catch waves on your own with an instructor paddling alongside</li></ul></div>
-          <div class="ag"><span class="an">Science you're using</span><span class="cn">Catching and riding</span><ul><li><a href="#ch-ride">Ch 4</a></li><li>Rips: <a href="#ch-rips">Ch 5</a></li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Planing, trim and rails</span><ul><li><a href="#ch-ride">Ch 4</a></li><li>Rips &amp; wipeouts: <a href="#ch-rips">Ch 5</a></li></ul></div>
           <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Learn etiquette now: one surfer per wave, don't drop in, paddle wide of the line-up.</div>
         </div>
       </div>
@@ -418,6 +468,7 @@
   <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
   <div class="ss-row"><span class="ss-lab">West coast (Goa, Karnataka, Kerala)</span><span class="ss-cells" role="img" aria-label="West coast (Goa, Karnataka, Kerala): peak November to May; possible October; off June to September"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c P" title="March: Peak">●</span><span class="ss-c P" title="April: Peak">●</span><span class="ss-c P" title="May: Peak">●</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c O" title="September: Off">✕</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
   <div class="ss-row"><span class="ss-lab">East coast (Tamil Nadu, Puducherry)</span><span class="ss-cells" role="img" aria-label="East coast (Tamil Nadu, Puducherry): possible all year"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c Y" title="November: Possible">◐</span><span class="ss-c Y" title="December: Possible">◐</span></span></div>
+  <div class="ss-row"><span class="ss-lab">Odisha (Puri–Konark)</span><span class="ss-cells" role="img" aria-label="Odisha (Puri–Konark): peak October to December; possible January to February, September; off March to August"><span class="ss-c Y" title="January: Possible">◐</span><span class="ss-c Y" title="February: Possible">◐</span><span class="ss-c O" title="March: Off">✕</span><span class="ss-c O" title="April: Off">✕</span><span class="ss-c O" title="May: Off">✕</span><span class="ss-c O" title="June: Off">✕</span><span class="ss-c O" title="July: Off">✕</span><span class="ss-c O" title="August: Off">✕</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c P" title="October: Peak">●</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
   <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in May, August, November"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="May: Indian Open of Surfing">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="August: Covelong Classic (Covelong Point surf festival)">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="November: ISA World Surfing Games">◆</span><span class="ss-c e0"></span></span></div>
   <ul class="ss-events">
     <li><b>ISA World Surfing Games</b> (global) · <span class="ss-when">6-15 Nov 2026</span> · Punta Rocas, Peru · <a href="https://isasurf.org/" target="_blank" rel="noopener">official page ↗</a></li>
@@ -428,10 +479,12 @@
 </div>
 <!-- season-strip:end -->
     <div class="season">
-      <div><b>West coast (Kerala, Karnataka, Goa)</b>Best for learning outside the monsoon. Cocopelli in Gokarna recommends October to May for beginners; monsoon seas are big and rough.</div>
-      <div><b>East coast (Tamil Nadu, Puducherry)</b>Waves at different times of year: SFI's 2026 contests at Mahabalipuram and Kovalam (TN) ran from late July to mid-August. Kallialay runs lessons every day of the year, depending on sea conditions.</div>
-      <div><b>Time of day</b>Lessons are timed around tides and sea conditions, which change daily; mornings often bring lighter winds.</div>
-      <div><b>Every day</b>Check the forecast's period as well as its height (<a href="#ch-swell">Ch 1</a>), and ask about rips (<a href="#ch-rips">Ch 5</a>).</div>
+      <div><b>West coast (Kerala, Karnataka, Goa)</b>Best for learning outside the monsoon. Cocopelli in Gokarna recommends October to May for beginners; monsoon seas are big and rough, and Goa's water-sports policy bars surfboard sports in the monsoon.</div>
+      <div><b>East coast (Tamil Nadu, Puducherry)</b>Waves at different times of year: SFI's 2026 contests at Mahabalipuram and Kovalam (TN) ran from late July to mid-August. Kallialay runs lessons every day of the year, depending on sea conditions. Covelong Point is a beach-and-reef/point setup used by Bay of Life.</div>
+      <div><b>Odisha (Puri–Konark)</b>Surf-Forecast lists autumn and winter as the best window at Puri Beach, with October often the cleanest month; watch for rips. Surfing Yogis teaches on the Puri–Konark Marine Drive near Balighai.</div>
+      <div><b>Andhra Pradesh (Vizag)</b>Om Surf School teaches at Rushikonda Beach (beginner to advanced, including a nearby point for coaching). Confirm conditions on the day.</div>
+      <div><b>Time of day</b>Lessons are timed around tides and sea conditions, which change daily; mornings often bring lighter winds. Read tide and wind in <a href="#ch-breaking">Ch 2</a>.</div>
+      <div><b>Every day</b>Check the forecast's period as well as its height (<a href="#ch-swell">Ch 1</a>), and ask about rips and wipeouts (<a href="#ch-rips">Ch 5</a>).</div>
     </div>
 
     <div class="lvl-tabs" role="tablist" aria-label="Choose your level" style="margin-top:30px">
@@ -447,17 +500,26 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Are your instructors ISA-certified? Is the school SFI-accredited? What's the bottom like, sand or rock? Where do rips form on this beach? How many students per instructor?</p></div>
       </div>
       <div class="schools">
+        <div class="school"><div class="top"><div><h4>Surfing Yogis</h4><span class="loc">Puri–Konark Marine Drive, near Balighai, Odisha</span></div><span class="badge">Surf &amp; SUP</span></div>
+          <p>Surf and SUP lessons for beginners through advanced surfers, plus Hatha yoga and a signature Yoga on Water (SUP) session on the ocean and the Kushabhadra river. On the Puri–Konark Marine Drive about 15–16 km from Puri; pioneers of the India Surf Festival. Confirm ISA instructor status and conditions directly — their site does not list a certification.</p>
+          <a class="url" href="https://surfingyogis.org/" target="_blank" rel="noopener">surfingyogis.org</a></div>
+        <div class="school"><div class="top"><div><h4>Bay of Life</h4><span class="loc">Kovalam / Covelong, ECR, Chennai, Tamil Nadu</span></div><span class="badge">Surf school</span></div>
+          <p>Chennai's first surf school (since 2011) at a sheltered cove it calls a nursery for beginners, with a point break nearby for experienced riders. Soft-top boards for beginners; also SUP and kayaking. Describes itself as state-accredited with SFI-certified crew — confirm current status with the school.</p>
+          <a class="url" href="https://bayoflife.com/kovalam-covelong/" target="_blank" rel="noopener">bayoflife.com</a></div>
+        <div class="school"><div class="top"><div><h4>Om Surf School</h4><span class="loc">Rushikonda Beach, Visakhapatnam, Andhra Pradesh</span></div><span class="badge">Surf school</span></div>
+          <p>Founded in 2020 by three surfing brothers. Beginner, intermediate and advanced sessions (about 90 minutes) at Rushikonda; instructor Kalyan Rayithi is listed as ISA Level 1. Soft-tops for first waves; progressing students move toward hard boards.</p>
+          <a class="url" href="https://omsurfschool.com/" target="_blank" rel="noopener">omsurfschool.com</a></div>
         <div class="school"><div class="top"><div><h4>Kovalam Surf Club</h4><span class="loc">Lighthouse Beach, Kovalam, Kerala</span></div><span class="badge">Surf school</span></div>
           <p>Teaching since 2005, from age five to sixty. Levels 1–4 run from an introduction on whitewater to performance coaching; lessons in English, Malayalam, Tamil and Hindi. Also offers free lessons for local children.</p>
           <a class="url" href="https://www.kovalamsurfclub.com/surfschool" target="_blank" rel="noopener">kovalamsurfclub.com</a></div>
         <div class="school"><div class="top"><div><h4>Kallialay Surf School</h4><span class="loc">Serenity Beach, near Puducherry</span></div><span class="badge">Surf school</span></div>
           <p>Running since 2009, every day of the year depending on the sea. Soft-top boards and rash vests provided; group students must swim 50 m confidently.</p>
           <a class="url" href="https://surfschoolindia.com/surf-school-faq/" target="_blank" rel="noopener">surfschoolindia.com</a></div>
-        <div class="school"><div class="top"><div><h4>Mantra Surf Club</h4><span class="loc">Mulki, near Mangaluru, Karnataka</span></div><span class="badge">Surf school</span></div>
-          <p>Describes itself as India's first surf school, founded in 2004. Beginner lessons over three or five days with ISA-certified instructors, for swimmers of varying ability.</p>
+        <div class="school"><div class="top"><div><h4>Mantra Surf Club</h4><span class="loc">Mulki, near Mangaluru, Karnataka · also Morjim, Goa</span></div><span class="badge">Surf school</span></div>
+          <p>Describes itself as India's first surf school, founded in 2004 at Mulki. Beginner lessons over three or five days with ISA-certified instructors. Also runs a Goa location at Morjim (Sandbanks).</p>
           <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
         <div class="school"><div class="top"><div><h4>Cocopelli Surf School</h4><span class="loc">Gokarna Main Beach, Karnataka</span></div><span class="badge">Surf school</span></div>
-          <p>Gokarna's first surf school (2010), run by ISA Level 1 instructor Sandeep Samuel. Teaches absolute beginners, non-swimmers and intermediates; recommends October to May for beginners.</p>
+          <p>Gokarna's first surf school (2010), run by ISA Level 1 instructor Sandeep Samuel. Teaches absolute beginners, non-swimmers and intermediates; recommends October to May for beginners. Recognition by ISA and SFI is Cocopelli's own claim — confirm if that matters to you.</p>
           <a class="url" href="https://cocopelli.org/" target="_blank" rel="noopener">cocopelli.org</a></div>
       </div>
     </div>
@@ -467,15 +529,24 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Which board volume should I move to next? Where's the channel to paddle out? What swell period and tide suit this spot?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>Mantra intermediate &amp; advanced</h4><span class="loc">Mulki, Karnataka</span></div><span class="badge">Coaching</span></div>
-          <p>Intermediate surf courses and advanced coaching with ISA-certified instructors.</p>
+        <div class="school"><div class="top"><div><h4>Mantra intermediate &amp; advanced</h4><span class="loc">Mulki, Karnataka · Morjim, Goa</span></div><span class="badge">Coaching</span></div>
+          <p>Intermediate surf courses and advanced coaching with ISA-certified instructors at Mulki; board hire and guided sessions also at the Goa (Morjim) base.</p>
           <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
         <div class="school"><div class="top"><div><h4>Kovalam step-up &amp; performance</h4><span class="loc">Kovalam, Kerala</span></div><span class="badge">Coaching</span></div>
           <p>Step-up classes with the instructor paddling alongside, then performance classes: bottom turns, cutbacks and beyond, conditions permitting.</p>
           <a class="url" href="https://www.kovalamsurfclub.com/surfschool" target="_blank" rel="noopener">kovalamsurfclub.com</a></div>
+        <div class="school"><div class="top"><div><h4>Om Surf School · intermediate &amp; advanced</h4><span class="loc">Rushikonda, Vizag</span></div><span class="badge">Coaching</span></div>
+          <p>Intermediate focus on turning, wave reading and rip awareness; advanced coaching on bigger days, including Rushikonda's point break.</p>
+          <a class="url" href="https://omsurfschool.com/" target="_blank" rel="noopener">omsurfschool.com</a></div>
+        <div class="school"><div class="top"><div><h4>Surfing Yogis · progressing &amp; expeditions</h4><span class="loc">Puri–Konark, Odisha</span></div><span class="badge">Coaching</span></div>
+          <p>Lessons for surfers past the first whitewater, plus coastline expeditions seeking breaks for beginners and more experienced riders.</p>
+          <a class="url" href="https://surfingyogis.org/" target="_blank" rel="noopener">surfingyogis.org</a></div>
       </div>
       <div class="sites">
         <div class="site"><b>Gokarna Main Beach</b><span class="meta">Beach break · beginner-friendly</span><p>A long beach that Cocopelli describes as having good waves for beginners and light currents.</p><a class="url" href="https://cocopelli.org/" target="_blank" rel="noopener">cocopelli.org</a></div>
+        <div class="site"><b>Covelong Point (Kovalam, TN)</b><span class="meta">Beach + reef / point · mixed levels</span><p>Bay of Life's cove for learners; a point a few metres away for experienced surfers. SFI's Covelong Classic is held here each August.</p><a class="url" href="https://bayoflife.com/kovalam-covelong/" target="_blank" rel="noopener">bayoflife.com</a></div>
+        <div class="site"><b>Puri–Konark Marine Drive</b><span class="meta">Beach break · Odisha</span><p>Exposed beach break near Balighai / Surfing Yogis. Surf-Forecast: autumn–winter best, October often cleanest; dangerous rips — go with a school.</p><a class="url" href="https://surfingyogis.org/" target="_blank" rel="noopener">surfingyogis.org</a></div>
+        <div class="site"><b>Rushikonda Beach</b><span class="meta">Beach + point · Vizag</span><p>Om Surf School's home beach for lessons; advanced coaching uses a nearby point break when conditions allow.</p><a class="url" href="https://omsurfschool.com/" target="_blank" rel="noopener">omsurfschool.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-compete" role="tabpanel" aria-labelledby="tab-compete">
@@ -488,6 +559,7 @@
         <div class="site"><b>Covelong Classic</b><span class="meta">National Surf &amp; SUP Series · Kovalam, TN · August</span><p>Part of the 2026 National Surf &amp; SUP Series, 6–8 August 2026 at Kovalam (Covelong), Tamil Nadu.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
         <div class="site"><b>Point Break Challenge</b><span class="meta">National Surf &amp; SUP Series · Mahabalipuram · July–August</span><p>Held 30 July to 1 August 2026 at Mahabalipuram, Tamil Nadu.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
         <div class="site"><b>WSL Shore Temple Classic</b><span class="meta">QS 2000 + Pro Junior · Mahabalipuram · August</span><p>The WSL's second event in India (after 2023) and the country's first WSL Pro Junior, 12–16 August 2026.</p><a class="url" href="https://www.surfingfederationofindia.org/events" target="_blank" rel="noopener">SFI events</a></div>
+        <div class="site"><b>India Surf Festival</b><span class="meta">Puri–Konark Marine Drive · date varies</span><p>Community festival of surfing, workshops, music and ocean films, pioneered by Surfing Yogis. Their festival site announces a return after a hiatus — check <a href="https://indiasurffestival.com/" target="_blank" rel="noopener">indiasurffestival.com</a> for the next dates before you travel.</p><a class="url" href="https://indiasurffestival.com/" target="_blank" rel="noopener">indiasurffestival.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-teach" role="tabpanel" aria-labelledby="tab-teach">
@@ -563,7 +635,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>
