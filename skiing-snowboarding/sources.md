@@ -1,6 +1,6 @@
 # Skiing & Snowboarding: sources and verification log
 
-Checked 3 Oct 2026 (IST). Every fact on the page comes from the official page listed here or is standard physics worked on the page. Fees, phone numbers and email addresses were deliberately **not reproduced**.
+Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. Every fact on the page comes from the official page listed here or is standard physics worked on the page. Fees, phone numbers and email addresses were deliberately **not reproduced**.
 
 ## 1. Physics and safety (standard science, worked on the page)
 
@@ -42,3 +42,26 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from the official page li
 - **Ski and Snowboard India**: no longer FIS's member according to PTI; not given its own card. FIS's directory not yet updated (see above).
 - **Solang ropeway and Auli chairlift lengths and altitudes**: only third-party sources found, so **not stated**.
 - Avalanche numbers (30°–45°) are general knowledge, not from an Indian authority. No avalanche-forecasting body is linked because we didn't verify a current public bulletin page for Gulmarg.
+
+
+## 5. Deep research (5 Oct 2026, batch deep4)
+
+| Item | Source | Status |
+|---|---|---|
+| ISIA national member associations — **no India** | https://isia.ski/members/ | fetched 5 Oct 2026 |
+| "NSF India" instructor directory | search | **not found / not verified** this pass |
+| FIS national associations directory still lists Ski and Snowboard India (Ad Hoc) for India | https://www.fis-ski.com/DB/v2/national-ski-and-snowboard-associations?… | fetched 5 Oct 2026 |
+| BSSA self-description; National Alpine Championships 2027 | https://www.bssa.in/ | fetched 5 Oct 2026 — school's claim + PTI June 2026 for FIS |
+| IISM MoT permanent office; snow skiing Dec–Mar | https://www.iismgulmarg.in/About_iism | re-fetched; **do not reproduce fee table** that appears on some IISM pages |
+| ABVIMAS skiing course list (Elementary, Basic/Int/Adv, MOI, Snow Boarding, Nordic) | https://www.abvimas.org/course/skiing-course-list/ | re-fetched |
+| NIM skiing at Dayara or Ratha Harsil | https://www.nimindia.net/skiingcourse | fetched 5 Oct 2026 |
+| Auli Jan–Mar; GMVN lessons | https://uttarakhandtourism.gov.in/destination/auli | already on page; GMVN still Cloudflare |
+| Snow friction base vs edge; sidecut R ≈ R_sc cos β; avalanche angle link to Ch1 | standard mechanics / teaching models | worked on page (illustrative) |
+| Seasons | Gulmarg / Auli / Solang strips unchanged | no seasons.py regen |
+
+### Accreditation labels on school/operator cards (5 Oct 2026)
+- IISM courses (ski, snowboard, MOI) → ✓ Ministry of Tourism institute; ISIA not applicable / unverified
+- ABVIMAS courses (elem, B/I/A, board, MOI) → ✓ State institute (Himachal); ISIA not applicable / unverified
+- NIM skiing → ✓ Government institute (NIM); ISIA not applicable
+- Auli → Tourism site — GMVN lessons; private ski-school accreditation unverified
+- BSSA championships → School's claim — FIS / IOA (directory lag noted)

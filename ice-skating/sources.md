@@ -1,6 +1,6 @@
 # Kinetic · Ice skating: sources and verification notes
 
-All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Some rink pages list fees, but we link to the rink's site instead. Rink emails and phone numbers are also left off the page.
+Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Some rink pages list fees, but we link to the rink's site instead. Rink emails and phone numbers are also left off the page.
 
 ## 1. Physics (chapters, quiz, Spin & Jump Lab)
 
@@ -53,3 +53,27 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loa
 - ISAI national championship dates for 2026–27: not published when checked.
 - The Learn to Skate USA ladder is used as an international **reference**, not as something Indian rinks follow; the page says so.
 - The frequently quoted "Learn to Skate USA is the official programme of U.S. Figure Skating, USA Hockey and US Speedskating" was not confirmed on the pages read, so it's not stated.
+
+## 5. Deep research (5 Oct 2026, batch deep4)
+
+| Item | Source | Status |
+|---|---|---|
+| ISU member list: INDIA — Ice Skating Association of India; Speed + Figure Skating Member since 2003 | Official PDF linked from https://www.isu.org/en/member-federations (memberfederation.pdf downloaded 5 Oct 2026) | **✓ Verified** |
+| ISAI ABOUT (founded 2002; ISU/ASU/IOA claims; leadership) | https://iceskatingindia.in/ABOUT | re-fetched 5 Oct 2026 |
+| ISAI List of Members (state associations) | https://iceskatingindia.in/List-of-Members | fetched 5 Oct 2026 |
+| ISAI Ice Rinks: Doon (closed); iSkate Gurgaon; outdoor Shimla, Gulmarg, Leh, Kaza, Kargil | https://www.iceskatingindia.in/Ice-Rinks | fetched 5 Oct 2026 — **venue list, not a coaching stamp** |
+| ISKATE about + school course menus (no prices reproduced) | https://www.iskate.co.in/aboutus/ · https://www.iskate.co.in/school/ | WebFetch 5 Oct 2026 |
+| P52 public sessions + training disciplines | https://p52iceskate.com/services-winter-sports-training-facility-in-pune/ | WebFetch 5 Oct 2026 — not on ISAI Ice Rinks |
+| Snow World Kurla (entertainment ice skating among snow activities) | https://snowworldindia.com/about (Kurla / Phoenix Marketcity also listed on mall directories; prefer operator about page) | mall listing loaded; Accreditation: unverified |
+| Snow Kingdom Mumbai | https://www.snowkingdom.com/mumbai/ | loaded — snow park / slides; **not listed as a dedicated ice rink** |
+| Dwarka Sector 23 planned rink; DUAC documentation gap Sep 2026; not open | Times of India / related Sep 2026 reporting | news only — labelled planned / not open |
+| Tilted-skate friction / ploughing; body lean vs blade tilt | J. M. J. van Leeuwen, arXiv:1910.13802 (ar5iv HTML read 5 Oct 2026) | teaching deepen Ch 2 |
+| Jump L conserved; I↓ → ω↑; axis alignment (gentle) | Standard mechanics + biomechanics literature (Knoll/Hildebrand ISBS and related abstracts via search) | teaching deepen Ch 5; not coaching advice |
+| Anisotropic blade friction (glide vs edge) | Standard skating physics; linked Ch 1 ↔ Ch 2 | worked / qualitative table |
+| Seasons | Indoor year-round strip unchanged; prose mentions Mumbai entertainment ice | no seasons.py regen |
+
+### Accreditation labels on rink/school cards (5 Oct 2026)
+- ISKATE (all panels) → ✓ Named on ISAI Ice Rinks (+ School's claim — national coaches / Olympic-sports training where stated; course accreditation unverified)
+- P52 (all panels) → Accreditation: unverified
+- Snow World Mumbai → Accreditation: unverified (entertainment; not on ISAI list)
+- Dwarka → site note only (planned), no school card stamp invented
