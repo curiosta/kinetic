@@ -1,0 +1,33 @@
+/* Kinetic season strip on each sport page (inserted by kinetic-tools/build/strip.py from build/seasons.py). Uses the page's own colour variables. */
+.sstrip{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px 12px;margin:0 0 16px;min-width:0;max-width:100%;box-shadow:var(--shadow)}
+.ss-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;margin:0 0 8px}
+.ss-title{font:700 .76rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--sea-500)}
+.ss-legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.76rem;color:var(--muted);list-style:none;margin:0;padding:0}
+.ss-legend li{display:flex;align-items:center;gap:5px}
+.ss-row{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:4px 12px;align-items:center;margin:5px 0}
+.ss-lab{font-size:.82rem;font-weight:600;line-height:1.3;color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.ss-lab .ss-yr{font:600 .64rem var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--sea-500);background:var(--teal-soft);border-radius:999px;padding:1px 7px;margin-left:6px;white-space:nowrap}
+.ss-cells{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;min-width:0}
+.ss-c{display:flex;align-items:center;justify-content:center;height:24px;border-radius:5px;font-size:.7rem;line-height:1;min-width:0}
+.ss-c.P,.ss-key.P{background:var(--teal);color:#fff}
+.ss-c.Y,.ss-key.Y{background:repeating-linear-gradient(135deg,var(--teal-soft) 0 4px,#fff 4px 8px);color:var(--sea-700);box-shadow:inset 0 0 0 1px var(--teal-soft)}
+.ss-c.O,.ss-key.O{background:#efebe2;color:#9aa6ae}
+.ss-c.E{color:var(--coral);background:var(--coral-soft);font-size:.74rem}
+.ss-c.e0{height:18px}
+.ss-key{display:inline-flex;align-items:center;justify-content:center;width:18px;height:16px;border-radius:4px;font-size:.62rem}
+.ss-key.E{color:var(--coral);background:var(--coral-soft)}
+.ss-months .ss-c{height:auto;font:600 .66rem var(--mono);color:var(--muted)}
+.ss-ev .ss-lab{color:var(--coral);font-size:.78rem}
+.ss-events{list-style:none;margin:10px 0 0;padding:0;font-size:.86rem}
+.ss-events li{padding:6px 0;border-top:1px dashed var(--line);overflow-wrap:anywhere}
+.ss-events .ss-when{font-weight:600}
+.ss-events .ss-usual{font-style:italic}
+.ss-none{margin:10px 0 0;font-size:.84rem;color:var(--muted)}
+.ss-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;margin-top:10px;font-size:.8rem;color:var(--muted)}
+.ss-more{font-weight:600;font-size:.88rem}
+@media (max-width:640px){
+  .sstrip{padding:12px 12px 10px}
+  .ss-row{grid-template-columns:minmax(0,1fr);gap:3px}
+  .ss-months .ss-lab{display:none}
+  .ss-c{height:22px;font-size:.64rem}
+}

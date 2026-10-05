@@ -195,3 +195,4 @@ Sports with no verified recurring event (their strips say so): Scuba, Kitesurfin
 
 - The archery page's 2026 national event dates were corrected on 5 Oct 2026 (they were one day early). The AAI calendar renders dates in the viewer's time zone. Read in IST and checked against the Rajasthan Archery Association's 2026-27 calendar, they are: Junior Nationals, Jaipur, 21-28 Oct; Senior Nationals, Shillong, 11-18 Nov; 4th NRAT, Gangtok, 21-30 Nov; and the workshop, 12-15 Oct.
 - Links marked as Kinetic page sources (`../<sport>/#where`) point to that sport's own sources.md for the underlying citations.
+- Cell notes on touch/coarse pointers open on tap and dismiss on outside tap, Escape, Close, or scroll (5 Oct 2026 mobile UX fix); the panel flips to the top when the tapped cell is near the bottom edge.
