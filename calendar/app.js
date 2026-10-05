@@ -181,10 +181,9 @@
   }
   $$(".mchip").forEach(b => b.addEventListener("click", () => { state.month = +b.dataset.m; renderMonth(); }));
 
-  // ---------- events list: start at the current month; flag editions that are over ----------
+  // ---------- events list: keep Jan→Dec DOM order; flag editions that are over ----------
   const list = $("#evlist");
   const mons = $$(".evmon", list);
-  mons.sort((a, b) => ((+a.dataset.m - CUR + 12) % 12) - ((+b.dataset.m - CUR + 12) % 12)).forEach(li => list.appendChild(li));
   mons.forEach(li => li.classList.toggle("now", +li.dataset.m === CUR));
   $$(".evi[data-end]", list).forEach(li => { if (li.dataset.end < TODAY) { li.classList.add("isp"); $(".past", li).hidden = false; } });
   // an edition that started in an earlier month and is still running moves to the top of the current month
