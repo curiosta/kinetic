@@ -140,6 +140,7 @@
       <div class="body">
         <p>At sea level you're already under one "atmosphere" of air: about 1.013 bar, which we'll call 1 bar. Water is roughly 850 times denser than air, so it piles on pressure fast. A column of seawater 10 m tall over one square metre holds 10 m³ × 1,025 kg/m³ = 10,250 kg. Its weight (× 9.81 m/s²) spread over that square metre is about 100,500 pascals. That's ≈ 1 bar.</p>
         <p><strong>So: every 10 m of seawater adds one more atmosphere.</strong> Your gauge shows depth, but your body responds to <em>absolute</em> pressure, which is air plus water.</p>
+        <p>Fresh water is about 2.5% lighter, so it takes roughly <span class="eq">100,000 ÷ (1,000 × 9.81) ≈ 10.2 m</span> of a pool, lake or quarry to add one bar. Close enough to ignore for depth, but the same density gap matters a lot for weighting (Chapter 2).</p>
 
         <h4>Boyle's law: squeeze the gas, shrink the gas</h4>
         <p>For a fixed amount of gas at constant temperature, <span class="eq">P₁ × V₁ = P₂ × V₂</span>. Double the pressure and the volume halves. Your body is mostly liquid, and liquids barely compress. The gas spaces are what feel it: lungs, middle ears, sinuses, mask, BCD, the bubbles in your wetsuit.</p>
@@ -157,6 +158,18 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">Look at the last column. Pressure doubles in the first 10 m, but going from 30 m to 40 m adds only 25% more. The <strong>shallows are where gas volumes change fastest</strong>. That's why buoyancy is twitchiest near the surface, why your ears need the most attention in the first few metres, and why the last 5 m of an ascent (1.5 → 1 bar, a 50% expansion) deserve the most care.</p>
         </div>
+
+        <div class="callout note"><h4>One family of gas laws</h4><p style="margin:0 0 8px">Boyle is one face of a single rule for a fixed amount of gas: <span class="eq">P × V ÷ T = constant</span>, with T in kelvin (°C + 273). Hold temperature still and you get Boyle. Hold volume still (a steel cylinder) and pressure tracks temperature: that's Gay-Lussac's law, and it's why a tank reads lower once it cools in the sea (Chapter 3). Two more laws handle mixtures and liquids, and Archimedes handles lift:</p>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Law</th><th>In one line</th><th>Where you meet it</th></tr></thead>
+            <tbody>
+              <tr><td>Boyle</td><td>P × V stays constant (temperature fixed)</td><td>Lungs, ears, mask, BCD, wetsuit (<a href="#ch-pressure">Ch 1</a>, <a href="#ch-ears">Ch 5</a>)</td></tr>
+              <tr><td>Charles / Gay-Lussac</td><td>V ∝ T at fixed pressure; P ∝ T at fixed volume</td><td>Hot fills that cool in the water (<a href="#ch-air">Ch 3</a>)</td></tr>
+              <tr><td>Dalton</td><td>Each gas's partial pressure = its fraction × total pressure</td><td>Oxygen limits, nitrox, narcosis (<a href="#ch-gas">Ch 4</a>)</td></tr>
+              <tr><td>Henry</td><td>Gas dissolved in a liquid ∝ its partial pressure</td><td>Nitrogen loading and no-stop limits (<a href="#ch-gas">Ch 4</a>)</td></tr>
+              <tr><td>Archimedes</td><td>Lift = weight of the water you displace</td><td>Weighting, trim, hovering (<a href="#ch-buoyancy">Ch 2</a>)</td></tr>
+            </tbody>
+          </table></div></div>
 
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>At 10 m, every square centimetre of your skin carries about <b>2 kg-force</b> (2 bar ≈ 2.04 kgf/cm²). Your palm, about 100 cm², has roughly <b>200 kg-force</b> pressing on it. You don't feel it because it pushes equally from every side through tissue that doesn't compress. Only air pockets notice.</div></div>
 
@@ -184,6 +197,13 @@
 
         <h4>The shrinking wetsuit</h4>
         <p>Neoprene is a foam full of tiny gas cells, and Boyle's law applies to them too. Say a full suit gives you about 4 kg of lift at the surface (it varies a lot with thickness and size). If it behaved like pure gas it would give ~2 kg at 10 m and ~1 kg at 30 m. Real neoprene doesn't quite compress that fully, but the trend is real: <strong>you get heavier as you go down</strong>. You make up for it with small puffs into the BCD on descent, then vent that air as it expands on ascent.</p>
+
+        <h4>Why hovering is a balancing act</h4>
+        <p>Neutral buoyancy is an <strong>unstable</strong> balance, like a pencil standing on its tip. Drift up half a metre and every gas space expands a little, so you gain lift and drift up faster. Sink a little and they compress, so you sink faster. Nothing pulls you back to where you were; you have to do it. That's why good divers make <strong>small, early corrections</strong> (a breath, a short puff, a short vent) rather than big late ones, and why the feedback is fiercest in the shallows where Boyle's percentages are largest.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the runaway from 10 m</span>
+          <p style="margin:0">You're neutral at 10 m (2 bar) with 2 L of air in your BCD. Rise to 5 m (1.5 bar) without venting and it becomes <span class="eq">2 × 2 ÷ 1.5 ≈ 2.7 L</span>: about 0.7 kg of extra lift. Keep going to the surface and it's <span class="eq">2 × 2 ÷ 1 = 4 L</span>, 2 kg more than you started with, plus whatever your wetsuit re-expands. Each metre up makes the next one faster, so dump air <em>as</em> you rise, not after.</p>
+        </div>
 
         <h4>You get lighter as you breathe</h4>
         <div class="worked">
@@ -224,6 +244,13 @@
             </tbody>
           </table></div>
           <p class="small" style="margin:8px 0 0">These are simplified: they ignore descent and ascent time, and real gas at 200 bar packs slightly less than the ideal-gas figure. The shape is what matters: <strong>the same tank lasts a quarter as long at 30 m as at the surface.</strong></p>
+        </div>
+
+        <h4>Hot fills and cool water: Gay-Lussac at work</h4>
+        <p>Compressing air heats it, and cylinders often sit in the sun. A steel or aluminium cylinder hardly changes volume, so its pressure follows its temperature in kelvin.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the "missing" 8 bar</span>
+          <p style="margin:0">A tank reads 200 bar while still warm at 40 °C (313 K). Jump into 28 °C water (301 K) and, once it cools, it reads <span class="eq">200 × 301 ÷ 313 ≈ 192 bar</span>. No air leaked: the same molecules are simply moving more slowly. The reverse is why full cylinders shouldn't bake on a deck: 200 bar at 28 °C becomes <span class="eq">200 × 323 ÷ 301 ≈ 215 bar</span> at 50 °C. Plan your dive on the pressure you read <em>in</em> the water.</p>
         </div>
 
         <h4>Why keep a reserve? Do the ascent maths</h4>
@@ -268,6 +295,21 @@
           <tbody><tr><td>First-dive no-stop limit*</td><td class="num">147 min</td><td class="num">56 min</td><td class="num">20 min</td><td class="num">9 min</td></tr></tbody>
         </table></div>
         <p class="small muted">*Published values of the PADI Recreational Dive Planner (air), for illustration. Computers and other tables differ. Note how fast the limit collapses with depth.</p>
+        <h4>What "no-decompression" really means</h4>
+        <p>The no-stop limit is the longest you can stay at a depth and still ascend straight to the surface at the normal rate, without <strong>required</strong> stops on the way. Stay longer and your model says some tissues are too loaded for a direct ascent: you now owe <strong>decompression stops</strong>, which are mandatory and need training, gas and planning that recreational courses don't cover. The 3-minute stop at 5 m is different. It's a <em>safety</em> stop, recommended on every dive, and it buys extra margin. Recreational diving stays inside the no-stop limit, and the Andaman &amp; Nicobar guidelines allow only no-decompression diving (see <a href="#certs">the ladder</a>).</p>
+        <h4>The second dive: why fast tissues forgive and slow ones remember</h4>
+        <p>On the surface you breathe out nitrogen at the same half-time rates you loaded it. Fast compartments clear in an hour or so. Slow ones barely start. That leftover ("residual") nitrogen is why your second dive of the day gets a shorter no-stop limit than the first, and why tables and computers ask for your surface interval.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 20 min at 30 m, then an hour on the boat</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Tissue half-time</th><th>After 20 min at 30 m</th><th>After 60 min on the surface</th><th>Extra nitrogen still there</th></tr></thead>
+            <tbody>
+              <tr><td>20 min (fast)</td><td class="num">1.98 bar</td><td class="num">0.94 bar</td><td class="num">12.5% (3 half-times)</td></tr>
+              <tr><td>120 min (slow)</td><td class="num">1.05 bar</td><td class="num">0.97 bar</td><td class="num">71% (half a half-time)</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:8px 0 0">Start: 0.79 bar in every tissue; breathing 3.16 bar of nitrogen at 30 m. The 120-min tissue only loads 11% of the gap in 20 minutes (<span class="eq">1 − 0.5^(20/120)</span>), but it also unloads slowly. These are teaching numbers from the same half-time maths as above, not a dive plan. Real models track many compartments with different allowed limits.</p>
+        </div>
         <div class="callout"><h4>Flying after diving</h4><p>A plane cabin is pressurised to roughly 0.75–0.8 bar, lower than sea level, which makes any leftover nitrogen more likely to bubble. Widely used guidance (originally from DAN workshops, and repeated by Indian dive centres) is to wait <strong>at least 12 hours after a single no-stop dive and 18 hours after multiple dives or days of diving</strong>, and longer after decompression dives. Andaman divers flying out of Port Blair: plan your last dive day around your flight.</p></div>
 
         <h4>Nitrogen narcosis: the "martini effect"</h4>
@@ -310,6 +352,10 @@
           <li>Don't dive congested. Decongestants can wear off mid-dive and trap air on the way up (a "reverse block").</li>
         </ul>
         <p>The same physics applies to your <strong>sinuses</strong> (which equalise on their own through small openings, so congestion blocks them) and your <strong>mask</strong>: breathe out a little through your nose on descent, or the mask "squeezes" your face.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the mask and the way up</span>
+          <p style="margin:0">A mask holding about 200 mL of air at the surface would shrink to <span class="eq">200 × 1 ÷ 2 = 100 mL</span> by 10 m if you never breathed into it. The space can't shrink that much, so the low pressure inside pulls on your eyes and face instead. On the ascent, Boyle runs backwards: the air in your middle ears and sinuses expands and normally leaks out through the tubes on its own. If it can't (a "reverse block"), stop, go down a metre to ease the pressure, then come up more slowly. Never hold your breath to fix it.</p>
+        </div>
         <details class="check"><summary>Why is equalising easier between 20 and 30 m than between 0 and 10 m?</summary>
         <p>0 → 10 m doubles the pressure (1 → 2 bar, a 100% change). 20 → 30 m goes from 3 → 4 bar, only 33%. Smaller relative change means smaller volume change, so less air to add per metre.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -446,7 +492,7 @@
     <h3 class="subhead">India</h3>
     <div class="cards">
       <div class="card"><span class="tag in">Central government</span><h4>Ministry of Tourism: Indian Adventure Tourism Guidelines</h4><p>National safety guidelines for adventure activities (Version 2.0, 2018), with a dedicated scuba diving section covering operator, equipment and staff requirements. Listed under the Ministry's guidelines page.</p><a class="url" href="https://tourism.gov.in/schemes-and-guidelines/guidelines" target="_blank" rel="noopener">tourism.gov.in › guidelines</a></div>
-      <div class="card"><span class="tag in">Central institute</span><h4>NIWS: National Institute of Water Sports, Goa</h4><p>Government water-sports training institute under the Ministry of Tourism (via IITTM). Runs a scuba course and sets the safety "norms" that A&amp;N Category B centres and Goa's water-sports policy refer to.</p><a class="url" href="https://niws.nic.in/" target="_blank" rel="noopener">niws.nic.in</a><span class="small muted">Site was intermittently unreachable when checked on 3 Oct 2026.</span></div>
+      <div class="card"><span class="tag in">Central institute</span><h4>NIWS: National Institute of Water Sports, Goa</h4><p>Government water-sports training institute under the Ministry of Tourism (via IITTM). Runs a scuba course and sets the safety "norms" that A&amp;N Category B centres and Goa's water-sports policy refer to.</p><a class="url" href="https://niws.nic.in/" target="_blank" rel="noopener">niws.nic.in</a><span class="small muted">Site was unreachable from our network when checked on 3 and 5 Oct 2026.</span></div>
       <div class="card"><span class="tag in">UT regulator</span><h4>Andaman &amp; Nicobar Administration: Directorate of Tourism</h4><p>Registers every scuba centre. Publishes guidelines covering the Category A/B split, depth and age limits, no-decompression-only diving, the list of areas open for diving, and the charges for diving inside Marine National Parks (see the official site).</p><a class="url" href="https://tourism.andamannicobar.gov.in/" target="_blank" rel="noopener">tourism.andamannicobar.gov.in</a></div>
       <div class="card"><span class="tag in">State regulator</span><h4>Goa: Department of Tourism</h4><p>Water-sports operators register under the Goa Registration of Tourist Trade Act, 1982. Goa's water-sports regulation policy requires safety certification from NIWS (or another government-approved agency) for activities not licensed by the ports authorities.</p><a class="url" href="https://goatourism.gov.in/" target="_blank" rel="noopener">goatourism.gov.in</a></div>
       <div class="card"><span class="tag in">UT administration</span><h4>Lakshadweep Administration &amp; SPORTS</h4><p>The UT administration's tourism pages list scuba facilities at Kadmat, Kavaratti and Bangaram. SPORTS (Society for Promotion of Nature Tourism and Sports) is the UT's tourism society that runs packages and dive centres.</p><a class="url" href="https://lakshadweep.gov.in/tourism/adventures/" target="_blank" rel="noopener">lakshadweep.gov.in</a> · <a class="url" href="https://www.lakshadweeptourism.com/" target="_blank" rel="noopener">lakshadweeptourism.com</a></div>
@@ -481,10 +527,11 @@
       <div><b>Andamans (Havelock, Neil)</b>Oct–May; peak Dec–Mar. Monsoon Jun–Sep limits diving. <span class="muted small">(PADI guide)</span></div>
       <div><b>Lakshadweep</b>Oct–May; rough seas Jun–Sep. Kadmat school runs 1 Oct–1 May. <span class="muted small">(PADI; Lakshadweep Admin)</span></div>
       <div><b>Netrani (Karnataka)</b>Oct–May; visibility usually 15–25 m. <span class="muted small">(Dive Netrani)</span></div>
-      <div><b>Pondicherry</b>Open all year; best Feb–Apr and Sep–Nov (20–30 m visibility). <span class="muted small">(Temple Adventures)</span></div>
+      <div><b>Pondicherry</b>Open all year; best Feb–Apr and Sep–Nov (20–30 m visibility) per Temple Adventures. PADI's Puducherry guide gives Oct–Apr; Oct–Dec is the northeast monsoon. <span class="muted small">(Temple Adventures FAQ; PADI; IMD)</span></div>
       <div><b>Goa (Grande Island)</b>Goa's policy bars water sports in monsoon or unsafe weather; no fixed dates are published. Confirm dates with your centre.</div>
       <div><b>Tarkarli / Malvan</b>Maritime Board closed all water sports and scuba 26 May–31 Aug 2026 (news reports). Plan for roughly Sep/Oct–May.</div>
       <div><b>Barren Island</b>Ideal window mid-Feb to mid-May (DIVEIndia).</div>
+      <div><b>Kovalam (Kerala)</b>No dive season published by the centre listed below. The southwest monsoon normally reaches Kerala around 1 June (IMD), so ask before you plan a monsoon trip.</div>
       <div><b>Water temperature</b>About 26–30 °C across these sites in season (PADI guides; Dive Netrani).</div>
     </div>
 
@@ -512,14 +559,20 @@
           <p>Beginner dive at Grande Island with a guaranteed 40–50 minutes underwater. Age 10+. Private boat from Bogmalo.</p>
           <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
         <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Colas Nagar, Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
-          <p>Discover Scuba Diving to 12 m, no swimming needed, plus a 2-day Scuba Diver course. Describes itself as India's first east-coast dive centre. Open 365 days.</p>
-          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+          <p>Diving off Pondicherry since 2007 and, by its own description, India's first east-coast dive centre. PADI's listing shows an onsite training pool, house reef and dive boat, open daily. Its own website was showing a blank placeholder when we checked on 5 Oct 2026, so we link the PADI listing.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a></div>
+        <div class="school"><div class="top"><div><h4>Urban Nomad Adventure (UNA)</h4><span class="loc">St Theresa Street, Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>PADI Discover Scuba Diving with pool training first and one instructor per guest on experience programmes (its stated 1:1 ratio). Founded in 2017; PADI lists it as a 5-Star Dive Resort.</p>
+          <a class="url" href="https://www.urbannomadadventure.com/" target="_blank" rel="noopener">urbannomadadventure.com</a></div>
         <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Temple Road, Murudeshwar → Netrani Island</span></div><span class="badge padi">PADI / SSI</span></div>
           <p>Boat try-dive packages to Netrani with snorkelling and photos (30–40 min dive), plus pool experiences. Operating since 2009.</p>
           <a class="url" href="https://netraniadventures.com/" target="_blank" rel="noopener">netraniadventures.com</a></div>
         <div class="school"><div class="top"><div><h4>MTDC Indian Institute of Scuba Diving &amp; Aquatic Sports (IISDA)</h4><span class="loc">Tarkarli, Malvan, Sindhudurg (Maharashtra)</span></div><span class="badge gov">State-run · PADI 5★</span></div>
           <p>Maharashtra Tourism's dive school, with a dedicated 25-ft training pool, classrooms and a beach resort. A gentle place to try diving in a pool before the sea.</p>
           <a class="url" href="https://www.mtdc.co/en/stays/mtdc-tarkarli-iisda" target="_blank" rel="noopener">mtdc.co › Tarkarli IISDA</a></div>
+        <div class="school"><div class="top"><div><h4>Bond Safari Kovalam</h4><span class="loc">Beach Road, Kovalam, Kerala</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>Try dives and PADI courses off Kovalam, plus an underwater scooter ride for non-divers. PADI lists it (as Bond Watersports) as a 5-Star IDC Resort.</p>
+          <a class="url" href="https://www.bondsafarikovalam.com/" target="_blank" rel="noopener">bondsafarikovalam.com</a> · <a class="url" href="https://www.padi.com/dive-center/india/bond-watersports-pvt-ltd/" target="_blank" rel="noopener">PADI listing</a></div>
       </div>
       <h4 style="margin-top:26px">Sites that suit a first dive</h4>
       <div class="sites">
@@ -540,6 +593,9 @@
         <div class="school"><div class="top"><div><h4>DIVEIndia</h4><span class="loc">Havelock &amp; Neil (Swaraj &amp; Shaheed Dweep), Andamans</span></div><span class="badge ssi">SSI Diamond ITC</span></div>
           <p>India's largest dive school by its own count (since 2003; 18,000+ students certified). SSI Open Water at two islands, with ecology programmes alongside.</p>
           <a class="url" href="https://diveindia.com/" target="_blank" rel="noopener">diveindia.com</a></div>
+        <div class="school"><div class="top"><div><h4>Ocean Tribe</h4><span class="loc">Beach No. 3, Govind Nagar, Havelock</span></div><span class="badge ssi">SSI</span></div>
+          <p>Run by divers from the Andamans' Karen community. Havelock's Jackson's Bar, Dickson's Pinnacle and Johnny's Gorge are named after its own dive pros. SSI Open Water (4 dives over 4 days, to 18 m) and SSI Advanced (5 dives, to 30 m).</p>
+          <a class="url" href="https://www.ocean-tribe.com/" target="_blank" rel="noopener">ocean-tribe.com</a></div>
         <div class="school"><div class="top"><div><h4>ScubaLov</h4><span class="loc">Havelock &amp; Neil, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
           <p>PADI 5-Star IDC Resort on Havelock and 5-Star Dive Resort on Neil (PADI listing). Choose busy, iconic Havelock or quieter Neil.</p>
           <a class="url" href="https://www.scubalov.in/" target="_blank" rel="noopener">scubalov.in</a></div>
@@ -559,11 +615,17 @@
           <p>Diving Netrani since 2008. PADI and SSI Open Water (4 days), with intro dives and Scuba Diver options.</p>
           <a class="url" href="https://divenetrani.com/" target="_blank" rel="noopener">divenetrani.com</a></div>
         <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
-          <p>Open Water over 3–4 days, with one full day in a pool or freshwater lake. Dives off Pondicherry's artificial and natural reefs.</p>
-          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+          <p>PADI Open Water with an onsite training pool and house reef (PADI listing), then dives on Pondicherry's reefs.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a></div>
+        <div class="school"><div class="top"><div><h4>Urban Nomad Adventure (UNA)</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>PADI Scuba Diver (2 days, to 12 m with a pro) and Open Water, with pool sessions at partner resorts along the coast. States a maximum of 4 students per instructor on courses.</p>
+          <a class="url" href="https://www.urbannomadadventure.com/" target="_blank" rel="noopener">urbannomadadventure.com</a></div>
         <div class="school"><div class="top"><div><h4>MTDC IISDA</h4><span class="loc">Tarkarli, Maharashtra</span></div><span class="badge gov">State-run · PADI 5★</span></div>
           <p>PADI scuba courses with on-site pool, classrooms and accommodation, plus EFR first aid.</p>
           <a class="url" href="https://www.padi.com/dive-center/india/mtdcs-indian-institute-of-scuba-diving-aquatic/" target="_blank" rel="noopener">PADI listing</a> · <a class="url" href="https://www.mtdc.co/en/stays/mtdc-tarkarli-iisda" target="_blank" rel="noopener">mtdc.co</a></div>
+        <div class="school"><div class="top"><div><h4>Ammathi Scuba</h4><span class="loc">Airport Road, Agatti, Lakshadweep</span></div><span class="badge padi">PADI 5★</span></div>
+          <p>PADI 5-Star Dive Resort a few minutes from Agatti's airstrip, offering PADI courses, fun dives and snorkelling. Describes itself as the first PADI dive resort on Agatti. Entry to Lakshadweep needs a permit from the UT administration: sort it out before you book.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/ammathi-scuba/" target="_blank" rel="noopener">PADI listing</a></div>
       </div>
       <h4 style="margin-top:26px">Sites for new Open Water divers</h4>
       <div class="sites">
@@ -599,8 +661,11 @@
           <p>Advanced Open Water: 5 ocean dives over 2 days, max 30 m.</p>
           <a class="url" href="https://netraniadventures.com/padi-ssi-courses/" target="_blank" rel="noopener">netraniadventures.com</a></div>
         <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★</span></div>
-          <p>Advanced Open Water and Deep. Pondicherry has unusually many deep sites (its PADI listing cites 17+ sites from 5 to 40 m), and Temple pioneered PADI TecRec here.</p>
-          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+          <p>Pondicherry has unusually many deep sites: its PADI listing cites 17+ sites from 5 to 40 m, with nitrox and trimix fills and PADI TecRec and rebreather (CCR) training for later.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a></div>
+        <div class="school"><div class="top"><div><h4>Scuba Evolution India</h4><span class="loc">Calangute–Baga, North Goa → Grande Island</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>Advanced Open Water, Enriched Air and Deep around Grande Island, plus PADI TecRec. Opened in 2015 as, by its account, the first mainland dive centre with onsite stay; veteran-owned, and says it is ISO-certified.</p>
+          <a class="url" href="https://www.scubaevolutionindia.com/" target="_blank" rel="noopener">scubaevolutionindia.com</a></div>
         <div class="school"><div class="top"><div><h4>Lacadives Kadmat</h4><span class="loc">Kadmat, Lakshadweep</span></div><span class="badge cmas">CMAS</span></div>
           <p>The Lakshadweep Administration names Lacadives as operator of Kadmat's full dive centre. It runs beginner-to-advanced courses each season (1 Oct–1 May) and is described as offering CMAS courses up to instructor level.</p>
           <a class="url" href="https://lakshadweep.gov.in/tourist-place/kadmath/" target="_blank" rel="noopener">lakshadweep.gov.in › Kadmat</a> · <a class="url" href="https://www.lacadives.com/" target="_blank" rel="noopener">lacadives.com</a></div>
@@ -614,7 +679,7 @@
         <div class="site"><b>Johnny's Gorge</b><span class="meta">Havelock · ~22–35 m</span><p>Known for whitetip reef sharks and schooling fish. Advanced divers only.</p></div>
         <div class="site"><b>The Abyss</b><span class="meta">Netrani · ~35 m</span><p>Netrani's deep site. Also a small fishing-boat wreck resting at ~22 m.</p></div>
         <div class="site"><b>Davy Jones Locker</b><span class="meta">St George's Island, Goa · ~12–16 m</span><p>Steel-hulled wreck. Possible strong current and low visibility, so it suits experienced divers.</p></div>
-        <div class="site"><b>Aravind's Wall</b><span class="meta">Pondicherry</span><p>Big fan corals on one of Temple Adventures' signature deeper sites.</p></div>
+        <div class="site"><b>Aravind's Wall</b><span class="meta">Pondicherry</span><p>Big fan corals on one of Temple Adventures' signature deeper sites (their earlier site guide).</p></div>
         <div class="site"><b>Bangaram drop-offs</b><span class="meta">Lakshadweep</span><p>Reef walls falling into deep blue: manta rays, reef sharks, turtles (PADI guide).</p></div>
       </div>
       <div class="callout"><h4>Bucket-list getaway: Barren Island (India's only active volcano)</h4><p style="margin:0">DIVEIndia runs a 3-dive expedition from Havelock: 2 dives on nitrox, 1 on air. Prerequisites: Advanced/Deep + Nitrox, at least 30 logged dives and 2 days of check dives. Window mid-Feb to mid-May. <a href="https://diveindia.com/course/barren-island-diving/" target="_blank" rel="noopener">diveindia.com › Barren Island</a></p></div>
@@ -639,9 +704,12 @@
         <div class="school"><div class="top"><div><h4>Lacadives</h4><span class="loc">Havelock &amp; Chidiya Tapu</span></div><span class="badge padi">PADI 5★ IDC</span></div>
           <p>PADI 5-Star Instructor Development Center at Taj Exotica, Havelock, with a dedicated training pool.</p>
           <a class="url" href="https://www.lacadives.com/" target="_blank" rel="noopener">lacadives.com</a></div>
-        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★ · IDC</span></div>
-          <p>PADI Instructor Development Centre since 2014. Rescue, Divemaster, TecRec and rebreather diving. Runs the Temple Reef Foundation (artificial reef, clean-ups).</p>
-          <a class="url" href="https://templeadventures.com/" target="_blank" rel="noopener">templeadventures.com</a></div>
+        <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★ CDC</span></div>
+          <p>PADI 5-Star Career Development Center with 12 PADI instructors on its listing. Pro-level PADI courses plus TecRec and rebreather (CCR) diving; conservation activities listed too.</p>
+          <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a></div>
+        <div class="school"><div class="top"><div><h4>Scuba Evolution India</h4><span class="loc">Calangute–Baga, Goa</span></div><span class="badge padi">PADI 5★ IDC</span></div>
+          <p>Describes itself as Goa's only PADI 5-Star Instructor Development Dive Resort and TecRec centre; also trains PADI Public Safety Divers.</p>
+          <a class="url" href="https://www.scubaevolutionindia.com/" target="_blank" rel="noopener">scubaevolutionindia.com</a> · <a class="url" href="https://www.padi.com/dive-center/india/scuba-evolution-india/" target="_blank" rel="noopener">PADI listing</a></div>
         <div class="school"><div class="top"><div><h4>Goa Diving</h4><span class="loc">Bogmalo, Goa</span></div><span class="badge padi">PADI</span></div>
           <p>3-day PADI Rescue Diver, EFR first aid, and PADI Divemaster (on enquiry).</p>
           <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
@@ -652,7 +720,7 @@
           <p>Government institute that lists a scuba diving course among its water-sports training. It also sets the national safety norms used by regulators. A route for people heading into dive-operations careers in India.</p>
           <a class="url" href="https://niws.nic.in/" target="_blank" rel="noopener">niws.nic.in</a></div>
       </div>
-      <div class="callout note" style="margin-top:20px"><h4>Events worth knowing</h4><p style="margin:0"><strong>PADI Women's Dive Day</strong> is held every July worldwide (the 2026 edition was 18 July). July is monsoon on most Indian coasts, so Pondicherry, open all year, is the realistic Indian option. Temple Adventures' Temple Reef Foundation runs beach clean-ups and reef work, a good way to dive with purpose.</p></div>
+      <div class="callout note" style="margin-top:20px"><h4>Events worth knowing</h4><p style="margin:0"><strong>PADI Women's Dive Day</strong> is held every July worldwide (the 2026 edition was 18 July). July is monsoon on most Indian coasts, so Pondicherry, open all year, is the realistic Indian option. Several centres listed here, including Temple Adventures and Scuba Evolution India, list conservation activities on their PADI pages: ask about reef clean-ups if you want to dive with purpose.</p></div>
     </div>
 
     <!-- GLOBAL BONUS -->
@@ -724,7 +792,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

@@ -1,6 +1,6 @@
 # Freediving: sources and verification log
 
-Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**. School claims are attributed to the school.
+Checked 4 Oct 2026 (IST); deepened and re-checked 5 Oct 2026 (section 5). Every fact on the page comes from a source listed here or is standard physics worked on the page. Course prices, phone numbers and email addresses were deliberately **not reproduced**. School claims are attributed to the school.
 
 ## 1. Physics and physiology (worked on the page)
 
@@ -59,3 +59,36 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - **PADI Advanced / Master Freediver requirements**: PADI's own pages for these didn't show requirements; only the course names are used. (Epic Freediving's own listed requirements were not used as PADI standards.)
 - **Freedive Gili**: agency for its Level 1–3 courses not confirmed; left off.
 - **CMAS India affiliate for freediving**: CMAS's Indian affiliate (USAI) is listed for finswimming and target shooting (Scuba page); no CMAS freediving body in India was verified.
+
+## 5. Deep-research update, 5 Oct 2026
+
+Science added to the page (Chapters 1–6). Arithmetic is ours, the inputs come from the sources below.
+
+| Item | Source | Status |
+|---|---|---|
+| Blood O₂ store: Hb about 15 g/dL × 1.36 mL O₂/g; spleen contraction adds about 0.75 g/dL (about 5%); worked example (about 1 L in blood, about 0.05 L from the spleen) | Bain, Drvis & Dujic et al., "Breath-Hold Diving – The Physiology of Diving Deep and Returning", Front. Physiol. 2021, doi 10.3389/fphys.2021.639377, https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.639377/full | loaded |
+| Involuntary breathing movements (contractions) = break-point / struggle phase | same review | loaded |
+| Loss of motor control at end-tidal PO₂ about 20 mmHg (2.7 kPa) vs none at about 23 mmHg (3.1 kPa) (Lindholm & Lundgren 2006, cited in review) | same review | loaded |
+| AIDA surface protocol (remove facial equipment, OK sign, say "I am OK", airways above water); divers use recovery techniques to restore cerebral perfusion | same review; AIDA rules already cited in section 1 | loaded |
+| Lung packing raises lung volume about 11–26% (up to about 3 L) and adds barotrauma / pre-dive syncope risk; blood shift about 850 mL at 40 m (Schaefer 1968); basal lung collapse modelled from about 18 m; lung squeeze signs (oedema, coughing blood, cough, chest tightness, breathlessness) | same review | loaded |
+| Taravana / DCS risk with many repetitive dives (spearfishing, safety divers, scooters) and extreme depth; narcosis reported beyond about 70–90 m | same review | loaded |
+| FRC dive (3 L → residual volume at 10 m), packing to 7.2 L (→ 38 m), mask gas need V×(P−1) (200 mL mask → 0.6 L to 30 m), mouthfill compression (0.5 L at 30 m → 0.33 L at 50 m), freefall terminal speed (CdA 0.036 m², 0.76 m/s at 20 m, 1.0 m/s at 30 m) | Boyle's law / drag-equation arithmetic by us; review gives 1 m/s as a model dive speed | computed |
+| Buddy must watch "throughout any pool or open-water freedive at any depth" | DAN Alert Diver, https://dan.org/alert-diver/article/freediving-safety-awareness/ ; also https://dan.org/alert-diver/article/freediving-safety/ and https://world.dan.org/alert-diver/article/shallow-water-blackout/ | loaded |
+| DIVEIndia: freediving on the same day as scuba, freedive first then scuba | https://diveindia.com/course/freediver/ | loaded via fetch tool |
+
+Schools:
+
+| Change | Source | Status |
+|---|---|---|
+| **Added** Bond Safari Kovalam (Kovalam, Kerala; also Lakshadweep): academy lists PADI Basic Freediver, Freediver, Advanced, Master Freediver and freediving instructor levels | https://bondadventureacademy.com/course-overview/ ; PADI 5 Star IDC: https://www.padi.com/dive-center/india/bond-watersports-pvt-ltd/ | loaded |
+| **Changed** Temple Adventures: templeadventures.com showed only a blank WordPress "Hello world!" placeholder on 5 Oct 2026, so the card now links Temple's PADI listing (5 Star CDC; activities include PADI Freediving; freediving equipment rental; onsite training pool). The earlier "Basic Freediver listed" claim from its own site is no longer checkable and is dropped | https://www.padi.com/dive-center/india/temple-adventures-divers-india/ | loaded |
+| Re-checked: iDive Goa still lists SSI freediving levels; peak Jan–May, Oct–Dec | https://idive.in/courses/ | loaded via fetch tool |
+
+Looked at, not used:
+
+- **freedivingindia.org /courses and /plan**: its course requirements contradict AIDA's and Molchanovs' own published standards, and it says Indian citizens need no Lakshadweep entry permit, which contradicts the Lakshadweep administration's permit rules (see Scuba sources). Not used for schools, seasons or rules; the page still cites it only for the national association's AIDA observer status (section 2).
+- **Divers of Vingoria (Goa)**: freediving page is template text; not used.
+- **ScubaLov freediving blog**: old; not used.
+- **Urban Nomad Adventure (Pondicherry), Ammathi Scuba (Agatti)**: freediving appears only as a line on their PADI listings with no course detail; added on the Scuba page, not here.
+- **Molchanovs schools in India / Netrani freediving**: still none verified.
+- Seasons: no new verified data; freediving rows in seasons.py unchanged.

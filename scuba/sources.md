@@ -1,6 +1,6 @@
 # Kinetic · Scuba prototype: sources
 
-All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Each centre is linked to its own site, where readers should check current courses, dates and fees.
+All checks done **3 Oct 2026 (IST)**; deepen pass (science, dive centres, Pondicherry season source) re-checked **5 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Each centre is linked to its own site, where readers should check current courses, dates and fees.
 
 ## 1. Certification standards (Section 3)
 
@@ -63,10 +63,26 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loa
 | Barracuda Diving India (Aldona, Goa; SSI Diamond). Try/discover dives listed | https://www.barracudadiving.com/ | search index + HTTP 200 |
 | Netrani Adventures (Murudeshwar; since 2009). Open Water, Advanced Open Water, EFR and Rescue Diver listed | https://netraniadventures.com/ · https://netraniadventures.com/padi-ssi-courses/ | loaded |
 | Dive Netrani (Murudeshwar; since 2008; PADI & SSI; season Oct–May; vis 15–25 m) | https://divenetrani.com/ | loaded |
-| Temple Adventures (Pondicherry; PADI 5★; IDC since 2014; DSD to 12 m; OW 3–4 days; season Feb–Apr & Sep–Nov; open 365 days; Temple Reef/Aravind's Wall) | https://templeadventures.com/ · https://templeadventures.com/faqs/ · https://templeadventures.com/about/ · https://www.padi.com/dive-center/india/temple-adventures-divers-india/ | loaded via fetch tool / search index |
+| Temple Adventures (Pondicherry). **5 Oct 2026:** page now links its PADI listing only: PADI 5 Star CDC; diving since 2007; "India's first and only East Coast Diving Center" (their words); 17+ sites 5–40 m; TecRec, rebreather/CCR, freediving, EFR; nitrox/trimix fills; onsite pool, house reef, dive boat; open daily; 12 PADI instructors; conservation activities | https://www.padi.com/dive-center/india/temple-adventures-divers-india/ | WebFetch + curl 5 Oct 2026. templeadventures.com showed a blank WordPress "Hello world!" placeholder (dated 5 Oct 2026) and /faqs/ returned 404 on 5 Oct, so the site is no longer linked. Dropped as no longer verifiable: "IDC since 2014", "no swimming needed", "OW with a full pool/lake day", "Temple pioneered TecRec", "Temple Reef Foundation". Season (Feb–Apr & Sep–Nov, open 365 days) and Aravind's Wall come from the FAQ/site guide as read 3 Oct and early 5 Oct 2026 |
 | MTDC IISDA, Tarkarli (PADI 5★ Dive Resort; 25-ft pool; Burnt Island/lighthouse sites) | https://www.mtdc.co/en/stays/mtdc-tarkarli-iisda · https://www.padi.com/dive-center/india/mtdcs-indian-institute-of-scuba-diving-aquatic/ | PADI listing loaded; mtdc.co returns 200 (JS-rendered) |
 | Bangaram Dive Center (PADI Resort via SPORTS) | https://www.padi.com/dive-center/india/bangaram-dive-center/ | search index |
-| NIWS scuba course | https://niws.nic.in/ | search index only (site down) |
+| NIWS scuba course | https://niws.nic.in/ | search index only (site down; TLS error again 5 Oct 2026) |
+
+### Added 5 Oct 2026
+
+| Centre | URL(s) | What was verified |
+|---|---|---|
+| Ocean Tribe (Beach No. 3, Govind Nagar, Havelock; SSI). Team from the Andamans' Karen community; Jackson's Bar, Dickson's Pinnacle and Johnny's Gorge named after its dive pros; SSI OWD 4 dives/4 days to 18 m; SSI Advanced 5 dives to 30 m | https://www.ocean-tribe.com/ | WebFetch + curl 5 Oct 2026 |
+| Urban Nomad Adventure (UNA), Pondicherry. PADI 5 Star Dive Resort; founded 2017; 4:1 courses, 1:1 experience programmes; pool training at resort outlets; PADI Scuba Diver 2 days, 12 m with a pro | https://www.urbannomadadventure.com/ · https://www.urbannomadadventure.com/scuba_diver_course.php · https://www.padi.com/dive-center/india/urban-nomad-unbound-adventure/ | WebFetch + curl 5 Oct 2026 |
+| Scuba Evolution India (Calangute–Baga, Goa). PADI 5 Star IDC Resort; TecRec; since 2015 "first dive centre on the mainland to provide onsite accommodation"; "only ISO certified dive centre in the country" / "ISO 45001-2018" (their claims, attributed); veteran-owned; Public Safety Diver training | https://www.scubaevolutionindia.com/ · https://www.padi.com/dive-center/india/scuba-evolution-india/ | WebFetch (search extract) + curl 200, 5 Oct 2026 |
+| Ammathi Scuba (Airport Road, Agatti). PADI 5 Star Dive Resort; "first PADI-certified dive resort on Agatti" (their claim); PADI courses, fun dives, snorkelling. Own site (ammathiscuba.in) is a template page, so only the PADI listing is linked | https://www.padi.com/dive-center/india/ammathi-scuba/ | WebFetch + curl 5 Oct 2026 |
+| Bond Safari Kovalam (Bond Watersports Pvt Ltd), Kerala. PADI 5 Star IDC Resort; DSD and PADI courses; underwater scooter ("no diving or scuba experience is necessary") | https://www.bondsafarikovalam.com/ · https://www.padi.com/dive-center/india/bond-watersports-pvt-ltd/ | curl 200 + search extract of both pages, 5 Oct 2026 |
+| Lakshadweep entry permit ("One requires an entry permit issued by Lakshadweep Administration") | https://lakshadweep.gov.in/ | curl 5 Oct 2026 |
+| Kerala monsoon onset ~1 June | IMD normals PDF (see calendar/sources.md, key imd-normals) | calendar source, read 5 Oct 2026 |
+
+Looked at, not added: Andaman Bubbles (andamanbubbles.com loads, but only a thin legacy page); West Coast Adventures (Goa; page shows prices, agency status unclear); Samudra Adventures, Pettem K Diving, Turtle Nest Scuba, Lak Sea Adventures, Laksha'Dives (PADI listings only, less established); Dive Goa (not verified).
+
+Re-checked 5 Oct 2026 (curl HTTP 200 unless noted): PADI, SSI, NAUI, BSAC, WRSTC, ISO pages, DAN, MoT guidelines, A&N tourism, Goa tourism, Lakshadweep pages, Barefoot Scuba, Goa Diving, Netrani Adventures, Dive Netrani, ScubaLov, Lacadives, Barracuda, MTDC, PADI guides. DIVEIndia and The Dive Master Havelock: box TLS error, loaded via WebFetch (DIVEIndia: SSI Diamond ITC, since 2003, 18,000+ certified, 200+ pros; The Dive Master: PADI 5-Star, Nemo Reef shore DSD 5–8 m, boat to 12 m). cmas.org: 403 to the box (bot protection), unchanged links.
 
 ## 4. Dive sites, seasons, events
 
@@ -77,6 +93,7 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loa
 - Netrani sites (Nursery, Grand Central Station, Abyss, 22 m boat, Dini's Delight): The News Minute, 23 Nov 2020: https://www.thenewsminute.com/karnataka/karnataka-coast-netrani-island-offers-divers-stunning-coral-reef-and-marine-life-138255
 - Grande Island sites (Suzy's Wreck/SS Rita, Davy Jones Locker, Umma Gumma): https://www.padi.com/dive-site/india/grande-island/ and search index (scubago, divechamp; secondary)
 - Tarkarli/Malvan monsoon closure 26 May–31 Aug 2026 (Maharashtra Maritime Board): Loksatta / Saam TV reports via search index (https://www.loksatta.com/maharashtra/malvan-watersports-sindhudurg-fort-boat-service-closed-monsoon-rds-00-5911436/). **News, not the order itself.**
+- Pondicherry season, second source: PADI "Diving Puducherry" (best Oct–Apr): https://www.padi.com/diving-in/india/puducherry/ (5 Oct 2026). The season strip keeps Temple's narrower best months (Feb–Apr, Sep) as Peak; see calendar/sources.md
 - PADI Women's Dive Day 2026 = 18 July: https://blog.padi.com/womens-dive-day-returns/ (search index)
 - Global seasons: https://www.padi.com/diving-in/maldives/ · /sri-lanka/ · /thailand/ · /egypt/ · /raja-ampat/ (all rendered and read)
 
@@ -94,6 +111,12 @@ Calculated from first principles; reproduce with a calculator:
 - Beer–Lambert with pure-water absorption coefficients from **Pope & Fry (1997), Applied Optics 36(33)**: a(700) 0.624, a(600) 0.2224, a(550) 0.0565, a(450) 0.0092 m⁻¹.
 - Refraction n ≈ 1.33 → apparent distance ×0.75, apparent size ×1.33.
 - Speed of sound ≈ 1,500 m/s seawater vs ≈ 343 m/s air; thermal conductivity water ≈ 0.6 vs air ≈ 0.025 W/m·K.
+- *(5 Oct 2026 additions)* Fresh water 1,000 kg/m³ → 100 kPa per ≈ 10.2 m.
+- Combined gas law P·V/T = constant (T in K); Gay-Lussac at fixed volume: 200 bar at 40 °C (313 K) → 192 bar at 28 °C (301 K); 200 bar at 28 °C → 215 bar at 50 °C (323 K).
+- BCD runaway: 2 L at 10 m (2 bar) → 2.67 L at 5 m (1.5 bar) → 4 L at surface.
+- Mask: 200 mL at 1 bar → 100 mL at 10 m (Boyle).
+- Repetitive-dive toy model (exponential half-time, ambient ppN₂ 3.16 bar at 30 m, 0.79 at surface): 20-min tissue 1.98 bar after 20 min, 0.94 bar after 60 min surface (12.5% of excess left); 120-min tissue 0.79 + (1 − 0.5^(1/6)) × 2.37 = 1.05 bar, then 0.79 + 0.259 × 0.5^0.5 = 0.97 bar (71% of excess left).
+- "No-decompression" definition (direct ascent without required stops; safety stop optional/recommended vs deco stop mandatory): standard agency training content (general knowledge, not fetched); A&N no-deco-only rule from the A&N guidelines PDF above.
 
 Values taken from published references and stated as such on the page:
 - **First-dive no-stop limits** (12 m 147, 18 m 56, 30 m 20, 40 m 9 min; full row set in app.js): PADI Recreational Dive Planner (air) published table values. *Not re-fetched from PADI.* DIVEIndia's page independently cites "9 mins at 40 m".

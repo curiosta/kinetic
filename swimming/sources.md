@@ -1,6 +1,6 @@
 # Kinetic · Swimming: sources and verification notes
 
-All checks done **3 Oct 2026 (IST)**. "Verified" means the official page or document was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices or entry fees**. Each club, course and event is linked to its own site, where readers should check current dates, entry rules and fees.
+All checks done **3 Oct 2026 (IST)**; deepened and re-checked **5 Oct 2026** (section 5). "Verified" means the official page or document was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices or entry fees**. Each club, course and event is linked to its own site, where readers should check current dates, entry rules and fees.
 
 ## 1. Physics (chapters, quiz, Swim Lab)
 
@@ -8,10 +8,11 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page or docu
 |---|---|
 | Drag F = ½ρv²·CdA; power = drag × speed; drag ∝ v², power ∝ v³ | Standard fluid mechanics (textbook). Worked numbers computed by Kinetic |
 | Reference swimmer CdA ≈ 0.06 m² (≈ 30 N at 1 m/s) | **Illustrative** round value of the order reported in swimming-drag studies; not fetched. Real values vary widely with body size, stroke and technique |
-| Wave drag rises sharply near the surface; it falls when swimming roughly 0.5 m or more below it | General hydrodynamics/sports-science knowledge, **not fetched**; stated as approximate |
+| Wave drag: surface drag up to 2.4× submerged; wave drag up to 50–60% of total at 1.7 m/s; <5% deeper than 0.5 m at 1 m/s and 0.7 m at 2 m/s; 1.8 / 2.8 chest depths at Fr 0.2 / 0.42 (chest depth 0.25 m, length 2.34 m) | Vennell, Pease & Wilson, J Biomech 2006;39(4):664–71, doi 10.1016/j.jbiomech.2005.01.023, PubMed 16439236 (abstract read via NCBI E-utilities, 5 Oct 2026) |
 | Buoyancy: 70 kg swimmer, ~72 L body volume with full lungs vs ~67.5 L exhaled; fresh water 1,000 kg/m³, sea water ≈ 1,025 kg/m³ | **Illustrative** model values; densities are standard |
 | Propulsion: early "drag" (paddle) theory vs "lift" (sculling) ideas from the 1970s (Counsilman); modern view that both contribute and the balance is still researched | History and current consensus stated from general sports-science knowledge, **not fetched**; written deliberately as "debated" |
-| Energy cost of front crawl ≈ 0.7–1 kJ per metre for adults; low mechanical efficiency | Order of magnitude from swimming energetics literature (e.g. di Prampero), **not fetched**; labelled approximate |
+| Energy cost of front crawl 0.6–0.8 kJ/m at 1.0–1.4 m/s (metabolic power 600→1,200 W); Froude efficiency ≈ 0.5; drag + kinetic power 50→100 W; internal power 10–30 W; overall efficiency ≈ 0.20; fins cut cost 10–15% | Zamparo et al., "An energy balance of front crawl", Eur J Appl Physiol 2005, abstract at https://hdl.handle.net/11562/306611 (loaded 5 Oct 2026) |
+| Elite long-distance swimmers: 0.69→1.27 kJ/m at 1.29→1.50 m/s; about 21% higher after a 2 km trial, linked to lower propelling efficiency | Zamparo et al., Eur J Appl Physiol 2005;94:697–704, PubMed 15887025 (abstract read 5 Oct 2026) |
 | Water conducts heat roughly 25× faster than air; cold shock response; swim-failure; rip-current advice (swim parallel to shore, float, signal); drafting saves effort | General physiology and water-safety knowledge, **not fetched** |
 | Current vector maths (aim angle = asin(current ÷ speed), ground speed) | Computed (vector addition) |
 
@@ -50,3 +51,35 @@ All checks done **3 Oct 2026 (IST)**. "Verified" means the official page or docu
 - **Lab numbers are illustrative.** It is a teaching model, not a pacing or safety tool.
 - External links that the box's curl couldn't reach are still valid in a browser; all were checked on 3 Oct 2026.
 - A hidden, empty `#gear` placeholder sits before the footer for a future Gear section (not built).
+
+## 5. Deep-research update, 5 Oct 2026
+
+### Physics added to the page
+
+| Item | Basis |
+|---|---|
+| Reynolds number Re = vL/ν; ν ≈ 1.0 × 10⁻⁶ m²/s at 20 °C, 0.8 × 10⁻⁶ at 30 °C; Re ≈ 2 million for a 2 m swimmer at 1 m/s; separation and wake, so form/wave drag dominate | Standard fluid mechanics; viscosities are standard table values; arithmetic by Kinetic |
+| Froude number Fr = v/√(gL) for the 2.34 m body in the towing study (0.9 → 0.2, 1.7 → 0.36, 2.0 → 0.42 m/s); "hull speed" near Fr ≈ 0.4 | Vennell et al. 2006 (above) for the swimmer numbers; hull speed is a standard naval-architecture idea, stated qualitatively |
+| Froude efficiency = useful ÷ (useful + wasted) applied to the existing Ch 3 thrust table (80%, 67%, 50%); real swimmers ≈ 0.5 | Arithmetic by Kinetic; Zamparo et al. 2005 (above) |
+| Rip currents measured up to 8 ft/s (≈ 2.4 m/s), faster than an Olympic 50 m sprint; usually much slower | US National Weather Service, https://www.weather.gov/safety/ripcurrent-faqs (curl, 5 Oct 2026) |
+| Cold water = 15 °C and below; gasp; breathing rate up to tenfold; heart rate and blood pressure rise; initial effects pass in under a minute: "Float to Live" | RNLI, https://rnli.org/safety/know-the-risks/cold-water-shock and https://rnli.org/safety/float (curl, 5 Oct 2026) |
+| Real-race vector sums: SFI 10 km open men 2:26:13 (≈ 1.14 m/s); Murshidabad 81 km in 10:35:37 (≈ 2.12 m/s; river ≈ 0.8 m/s if the swimmer made 1.3 m/s, which is stated on the page as our assumption) | SFI results PDF and NBTV report (below); arithmetic by Kinetic |
+
+### Federation, events and places
+
+| Item | Source | Status |
+|---|---|---|
+| SFI National Open Water Swimming Championships 2026: Thanirbhavi Beach, Mangaluru, 9–10 Jan 2026; organised by Karnataka Swimming Association; 1 km (Group 5), 3 km (Group 4), 5 km (Group 3), 7.5 km (Group 2), 5 km and 10 km open; 10 km open men won in 2:26:13 | https://www.swimming.org.in/national-open-water-swimming-championships-2026/ ; results PDF https://www.swimming.org.in/wp-content/uploads/2026/01/COMPLETE-RESULTS-OF-SFI-OPEN-WATER-CHAMP-2025-26-@MLR_update.pdf | loaded / PDF read |
+| SFI national calendar: Open Water Nationals 9–10 Jan 2026 (Thanner Bhavi Beach, Mangalore); 1st SFI Short Course Nationals 21–25 Oct 2026 (no venue listed) | https://www.swimming.org.in/national-calendar/ | loaded via fetch tool. **Added to seasons.py as an event** |
+| Murshidabad 81 km Bhagirathi race: Murshidabad (District) Swimming Association; began 1943 over 74 km, 81 km since 1987; Ahiran Ghat (Jangipur) to Krishnanath College Ghat, Berhampore; 19 km race too; channel swimmers incl. Bula Chowdhury used it as preparation | ETV Bharat, 29 Aug 2023, https://www.etvbharat.com/english/state/west-bengal/81-km-swimming-competition-resumes-in-murshidabad-after-three-years/na20230829184813948948496 | loaded via fetch tool (budget figure not reproduced) |
+| 79th edition 31 Aug 2025: 20 swimmers; winner 10 h 35 min 37 s | NBTV, 3 Sep 2025, https://nbtv.news/murshidabad-worlds-longest-swimming-competition-2025/ ; Aajkaal headline/date 31 Aug 2025 | loaded via fetch tool |
+| 80th edition 6 Sep 2026, 5 am start, 27 swimmers from several states and Bangladesh; "billed as the world's longest swimming competition"; organiser Murshidabad District Swimming Association | ANI via Indian Economic Observer, https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/ ; IE Bangla, 6 Sep 2026 | loaded (curl). **Added to seasons.py as an event, "usually late August or early September"** (2023, 2025, 2026 dates). No official organiser page was found, so the page links the news report and says so |
+
+### Cross-links added
+Scuba buoyancy (Ch 2), freediving and scuba fins (Ch 3), freediving blackout (Ch 4), triathlon swim chapter (Ch 5) and triathlon heat (Ch 6).
+
+### Looked at, not used
+- **SFI "Find a coach"**: page says "Coming Soon", so it isn't linked yet.
+- **Khelo India Beach Games 2025 (Diu) 10 km open water** and **OWAAF 2026 National Sea Swimming Championship**: seen in search results only; not verified on an official page today.
+- **Swimming schools and pools**: no new Indian school or pool could be verified to the page's standard (official site with current programme), so the club and lifesaving cards are unchanged.
+- **Seasons**: sea-swim and pool rows unchanged. The new Aug–Sep event is a river race, so it doesn't change the west-coast sea row.
