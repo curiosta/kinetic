@@ -173,7 +173,37 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">tan φ = 4² ÷ (9.81 × 3) ≈ 0.54 → φ ≈ 29°. Looser trucks turn more for the same lean, but wobble more at speed.</p>
         </div>
-        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Speed wobbles happen when small side-to-side oscillations grow faster than you correct them. Weight forward, knees bent and a lower speed calm them down.</div></div>
+        <h4>Inside the truck: tilt becomes steering</h4>
+        <p>Each truck's hanger swings around a pivot axis (the kingpin direction) that is tilted at an angle λ from the deck. When you tilt the deck by β, the axle yaws by a steering angle δ, with <span class="eq">tan δ = tan λ × sin β</span>. This is the steering relation used in skateboard-dynamics research going back to Hubbard (1979); Varszegi and colleagues (2016) write it the same way using the complementary "rake" angle. The front and rear trucks steer in opposite directions, so with a wheelbase L between the axles the board follows a curve of radius about <span class="eq">R ≈ L ÷ (2 tan δ)</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · wheelbase 0.36 m (illustrative), no bushing squash or wheel slip</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Deck tilt β</th><th>50° pivot axis: steer δ</th><th>50°: turn radius</th><th>44° pivot axis: steer δ</th><th>44°: turn radius</th></tr></thead>
+            <tbody>
+              <tr><td class="num">2°</td><td class="num">≈ 2.4°</td><td class="num">≈ 4.3 m</td><td class="num">≈ 1.9°</td><td class="num">≈ 5.3 m</td></tr>
+              <tr><td class="num">5°</td><td class="num">≈ 5.9°</td><td class="num">≈ 1.7 m</td><td class="num">≈ 4.8°</td><td class="num">≈ 2.1 m</td></tr>
+              <tr><td class="num">10°</td><td class="num">≈ 11.7°</td><td class="num">≈ 0.87 m</td><td class="num">≈ 9.5°</td><td class="num">≈ 1.1 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">5° tilt, 50° axis: tan δ = tan 50° × sin 5° ≈ 1.19 × 0.087 ≈ 0.104; R ≈ 0.36 ÷ (2 × 0.104) ≈ 1.7 m. A steeper pivot axis turns more for the same tilt. The 3 m carve from the table above needs only about 3° of deck tilt by this geometry, while your body leans about 29°. Deck tilt and body lean aren't the same angle. Real boards need a bit more tilt because bushings squash unevenly and wheels slip slightly.</p>
+        </div>
+        <h4>Why the same tilt feels twitchy at speed</h4>
+        <p>The truck fixes the radius for a given tilt, but the lean you need for that radius grows with v². Hold the deck at 5° (a 1.7 m curve on the 50° trucks above) and see what balance demands:</p>
+        <div class="worked">
+          <span class="lbl">Worked example · lean needed on a 1.7 m curve, tan φ = v² ÷ (g R)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Body lean needed</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td class="num">2 m/s (7 km/h)</td><td class="num">≈ 13°</td><td>Easy, relaxed carve</td></tr>
+              <tr><td class="num">3 m/s (11 km/h)</td><td class="num">≈ 28°</td><td>A committed carve</td></tr>
+              <tr><td class="num">4 m/s (14 km/h)</td><td class="num">≈ 43°</td><td>Very hard to hold</td></tr>
+              <tr><td class="num">5 m/s (18 km/h)</td><td class="num">≈ 56°</td><td>Not realistic: you'd be thrown outward</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">So at speed, a few degrees of accidental tilt is a big steering input. That's why fast riders keep the deck almost flat, and why tighter bushings or a lower pivot angle feel more stable downhill.</p>
+        </div>
+        <p>Speed wobble is the same story with a delay in it. A 2016 study in the <em>Journal of the Royal Society Interface</em> (Varszegi, Takacs, Stepan and Hogan) modelled the skater's balance corrections with a human reflex delay. The range of correction strengths that keeps the board stable shrinks as speed rises, and standing ahead of the board's centre tolerates longer reflex delays than standing behind it. That matches the classic advice: weight over the front truck, smooth small corrections, and slow down before it starts.</p>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Speed wobbles happen when small side-to-side oscillations grow faster than you correct them. Weight forward, knees bent and a lower speed calm them down. Over-correcting hard and late, or leaning back, usually makes them worse.</div></div>
         <details class="check"><summary>At 3 m/s, what lean angle holds a 2 m carve?</summary>
         <p>tan φ = 9 ÷ (9.81 × 2) ≈ 0.46 → φ ≈ <strong>25°</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -286,6 +316,24 @@
         </div>
         <h4>Hard or soft wheels?</h4>
         <p>Bigger, softer wheels deform over stones and cracks and meet them at a gentler angle, so they suit rough streets and cruising. Smaller, harder wheels are lighter and slide more predictably on smooth park surfaces.</p>
+        <h4>Cracks and pebbles: the geometry of getting stopped</h4>
+        <p>When a wheel of radius R meets a step or pebble of height h, the push from the edge acts along the line from the edge to the axle. The higher h is compared with R, the more of that push points backwards, against your motion. That's the moment the board stops and you don't.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · share of the edge's push pointing backwards (rigid wheel, geometry only)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Obstacle</th><th>52 mm park wheel</th><th>60 mm wheel</th><th>70 mm cruiser wheel</th></tr></thead>
+            <tbody>
+              <tr><td>3 mm crack lip</td><td class="num">≈ 47%</td><td class="num">≈ 44%</td><td class="num">≈ 41%</td></tr>
+              <tr><td>5 mm pebble</td><td class="num">≈ 59%</td><td class="num">≈ 55%</td><td class="num">≈ 52%</td></tr>
+              <tr><td>10 mm stone</td><td class="num">≈ 79%</td><td class="num">≈ 75%</td><td class="num">≈ 70%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The edge-to-axle line makes an angle θ with the vertical where cos θ = (R − h) ÷ R; the backward share is sin θ. 5 mm on a 52 mm wheel: cos θ = 21 ÷ 26 → θ ≈ 36°, sin θ ≈ 0.59. A softer wheel also squashes around the obstacle, which lowers the effective h further. These are geometry comparisons, not stopping forces.</p>
+        </div>
+        <h4>Soft wheels: grip versus roll</h4>
+        <p>Wheel hardness is measured on a durometer scale (the "A" number on the wheel); a lower number is softer. On smooth concrete, a harder wheel flexes less and wastes less energy rolling. On rough tarmac, a softer wheel absorbs bumps that would otherwise shake your body, the same "roughness resistance" idea explained on our <a href="../cycling-mtb/#ch-power">cycling page</a>. A softer wheel also grips more before it slides, which helps on carves and hurts when you want to slide on purpose.</p>
+        <h4>Bearings and what "ABEC" really means</h4>
+        <p>Almost every skateboard wheel holds two "608"-size bearings: an 8 mm bore, 22 mm outside diameter and 7 mm width, according to board maker Sector 9. The ABEC number on the box is a precision class from the Annular Bearing Engineers' Committee: it sets dimensions and tolerances, not speed. Bones Bearings, a bearing maker, points out that ABEC ignores side loads, impact resistance, lubrication and shields, which matter more for skating. Its estimate is that 90% of skating happens below about 2,000 rpm, consistent with the roughly 1,500 rpm in the table above. Clean, undamaged bearings matter more than the number.</p>
         <h4>How contests are scored</h4>
         <p>The RSFI skateboarding rulebook follows World Skate rules for the two Olympic disciplines, <strong>street</strong> and <strong>park</strong>, with no age limits. In park, skaters get at least two runs of 30–50 seconds; five judges score each run from 0 to 100, the highest and lowest scores are dropped and the remaining three averaged. The best run counts. In the Olympic street format, skaters do 2 runs of 45 seconds and 5 single tricks; the best run plus the 2 best tricks make the score.</p>
         <details class="check"><summary>Judges score 70, 74, 76, 80 and 91. What's the run score?</summary>
@@ -361,7 +409,7 @@
     <div class="section-head">
       <span class="eyebrow">04 · Governing bodies</span>
       <h2>Who sets the rules</h2>
-      <p>Skateboarding is governed with the roller sports, from the world federation down to state units. We checked each on an official website. We could not verify a separate "Skateboarding Federation of India", so it is not listed.</p>
+      <p>Skateboarding is governed with the roller sports, from the world federation down to state units. We checked each on an official website. We could not verify a separate "Skateboarding Federation of India". A "Skateboarding India Federation" website promotes skateparks, but it isn't the body World Skate lists for India, so it isn't shown as a governing body.</p>
     </div>
 
     <h3 class="subhead">Global</h3>
@@ -372,7 +420,9 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National federation</span><h4>Roller Skating Federation of India (RSFI)</h4><p>Describes itself as "the governing body for skateboarding and roller sports in India". Publishes the skateboarding rulebook (2022, based on World Skate rules), runs skater registration and the national championships.</p><a class="url" href="https://indiaskate.com/skateboarding/" target="_blank" rel="noopener">indiaskate.com</a></div>
+      <div class="card"><span class="tag">National federation</span><h4>Roller Skating Federation of India (RSFI)</h4><p>Describes itself as "the governing body for skateboarding and roller sports in India". Publishes the skateboarding rulebook (2022, based on World Skate rules), runs skater registration and the national championships.</p>
+        <div class="accred"><span class="ac ok">✓ On World Skate's national-federations list</span><span class="ac claim">Federation's notice — MYAS recognition 2026</span><span class="acsrc">"INDIA — Roller Skating Federation of India (India Skate)", linked to indiaskate.com, on <a href="https://www.worldskate.org/about/organisation/national-federations.html" target="_blank" rel="noopener">World Skate's national federations page</a>. RSFI <a href="https://indiaskate.com/official-recognition-renewal-issuance-of-2026-ministry-affiliation-and-world-skate-games-2026-participation/" target="_blank" rel="noopener">posted on 21 Sep 2026</a> that the Sports Ministry issued its 2026 affiliation letter; we didn't find the ministry's own 2026 list. Another website also presents itself as RSFI's; we use the address World Skate links (5 Oct 2026).</span></div>
+        <a class="url" href="https://indiaskate.com/skateboarding/" target="_blank" rel="noopener">indiaskate.com</a></div>
       <div class="card"><span class="tag">State units</span><h4>RSFI state and UT associations</h4><p>Each state or union territory has an RSFI unit, such as the Karnataka Roller Skating Association, which hosts the 2026 nationals. Clubs register skaters through them.</p><a class="url" href="https://indiaskate.com/karnataka/" target="_blank" rel="noopener">indiaskate.com</a></div>
     </div>
   </div>
@@ -384,8 +434,10 @@
     <div class="section-head">
       <span class="eyebrow">05 · Where to skate</span>
       <h2>Pick your level. We'll point you to the park.</h2>
-      <p>India has few public skateparks, and they change fast. Every listing here was checked against an official, founder or news source. Confirm opening hours and rules before you travel.</p>
+      <p>India has few public skateparks, and they change fast. Every listing here was checked against an official, founder or news source, and every park, school and programme card carries an accreditation label. Confirm opening hours and rules before you travel.</p>
     </div>
+
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> There is no skatepark or skate-school accreditation scheme in India that we could verify. RSFI is <strong>verified</strong> on World Skate's national-federations list (see Governing bodies), and World Skate Academy runs the international coach and judge courses. <span class="ac ok">✓ Verified</span> means the provider is that body, or appears on its official page. <span class="ac claim">School's claim — …</span> means only the operator's own site says so. <span class="ac unv">Accreditation: unverified</span> means neither. A park being open isn't a safety guarantee. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -420,8 +472,10 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">Is there a beginner area? Are boards and helmets available? Are there sessions or coaching for beginners? When is it least crowded?</p></div>
       </div>
       <div class="sites">
-        <div class="site"><b>Janwaar Castle</b><span class="meta">Janwaar village, Madhya Pradesh · community skatepark</span><p>Built from December 2014 by 12 skateboarders from seven countries together with villagers, and run by the village youth's non-profit, which also runs skateboarding sessions and homestays, according to founder Ulrike Reinhard. The skater Asha Gond learned here.</p><a class="url" href="https://ulrikereinhard.com/blog/2026/07/04/what-janwaar-learned-what-telc-can-use/" target="_blank" rel="noopener">ulrikereinhard.com</a></div>
-        <div class="site"><b>Lohia Park skate zone</b><span class="meta">Gomti Nagar, Lucknow · Lucknow Development Authority</span><p>An open-air skate park built by the LDA at Dr Ram Manohar Lohia Park, described in March 2026 as complete and designed for beginners and young skaters (Times of India).</p><a class="url" href="https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms" target="_blank" rel="noopener">Times of India</a></div>
+        <div class="site"><b>Janwaar Castle</b><span class="meta">Janwaar village, Madhya Pradesh · community skatepark</span><p>Built from December 2014 by 12 skateboarders from seven countries together with villagers, and run by the village youth's non-profit, which also runs skateboarding sessions and homestays, according to founder Ulrike Reinhard. The skater Asha Gond learned here.</p><div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Community park; founder's blog only. Its old website is now a domain-for-sale page.</span></div><a class="url" href="https://ulrikereinhard.com/blog/2026/07/04/what-janwaar-learned-what-telc-can-use/" target="_blank" rel="noopener">ulrikereinhard.com</a></div>
+        <div class="site"><b>Lohia Park skate zone</b><span class="meta">Gomti Nagar, Lucknow · Lucknow Development Authority</span><p>An open-air skate park built by the LDA at Dr Ram Manohar Lohia Park, described in March 2026 as complete and designed for beginners and young skaters (Times of India).</p><div class="accred"><span class="ac claim">News report — LDA public park</span><span class="ac unv">Coaching accreditation: none listed</span><span class="acsrc">A public facility per the Times of India; no coaching programme or certification found.</span></div><a class="url" href="https://timesofindia.indiatimes.com/city/lucknow/lohia-park-to-get-citys-1st-open-air-skating-zone/articleshow/129111676.cms" target="_blank" rel="noopener">Times of India</a></div>
+        <div class="site"><b>Desert Dolphin Skatepark</b><span class="meta">Khempur village, near Udaipur, Rajasthan · free community park</span><p>A 14,500 sq ft park built for the 2021 Netflix film <em>Skater Girl</em> by the 100 Ramps team with volunteers. After filming ended in 2019 it stayed open as a free public park, and local children attend daily free training workshops, according to the park. Ask about helmets and pads before you go.</p><div class="accred"><span class="ac claim">Park's claim — adviser is a "certified skateboarding head judge" (Asian Extreme Sports Federation)</span><span class="ac unv">Coaching accreditation: unverified</span><span class="acsrc">From the park's own <a href="https://www.desertdolphinskatepark.com/about" target="_blank" rel="noopener">About page</a>; that judging credential isn't World Skate or RSFI, and we didn't verify it.</span></div><a class="url" href="https://www.desertdolphinskatepark.com/" target="_blank" rel="noopener">desertdolphinskatepark.com</a></div>
+        <div class="site"><b>WallRide Park</b><span class="meta">Peeran Cheruvu, Hyderabad · skatepark and pump track</span><p>Set up in 2017 by BMX rider Hamza Khan; skateboarding, BMX and what the park calls India's first asphalt pump track. It offers coached classes for all ages, and safety gear is mandatory for learners under 16. Open afternoons and evenings; check the site for closed days.</p><div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Own site only; no coaching body named on <a href="https://wallridepark.com" target="_blank" rel="noopener">wallridepark.com</a> (5 Oct 2026).</span></div><a class="url" href="https://wallridepark.com" target="_blank" rel="noopener">wallridepark.com</a></div>
       </div>
       <div class="callout note"><p style="margin:0">A public skatepark at Jawahar Bal Bhavan in Cubbon Park, Bengaluru, was announced in January 2026 for April–May 2026. We couldn't confirm that it has opened, so check before you go.</p></div>
     </div>
@@ -433,9 +487,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>RSFI state and UT units</h4><span class="loc">Every state and UT</span></div><span class="badge gov">Federation</span></div>
           <p>The route to registered clubs and events in your state. For example, the Karnataka Roller Skating Association hosts the 2026 nationals.</p>
+          <div class="accred"><span class="ac ok">✓ Listed by RSFI</span><span class="acsrc">State units are listed on RSFI's own site. A club's affiliation should be confirmed with the state unit; we didn't verify individual clubs.</span></div>
           <a class="url" href="https://indiaskate.com/karnataka/" target="_blank" rel="noopener">indiaskate.com</a></div>
         <div class="school"><div class="top"><div><h4>RSFI skater registration 2026–27</h4><span class="loc">Online, via your state unit</span></div><span class="badge gov">Registration</span></div>
           <p>RSFI's annual skater registration, needed to take part in its championships.</p>
+          <div class="accred"><span class="ac ok">✓ RSFI (on World Skate list)</span><span class="acsrc">Registration is run by the federation itself.</span></div>
           <a class="url" href="https://indiaskate.com/registered-skaters-2026-27/" target="_blank" rel="noopener">indiaskate.com</a></div>
       </div>
     </div>
@@ -447,10 +503,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>RSFI skateboarding rulebook</h4><span class="loc">Street and park</span></div><span class="badge gov">Rules</span></div>
           <p>World Skate rules for both Olympic disciplines: formats, judging, helmet rules and the concussion protocol.</p>
+          <div class="accred"><span class="ac ok">✓ RSFI (on World Skate list)</span><span class="acsrc">Rulebook published by the federation; based on World Skate rules.</span></div>
           <a class="url" href="https://indiaskate.com/skateboarding/" target="_blank" rel="noopener">indiaskate.com</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>64th National Roller Skating Championships</b><span class="meta">Karnataka · 5–15 December 2026</span><p>Hosted by the Karnataka Roller Skating Association under RSFI. RSFI's letters of technical officials cover inline freestyle, skateboarding and roller derby.</p><a class="url" href="https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/" target="_blank" rel="noopener">indiaskate.com</a></div>
+        <div class="site"><b>64th National Roller Skating Championships</b><span class="meta">Karnataka · 5–15 December 2026</span><p>Hosted by the Karnataka Roller Skating Association under RSFI. RSFI's letters of technical officials cover inline freestyle, skateboarding and roller derby.</p><div class="accred"><span class="ac ok">✓ RSFI championship</span><span class="acsrc">Announced on the federation's own site.</span></div><a class="url" href="https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/" target="_blank" rel="noopener">indiaskate.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-coach" role="tabpanel" aria-labelledby="tab-coach">
@@ -461,9 +518,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>World Skate Academy coach &amp; instructor courses</h4><span class="loc">Online and on site</span></div><span class="badge gov">Education</span></div>
           <p>Coach and skate-instructor courses that teach skating from introduction to competition level.</p>
+          <div class="accred"><span class="ac ok">✓ World Skate (official)</span><span class="acsrc">If a coach in India says they're World Skate Academy-certified, ask which course and level, and check with World Skate or RSFI. We found no public Indian list of Academy coaches.</span></div>
           <a class="url" href="https://www.worldskate.org/about/world-skate-academy.html" target="_blank" rel="noopener">worldskate.org</a></div>
         <div class="school"><div class="top"><div><h4>World Skate Academy judge courses</h4><span class="loc">Online and on site</span></div><span class="badge gov">Education</span></div>
           <p>Only Academy-trained judges and referees receive an international licence to judge sanctioned competitions; refresher courses are offered.</p>
+          <div class="accred"><span class="ac ok">✓ World Skate (official)</span><span class="acsrc">Course run by the world federation itself.</span></div>
           <a class="url" href="https://www.worldskate.org/about/world-skate-academy.html" target="_blank" rel="noopener">worldskate.org</a></div>
       </div>
     </div>
@@ -522,7 +581,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

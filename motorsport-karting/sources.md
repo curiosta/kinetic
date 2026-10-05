@@ -1,6 +1,6 @@
 # Karting & Motorsport: sources and verification log
 
-Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here or is standard physics worked out on the page. Prices, rate cards, course fees, entry fees, bank details, phone numbers and email addresses shown on the tracks', schools' and federations' pages were deliberately **not reproduced**. What a track, school or organiser says about itself is attributed to it. The page covers closed tracks only, never public roads.
+Base checks 4 Oct 2026 (IST); deep5 pass 5 Oct 2026 (IST), section 5. Every fact on the page comes from a source listed here or is standard physics worked out on the page. Prices, rate cards, course fees, entry fees, bank details, phone numbers and email addresses shown on the tracks', schools' and federations' pages were deliberately **not reproduced**. What a track, school or organiser says about itself is attributed to it. The page covers closed tracks only, never public roads.
 
 ## 1. Physics (worked on the page)
 
@@ -51,3 +51,31 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - **Other racing schools and rental karting chains**: not verified, so not listed.
 - **Buddh International Circuit's F1 history**: described only in the circuit's own words ("India's only Formula One race track").
 - All prices, fees, insurance amounts, rate cards and contacts.
+
+## 5. Deep research (5 Oct 2026, batch deep5)
+
+| Item | Source | Status |
+|---|---|---|
+| Load sensitivity: axle 4,000 N, μ linear 1.3 @1,000 N → 1.1 @3,000 N; totals 4,800 / 4,750 / 4,600 / 4,000 N (0 / −1 / −4 / −17%) | teaching model, computed | μ(N) **illustrative** (stated on page) |
+| Solid rear axle: outside-wheel extra distance = T/(r − T/2), T = 1.1 m → 25/12/6/3% at 5/10/20/40 m; +T·π/2 ≈ 1.7 m per 90° | geometry, computed | track width illustrative |
+| Reaction distance v·t at 1.0/1.5 s + braking from existing table (μ 1.2) | computed | ~1 s stated as rule of thumb |
+| Top speed from P·0.85 = ½ρCdAv³ + Crr·m·g·v, 150 kg, CdA 0.6, Crr 0.02, ρ 1.2 → 79/87/101/129 km/h for 7/9/14/28 bhp | computed (bisection) | all inputs illustrative; caveat about gearing/limiters on page. Lab outputs untouched |
+| **FMSCI on FIA members list** ("THE FEDERATION OF MOTOR SPORTS CLUBS OF INDIA", Sport & Mobility) | https://www.fia.com/members/region/asia-6/country/IN (WebFetch 5 Oct 2026) | **✓ Verified** (recheck) |
+| FIA licensed circuits, updated 2026-03-31: MADRAS IND Grade 2, 3.117 km, expiry 21.07.2026; KARI MOTOR SPEEDWAY IND Grade 4, 2.2 km, expiry 31.12.2027; no other Indian circuit (no Buddh, no BREN) | https://www.fia.com/sites/default/files/circuits_fia20260331_0.pdf (curl + pdftotext 5 Oct 2026) | ✓ Kari Grade 4; Madras licence date passed — **renewal unverified** (no later list found); Buddh **not listed** |
+| FIA Karting homologated circuits (Nov 2025 edition): "Madras International Karting Arena, IND, Chennai, 1172 m, licence 1167, 07.04.2028, 1C" — the only Indian entry | https://www.fiakarting.com/sites/default/files/2025-11/Homologations_circuits_Liste_WEB.pdf (curl + pdftotext) | **✓ Verified**; Meco Kartopia not listed |
+| MIKA to host FIA-CIK Arrive and Drive round, Sept 2026 (announced 12 Mar 2026 by MMSC VP Vicky Chadhok) | UNI India, https://www.uniindia.com/south-india/sports-motorsport-international-karting/15753 | news report; **not confirmed held**; madrasmotorsports.com/mika = maintenance page |
+| Turbo Track, Sector 58 Gurugram: 800 m; Levels 1–3 rated 70/95/120 km/h; "Built with JK Tyre Motorsport expertise and aligned with FMSCI standards" | https://www.turbotrack.org/ (WebFetch; **prices not reproduced**) | Track's claim; unverified |
+| Meco Kartopia "FMSCI-approved" | Meco page (base check 4 Oct) | now labelled Track's claim; badge → "Says FMSCI-approved" |
+| FMSCI website / calendar / track approvals | fmsci.co.in curl 000 (5 Oct 2026); SPA calendar | **unreachable**; sanction of championships shown as organiser's claim |
+| F9 Go Karting (Gurgaon), Speedomania | f9gokarting.com (WebFetch: addresses only, no track or safety detail); speedomania.in no response | not listed |
+| Seasons | no verified change; strip untouched (concurrent calendar batch owns strips) | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- FMSCI → ✓ FIA members list; licence portal → ✓ FMSCI official; FIA Karting how-to / Appendix L / FIA Karting → ✓ FIA official
+- Meco Kartopia → Track's claim — FMSCI-approved; Meco Chicane & Kartainment → unverified; Turbo Track (new) → Track's claim + unverified
+- Meco Karting Academy → School's claim — licence programmes + unverified
+- Meco FMSCI NKC / RMC India → Organiser's regulations + ✓ MIKA on FIA Karting list
+- Meco Racing Academy → ✓ Kari Motor Speedway FIA Grade 4 + course unverified
+- JK Tyre INRC → Organiser's announcement + ✓ Kari FIA Grade 4 (Madras renewal unverified; BREN not listed)
+- Buddh International Circuit → Circuit's claim + no current FIA circuit licence listed
+- MIKA (new site card) → ✓ FIA Karting homologated (1C)

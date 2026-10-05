@@ -134,24 +134,34 @@ Page: `/calendar/` ("When to go") and the season strip on each sport page. Gener
 
 ## Events
 
-Exact dates are shown only where the next edition is officially announced (all on or after 5 Oct 2026); otherwise the label is "usually <month>". Past editions' dates below are evidence for the usual month, not shown as upcoming dates.
+Exact dates are shown only where the next edition is officially announced (all on or after 5 Oct 2026). If the next edition is not announced, the label is "Usually <month>" and/or "Not yet announced · Last: …" — we never invent dates. Past editions below are evidence, not upcoming dates.
 
 | Month | Sport | Event | Shown as | Official page | Evidence |
 |---|---|---|---|---|---|
 | Jan | Running | Tata Mumbai Marathon | 17 Jan 2027 | https://tatamumbaimarathon.procam.in/race-categories/marathon/information | organiser's race page ('Race Day: Sunday, 17th January 2027'), curl 5 Oct 2026 |
-| Jan | Ice skating | Khelo India Winter Games: ice sports | usually January | https://winter.kheloindia.gov.in/about-winter-games | 2026: 20-26 Jan; 2025: 23-27 Jan; next dates not announced |
-| Jan | Recreational flying | Tamil Nadu International Balloon Festival | usually mid-January | https://tnibf.com/ | official site: 11th edition 15-18 Jan 2026 (curl 5 Oct 2026); 2027 dates not announced |
+| Jan | Trekking & mountaineering | Chadar trek expedition / permit window | Usually January to February | https://www.tribuneindia.com/news/j-k/chadar-trek-route-on-zanskar-unsafe-hazardous-recce-report/ | Winter frozen-river trek/permit window on the Zanskar (not a race). Typical mid-Jan–Feb ice season; 2026 openings were suspended when ice was unsafe (Tribune / ToI Jan 2026). Check Ladakh authorities before travel. |
+| Jan | Ice skating | Khelo India Winter Games: ice sports | Usually January | https://winter.kheloindia.gov.in/about-winter-games | 2026: 20-26 Jan; 2025: 23-27 Jan; next dates not announced |
+| Jan | Recreational flying | Tamil Nadu International Balloon Festival | Usually mid-January | https://tnibf.com/ | official site: 11th edition 15-18 Jan 2026 (curl 5 Oct 2026); 2027 dates not announced |
+| Feb | Paragliding | PWCA Asian Tour India — Panchgani | 6-12 Feb 2027 | https://www.pwca.org/events/2026-pwca-asian-tour-india-panchgani-2027-season-2026 | PWCA: Asian Tour India Panchgani 2027 season 2026, 6-12 Feb 2027 (pwca.org, curl/WebFetch 5 Oct 2026) |
+| Feb | Running | Auroville Marathon | 14 Feb 2027 | https://www.aurovillemarathon.com/ | organiser's home page: Race Day 14 Feb 2027 (WebFetch 5 Oct 2026); annual Sunday in February since 2008 |
 | Feb | Running | Tata Ultra Marathon | 21 Feb 2027 | https://tataultra.com/race.html | organiser's race page (50 km flag-off 01:30 am, 21 Feb 2027), curl 5 Oct 2026 |
-| Feb | Skiing & snowboarding | Khelo India Winter Games: snow sports | usually February to March | https://winter.kheloindia.gov.in/about-winter-games | 2026: 23-26 Feb (PIB); 2025: 9-12 Mar; next dates not announced |
-| Feb | Swimming | Sunk Rock Lighthouse to Gateway of India sea race | usually February | http://www.msaaa.co.in/events/ | 61st edition 16 Feb 2025 (MSAAA circular, Swimming page source); next date not announced |
+| Feb | Running | Cognizant New Delhi Marathon | 28 Feb 2027 | https://www.newdelhimarathon.com/ | AIMS race page: Sun 28 February 2027 (WebFetch 5 Oct 2026); 2026 edition was 22 Feb (AFI National Marathon circular) |
+| Feb | Surfing | India Surf Festival (Puri) | Not yet announced · Last: Feb 2015 (last dated public edition) | https://indiasurffestival.com/ | indiasurffestival.com announces a return after a hiatus but no 2025/2026 dates (curl 5 Oct 2026). Surfing Yogis pioneered the festival. Not inventing dates. |
+| Feb | Skiing & snowboarding | Khelo India Winter Games: snow sports | Usually February to March | https://winter.kheloindia.gov.in/about-winter-games | 2026: 23-26 Feb (PIB); 2025: 9-12 Mar; next dates not announced |
+| Feb | Paragliding | National Paragliding Accuracy Championships | Not yet announced · Last: 5-9 Feb 2026, Kapkot (Bageshwar) | https://indianparaglidingaccuracy.in/ | Press: national accuracy meet at Kapkot 5-9 Feb 2026 (ToI). Venues vary (Vagamon Mar 2025 was an international cup). Next edition not announced. |
+| Feb | Swimming | Sunk Rock Lighthouse to Gateway of India sea race | Usually February | http://www.msaaa.co.in/events/ | 61st edition 16 Feb 2025 (MSAAA circular, Swimming page source); next date not announced |
+| Mar | Skiing & snowboarding | Zanskar Winter Sports and Tourism Festival | Usually March | https://ladakh.gov.in/zanskar-winter-sports-and-tourism-festival-2024-25-thrills-spectators-amidst-breathtaking-landscapes/ | UT Ladakh: 2024-25 festival at Atting on 20 Mar 2025 (official page); 5th edition 2026 concluded at Padum 27 Mar 2026 (Earth News 28 Mar 2026); next dates not announced |
 | Apr | Running | TCS World 10K Bengaluru | 25 Apr 2027 | https://tcsworld10k.procam.in/ | organiser's home page countdown ('25th April, 2027'), curl 5 Oct 2026 |
-| May | Surfing | Indian Open of Surfing | usually late May | https://www.surfingfederationofindia.org/events/indian-open-of-surfing-2026 | SFI event page: 28-31 May 2026 (curl 5 Oct 2026); The Hindu: 7th edition |
-| Jun | Sailing | YAI Monsoon Regatta | usually June | https://www.yai.org.in/news/other-news/item/243-nor-for-the-monsoon-regatta-2025-scheduled-from-08-14-jun-2025-at-hyderabad.html | YAI: 16th edition 8-14 Jun 2025; 2026 edition 1-7 Jun (curl 5 Oct 2026) |
-| Jul | Kayaking & rafting | Malabar River Festival | usually late July to August | https://www.keralaadventure.org/malabar-river-festival/ | Kerala Tourism / KATPS official page: 12th edition 30 Jul-2 Aug 2026 (curl 5 Oct 2026); 2027 dates not announced |
-| Aug | Surfing | Covelong Classic (Covelong Point surf festival) | usually August | https://www.surfingfederationofindia.org/events/covelong-classic-2026 | SFI event page: 6-8 Aug 2026 (curl 5 Oct 2026); the festival has run each August since 2013 (Indian Express, 2022) |
-| Aug | Swimming | Murshidabad 81 km river swim (Bhagirathi) | usually late August or early September | https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/ | news reports: 80th edition 6 Sep 2026 (ANI); 79th 31 Aug 2025 (NBTV); 3 Sep 2023 (ETV Bharat); organiser Murshidabad District Swimming Association has no official event page we could verify |
+| May | Surfing | Indian Open of Surfing | Usually late May | https://www.surfingfederationofindia.org/events/indian-open-of-surfing-2026 | SFI event page: 28-31 May 2026 (curl 5 Oct 2026); The Hindu: 7th edition |
+| May | Cycling & MTB | MTB Himalaya | Not yet announced · Last: May 2025 (12th edition) | https://hastpa.com/events/mtb-himalaya/ | HP govt press: 12th edition flagged off 16 May 2025, culminated 18 May 2025. No 2026/2027 dates on hastpa.com (checked 5 Oct 2026); older editions often Sep/Oct — month not stable. |
+| Jun | Ice skating | National Ice Skating Championships (ISAI) | Not yet announced · Last: June 2026, Dehradun | https://iceskatingindia.in/National-Championships | ISAI nationals' venues/months vary (Shimla Jan historically; recent press: Dehradun June 2025 and June 2026). Next edition not announced (checked 5 Oct 2026). |
+| Jun | Sailing | YAI Monsoon Regatta | Usually June | https://www.yai.org.in/news/other-news/item/243-nor-for-the-monsoon-regatta-2025-scheduled-from-08-14-jun-2025-at-hyderabad.html | YAI: 16th edition 8-14 Jun 2025; 2026 edition 1-7 Jun (curl 5 Oct 2026) |
+| Jul | Kayaking & rafting | Malabar River Festival | Usually late July to August | https://www.keralaadventure.org/malabar-river-festival/ | Kerala Tourism / KATPS official page: 12th edition 30 Jul-2 Aug 2026 (curl 5 Oct 2026); 2027 dates not announced |
+| Aug | Surfing | Covelong Classic (Covelong Point surf festival) | Usually August | https://www.surfingfederationofindia.org/events/covelong-classic-2026 | SFI event page: 6-8 Aug 2026 (curl 5 Oct 2026); the festival has run each August since 2013 (Indian Express, 2022) |
+| Aug | Swimming | Murshidabad 81 km river swim (Bhagirathi) | Usually late August or early September | https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/ | news reports: 80th edition 6 Sep 2026 (ANI); 79th 31 Aug 2025 (NBTV); 3 Sep 2023 (ETV Bharat); organiser Murshidabad District Swimming Association has no official event page we could verify |
 | Sep | Freediving | AIDA Depth World Championships (global) | 27 Sep-10 Oct 2026 | https://www.visitcyprus.com/event/world-apnea-championships-2026-27-9-10-10-2026/ | Visit Cyprus event page (Freediving page source, 4 Oct 2026) |
-| Sep | Running | Ladakh Marathon | usually September | https://ladakhmarathon.com/race-information/ | official page: annual, in September; 13th edition 10-13 Sep 2026; 2027 dates not announced (WebFetch 5 Oct 2026) |
+| Sep | Running | Ladakh Marathon | Usually September; last: 10-13 Sep 2026 | https://ladakhmarathon.com/race-information/ | official page: annual, in September; 13th edition 10-13 Sep 2026; 2027 dates not announced (WebFetch 5 Oct 2026) |
+| Sep | Running | Wipro Bengaluru Marathon | Usually September; last: 27 Sep 2026 | https://bengalurumarathon.in/ | 13th edition 27 Sep 2026 (The Hindu 25 Sep 2026; AIMS); 21 Sep 2025; earlier editions often October; 2027 date not announced (checked 5 Oct 2026) |
 | Oct | Sport shooting | NRAI India Open Competition (Shotgun) | 5-13 Oct 2026 | https://www.thenrai.in/ | NRAI notices (Shooting page source; NRAI home lists the event on 5 Oct 2026) |
 | Oct | Triathlon | IRONMAN World Championship (global) | 10 Oct 2026 | https://www.ironman.com/stories/news-updates/2026-ironman-world-championship-returns-hawaiian-roots-kona-exclusive-location | IRONMAN announcement (Triathlon page source, 3 Oct 2026) |
 | Oct | Karting & motorsport | National karting championship: final round | 17-18 Oct 2026 | https://www.mecomotorsports.co.in/ | Meco's 2026 calendar (Karting page source, 4 Oct 2026; script-rendered page) |
@@ -159,8 +169,10 @@ Exact dates are shown only where the next edition is officially announced (all o
 | Oct | Swimming | 1st SFI Short Course Nationals | 21-25 Oct 2026 | https://www.swimming.org.in/national-calendar/ | Swimming Federation of India national calendar, WebFetch 5 Oct 2026 |
 | Oct | Archery | 46th Junior National Archery Championship | 21-28 Oct 2026 | https://www.indianarchery.org/calendar | AAI calendar rendered in IST + Rajasthan Archery Association calendar 2026-27 (5 Oct 2026) |
 | Oct | Karting & motorsport | Indian National Car Racing Championship, round 2 | 23-25 Oct 2026 | https://www.jktyremotorsport.com/calendar | JK Tyre calendar, curl 5 Oct 2026 |
+| Oct | Cycling & MTB | MTB Shimla | 23-25 Oct 2026 | https://hastpa.com/events/mtb-shimla/ | HASTPA events page: 13th MTB Shimla 23-25 Oct 2026 (WebFetch/curl 5 Oct 2026); formerly often branded Hero MTB Shimla |
 | Oct | Freediving | CMAS Red Sea Open Cup (global) | 26-30 Oct 2026 | https://www.cmas.org/freediving | CMAS freediving calendar (Freediving page source, 4 Oct 2026) |
 | Oct | Swimming | Elephanta to Gateway of India expedition swim (OWSA) | 31 Oct-1 Nov 2026 | https://www.openwaterswimsindia.com/event | organiser's events page, curl 5 Oct 2026 |
+| Oct | Paragliding | PWCA Asian Tour / Paragliding World Cup — Bir Billing | Not yet announced · Last: 2-9 Nov 2024 | https://pwca.org/events/2024-pwca-asian-tour-india-bir-2024 | Last Bir PWCA 2-9 Nov 2024 (pwca.org). No Bir edition in 2025 or 2026; next dates for Bir not announced (re-checked 5 Oct 2026). India's recent PWCA moved to Panchgani (listed separately). |
 | Nov | Triathlon | IRONMAN 70.3 Goa | 1 Nov 2026 | https://www.ironman.com/races/im703-goa | IRONMAN race page (Triathlon page source, 3 Oct 2026; registration sold out) |
 | Nov | Surfing | ISA World Surfing Games (global) | 6-15 Nov 2026 | https://isasurf.org/ | ISA home page (Surfing page source, 3 Oct 2026) |
 | Nov | Archery | Senior National Archery Championships (Indian round, compound, recurve) | 11-18 Nov 2026 | https://www.indianarchery.org/calendar | AAI calendar rendered in IST (5 Oct 2026) |
@@ -170,29 +182,29 @@ Exact dates are shown only where the next edition is officially announced (all o
 | Nov | Windsurfing | YAI Senior Nationals (iQFOiL, men and women) | 14-20 Nov 2026 | https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf | YAI Notice of Race PDF: 14-20 Nov 2026 at INWTC (Mbi); up to 15 races for iQ Foil (M & W) (curl 5 Oct 2026) |
 | Nov | Archery | 4th National Ranking Archery Tournament | 21-30 Nov 2026 | https://www.indianarchery.org/calendar | AAI calendar rendered in IST (5 Oct 2026) |
 | Nov | Running | Malnad Ultra | 28 Nov 2026 | https://malnadultra.com/ | organiser's home page ('Our next Race Day is November 28, 2026'), curl 5 Oct 2026 |
-| Nov | Rock climbing | IMF National Sport Climbing Championship | usually November to December | https://indmount.org/IMF/sportclimbing | IMF: 'held annually in Nov-Dec every year' (curl 5 Oct 2026) |
+| Nov | Rock climbing | IMF National Sport Climbing Championship | Usually November to December | https://indmount.org/IMF/sportclimbing | IMF: 'held annually in Nov-Dec every year' (curl 5 Oct 2026) |
 | Dec | Skating | 64th National Roller Skating Championships (RSFI) | 5-15 Dec 2026 | https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/ | RSFI letter of 18 Sep 2026 (curl 5 Oct 2026) |
 | Dec | Skateboarding | 64th National Roller Skating Championships (incl. skateboarding) | 5-15 Dec 2026 | https://indiaskate.com/64th-national-roller-skating-championships-2026-technical-officials-letters-2/ | RSFI letter of 18 Sep 2026 (curl 5 Oct 2026) |
 | Dec | Cycling & MTB | Tour of the Nilgiris | 6-12 Dec 2026 | https://www.tourofnilgiris.com/ | organiser's home page (flag-off 6 Dec, last day 12 Dec 2026), curl 5 Oct 2026 |
 | Dec | Karting & motorsport | Indian National Car Racing Championship, finale | 11-13 Dec 2026 | https://www.jktyremotorsport.com/calendar | JK Tyre calendar, curl 5 Oct 2026 |
-| Dec | Sport shooting | National Shooting Championship Competitions (NRAI) | usually December | https://www.thenrai.in/details.aspx?view=7344 | 68th NSCC (rifle) 11-31 Dec 2025, Bhopal (NRAI notice, curl 5 Oct 2026); 2026 dates not announced |
+| Dec | Sport shooting | National Shooting Championship Competitions (NRAI) | Usually December | https://www.thenrai.in/details.aspx?view=7344 | 68th NSCC (rifle) 11-31 Dec 2025, Bhopal (NRAI notice, curl 5 Oct 2026); 2026 dates not announced |
 
-Sports with no verified recurring event (their strips say so): Scuba, Kitesurfing, Paragliding, Paramotoring, Skydiving, Bungee & zipline, Trekking & mountaineering, Horse riding.
+Sports with no verified recurring event (their strips say so): Scuba, Kitesurfing, Paramotoring, Skydiving, Bungee & zipline, Horse riding.
 
-## Events dropped (not verified as still running, or not recurring)
+## Events dropped (not a verified recurring fixture, or not a distinct named event)
 
-- **Bir Billing paragliding competitions (PWCA Asian Tour / Paragliding World Cup)**: PWCA events ran at Bir in Oct-Nov 2023 and Nov 2024, but none was held in 2025 and none is announced for 2026 (pwca.org events list). Not shown as a recurring event.
-- **YAI national kitesurfing / windsurfing championship, Morjim**: Held 18-22 Mar 2026, but we could not confirm it recurs in a set month.
+- **YAI national kitesurfing / windsurfing championship, Morjim**: Held 18-22 Mar 2026, but we could not confirm it recurs as an annual fixture with a set month.
 - **GETHNAA Wind Surfing & Sailing Camp, Sadashivgad, Karwar (18-22 Oct 2026)**: Seen on a flyer, but not on gethnaa.org: its 2026-27 calendar, camps, events, summer-camp and gallery pages (checked 5 Oct 2026) list only the April 2026 Karwar camp and a 1-10 Nov 2026 Basic Aqua Sports Course batch at Karwar. Not shown; the Karwar row and the windsurfing page link to GETHNAA instead.
 - **CESC Regatta, Pawna Dam, Pune (23-28 Oct 2026; Techno 293, Raceboard, iQFOiL)**: On YAI's 2026 calendar, but we could not confirm it recurs in a set month. Mentioned on the windsurfing page only.
 - **WSL Shore Temple Classic, Mahabalipuram**: Held 12-16 Aug 2026, only the second WSL event in India (after 2023): not an annual event.
-- **Paragliding pre-World Cup / festival in Manali or Bir**: No official page or announcement found.
+- **Paragliding pre-World Cup / festival in Manali or Bir (non-PWCA)**: No official page or announcement found beyond the PWCA Bir history (listed as Not yet announced) and the Panchgani PWCA dates.
 - **Jebel Jais / Jumpin Heights adventure festivals**: No festival dates or months published by Jumpin Heights; the bungee strips show the operators' seasons only.
-- **ISSF World Championship (rifle and pistol), Doha**: Held every four years, and exact November 2026 dates aren't confirmed: not a 'usually <month>' event.
+- **ISSF World Championship (rifle and pistol), Doha**: Held every four years, and exact November 2026 dates aren't confirmed: not listed as a recurring annual event.
 - **Gulmarg Winter Carnival (31 Dec 2025-6 Jan 2026)**: Reported by local news (Greater Kashmir), but we found no official page or recurring month. The Khelo India Winter Games snow leg at Gulmarg, which local press calls the Gulmarg Winter Games, is listed instead.
+- **India Dive Festival / national scuba meets (Goa / Andamans)**: No named recurring official national scuba meet found. Andaman Tourism's Dive Festival page lists a 2022 Swaraj Dweep event only; Goa 2025 items were one-off ICG/IAF expeditions, not an annual festival.
+- **National Surf Festival, Mulki / Mantra Surf Club**: No separate 'National Surf Festival' under that name. Mantra Surf Club / Surfing Swami events feed the Indian Open of Surfing (already listed; Mangaluru / west coast), not a distinct Mulki national festival.
 
 ## Notes
 
 - The archery page's 2026 national event dates were corrected on 5 Oct 2026 (they were one day early). The AAI calendar renders dates in the viewer's time zone. Read in IST and checked against the Rajasthan Archery Association's 2026-27 calendar, they are: Junior Nationals, Jaipur, 21-28 Oct; Senior Nationals, Shillong, 11-18 Nov; 4th NRAT, Gangtok, 21-30 Nov; and the workshop, 12-15 Oct.
 - Links marked as Kinetic page sources (`../<sport>/#where`) point to that sport's own sources.md for the underlying citations.
-- Cell notes on touch/coarse pointers open on tap and dismiss on outside tap, Escape, Close, or scroll (5 Oct 2026 mobile UX fix); the panel flips to the top when the tapped cell is near the bottom edge.

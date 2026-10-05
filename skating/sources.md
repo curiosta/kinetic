@@ -1,6 +1,6 @@
 # Kinetic · Roller & inline skating: sources and verification notes
 
-All checks done **3 Oct 2026 (IST)**. "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Academy phone numbers and emails are also left off the page; readers are sent to each academy's own site.
+Base checks done **3 Oct 2026 (IST)**; deep5 pass **5 Oct 2026 (IST)** (section 5). "Verified" means the official page was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices**. Academy phone numbers and emails are also left off the page; readers are sent to each academy's own site.
 
 ## Scope decision: skateboarding excluded
 
@@ -59,3 +59,32 @@ Skateboarding is governed by the same bodies (World Skate globally; RSFI says it
 - **63rd National Championships (2025)**: RSFI posted a postponement and clarification, and a third-party event in Visakhapatnam was described as not RSFI-approved. Left out to avoid confusion.
 - **Spectator access** at RSFI events was not verified, so the page suggests asking your club.
 - **World Skate Games 2026 dates and venue city**: not verified, so only "Paraguay" is stated.
+
+## 5. Deep research (5 Oct 2026, batch deep5)
+
+| Item | Source | Status |
+|---|---|---|
+| Measured inline rolling resistance: 4-wheel cart 7.25 + 31.8 kg; mean of 9 runs. 78A: asphalt 3.07 N (precision) / 3.98 N (semi-precision); concrete 2.38 / 3.71 N. 82A: asphalt 4.63 / 5.14 N; concrete 4.17 / 5.08 N. Wheel, bearing, surface effects significant (ANOVA) | S. A. Cartwright, *The effect of surface, wheel, and bearing type on the physiological response of in-line skating*, MSc thesis, McGill University, 1994 (eScholarship@McGill); full text read via index copy https://exa.ai/library/publication/3rvjgj2104k (5 Oct 2026). McGill catalogue search returned no direct record link | ✓ numbers read in Tables 30–31; Crr (F ÷ 39.05 × 9.81 = 0.006–0.013) and coast distances (v²/2Crr·g, 15 km/h) computed by us |
+| Same thesis: VO2 differed significantly between bearing types (HR did not); no significant VO2/HR difference between 78A and 82A; concrete vs asphalt not significant physiologically | same | ✓ |
+| Same thesis: inline stride length ~3.8–4.7 m nearly constant over 336–381 m/min (20–23 km/h); stride rate ~79–101 /min rose with speed; Marino (1977) same pattern on ice | same, Tables 15–20 + discussion | ✓ |
+| Speed-skating mechanics: elite performance related to large work per stroke, long glide, horizontal push-off (van Ingen Schenau et al.; de Boer et al. 1986, 1987a) | as reviewed in the same thesis | secondary (literature review) |
+| Roller vs ice: 8 trained marathon skaters; VO2, VE, HR not significantly different; power, work per stroke, stroke frequency equal; push-off effectiveness no difference; lower max roller speed due to higher friction; upper-leg angle 7.5° higher in gliding | de Boer, Vos, Hutter, de Groot, van Ingen Schenau, *Eur J Appl Physiol* 56:562–569 (1987), doi:10.1007/BF00635371 — author abstract at https://www.bisp-surf.de/Record/PU198807009950 (WebFetch 5 Oct 2026) | ✓ abstract |
+| Grip limit tan θ = μ, v = √(μ g r) on r = 5 m with μ 0.8/0.5/0.3 → 39°/27°/17°, 22.6/17.8/13.8 km/h | standard physics, recomputed | μ values **illustrative** (stated) |
+| Work per push = P ÷ push rate; glide per push = v ÷ push rate (60 and 80 per min) | computed from the page's existing power table | push rates illustrative (stated) |
+| **RSFI on World Skate national federations** ("INDIA Roller Skating Federation of India (India Skate)", indiaskate.com) | https://www.worldskate.org/about/organisation/national-federations.html (curl 5 Oct 2026; same check as skateboarding deep5) | **✓ Verified** |
+| RSFI notice 21 Sep 2026: MYAS 2026 affiliation letter; World Skate Games 2026 squad | https://indiaskate.com/official-recognition-renewal-issuance-of-2026-ministry-affiliation-and-world-skate-games-2026-participation/ | federation's own notice (labelled) |
+| Delhi Skating Association page on RSFI site | https://indiaskate.com/delhi/ | ✓ listed by RSFI |
+| ICP Level 1 course, LAZERXTECH track, Pune, 25–27 Mar 2016, six Indian instructors; post bylined "ICP Examiner Ajay Shivlani, India" | https://www.inlinecertificationprogram.org/blog/dedicated-coaches-complete-level-1-pune-india (WebFetch) | ✓ ICP's own blog (2016) |
+| ICP "Meet our Examiners" (current): lists examiners from USA, Singapore, UK, Greece, Poland, Spain/Argentina, Indonesia, Spain, Brazil; **no Indian examiner** | https://www.inlinecertificationprogram.org/meet-our-examiners (curl 5 Oct 2026) | Shivlani's current ICP status **unverified**; ICP "Global Directory" not checked (login/JS) |
+| The Skate Academy: "Led by Ajay Shivlani, an internationally certified coach"; centres; timeline (1991 teaching, 2012 three skaters to world ranking, 2014 *Hawaa Hawaai*) | https://www.theskateacademy.in/skate-academy-programs/ , https://www.theskateacademy.in/ , https://www.theskateacademy.in/our-story/ (WebFetch; session-package and contact details **not reproduced**) | School's claim |
+| Chennai Skating Academy: classes by age; no affiliation or certification named | https://chennaiskatingacademy.com/ (WebFetch) | Accreditation: unverified |
+| Sree Ram Skating Club: "recognized by govt of Karnataka, RSFI, KRSA, and BDRSA" | https://www.sreeramasportsassociation.com/sree-ram-skating-club (curl) | School's claim (badge changed to "Says RSFI-recognised") |
+| Delhi Skate Life | https://delhiskatelife.wordpress.com/ (curl 200) | community; unverified |
+| Seasons | no verified change; strip untouched | — |
+
+### Accreditation labels on cards (5 Oct 2026)
+- RSFI → ✓ World Skate list + Federation's notice (MYAS 2026); Delhi SA → ✓ Listed by RSFI; KRSA → ✓ Named by RSFI as Nationals host
+- Delhi Skate Life → unverified; Chennai Skating Academy (×3) → unverified
+- The Skate Academy (×3) → School's claim "internationally certified coach" + current certification unverified (ICP 2016 byline noted)
+- Sree Ram Skating Club (×2) → School's claim — RSFI, KRSA, BDRSA
+- 64th Nationals → ✓ RSFI championship; Federation Cup → ✓ RSFI event; World Skate Games → ✓ World Skate event + Federation's notice (squad)

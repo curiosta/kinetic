@@ -144,6 +144,51 @@
           <p class="small" style="margin:10px 0 0">At 30 km/h (8.33 m/s): rolling = 0.005 × 85 × 9.81 × 8.33 ≈ 35 W; drag = ½ × 1.2 × 0.32 × 8.33³ ≈ 111 W. Doubling speed from 20 to 40 km/h needs more than five times the power. Drag areas and C<sub>rr</sub> are typical illustrative values.</p>
         </div>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A bright household LED bulb uses about 10 W. Cruising at 30 km/h on the flat takes about 150 W: fifteen of them, from your legs, for as long as you ride.</div></div>
+        <h4>Rolling resistance, more closely</h4>
+        <p>C<sub>rr</sub> isn't a fixed property of "a bike". It comes mostly from the tyre casing flexing and springing back (hysteresis), so it depends on the tyre's construction, width, pressure and the surface. Because the force is C<sub>rr</sub> × m g, the power it costs grows only in step with speed, unlike drag.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · rolling power at 30 km/h, 85 kg rider + bike (illustrative C<sub>rr</sub> values)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Tyre and surface (typical range)</th><th>C<sub>rr</sub></th><th>Rolling force</th><th>Rolling power</th></tr></thead>
+            <tbody>
+              <tr><td>Fast road tyre, smooth tarmac</td><td class="num">0.003</td><td class="num">≈ 2.5 N</td><td class="num">≈ 21 W</td></tr>
+              <tr><td>Everyday road tyre (our lab's "smooth road")</td><td class="num">0.005</td><td class="num">≈ 4.2 N</td><td class="num">≈ 35 W</td></tr>
+              <tr><td>Heavy commuter tyre or worn surface</td><td class="num">0.008</td><td class="num">≈ 6.7 N</td><td class="num">≈ 56 W</td></tr>
+              <tr><td>Gravel (lab)</td><td class="num">0.012</td><td class="num">≈ 10 N</td><td class="num">≈ 83 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Force = C<sub>rr</sub> × 85 × 9.81; power = force × 8.33 m/s. At 200 W on the hoods, swapping C<sub>rr</sub> 0.005 for 0.003 lifts steady speed from about 33.9 to 35.0 km/h; going to 0.008 drops it to about 32.4 km/h.</p>
+        </div>
+        <h4>Why harder tyres aren't always faster: roughness resistance</h4>
+        <p>On a perfectly smooth drum, more pressure means less casing flex and lower C<sub>rr</sub>. Real roads have bumps. A very stiff tyre passes those bumps into the bike and your body, where the vibration is soaked up as heat: that's lost power too. A 2024 model of this "roughness resistance" (Turner, Dublin City University, arXiv:2405.00019) finds it depends mainly on how rough the road is and how stiff the bike-plus-tyre is vertically. On moderately rough roads it can be larger than rolling resistance, and wider, softer tyres (or a more compliant frame) cut it. On very smooth roads, the stiff, narrow set-up still wins slightly because it has less drag. The practical lesson: there's a best pressure for each surface, and on Indian secondary roads it's usually lower than the number printed on the sidewall's maximum. Stay within the tyre and rim maker's limits.</p>
+        <h4>The crossover: when does air beat the ground?</h4>
+        <p>Drag force (½ρC<sub>d</sub>A v²) and rolling force (C<sub>rr</sub> m g) are equal at <span class="eq">v = √(2 C<sub>rr</sub> m g ÷ (ρ C<sub>d</sub>A))</span>. Above that speed, air is your biggest enemy; below it, the ground is.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · crossover speed, 85 kg, ρ 1.2 kg/m³</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Set-up</th><th>C<sub>rr</sub></th><th>C<sub>d</sub>A</th><th>Drag = rolling at</th></tr></thead>
+            <tbody>
+              <tr><td>Road bike, hoods, smooth road</td><td class="num">0.005</td><td class="num">0.32 m²</td><td class="num">≈ 17 km/h</td></tr>
+              <tr><td>Upright MTB on gravel</td><td class="num">0.012</td><td class="num">0.60 m²</td><td class="num">≈ 19 km/h</td></tr>
+              <tr><td>Upright MTB on a dirt trail</td><td class="num">0.025</td><td class="num">0.60 m²</td><td class="num">≈ 27 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Road bike: √(2 × 0.005 × 85 × 9.81 ÷ (1.2 × 0.32)) ≈ 4.7 m/s ≈ 17 km/h. On a trail, the ground dominates at almost any speed you'll actually ride, which is why tyre choice matters more than an aero tuck off-road.</p>
+        </div>
+        <h4>The chain takes its cut</h4>
+        <p>Our Power Lab assumes every pedal watt reaches the back wheel. In reality the chain and sprockets lose a little. Laboratory tests at Johns Hopkins University (Spicer and colleagues, <em>Journal of Mechanical Design</em>, 2001) measured derailleur chain-drive efficiencies from about 81% to 98.6%, with bigger sprockets and higher chain tension scoring better. Lubricant made no measurable difference on a new, clean chain in the lab; the researchers think its real job outdoors is keeping dirt out, and a dirty chain is a different story. A clean drivetrain in a sensible gear (not the smallest sprockets) should sit at the high end.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 200 W at the pedals, 85 kg, hoods, flat smooth road</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Drivetrain efficiency</th><th>Watts at the wheel</th><th>Steady speed</th></tr></thead>
+            <tbody>
+              <tr><td class="num">100% (lab model)</td><td class="num">200 W</td><td class="num">≈ 33.9 km/h</td></tr>
+              <tr><td class="num">98%</td><td class="num">196 W</td><td class="num">≈ 33.7 km/h</td></tr>
+              <tr><td class="num">95%</td><td class="num">190 W</td><td class="num">≈ 33.3 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Because drag power grows with v³, losing 5% of your power costs under 2% of your speed. Same model as the lab, with the wheel power reduced.</p>
+        </div>
         <details class="check"><summary>You hold 300 W against 30 N of total resistance. How fast are you going?</summary>
         <p>v = P ÷ F = 300 ÷ 30 = <strong>10 m/s = 36 km/h</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -170,6 +215,37 @@
         </div>
         <h4>Drafting</h4>
         <p>A rider ahead pushes the air aside and leaves a wake of slower-moving air. Ride in it and your drag falls, which is why groups ride in lines and take turns at the front. The cost: you're centimetres from another wheel, with little time to react. Ride close only with riders you trust, never on a busy road, and always signal hazards.</p>
+        <p>How much does it help? Earlier studies of small single-file groups found the following riders' drag falling to roughly 70% to 50% of a rider alone. Inside a big, tightly packed race peloton the shelter is far greater: a 2018 study by Blocken and colleagues (CFD simulations of 121 riders, checked in four wind-tunnel campaigns; <em>Journal of Wind Engineering and Industrial Aerodynamics</em>) found riders in the middle and rear of the bunch facing only 5% to 10% of the drag of a rider alone.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · power to hold 35 km/h, 85 kg, C<sub>d</sub>A 0.32 m², smooth road</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Where you ride</th><th>Drag vs riding alone</th><th>Power needed</th></tr></thead>
+            <tbody>
+              <tr><td>Alone, or on the front</td><td class="num">100%</td><td class="num">≈ 217 W</td></tr>
+              <tr><td>Second wheel in a small line (upper estimate)</td><td class="num">≈ 70%</td><td class="num">≈ 164 W</td></tr>
+              <tr><td>Well sheltered in a small line (lower estimate)</td><td class="num">≈ 50%</td><td class="num">≈ 129 W</td></tr>
+              <tr><td>Mid-pack in a 121-rider race peloton (Blocken et al.)</td><td class="num">≈ 10%</td><td class="num">≈ 58 W</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Rolling power (≈ 41 W) doesn't change; only the drag term is scaled. The peloton figure is for tightly packed professional racing on closed roads, not a Sunday group ride. Don't try to recreate it in traffic.</p>
+        </div>
+        <h4>Thin air, hot air and wind</h4>
+        <p>Drag is proportional to air density ρ, and ρ falls with heat and altitude. Same 200 W, same position:</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 200 W, 85 kg, hoods, flat smooth road (standard-atmosphere densities)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Where</th><th>Air density</th><th>Steady speed</th></tr></thead>
+            <tbody>
+              <tr><td>Sea level, 15 °C</td><td class="num">1.23 kg/m³</td><td class="num">≈ 33.7 km/h</td></tr>
+              <tr><td>Sea level, 35 °C</td><td class="num">1.15 kg/m³</td><td class="num">≈ 34.4 km/h</td></tr>
+              <tr><td>About 920 m (Bengaluru's height)</td><td class="num">1.12 kg/m³</td><td class="num">≈ 34.7 km/h</td></tr>
+              <tr><td>About 2,200 m (Shimla's height)</td><td class="num">0.99 kg/m³</td><td class="num">≈ 36.0 km/h</td></tr>
+              <tr><td>About 3,500 m (Leh's height)</td><td class="num">0.86 kg/m³</td><td class="num">≈ 37.5 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">ρ = p ÷ (R T) from the International Standard Atmosphere. The catch: thinner air also carries less oxygen, so most riders <em>can't</em> hold the same 200 W high up, and the heat that thins the air also makes hard efforts harder. The lab's 1.2 kg/m³ is a round sea-level value.</p>
+        </div>
+        <p>Wind changes the airspeed, and drag follows the airspeed. Riding at 25 km/h over the ground into a 15 km/h headwind, the drag power is ½ρC<sub>d</sub>A × (airspeed)² × (ground speed): about 194 W in total instead of about 93 W in still air. A tailwind does the opposite, which is why out-and-back routes rarely average out the way you hope.</p>
         <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Sitting up into a headwind feels like hitting a wall because drag depends on your speed through the air, not over the ground. A 15 km/h headwind at 25 km/h feels like riding at 40 km/h in still air.</div></div>
         <details class="check"><summary>If you go 10% faster, by roughly how much does your drag power rise?</summary>
         <p>1.1³ ≈ <strong>1.33</strong>: about a third more power, for a tenth more speed.</p></details>
@@ -267,6 +343,7 @@
       <p class="hook">Off-road, the ground fights back. Tyres and suspension decide how much.</p>
       <div class="body">
         <p>On dirt, tyres sink and knobs squirm, so rolling resistance rises steeply. Low pressures let the tyre wrap around rocks and roots for grip; suspension and bent legs spread out impacts so the wheels stay on the ground.</p>
+        <p>The roughness-resistance idea from Chapter 1 is at its strongest off-road: every root and rock you bounce over lifts you and the bike, and that energy is lost as vibration in your body unless the tyre or suspension absorbs it first. That's the physics behind wide, lower-pressure MTB tyres and suspension forks. A rigid, over-inflated bike can be slower on rough ground as well as harsher. (Suspension that bobs every time you pedal wastes some power too, which is why many forks and shocks have a firmer setting for climbing.)</p>
         <div class="worked">
           <span class="lbl">Worked example · surface vs speed at 200 W, 85 kg, upright position (from our Power Lab)</span>
           <div class="table-scroll"><table class="data">
@@ -378,8 +455,12 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National federation</span><h4>Cycling Federation of India (CFI)</h4><p>Affiliated to the Indian Olympic Association, the Asian Cycling Confederation and the UCI, and recognised by the Ministry of Youth Affairs and Sports. Runs national championships, rider licences, selection and coaching courses.</p><a class="url" href="https://www.cfiindia.in/about-1" target="_blank" rel="noopener">cfiindia.in</a></div>
-      <div class="card"><span class="tag">Randonneuring</span><h4>Audax India Randonneurs (AIR)</h4><p>Recognised by Audax Club Parisien to conduct and oversee all BRMs and Audax events in India. India's first brevet was a 200 km ride in Mumbai on 31 January 2010.</p><a class="url" href="https://www.audaxindia.in/" target="_blank" rel="noopener">audaxindia.in</a></div>
+      <div class="card"><span class="tag">National federation</span><h4>Cycling Federation of India (CFI)</h4><p>Affiliated to the Indian Olympic Association, the Asian Cycling Confederation and the UCI, and recognised by the Ministry of Youth Affairs and Sports. Runs national championships, rider licences, selection and coaching courses.</p>
+        <div class="accred"><span class="ac ok">✓ On ACC's affiliated-federations list</span><span class="acsrc">"India — IND — Cycling Federation of India" appears in Appendix 1 of the <a href="https://www.accasia.org/wp-content/uploads/2025/07/ACC-Constitution_Version-2020_Final.pdf" target="_blank" rel="noopener">Asian Cycling Confederation constitution</a>. ACC is the UCI's Asian confederation, and its constitution says Asian federations get ACC membership automatically with UCI membership. The UCI's own federation directory loads interactively and didn't show us the India entry, so the UCI link is checked through ACC (5 Oct 2026).</span></div>
+        <a class="url" href="https://www.cfiindia.in/about-1" target="_blank" rel="noopener">cfiindia.in</a></div>
+      <div class="card"><span class="tag">Randonneuring</span><h4>Audax India Randonneurs (AIR)</h4><p>Recognised by Audax Club Parisien to conduct and oversee all BRMs and Audax events in India. India's first brevet was a 200 km ride in Mumbai on 31 January 2010.</p>
+        <div class="accred"><span class="ac ok">✓ On Les Randonneurs Mondiaux member list</span><span class="acsrc">"INDIA – AUDAX INDIA RANDONNEURS" on the <a href="https://www.randonneursmondiaux.org/52-Country_Organizations.html?langue=EN" target="_blank" rel="noopener">LRM member countries page</a>. ACP's <a href="https://www.audax-club-parisien.com/en/our-organizations/brm-world/" target="_blank" rel="noopener">BRM page</a> says LRM gathers all its BRM representatives (5 Oct 2026).</span></div>
+        <a class="url" href="https://www.audaxindia.in/" target="_blank" rel="noopener">audaxindia.in</a></div>
     </div>
   </div>
 </section>
@@ -390,8 +471,10 @@
     <div class="section-head">
       <span class="eyebrow">05 · Where to ride</span>
       <h2>Pick your level. We'll point you to the ride.</h2>
-      <p>Real rides, events and courses, each checked on an official website. Follow the link and confirm dates, rules and entry details directly with the organiser.</p>
+      <p>Real rides, events and courses, each checked on an official website. Every school, course and organiser card says whether any accreditation is verified on an official list, only the operator's claim, or unverified. Follow the link and confirm dates, rules and entry details directly with the organiser.</p>
     </div>
+
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> India has no national licence or accreditation scheme for recreational MTB schools that we could verify. <span class="ac ok">✓ Verified</span> means we found the body on an official list or government page, and the label names it (for example CFI on the Asian Cycling Confederation list, Audax India on the Les Randonneurs Mondiaux list, NIM's own government-institute site). <span class="ac claim">School's claim — …</span> means only the operator's own site says so: "certified instructors" with no body named, or a course certificate the school issues itself, isn't a CFI or UCI qualification. <span class="ac unv">Accreditation: unverified</span> means we found neither. A listing is not a safety guarantee. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -399,9 +482,11 @@
   <div class="ss-head"><span class="ss-title">Season at a glance</span><ul class="ss-legend" aria-label="Legend"><li><span class="ss-key P" aria-hidden="true">●</span>Peak</li><li><span class="ss-key Y" aria-hidden="true">◐</span>Possible</li><li><span class="ss-key O" aria-hidden="true">✕</span>Off</li><li><span class="ss-key E" aria-hidden="true">◆</span>Event</li></ul></div>
   <div class="ss-row ss-months" aria-hidden="true"><span class="ss-lab"></span><span class="ss-cells"><span class="ss-c">J</span><span class="ss-c">F</span><span class="ss-c">M</span><span class="ss-c">A</span><span class="ss-c">M</span><span class="ss-c">J</span><span class="ss-c">J</span><span class="ss-c">A</span><span class="ss-c">S</span><span class="ss-c">O</span><span class="ss-c">N</span><span class="ss-c">D</span></span></div>
   <div class="ss-row"><span class="ss-lab">Road and audax rides (plains)</span><span class="ss-cells" role="img" aria-label="Road and audax rides (plains): peak November to February; possible March to October"><span class="ss-c P" title="January: Peak">●</span><span class="ss-c P" title="February: Peak">●</span><span class="ss-c Y" title="March: Possible">◐</span><span class="ss-c Y" title="April: Possible">◐</span><span class="ss-c Y" title="May: Possible">◐</span><span class="ss-c Y" title="June: Possible">◐</span><span class="ss-c Y" title="July: Possible">◐</span><span class="ss-c Y" title="August: Possible">◐</span><span class="ss-c Y" title="September: Possible">◐</span><span class="ss-c Y" title="October: Possible">◐</span><span class="ss-c P" title="November: Peak">●</span><span class="ss-c P" title="December: Peak">●</span></span></div>
-  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="December: Tour of the Nilgiris">◆</span></span></div>
+  <div class="ss-row ss-ev"><span class="ss-lab">Annual events</span><span class="ss-cells" role="img" aria-label="Events in May, October, December"><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="May: MTB Himalaya">◆</span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c e0"></span><span class="ss-c E" title="October: MTB Shimla">◆</span><span class="ss-c e0"></span><span class="ss-c E" title="December: Tour of the Nilgiris">◆</span></span></div>
   <ul class="ss-events">
+    <li><b>MTB Shimla</b> · <span class="ss-when">23-25 Oct 2026</span> · Shimla, Himachal Pradesh · <a href="https://hastpa.com/events/mtb-shimla/" target="_blank" rel="noopener">official page ↗</a></li>
     <li><b>Tour of the Nilgiris</b> · <span class="ss-when">6-12 Dec 2026</span> · Karnataka, Kerala, Tamil Nadu · <a href="https://www.tourofnilgiris.com/" target="_blank" rel="noopener">official page ↗</a></li>
+    <li><b>MTB Himalaya</b> · <span class="ss-when ss-pending">Not yet announced · Last: May 2025 (12th edition)</span> · Himachal Pradesh · <a href="https://hastpa.com/events/mtb-himalaya/" target="_blank" rel="noopener">official page ↗</a></li>
   </ul>
   <div class="ss-foot"><span>Typical seasons from cited sources, not a forecast: check with your operator and IMD before you go.</span><a class="ss-more" href="../calendar/#s-cycling-mtb">Full season calendar →</a></div>
 </div>
@@ -409,6 +494,7 @@
     <div class="season">
       <div><b>Sundays</b>Fit India Sundays on Cycle is a weekly ride; it runs across all states and union territories through the SAI and Khelo India network, with CFI as a partner.</div>
       <div><b>All year</b>Audax India's calendar runs year-round: October 2026 alone lists brevets from 100 km to 1,200 km in cities across India.</div>
+      <div><b>October</b>MTB Shimla 2026, the 13th edition of HASTPA's Shimla race, runs 23–25 October (HASTPA events page).</div>
       <div><b>December</b>Tour of the Nilgiris 2026: pre-tour briefing 5 December, riding 6–12 December.</div>
       <div><b>Every ride</b>Brakes, tyres and lights checked; helmet on; water and a plan for heat (<a href="#ch-brake">Ch 5</a>).</div>
     </div>
@@ -426,8 +512,8 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the route and distance? Is it on closed or open roads? Is there a sweep rider at the back? What's the group's average speed?</p></div>
       </div>
       <div class="sites">
-        <div class="site"><b>Fit India Sundays on Cycle</b><span class="meta">Nationwide · weekly · Ministry of Youth Affairs and Sports</span><p>A weekly mass cycling drive; the 88th edition on 30 August 2026 ran at more than 25,000 locations across the country, according to PIB.</p><a class="url" href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304633&lang=1&reg=48" target="_blank" rel="noopener">pib.gov.in</a></div>
-        <div class="site"><b>100 km brevets</b><span class="meta">Audax India Randonneurs · 7.5 h limit</span><p>AIR's calendar includes 100 km rides alongside the full brevets, a gentle first step towards a 200.</p><a class="url" href="https://www.audaxindia.in/events-ec-2026" target="_blank" rel="noopener">audaxindia.in</a></div>
+        <div class="site"><b>Fit India Sundays on Cycle</b><span class="meta">Nationwide · weekly · Ministry of Youth Affairs and Sports</span><p>A weekly mass cycling drive; the 88th edition on 30 August 2026 ran at more than 25,000 locations across the country, according to PIB.</p><div class="accred"><span class="ac ok">✓ Government programme (PIB)</span><span class="acsrc">Ministry of Youth Affairs and Sports drive, with CFI as a partner, per the PIB release. Local ride leaders are not individually accredited.</span></div><a class="url" href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304633&lang=1&reg=48" target="_blank" rel="noopener">pib.gov.in</a></div>
+        <div class="site"><b>100 km brevets</b><span class="meta">Audax India Randonneurs · 7.5 h limit</span><p>AIR's calendar includes 100 km rides alongside the full brevets, a gentle first step towards a 200.</p><div class="accred"><span class="ac ok">✓ AIR on LRM list</span><span class="acsrc">Organiser body verified (see Governing bodies). Individual clubs run under AIR's rules; brevets are unsupported rides, not coaching.</span></div><a class="url" href="https://www.audaxindia.in/events-ec-2026" target="_blank" rel="noopener">audaxindia.in</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-long" role="tabpanel" aria-labelledby="tab-long">
@@ -438,10 +524,11 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Audax India BRMs</h4><span class="loc">Clubs across India</span></div><span class="badge gov">Brevets</span></div>
           <p>200, 300, 400, 600, 1,000 and 1,200 km brevets, each with a fixed time limit (200 km in 13.5 h). Non-competitive and self-supported; complete a 200 and you're a randonneur.</p>
+          <div class="accred"><span class="ac ok">✓ On Les Randonneurs Mondiaux member list</span><span class="acsrc">"INDIA – AUDAX INDIA RANDONNEURS" on the <a href="https://www.randonneursmondiaux.org/52-Country_Organizations.html?langue=EN" target="_blank" rel="noopener">LRM member countries page</a> (5 Oct 2026).</span></div>
           <a class="url" href="https://www.audaxindia.in/events-ec-2026" target="_blank" rel="noopener">audaxindia.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>Tour of the Nilgiris</b><span class="meta">Karnataka · Kerala · Tamil Nadu · 6–12 Dec 2026</span><p>A fully supported 7-day tour of more than 700 km through the Nilgiri hills, with transport, food, accommodation, bike maintenance and medical backup; first held in 2008.</p><a class="url" href="https://www.tourofnilgiris.com/" target="_blank" rel="noopener">tourofnilgiris.com</a></div>
+        <div class="site"><b>Tour of the Nilgiris</b><span class="meta">Karnataka · Kerala · Tamil Nadu · 6–12 Dec 2026</span><p>A fully supported 7-day tour of more than 700 km through the Nilgiri hills, with transport, food, accommodation, bike maintenance and medical backup; first held in 2008.</p><div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Organiser's own site only. A non-competitive tour; we found no federation sanction to verify.</span></div><a class="url" href="https://www.tourofnilgiris.com/" target="_blank" rel="noopener">tourofnilgiris.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-mtb" role="tabpanel" aria-labelledby="tab-mtb">
@@ -452,10 +539,24 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>NIM Mountain Terrain Biking course</h4><span class="loc">Uttarkashi, Uttarakhand</span></div><span class="badge gov">Institute</span></div>
           <p>Teaches techniques, skills and safety protocols for rugged mountain terrain, for beginners and experienced riders; NIM publishes physical-conditioning advice for the course.</p>
+          <div class="accred"><span class="ac ok">✓ Government institute (NIM)</span><span class="ac unv">CFI / UCI course stamp: none claimed</span><span class="acsrc">Nehru Institute of Mountaineering, Uttarkashi; its <a href="https://www.nimindia.net/" target="_blank" rel="noopener">official site</a> names the Union Defence Minister as President and the Uttarakhand Chief Minister as Vice-President. Course page: <a href="https://www.nimindia.net/mtbcourse" target="_blank" rel="noopener">nimindia.net/mtbcourse</a>.</span></div>
           <a class="url" href="https://www.nimindia.net/mtbcourse" target="_blank" rel="noopener">nimindia.net</a></div>
+        <div class="school"><div class="top"><div><h4>Himalayan Terra · Pro MTB Camp</h4><span class="loc">Manali, Himachal Pradesh</span></div><span class="badge">Private camp</span></div>
+          <p>A 6-day beginner-to-intermediate camp on selected terrain around Manali: body position, turning, braking, then jumps, drops and technical trails, plus a bike-maintenance workshop. 2026 camps ran in May and June; riders need the fitness for 3–4 hours of riding a day.</p>
+          <div class="accred"><span class="ac claim">School's claim — "experienced mountain bike coaches"</span><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Own site only; no certifying body named on <a href="https://www.himalayanterra.com/pro-mtb-camp" target="_blank" rel="noopener">himalayanterra.com</a> (5 Oct 2026).</span></div>
+          <a class="url" href="https://www.himalayanterra.com/pro-mtb-camp" target="_blank" rel="noopener">himalayanterra.com</a></div>
+        <div class="school"><div class="top"><div><h4>Into Wild Himalaya · Beginner MTB course</h4><span class="loc">Kalath, Old Manali, Himachal Pradesh</span></div><span class="badge">Private course</span></div>
+          <p>A 6-day course for complete beginners (teens 12+ and adults) with a stated 1:5 instructor ratio: bike set-up, braking, climbing and descending, roots and rocks, trail etiquette and basic maintenance. Bikes, helmets and pads are provided.</p>
+          <div class="accred"><span class="ac claim">School's claim — "certified instructors"; own course certificate</span><span class="ac unv">Accreditation: unverified</span><span class="acsrc">The <a href="https://iwhexpeditions.com/tour/beginner-mountain-biking-course-manali/" target="_blank" rel="noopener">course page</a> names no certifying body. Its "basic mountain biking certificate" is issued by the school, not by CFI or UCI.</span></div>
+          <a class="url" href="https://iwhexpeditions.com/tour/beginner-mountain-biking-course-manali/" target="_blank" rel="noopener">iwhexpeditions.com</a></div>
+        <div class="school"><div class="top"><div><h4>GoodWave · MTB skills sessions</h4><span class="loc">Trails around Bengaluru</span></div><span class="badge">Skills sessions</span></div>
+          <p>Monthly 3–4 hour sessions, capped at 10 riders, on pumping, manuals, bunny-hops and berms, run with CrankMeister Bicycle Works and Loose Riders India.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Own site only; no certifying body named on <a href="https://www.goodwave.in/mtb-skills" target="_blank" rel="noopener">goodwave.in</a>. Check the next session date directly (5 Oct 2026).</span></div>
+          <a class="url" href="https://www.goodwave.in/mtb-skills" target="_blank" rel="noopener">goodwave.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>CFI MTB events</b><span class="meta">National federation</span><p>CFI's page for national mountain bike championships and other MTB events.</p><a class="url" href="https://www.cfiindia.in/mtb-events" target="_blank" rel="noopener">cfiindia.in</a></div>
+        <div class="site"><b>CFI MTB events</b><span class="meta">National federation</span><p>CFI's page for national mountain bike championships and other MTB events.</p><div class="accred"><span class="ac ok">✓ CFI (on ACC list)</span><span class="acsrc">Federation verified; see Governing bodies.</span></div><a class="url" href="https://www.cfiindia.in/mtb-events" target="_blank" rel="noopener">cfiindia.in</a></div>
+        <div class="site"><b>MTB Shimla 2026</b><span class="meta">Shimla, Himachal Pradesh · 23–25 Oct 2026 · HASTPA</span><p>The 13th edition of HASTPA's city-to-trail race, held since 2012. The 2025 edition was a two-stage, roughly 120 km race with a 20 km heritage ride. HASTPA also organises the longer MTB Himalaya stage race.</p><div class="accred"><span class="ac unv">Federation sanction for 2026: unverified</span><span class="acsrc">Dates from <a href="https://hastpa.com/events/" target="_blank" rel="noopener">hastpa.com/events</a>. ANI (via LatestLY, May 2025) reported the 2025 edition was run with Himachal Tourism and the Cycling Association of Himachal Pradesh; we found nothing official for 2026. Note: the old mtbhimalaya.com domain now serves an unrelated site; use hastpa.com.</span></div><a class="url" href="https://hastpa.com/events/mtb-shimla/" target="_blank" rel="noopener">hastpa.com</a></div>
       </div>
       <div class="callout note"><p style="margin:0">Walk technical features before you ride them, start small and never ride remote trails alone.</p></div>
     </div>
@@ -467,13 +568,15 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>CFI rider licence</h4><span class="loc">Cycling Federation of India</span></div><span class="badge gov">Federation</span></div>
           <p>CFI publishes licence guidelines and the current licence form for riders.</p>
+          <div class="accred"><span class="ac ok">✓ CFI (on ACC list)</span><span class="acsrc">The licence comes from the federation itself; see Governing bodies.</span></div>
           <a class="url" href="https://www.cfiindia.in/license-procedure" target="_blank" rel="noopener">cfiindia.in</a></div>
         <div class="school"><div class="top"><div><h4>CFI coaching course</h4><span class="loc">Online</span></div><span class="badge gov">Coaching</span></div>
           <p>CFI's online coaching course, with its list of Level 1 certified coaches.</p>
+          <div class="accred"><span class="ac ok">✓ CFI coach list</span><span class="acsrc">To check a coach who says they're CFI-certified, look for their name on CFI's own Level 1 list on this page.</span></div>
           <a class="url" href="https://www.cfiindia.in/online-coaching-course-2024" target="_blank" rel="noopener">cfiindia.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>National MTB Championship 2026</b><span class="meta">Mahendragiri, Gajapati, Odisha · October 2026</span><p>About 800 riders and coaches at a four-day national mountain bike championship under CFI, hosted by the Odisha Cycling Association.</p><a class="url" href="https://timesofindia.indiatimes.com/city/bhubaneswar/800-cyclists-converge-on-mahendragiri-for-national-mtb-championship/articleshow/134622002.cms" target="_blank" rel="noopener">Times of India</a></div>
+        <div class="site"><b>National MTB Championship 2026</b><span class="meta">Mahendragiri, Gajapati, Odisha · October 2026</span><p>About 800 riders and coaches at a four-day national mountain bike championship under CFI, hosted by the Odisha Cycling Association.</p><div class="accred"><span class="ac claim">News report — CFI championship</span><span class="acsrc">CFI involvement as reported by the Times of India (2 Oct 2026); CFI's MTB events page is the place to confirm results.</span></div><a class="url" href="https://timesofindia.indiatimes.com/city/bhubaneswar/800-cyclists-converge-on-mahendragiri-for-national-mtb-championship/articleshow/134622002.cms" target="_blank" rel="noopener">Times of India</a></div>
       </div>
     </div>
   </div>
@@ -531,7 +634,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 3 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

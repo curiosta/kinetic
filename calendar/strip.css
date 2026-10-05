@@ -22,6 +22,7 @@
 .ss-events li{padding:6px 0;border-top:1px dashed var(--line);overflow-wrap:anywhere}
 .ss-events .ss-when{font-weight:600}
 .ss-events .ss-usual{font-style:italic}
+.ss-events .ss-pending{font-style:italic;opacity:.9}
 .ss-none{margin:10px 0 0;font-size:.84rem;color:var(--muted)}
 .ss-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;margin-top:10px;font-size:.8rem;color:var(--muted)}
 .ss-more{font-weight:600;font-size:.88rem}

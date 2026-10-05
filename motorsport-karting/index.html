@@ -196,6 +196,36 @@
           <p class="small" style="margin:10px 0 0">1,000 × 9.81 × 0.5 ÷ 2.5 ≈ 1,960 N at 1 g. A lower centre of mass, or a longer wheelbase, means less transfer.</p>
         </div>
         <p>Weight transfer is why technique matters. Loaded front tyres grip better, so the car turns in eagerly just as you come off the brakes; lift off the throttle suddenly mid-corner and the rear goes light and can slide. Karts are an extreme case: they have no differential (the rear axle is solid), so the chassis is designed to flex and lift the inside rear wheel a little in corners, letting the kart turn. And because grip is shared (Ch 1), drivers do most of their braking in a straight line, then trade brake for steering as they turn in.</p>
+        <h4>Why moving load costs grip</h4>
+        <p>If μ were fixed, moving load from one tyre to another would change nothing: the total μ N would stay the same. Real tyres are <strong>load-sensitive</strong>. Pile more load on a tyre and its grip grows, but less than in proportion, so its μ falls a little. Move load across an axle and the tyre that gains it grips less than the other one loses.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · one axle carrying 4,000 N, tyre μ falling from 1.3 at 1,000 N to 1.1 at 3,000 N (illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Inside tyre load</th><th>Outside tyre load</th><th>Axle's total sideways grip</th><th>Change</th></tr></thead>
+            <tbody>
+              <tr><td class="num">2,000 N (μ 1.2)</td><td class="num">2,000 N (μ 1.2)</td><td class="num">4,800 N</td><td class="num">—</td></tr>
+              <tr><td class="num">1,500 N (μ 1.25)</td><td class="num">2,500 N (μ 1.15)</td><td class="num">4,750 N</td><td class="num">−1%</td></tr>
+              <tr><td class="num">1,000 N (μ 1.3)</td><td class="num">3,000 N (μ 1.1)</td><td class="num">4,600 N</td><td class="num">−4%</td></tr>
+              <tr><td class="num">0 N (wheel lifted)</td><td class="num">4,000 N (μ 1.0)</td><td class="num">4,000 N</td><td class="num">−17%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1,000 × 1.3 + 3,000 × 1.1 = 4,600 N. The straight-line μ figures are a teaching model; real tyre curves come from testing. A small transfer costs almost nothing, a big one costs a lot. That's why racing cars are built low and wide, and why sudden, jerky inputs that slam load across the car cost grip.</p>
+        </div>
+        <h4>The kart's solid rear axle</h4>
+        <p>Through a corner the outside rear wheel travels a longer arc than the inside one, but on a kart both are bolted to one axle and must turn at the same rate. Something has to give: one tyre scrubs, and the scrubbing tyres push the kart straight on. The extra distance for the outside wheel is <span class="eq">track width ÷ radius</span> as a fraction of the inside path. Lifting the inside rear wheel, through chassis flex and the weight transfer above, removes the fight. You give up that wheel's grip to stop it pushing the kart straight on.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · rear track 1.1 m (illustrative), how much further the outside rear wheel rolls</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Corner radius (kart centre)</th><th>Outside wheel's extra distance</th></tr></thead>
+            <tbody>
+              <tr><td class="num">5 m (hairpin)</td><td class="num">≈ 25%</td></tr>
+              <tr><td class="num">10 m</td><td class="num">≈ 12%</td></tr>
+              <tr><td class="num">20 m</td><td class="num">≈ 6%</td></tr>
+              <tr><td class="num">40 m</td><td class="num">≈ 3%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 10 m: (10 + 0.55) ÷ (10 − 0.55) ≈ 1.116, so about 12% further. Every 90° corner adds about 1.1 × π ÷ 2 ≈ 1.7 m to the outside wheel's path whatever the radius. In a tight hairpin that's a quarter more distance, so tight corners are where an unlifted solid axle hurts most.</p>
+        </div>
         <details class="check"><summary>Same car, braking at 0.5 g. How much load moves forwards?</summary>
         <p>1,000 × 0.5 × 9.81 × 0.5 ÷ 2.5 ≈ <strong>980 N</strong>, about 100 kg.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -246,6 +276,20 @@
           </table></div>
           <p class="small" style="margin:10px 0 0">100 km/h = 27.8 m/s; 27.8² ÷ (2 × 1.2 × 9.81) ≈ 32.8 m. Lose a third of your grip and the distance grows by half.</p>
         </div>
+        <h4>The distance before the brakes</h4>
+        <p>The table assumes you're already braking. Before that, you travel at full speed for your reaction time: <span class="eq">d = v × t</span>. Roughly a second is a common rule of thumb for a prepared driver; surprise makes it longer.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · distance covered before braking starts, plus braking at μ = 1.2</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Speed</th><th>Reaction 1.0 s</th><th>Reaction 1.5 s</th><th>Braking (from the table)</th><th>Total with 1.5 s</th></tr></thead>
+            <tbody>
+              <tr><td class="num">60 km/h</td><td class="num">16.7 m</td><td class="num">25.0 m</td><td class="num">11.8 m</td><td class="num">≈ 37 m</td></tr>
+              <tr><td class="num">100 km/h</td><td class="num">27.8 m</td><td class="num">41.7 m</td><td class="num">32.8 m</td><td class="num">≈ 75 m</td></tr>
+              <tr><td class="num">150 km/h</td><td class="num">41.7 m</td><td class="num">62.5 m</td><td class="num">73.7 m</td><td class="num">≈ 136 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 60 km/h a slow reaction alone uses twice the braking distance. On a track, marshals' flags and run-off areas buy that distance. On a public road there's a crossing, a bus or a child in it, which is why speed belongs only on a closed track.</p>
+        </div>
         <p>Every change of speed or direction is felt by the driver too. At 1.2 g sideways, a head and helmet of roughly 6 kg (a rough figure) need about 7 kg-force from the neck, on every corner of every lap; braking pushes the body forwards into the belts and seat. That's why racers train their necks and core, why the seat is fitted tightly, and why karting and racing schools insist on a proper helmet, gloves and closed shoes. Heat matters too: a closed helmet and race suit in an Indian summer make drinking water part of the plan.</p>
         <details class="check"><summary>How far do you need to stop from 150 km/h at μ = 1.2?</summary>
         <p>41.7² ÷ (2 × 1.2 × 9.81) ≈ <strong>73.7 m</strong>, more than twice the distance from 100 km/h.</p></details>
@@ -273,6 +317,21 @@
           <p class="small" style="margin:10px 0 0">½ × 1.2 × 3 × 55.6² ≈ 5,560 N at 200 km/h. In a 100 m corner with μ = 1.2 the limit rises from 124 km/h without wings to about 149 km/h with them (1.74 g), as our Lab shows.</p>
         </div>
         <p>Grip also depends on <strong>temperature</strong>. Rubber is viscoelastic: as it rolls, it flexes and recovers a little out of step, turning some energy into heat (hysteresis), and that same property helps it key into the track's surface. Too cold and the rubber is hard and slides early; inside its working range it grips best; overheated, it goes greasy and wears fast. That's why drivers warm up on the first lap, why a session starts gently, and why grip changes as a track rubbers in or cools down.</p>
+        <h4>Power and top speed: the cube law</h4>
+        <p>On a straight the engine fights air drag and rolling resistance. Drag force grows with v², so the <em>power</em> to push through air grows with v³: <span class="eq">P = ½ ρ C<sub>d</sub>A v³ + C<sub>rr</sub> m g v</span>. Double the power and you don't get double the speed, only about a quarter more.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 150 kg kart and driver, C<sub>d</sub>A 0.6 m², Crr 0.02, 85% of engine power reaching the road (all illustrative)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Engine power</th><th>Theoretical top speed on a long, flat straight</th></tr></thead>
+            <tbody>
+              <tr><td class="num">7 bhp</td><td class="num">≈ 79 km/h</td></tr>
+              <tr><td class="num">9 bhp</td><td class="num">≈ 87 km/h</td></tr>
+              <tr><td class="num">14 bhp</td><td class="num">≈ 101 km/h</td></tr>
+              <tr><td class="num">28 bhp</td><td class="num">≈ 129 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">7 bhp × 745.7 W × 0.85 ≈ 4,440 W, and that balances drag plus rolling at about 21.9 m/s ≈ 79 km/h. Going from 7 to 9 bhp is 29% more power for about 10% more top speed. Real rental karts rarely reach these figures: short straights, gearing and speed limiters keep them slower. They show the shape of the curve, not a track's real numbers.</p>
+        </div>
         <details class="check"><summary>The illustrative car makes 1.4 kN at 100 km/h. What does it make at 200 km/h?</summary>
         <p>Twice the speed, four times the force: about <strong>5.6 kN</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -354,8 +413,8 @@
 
     <h3 class="subhead">India</h3>
     <div class="cards">
-      <div class="card"><span class="tag">National authority</span><h4>FMSCI · Federation of Motor Sports Clubs of India</h4><p>India's member of the FIA, listed by the FIA for both sport and mobility. It issues competition licences, sanctions events and warns licence holders not to take part in unauthorised events, which have no insurance and no track safety.</p><a class="url" href="https://www.fia.com/members/region/asia-6/country/IN" target="_blank" rel="noopener">fia.com · members</a></div>
-      <div class="card"><span class="tag">Licences</span><h4>FMSCI licence portal</h4><p>Where drivers apply: it lists eSports, One Event, Club Sport / National / International, team entrant and international individual entrant licences.</p><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
+      <div class="card"><span class="tag">National authority</span><h4>FMSCI · Federation of Motor Sports Clubs of India</h4><p>India's member of the FIA, listed by the FIA for both sport and mobility. It issues competition licences, sanctions events and warns licence holders not to take part in unauthorised events, which have no insurance and no track safety.</p><div class="accred"><span class="ac ok">✓ On the FIA's members list</span><span class="acsrc">"The Federation of Motor Sports Clubs of India", marked Sport &amp; Mobility, on the <a href="https://www.fia.com/members/region/asia-6/country/IN" target="_blank" rel="noopener">FIA members page for India</a> (rechecked 5 Oct 2026). FMSCI's own website didn't load from our checker, so we name only the licence types its portal lists.</span></div><a class="url" href="https://www.fia.com/members/region/asia-6/country/IN" target="_blank" rel="noopener">fia.com · members</a></div>
+      <div class="card"><span class="tag">Licences</span><h4>FMSCI licence portal</h4><p>Where drivers apply: it lists eSports, One Event, Club Sport / National / International, team entrant and international individual entrant licences.</p><div class="accred"><span class="ac ok">✓ FMSCI's official portal</span></div><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
     </div>
   </div>
 </section>
@@ -368,6 +427,7 @@
       <h2>Pick your level. We'll point you to the track.</h2>
       <p>Real tracks, schools and championships, each checked on its own website or its organiser's. Follow the link and confirm opening days, age and height limits and licence rules directly. Wherever you go: wear the gear the track requires, listen to the briefing and obey the flags. Speed belongs on a closed track, never on a public road.</p>
     </div>
+    <div class="callout note accred-key" style="margin-top:8px"><p style="margin:0"><strong>How we label accreditation.</strong> FMSCI is <strong>verified</strong> on the FIA's members list. For tracks we checked two official FIA lists: the <a href="https://www.fia.com/sites/default/files/circuits_fia20260331_0.pdf" target="_blank" rel="noopener">FIA licensed-circuits list</a> (updated 31 Mar 2026) and the <a href="https://www.fiakarting.com/sites/default/files/2025-11/Homologations_circuits_Liste_WEB.pdf" target="_blank" rel="noopener">FIA Karting homologated-circuits list</a> (Nov 2025). FMSCI's own track approvals couldn't be checked because its website didn't load for us. <span class="ac ok">✓ Verified</span> means the track or body is on one of those official lists, and the label names it. <span class="ac claim">Track's or school's claim — …</span> means only the operator's own site says so. <span class="ac unv">Accreditation: unverified</span> means we found neither. A listing isn't a safety guarantee. Checked 5 Oct 2026.</p></div>
 
     <h3 class="subhead">When to go</h3>
 <!-- season-strip:start · generated by kinetic-tools/build/strip.py from build/seasons.py; do not hand-edit -->
@@ -405,12 +465,18 @@
         <div class="box"><h4>Physics-smart questions to ask</h4><p class="small" style="margin:0">What's the minimum age and height? Which kart level suits a beginner? What safety gear do you provide? What do the flags mean here? Is there a briefing before the session?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>Meco Kartopia</h4><span class="loc">Bengaluru, Karnataka</span></div><span class="badge">FMSCI-approved track</span></div>
+        <div class="school"><div class="top"><div><h4>Meco Kartopia</h4><span class="loc">Bengaluru, Karnataka</span></div><span class="badge">Says FMSCI-approved</span></div>
           <p>Opened on 24 May 2015 on 10 acres and built to international standards, Meco says; recreational karts run from a Level 1 kart (7 bhp) to a Level 2 Rotax kart (9 bhp), with faster levels listed as coming soon.</p>
+          <div class="accred"><span class="ac claim">Track's claim — FMSCI-approved</span><span class="acsrc">Meco's own page says so, and Meco's 2026 calendar puts the national championship's final round here. We couldn't check an FMSCI track list (its site didn't load). It isn't on the FIA Karting homologated-circuits list, which covers international-grade tracks.</span></div>
           <a class="url" href="https://www.mecomotorsports.co.in/Mecokartopia" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
         <div class="school"><div class="top"><div><h4>Meco Chicane Circuit &amp; Kartainment</h4><span class="loc">Secunderabad and Shamshabad, Hyderabad, Telangana</span></div><span class="badge">Recreational karting</span></div>
           <p>Two more recreational karting tracks Meco lists alongside Meco Kartopia.</p>
+          <div class="accred"><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Named on Meco's site only; neither track is on the FIA lists.</span></div>
           <a class="url" href="https://www.mecomotorsports.co.in/" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
+        <div class="school"><div class="top"><div><h4>Turbo Track</h4><span class="loc">Sector 58, Gurugram, Haryana</span></div><span class="badge">Recreational karting</span></div>
+          <p>An 800 m outdoor kart circuit with three kart levels, which the track rates at up to 70, 95 and 120 km/h. It says it was built with JK Tyre Motorsport's expertise and can host championships. At 120 km/h, even at the grip limit of μ = 1.2 (<a href="#ch-brake">Ch 5</a>), you need about 47 m to stop, so ask which level suits a first session.</p>
+          <div class="accred"><span class="ac claim">Track's claim — "aligned with FMSCI standards"</span><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Its own site only; not on the FIA lists, and FMSCI's site didn't load for us to check (5 Oct 2026).</span></div>
+          <a class="url" href="https://www.turbotrack.org/" target="_blank" rel="noopener">turbotrack.org</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-academy" role="tabpanel" aria-labelledby="tab-academy">
@@ -421,11 +487,12 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Meco Karting Academy</h4><span class="loc">Meco Kartopia, Bengaluru</span></div><span class="badge">2 days</span></div>
           <p>Running since 2003, from basic licence programmes to intensive training: brakes, steering and throttle, body position and centre of gravity, lines and braking points, qualifying, race starts, flags and rules. Age groups 8–12, 12–15 and 15+.</p>
+          <div class="accred"><span class="ac claim">School's claim — licence programmes</span><span class="ac unv">Accreditation: unverified</span><span class="acsrc">Meco describes its courses as licence programmes. FMSCI's academy requirements are in PDFs on FMSCI's site, which didn't load for us, so we can't confirm what the course counts towards. Ask before you book.</span></div>
           <a class="url" href="https://www.mecomotorsports.co.in/karting" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>FMSCI licence portal</b><span class="meta">Official · apply for a competition licence</span><p>Lists One Event and Club Sport / National / International licences, among others. Check the current requirements for your licence type here before you apply.</p><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
-        <div class="site"><b>FIA Karting · How to start</b><span class="meta">Official · how licences work</span><p>How national and international karting licences work, and the age bands of the three International Karting grades.</p><a class="url" href="https://www.fiakarting.com/page/how-start" target="_blank" rel="noopener">fiakarting.com</a></div>
+        <div class="site"><b>FMSCI licence portal</b><span class="meta">Official · apply for a competition licence</span><p>Lists One Event and Club Sport / National / International licences, among others. Check the current requirements for your licence type here before you apply.</p><div class="accred"><span class="ac ok">✓ FMSCI official</span></div><a class="url" href="https://lic.fmsci.co.in/" target="_blank" rel="noopener">lic.fmsci.co.in</a></div>
+        <div class="site"><b>FIA Karting · How to start</b><span class="meta">Official · how licences work</span><p>How national and international karting licences work, and the age bands of the three International Karting grades.</p><div class="accred"><span class="ac ok">✓ FIA official</span></div><a class="url" href="https://www.fiakarting.com/page/how-start" target="_blank" rel="noopener">fiakarting.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-national" role="tabpanel" aria-labelledby="tab-national">
@@ -436,13 +503,15 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Meco FMSCI National Karting Championship · RMC India</h4><span class="loc">Coimbatore, Chennai and Bengaluru</span></div><span class="badge">Rotax MAX classes</span></div>
           <p>Classes from Micro MAX (8–11) to Senior MAX (14+). The 2026 regulations require a National karting licence or an International karting grade, plus medical insurance for national-level events.</p>
+          <div class="accred"><span class="ac claim">Organiser's regulations — FMSCI national championship</span><span class="ac ok">✓ Chennai venue MIKA on FIA Karting list</span><span class="acsrc">The FMSCI title is in Meco's own regulations; FMSCI's calendar didn't load for us. Madras International Karting Arena is a homologated circuit on the <a href="https://www.fiakarting.com/sites/default/files/2025-11/Homologations_circuits_Liste_WEB.pdf" target="_blank" rel="noopener">FIA Karting list</a>.</span></div>
           <a class="url" href="https://www.mecomotorsports.co.in/" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
         <div class="school"><div class="top"><div><h4>Meco Racing Academy</h4><span class="loc">Kari Motor Speedway, Coimbatore, Tamil Nadu</span></div><span class="badge">Age 15+</span></div>
           <p>A 2-day course in formula cars (FLGB 1300, FLGB F4) and Polo cars, with six theory and six practice sessions on lines, braking points, consistency and flags.</p>
+          <div class="accred"><span class="ac ok">✓ Track: FIA licensed circuit, Grade 4</span><span class="ac unv">Course accreditation: unverified</span><span class="acsrc">"Kari Motor Speedway, IND, Grade 4", licence to 31 Dec 2027, on the <a href="https://www.fia.com/sites/default/files/circuits_fia20260331_0.pdf" target="_blank" rel="noopener">FIA licensed-circuits list</a> (31 Mar 2026). The course itself is described only by Meco.</span></div>
           <a class="url" href="https://www.mecomotorsports.co.in/racing" target="_blank" rel="noopener">mecomotorsports.co.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026</b><span class="meta">Kari Motor Speedway · BREN Raceway · Madras International Circuit</span><p>India's national car racing championship, running since 1997. The 2026 rounds are at Kari Motor Speedway, Coimbatore, BREN Raceway, Bengaluru, and a finale on 11–13 December at Madras International Circuit, Chennai.</p><a class="url" href="https://www.jktyremotorsport.com/media/ctr-jk-tyre-fmsci-indian-national-car-racing-championship-2026-unveiled-one-nation-one-championship" target="_blank" rel="noopener">jktyremotorsport.com</a></div>
+        <div class="site"><b>CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026</b><span class="meta">Kari Motor Speedway · BREN Raceway · Madras International Circuit</span><p>India's national car racing championship, running since 1997. The 2026 rounds are at Kari Motor Speedway, Coimbatore, BREN Raceway, Bengaluru, and a finale on 11–13 December at Madras International Circuit, Chennai.</p><div class="accred"><span class="ac claim">Organiser's announcement — FMSCI national championship</span><span class="ac ok">✓ Kari Motor Speedway: FIA Grade 4</span><span class="acsrc">On the <a href="https://www.fia.com/sites/default/files/circuits_fia20260331_0.pdf" target="_blank" rel="noopener">FIA licensed-circuits list</a> (31 Mar 2026), Madras appears as Grade 2 with a licence date of 21 Jul 2026, which has passed; we couldn't find a later list showing its renewal. BREN Raceway isn't on the list. FMSCI's calendar didn't load for us.</span></div><a class="url" href="https://www.jktyremotorsport.com/media/ctr-jk-tyre-fmsci-indian-national-car-racing-championship-2026-unveiled-one-nation-one-championship" target="_blank" rel="noopener">jktyremotorsport.com</a></div>
       </div>
     </div>
     <div class="lvl-panel" id="lvl-intl" role="tabpanel" aria-labelledby="tab-intl">
@@ -453,11 +522,13 @@
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Buddh International Circuit · Open Time Trial</h4><span class="loc">Greater Noida, Uttar Pradesh</span></div><span class="badge">Bring your own car or bike</span></div>
           <p>A circuit of 16 corners that it calls India's only Formula One race track. It runs time-trial and arrive-and-drive sessions for your own car or motorcycle after a briefing from its instructor. Drivers need a driving licence and a helmet; riders need full leathers.</p>
+          <div class="accred"><span class="ac claim">Circuit's claim — "India's only Formula One race track"</span><span class="ac unv">No current FIA circuit licence listed</span><span class="acsrc">It isn't on the <a href="https://www.fia.com/sites/default/files/circuits_fia20260331_0.pdf" target="_blank" rel="noopener">FIA licensed-circuits list</a> updated 31 Mar 2026. Open track sessions are run by the circuit, not a sanctioned competition.</span></div>
           <a class="url" href="https://www.buddhinternationalcircuit.in/experiences/" target="_blank" rel="noopener">buddhinternationalcircuit.in</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>FIA · Appendix L (2026)</b><span class="meta">Official · international licence grades</span><p>The FIA's rules for every international grade, from G, F and E to the circuit grades D, C, B and A and the Super Licence, with the age, qualification and medical requirements.</p><a class="url" href="https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf" target="_blank" rel="noopener">fia.com</a></div>
-        <div class="site"><b>FIA Karting</b><span class="meta">Official · international karting</span><p>The FIA Karting championships, the international calendar and homologated circuits and equipment.</p><a class="url" href="https://www.fiakarting.com/" target="_blank" rel="noopener">fiakarting.com</a></div>
+        <div class="site"><b>FIA · Appendix L (2026)</b><span class="meta">Official · international licence grades</span><p>The FIA's rules for every international grade, from G, F and E to the circuit grades D, C, B and A and the Super Licence, with the age, qualification and medical requirements.</p><div class="accred"><span class="ac ok">✓ FIA official</span></div><a class="url" href="https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf" target="_blank" rel="noopener">fia.com</a></div>
+        <div class="site"><b>FIA Karting</b><span class="meta">Official · international karting</span><p>The FIA Karting championships, the international calendar and homologated circuits and equipment.</p><div class="accred"><span class="ac ok">✓ FIA official</span></div><a class="url" href="https://www.fiakarting.com/" target="_blank" rel="noopener">fiakarting.com</a></div>
+        <div class="site"><b>Madras International Karting Arena (MIKA)</b><span class="meta">Chennai · 1,172 m · FIA Karting homologated</span><p>Run by the Madras Motor Sports Club. It's the only Indian track on the FIA Karting homologated-circuits list, graded 1C with validity to 7 April 2028. In March 2026 the club announced it would host an FIA-CIK Arrive and Drive round there in September 2026, the first international karting competition in India (UNI report). We haven't confirmed that the round took place. The club's website was down for maintenance when we checked.</p><div class="accred"><span class="ac ok">✓ FIA Karting homologated circuit (Grade 1C)</span><span class="acsrc">"Madras International Karting Arena, IND, Chennai, 1172 m, licence 1167, valid to 07.04.2028" on the <a href="https://www.fiakarting.com/sites/default/files/2025-11/Homologations_circuits_Liste_WEB.pdf" target="_blank" rel="noopener">FIA Karting list</a> (Nov 2025 edition, 5 Oct 2026).</span></div><a class="url" href="https://www.fiakarting.com/sites/default/files/2025-11/Homologations_circuits_Liste_WEB.pdf" target="_blank" rel="noopener">fiakarting.com · homologated circuits (PDF)</a></div>
       </div>
       <div class="callout note"><p style="margin:0">Never race on public roads. FMSCI warns licence holders not to take part in unauthorised events: they have no insurance, no track safety, no police permission and no crowd control.</p></div>
     </div>
@@ -516,7 +587,7 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 4 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>

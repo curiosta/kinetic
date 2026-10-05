@@ -92,6 +92,7 @@ body.noev .cal tr.evrow{display:none}
 .evi .evm{color:var(--ink-2);margin:3px 0}
 .evi .when.exact{font-weight:700;color:var(--ink)}
 .evi .when.usual{font-style:italic}
+.evi .when.pending{font-style:italic;color:var(--muted,#5a6a7a)}
 .evi.isp{border-left-color:#b9b19a;opacity:.8}
 .evi .evl{font-size:.86rem}
 
