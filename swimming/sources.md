@@ -75,6 +75,15 @@ All checks done **3 Oct 2026 (IST)**; deepened and re-checked **5 Oct 2026** (se
 | 79th edition 31 Aug 2025: 20 swimmers; winner 10 h 35 min 37 s | NBTV, 3 Sep 2025, https://nbtv.news/murshidabad-worlds-longest-swimming-competition-2025/ ; Aajkaal headline/date 31 Aug 2025 | loaded via fetch tool |
 | 80th edition 6 Sep 2026, 5 am start, 27 swimmers from several states and Bangladesh; "billed as the world's longest swimming competition"; organiser Murshidabad District Swimming Association | ANI via Indian Economic Observer, https://www.indianeconomicobserver.com/news/27-swimmers-take-part-in-81-km-open-water-swimming-competition-in-murshidabad20260906135343/ ; IE Bangla, 6 Sep 2026 | loaded (curl). **Added to seasons.py as an event, "usually late August or early September"** (2023, 2025, 2026 dates). No official organiser page was found, so the page links the news report and says so |
 
+### Link re-check, 6 Oct 2026 (IST)
+swimming.org.in returned Cloudflare 522 (origin down) on every check from two networks (box curl with a browser user agent, 3 rounds; WebFetch timed out), including the home page, /national-calendar/ and /national-open-water-swimming-championships-2026/. Two SFI PDFs on the same domain still load (200, served from Cloudflare's cache), so the page now links those:
+
+| Was | Now | Why |
+|---|---|---|
+| https://www.swimming.org.in/national-open-water-swimming-championships-2026/ (Open water site card) | https://www.swimming.org.in/wp-content/uploads/2026/01/COMPLETE-RESULTS-OF-SFI-OPEN-WATER-CHAMP-2025-26-@MLR_update.pdf | Official SFI results PDF: "SFI Open Water National Championship 2026 at Thanirbhavi Beach, on 9th & 10th January 2026", organised by Karnataka Swimming Association, with the race list (read with pdftotext) |
+| https://www.swimming.org.in/national-calendar/ (SFI federation card) | https://www.swimming.org.in/management/upload/circular/Circular%20R1.2%202026%20AQUATICS%20CALENDAR_UPD.pdf | Official SFI circular, 2026 Aquatics Calendar v1.2 (26 Jan 2026): the year's national championships |
+| https://www.swimming.org.in/national-calendar/ (1st SFI Short Course Nationals event, 21–25 Oct 2026, no venue) | https://www.worldaquatics.com/competitions/5751/1st-short-course-senior-national-aquatic-championships-2026-25m- | World Aquatics lists the 1st Short Course Senior National Aquatic Championships 2026 (25m) in Ahmedabad, 25–28 Oct 2026 (Times of India also reports 25–28 Oct, Ahmedabad). The SFI calendar PDF does not list this meet. **Event updated in seasons.py to 25–28 Oct 2026, Ahmedabad** |
+
 ### Cross-links added
 Scuba buoyancy (Ch 2), freediving and scuba fins (Ch 3), freediving blackout (Ch 4), triathlon swim chapter (Ch 5) and triathlon heat (Ch 6).
 
