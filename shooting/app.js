@@ -256,7 +256,7 @@
   }));
 
   // ---------- STICKY NAV ACTIVE STATE ----------
-  const navLinks = [...document.querySelectorAll(".sectionnav a")];
+  const navLinks = [...document.querySelectorAll(".sectionnav a[href^='#']")];
   const targets = navLinks.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(entries => {
