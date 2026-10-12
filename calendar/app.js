@@ -82,26 +82,51 @@
     rows.forEach(r => { let x = o.find(y => y.s === r.s); if (!x) o.push(x = { s: r.s, rg: [] }); x.rg.push(r.rg); });
     return o;
   }
+  // rolling months: current month first, then the next 11 (with year); chips rebuilt client-side from today's date
+  const Y0 = NOW.getFullYear();
+  const ROLL = Array.from({ length: 12 }, (_, i) => ({ m: (CUR + i) % 12, y: Y0 + Math.floor((CUR + i) / 12) }));
+  const ymOf = (y, m) => y + "-" + pad(m + 1);
+  // the months (year-month) in which an event's next upcoming edition falls; [] when it has ended
+  function evYM(e) {
+    if (e.end) {
+      if (e.end < TODAY) return [];
+      const out = []; let y = +e.start.slice(0, 4), m = +e.start.slice(5, 7) - 1;
+      const ey = +e.end.slice(0, 4), em = +e.end.slice(5, 7) - 1;
+      while (y < ey || (y === ey && m <= em)) { if (ymOf(y, m) >= TODAY.slice(0, 7)) out.push(ymOf(y, m)); m++; if (m > 11) { m = 0; y++; } }
+      return out;
+    }
+    return e.m.map(m => ymOf(m < CUR ? Y0 + 1 : Y0, m));
+  }
+  D.events.forEach(e => { e.ym = evYM(e); });
+  const mbox = $(".mchips");
+  mbox.innerHTML = ROLL.map((r, i) => (i > 0 && r.m === 0 ? '<span class="ydiv" aria-hidden="true">' + r.y + "</span>" : "") +
+    '<button type="button" class="mchip' + (i === 0 ? " now" : "") + '" data-m="' + r.m + '" data-y="' + r.y + '" aria-pressed="false"><span class="ml">' + D.mon[r.m].slice(0, 3) + (r.y !== Y0 ? " '" + String(r.y).slice(2) : "") + '</span><span class="mc"></span></button>').join("");
+  state.y = Y0;
   function renderMonth() {
-    const m = state.month;
-    $("#mname").textContent = D.mon[m];
-    $$(".mchip").forEach(b => { b.setAttribute("aria-pressed", String(+b.dataset.m === m)); b.classList.toggle("now", +b.dataset.m === CUR); });
+    const m = state.month, y = state.y, ym = ymOf(y, m);
+    $("#mname").textContent = D.mon[m] + " " + y;
+    $$(".mchip").forEach(b => {
+      const by = +b.dataset.y, bm = +b.dataset.m, n = D.events.filter(e => inGroup(e.s) && e.ym.indexOf(ymOf(by, bm)) >= 0).length;
+      b.setAttribute("aria-pressed", String(bm === m && by === y));
+      $(".mc", b).textContent = n ? " · " + n : "";
+      b.setAttribute("aria-label", D.mon[bm] + " " + by + ", " + (n ? n + " upcoming event" + (n > 1 ? "s" : "") : "no upcoming events"));
+    });
     const rows = D.rows.filter(r => inGroup(r.s));
     const item = x => '<li><a class="sn" href="../' + x.s + '/#where">' + sname(x.s) + '</a><span class="nt">' + x.rg.join(" · ") + "</span></li>";
     const peak = bySport(rows.filter(r => r.m[m] === "P")), poss = bySport(rows.filter(r => r.m[m] === "Y"));
     const offS = [...new Set(rows.map(r => r.s))].filter(s => rows.every(r => r.s !== s || r.m[m] === "O"));
-    const evs = D.events.filter(e => e.m.indexOf(m) >= 0 && inGroup(e.s));
+    const evs = D.events.filter(e => e.ym.indexOf(ym) >= 0 && inGroup(e.s)).sort((a, b) => (a.start || "9") < (b.start || "9") ? -1 : (a.start || "9") > (b.start || "9") ? 1 : 0);
     const grp = state.group === "all" ? "" : " in this group";
     let h = '<div class="mcol"><h3><span class="key P" aria-hidden="true"></span>Peak</h3>' + (peak.length ? "<ul>" + peak.map(item).join("") + "</ul>" : '<p class="empty">Nothing at its peak' + grp + ".</p>") + "</div>";
     h += '<div class="mcol"><h3><span class="key Y" aria-hidden="true"></span>Possible</h3>' + (poss.length ? "<ul>" + poss.map(item).join("") + "</ul>" : '<p class="empty">Nothing marked possible' + grp + ".</p>") +
       (offS.length ? '<p class="off">Off everywhere we list: ' + offS.map(sname).join(", ") + ".</p>" : "") + "</div>";
     h += '<div class="mcol"><h3><span class="key E" aria-hidden="true"></span>Events</h3>' + (evs.length ? "<ul>" + evs.map(e => {
-      const over = e.end && e.end < TODAY;
-      return "<li" + (over ? ' class="isp"' : "") + "><b>" + e.name + "</b>" + (e.g ? " (global)" : "") + '<span class="nt">' + e.when + (over ? " · Ended" : "") + " · " + e.where + " · " + ext(e.url, "Official page ↗") + "</span></li>";
-    }).join("") + "</ul>" : '<p class="empty">No verified events this month' + grp + ".</p>") + "</div>";
+      const on = e.start && e.start <= TODAY;
+      return "<li><b>" + e.name + "</b>" + (e.g ? " (global)" : "") + '<span class="nt">' + (on ? "On now · " : "") + e.when + " · " + e.where + " · " + ext(e.url, "Official page ↗") + "</span></li>";
+    }).join("") + "</ul>" : '<p class="empty">No upcoming events this month' + grp + ".</p>") + "</div>";
     $("#monthout").innerHTML = h;
   }
-  $$(".mchip").forEach(b => b.addEventListener("click", () => { state.month = +b.dataset.m; renderMonth(); }));
+  $$(".mchip").forEach(b => b.addEventListener("click", () => { state.month = +b.dataset.m; state.y = +b.dataset.y; renderMonth(); }));
 
   const list = $("#evlist");
   // ---------- events list: status words by today's date; "Coming up" regrouped by month + year; ended editions fold into "Already held" ----------

@@ -135,3 +135,6 @@ main{overflow-x:clip}
 .evpast .pnote{color:var(--muted);font-size:.88rem;margin:0 0 6px}
 .evpast ul{list-style:none;padding:0;margin:0}
 .evup{list-style:none;padding:0;margin:0}
+.mchips .ydiv{align-self:center;font:700 .7rem var(--mono);letter-spacing:.08em;color:var(--ink-2);padding:0 4px 0 8px;border-left:1px solid var(--line)}
+.mchip .mc{font-weight:500}
+@media (max-width:640px){.mchips{grid-template-columns:repeat(4,minmax(0,1fr))}.mchips .ydiv{grid-column:1/-1;border-left:0;padding:2px 0}}
