@@ -99,17 +99,13 @@
   }
   D.events.forEach(e => { e.ym = evYM(e); });
   const mbox = $(".mchips");
-  mbox.innerHTML = ROLL.map((r, i) => (i > 0 && r.m === 0 ? '<span class="ydiv" aria-hidden="true">' + r.y + "</span>" : "") +
-    '<button type="button" class="mchip' + (i === 0 ? " now" : "") + '" data-m="' + r.m + '" data-y="' + r.y + '" aria-pressed="false"><span class="ml">' + D.mon[r.m].slice(0, 3) + (r.y !== Y0 ? " '" + String(r.y).slice(2) : "") + '</span><span class="mc"></span></button>').join("");
+  mbox.innerHTML = ROLL.map((r, i) => '<button type="button" class="mchip' + (i === 0 ? " now" : "") + '" data-m="' + r.m + '" data-y="' + r.y + '" aria-pressed="false" aria-label="' + D.mon[r.m] + " " + r.y + '">' + D.mon[r.m].slice(0, 3) + " " + r.y + "</button>").join("");
   state.y = Y0;
   function renderMonth() {
     const m = state.month, y = state.y, ym = ymOf(y, m);
     $("#mname").textContent = D.mon[m] + " " + y;
     $$(".mchip").forEach(b => {
-      const by = +b.dataset.y, bm = +b.dataset.m, n = D.events.filter(e => inGroup(e.s) && e.ym.indexOf(ymOf(by, bm)) >= 0).length;
-      b.setAttribute("aria-pressed", String(bm === m && by === y));
-      $(".mc", b).textContent = n ? " · " + n : "";
-      b.setAttribute("aria-label", D.mon[bm] + " " + by + ", " + (n ? n + " upcoming event" + (n > 1 ? "s" : "") : "no upcoming events"));
+      b.setAttribute("aria-pressed", String(+b.dataset.m === m && +b.dataset.y === y));
     });
     const rows = D.rows.filter(r => inGroup(r.s));
     const item = x => '<li><a class="sn" href="../' + x.s + '/#where">' + sname(x.s) + '</a><span class="nt">' + x.rg.join(" · ") + "</span></li>";
