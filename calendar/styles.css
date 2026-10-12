@@ -1,7 +1,7 @@
 /* Kinetic season calendar (/calendar/). Base design system: ../scuba/styles.css. Generated copy of kinetic-tools/build/cal/styles.css
    Calm redesign (Oct 2026): season bands instead of labelled boxes; details open inline under the row (no pop-up). */
 :root{--kc-peak:#0d7f72;--kc-poss:#2b998c;--kc-off:#ddd8cc;--kc-now:rgba(255,107,74,.075)}
-.evi[hidden],.evmon[hidden],.past[hidden],.cal tbody[hidden]{display:none!important}
+.evi[hidden],.evmon[hidden],.evpast[hidden],.past[hidden],.cal tbody[hidden]{display:none!important}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .cal-hero{padding:80px 0 72px}
 .cal-hero h1{max-width:14ch}
@@ -120,3 +120,18 @@ main{overflow-x:clip}
   .evi{grid-template-columns:minmax(0,1fr);gap:2px;padding:12px 0}
   .evl{margin-top:2px}
 }
+
+/* Coming up / Already held split (Oct 2026) */
+.evhead{font-size:1.5rem;margin:8px 0 14px}
+.evmon h4{font-size:1.2rem;margin:0;padding:0 0 8px;border-bottom:1px solid var(--ink);display:flex;align-items:baseline;gap:12px}
+.evmon.now h4::after{content:"This month";font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--kn-coral-ink)}
+.evi .status{font:700 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);flex-basis:100%}
+.evi .status.stw-now{color:var(--kn-coral-ink)}
+.evi .status.stw-ended{color:var(--muted)}
+.evi .lh{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
+.evpast{margin:34px 0 0;border-top:1px solid var(--ink);padding-top:6px}
+.evpast summary{cursor:pointer;padding:12px 0;font-weight:600;font-size:1.1rem;color:var(--ink)}
+.evpast summary .pc{font-weight:500;font-size:.9rem;color:var(--muted)}
+.evpast .pnote{color:var(--muted);font-size:.88rem;margin:0 0 6px}
+.evpast ul{list-style:none;padding:0;margin:0}
+.evup{list-style:none;padding:0;margin:0}

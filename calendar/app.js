@@ -97,25 +97,47 @@
       (offS.length ? '<p class="off">Off everywhere we list: ' + offS.map(sname).join(", ") + ".</p>" : "") + "</div>";
     h += '<div class="mcol"><h3><span class="key E" aria-hidden="true"></span>Events</h3>' + (evs.length ? "<ul>" + evs.map(e => {
       const over = e.end && e.end < TODAY;
-      return "<li" + (over ? ' class="isp"' : "") + "><b>" + e.name + "</b>" + (e.g ? " (global)" : "") + '<span class="nt">' + e.when + (over ? " · over" : "") + " · " + e.where + " · " + ext(e.url, "Official page ↗") + "</span></li>";
+      return "<li" + (over ? ' class="isp"' : "") + "><b>" + e.name + "</b>" + (e.g ? " (global)" : "") + '<span class="nt">' + e.when + (over ? " · Ended" : "") + " · " + e.where + " · " + ext(e.url, "Official page ↗") + "</span></li>";
     }).join("") + "</ul>" : '<p class="empty">No verified events this month' + grp + ".</p>") + "</div>";
     $("#monthout").innerHTML = h;
   }
   $$(".mchip").forEach(b => b.addEventListener("click", () => { state.month = +b.dataset.m; renderMonth(); }));
 
-  // ---------- events list: keep Jan→Dec DOM order; mark editions that are over ----------
   const list = $("#evlist");
-  $$(".evmon", list).forEach(li => li.classList.toggle("now", +li.dataset.m === CUR));
-  $$(".evi[data-end]", list).forEach(li => { if (li.dataset.end < TODAY) { li.classList.add("isp"); $(".past", li).hidden = false; } });
-  // an edition that started in an earlier month and is still running moves to the top of the current month
-  const curMon = $('.evmon[data-m="' + CUR + '"]', list);
-  $$(".evi[data-start]", list).forEach(li => {
-    if (li.dataset.start <= TODAY && li.dataset.end >= TODAY && li.closest(".evmon") !== curMon && curMon) {
-      $("ul", curMon).insertBefore(li, $("ul", curMon).firstChild);
-      const t = document.createElement("span"); t.className = "onnow"; t.textContent = "On now"; $(".evd", li).appendChild(t);
-    }
-  });
+  // ---------- events list: status words by today's date; "Coming up" regrouped by month + year; ended editions fold into "Already held" ----------
+  const MONTHS = D.mon, up = $("#evup"), pastList = $("#evpastlist");
+  const keyOf = li => {
+    if (li.dataset.start) return li.dataset.start < TODAY ? TODAY : li.dataset.start;
+    const m = +li.dataset.m, y = NOW.getFullYear() + (m < CUR ? 1 : 0);
+    return y + "-" + pad(m + 1) + "-99";
+  };
+  const setStatus = (li, st) => { const s = $(".status", li); s.className = "status stw-" + st; s.textContent = { up: "Upcoming", now: "On now", ended: "Ended" }[st]; };
+  function refreshEvents() {
+    $$(".evi[data-end]", up).forEach(li => {
+      if (li.dataset.end < TODAY) { setStatus(li, "ended"); li.classList.add("isp"); const lh = $(".lh", li); if (lh) lh.remove(); pastList.appendChild(li); }
+      else setStatus(li, li.dataset.start <= TODAY ? "now" : "up");
+    });
+    const items = $$(".evi", up).sort((x, y) => { const a = keyOf(x), b = keyOf(y); return a < b ? -1 : a > b ? 1 : $(".evn", x).textContent.localeCompare($(".evn", y).textContent); });
+    up.textContent = "";
+    let cur = null, ul = null;
+    items.forEach(li => {
+      const ym = keyOf(li).slice(0, 7);
+      if (ym !== cur) {
+        cur = ym; const g = document.createElement("li"); g.className = "evmon" + (ym === TODAY.slice(0, 7) ? " now" : ""); g.dataset.ym = ym;
+        g.innerHTML = "<h4>" + MONTHS[+ym.slice(5) - 1] + " " + ym.slice(0, 4) + "</h4><ul></ul>"; up.appendChild(g); ul = $("ul", g);
+      }
+      ul.appendChild(li);
+    });
+    const past = $$(".evi", pastList).sort((x, y) => (y.dataset.end || "").localeCompare(x.dataset.end || ""));
+    past.forEach(li => pastList.appendChild(li));
+    $("#pcount").textContent = past.length;
+    $("#pyrs").textContent = [...new Set(past.map(li => li.dataset.end.slice(0, 4)))].sort().join(" and ");
+    $("#evpast").hidden = !past.length;
+  }
+  refreshEvents();
   $$(".evmon", list).forEach(m => { m.hidden = !$$(".evi", m).some(li => !li.hidden); });
+  // season grid: a dot only marks months with an event you can still attend
+  $$("#cal td.ev[data-last]").forEach(td => { if (td.dataset.last < TODAY) { td.classList.remove("ev"); td.textContent = ""; } });
 
   // ---------- deep link from a sport strip: #s-<slug> ----------
   function hashHl() {
