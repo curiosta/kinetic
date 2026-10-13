@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Sport shooting events
+X-WR-CALDESC:Upcoming sport shooting events with announced dates\, from htt
+ ps://kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
+ ta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261023
+SUMMARY:0755 India Open — Rifle & Pistol (NR events)
+LOCATION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh
+DESCRIPTION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh\nOfficial p
+ age: https://www.thenrai.in/details.aspx?view=8592\nKinetic Sport shooting
+  page: https://kinetic.curiosta.com/shooting/\nDates as announced by the o
+ rganiser: check the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8592
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shooting-nrai-india-open-competition-shotgun-20261005@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261014
+SUMMARY:NRAI India Open Competition (Shotgun)
+LOCATION:Dr Karni Singh Shooting Ranges\, New Delhi
+DESCRIPTION:Dr Karni Singh Shooting Ranges\, New Delhi\nOfficial page: http
+ s://www.thenrai.in/\nKinetic Sport shooting page: https://kinetic.curiosta
+ .com/shooting/\nDates as announced by the organiser: check the official pa
+ ge before you plan.
+URL:https://www.thenrai.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

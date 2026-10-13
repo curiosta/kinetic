@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Surfing events
+X-WR-CALDESC:Upcoming surfing events with announced dates\, from https://ki
+ netic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:surfing-isa-world-surfing-games-20261106@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261116
+SUMMARY:ISA World Surfing Games
+LOCATION:Punta Rocas\, Peru
+DESCRIPTION:Punta Rocas\, Peru\nOfficial page: https://isasurf.org/\nKineti
+ c Surfing page: https://kinetic.curiosta.com/surfing/\nDates as announced 
+ by the organiser: check the official page before you plan.
+URL:https://isasurf.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

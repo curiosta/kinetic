@@ -1,0 +1,504 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — All sports events
+X-WR-CALDESC:Upcoming adventure-sport events with announced dates\, from ht
+ tps://kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
+ ta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261023
+SUMMARY:0755 India Open — Rifle & Pistol (NR events)
+LOCATION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh
+DESCRIPTION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh\nOfficial p
+ age: https://www.thenrai.in/details.aspx?view=8592\nKinetic Sport shooting
+  page: https://kinetic.curiosta.com/shooting/\nDates as announced by the o
+ rganiser: check the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8592
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shooting-nrai-india-open-competition-shotgun-20261005@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261014
+SUMMARY:NRAI India Open Competition (Shotgun)
+LOCATION:Dr Karni Singh Shooting Ranges\, New Delhi
+DESCRIPTION:Dr Karni Singh Shooting Ranges\, New Delhi\nOfficial page: http
+ s://www.thenrai.in/\nKinetic Sport shooting page: https://kinetic.curiosta
+ .com/shooting/\nDates as announced by the organiser: check the official pa
+ ge before you plan.
+URL:https://www.thenrai.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-national-karting-championship-final-round-20261017@k
+ inetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+SUMMARY:National karting championship: final round
+LOCATION:Meco Kartopia\, Bengaluru
+DESCRIPTION:Meco Kartopia\, Bengaluru\nOfficial page: https://www.mecomotor
+ sports.co.in/\nKinetic Karting & motorsport page: https://kinetic.curiosta
+ .com/motorsport-karting/\nDates as announced by the organiser: check the o
+ fficial page before you plan.
+URL:https://www.mecomotorsports.co.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-vedanta-delhi-half-marathon-20261018@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Vedanta Delhi Half Marathon
+LOCATION:New Delhi
+DESCRIPTION:New Delhi\nOfficial page: https://vedantadelhihalfmarathon.proc
+ am.in/race-categories/half-marathon/information\nKinetic Running page: htt
+ ps://kinetic.curiosta.com/running/\nDates as announced by the organiser: c
+ heck the official page before you plan.
+URL:https://vedantadelhihalfmarathon.procam.in/race-categories/half-maratho
+ n/information
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:archery-46th-junior-national-archery-championship-20261021@kinetic.curi
+ osta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261029
+SUMMARY:46th Junior National Archery Championship
+LOCATION:Jaipur
+DESCRIPTION:Jaipur\nOfficial page: https://www.indianarchery.org/calendar\n
+ Kinetic Archery page: https://kinetic.curiosta.com/archery/\nDates as anno
+ unced by the organiser: check the official page before you plan.
+URL:https://www.indianarchery.org/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-round-2-2026
+ 1023@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261026
+SUMMARY:Indian National Car Racing Championship\, round 2
+LOCATION:Kari Motor Speedway\, Coimbatore
+DESCRIPTION:Kari Motor Speedway\, Coimbatore\nOfficial page: https://www.jk
+ tyremotorsport.com/calendar\nKinetic Karting & motorsport page: https://ki
+ netic.curiosta.com/motorsport-karting/\nDates as announced by the organise
+ r: check the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cycling-mtb-mtb-shimla-20261023@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261026
+SUMMARY:MTB Shimla
+LOCATION:Shimla\, Himachal Pradesh
+DESCRIPTION:Shimla\, Himachal Pradesh\nOfficial page: https://hastpa.com/ev
+ ents/mtb-shimla/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
+ /cycling-mtb/\nDates as announced by the organiser: check the official pag
+ e before you plan.
+URL:https://hastpa.com/events/mtb-shimla/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swimming-1st-sfi-short-course-nationals-20261025@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261029
+SUMMARY:1st SFI Short Course Nationals
+LOCATION:Ahmedabad\, Gujarat
+DESCRIPTION:Ahmedabad\, Gujarat\nOfficial page: https://www.worldaquatics.c
+ om/competitions/5751/1st-short-course-senior-national-aquatic-championship
+ s-2026-25m-\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/
+ \nDates as announced by the organiser: check the official page before you 
+ plan.
+URL:https://www.worldaquatics.com/competitions/5751/1st-short-course-senior
+ -national-aquatic-championships-2026-25m-
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:freediving-cmas-red-sea-open-cup-20261026@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261031
+SUMMARY:CMAS Red Sea Open Cup
+LOCATION:Dahab\, Egypt
+DESCRIPTION:Dahab\, Egypt\nOfficial page: https://www.cmas.org/freediving\n
+ Kinetic Freediving page: https://kinetic.curiosta.com/freediving/\nDates a
+ s announced by the organiser: check the official page before you plan.
+URL:https://www.cmas.org/freediving
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swimming-elephanta-to-gateway-of-india-expedition-swim-owsa-20261031@ki
+ netic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261102
+SUMMARY:Elephanta to Gateway of India expedition swim (OWSA)
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://www.openwaterswimsindia.com/even
+ t\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/\nDates as
+  announced by the organiser: check the official page before you plan.
+URL:https://www.openwaterswimsindia.com/event
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:windsurfing-gethnaa-basic-aqua-sports-course-20261101@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261111
+SUMMARY:GETHNAA Basic Aqua Sports Course
+LOCATION:Karwar\, Karnataka
+DESCRIPTION:Karwar\, Karnataka\nOfficial page: https://gethnaa.org/basic-aq
+ ua-sports-course\nKinetic Windsurfing page: https://kinetic.curiosta.com/w
+ indsurfing/\nDates as announced by the organiser: check the official page 
+ before you plan.
+URL:https://gethnaa.org/basic-aqua-sports-course
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:triathlon-ironman-70-3-goa-20261101@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:IRONMAN 70.3 Goa
+LOCATION:Miramar Beach\, Goa
+DESCRIPTION:Miramar Beach\, Goa\nOfficial page: https://www.ironman.com/rac
+ es/im703-goa\nKinetic Triathlon page: https://kinetic.curiosta.com/triathl
+ on/\nDates as announced by the organiser: check the official page before y
+ ou plan.
+URL:https://www.ironman.com/races/im703-goa
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:surfing-isa-world-surfing-games-20261106@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261116
+SUMMARY:ISA World Surfing Games
+LOCATION:Punta Rocas\, Peru
+DESCRIPTION:Punta Rocas\, Peru\nOfficial page: https://isasurf.org/\nKineti
+ c Surfing page: https://kinetic.curiosta.com/surfing/\nDates as announced 
+ by the organiser: check the official page before you plan.
+URL:https://isasurf.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:archery-senior-national-archery-championships-indian-round-compound-rec
+ urve-20261111@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261119
+SUMMARY:Senior National Archery Championships (Indian round\, compound\, re
+ curve)
+LOCATION:Shillong
+DESCRIPTION:Shillong\nOfficial page: https://www.indianarchery.org/calendar
+ \nKinetic Archery page: https://kinetic.curiosta.com/archery/\nDates as an
+ nounced by the organiser: check the official page before you plan.
+URL:https://www.indianarchery.org/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-round-3-2026
+ 1113@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:Indian National Car Racing Championship\, round 3
+LOCATION:BREN Raceway\, Bengaluru
+DESCRIPTION:BREN Raceway\, Bengaluru\nOfficial page: https://www.jktyremoto
+ rsport.com/calendar\nKinetic Karting & motorsport page: https://kinetic.cu
+ riosta.com/motorsport-karting/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swimming-aquamoga-the-goa-swimathon-20261114@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:Aquamoga: the Goa Swimathon
+LOCATION:Goa
+DESCRIPTION:Goa\nOfficial page: https://www.endurosportsgoa.com/schedule\nK
+ inetic Swimming page: https://kinetic.curiosta.com/swimming/\nDates as ann
+ ounced by the organiser: check the official page before you plan.
+URL:https://www.endurosportsgoa.com/schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sailing-yai-senior-nationals-20261114@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261121
+SUMMARY:YAI Senior Nationals
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://www.yai.org.in/\nKinetic Sailing
+  page: https://kinetic.curiosta.com/sailing/\nDates as announced by the or
+ ganiser: check the official page before you plan.
+URL:https://www.yai.org.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:windsurfing-yai-senior-nationals-iqfoil-men-and-women-20261114@kinetic.
+ curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261121
+SUMMARY:YAI Senior Nationals (iQFOiL\, men and women)
+LOCATION:INWTC\, Colaba\, Mumbai
+DESCRIPTION:INWTC\, Colaba\, Mumbai\nOfficial page: https://www.yai.org.in/
+ images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf\nKinetic Wind
+ surfing page: https://kinetic.curiosta.com/windsurfing/\nDates as announce
+ d by the organiser: check the official page before you plan.
+URL:https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nation
+ als-2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:archery-4th-national-ranking-archery-tournament-20261121@kinetic.curios
+ ta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261201
+SUMMARY:4th National Ranking Archery Tournament
+LOCATION:Gangtok
+DESCRIPTION:Gangtok\nOfficial page: https://www.indianarchery.org/calendar\
+ nKinetic Archery page: https://kinetic.curiosta.com/archery/\nDates as ann
+ ounced by the organiser: check the official page before you plan.
+URL:https://www.indianarchery.org/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-malnad-ultra-20261128@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Malnad Ultra
+LOCATION:Western Ghats\, Karnataka
+DESCRIPTION:Western Ghats\, Karnataka\nOfficial page: https://malnadultra.c
+ om/\nKinetic Running page: https://kinetic.curiosta.com/running/\nDates as
+  announced by the organiser: check the official page before you plan.
+URL:https://malnadultra.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:skating-64th-national-roller-skating-championships-rsfi-20261205@kineti
+ c.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261216
+SUMMARY:64th National Roller Skating Championships (RSFI)
+LOCATION:Karnataka
+DESCRIPTION:Karnataka\nOfficial page: https://indiaskate.com/64th-national-
+ roller-skating-championships-2026-technical-officials-letters-2/\nKinetic 
+ Skating page: https://kinetic.curiosta.com/skating/\nDates as announced by
+  the organiser: check the official page before you plan.
+URL:https://indiaskate.com/64th-national-roller-skating-championships-2026-
+ technical-officials-letters-2/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:skateboarding-64th-national-roller-skating-championships-incl-skateboar
+ ding-20261205@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261216
+SUMMARY:64th National Roller Skating Championships (incl. skateboarding)
+LOCATION:Karnataka
+DESCRIPTION:Karnataka\nOfficial page: https://indiaskate.com/64th-national-
+ roller-skating-championships-2026-technical-officials-letters-2/\nKinetic 
+ Skateboarding page: https://kinetic.curiosta.com/skateboarding/\nDates as 
+ announced by the organiser: check the official page before you plan.
+URL:https://indiaskate.com/64th-national-roller-skating-championships-2026-
+ technical-officials-letters-2/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261213
+SUMMARY:Tour of the Nilgiris
+LOCATION:Karnataka\, Kerala\, Tamil Nadu
+DESCRIPTION:Karnataka\, Kerala\, Tamil Nadu\nOfficial page: https://www.tou
+ rofnilgiris.com/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
+ /cycling-mtb/\nDates as announced by the organiser: check the official pag
+ e before you plan.
+URL:https://www.tourofnilgiris.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-finale-20261
+ 211@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261214
+SUMMARY:Indian National Car Racing Championship\, finale
+LOCATION:Madras International Circuit\, Chennai
+DESCRIPTION:Madras International Circuit\, Chennai\nOfficial page: https://
+ www.jktyremotorsport.com/calendar\nKinetic Karting & motorsport page: http
+ s://kinetic.curiosta.com/motorsport-karting/\nDates as announced by the or
+ ganiser: check the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-steel-world-25k-kolkata-20261220@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Tata Steel World 25K Kolkata
+LOCATION:Kolkata\, West Bengal
+DESCRIPTION:Kolkata\, West Bengal\nOfficial page: https://tatasteelkolkata2
+ 5k.procam.in/\nKinetic Running page: https://kinetic.curiosta.com/running/
+ \nDates as announced by the organiser: check the official page before you 
+ plan.
+URL:https://tatasteelkolkata25k.procam.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-mumbai-marathon-20270117@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Tata Mumbai Marathon
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://tatamumbaimarathon.procam.in/rac
+ e-categories/marathon/information\nKinetic Running page: https://kinetic.c
+ uriosta.com/running/\nDates as announced by the organiser: check the offic
+ ial page before you plan.
+URL:https://tatamumbaimarathon.procam.in/race-categories/marathon/informati
+ on
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:archery-43rd-ntpc-sub-junior-national-archery-championship-20270206@kin
+ etic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270216
+SUMMARY:43rd NTPC Sub-Junior National Archery Championship
+LOCATION:M.A. Stadium\, Jammu\, Jammu & Kashmir
+DESCRIPTION:M.A. Stadium\, Jammu\, Jammu & Kashmir\nOfficial page: https://
+ www.indianarchery.org/calendar\nKinetic Archery page: https://kinetic.curi
+ osta.com/archery/\nDates as announced by the organiser: check the official
+  page before you plan.
+URL:https://www.indianarchery.org/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:paragliding-pwca-asian-tour-india-panchgani-20270206@kinetic.curiosta.c
+ om
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270213
+SUMMARY:PWCA Asian Tour India — Panchgani
+LOCATION:Panchgani\, Maharashtra
+DESCRIPTION:Panchgani\, Maharashtra\nOfficial page: https://www.pwca.org/ev
+ ents/2026-pwca-asian-tour-india-panchgani-2027-season-2026\nKinetic Paragl
+ iding page: https://kinetic.curiosta.com/paragliding/\nDates as announced 
+ by the organiser: check the official page before you plan.
+URL:https://www.pwca.org/events/2026-pwca-asian-tour-india-panchgani-2027-s
+ eason-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-auroville-marathon-20270214@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Auroville Marathon
+LOCATION:Auroville\, Tamil Nadu
+DESCRIPTION:Auroville\, Tamil Nadu\nOfficial page: https://www.aurovillemar
+ athon.com/\nKinetic Running page: https://kinetic.curiosta.com/running/\nD
+ ates as announced by the organiser: check the official page before you pla
+ n.
+URL:https://www.aurovillemarathon.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:triathlon-ironman-70-3-amdavad-first-edition-20270214@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:IRONMAN 70.3 Amdavad (first edition)
+LOCATION:Sabarmati Riverfront\, Ahmedabad\, Gujarat
+DESCRIPTION:Sabarmati Riverfront\, Ahmedabad\, Gujarat\nOfficial page: http
+ s://www.ironman.com/races/im703-amdavad\nKinetic Triathlon page: https://k
+ inetic.curiosta.com/triathlon/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.ironman.com/races/im703-amdavad
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:paragliding-paragliding-world-cup-india-panchgani-2027-20270214@kinetic
+ .curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270222
+SUMMARY:Paragliding World Cup India — Panchgani 2027
+LOCATION:Panchgani\, Maharashtra
+DESCRIPTION:Panchgani\, Maharashtra\nOfficial page: https://www.pwca.org/ev
+ ents/2026-paragliding-world-cup-india-panchgani-2027-season-2026\nKinetic 
+ Paragliding page: https://kinetic.curiosta.com/paragliding/\nDates as anno
+ unced by the organiser: check the official page before you plan.
+URL:https://www.pwca.org/events/2026-paragliding-world-cup-india-panchgani-
+ 2027-season-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-ultra-marathon-20270221@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Tata Ultra Marathon
+LOCATION:Lonavala
+DESCRIPTION:Lonavala\nOfficial page: https://tataultra.com/race.html\nKinet
+ ic Running page: https://kinetic.curiosta.com/running/\nDates as announced
+  by the organiser: check the official page before you plan.
+URL:https://tataultra.com/race.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-cognizant-new-delhi-marathon-20270228@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Cognizant New Delhi Marathon
+LOCATION:New Delhi
+DESCRIPTION:New Delhi\nOfficial page: https://www.newdelhimarathon.com/\nKi
+ netic Running page: https://kinetic.curiosta.com/running/\nDates as announ
+ ced by the organiser: check the official page before you plan.
+URL:https://www.newdelhimarathon.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tcs-world-10k-bengaluru-20270425@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:TCS World 10K Bengaluru
+LOCATION:Bengaluru
+DESCRIPTION:Bengaluru\nOfficial page: https://tcsworld10k.procam.in/\nKinet
+ ic Running page: https://kinetic.curiosta.com/running/\nDates as announced
+  by the organiser: check the official page before you plan.
+URL:https://tcsworld10k.procam.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

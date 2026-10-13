@@ -136,3 +136,17 @@ main{overflow-x:clip}
 .evpast ul{list-style:none;padding:0;margin:0}
 .evup{list-style:none;padding:0;margin:0}
 @media (max-width:640px){.mchips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cal tr.sprow th .subs{display:flex;margin-top:2px;font-size:.74rem}
+.subs-all{margin:14px 0 0;font-size:.9rem;color:var(--ink-2)}
+.subs-all .subs{font-size:.9rem}
+.cal-hero .subs-all{color:#d6e6ec}
+.cal-hero .subs-all .subs-sub,.cal-hero .subs-all .subs-copy{color:#8fe9dc}
+.cal-hero .subs-all .subs-msg{color:#d6e6ec}
+
+/* calendar subscriptions (ics.py): plain links, inline copy confirmation */
+.subs{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-size:.8rem;font-weight:500}
+.subs-sub{font-weight:600}
+.subs-copy{font:inherit;font-weight:600;background:none;border:0;padding:0;color:var(--sea-700,#0b5d73);text-decoration:underline;cursor:pointer;min-height:24px}
+.subs-copy:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.subs-msg{flex-basis:100%;color:var(--ink-2);font-size:.78rem}
+.subs-msg:empty{display:none}

@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Swimming events
+X-WR-CALDESC:Upcoming swimming events with announced dates\, from https://k
+ inetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:swimming-1st-sfi-short-course-nationals-20261025@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261029
+SUMMARY:1st SFI Short Course Nationals
+LOCATION:Ahmedabad\, Gujarat
+DESCRIPTION:Ahmedabad\, Gujarat\nOfficial page: https://www.worldaquatics.c
+ om/competitions/5751/1st-short-course-senior-national-aquatic-championship
+ s-2026-25m-\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/
+ \nDates as announced by the organiser: check the official page before you 
+ plan.
+URL:https://www.worldaquatics.com/competitions/5751/1st-short-course-senior
+ -national-aquatic-championships-2026-25m-
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swimming-elephanta-to-gateway-of-india-expedition-swim-owsa-20261031@ki
+ netic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261102
+SUMMARY:Elephanta to Gateway of India expedition swim (OWSA)
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://www.openwaterswimsindia.com/even
+ t\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/\nDates as
+  announced by the organiser: check the official page before you plan.
+URL:https://www.openwaterswimsindia.com/event
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:swimming-aquamoga-the-goa-swimathon-20261114@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:Aquamoga: the Goa Swimathon
+LOCATION:Goa
+DESCRIPTION:Goa\nOfficial page: https://www.endurosportsgoa.com/schedule\nK
+ inetic Swimming page: https://kinetic.curiosta.com/swimming/\nDates as ann
+ ounced by the organiser: check the official page before you plan.
+URL:https://www.endurosportsgoa.com/schedule
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

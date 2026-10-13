@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Running events
+X-WR-CALDESC:Upcoming running events with announced dates\, from https://ki
+ netic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:running-vedanta-delhi-half-marathon-20261018@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Vedanta Delhi Half Marathon
+LOCATION:New Delhi
+DESCRIPTION:New Delhi\nOfficial page: https://vedantadelhihalfmarathon.proc
+ am.in/race-categories/half-marathon/information\nKinetic Running page: htt
+ ps://kinetic.curiosta.com/running/\nDates as announced by the organiser: c
+ heck the official page before you plan.
+URL:https://vedantadelhihalfmarathon.procam.in/race-categories/half-maratho
+ n/information
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-malnad-ultra-20261128@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Malnad Ultra
+LOCATION:Western Ghats\, Karnataka
+DESCRIPTION:Western Ghats\, Karnataka\nOfficial page: https://malnadultra.c
+ om/\nKinetic Running page: https://kinetic.curiosta.com/running/\nDates as
+  announced by the organiser: check the official page before you plan.
+URL:https://malnadultra.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-steel-world-25k-kolkata-20261220@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Tata Steel World 25K Kolkata
+LOCATION:Kolkata\, West Bengal
+DESCRIPTION:Kolkata\, West Bengal\nOfficial page: https://tatasteelkolkata2
+ 5k.procam.in/\nKinetic Running page: https://kinetic.curiosta.com/running/
+ \nDates as announced by the organiser: check the official page before you 
+ plan.
+URL:https://tatasteelkolkata25k.procam.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-mumbai-marathon-20270117@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Tata Mumbai Marathon
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://tatamumbaimarathon.procam.in/rac
+ e-categories/marathon/information\nKinetic Running page: https://kinetic.c
+ uriosta.com/running/\nDates as announced by the organiser: check the offic
+ ial page before you plan.
+URL:https://tatamumbaimarathon.procam.in/race-categories/marathon/informati
+ on
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-auroville-marathon-20270214@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Auroville Marathon
+LOCATION:Auroville\, Tamil Nadu
+DESCRIPTION:Auroville\, Tamil Nadu\nOfficial page: https://www.aurovillemar
+ athon.com/\nKinetic Running page: https://kinetic.curiosta.com/running/\nD
+ ates as announced by the organiser: check the official page before you pla
+ n.
+URL:https://www.aurovillemarathon.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tata-ultra-marathon-20270221@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Tata Ultra Marathon
+LOCATION:Lonavala
+DESCRIPTION:Lonavala\nOfficial page: https://tataultra.com/race.html\nKinet
+ ic Running page: https://kinetic.curiosta.com/running/\nDates as announced
+  by the organiser: check the official page before you plan.
+URL:https://tataultra.com/race.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-cognizant-new-delhi-marathon-20270228@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Cognizant New Delhi Marathon
+LOCATION:New Delhi
+DESCRIPTION:New Delhi\nOfficial page: https://www.newdelhimarathon.com/\nKi
+ netic Running page: https://kinetic.curiosta.com/running/\nDates as announ
+ ced by the organiser: check the official page before you plan.
+URL:https://www.newdelhimarathon.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:running-tcs-world-10k-bengaluru-20270425@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:TCS World 10K Bengaluru
+LOCATION:Bengaluru
+DESCRIPTION:Bengaluru\nOfficial page: https://tcsworld10k.procam.in/\nKinet
+ ic Running page: https://kinetic.curiosta.com/running/\nDates as announced
+  by the organiser: check the official page before you plan.
+URL:https://tcsworld10k.procam.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

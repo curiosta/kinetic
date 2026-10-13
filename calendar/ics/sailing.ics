@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Sailing events
+X-WR-CALDESC:Upcoming sailing events with announced dates\, from https://ki
+ netic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:sailing-yai-senior-nationals-20261114@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261121
+SUMMARY:YAI Senior Nationals
+LOCATION:Mumbai
+DESCRIPTION:Mumbai\nOfficial page: https://www.yai.org.in/\nKinetic Sailing
+  page: https://kinetic.curiosta.com/sailing/\nDates as announced by the or
+ ganiser: check the official page before you plan.
+URL:https://www.yai.org.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

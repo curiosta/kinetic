@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Cycling & MTB events
+X-WR-CALDESC:Upcoming cycling & mtb events with announced dates\, from http
+ s://kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:cycling-mtb-mtb-shimla-20261023@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261026
+SUMMARY:MTB Shimla
+LOCATION:Shimla\, Himachal Pradesh
+DESCRIPTION:Shimla\, Himachal Pradesh\nOfficial page: https://hastpa.com/ev
+ ents/mtb-shimla/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
+ /cycling-mtb/\nDates as announced by the organiser: check the official pag
+ e before you plan.
+URL:https://hastpa.com/events/mtb-shimla/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261213
+SUMMARY:Tour of the Nilgiris
+LOCATION:Karnataka\, Kerala\, Tamil Nadu
+DESCRIPTION:Karnataka\, Kerala\, Tamil Nadu\nOfficial page: https://www.tou
+ rofnilgiris.com/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
+ /cycling-mtb/\nDates as announced by the organiser: check the official pag
+ e before you plan.
+URL:https://www.tourofnilgiris.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

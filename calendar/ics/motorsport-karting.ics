@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Karting & motorsport events
+X-WR-CALDESC:Upcoming karting & motorsport events with announced dates\, fr
+ om https://kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:motorsport-karting-national-karting-championship-final-round-20261017@k
+ inetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+SUMMARY:National karting championship: final round
+LOCATION:Meco Kartopia\, Bengaluru
+DESCRIPTION:Meco Kartopia\, Bengaluru\nOfficial page: https://www.mecomotor
+ sports.co.in/\nKinetic Karting & motorsport page: https://kinetic.curiosta
+ .com/motorsport-karting/\nDates as announced by the organiser: check the o
+ fficial page before you plan.
+URL:https://www.mecomotorsports.co.in/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-round-2-2026
+ 1023@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261026
+SUMMARY:Indian National Car Racing Championship\, round 2
+LOCATION:Kari Motor Speedway\, Coimbatore
+DESCRIPTION:Kari Motor Speedway\, Coimbatore\nOfficial page: https://www.jk
+ tyremotorsport.com/calendar\nKinetic Karting & motorsport page: https://ki
+ netic.curiosta.com/motorsport-karting/\nDates as announced by the organise
+ r: check the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-round-3-2026
+ 1113@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:Indian National Car Racing Championship\, round 3
+LOCATION:BREN Raceway\, Bengaluru
+DESCRIPTION:BREN Raceway\, Bengaluru\nOfficial page: https://www.jktyremoto
+ rsport.com/calendar\nKinetic Karting & motorsport page: https://kinetic.cu
+ riosta.com/motorsport-karting/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:motorsport-karting-indian-national-car-racing-championship-finale-20261
+ 211@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261214
+SUMMARY:Indian National Car Racing Championship\, finale
+LOCATION:Madras International Circuit\, Chennai
+DESCRIPTION:Madras International Circuit\, Chennai\nOfficial page: https://
+ www.jktyremotorsport.com/calendar\nKinetic Karting & motorsport page: http
+ s://kinetic.curiosta.com/motorsport-karting/\nDates as announced by the or
+ ganiser: check the official page before you plan.
+URL:https://www.jktyremotorsport.com/calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

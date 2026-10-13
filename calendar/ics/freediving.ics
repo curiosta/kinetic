@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Freediving events
+X-WR-CALDESC:Upcoming freediving events with announced dates\, from https:/
+ /kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:freediving-cmas-red-sea-open-cup-20261026@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261031
+SUMMARY:CMAS Red Sea Open Cup
+LOCATION:Dahab\, Egypt
+DESCRIPTION:Dahab\, Egypt\nOfficial page: https://www.cmas.org/freediving\n
+ Kinetic Freediving page: https://kinetic.curiosta.com/freediving/\nDates a
+ s announced by the organiser: check the official page before you plan.
+URL:https://www.cmas.org/freediving
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

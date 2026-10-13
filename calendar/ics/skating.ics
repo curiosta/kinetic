@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Skating events
+X-WR-CALDESC:Upcoming skating events with announced dates\, from https://ki
+ netic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:skating-64th-national-roller-skating-championships-rsfi-20261205@kineti
+ c.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261216
+SUMMARY:64th National Roller Skating Championships (RSFI)
+LOCATION:Karnataka
+DESCRIPTION:Karnataka\nOfficial page: https://indiaskate.com/64th-national-
+ roller-skating-championships-2026-technical-officials-letters-2/\nKinetic 
+ Skating page: https://kinetic.curiosta.com/skating/\nDates as announced by
+  the organiser: check the official page before you plan.
+URL:https://indiaskate.com/64th-national-roller-skating-championships-2026-
+ technical-officials-letters-2/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

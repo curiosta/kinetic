@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Windsurfing events
+X-WR-CALDESC:Upcoming windsurfing events with announced dates\, from https:
+ //kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:windsurfing-gethnaa-basic-aqua-sports-course-20261101@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261111
+SUMMARY:GETHNAA Basic Aqua Sports Course
+LOCATION:Karwar\, Karnataka
+DESCRIPTION:Karwar\, Karnataka\nOfficial page: https://gethnaa.org/basic-aq
+ ua-sports-course\nKinetic Windsurfing page: https://kinetic.curiosta.com/w
+ indsurfing/\nDates as announced by the organiser: check the official page 
+ before you plan.
+URL:https://gethnaa.org/basic-aqua-sports-course
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:windsurfing-yai-senior-nationals-iqfoil-men-and-women-20261114@kinetic.
+ curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261121
+SUMMARY:YAI Senior Nationals (iQFOiL\, men and women)
+LOCATION:INWTC\, Colaba\, Mumbai
+DESCRIPTION:INWTC\, Colaba\, Mumbai\nOfficial page: https://www.yai.org.in/
+ images/pdf/2026/Notice-of-Race-YAI-Senior-Nationals-2026.pdf\nKinetic Wind
+ surfing page: https://kinetic.curiosta.com/windsurfing/\nDates as announce
+ d by the organiser: check the official page before you plan.
+URL:https://www.yai.org.in/images/pdf/2026/Notice-of-Race-YAI-Senior-Nation
+ als-2026.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

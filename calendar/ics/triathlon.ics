@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Triathlon events
+X-WR-CALDESC:Upcoming triathlon events with announced dates\, from https://
+ kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:triathlon-ironman-70-3-goa-20261101@kinetic.curiosta.com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:IRONMAN 70.3 Goa
+LOCATION:Miramar Beach\, Goa
+DESCRIPTION:Miramar Beach\, Goa\nOfficial page: https://www.ironman.com/rac
+ es/im703-goa\nKinetic Triathlon page: https://kinetic.curiosta.com/triathl
+ on/\nDates as announced by the organiser: check the official page before y
+ ou plan.
+URL:https://www.ironman.com/races/im703-goa
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:triathlon-ironman-70-3-amdavad-first-edition-20270214@kinetic.curiosta.
+ com
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:IRONMAN 70.3 Amdavad (first edition)
+LOCATION:Sabarmati Riverfront\, Ahmedabad\, Gujarat
+DESCRIPTION:Sabarmati Riverfront\, Ahmedabad\, Gujarat\nOfficial page: http
+ s://www.ironman.com/races/im703-amdavad\nKinetic Triathlon page: https://k
+ inetic.curiosta.com/triathlon/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.ironman.com/races/im703-amdavad
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
