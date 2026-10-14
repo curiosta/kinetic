@@ -11,24 +11,25 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:swimming-1st-sfi-short-course-nationals-20261025@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261029
 SUMMARY:1st SFI Short Course Nationals
-LOCATION:Ahmedabad\, Gujarat
-DESCRIPTION:Ahmedabad\, Gujarat\nOfficial page: https://www.worldaquatics.c
- om/competitions/5751/1st-short-course-senior-national-aquatic-championship
- s-2026-25m-\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/
- \nDates as announced by the organiser: check the official page before you 
- plan.
-URL:https://www.worldaquatics.com/competitions/5751/1st-short-course-senior
- -national-aquatic-championships-2026-25m-
+LOCATION:Aquatic Complex\, Veer Savarkar Sports Complex\, Ahmedabad\, Gujar
+ at
+DESCRIPTION:Aquatic Complex\, Veer Savarkar Sports Complex\, Ahmedabad\, Gu
+ jarat\nOfficial page: https://www.swimming.org.in/management/upload/circul
+ ar/Circular%201st%20Short%20Course%20Seniors%20National%202026%20%26%20QT.
+ pdf\nKinetic Swimming page: https://kinetic.curiosta.com/swimming/\nDates 
+ as announced by the organiser: check the official page before you plan.
+URL:https://www.swimming.org.in/management/upload/circular/Circular%201st%2
+ 0Short%20Course%20Seniors%20National%202026%20%26%20QT.pdf
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:swimming-elephanta-to-gateway-of-india-expedition-swim-owsa-20261031@ki
  netic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261102
 SUMMARY:Elephanta to Gateway of India expedition swim (OWSA)
@@ -41,7 +42,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:swimming-aquamoga-the-goa-swimathon-20261114@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261116
 SUMMARY:Aquamoga: the Goa Swimathon

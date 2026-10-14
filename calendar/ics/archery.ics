@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:archery-46th-junior-national-archery-championship-20261021@kinetic.curi
  osta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261029
 SUMMARY:46th Junior National Archery Championship
@@ -26,7 +26,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-senior-national-archery-championships-indian-round-compound-rec
  urve-20261111@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261119
 SUMMARY:Senior National Archery Championships (Indian round\, compound\, re
@@ -41,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-4th-national-ranking-archery-tournament-20261121@kinetic.curios
  ta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261201
 SUMMARY:4th National Ranking Archery Tournament
@@ -55,7 +55,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-43rd-ntpc-sub-junior-national-archery-championship-20270206@kin
  etic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270216
 SUMMARY:43rd NTPC Sub-Junior National Archery Championship

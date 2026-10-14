@@ -12,17 +12,18 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:skating-64th-national-roller-skating-championships-rsfi-20261205@kineti
  c.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261216
 SUMMARY:64th National Roller Skating Championships (RSFI)
-LOCATION:Karnataka
-DESCRIPTION:Karnataka\nOfficial page: https://indiaskate.com/64th-national-
- roller-skating-championships-2026-technical-officials-letters-2/\nKinetic 
- Skating page: https://kinetic.curiosta.com/skating/\nDates as announced by
-  the organiser: check the official page before you plan.
-URL:https://indiaskate.com/64th-national-roller-skating-championships-2026-
- technical-officials-letters-2/
+LOCATION:Multiple venues\, Bengaluru region\, Karnataka
+DESCRIPTION:Multiple venues\, Bengaluru region\, Karnataka\nOfficial page: 
+ https://indiaskate.com/preparations-for-the-64th-national-roller-skating-c
+ hampionship-venue-details-announcement/\nKinetic Skating page: https://kin
+ etic.curiosta.com/skating/\nDates as announced by the organiser: check the
+  official page before you plan.
+URL:https://indiaskate.com/preparations-for-the-64th-national-roller-skatin
+ g-championship-venue-details-announcement/
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

@@ -11,21 +11,21 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:cycling-mtb-mtb-shimla-20261023@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261026
 SUMMARY:MTB Shimla
-LOCATION:Shimla\, Himachal Pradesh
-DESCRIPTION:Shimla\, Himachal Pradesh\nOfficial page: https://hastpa.com/ev
- ents/mtb-shimla/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
- /cycling-mtb/\nDates as announced by the organiser: check the official pag
- e before you plan.
-URL:https://hastpa.com/events/mtb-shimla/
+LOCATION:The Ridge\, Shimla\, Himachal Pradesh
+DESCRIPTION:The Ridge\, Shimla\, Himachal Pradesh\nOfficial page: https://h
+ astpa.com/events/\nKinetic Cycling & MTB page: https://kinetic.curiosta.co
+ m/cycling-mtb/\nDates as announced by the organiser: check the official pa
+ ge before you plan.
+URL:https://hastpa.com/events/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261213
 SUMMARY:Tour of the Nilgiris

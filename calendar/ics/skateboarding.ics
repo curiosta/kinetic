@@ -12,17 +12,18 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:skateboarding-64th-national-roller-skating-championships-incl-skateboar
  ding-20261205@kinetic.curiosta.com
-DTSTAMP:20261013T000000Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261216
 SUMMARY:64th National Roller Skating Championships (incl. skateboarding)
-LOCATION:Karnataka
-DESCRIPTION:Karnataka\nOfficial page: https://indiaskate.com/64th-national-
- roller-skating-championships-2026-technical-officials-letters-2/\nKinetic 
- Skateboarding page: https://kinetic.curiosta.com/skateboarding/\nDates as 
- announced by the organiser: check the official page before you plan.
-URL:https://indiaskate.com/64th-national-roller-skating-championships-2026-
- technical-officials-letters-2/
+LOCATION:Anjani Lake Woods Park\, Chintamani\, Karnataka
+DESCRIPTION:Anjani Lake Woods Park\, Chintamani\, Karnataka\nOfficial page:
+  https://indiaskate.com/preparations-for-the-64th-national-roller-skating-
+ championship-venue-details-announcement/\nKinetic Skateboarding page: http
+ s://kinetic.curiosta.com/skateboarding/\nDates as announced by the organis
+ er: check the official page before you plan.
+URL:https://indiaskate.com/preparations-for-the-64th-national-roller-skatin
+ g-championship-venue-details-announcement/
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
