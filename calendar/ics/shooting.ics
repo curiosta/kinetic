@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
  ta.com
-DTSTAMP:20261014T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261023
 SUMMARY:0755 India Open — Rifle & Pistol (NR events)
@@ -22,6 +22,21 @@ DESCRIPTION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh\nOfficial p
   page: https://kinetic.curiosta.com/shooting/\nDates as announced by the o
  rganiser: check the official page before you plan.
 URL:https://www.thenrai.in/details.aspx?view=8592
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
+ 1023@kinetic.curiosta.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261102
+SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
+LOCATION:Dehradun\, Uttarakhand
+DESCRIPTION:Dehradun\, Uttarakhand\nOfficial page: https://www.thenrai.in/s
+ hooting_calander.aspx\nKinetic Sport shooting page: https://kinetic.curios
+ ta.com/shooting/\nDates as announced by the organiser: check the official 
+ page before you plan.
+URL:https://www.thenrai.in/shooting_calander.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
