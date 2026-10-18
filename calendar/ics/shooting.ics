@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
  ta.com
-DTSTAMP:20261016T000000Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261023
 SUMMARY:0755 India Open — Rifle & Pistol (NR events)
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261016T000000Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
@@ -42,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  skeet-20261205@kinetic.curiosta.com
-DTSTAMP:20261016T000000Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261218
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -58,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-rifle-pi
  stol-20261211@kinetic.curiosta.com
-DTSTAMP:20261016T000000Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20270101
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Rifle & Pi
@@ -74,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  trap-20261218@kinetic.curiosta.com
-DTSTAMP:20261016T000000Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261228
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 

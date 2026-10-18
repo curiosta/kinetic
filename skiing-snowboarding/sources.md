@@ -21,7 +21,7 @@ Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. Every fact on
 | FIS national association directory still lists "Ski and Snowboard India (Ad Hoc Committee)", member since 1998 | https://www.fis-ski.com/DB/v2/national-ski-and-snowboard-associations?mi=menu-nsa-members&rt=inside-fis | loaded; **appears not yet updated** after the June 2026 Congress |
 | FIS 57th Congress (June 2026) disaffiliated Ski and Snowboard India and granted full membership to the Bhartiya Ski and Snowboard Association | PTI report carried by The Economic Times, 13 Jun 2026 | news report (secondary source), attributed to PTI on the page |
 | BSSA: national governing body for skiing and snowboarding, "affiliated by FIS", recognised by the IOA; announced 2027 National Alpine Championships and a Winter Training Camp 2027 | https://www.bssa.in/ | loaded |
-| IISM Gulmarg: established 1968 as Gulmarg Winter Sports Project; permanent office of the Ministry of Tourism since 1987 | https://www.iismgulmarg.in/About_iism | loaded |
+| IISM Gulmarg: established 1968 as Gulmarg Winter Sports Project; permanent office of the Ministry of Tourism since 1987 | https://www.iismgulmarg.in/About_iism.html | loaded |
 | ABVIMAS Manali skiing course list | https://www.abvimas.org/course/skiing-course-list/ | loaded |
 | NIM Uttarkashi skiing course at Dayara or Ratha Harsil | https://www.nimindia.net/skiingcourse | loaded |
 
@@ -29,9 +29,9 @@ Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. Every fact on
 
 | Item | URL | Status |
 |---|---|---|
-| IISM snow skiing courses December–March; Basic/Intermediate/Advance 14 days; age 10–40; snowboarding courses at Gulmarg; MOI course; skiing at Kargil (not used on page) | https://www.iismgulmarg.in/Admission | loaded |
-| IISM syllabus: Basic (snow plough, snow plough turn, traverse, uphill swing, side stepping, basic swing, open parallel rough form, slalom; exam day 12); Intermediate (basic swing, side-slip garland, downhill swing, long and short parallel turns with open skis, slalom); Advance (long and short parallel with closed skis, slalom) | https://www.iismgulmarg.in/Courses_By_IISM | loaded |
-| Gulmarg: gondola 2,650 m via Kongdori to 3,980 m (1,330 m vertical); chairlift Kongdori–Marry Shoulder; Mt Apharwat 4,124 m; down to −8 °C; heavy snowfall late Dec to mid-Feb | https://www.iismgulmarg.in/AboutGulmarg | loaded |
+| IISM snow skiing courses December–March; Basic/Intermediate/Advance 14 days; age 10–40; snowboarding courses at Gulmarg; MOI course; skiing at Kargil (not used on page) | https://www.iismgulmarg.in/Admission.html | loaded |
+| IISM syllabus: Basic (snow plough, snow plough turn, traverse, uphill swing, side stepping, basic swing, open parallel rough form, slalom; exam day 12); Intermediate (basic swing, side-slip garland, downhill swing, long and short parallel turns with open skis, slalom); Advance (long and short parallel with closed skis, slalom) | https://www.iismgulmarg.in/Courses_By_IISM.html | loaded |
+| Gulmarg: gondola 2,650 m via Kongdori to 3,980 m (1,330 m vertical); chairlift Kongdori–Marry Shoulder; Mt Apharwat 4,124 m; down to −8 °C; heavy snowfall late Dec to mid-Feb | https://www.iismgulmarg.in/AboutGulmarg.html | loaded |
 | ABVIMAS: Elementary 7 days; Basic, Intermediate, Advance Snow Skiing 14 days each at Solang (Manali) / Narkanda; Method of Instruction (Skiing) 21 days at Solang; Basic Nordic 14 days; Snow Boarding 14 days at Solang; grass skiing and special basic courses (not used) | https://www.abvimas.org/course/skiing-course-list/ | loaded |
 | Auli: "India's premier skiing destination", ~2,800 m; January–March best for skiing; ski lessons through GMVN; ski schools and equipment rental; ropeway from Joshimath; other ski spots Dayara Bugyal, Munsiyari, Mundali (not used) | https://uttarakhandtourism.gov.in/destination/auli | JS page, **rendered in headless Chrome** |
 
@@ -52,7 +52,7 @@ Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. Every fact on
 | "NSF India" instructor directory | search | **not found / not verified** this pass |
 | FIS national associations directory still lists Ski and Snowboard India (Ad Hoc) for India | https://www.fis-ski.com/DB/v2/national-ski-and-snowboard-associations?… | fetched 5 Oct 2026 |
 | BSSA self-description; National Alpine Championships 2027 | https://www.bssa.in/ | fetched 5 Oct 2026 — school's claim + PTI June 2026 for FIS |
-| IISM MoT permanent office; snow skiing Dec–Mar | https://www.iismgulmarg.in/About_iism | re-fetched; **do not reproduce fee table** that appears on some IISM pages |
+| IISM MoT permanent office; snow skiing Dec–Mar | https://www.iismgulmarg.in/About_iism.html | re-fetched; **do not reproduce fee table** that appears on some IISM pages |
 | ABVIMAS skiing course list (Elementary, Basic/Int/Adv, MOI, Snow Boarding, Nordic) | https://www.abvimas.org/course/skiing-course-list/ | re-fetched |
 | NIM skiing at Dayara or Ratha Harsil | https://www.nimindia.net/skiingcourse | fetched 5 Oct 2026 |
 | Auli Jan–Mar; GMVN lessons | https://uttarakhandtourism.gov.in/destination/auli | already on page; GMVN still Cloudflare |
