@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snowkiting · Physics of Wind, Altitude &amp; Cold · Kinetic by Curiosta</title>
+<meta name="description" content="Test your snowkiting physics in 15 questions: wind pressure and speed squared, thin mountain air, the wind window, depower and quick release, avalanche slopes and wind chill, then see the snowkite path and where to learn abroad.">
+<!-- seo:start -->
+<link rel="canonical" href="https://kinetic.curiosta.com/snowkiting/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kinetic">
+<meta property="og:title" content="Snowkiting · Physics of Wind, Altitude &amp; Cold · Kinetic by Curiosta">
+<meta property="og:description" content="Test your snowkiting physics in 15 questions: wind pressure and speed squared, thin mountain air, the wind window, depower and quick release, avalanche slopes and wind chill, then see the snowkite path and where to learn abroad.">
+<meta property="og:url" content="https://kinetic.curiosta.com/snowkiting/">
+<meta property="og:image" content="https://kinetic.curiosta.com/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kinetic: the physics of adventure sports. 26 live sports plus 4 on the watchlist, science challenges, real numbers, when to go in India.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- seo:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Snowkiting</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Snowkite path</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#abroad">Learn abroad</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Snowkiting</span>
+      <h1>Skis, a kite and <em>the whole plateau.</em></h1>
+      <p class="wl-status">No Indian school or governing body found as of Oct 2026.</p>
+      <p class="lede">Snowkiters let the wind tow them across frozen lakes and snowfields on skis or a snowboard. Learn why pull grows with wind speed squared, why mountain air pulls less, how a moving kite makes its own wind, how the safety systems work and why slopes and cold matter.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Light wind</span><span class="bar"></span><span>Strong wind</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">4 ×</span><span class="l">the wind pressure when the wind speed doubles</span></div>
+      <div class="hero-stat"><span class="n">≈ 82%</span><span class="l">air density at 2,000 m vs sea level (NASA standard atmosphere)</span></div>
+      <div class="hero-stat"><span class="n">30°</span><span class="l">the slope angle SLF says a slab avalanche needs</span></div>
+      <div class="hero-stat"><span class="n">3.5 kg</span><span class="l">the tug that triggers Swiss Kitesurf's quick release</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of snowkiting?</h2>
+      <p>15 questions on wind pressure, air density, the wind window, safety systems, avalanche slopes and wind chill. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Snowkite physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace lessons with a qualified snowkite instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Snowkite Lab to change the wind, kite size, altitude and cold.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-wind"><span class="n">CHAPTER 1</span><span class="t">Wind pressure</span><span class="d">Speed squared and gusts</span></a>
+      <a href="#ch-density"><span class="n">CHAPTER 2</span><span class="t">Altitude &amp; cold</span><span class="d">Air density, NASA model</span></a>
+      <a href="#ch-window"><span class="n">CHAPTER 3</span><span class="t">The wind window</span><span class="d">Apparent wind and the power zone</span></a>
+      <a href="#ch-safety"><span class="n">CHAPTER 4</span><span class="t">Depower &amp; quick release</span><span class="d">Angle of attack and safety rules</span></a>
+      <a href="#ch-slopes"><span class="n">CHAPTER 5</span><span class="t">Slopes &amp; avalanches</span><span class="d">30°, and what SLF found</span></a>
+      <a href="#ch-cold"><span class="n">CHAPTER 6</span><span class="t">Wind chill</span><span class="d">The NWS formula</span></a>
+    </nav>
+
+    <!-- SNOWKITE LAB -->
+    <div class="lab" id="sk-lab">
+      <span class="eyebrow">Interactive · Snowkite Lab</span>
+      <h3>Change the wind, the kite, the altitude and the cold</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">Air pressure from NASA's Earth Atmosphere Model, air density from that pressure and the air temperature you pick, wind pressure ½ρv², and the US National Weather Service wind chill formula. For learning only: it doesn't tell you what kite to fly.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="sk-v">Wind speed</label><input type="range" id="sk-v" min="10" max="40" step="1" value="20"><output id="sk-v-o">20 km/h</output></div>
+        <div class="ctl"><label for="sk-A">Kite area</label><input type="range" id="sk-A" min="4" max="15" step="1" value="9"><output id="sk-A-o">9 m²</output></div>
+        <div class="ctl"><label for="sk-h">Altitude</label><input type="range" id="sk-h" min="0" max="3000" step="100" value="2000"><output id="sk-h-o">2,000 m</output></div>
+        <div class="ctl"><label for="sk-T">Air temperature</label><input type="range" id="sk-T" min="-25" max="5" step="1" value="-10"><output id="sk-T-o">−10 °C</output></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Air pressure</span><span class="v" id="sk-p">79.6 kPa</span><span class="s">Ch 2 · NASA model</span></div>
+        <div class="lab-card"><span class="k">Air density</span><span class="v" id="sk-rho">1.05 kg/m³</span><span class="s">Ch 2 · p ÷ (R × T)</span></div>
+        <div class="lab-card"><span class="k">Wind pressure</span><span class="v" id="sk-q">16.3 Pa</span><span class="s">Ch 1 · ½ρv²</span></div>
+        <div class="lab-card"><span class="k">Wind force scale on the kite</span><span class="v" id="sk-F">146 N</span><span class="s" id="sk-F-s">≈ 15 kg · ½ρv² × area</span></div>
+        <div class="lab-card"><span class="k">vs sea level at 15 °C</span><span class="v" id="sk-rel">86%</span><span class="s">Ch 2 · same wind, same kite</span></div>
+        <div class="lab-card"><span class="k">In a gust 50% stronger</span><span class="v" id="sk-gust">329 N</span><span class="s">Ch 1 · 1.5² = 2.25 ×</span></div>
+        <div class="lab-card"><span class="k">Kite flying across the wind at 2 × wind speed</span><span class="v" id="sk-app">5 ×</span><span class="s">Ch 3 · apparent wind</span></div>
+        <div class="lab-card"><span class="k">Wind chill</span><span class="v" id="sk-wc">−18 °C</span><span class="s">Ch 6 · NWS formula</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="sk-bar"></span></div>
+      <p class="fine">Bar = air density compared with sea level at 15 °C. "Wind force scale" is ½ρv² × kite area: real line pull is some multiple of it that depends on the kite's design and where it flies in the wind window. Wind chill uses the wind speed you set; riding into the wind raises the air speed on your face.</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-wind">
+      <header><span class="chno">CH 1</span><h3>Wind pressure grows with speed squared</h3></header>
+      <p class="hook">Double the wind and the kite pulls about four times as hard.</p>
+      <div class="body">
+        <p>Moving air pushes on a kite with a pressure of <span class="eq">q = ½ ρ v²</span>, where ρ is air density and v is wind speed. The force on the kite is that pressure times its area times a coefficient that depends on the kite's shape and how it's flown. Because v is squared, small changes in wind make big changes in pull: a gust 50% stronger pulls 1.5² = 2.25 times as hard.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · a 9 m² kite at sea level, 15 °C (ρ ≈ 1.23 kg/m³)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Wind</th><th>Wind pressure ½ρv²</th><th>½ρv² × 9 m²</th><th>vs 10 km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 km/h</td><td class="num">4.7 Pa</td><td class="num">≈ 43 N (≈ 4 kg)</td><td class="num">1 ×</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">18.9 Pa</td><td class="num">≈ 170 N (≈ 17 kg)</td><td class="num">4 ×</td></tr>
+              <tr><td class="num">30 km/h</td><td class="num">42.6 Pa</td><td class="num">≈ 383 N (≈ 39 kg)</td><td class="num">9 ×</td></tr>
+              <tr><td class="num">40 km/h</td><td class="num">75.7 Pa</td><td class="num">≈ 681 N (≈ 69 kg)</td><td class="num">16 ×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">20 km/h = 5.56 m/s; ½ × 1.227 × 5.56² ≈ 18.9 Pa; × 9 m² ≈ 170 N. This is a force scale, not a measured line pull (<a href="#ch-window">Ch 3</a>).</p>
+        </div>
+        <h4>What it means on the snow</h4>
+        <ul>
+          <li><strong>Gusts:</strong> pull rises with the square of the gust, so gusty days are much harder than the average wind suggests.</li>
+          <li><strong>Kite size:</strong> pull scales with area, which is why riders choose smaller kites for stronger wind.</li>
+          <li><strong>Learn in light, steady wind:</strong> schools pick conditions where beginners can control the kite.</li>
+        </ul>
+        <details class="check"><summary>The wind rises from 15 to 30 km/h. How much more does the kite pull?</summary>
+        <p>(30 ÷ 15)² = <strong>4 times</strong>.</p></details>
+        <p class="small src">Physics: dynamic pressure q = ½ρv².</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-density">
+      <header><span class="chno">CH 2</span><h3>Altitude thins the air, cold thickens it</h3></header>
+      <p class="hook">At 2,000 m the air is about a fifth thinner than at the coast, so the same wind pulls less.</p>
+      <div class="body">
+        <p>Air density is <span class="eq">ρ = p ÷ (R × T)</span>: it falls as pressure drops with altitude and rises as the air gets colder. NASA's Earth Atmosphere Model gives pressure in the lower atmosphere as <span class="eq">p = 101.29 × [(T + 273.1) ÷ 288.08]^5.256</span> kPa, with standard temperature T = 15.04 − 0.00649 × h °C at altitude h metres, and density = p ÷ (0.2869 × (T + 273.1)).</p>
+        <div class="worked">
+          <span class="lbl">Worked example · NASA standard atmosphere</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Altitude</th><th>Standard temperature</th><th>Pressure</th><th>Density</th><th>vs sea level</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 m</td><td class="num">15.0 °C</td><td class="num">101.4 kPa</td><td class="num">1.23 kg/m³</td><td class="num">100%</td></tr>
+              <tr><td class="num">1,000 m</td><td class="num">8.6 °C</td><td class="num">90.0 kPa</td><td class="num">1.11 kg/m³</td><td class="num">91%</td></tr>
+              <tr><td class="num">2,000 m</td><td class="num">2.1 °C</td><td class="num">79.6 kPa</td><td class="num">1.01 kg/m³</td><td class="num">82%</td></tr>
+              <tr><td class="num">3,000 m</td><td class="num">−4.4 °C</td><td class="num">70.2 kPa</td><td class="num">0.91 kg/m³</td><td class="num">74%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Cold helps: at 2,000 m but −10 °C instead of the standard 2.1 °C, density is 79.6 ÷ (0.2869 × 263.1) ≈ 1.05 kg/m³, about 86% of sea level at 15 °C.</p>
+        </div>
+        <h4>What it means on the snow</h4>
+        <ul>
+          <li><strong>Mountain spots:</strong> the same kite in the same wind pulls less high up, so riders may need a bigger kite or more wind.</li>
+          <li><strong>Cold days:</strong> colder, denser air pulls a little harder for the same wind.</li>
+          <li><strong>Real example:</strong> Haugastøl, a snowkite base on Norway's Hardangervidda plateau, sits at 1,000 m above sea level.</li>
+        </ul>
+        <details class="check"><summary>Same wind and kite: about how much less pull at 3,000 m (standard atmosphere) than at sea level?</summary>
+        <p>0.91 ÷ 1.23 ≈ 0.74, so about <strong>a quarter less</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html" target="_blank" rel="noopener">NASA Glenn: Earth Atmosphere Model</a> · <a href="https://www.haugastol.no/en/kite-course" target="_blank" rel="noopener">Haugastøl 1000 MOH</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-window">
+      <header><span class="chno">CH 3</span><h3>The wind window &amp; apparent wind</h3></header>
+      <p class="hook">A kite moving across the wind feels far more wind than you do.</p>
+      <div class="body">
+        <p>A kite feels the <strong>apparent wind</strong>: the true wind combined with the air rushing past because the kite itself is moving. If the kite flies across the wind at speed u, the apparent wind is about <span class="eq">√(v² + u²)</span>. In the middle of the wind window (the <strong>power zone</strong>, downwind of the rider) a moving kite gets a lot of apparent wind and pulls hard; at the <strong>edge of the window</strong> it slows and parks, and the pull drops.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · true wind 20 km/h</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Kite's own speed across the wind</th><th>Apparent wind</th><th>Wind pressure vs a parked kite</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 (parked)</td><td class="num">20 km/h</td><td class="num">1 ×</td></tr>
+              <tr><td class="num">20 km/h</td><td class="num">≈ 28 km/h</td><td class="num">2 ×</td></tr>
+              <tr><td class="num">40 km/h</td><td class="num">≈ 45 km/h</td><td class="num">5 ×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">√(20² + 40²) ≈ 44.7 km/h; (44.7 ÷ 20)² = 5. That's why diving a kite through the power zone can pull you off your feet.</p>
+        </div>
+        <h4>Using the window</h4>
+        <ul>
+          <li><strong>Edge of the window:</strong> the place to park the kite when you stop, launch or land.</li>
+          <li><strong>Power zone:</strong> where to avoid sending the kite by mistake.</li>
+          <li><strong>Steering:</strong> moving the kite up and down through the window controls how much it pulls.</li>
+        </ul>
+        <details class="check"><summary>True wind 30 km/h and the kite flies across it at 30 km/h. Roughly how much more wind pressure does it feel than when parked?</summary>
+        <p>√(30² + 30²) ≈ 42.4 km/h; (42.4 ÷ 30)² = <strong>2 times</strong>.</p></details>
+        <p class="small src">Physics: vector addition of velocities, dynamic pressure.</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-safety">
+      <header><span class="chno">CH 4</span><h3>Depower, quick release &amp; the 5th line</h3></header>
+      <p class="hook">Every kite rig has ways to cut the pull fast, and the rules make you carry them.</p>
+      <div class="body">
+        <p>A kite's pull depends on its <strong>angle of attack</strong>, the angle at which air meets it. Pushing the bar away tilts the kite so air meets it at a smaller angle, which cuts the force: that's <strong>depower</strong>. A <strong>quick release</strong> lets go of the bar from the harness, and a <strong>safety leash</strong> lets the kite fall onto one line so it "flags out", flapping like a flag with almost no pull.</p>
+        <div class="worked">
+          <span class="lbl">What official sources require or describe</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Source</th><th>What it says</th></tr></thead>
+            <tbody>
+              <tr><td>IKA Snowkite Class Rules</td><td>A detachable kite leash with a safety release, able to fully flag out the kite; a quick release that disconnects the bar from the harness with one hand movement; front lines with a depowering device</td></tr>
+              <tr><td>IKA Snowkite Class Rules</td><td>A brightly coloured helmet to EN 1385 or EN 1077 (or equivalent) worn at all times when racing</td></tr>
+              <tr><td>Swiss Kitesurf (school)</td><td>Bars with a double quick release that can be triggered with a 3.5 kg tug; most winter kites have a 5th line so the kite can be landed and kept on the ground without force</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">A 3.5 kg tug is about 34 N (3.5 × 9.81), far less than the pull of the kite in <a href="#ch-wind">Ch 1</a>.</p>
+        </div>
+        <h4>Practise before you need it</h4>
+        <ul>
+          <li><strong>Know your release:</strong> schools drill triggering it until it's automatic.</li>
+          <li><strong>Helmet:</strong> Swiss Kitesurf gives every student a harness and helmet; Haugastøl asks students to bring a helmet.</li>
+          <li><strong>Space downwind:</strong> keep clear of people, fences and slopes where the kite could drag you.</li>
+        </ul>
+        <details class="check"><summary>What does a kite do when it "flags out"?</summary>
+        <p>It hangs from one line and <strong>flaps like a flag</strong>, giving almost no pull.</p></details>
+        <p class="small src">Sources: <a href="https://kiteclasses.org/images/documents/classrules/SK%20-%20CR%202025-02-15.pdf" target="_blank" rel="noopener">IKA Snowkite Class Rules (PDF)</a> · <a href="https://www.kitesailing.ch/en/school/snowkite-school" target="_blank" rel="noopener">Swiss Kitesurf snowkite school</a> · <a href="https://www.haugastol.no/en/kite-course" target="_blank" rel="noopener">Haugastøl kite course</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-slopes">
+      <header><span class="chno">CH 5</span><h3>Slopes &amp; avalanches</h3></header>
+      <p class="hook">A kite can pull you up a slope that's steep enough to slide.</p>
+      <div class="body">
+        <p>Switzerland's avalanche institute SLF says a slab avalanche needs a bonded snow slab over a weak layer, an extra load to trigger it, and a slope of <strong>at least 30°</strong>. Its long-term figures for fatal avalanches triggered by skiers: 97% happened on slopes steeper than 30°, 82% steeper than 35° and 43% steeper than 40°.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · what 30°, 35° and 40° look like as a gradient</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Slope angle</th><th>Rise per 100 m across (tan θ)</th><th>SLF: share of fatal skier-triggered avalanches on steeper slopes</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30°</td><td class="num">≈ 58 m</td><td class="num">97%</td></tr>
+              <tr><td class="num">35°</td><td class="num">≈ 70 m</td><td class="num">82%</td></tr>
+              <tr><td class="num">40°</td><td class="num">≈ 84 m</td><td class="num">43%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">tan 30° ≈ 0.577, so a 30° slope climbs about 58 m for every 100 m you travel across the map. Slopes look less steep than they are, so riders measure them.</p>
+        </div>
+        <h4>What it means for snowkiters</h4>
+        <ul>
+          <li><strong>Flat and gentle terrain:</strong> frozen lakes and open plateaus are where most people learn.</li>
+          <li><strong>Read the bulletin:</strong> in the mountains, check the official avalanche bulletin before riding near slopes.</li>
+          <li><strong>Weather changes:</strong> Haugastøl warns that weather and visibility on Hardangervidda can change fast.</li>
+        </ul>
+        <details class="check"><summary>A slope rises 50 m for every 100 m across. Is it steeper than 30°?</summary>
+        <p>tan θ = 0.5, so θ ≈ 26.6°: <strong>no</strong>, just under 30°. SLF's figures still put 3% of fatal skier-triggered avalanches below 30°.</p></details>
+        <p class="small src">Sources: <a href="https://www.slf.ch/en/avalanches/avalanche-science-and-prevention/avalanche-types/" target="_blank" rel="noopener">SLF: avalanche types</a> · <a href="https://www.slf.ch/fileadmin/user_upload/SLF/Lawinenbulletin_Schneesituation/Wissen_zum_Lawinenbulletin/Interpretationshilfe/Interpretationshilfe_EN.pdf" target="_blank" rel="noopener">SLF: avalanche bulletin interpretation guide (PDF)</a> · <a href="https://www.haugastol.no/en/kite-course" target="_blank" rel="noopener">Haugastøl</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-cold">
+      <header><span class="chno">CH 6</span><h3>Wind chill</h3></header>
+      <p class="hook">The wind that powers your kite also pulls heat from your skin.</p>
+      <div class="body">
+        <p>Moving air carries heat away from skin faster than still air, so exposed skin cools as if the air were colder. The US National Weather Service calculates wind chill as <span class="eq">35.74 + 0.6215T − 35.75V<sup>0.16</sup> + 0.4275TV<sup>0.16</sup></span>, with T in °F and V in mph. The metric form is <span class="eq">13.12 + 0.6215T − 11.37V<sup>0.16</sup> + 0.3965TV<sup>0.16</sup></span> with T in °C and V in km/h.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · NWS wind chill (°C)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Air temperature</th><th>10 km/h</th><th>20 km/h</th><th>30 km/h</th><th>40 km/h</th></tr></thead>
+            <tbody>
+              <tr><td class="num">−5 °C</td><td class="num">−9</td><td class="num">−12</td><td class="num">−13</td><td class="num">−14</td></tr>
+              <tr><td class="num">−10 °C</td><td class="num">−15</td><td class="num">−18</td><td class="num">−20</td><td class="num">−21</td></tr>
+              <tr><td class="num">−20 °C</td><td class="num">−27</td><td class="num">−30</td><td class="num">−33</td><td class="num">−34</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">−10 °C at 20 km/h: 20<sup>0.16</sup> ≈ 1.615; 13.12 − 6.22 − 18.36 − 6.40 ≈ −17.9 °C. Riding into the wind adds your own speed to the air on your face.</p>
+        </div>
+        <h4>Staying warm</h4>
+        <ul>
+          <li><strong>Cover skin:</strong> wind chill applies to exposed skin, so face, hands and neck matter most.</li>
+          <li><strong>Warm clothes:</strong> Haugastøl asks students to bring warm winter clothes along with a helmet and skis or a snowboard.</li>
+          <li><strong>Plan the walk back:</strong> if the wind drops, you'll be walking in the cold.</li>
+        </ul>
+        <details class="check"><summary>Using the table, what does −20 °C feel like on exposed skin in a 30 km/h wind?</summary>
+        <p>About <strong>−33 °C</strong>.</p></details>
+        <p class="small src">Source: <a href="https://www.weather.gov/media/epz/wxcalc/windChill.pdf" target="_blank" rel="noopener">US National Weather Service: wind chill formula (PDF)</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The snowkite path</span>
+      <h2>Skier or snowboarder → snowkite course → riding on your own → racing</h2>
+      <p>There's no world snowkite licence. Riders build on skiing or snowboarding, take lessons at a kite school, then ride on their own. These are real courses and rules we found, each checked on its own official website; the steps are a typical order, not official grades.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Skier or snowboarder</span><b>Comfortable on skis or a board</b><span class="iso">Bring your own</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What schools ask</span><span class="cn">Swiss Kitesurf, Haugastøl</span><ul><li>Both ask students to bring their own skis or snowboard and warm clothes</li></ul></div>
+          <div class="ag"><span class="an">Start here</span><span class="cn">Kinetic pages</span><ul><li><a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../kitesurfing/">kitesurfing</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Being steady on your skis or board lets you put all your attention on the kite.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Snowkite course</span><b>Beginner lessons at a kite school</b><span class="iso">VDWS guidelines (Swiss Kitesurf)</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Real course</span><span class="cn">Swiss Kitesurf, Silvaplana</span><ul><li>Says it opened the world's first kite school on Lake Silvaplana in 1993</li><li>Teaches to VDWS guidelines; provides harness and helmet</li></ul></div>
+          <div class="ag"><span class="an">Real course</span><span class="cn">Haugastøl, Norway</span><ul><li>Weekend courses run by Kitekurs.no and Vindskolen.no, beginner to intermediate, kite gear included</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Wind and safety</span><ul><li><a href="#ch-wind">Ch 1</a>, <a href="#ch-window">Ch 3</a>, <a href="#ch-safety">Ch 4</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Riding on your own</span><b>Independent rider</b><span class="iso">Your own judgment</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What schools aim for</span><span class="cn">Haugastøl</span><ul><li>The instructors' main aim is to teach the basic skills so you can snowkite on your own later</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Terrain and cold</span><ul><li><a href="#ch-density">Ch 2</a>, <a href="#ch-slopes">Ch 5</a>, <a href="#ch-cold">Ch 6</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Check the wind forecast and, in the mountains, the avalanche bulletin every time.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Racing</span><b>IKA Snowkite Class &amp; WISSA</b><span class="iso">World Sailing class rules</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Class rules</span><span class="cn">IKA Snowkite Class</span><ul><li>A World Sailing international class since 2020, run by the IKA</li><li>Racing kit includes a safety leash that fully flags out the kite, a one-hand quick release and a helmet to EN 1385 or EN 1077</li></ul></div>
+          <div class="ag"><span class="an">Rules page</span><span class="cn">IKA</span><ul><li><a href="https://kiteclasses.org/images/documents/classrules/SK%20-%20CR%202025-02-15.pdf" target="_blank" rel="noopener">kiteclasses.org: Snowkite Class Rules (PDF)</a></li></ul></div>
+          <div class="ag"><span class="an">World championships</span><span class="cn">WISSA</span><ul><li>Holds a World Championship each year, with a kite class among its winter sailing classes: <a href="https://wissa.org/" target="_blank" rel="noopener">wissa.org</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Snowkiting is part of sailing's world: a kite class under World Sailing, run by the kiteboarding association, with an ice and snow sailing association holding world championships. We checked each on its own official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Class association</span><h4>International Kiteboarding Association (IKA)</h4><p>Administers the IKA Snowkite Class and its class rules, adopted as a World Sailing international class in 2020.</p><a class="url" href="https://kiteclasses.org/images/documents/classrules/SK%20-%20CR%202025-02-15.pdf" target="_blank" rel="noopener">kiteclasses.org</a></div>
+      <div class="card"><span class="tag">World federation</span><h4>World Sailing</h4><p>The class's international authority, which co-operates with the IKA on the snowkite class rules and approves their changes.</p><a class="url" href="https://www.sailing.org/" target="_blank" rel="noopener">sailing.org</a></div>
+      <div class="card"><span class="tag">Ice and snow sailing</span><h4>World Ice and Snow Sailing Association (WISSA)</h4><p>Founded in Germany in 1987. Holds a World Championship each year for ice and snow sailing, including a kite class on skis or snowboards.</p><a class="url" href="https://wissa.org/" target="_blank" rel="noopener">wissa.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="callout note"><p style="margin:0">No Indian school or governing body found as of Oct 2026. Gulmarg's ski schools teach skiing and snowboarding; we found no snowkite lessons. Start with Kinetic's <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> and <a href="../kitesurfing/">kitesurfing</a> pages.</p></div>
+  </div>
+</section>
+
+<!-- whoswho:start · generated by kinetic-tools/build/whoswho.py from build/whoswho_data.py; do not hand-edit -->
+<section class="block" id="compete">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Compete</span>
+      <h2>No competitive circuit in India</h2>
+    </div>
+    <ol class="kp-ladder">
+      <li><span class="kp-n">1</span><div><b>Snowkite lessons abroad</b><span class="kp-body"><a href="https://www.kitesailing.ch/en/school/snowkite-school" target="_blank" rel="noopener">Kite schools</a></span></div></li>
+      <li><span class="kp-n">2</span><div><b>Snowkite racing</b><span class="kp-body"><a href="https://kiteclasses.org/images/documents/classrules/SK%20-%20CR%202025-02-15.pdf" target="_blank" rel="noopener">IKA Snowkite Class, a World Sailing class</a></span></div></li>
+      <li><span class="kp-n">3</span><div><b>World championships</b><span class="kp-body"><a href="https://wissa.org/" target="_blank" rel="noopener">World Ice and Snow Sailing Association (WISSA)</a></span></div></li>
+    </ol>
+    <div class="kp-grid"><div class="kp-box"><h4>Entry</h4><p>Class rules set the racing safety kit: a flag-out leash, a one-hand quick release and a helmet.</p></div></div>
+    <details class="kp-plan"><summary>First year</summary><p class="kp-gen">General guidance, not a source.</p><ol><li>Months 1–3: take an entry-level course with a provider on this page.</li><li>Months 3–12: work through the provider's next levels at your own pace.</li></ol></details>
+  </div>
+</section>
+<!-- whoswho:end -->
+
+<!-- =========================== 5. LEARN ABROAD =========================== -->
+<section class="block" id="abroad">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Learn abroad</span>
+      <h2>Where to learn it abroad</h2>
+      <p>Official school websites, checked 19 Oct 2026. Course content and entry rules change, so confirm them with the school.</p>
+    </div>
+    <ul class="abroad">
+      <li><a href="https://www.haugastol.no/en/kite-course" target="_blank" rel="noopener">Haugastøl kite courses</a><span>weekend snowkite courses on the Hardangervidda plateau, Norway</span></li>
+      <li><a href="https://www.kitesailing.ch/en/school/snowkite-school" target="_blank" rel="noopener">Swiss Kitesurf snowkite school</a><span>Lake Silvaplana and the Bernina Pass, Switzerland</span></li>
+    </ul>
+    <p class="small abroad-note">Related on Kinetic: <a href="../kitesurfing/">kitesurfing</a> · <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a>.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 19 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a> · <a href="../cave-diving/">cave diving</a> · <a href="../ice-diving/">ice diving</a> · <a href="../big-wave-surfing/">big-wave surfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

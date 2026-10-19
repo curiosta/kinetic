@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cave diving · Physics of Gas, Thirds &amp; Silt · Kinetic by Curiosta</title>
+<meta name="description" content="Test your cave-diving physics in 15 questions: the overhead, Boyle's law and gas use, the rule of thirds, silt and guidelines, depth and buoyancy, then see the cavern-to-full-cave ladder and where to learn abroad.">
+<!-- seo:start -->
+<link rel="canonical" href="https://kinetic.curiosta.com/cave-diving/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kinetic">
+<meta property="og:title" content="Cave diving · Physics of Gas, Thirds &amp; Silt · Kinetic by Curiosta">
+<meta property="og:description" content="Test your cave-diving physics in 15 questions: the overhead, Boyle&#x27;s law and gas use, the rule of thirds, silt and guidelines, depth and buoyancy, then see the cavern-to-full-cave ladder and where to learn abroad.">
+<meta property="og:url" content="https://kinetic.curiosta.com/cave-diving/">
+<meta property="og:image" content="https://kinetic.curiosta.com/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kinetic: the physics of adventure sports. 26 live sports plus 4 on the watchlist, science challenges, real numbers, when to go in India.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- seo:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306243a'/%3E%3Cpath d='M9 7v18M9 16l9-9M12 13l10 12' stroke='%2311b5a4' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Kinetic home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg>
+      <span class="wm-text">kinetic<b>.</b></span>
+      <span class="wm-sub">Cave diving</span>
+    </a>
+    <nav class="sectionnav" aria-label="Sections">
+      <a href="#challenge">Challenge</a>
+      <a href="#science">Science</a>
+      <a href="#certs">Cave ladder</a>
+      <a href="#bodies">Governing bodies</a>
+      <a href="#abroad">Learn abroad</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kinetic · Adventure science · Cave diving</span>
+      <h1>No straight way up: <em>dive by the numbers.</em></h1>
+      <p class="wl-status">No Indian school or governing body found as of Oct 2026.</p>
+      <p class="lede">Cave divers plan every breath, because the only way out is back the way they came. Learn why gas use climbs with depth, how the rule of thirds works, why silt hangs in the water for hours and how buoyancy behaves under a ceiling.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
+        <a class="btn btn-ghost" href="#science">Skip to the science</a>
+      </div>
+      <div class="gauge" aria-hidden="true"><span>Cavern</span><span class="bar"></span><span>Full cave</span></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n">≈ 4 ×</span><span class="l">the gas each breath takes at 30 m</span></div>
+      <div class="hero-stat"><span class="n">⅓</span><span class="l">of your starting gas for the swim in (rule of thirds)</span></div>
+      <div class="hero-stat"><span class="n">40 m</span><span class="l">maximum depth at TDI's cavern and cave levels</span></div>
+      <div class="hero-stat"><span class="n">61 m</span><span class="l">TDI's cavern limit, linear distance from the surface</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== 1. CHALLENGE =========================== -->
+<section class="block" id="challenge">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">01 · The challenge</span>
+      <h2>How well do you know the physics of cave diving?</h2>
+      <p>15 questions on the overhead, pressure and gas use, the rule of thirds, silt and guidelines, depth and buoyancy. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
+    </div>
+
+    <div class="quiz-shell">
+      <aside class="quiz-side" aria-label="Quiz progress">
+        <h4>Cave physics challenge</h4>
+        <div class="progress"><span id="quiz-progress"></span></div>
+        <div class="small" id="quiz-progress-label">0 of 15 answered</div>
+        <div class="dots" id="quiz-dots"></div>
+        <button class="btn btn-primary" type="button" id="quiz-submit">Submit &amp; see my score</button>
+        <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
+        <div class="warnline" id="quiz-warn" role="status"></div>
+        <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace training with a qualified cave instructor.</p>
+      </aside>
+      <div>
+        <div class="result" id="quiz-result" aria-live="polite"></div>
+        <form id="quiz-list" onsubmit="return false"></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== 2. SCIENCE =========================== -->
+<section class="block alt" id="science">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">02 · The science</span>
+      <h2>Six chapters. Every number worked out.</h2>
+      <p>Each chapter explains one idea in plain language, then works a real example. Try the Gas &amp; Thirds Lab to plan a turn pressure and see whether a shared exit adds up.</p>
+    </div>
+
+    <nav class="chapters-index" aria-label="Chapters">
+      <a href="#ch-overhead"><span class="n">CHAPTER 1</span><span class="t">The overhead</span><span class="d">Cavern, cave and why limits exist</span></a>
+      <a href="#ch-pressure"><span class="n">CHAPTER 2</span><span class="t">Pressure &amp; gas use</span><span class="d">Boyle's law, breath by breath</span></a>
+      <a href="#ch-thirds"><span class="n">CHAPTER 3</span><span class="t">The rule of thirds</span><span class="d">Turn pressures and the shared exit</span></a>
+      <a href="#ch-silt"><span class="n">CHAPTER 4</span><span class="t">Guidelines, silt &amp; zero visibility</span><span class="d">Stokes' law and the line home</span></a>
+      <a href="#ch-depth"><span class="n">CHAPTER 5</span><span class="t">Depth: dense gas &amp; the 40 m limit</span><span class="d">Density and partial pressures</span></a>
+      <a href="#ch-trim"><span class="n">CHAPTER 6</span><span class="t">Buoyancy &amp; trim under a ceiling</span><span class="d">Boyle's law in your BC</span></a>
+    </nav>
+
+    <!-- GAS & THIRDS LAB -->
+    <div class="lab" id="cv-lab">
+      <span class="eyebrow">Interactive · Gas &amp; Thirds Lab</span>
+      <h3>Plan the swim in, the turn, and a shared swim out</h3>
+      <p class="small" style="color:#a9c4d2;margin:0">Boyle's law in fresh water (about 1 bar more every 10.2 m), a 200-bar fill and the rule of thirds. Breathing rates are examples you choose; real rates rise with cold, effort and stress. For learning only; it is not a dive plan.</p>
+      <div style="margin-top:18px">
+        <div class="ctl"><label for="cv-d">Depth</label><input type="range" id="cv-d" min="5" max="40" step="1" value="20"><output id="cv-d-o">20 m</output></div>
+        <div class="ctl"><label for="cv-sac">Your breathing at the surface</label><input type="range" id="cv-sac" min="10" max="30" step="1" value="20"><output id="cv-sac-o">20 L/min</output></div>
+        <div class="ctl"><label for="cv-bsac">Buddy's breathing at the surface</label><input type="range" id="cv-bsac" min="10" max="30" step="1" value="20"><output id="cv-bsac-o">20 L/min</output></div>
+        <div class="ctl"><label>Your cylinders (200 bar)</label><div class="seg" id="cv-cyl"><button type="button" data-v="12" aria-pressed="true">Single 12 L</button><button type="button" data-v="24" aria-pressed="false">Twin 2 × 12 L</button></div><span></span></div>
+      </div>
+      <div class="lab-grid" style="margin-top:18px">
+        <div class="lab-card"><span class="k">Pressure at depth</span><span class="v" id="cv-P">2.96 bar</span><span class="s">Ch 2 · 1 + depth ÷ 10.2</span></div>
+        <div class="lab-card"><span class="k">Your gas use there</span><span class="v" id="cv-use">59 L/min</span><span class="s">Ch 2 · surface rate × pressure</span></div>
+        <div class="lab-card"><span class="k">Gas in your cylinders</span><span class="v" id="cv-gas">2,400 L</span><span class="s">Ch 2 · litres × 200 bar</span></div>
+        <div class="lab-card"><span class="k">Turn at</span><span class="v" id="cv-turn">134 bar</span><span class="s">Ch 3 · a third used (66 bar)</span></div>
+        <div class="lab-card"><span class="k">Time to the turn</span><span class="v" id="cv-tin">13.4 min</span><span class="s">Ch 3 · a third ÷ gas use</span></div>
+        <div class="lab-card"><span class="k">Shared exit needs</span><span class="v" id="cv-need">1,584 L</span><span class="s">Ch 3 · both of you, same time out</span></div>
+        <div class="lab-card"><span class="k">You have left</span><span class="v" id="cv-have">1,608 L</span><span class="s">Ch 3 · two-thirds at the turn</span></div>
+        <div class="lab-card"><span class="k">Shared exit</span><span class="v" id="cv-res">24 L spare</span><span class="s" id="cv-res-s">Ch 3 · if the buddy loses all gas at the turn</span></div>
+      </div>
+      <div class="bar-vis" aria-hidden="true"><span id="cv-bar"></span></div>
+      <p class="fine">Bar = how much of your remaining two-thirds a shared exit would take. Over 100% means you'd run out. Real plans also allow for different cylinder sizes, decompression, flow and stress. Learn gas planning from a cave instructor, not this lab.</p>
+    </div>
+
+
+    <!-- CHAPTER 1 -->
+    <article class="chapter" id="ch-overhead">
+      <header><span class="chno">CH 1</span><h3>The overhead: no straight way up</h3></header>
+      <p class="hook">In open water, a problem can end with a slow swim to the surface. In a cave, the only way out is the way you came in.</p>
+      <div class="body">
+        <p>Cave divers call any place with rock or ice above them an <strong>overhead environment</strong>. The <strong>cavern</strong> is the entrance zone you can still see daylight from; beyond it is the <strong>cave</strong>, with no natural light at all. Training agencies set firm limits for each zone. TDI's Cavern Diver course, for example, limits graduates to 61 linear metres (200 ft) from the surface, a maximum depth of 40 m, a continuous guideline, and no restrictions or areas too small for two divers to swim side by side.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how far "out" really is (example swim speed 10 m per minute)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Distance inside</th><th>Swim out at 10 m/min</th><th>At 5 m/min (zero visibility, on the line)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30 m</td><td class="num">3 min</td><td class="num">6 min</td></tr>
+              <tr><td class="num">61 m (TDI cavern limit)</td><td class="num">≈ 6 min</td><td class="num">≈ 12 min</td></tr>
+              <tr><td class="num">200 m</td><td class="num">20 min</td><td class="num">40 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Time = distance ÷ speed: 61 ÷ 10 ≈ 6 min. Halving your speed doubles the time, and every one of those minutes uses gas at depth (<a href="#ch-pressure">Ch 2</a>). The swim speeds are examples, not standards.</p>
+        </div>
+        <h4>Why cave divers train in steps</h4>
+        <ul>
+          <li><strong>Accident analysis:</strong> the NSS Cave Diving Section says analysing accidents produced safety rules that greatly improved survival, published in Sheck Exley's <em>Basic Cave Diving: Blueprint for Survival</em> (1979).</li>
+          <li><strong>The results:</strong> the same NSS-CDS history records cave-diving deaths falling from an all-time high of 26 in 1974 to fewer than five a year after its training programme began.</li>
+          <li><strong>Step by step:</strong> TDI's path runs Cavern → Intro to Cave → Full Cave, each with its own limits (see the ladder below).</li>
+        </ul>
+        <div class="callout warn"><h4>Open-water training isn't cave training</h4><p style="margin:0">An open-water card doesn't cover overhead diving. Don't swim into a cavern or cave, even "just to look", without cave training and a guideline.</p></div>
+        <details class="check"><summary>You're 120 m inside a cave and visibility drops to zero, halving your speed from 8 to 4 m per minute. How long is the swim out?</summary>
+        <p>120 ÷ 4 = <strong>30 minutes</strong>, instead of 15 at normal speed.</p></details>
+        <p class="small src">Sources: <a href="https://www.tdisdi.com/tdi/get-certified/cavern-diver/" target="_blank" rel="noopener">TDI Cavern Diver</a> · <a href="https://nsscds.org/history/" target="_blank" rel="noopener">NSS-CDS history</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="chapter" id="ch-pressure">
+      <header><span class="chno">CH 2</span><h3>Pressure &amp; gas use</h3></header>
+      <p class="hook">At 30 m every breath takes about four times the gas it does at the surface.</p>
+      <div class="body">
+        <p>Water pressure adds about 1 bar for every 10 m of sea water, or about 10.2 m of fresh water (many caves are fresh). Your regulator delivers gas at the surrounding pressure, so by <strong>Boyle's law</strong> each lungful holds more gas the deeper you are: <span class="eq">gas use at depth = surface rate × absolute pressure</span>, with <span class="eq">P ≈ 1 + depth ÷ 10.2</span> bar in fresh water.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · gas use in fresh water (example surface rate 20 L/min)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Absolute pressure</th><th>Gas use</th><th>Minutes from a 12 L cylinder at 200 bar (2,400 L)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">Surface</td><td class="num">1.0 bar</td><td class="num">20 L/min</td><td class="num">120 min</td></tr>
+              <tr><td class="num">10 m</td><td class="num">≈ 2.0 bar</td><td class="num">≈ 40 L/min</td><td class="num">≈ 60 min</td></tr>
+              <tr><td class="num">20 m</td><td class="num">≈ 3.0 bar</td><td class="num">≈ 59 L/min</td><td class="num">≈ 41 min</td></tr>
+              <tr><td class="num">30 m</td><td class="num">≈ 3.9 bar</td><td class="num">≈ 79 L/min</td><td class="num">≈ 30 min</td></tr>
+              <tr><td class="num">40 m</td><td class="num">≈ 4.9 bar</td><td class="num">≈ 98 L/min</td><td class="num">≈ 24 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">30 m: P = 1 + 30 ÷ 10.2 ≈ 3.94 bar; 20 × 3.94 ≈ 79 L/min; 2,400 ÷ 79 ≈ 30 min. That's the whole cylinder: with the rule of thirds (<a href="#ch-thirds">Ch 3</a>) you'd turn after about 10. Treating gas as ideal is a small simplification at 200 bar.</p>
+        </div>
+        <h4>What changes your gas use</h4>
+        <ul>
+          <li><strong>Depth:</strong> the biggest factor, straight from the pressure.</li>
+          <li><strong>Effort and cold:</strong> swimming against flow, task loading and shivering all raise your breathing rate.</li>
+          <li><strong>Stress:</strong> fast, shallow breathing burns gas when you can least afford it. TDI's courses include stress management and breathing techniques.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 12 L cylinder at 200 bar holds about 2,400 litres of air. At the example rate of 20 L/min that lasts two hours at the surface, but only about half an hour at 30 m.</div></div>
+        <details class="check"><summary>Your surface rate is 15 L/min. How much gas do you use per minute at 25 m in fresh water?</summary>
+        <p>P ≈ 1 + 25 ÷ 10.2 ≈ 3.45 bar; 15 × 3.45 ≈ <strong>52 L/min</strong>.</p></details>
+        <p class="small src">Physics: Boyle's law and hydrostatic pressure (ρ g h with fresh water at 1,000 kg/m³). Courses: <a href="https://www.tdisdi.com/tdi/get-certified/intro-to-cave-diver/" target="_blank" rel="noopener">TDI Intro to Cave Diver</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="chapter" id="ch-thirds">
+      <header><span class="chno">CH 3</span><h3>The rule of thirds</h3></header>
+      <p class="hook">One third in, one third out, one third for the problem you didn't plan for.</p>
+      <div class="body">
+        <p>By 1968 Sheck Exley had proposed the <strong>rule of thirds</strong>, which the NSS Cave Diving Section says is still used today: you turn the dive when you've used a third of your starting gas. TDI's cavern and intro-to-cave limits write it as penetration limited to "the rule of thirds," or 1/6th if using doubles; its Full Cave level keeps the rule of thirds. The third you keep in reserve is for emergencies, most of all a buddy who loses their gas.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · turn pressures and the shared exit</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Start</th><th>A third (rounded down)</th><th>Turn at</th><th>Left at the turn</th></tr></thead>
+            <tbody>
+              <tr><td class="num">200 bar</td><td class="num">66 bar</td><td class="num">134 bar</td><td class="num">134 bar (two-thirds)</td></tr>
+              <tr><td class="num">230 bar</td><td class="num">76 bar</td><td class="num">154 bar</td><td class="num">154 bar</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Shared exit, same depth and same time out: you used one third getting in. If your buddy loses all their gas at the turn and breathes exactly as you do, two of you need 2 × ⅓ = ⅔ for the exit: everything you have left, with nothing spare. If your buddy breathes 25% faster, you'd need ⅓ × (1 + 1.25) = 0.75 of your gas: more than you have. That's why thirds is a minimum, and why dissimilar cylinder sizes need their own sums (TDI teaches gas management "to include dissimilar volumes").</p>
+        </div>
+        <h4>Using the rule</h4>
+        <ul>
+          <li><strong>Turn on the first signal:</strong> whoever reaches their turn pressure first turns the whole team.</li>
+          <li><strong>Round in the safe direction:</strong> round the third down, so the turn pressure is higher.</li>
+          <li><strong>Watch the flow:</strong> thirds assumes the swim out takes as long as the swim in. If you swim in with the flow, the exit is against it and takes longer, so the same gas buys less distance home.</li>
+        </ul>
+        <div class="callout warn"><h4>Thirds assumes things go to plan on the way out</h4><p style="margin:0">Lost line, silt-out and stress all slow the exit and raise breathing. The reserve is there for those, not for extending the dive.</p></div>
+        <details class="check"><summary>You start at 210 bar. What's your turn pressure on thirds?</summary>
+        <p>210 ÷ 3 = 70, so turn at <strong>140 bar</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://nsscds.org/history/" target="_blank" rel="noopener">NSS-CDS history</a> · <a href="https://www.tdisdi.com/tdi/get-certified/intro-to-cave-diver/" target="_blank" rel="noopener">TDI Intro to Cave Diver</a> · <a href="https://www.tdisdi.com/tdi/get-certified/full-cave-diver/" target="_blank" rel="noopener">TDI Full Cave Diver</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4 -->
+    <article class="chapter" id="ch-silt">
+      <header><span class="chno">CH 4</span><h3>Guidelines, silt &amp; zero visibility</h3></header>
+      <p class="hook">One careless fin kick can turn crystal-clear water into brown fog that takes hours to settle.</p>
+      <div class="body">
+        <p>Cave floors are often covered in fine silt and clay. Stirred up, the particles sink very slowly. <strong>Stokes' law</strong> gives the settling speed of a small grain in still water: <span class="eq">v = 2 (ρ<sub>grain</sub> − ρ<sub>water</sub>) g r² ÷ 9μ</span>. Because v depends on the radius squared, a grain ten times smaller sinks a hundred times slower.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · settling speed in still water at about 20 °C (mineral grains, 2,650 kg/m³)</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Grain diameter</th><th>Settling speed</th><th>Time to fall 1 m</th></tr></thead>
+            <tbody>
+              <tr><td class="num">200 µm (fine sand)</td><td class="num">≈ 3.6 cm/s*</td><td class="num">≈ 30 s</td></tr>
+              <tr><td class="num">20 µm (silt)</td><td class="num">≈ 0.36 mm/s</td><td class="num">≈ 46 min</td></tr>
+              <tr><td class="num">2 µm (clay)</td><td class="num">≈ 3.6 µm/s</td><td class="num">≈ 3 days</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">20 µm: r = 10 µm; v = 2 × 1,650 × 9.81 × (10⁻⁵)² ÷ (9 × 0.001) ≈ 3.6 × 10⁻⁴ m/s; 1 m ÷ 0.00036 m/s ≈ 2,800 s ≈ 46 min. *Stokes' law only holds for slow, tiny grains; it overestimates the fine-sand speed. Cold water is more viscous, so everything settles even more slowly.</p>
+        </div>
+        <h4>How cave divers deal with it</h4>
+        <ul>
+          <li><strong>A continuous guideline to open water:</strong> TDI requires it at every cave level; divers practise following the line with their eyes closed and sharing air by touch in the dark.</li>
+          <li><strong>Line markers:</strong> the NSS-CDS history describes how arrow-shaped markers on the line came to point the way to the nearest exit.</li>
+          <li><strong>Anti-silting finning:</strong> TDI's courses train finning and trim that keep water moving up and back, not down into the floor.</li>
+          <li><strong>Lights:</strong> TDI's skills include simulating a primary light failure and exiting on a backup light.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Clay-sized silt falls about a third of a metre a day. Stir up a passage and the next team may find it still cloudy.</div></div>
+        <details class="check"><summary>Grain A is 40 µm across, grain B is 4 µm. How much faster does A settle?</summary>
+        <p>Speed ∝ r², so (40 ÷ 4)² = <strong>100 times faster</strong>.</p></details>
+        <p class="small src">Physics: Stokes' law (water viscosity ≈ 1.0 mPa·s at 20 °C). Courses and history: <a href="https://www.tdisdi.com/tdi/get-certified/full-cave-diver/" target="_blank" rel="noopener">TDI Full Cave Diver</a> · <a href="https://nsscds.org/history/" target="_blank" rel="noopener">NSS-CDS history</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="chapter" id="ch-depth">
+      <header><span class="chno">CH 5</span><h3>Depth: dense gas &amp; the 40 m limit</h3></header>
+      <p class="hook">Deeper gas is thicker gas: harder to breathe, and with more nitrogen pressing on your brain.</p>
+      <div class="body">
+        <p>Air at the surface has a density of about 1.2 kg/m³ (the NASA standard atmosphere gives 1.225 at 15 °C). Compress it and density rises with pressure: at 40 m in fresh water (≈ 4.9 bar) your air is nearly five times as dense, so every breath takes more work. The <strong>partial pressure</strong> of each gas rises too: <span class="eq">p<sub>gas</sub> = fraction × absolute pressure</span>. TDI's cavern, intro and full cave levels all set a maximum depth of 40 m, and Tech Dive Thailand's deep cave course uses trimix because, in its words, narcosis is an issue to avoid in this kind of overhead environment.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · breathing air in fresh water</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Depth</th><th>Absolute pressure</th><th>Air density</th><th>Nitrogen partial pressure (79%)</th><th>Oxygen partial pressure (21%)</th></tr></thead>
+            <tbody>
+              <tr><td class="num">Surface</td><td class="num">1.0 bar</td><td class="num">≈ 1.2 kg/m³</td><td class="num">0.79 bar</td><td class="num">0.21 bar</td></tr>
+              <tr><td class="num">20 m</td><td class="num">≈ 3.0 bar</td><td class="num">≈ 3.6 kg/m³</td><td class="num">≈ 2.3 bar</td><td class="num">≈ 0.62 bar</td></tr>
+              <tr><td class="num">40 m</td><td class="num">≈ 4.9 bar</td><td class="num">≈ 6.0 kg/m³</td><td class="num">≈ 3.9 bar</td><td class="num">≈ 1.03 bar</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">40 m: P = 1 + 40 ÷ 10.2 ≈ 4.92 bar; density ≈ 1.225 × 4.92 ≈ 6.0 kg/m³; pN₂ ≈ 0.79 × 4.92 ≈ 3.9 bar; pO₂ ≈ 0.21 × 4.92 ≈ 1.03 bar.</p>
+        </div>
+        <h4>Why depth limits matter more in caves</h4>
+        <ul>
+          <li><strong>Clear thinking:</strong> following a line, counting gas and solving problems all need a clear head; nitrogen narcosis dulls it.</li>
+          <li><strong>Harder breathing:</strong> denser gas means more effort per breath, which raises breathing rate and gas use.</li>
+          <li><strong>Decompression:</strong> deeper and longer dives need decompression stops; TDI's Full Cave course needs separate decompression training if decompression dives are part of it.</li>
+        </ul>
+        <details class="check"><summary>What's the oxygen partial pressure of air at 30 m in fresh water?</summary>
+        <p>P ≈ 3.94 bar; 0.21 × 3.94 ≈ <strong>0.83 bar</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html" target="_blank" rel="noopener">NASA Glenn: Earth atmosphere model</a> · <a href="https://www.tdisdi.com/tdi/get-certified/full-cave-diver/" target="_blank" rel="noopener">TDI Full Cave Diver</a> · <a href="https://www.techdivethailand.com/cavern-cave-diver/" target="_blank" rel="noopener">Tech Dive Thailand</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-trim">
+      <header><span class="chno">CH 6</span><h3>Buoyancy &amp; trim under a ceiling</h3></header>
+      <p class="hook">Rise a few metres too fast in open water and you surface. In a cave you hit the roof.</p>
+      <div class="body">
+        <p>Archimedes: you float when the water you displace weighs as much as you and your kit. A buoyancy compensator (BC) adds lift with a bubble of gas, and by Boyle's law that bubble shrinks as you go down and grows as you go up. Near the surface the change is largest: the bubble doubles in size between 10 m and the surface.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 2 litres of gas in the BC, fresh water</span>
+          <div class="table-scroll"><table class="data">
+            <thead><tr><th>Start depth</th><th>Rise to</th><th>Volume becomes</th><th>Extra lift</th></tr></thead>
+            <tbody>
+              <tr><td class="num">30 m (3.94 bar)</td><td class="num">20 m (2.96 bar)</td><td class="num">≈ 2.7 L</td><td class="num">≈ 0.7 kg</td></tr>
+              <tr><td class="num">10 m (1.98 bar)</td><td class="num">Surface (1 bar)</td><td class="num">≈ 4.0 L</td><td class="num">≈ 2 kg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">P₁V₁ = P₂V₂: 2 × 3.94 ÷ 2.96 ≈ 2.66 L. Each extra litre displaces about 1 kg of fresh water. Unless you vent as you rise, a small ascent speeds itself up.</p>
+        </div>
+        <h4>Trim and drag</h4>
+        <ul>
+          <li><strong>Horizontal trim:</strong> a flat, streamlined body presents less frontal area, so water drag (∝ area × speed²) is lower and your fins stay off the floor.</li>
+          <li><strong>Stay neutral:</strong> small, early adjustments beat big corrections. TDI's skills include buoyancy control, proper trim and propulsion techniques.</li>
+          <li><strong>No dangling kit:</strong> anything hanging can snag the line or the rock.</li>
+        </ul>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Half a litre of extra gas is about half a kilogram of lift: enough to drift you up into the ceiling in a minute if you don't notice.</div></div>
+        <details class="check"><summary>1 litre of gas in your BC at 20 m (2.96 bar). What's its volume at 5 m (1.49 bar)?</summary>
+        <p>1 × 2.96 ÷ 1.49 ≈ <strong>2 litres</strong>: about 1 kg more lift.</p></details>
+        <p class="small src">Physics: Archimedes' principle, Boyle's law. Skills: <a href="https://www.tdisdi.com/tdi/get-certified/cavern-diver/" target="_blank" rel="noopener">TDI Cavern Diver</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================== 3. LADDER =========================== -->
+<section class="block" id="certs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">03 · The cave ladder</span>
+      <h2>Open water → cavern → intro to cave → full cave</h2>
+      <p>Cave diving is learned in steps, each with its own limits. Below is TDI's path as an example, with the prerequisites quoted from TDI's own course pages. Other agencies, including CMAS, run their own cave levels.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 1 · Before you start</span><b>Experienced open-water diver</b><span class="iso">Your open-water card + logged dives</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Prerequisites (quoted)</span><span class="cn">TDI Cavern Diver</span><ul><li>"Minimum age 18, 15 with parental consent"</li><li>"Provide proof of an SDI Open Water Scuba Diver or equivalent"</li><li>"Proof of 25 logged dives"</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">Pressure and buoyancy</span><ul><li><a href="#ch-pressure">Ch 2</a> and <a href="#ch-trim">Ch 6</a></li><li>The basics: Kinetic's <a href="../scuba/">scuba page</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Not an official grade</span>Get your buoyancy and trim rock-steady in open water first. Everything in a cave builds on it.</div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 2 · Cavern</span><b>TDI Cavern Diver</b><span class="iso">Daylight zone only</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Limits after the course</span><span class="cn">TDI Cavern Diver</span><ul><li>Penetration limited to "the rule of thirds," or 1/6th if using doubles, to a maximum depth of 40 m</li><li>61 linear metres from the surface; continuous guideline; no restrictions too small for two divers side by side</li></ul></div>
+          <div class="ag"><span class="an">Science you're using</span><span class="cn">The overhead and silt</span><ul><li><a href="#ch-overhead">Ch 1</a>, <a href="#ch-silt">Ch 4</a></li></ul></div>
+          <div class="ag"><span class="an">Course page</span><span class="cn">TDI</span><ul><li><a href="https://www.tdisdi.com/tdi/get-certified/cavern-diver/" target="_blank" rel="noopener">tdisdi.com: Cavern Diver</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 3 · Intro to cave</span><b>TDI Intro to Cave Diver</b><span class="iso">Single primary guideline</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Prerequisites (quoted)</span><span class="cn">TDI Intro to Cave Diver</span><ul><li>"Minimum age 18, 15 with parental consent"</li><li>"Provide proof of TDI Cavern Diver certification or equivalent"</li></ul></div>
+          <div class="ag"><span class="an">Limits after the course</span><span class="cn">TDI</span><ul><li>Rule of thirds, or 1/6th if using doubles, to a maximum depth of 40 m; continuous guideline</li></ul></div>
+          <div class="ag"><span class="an">Course page</span><span class="cn">TDI</span><ul><li><a href="https://www.tdisdi.com/tdi/get-certified/intro-to-cave-diver/" target="_blank" rel="noopener">tdisdi.com: Intro to Cave Diver</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Step 4 · Full cave</span><b>TDI Full Cave Diver</b><span class="iso">Jumps, gaps, lost-line drills</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">Prerequisites (quoted)</span><span class="cn">TDI Full Cave Diver</span><ul><li>"Minimum age 18"</li><li>"Minimum certification of TDI Introductory Cave Diver, or equivalent"</li><li>Decompression training too if decompression dives are part of the course</li></ul></div>
+          <div class="ag"><span class="an">Limits after the course</span><span class="cn">TDI</span><ul><li>Rule of thirds, to a maximum depth of 40 m; continuous guideline</li></ul></div>
+          <div class="ag"><span class="an">Course page</span><span class="cn">TDI</span><ul><li><a href="https://www.tdisdi.com/tdi/get-certified/full-cave-diver/" target="_blank" rel="noopener">tdisdi.com: Full Cave Diver</a></li></ul></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl"><span class="step">Another route</span><b>CMAS cave standards</b><span class="iso">World federation standards</span></div>
+        <div class="cols">
+          <div class="ag"><span class="an">What CMAS publishes</span><span class="cn">CMAS training standards</span><ul><li>Cave Diver Level II (Apprentice Cave Diver)</li><li>Cave Diving Instructor levels I–III</li></ul></div>
+          <div class="ag"><span class="an">Course page</span><span class="cn">CMAS</span><ul><li><a href="https://www.cmas.org/standards.html" target="_blank" rel="noopener">cmas.org: training standards</a></li></ul></div>
+          <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Ask the school</span>Ask which agency's standards a course follows, and what its limits are.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== 4. GOVERNING BODIES =========================== -->
+<section class="block alt" id="bodies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">04 · Governing bodies</span>
+      <h2>Who sets the rules</h2>
+      <p>Cave diving has no Olympic-style federation. Its rules come from the world underwater federation's standards, training agencies' course standards and cave-diving organisations' safety work. We checked each on its own official website.</p>
+    </div>
+
+    <h3 class="subhead">Global</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">World federation</span><h4>CMAS, the World Underwater Federation</h4><p>Publishes international diver-training standards, including Cave Diver Level II (Apprentice Cave Diver) and three cave-diving instructor levels.</p><a class="url" href="https://www.cmas.org/standards.html" target="_blank" rel="noopener">cmas.org</a></div>
+      <div class="card"><span class="tag">Training agency</span><h4>Technical Diving International (TDI)</h4><p>Runs the Cavern Diver, Intro to Cave Diver and Full Cave Diver courses, each with published prerequisites and limits.</p><a class="url" href="https://www.tdisdi.com/tdi/get-certified/intro-to-cave-diver/" target="_blank" rel="noopener">tdisdi.com</a></div>
+      <div class="card"><span class="tag">Cave-diving organisation</span><h4>NSS Cave Diving Section (NSS-CDS)</h4><p>Founded in 1973 by cave-diving members of the US National Speleological Society. Its accident analysis produced the safety rules published in Basic Cave Diving: Blueprint for Survival (1979).</p><a class="url" href="https://nsscds.org/history/" target="_blank" rel="noopener">nsscds.org</a></div>
+    </div>
+
+    <h3 class="subhead">India</h3>
+    <div class="callout note"><p style="margin:0">No Indian school or governing body found as of Oct 2026. India has recreational and technical dive centres, but we found no cavern or cave course. Start with the basics on Kinetic's <a href="../scuba/">scuba page</a>.</p></div>
+  </div>
+</section>
+
+<!-- whoswho:start · generated by kinetic-tools/build/whoswho.py from build/whoswho_data.py; do not hand-edit -->
+<section class="block" id="compete">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Compete</span>
+      <h2>No competitive circuit in India</h2>
+    </div>
+    <ol class="kp-ladder">
+      <li><span class="kp-n">1</span><div><b>Cavern, intro to cave and full cave courses abroad</b><span class="kp-body"><a href="https://www.tdisdi.com/tdi/get-certified/cavern-diver/" target="_blank" rel="noopener">Training agencies such as TDI</a></span></div></li>
+      <li><span class="kp-n">2</span><div><b>International diver-training standards</b><span class="kp-body"><a href="https://www.cmas.org/standards.html" target="_blank" rel="noopener">CMAS, the World Underwater Federation</a></span></div></li>
+    </ol>
+    <div class="kp-grid"><div class="kp-box"><h4>Entry</h4><p>Each agency sets its own course prerequisites and limits.</p></div></div>
+    <details class="kp-plan"><summary>First year</summary><p class="kp-gen">General guidance, not a source.</p><ol><li>Get your open-water buoyancy and trim rock-steady and log the dives a cavern course asks for.</li><li>Then train with a qualified cave instructor, one level at a time.</li></ol></details>
+  </div>
+</section>
+<!-- whoswho:end -->
+
+<!-- =========================== 5. LEARN ABROAD =========================== -->
+<section class="block" id="abroad">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">05 · Learn abroad</span>
+      <h2>Where to learn it abroad</h2>
+      <p>Official school websites, checked 19 Oct 2026. Course content and entry rules change, so confirm them with the school.</p>
+    </div>
+    <ul class="abroad">
+      <li><a href="https://krabiscubaclub.com/" target="_blank" rel="noopener">Krabi Scuba Club</a><span>IANTD cavern to technical cave, Krabi, Thailand</span></li>
+      <li><a href="https://www.techdivethailand.com/cavern-cave-diver/" target="_blank" rel="noopener">Tech Dive Thailand</a><span>cavern and cave courses at Song Hong and Spider Cave, Thailand; its cavern course requires Tech 40 certification</span></li>
+    </ul>
+    <p class="small abroad-note">Prerequisites quoted above are from TDI's own course pages. Related on Kinetic: <a href="../scuba/">scuba diving</a>.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- giscus:start · generated by kinetic-tools/build/footers.py from build/giscus-snippet.orig.html; do not hand-edit -->
+<section id="comments" class="block comments" aria-labelledby="comments-h" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="section-head" style="max-width:860px;margin:0 auto 24px">
+      <span class="eyebrow">Discuss</span>
+      <h2 id="comments-h">Discuss this page</h2>
+      <p>Questions, corrections or your own experience of the sport? Comments run on GitHub Discussions, so you need a GitHub account to post.</p>
+    </div>
+    <div class="comments-embed" style="max-width:860px;margin:0 auto;min-width:0">
+<script src="https://giscus.app/client.js"
+        data-repo="curiosta/kinetic"
+        data-repo-id="R_kgDOU5lPeg"
+        data-category="Comments"
+        data-category-id="DIC_kwDOU5lPes4DG967"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
+  </div>
+</section>
+<!-- giscus:end -->
+
+<!-- Gear: reserved placeholder for a future section (affiliate setup pending). Not built yet; keep hidden. -->
+<section id="gear" class="gear-placeholder" hidden aria-hidden="true" data-placeholder="gear"></section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
+      <div>The science of individual adventure sports · a Curiosta brand · <a href="../">All sports</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 19 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a> · <a href="../ice-diving/">ice diving</a> · <a href="../big-wave-surfing/">big-wave surfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a> · <a href="../snowkiting/">snowkiting</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../rock-climbing/">rock climbing</a> · <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+    </div>
+    <div class="proto">Prototype - kinetic.curiosta.com</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kinetic.curiosta.com/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/calendar/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://kinetic.curiosta.com/watch-list/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/scuba/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/freediving/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/swimming/</loc><lastmod>2026-10-06</lastmod></url>
@@ -29,4 +28,8 @@
   <url><loc>https://kinetic.curiosta.com/shooting/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/running/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://kinetic.curiosta.com/triathlon/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://kinetic.curiosta.com/cave-diving/</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://kinetic.curiosta.com/ice-diving/</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://kinetic.curiosta.com/big-wave-surfing/</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://kinetic.curiosta.com/snowkiting/</loc><lastmod>2026-10-19</lastmod></url>
 </urlset>
