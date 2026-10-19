@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
  ta.com
-DTSTAMP:20261018T000000Z
+DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261023
 SUMMARY:0755 India Open — Rifle & Pistol (NR events)
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261018T000000Z
+DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
@@ -41,24 +41,44 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
- skeet-20261205@kinetic.curiosta.com
-DTSTAMP:20261018T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261218
+ trap-20261112@kinetic.curiosta.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261217
+SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
+ Trap
+LOCATION:Dr Karni Singh Shooting Ranges\, New Delhi (tentative dates per NR
+ AI circular of 16 Oct 2026\; final schedule due 1-2 Nov)
+DESCRIPTION:Dr Karni Singh Shooting Ranges\, New Delhi (tentative dates per
+  NRAI circular of 16 Oct 2026\; final schedule due 1-2 Nov)\nOfficial page
+ : https://www.thenrai.in/details.aspx?view=8617\nKinetic Sport shooting pa
+ ge: https://kinetic.curiosta.com/shooting/\nDates as announced by the orga
+ niser: check the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8617
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
+ skeet-20261116@kinetic.curiosta.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261212
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
  Skeet
-LOCATION:New Delhi
-DESCRIPTION:New Delhi\nOfficial page: https://www.thenrai.in/shooting_calan
- der.aspx\nKinetic Sport shooting page: https://kinetic.curiosta.com/shooti
- ng/\nDates as announced by the organiser: check the official page before y
- ou plan.
-URL:https://www.thenrai.in/shooting_calander.aspx
+LOCATION:Dr Karni Singh Shooting Ranges\, New Delhi (tentative dates per NR
+ AI circular of 16 Oct 2026\; final schedule due 1-2 Nov)
+DESCRIPTION:Dr Karni Singh Shooting Ranges\, New Delhi (tentative dates per
+  NRAI circular of 16 Oct 2026\; final schedule due 1-2 Nov)\nOfficial page
+ : https://www.thenrai.in/details.aspx?view=8617\nKinetic Sport shooting pa
+ ge: https://kinetic.curiosta.com/shooting/\nDates as announced by the orga
+ niser: check the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8617
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-rifle-pi
  stol-20261211@kinetic.curiosta.com
-DTSTAMP:20261018T000000Z
+DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20270101
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Rifle & Pi
@@ -68,22 +88,6 @@ DESCRIPTION:New Delhi and Bhopal\nOfficial page: https://www.thenrai.in/sho
  oting_calander.aspx\nKinetic Sport shooting page: https://kinetic.curiosta
  .com/shooting/\nDates as announced by the organiser: check the official pa
  ge before you plan.
-URL:https://www.thenrai.in/shooting_calander.aspx
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
- trap-20261218@kinetic.curiosta.com
-DTSTAMP:20261018T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261228
-SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
- Trap
-LOCATION:New Delhi
-DESCRIPTION:New Delhi\nOfficial page: https://www.thenrai.in/shooting_calan
- der.aspx\nKinetic Sport shooting page: https://kinetic.curiosta.com/shooti
- ng/\nDates as announced by the organiser: check the official page before y
- ou plan.
 URL:https://www.thenrai.in/shooting_calander.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
