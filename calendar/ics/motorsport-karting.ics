@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:motorsport-karting-indian-national-car-racing-championship-round-2-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261019T000000Z
+DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261026
 SUMMARY:Indian National Car Racing Championship\, round 2
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:motorsport-karting-indian-national-car-racing-championship-round-3-2026
  1113@kinetic.curiosta.com
-DTSTAMP:20261019T000000Z
+DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:Indian National Car Racing Championship\, round 3
@@ -42,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:motorsport-karting-indian-national-car-racing-championship-finale-20261
  211@kinetic.curiosta.com
-DTSTAMP:20261019T000000Z
+DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Indian National Car Racing Championship\, finale

@@ -9,4 +9,23 @@ X-WR-CALDESC:Upcoming rock climbing events with announced dates\, from http
 X-WR-TIMEZONE:Asia/Kolkata
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:rock-climbing-30th-imf-national-sport-climbing-championship-20261127@ki
+ netic.curiosta.com
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261201
+SUMMARY:30th IMF National Sport Climbing Championship
+LOCATION:Venue TBA (planned dates per IMF Climbing Calendar 2026\; 29th edi
+ tion held 26-29 Dec 2025)
+DESCRIPTION:Venue TBA (planned dates per IMF Climbing Calendar 2026\; 29th 
+ edition held 26-29 Dec 2025)\nOfficial page: https://indmount.org/IMF/down
+ load?filePath=%2Fimffs01%2Fimfdocs%2F2026%2FnewsSection%2F257%2FsupportDoc
+ .pdf\nKinetic Rock climbing page: https://kinetic.curiosta.com/rock-climbi
+ ng/\nDates as announced by the organiser: check the official page before y
+ ou plan.
+URL:https://indmount.org/IMF/download?filePath=%2Fimffs01%2Fimfdocs%2F2026%
+ 2FnewsSection%2F257%2FsupportDoc.pdf
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
