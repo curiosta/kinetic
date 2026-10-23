@@ -3,7 +3,7 @@
   const PAGE = {
     key: "kitesurfing",
     v1: "Physics: nailed it 🪁",
-    b1: "You've got the physics of kitesurfing. Skim the chapters for anything you missed, then scroll to “Where to learn” for IKO-certified schools, championships and instructor courses at your level. Knowing the science is a great start; it isn't the same as kite control, self-rescue or reading a real spot.",
+    b1: "You've got the physics of kitesurfing. Skim the chapters for anything you missed, then scroll to “Where to learn” for kite schools, championships and instructor courses at your level. Knowing the science is a great start; it isn't the same as kite control, self-rescue or reading a real spot.",
     b2: "You have the basics. Fill the gaps below before your next session, especially the wind window and gust safety: they're the chapters that keep the kite under control.",
     b3: "No shame in that: this is exactly what the chapters are for. Read the ones linked below, then take the challenge again.",
     whereLabel: "Where to learn at my level →",

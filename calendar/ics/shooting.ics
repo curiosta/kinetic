@@ -10,24 +10,9 @@ X-WR-TIMEZONE:Asia/Kolkata
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:shooting-0755-india-open-rifle-pistol-nr-events-20261005@kinetic.curios
- ta.com
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261005
-DTEND;VALUE=DATE:20261023
-SUMMARY:0755 India Open — Rifle & Pistol (NR events)
-LOCATION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh
-DESCRIPTION:MP State Shooting Academy\, Bhopal\, Madhya Pradesh\nOfficial p
- age: https://www.thenrai.in/details.aspx?view=8592\nKinetic Sport shooting
-  page: https://kinetic.curiosta.com/shooting/\nDates as announced by the o
- rganiser: check the official page before you plan.
-URL:https://www.thenrai.in/details.aspx?view=8592
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
@@ -42,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  trap-20261112@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261217
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -60,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  skeet-20261116@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261212
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -78,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-rifle-pi
  stol-20261211@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20270101
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Rifle & Pi
