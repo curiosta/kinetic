@@ -1,0 +1,69 @@
+# Kinetic
+
+> Kinetic explains the physics behind 26 live adventure sports (plus 4 on a watchlist) and what it means for your safety: what happens to your body, your gear and the air or water around you, with real numbers. Each sport page has a pre-trip self-check quiz, an interactive lab, the skill or certification ladder, governing bodies in India and worldwide, and places to try it in India by level, with questions to ask before you book. The self-checks are for learning, not a certification. Kinetic does not list costs or fees.
+
+Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist pages cover sports with no Indian school or governing body found, so they have no where-to-go section and no season calendar rows.
+
+## Water
+
+- [Scuba diving](https://kinetic.curiosta.com/scuba/): Before your first dive: the physics of pressure, buoyancy, gas and ears, and what it means for you. Plus certifications and where to dive in India.
+- [Freediving](https://kinetic.curiosta.com/freediving/): Before your first breath-hold dive: check yourself in 15 questions on the dive reflex, oxygen and CO₂, blackout, lung squeeze and equalisation, and what they mean for you. Then follow the ladder from AIDA1 to AIDA4, PADI, SSI and Molchanovs courses.
+- [Swimming](https://kinetic.curiosta.com/swimming/): Before you swim: the physics of drag, buoyancy, breathing, currents and cold, and what it means for you. Plus learn-to-swim and lifesaving ladders, and swimathons and open-water events in India.
+- [Surfing](https://kinetic.curiosta.com/surfing/): Before you paddle out: the physics of swell, breaking waves, board volume and rip currents, and what it means for you. Check yourself in 15 questions, then follow the surf ladder to surf schools, contests and instructor courses in India.
+- [Kayaking & Rafting](https://kinetic.curiosta.com/kayaking-rafting/): Before you get on the river: check yourself in 15 questions on the force of moving water, ferry glides and river hazards, and what they mean for you. Then follow the paddling ladder to real rafting runs, kayak courses and guide training in India.
+- [Kitesurfing](https://kinetic.curiosta.com/kitesurfing/): Before your first kite lesson: check yourself in 15 questions on apparent wind, kite power, the wind window, riding upwind and gust safety, and what they mean for you. Then follow the IKO levels to independent riding, YAI championships and instructing in India.
+- [Windsurfing](https://kinetic.curiosta.com/windsurfing/): Before you sail a board: check yourself in 15 questions on apparent wind, sail force, steering, planing, tacking and wind safety, and what they mean for you. Then follow the ladder from first lessons to YAI championships, the Olympic iQFOiL and instructing.
+- [Sailing](https://kinetic.curiosta.com/sailing/): Before you sail: check yourself in 15 questions on lift, apparent wind, points of sail, tacking, heeling and hiking, and what they mean for you. Then follow the YAI and RYA dinghy ladders to clubs in India and abroad.
+
+## Air
+
+- [Paragliding](https://kinetic.curiosta.com/paragliding/): Before your first flight: the physics of lift, glide, thermals, wing loading, stalls and weather, and what it means for you. Plus pilot ratings, governing bodies and where to fly in India.
+- [Recreational flying](https://kinetic.curiosta.com/recreational-flying/): Before your first flight: lift and glide, thermals, hot-air buoyancy, powered vs unpowered flight, weather and stalls, and what they mean for you. Plus the passenger-to-licence ladder (DGCA, Aero Club of India, FAI) and Indian clubs, schools and balloon flights.
+- [Paramotoring](https://kinetic.curiosta.com/paramotoring/): Before your first powered flight: check yourself in 15 questions on thrust, PPG wings, torque, launches, fuel, wind and the rules, and what they mean for you. Then follow the ladder from paragliding to a paramotor course and PPG ratings.
+- [Skydiving](https://kinetic.curiosta.com/skydiving/): Before your first jump: check yourself in 15 questions on free fall, body position, opening forces, canopy flare, altitude and wind drift, and what they mean for you. Then follow the ladder from tandem to AFF and USPA A–D licences.
+- [Bungee & Zipline](https://kinetic.curiosta.com/bungee-zipline/): Before you jump or zip: check yourself in 15 questions on free fall, elastic cords, peak g, cord length, brakes and harnesses, and what they mean for you. Then see the operator standards and where to jump or zip in India and abroad.
+
+## Snow & ice
+
+- [Skiing & Snowboarding](https://kinetic.curiosta.com/skiing-snowboarding/): Before you hit the slopes: check yourself in 15 questions on slope forces, snow friction, turning and avalanche basics, and what they mean for you. Then follow the ski ladder to real government ski courses in Gulmarg, Solang and Auli.
+- [Ice skating](https://kinetic.curiosta.com/ice-skating/): Before you step on the ice: why it’s slippery (honestly), edges and lean, spins, jumps and falls, and what it means for you. Plus skill levels, governing bodies and where to skate in India.
+
+## Wheels
+
+- [Roller & inline skating](https://kinetic.curiosta.com/skating/): Before you roll: the physics of rolling resistance, wheels, balance, braking and ramps, and what it means for you. Plus skill levels, governing bodies and where to skate in India.
+- [Skateboarding](https://kinetic.curiosta.com/skateboarding/): Before you drop in: check yourself in 15 questions on rolling, balance, the ollie, ramps and how to fall, and what they mean for you. Then find skateparks, competitions and coaching pathways in India.
+- [Cycling & Mountain Biking](https://kinetic.curiosta.com/cycling-mtb/): Before you ride: check yourself in 15 questions on power, drag, climbing, gears, braking and trail riding, and what they mean for you. Then follow the ladder from Sunday rides and brevets to MTB courses and national races in India.
+- [Karting & Motorsport](https://kinetic.curiosta.com/motorsport-karting/): Before you drive on track: check yourself in 15 questions on tyre grip, cornering force, weight transfer, braking distance and g-forces, and what they mean for you. Then see the FMSCI and FIA licence grades and where to drive on track in India.
+
+## Land & rock
+
+- [Rock Climbing](https://kinetic.curiosta.com/rock-climbing/): Before you climb: check yourself in 15 questions on friction, fall factor, anchors and landings, and what they mean for you. Then follow the climbing ladder to real gyms, boulders, crags and courses in India.
+- [Trekking & Mountaineering](https://kinetic.curiosta.com/mountaineering/): Before you go high: check yourself in 15 questions on thin air, acclimatisation and altitude illness, wind chill, slips on snow and avalanche slopes, and what they mean for you. Then follow India's ladder from adventure course to Basic and Advanced Mountaineering at NIM, HMI, ABVIMAS and JIM&WS.
+- [Horse riding](https://kinetic.curiosta.com/horse-riding/): Before you ride: check yourself in 15 questions on balance, gaits, shock absorption, jumping, horse senses, helmets and body protectors, and what they mean for you. Then see the riding ladder, EFI and FEI, and where to ride in India and abroad.
+
+## Precision
+
+- [Archery](https://kinetic.curiosta.com/archery/): Before you shoot: check yourself in 15 questions on bow energy, arrow flight, aiming and range safety, and what they mean for you. Then follow the ladder from coaching to AAI nationals and academies in India.
+- [Shooting](https://kinetic.curiosta.com/shooting/): Before your first range session: check yourself in 15 questions on pellet flight, recoil, the hold, trigger control and range safety, and what they mean for you. Then follow the ladder from first lessons to NRAI nationals in India.
+
+## Endurance
+
+- [Running](https://kinetic.curiosta.com/running/): Before your next race: running economy, ground forces, VO2 max, energy, altitude and heat, and what they mean for you. Plus the 5K-to-ultra ladder with real qualification rules, governing bodies, and Indian races from Mumbai to the Ladakh Marathon.
+- [Triathlon & Ironman](https://kinetic.curiosta.com/triathlon/): Before your first race: check yourself in 15 questions on fuelling, pacing, swim drag and wetsuits, drafting, heat and transitions, and what they mean for you. Then follow the ladder from sprint to IRONMAN and the world championships.
+
+## Get fit and when to go
+
+- [Get fit](https://kinetic.curiosta.com/fit/): What your body does in adventure sports, a 6-week no-gym starter routine, what schools ask of beginners, eating and sleep, when to see a doctor, and a quick self-check.
+- [When to go](https://kinetic.curiosta.com/calendar/): Best months for 26 adventure sports in India, region by region, from diving in the Andamans to skiing in Gulmarg, with annual events and a source for every season.
+
+## Watchlist
+
+- [Cave diving](https://kinetic.curiosta.com/cave-diving/): Before you consider cave diving: check yourself in 15 questions on the overhead, gas use, the rule of thirds, silt and guidelines. Then see the cavern-to-full-cave ladder and where to learn abroad.
+- [Ice diving](https://kinetic.curiosta.com/ice-diving/): Before you consider ice diving: check yourself in 15 questions on the coldest water under the ice, heat loss, freezing regulators, tender lines and depth limits. Then see the CMAS Ice Diver path and where to learn abroad.
+- [Big-wave surfing](https://kinetic.curiosta.com/big-wave-surfing/): Before you consider big waves: check yourself in 15 questions on wave energy, long-period swell, seabed focusing, tow-in speeds and aerated water. Then see the safety and tow-in path and where to learn abroad.
+- [Snowkiting](https://kinetic.curiosta.com/snowkiting/): Before you consider snowkiting: check yourself in 15 questions on wind pressure, thin mountain air, the wind window, quick release, avalanche slopes and wind chill. Then see the snowkite path and where to learn abroad.
+
+## Optional
+
+- [Home](https://kinetic.curiosta.com/): 26 live adventure sports plus 4 on the watchlist: the physics behind each one and what it means for you, with self-checks, labs and where to go.
+- [Sitemap](https://kinetic.curiosta.com/sitemap.xml): every page URL
