@@ -224,10 +224,14 @@
       return "n/a";
     }
     function fmt(x, dp) { return x.toFixed(dp); }
+    // Smooth drag: the slider moves in 0.1 m steps; every readout below is computed from that same depth and rounded
+    // only for display (depth to 0.1 m, the rest as before). Arrow keys still move 1 m, Page Up/Down 5 m.
     function update() {
-      const d = +slider.value;
+      const d = Math.round(+slider.value * 10) / 10;
       const P = 1 + d / 10;
-      $("lab-d").textContent = d;
+      const dTxt = Number.isInteger(d) ? String(d) : d.toFixed(1);
+      $("lab-d").textContent = dTxt;
+      slider.setAttribute("aria-valuetext", dTxt + " metres");
       $("lab-p").textContent = fmt(P, 1) + " bar";
       $("lab-vol").textContent = fmt(6 / P, 2) + " L";
       $("lab-use").textContent = Math.round(SAC * P) + " L/min";
@@ -239,9 +243,10 @@
       $("lab-o2n").style.color = po2n > 1.4 ? "#ff8a70" : "#fff";
       $("lab-o2n-note").textContent = po2n > 1.4 ? "over 1.4 bar, too deep for EAN32" : "within 1.4 bar working limit";
       $("lab-ndl").textContent = ndlFor(d);
+      document.getElementById("depth-lab").toggleAttribute("data-depth-gt18", d > 18);
       $("lab-narc").textContent = d >= 30 ? "likely noticeable" : d >= 20 ? "possible in some divers" : "unlikely";
-      const size = 140 * Math.cbrt(1 / P);
-      const b = $("lab-balloon"); b.style.width = b.style.height = size.toFixed(0) + "px";
+      // balloon diameter ∝ cube root of volume (Boyle: V = 6 L ÷ P); CSS sets the full-size diameter per screen size
+      $("lab-balloon").style.setProperty("--bscale", Math.cbrt(1 / P).toFixed(4));
       BANDS.forEach((band, i) => {
         const f = Math.exp(-band.a * d);
         const el = $("sw" + i);
@@ -251,6 +256,13 @@
       });
     }
     slider.addEventListener("input", update);
+    slider.addEventListener("keydown", e => {
+      const step = { ArrowRight: 1, ArrowUp: 1, ArrowLeft: -1, ArrowDown: -1, PageUp: 5, PageDown: -5 }[e.key];
+      if (!step) return;
+      e.preventDefault();
+      slider.value = Math.min(40, Math.max(0, Math.round(+slider.value) + step));
+      update();
+    });
     update();
   }
 

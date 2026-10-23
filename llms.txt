@@ -1,6 +1,6 @@
 # Kinetic
 
-> Kinetic explains the physics behind 26 live adventure sports (plus 4 on a watchlist) and what it means for your safety: what happens to your body, your gear and the air or water around you, with real numbers. Each sport page has a pre-trip self-check quiz, an interactive lab, the skill or certification ladder, governing bodies in India and worldwide, and places to try it in India by level, with questions to ask before you book. The self-checks are for learning, not a certification. Kinetic does not list costs or fees.
+> Kinetic explains the physics behind 26 live adventure sports (plus 4 on a watchlist) and what it means for your safety: what happens to your body, your gear and the air or water around you, with real numbers. Each sport page has a pre-trip self-check quiz, an interactive lab, the skill or certification levels, governing bodies in India and worldwide, and places to try it in India by level, with questions to ask before you book. The self-checks are for learning, not a certification. Kinetic does not list costs or fees.
 
 Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist pages cover sports with no Indian school or governing body found, so they have no where-to-go section and no season calendar rows.
 

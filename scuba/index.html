@@ -104,13 +104,13 @@
         <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
         <a class="btn btn-ghost" href="#science">Skip to the science</a>
       </div>
-      <div class="depthgauge" aria-hidden="true"><span>0 m</span><span class="bar"></span><span>40 m</span></div>
+      <div class="depthgauge" aria-hidden="true"><span>0 m</span><span class="bar"></span><span data-depth-gt18>40 m</span></div>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><span class="n">2×</span><span class="l">The water pressure on you at just 10&nbsp;m down.</span><span class="s">So the air in your ears and mask shrinks by half.</span></div>
       <div class="hero-stat"><span class="n">≈ 1.2&nbsp;m</span><span class="l">The depth at which a blocked ear can lock shut.</span><span class="s">Equalise early and often, before it hurts.</span></div>
       <div class="hero-stat"><span class="n">12&nbsp;L</span><span class="l">What a held 6&nbsp;L breath from 10&nbsp;m becomes at the surface.</span><span class="s">Lungs can't double. Never hold your breath as you rise.</span></div>
-      <div class="hero-stat"><span class="n">4×</span><span class="l">How much faster you use air at 30&nbsp;m than at the surface.</span><span class="s">A 90-minute tank up top lasts about 22&nbsp;min there.</span></div>
+      <div class="hero-stat" data-depth-gt18><span class="n">4×</span><span class="l">How much faster you use air at 30&nbsp;m than at the surface.</span><span class="s">A 90-minute tank up top lasts about 22&nbsp;min there.</span></div>
     </div>
   </div>
 </div>
@@ -135,7 +135,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">01 · The challenge</span>
-      <h2>Would your physics keep you safe at 30 m?</h2>
+      <h2 data-depth-gt18>Would your physics keep you safe at 30 m?</h2>
       <p>15 questions on what's really going on down there: a quick check of what will be happening to you, before you go. No trick wording and no exam pressure. You'll get your score, a verdict, an explanation for every answer, and a link to the chapter for anything you missed.</p>
     </div>
 
@@ -149,7 +149,7 @@
         <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
         <div class="warnline" id="quiz-warn" role="status"></div>
         <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
-        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification or fitness-to-dive assessment.</p>
+        <p class="small" data-reel-hide style="margin-top:8px;color:#ffe08a">A self-check for learning, not a certification or fitness-to-dive assessment.</p>
       </aside>
       <div>
         <div class="result" id="quiz-result" aria-live="polite"></div>
@@ -164,7 +164,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">02 · The science</span>
-      <h2>Six chapters, from the surface to 40 m</h2>
+      <h2 data-depth-gt18>Six chapters, from the surface to 40 m</h2>
       <p>Each chapter takes one physical law and follows it underwater, with worked numbers you can check on a calculator. We round seawater to "1 bar per 10 m". The precise figure is about 1 bar per 10.06 m, and the difference doesn't matter for anything here.</p>
     </div>
 
@@ -184,7 +184,7 @@
       <p class="small" style="color:#a9c4d2;margin:0">All six chapters on one slider. The assumptions: seawater, surface air consumption 20 L/min, a 12-litre cylinder used from 200 to 50 bar (1,800 L usable), and clear "pure-water" light absorption.</p>
       <div class="controls">
         <div class="depthread"><span id="lab-d">0</span><small> m</small></div>
-        <input type="range" id="lab-depth" min="0" max="40" step="1" value="0" aria-label="Depth in metres">
+        <input type="range" id="lab-depth" min="0" max="40" step="0.1" value="0" aria-label="Depth in metres" aria-valuetext="0 metres">
       </div>
       <div class="lab-grid">
         <div class="lab-card"><span class="k">Absolute pressure</span><span class="v" id="lab-p">1.0 bar</span><span class="s">Ch 1 · 1 bar air + 1 bar / 10 m</span></div>
@@ -197,7 +197,7 @@
         <div class="lab-card"><span class="k">6 L surface balloon</span><span class="v" id="lab-vol">6.00 L</span><span class="s">Ch 1 · Boyle: P×V constant</span></div>
       </div>
       <div class="lab-visual">
-        <div class="balloon-box"><div class="balloon" id="lab-balloon" style="width:140px;height:140px"></div><span class="small" style="color:#8fb3c6;margin-top:10px">balloon to scale (volume)</span></div>
+        <div class="balloon-box"><div class="balloon" id="lab-balloon"></div><span class="small" style="color:#8fb3c6;margin-top:10px">balloon to scale (volume)</span></div>
         <div>
           <div class="small" style="color:#a9c4d2;margin-bottom:8px">Ch 6 · Share of surface sunlight left at this depth (straight down, pure water):</div>
           <div class="swatches">
@@ -229,12 +229,12 @@
             <tbody>
               <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">6.0 L</td><td>n/a</td></tr>
               <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">3.0 L</td><td><strong>−50%</strong> (pressure doubled)</td></tr>
-              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.0 L</td><td>−33%</td></tr>
-              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">1.5 L</td><td>−25%</td></tr>
-              <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">1.2 L</td><td>−20%</td></tr>
+              <tr data-depth-gt18><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.0 L</td><td>−33%</td></tr>
+              <tr data-depth-gt18><td class="num">30 m</td><td class="num">4 bar</td><td class="num">1.5 L</td><td>−25%</td></tr>
+              <tr data-depth-gt18><td class="num">40 m</td><td class="num">5 bar</td><td class="num">1.2 L</td><td>−20%</td></tr>
             </tbody>
           </table></div>
-          <p class="small" style="margin:10px 0 0">Look at the last column. Pressure doubles in the first 10 m, but going from 30 m to 40 m adds only 25% more. The <strong>shallows are where gas volumes change fastest</strong>. That's why buoyancy is twitchiest near the surface, why your ears need the most attention in the first few metres, and why the last 5 m of an ascent (1.5 → 1 bar, a 50% expansion) deserve the most care.</p>
+          <p data-depth-gt18 class="small" style="margin:10px 0 0">Look at the last column. Pressure doubles in the first 10 m, but going from 30 m to 40 m adds only 25% more. The <strong>shallows are where gas volumes change fastest</strong>. That's why buoyancy is twitchiest near the surface, why your ears need the most attention in the first few metres, and why the last 5 m of an ascent (1.5 → 1 bar, a 50% expansion) deserve the most care.</p>
         </div>
 
         <div class="callout note"><h4>One family of gas laws</h4><p style="margin:0 0 8px">Boyle is one face of a single rule for a fixed amount of gas: <span class="eq">P × V ÷ T = constant</span>, with T in kelvin (°C + 273). Hold temperature still and you get Boyle. Hold volume still (a steel cylinder) and pressure tracks temperature: that's Gay-Lussac's law, and it's why a tank reads lower once it cools in the sea (Chapter 3). Two more laws handle mixtures and liquids, and Archimedes handles lift:</p>
@@ -274,7 +274,7 @@
         </div>
 
         <h4>The shrinking wetsuit</h4>
-        <p>Neoprene is a foam full of tiny gas cells, and Boyle's law applies to them too. Say a full suit gives you about 4 kg of lift at the surface (it varies a lot with thickness and size). If it behaved like pure gas it would give ~2 kg at 10 m and ~1 kg at 30 m. Real neoprene doesn't quite compress that fully, but the trend is real: <strong>you get heavier as you go down</strong>. You make up for it with small puffs into the BCD on descent, then vent that air as it expands on ascent.</p>
+        <p data-depth-gt18>Neoprene is a foam full of tiny gas cells, and Boyle's law applies to them too. Say a full suit gives you about 4 kg of lift at the surface (it varies a lot with thickness and size). If it behaved like pure gas it would give ~2 kg at 10 m and ~1 kg at 30 m. Real neoprene doesn't quite compress that fully, but the trend is real: <strong>you get heavier as you go down</strong>. You make up for it with small puffs into the BCD on descent, then vent that air as it expands on ascent.</p>
 
         <h4>Why hovering is a balancing act</h4>
         <p>Neutral buoyancy is an <strong>unstable</strong> balance, like a pencil standing on its tip. Drift up half a metre and every gas space expands a little, so you gain lift and drift up faster. Sink a little and they compress, so you sink faster. Nothing pulls you back to where you were; you have to do it. That's why good divers make <strong>small, early corrections</strong> (a breath, a short puff, a short vent) rather than big late ones, and why the feedback is fiercest in the shallows where Boyle's percentages are largest.</p>
@@ -305,7 +305,7 @@
       <header><span class="chno">CH 3</span><h3>Why your tank shrinks at depth</h3></header>
       <p class="hook">Same lungs, same breaths, but each one costs more at depth.</p>
       <div class="body">
-        <p>Your regulator delivers air at the surrounding pressure, or you couldn't inhale. So a lungful at 30 m (4 bar) holds <strong>four times as many air molecules</strong> as a lungful on the beach, and it drains the cylinder four times as fast.</p>
+        <p data-depth-gt18>Your regulator delivers air at the surrounding pressure, or you couldn't inhale. So a lungful at 30 m (4 bar) holds <strong>four times as many air molecules</strong> as a lungful on the beach, and it drains the cylinder four times as fast.</p>
         <p>Divers measure breathing as <strong>SAC</strong> (surface air consumption): litres per minute at surface pressure. A relaxed recreational diver might be around 15–25 L/min. Cold, stress, currents and poor trim push it up, sometimes a lot. We'll use 20 L/min.</p>
 
         <div class="worked">
@@ -316,12 +316,12 @@
             <tbody>
               <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">20 L</td><td class="num">90 min</td></tr>
               <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">40 L</td><td class="num">45 min</td></tr>
-              <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">60 L</td><td class="num">30 min</td></tr>
-              <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">80 L</td><td class="num">22.5 min</td></tr>
-              <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">100 L</td><td class="num">18 min</td></tr>
+              <tr data-depth-gt18><td class="num">20 m</td><td class="num">3 bar</td><td class="num">60 L</td><td class="num">30 min</td></tr>
+              <tr data-depth-gt18><td class="num">30 m</td><td class="num">4 bar</td><td class="num">80 L</td><td class="num">22.5 min</td></tr>
+              <tr data-depth-gt18><td class="num">40 m</td><td class="num">5 bar</td><td class="num">100 L</td><td class="num">18 min</td></tr>
             </tbody>
           </table></div>
-          <p class="small" style="margin:8px 0 0">These are simplified: they ignore descent and ascent time, and real gas at 200 bar packs slightly less than the ideal-gas figure. The shape is what matters: <strong>the same tank lasts a quarter as long at 30 m as at the surface.</strong></p>
+          <p data-depth-gt18 class="small" style="margin:8px 0 0">These are simplified: they ignore descent and ascent time, and real gas at 200 bar packs slightly less than the ideal-gas figure. The shape is what matters: <strong>the same tank lasts a quarter as long at 30 m as at the surface.</strong></p>
         </div>
 
         <h4>Hot fills and cool water: Gay-Lussac at work</h4>
@@ -332,11 +332,11 @@
         </div>
 
         <h4>Why keep a reserve? Do the ascent maths</h4>
-        <p>From 30 m, rising at 9 m/min takes ~3 minutes at an average of about 2.5 bar: <span class="eq">20 × 2.5 × 3 ≈ 150 L</span>. A 3-minute safety stop at 5 m (1.5 bar) costs <span class="eq">20 × 1.5 × 3 = 90 L</span>. That's ~240 L, or 20 bar from a 12 L tank, <em>for a calm diver</em>. Now picture sharing air with an out-of-air buddy who's breathing hard: two people, maybe double the SAC. A 50-bar reserve stops looking conservative.</p>
+        <p data-depth-gt18>From 30 m, rising at 9 m/min takes ~3 minutes at an average of about 2.5 bar: <span class="eq">20 × 2.5 × 3 ≈ 150 L</span>. A 3-minute safety stop at 5 m (1.5 bar) costs <span class="eq">20 × 1.5 × 3 = 90 L</span>. That's ~240 L, or 20 bar from a 12 L tank, <em>for a calm diver</em>. Now picture sharing air with an out-of-air buddy who's breathing hard: two people, maybe double the SAC. A 50-bar reserve stops looking conservative.</p>
 
-        <div class="feel"><span class="ico">🎈</span><div><span class="lbl">Feel the number</span>Air at 30 m is 4× denser, so it's literally heavier to move through your regulator and airways. That's part of why exertion at depth feels harder, and why <b>slow, deep breaths</b> make your gas last longer than quick shallow ones.</div></div>
+        <div data-depth-gt18 class="feel"><span class="ico">🎈</span><div><span class="lbl">Feel the number</span>Air at 30 m is 4× denser, so it's literally heavier to move through your regulator and airways. That's part of why exertion at depth feels harder, and why <b>slow, deep breaths</b> make your gas last longer than quick shallow ones.</div></div>
 
-        <details class="check"><summary>Your SAC rises from 20 to 30 L/min in a current. How long does 1,800 L now last at 20 m?</summary>
+        <details data-depth-gt18 class="check"><summary>Your SAC rises from 20 to 30 L/min in a current. How long does 1,800 L now last at 20 m?</summary>
         <p>30 × 3 bar = 90 L/min, so 1,800 ÷ 90 = <strong>20 minutes</strong> instead of 30. Effort costs gas, and depth multiplies the cost.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
@@ -353,24 +353,24 @@
           <tbody>
             <tr><td class="num">0 m</td><td class="num">1 bar</td><td class="num">0.79</td><td class="num">0.21</td><td class="num">0.32</td></tr>
             <tr><td class="num">10 m</td><td class="num">2 bar</td><td class="num">1.58</td><td class="num">0.42</td><td class="num">0.64</td></tr>
-            <tr><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.37</td><td class="num">0.63</td><td class="num">0.96</td></tr>
-            <tr><td class="num">30 m</td><td class="num">4 bar</td><td class="num">3.16</td><td class="num">0.84</td><td class="num">1.28</td></tr>
-            <tr><td class="num">40 m</td><td class="num">5 bar</td><td class="num">3.95</td><td class="num">1.05</td><td class="num"><strong>1.60</strong> ⚠</td></tr>
+            <tr data-depth-gt18><td class="num">20 m</td><td class="num">3 bar</td><td class="num">2.37</td><td class="num">0.63</td><td class="num">0.96</td></tr>
+            <tr data-depth-gt18><td class="num">30 m</td><td class="num">4 bar</td><td class="num">3.16</td><td class="num">0.84</td><td class="num">1.28</td></tr>
+            <tr data-depth-gt18><td class="num">40 m</td><td class="num">5 bar</td><td class="num">3.95</td><td class="num">1.05</td><td class="num"><strong>1.60</strong> ⚠</td></tr>
           </tbody>
         </table></div>
 
         <h4>Loading up: tissues with half-times</h4>
-        <p>At 30 m, you're breathing nitrogen at 3.16 bar while your tissues are still at ~0.79. Nitrogen flows in. It doesn't flow in all at once. Decompression models picture the body as a set of "compartments", from fast ones like blood to slow ones like joints and fat, each with a <em>half-time</em>. Common models span half-times from a few minutes to more than ten hours.</p>
+        <p data-depth-gt18>At 30 m, you're breathing nitrogen at 3.16 bar while your tissues are still at ~0.79. Nitrogen flows in. It doesn't flow in all at once. Decompression models picture the body as a set of "compartments", from fast ones like blood to slow ones like joints and fat, each with a <em>half-time</em>. Common models span half-times from a few minutes to more than ten hours.</p>
         <div class="worked">
-          <span class="lbl">Worked example · a 20-minute tissue at 30 m</span>
+          <span data-depth-gt18 class="lbl">Worked example · a 20-minute tissue at 30 m</span>
           <p style="margin:0">Gap to fill: 3.16 − 0.79 = 2.37 bar. After one half-time (20 min) the tissue is halfway: <span class="eq">0.79 + 0.5 × 2.37 ≈ 1.98 bar</span>. After two half-times (40 min) it's three-quarters: <span class="eq">≈ 2.57 bar</span>, more than <strong>three times</strong> its surface level. Bring that tissue straight to 1 bar and it's heavily supersaturated, like a shaken soda.</p>
         </div>
 
         <h4>Coming up: why slow ascents and safety stops work</h4>
         <p>A modest supersaturation leaves your tissues harmlessly through the lungs. Too much, too fast, and the gas forms bubbles in tissue and blood. That's <strong>decompression sickness</strong> ("the bends"): joint pain, numbness, fatigue, and in serious cases paralysis. Recreational divers stay within <strong>no-decompression limits</strong> (NDLs), ascend slowly (agency maximums are 18 m/min, and many computers want ~9–10 m/min), and add a 3-minute <strong>safety stop at about 5 m</strong>.</p>
         <div class="table-scroll"><table class="data">
-          <thead><tr><th>Depth (air)</th><th class="num">12 m</th><th class="num">18 m</th><th class="num">30 m</th><th class="num">40 m</th></tr></thead>
-          <tbody><tr><td>First-dive no-stop limit*</td><td class="num">147 min</td><td class="num">56 min</td><td class="num">20 min</td><td class="num">9 min</td></tr></tbody>
+          <thead><tr><th>Depth (air)</th><th class="num">12 m</th><th class="num">18 m</th><th data-depth-gt18 class="num">30 m</th><th data-depth-gt18 class="num">40 m</th></tr></thead>
+          <tbody><tr><td>First-dive no-stop limit*</td><td class="num">147 min</td><td class="num">56 min</td><td data-depth-gt18 class="num">20 min</td><td data-depth-gt18 class="num">9 min</td></tr></tbody>
         </table></div>
         <p class="small muted">*Published values of the PADI Recreational Dive Planner (air), for illustration. Computers and other tables differ. Note how fast the limit collapses with depth.</p>
         <h4>What "no-decompression" really means</h4>
@@ -378,31 +378,31 @@
         <h4>The second dive: why fast tissues forgive and slow ones remember</h4>
         <p>On the surface you breathe out nitrogen at the same half-time rates you loaded it. Fast compartments clear in an hour or so. Slow ones barely start. That leftover ("residual") nitrogen is why your second dive of the day gets a shorter no-stop limit than the first, and why tables and computers ask for your surface interval.</p>
         <div class="worked">
-          <span class="lbl">Worked example · 20 min at 30 m, then an hour on the boat</span>
+          <span data-depth-gt18 class="lbl">Worked example · 20 min at 30 m, then an hour on the boat</span>
           <div class="table-scroll"><table class="data">
-            <thead><tr><th>Tissue half-time</th><th>After 20 min at 30 m</th><th>After 60 min on the surface</th><th>Extra nitrogen still there</th></tr></thead>
+            <thead data-depth-gt18><tr><th>Tissue half-time</th><th>After 20 min at 30 m</th><th>After 60 min on the surface</th><th>Extra nitrogen still there</th></tr></thead>
             <tbody>
               <tr><td>20 min (fast)</td><td class="num">1.98 bar</td><td class="num">0.94 bar</td><td class="num">12.5% (3 half-times)</td></tr>
               <tr><td>120 min (slow)</td><td class="num">1.05 bar</td><td class="num">0.97 bar</td><td class="num">71% (half a half-time)</td></tr>
             </tbody>
           </table></div>
-          <p class="small" style="margin:8px 0 0">Start: 0.79 bar in every tissue; breathing 3.16 bar of nitrogen at 30 m. The 120-min tissue only loads 11% of the gap in 20 minutes (<span class="eq">1 − 0.5^(20/120)</span>), but it also unloads slowly. These are teaching numbers from the same half-time maths as above, not a dive plan. Real models track many compartments with different allowed limits.</p>
+          <p data-depth-gt18 class="small" style="margin:8px 0 0">Start: 0.79 bar in every tissue; breathing 3.16 bar of nitrogen at 30 m. The 120-min tissue only loads 11% of the gap in 20 minutes (<span class="eq">1 − 0.5^(20/120)</span>), but it also unloads slowly. These are teaching numbers from the same half-time maths as above, not a dive plan. Real models track many compartments with different allowed limits.</p>
         </div>
         <div class="callout"><h4>Flying after diving</h4><p>A plane cabin is pressurised to roughly 0.75–0.8 bar, lower than sea level, which makes any leftover nitrogen more likely to bubble. Widely used guidance (originally from DAN workshops, and repeated by Indian dive centres) is to wait <strong>at least 12 hours after a single no-stop dive and 18 hours after multiple dives or days of diving</strong>, and longer after decompression dives. Andaman divers flying out of Port Blair: plan your last dive day around your flight.</p></div>
 
         <h4>Nitrogen narcosis: the "martini effect"</h4>
-        <p>At high partial pressure, nitrogen acts like a mild anaesthetic: slowed thinking, overconfidence, fixation, giggles or anxiety. Many divers start to notice it around <strong>30 m</strong>, which is one reason the Advanced level stops there. It varies between people and from day to day. Two things make it manageable: it gets stronger the deeper you go, and it <strong>fades within moments when you go up a few metres</strong>. No hangover.</p>
+        <p data-depth-gt18>At high partial pressure, nitrogen acts like a mild anaesthetic: slowed thinking, overconfidence, fixation, giggles or anxiety. Many divers start to notice it around <strong>30 m</strong>, which is one reason the Advanced level stops there. It varies between people and from day to day. Two things make it manageable: it gets stronger the deeper you go, and it <strong>fades within moments when you go up a few metres</strong>. No hangover.</p>
 
         <h4>Oxygen: essential, then toxic</h4>
         <p>Breathing oxygen at a high partial pressure can trigger convulsions without warning, which underwater can mean drowning. Recreational training uses <strong>1.4 bar</strong> as the working limit (1.6 as an absolute contingency). That sets a <strong>maximum operating depth (MOD)</strong> for each gas:</p>
         <div class="worked">
           <span class="lbl">Worked example · maximum depths at ppO₂ 1.4 bar</span>
-          <p style="margin:0">Air (21%): 1.4 ÷ 0.21 = 6.67 bar, which is <strong>~56 m</strong>, far below recreational limits. EAN32: 1.4 ÷ 0.32 = 4.375 bar, which is <strong>~34 m</strong>. EAN36: 1.4 ÷ 0.36 = 3.89 bar, which is <strong>~29 m</strong>.<br>
+          <p data-depth-gt18 style="margin:0">Air (21%): 1.4 ÷ 0.21 = 6.67 bar, which is <strong>~56 m</strong>, far below recreational limits. EAN32: 1.4 ÷ 0.32 = 4.375 bar, which is <strong>~34 m</strong>. EAN36: 1.4 ÷ 0.36 = 3.89 bar, which is <strong>~29 m</strong>.<br>
           Why bother with nitrox, then? Less nitrogen. At 30 m on EAN32 your nitrogen pressure is 0.68 × 4 = 2.72 bar, the same as breathing air at only ~24.4 m (the "equivalent air depth"). That means longer no-stop times and shorter surface intervals. DIVEIndia, for example, requires nitrox certification for its Barren Island trips.</p>
         </div>
         <div class="callout warn"><h4><span class="safety-tag">Safety</span> If something feels wrong after a dive</h4><p>Joint pain, tingling, unusual fatigue or breathlessness after diving needs oxygen and medical help, fast. The PADI destination guide lists a hyperbaric chamber at Port Blair for the Andamans. Know where your nearest chamber is before you dive, and consider dive insurance (for example through DAN).</p></div>
-        <details class="check"><summary>You planned a 30 m dive on EAN36. Is that OK?</summary>
-        <p>30 m = 4 bar, and 0.36 × 4 = <strong>1.44 bar</strong>, just over the 1.4 working limit. Use EAN32 (1.28 bar at 30 m) or plan shallower (MOD ≈ 29 m).</p></details>
+        <details data-depth-gt18 class="check"><summary>You planned a 30 m dive on EAN36. Is that OK?</summary>
+        <p data-depth-gt18>30 m = 4 bar, and 0.36 × 4 = <strong>1.44 bar</strong>, just over the 1.4 working limit. Use EAN32 (1.28 bar at 30 m) or plan shallower (MOD ≈ 29 m).</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
@@ -417,7 +417,7 @@
           <span class="lbl">Worked example · the force on your eardrum at 2 m</span>
           <p style="margin:0">Pressure difference at 2 m: 0.2 bar = 20,000 Pa. An eardrum's working area is well under a square centimetre (say ~0.7 cm² = 0.00007 m²). Force = 20,000 × 0.00007 ≈ <strong>1.4 newtons</strong>, about the weight of a <strong>140 g</strong> object balanced on a membrane thinner than paper. At 2 m you're barely below the surface, and it already hurts.</p>
         </div>
-        <p>Remember the Boyle table: the change from 0 to 2 m (1 → 1.2 bar) squeezes an air space by about 17%. From 30 to 32 m it's only 5%. <strong>The shallows are where equalising matters most.</strong></p>
+        <p data-depth-gt18>Remember the Boyle table: the change from 0 to 2 m (1 → 1.2 bar) squeezes an air space by about 17%. From 30 to 32 m it's only 5%. <strong>The shallows are where equalising matters most.</strong></p>
         <div class="feel"><span class="ico">👂</span><div><span class="lbl">Feel the number</span>If the pressure difference builds too far, soft tissue around the tube's opening can press it shut, and then no amount of blowing opens it. Diving-medicine texts commonly put this around <b>90 mmHg ≈ 0.12 bar, about 1.2 m of seawater</b>. Wait until it hurts and you may already be past the point where equalising works.</div></div>
 
         <h4>How to equalise: early, often, gently</h4>
@@ -434,8 +434,8 @@
           <span class="lbl">Worked example · the mask and the way up</span>
           <p style="margin:0">A mask holding about 200 mL of air at the surface would shrink to <span class="eq">200 × 1 ÷ 2 = 100 mL</span> by 10 m if you never breathed into it. The space can't shrink that much, so the low pressure inside pulls on your eyes and face instead. On the ascent, Boyle runs backwards: the air in your middle ears and sinuses expands and normally leaks out through the tubes on its own. If it can't (a "reverse block"), stop, go down a metre to ease the pressure, then come up more slowly. Never hold your breath to fix it.</p>
         </div>
-        <details class="check"><summary>Why is equalising easier between 20 and 30 m than between 0 and 10 m?</summary>
-        <p>0 → 10 m doubles the pressure (1 → 2 bar, a 100% change). 20 → 30 m goes from 3 → 4 bar, only 33%. Smaller relative change means smaller volume change, so less air to add per metre.</p></details>
+        <details data-depth-gt18 class="check"><summary>Why is equalising easier between 20 and 30 m than between 0 and 10 m?</summary>
+        <p data-depth-gt18>0 → 10 m doubles the pressure (1 → 2 bar, a 100% change). 20 → 30 m goes from 3 → 4 bar, only 33%. Smaller relative change means smaller volume change, so less air to add per metre.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
@@ -448,12 +448,12 @@
         <h4>Why reds vanish first</h4>
         <p>Water molecules absorb light, and they absorb long wavelengths (red) far more strongly than short ones (blue). Light fades exponentially with distance (the Beer–Lambert law): <span class="eq">I = I₀ × e^(−a·d)</span>, where <em>a</em> is the absorption coefficient for that colour. Using laboratory values for pure water:</p>
         <div class="table-scroll"><table class="data">
-          <thead><tr><th>Colour</th><th>a (per m)</th><th>5 m</th><th>10 m</th><th>20 m</th><th>30 m</th></tr></thead>
+          <thead><tr><th>Colour</th><th>a (per m)</th><th>5 m</th><th>10 m</th><th data-depth-gt18>20 m</th><th data-depth-gt18>30 m</th></tr></thead>
           <tbody>
-            <tr><td>🔴 Red 700 nm</td><td class="num">0.62</td><td class="num">4.4%</td><td class="num">0.2%</td><td class="num">≈0</td><td class="num">≈0</td></tr>
-            <tr><td>🟠 Orange 600 nm</td><td class="num">0.22</td><td class="num">33%</td><td class="num">11%</td><td class="num">1.2%</td><td class="num">0.1%</td></tr>
-            <tr><td>🟢 Green 550 nm</td><td class="num">0.057</td><td class="num">75%</td><td class="num">57%</td><td class="num">32%</td><td class="num">18%</td></tr>
-            <tr><td>🔵 Blue 450 nm</td><td class="num">0.009</td><td class="num">95%</td><td class="num">91%</td><td class="num">83%</td><td class="num">76%</td></tr>
+            <tr><td>🔴 Red 700 nm</td><td class="num">0.62</td><td class="num">4.4%</td><td class="num">0.2%</td><td data-depth-gt18 class="num">≈0</td><td data-depth-gt18 class="num">≈0</td></tr>
+            <tr><td>🟠 Orange 600 nm</td><td class="num">0.22</td><td class="num">33%</td><td class="num">11%</td><td data-depth-gt18 class="num">1.2%</td><td data-depth-gt18 class="num">0.1%</td></tr>
+            <tr><td>🟢 Green 550 nm</td><td class="num">0.057</td><td class="num">75%</td><td class="num">57%</td><td data-depth-gt18 class="num">32%</td><td data-depth-gt18 class="num">18%</td></tr>
+            <tr><td>🔵 Blue 450 nm</td><td class="num">0.009</td><td class="num">95%</td><td class="num">91%</td><td data-depth-gt18 class="num">83%</td><td data-depth-gt18 class="num">76%</td></tr>
           </tbody>
         </table></div>
         <p class="small muted">Share of surface sunlight left travelling straight down through pure water (coefficients: Pope &amp; Fry, 1997). Real seawater also has plankton and sediment, which absorb and scatter more, especially along India's west-coast mainland sites.</p>
@@ -470,8 +470,8 @@
 
         <h4>Heat: why 28 °C water still chills you</h4>
         <p>Water conducts heat about <strong>25× faster than air</strong> (≈0.6 vs ≈0.025 W/m·K) and holds vastly more heat per litre. Your body is at 37 °C, so even the warm 26–30 °C seas of the Andamans and Lakshadweep steadily pull heat out on a long dive or a third dive of the day. A wetsuit works by trapping a thin layer of water that your body warms. Cold also raises your air consumption (Chapter 3).</p>
-        <details class="check"><summary>A diver at 25 m says the blood from a small cut looks green. Is something wrong?</summary>
-        <p>No. Blood's red has been absorbed by 25 m of water, so what's left reflecting is mostly green. Shine a torch on it and it's red again. Pure Beer–Lambert.</p></details>
+        <details data-depth-gt18 class="check"><summary>A diver at 25 m says the blood from a small cut looks green. Is something wrong?</summary>
+        <p data-depth-gt18>No. Blood's red has been absorbed by 25 m of water, so what's left reflecting is mostly green. Shine a torch on it and it's red again. Pure Beer–Lambert.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
@@ -509,15 +509,15 @@
         <div class="cols">
           <div class="ag"><span class="an">PADI</span><span class="cn">Open Water Diver</span><ul><li>Min age 10 (Junior until 15)</li><li>Max 18 m (10–11 yr olds: 12 m with a pro/parent)</li><li>2–4 days: eLearning 5–10 h, pool, 4 open-water dives</li><li>Swim 200 m (or 300 m with mask, fins, snorkel) + 10-min float</li></ul></div>
           <div class="ag"><span class="an">SSI</span><span class="cn">Open Water Diver</span><ul><li>Min age 10</li><li>Max 18 m (10–11 yr olds: 12 m)</li><li>16–32 recommended hours; 4+ open-water dives, ≥80 min total</li></ul></div>
-          <div class="ag"><span class="an">CMAS</span><span class="cn">One Star Diver ★</span><ul><li>Min age 14 (with guardian consent)</li><li>Max 20 m with a buddy of the same level or higher</li><li>4+ open-water dives (5–20 m, ≥20 min each); swim 200 m</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">One Star Diver ★</span><ul><li>Min age 14 (with guardian consent)</li><li data-depth-gt18>Max 20 m with a buddy of the same level or higher</li><li data-depth-gt18>4+ open-water dives (5–20 m, ≥20 min each); swim 200 m</li></ul></div>
         </div>
       </div>
       <div class="rung">
         <div class="lvl"><span class="step">Step 3 · Experienced</span><b>Advanced</b><span class="iso">Agency level (no single ISO level)</span></div>
         <div class="cols">
-          <div class="ag"><span class="an">PADI</span><span class="cn">Advanced Open Water Diver</span><ul><li>Min age 12 (Junior) / 15</li><li>Max 30 m (12–14 yr olds: 21 m)</li><li>5 dives: Deep + Navigation + 3 electives; ~2 days</li></ul></div>
-          <div class="ag"><span class="an">SSI</span><span class="cn">Advanced Adventurer → Advanced Open Water / "Advanced Specialty Diver"</span><ul><li>Advanced Adventurer: 5 adventure dives, max 30 m (deep dive min age 12)</li><li>Advanced rating: 4 specialties + 24 logged dives</li></ul></div>
-          <div class="ag"><span class="an">CMAS</span><span class="cn">Two Star Diver ★★</span><ul><li>Min age 15 (with consent)</li><li>Max 30 m (40 m with extra deep training)</li><li>10 logged dives since One Star; 8 training dives at 10–30 m</li></ul></div>
+          <div class="ag"><span class="an">PADI</span><span class="cn">Advanced Open Water Diver</span><ul><li>Min age 12 (Junior) / 15</li><li data-depth-gt18>Max 30 m (12–14 yr olds: 21 m)</li><li>5 dives: Deep + Navigation + 3 electives; ~2 days</li></ul></div>
+          <div class="ag"><span class="an">SSI</span><span class="cn">Advanced Adventurer → Advanced Open Water / "Advanced Specialty Diver"</span><ul><li data-depth-gt18>Advanced Adventurer: 5 adventure dives, max 30 m (deep dive min age 12)</li><li>Advanced rating: 4 specialties + 24 logged dives</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Two Star Diver ★★</span><ul><li>Min age 15 (with consent)</li><li data-depth-gt18>Max 30 m (40 m with extra deep training)</li><li data-depth-gt18>10 logged dives since One Star; 8 training dives at 10–30 m</li></ul></div>
         </div>
       </div>
       <div class="rung">
@@ -533,14 +533,14 @@
         <div class="cols">
           <div class="ag"><span class="an">PADI</span><span class="cn">Divemaster</span><ul><li>Min age 18</li><li>Advanced + Rescue + EFR (24 months) + medical clearance (12 months)</li><li>40 logged dives to start, 60 to certify</li><li>Weeks to months (centres list up to ~3 months)</li></ul></div>
           <div class="ag"><span class="an">SSI</span><span class="cn">Divemaster</span><ul><li>Min age 18</li><li>40 dives / 25 h to start; 60 dives / 40 h to certify</li><li>Stress &amp; Rescue + Deep, Navigation, Night (or 5 dives each); 35–45 recommended hours</li></ul></div>
-          <div class="ag"><span class="an">CMAS</span><span class="cn">Three Star Diver ★★★ <span class="muted small">(and a separate CMAS Divemaster)</span></span><ul><li>Three Star: min age 18; Two Star + CMAS Rescue + navigation specialty + CPR/first aid/oxygen; 50 logged dives incl. deep &amp; night</li><li>Max 40 m</li><li>Commonly mapped to ISO dive-leader level</li></ul></div>
+          <div class="ag"><span class="an">CMAS</span><span class="cn">Three Star Diver ★★★ <span class="muted small">(and a separate CMAS Divemaster)</span></span><ul><li>Three Star: min age 18; Two Star + CMAS Rescue + navigation specialty + CPR/first aid/oxygen; 50 logged dives incl. deep &amp; night</li><li data-depth-gt18>Max 40 m</li><li>Commonly mapped to ISO dive-leader level</li></ul></div>
         </div>
       </div>
     </div>
 
     <div class="callout note" style="margin-top:24px"><h4>Two Indian twists to know</h4>
       <p><strong>Andaman &amp; Nicobar rules split dive centres into two categories.</strong> "Category A" centres follow WRSTC/ISO agency standards (the PADI/SSI/CMAS limits above). "Category B" centres follow National Institute of Water Sports (NIWS) norms instead. For Category B, the A&amp;N guidelines set a <strong>12–60 age band</strong> and a <strong>12 m limit for introductory dives</strong>. The A&amp;N rules also allow <strong>only no-decompression diving</strong>, and require an <strong>orientation dive</strong> if you have fewer than 30 logged dives or haven't dived in 3 months. Ask your centre which category it is.</p>
-      <p style="margin:0"><strong>Equivalence is approximate.</strong> Agencies recognise each other's cards for continuing education, but prerequisites differ (for example, CMAS One Star allows 20 m where PADI/SSI Open Water stop at 18 m). The table aligns them by role, not by identical rules.</p>
+      <p data-depth-gt18 style="margin:0"><strong>Equivalence is approximate.</strong> Agencies recognise each other's cards for continuing education, but prerequisites differ (for example, CMAS One Star allows 20 m where PADI/SSI Open Water stop at 18 m). The table aligns them by role, not by identical rules.</p>
     </div>
   </div>
 </section>
@@ -690,7 +690,7 @@
     <!-- OPEN WATER -->
     <div class="lvl-panel" id="lvl-ow" role="tabpanel" aria-labelledby="tab-ow">
       <div class="lvl-intro">
-        <div class="box"><h4>You're here if…</h4><p style="margin:0">You want a lifetime licence to dive to 18 m (20 m for CMAS One Star) with a buddy, anywhere in the world. Budget 3–4 days: theory (or eLearning), a pool day and four open-water dives. Must swim 200 m and float for 10 minutes. Read <a href="#ch-buoyancy">Ch 2</a> and <a href="#ch-air">Ch 3</a>. Buoyancy and gas planning are the core skills.</p></div>
+        <div class="box"><h4>You're here if…</h4><p data-depth-gt18 style="margin:0">You want a lifetime licence to dive to 18 m (20 m for CMAS One Star) with a buddy, anywhere in the world. Budget 3–4 days: theory (or eLearning), a pool day and four open-water dives. Must swim 200 m and float for 10 minutes. Read <a href="#ch-buoyancy">Ch 2</a> and <a href="#ch-air">Ch 3</a>. Buoyancy and gas planning are the core skills.</p></div>
         <div class="box"><h4>Ask before you book</h4><p class="small" style="margin:0">Group size (2–4 is ideal)? Is there a full pool day before the sea? Which agency (PADI / SSI / CMAS)? Every centre below issues internationally recognised cards.</p></div>
       </div>
       <div class="schools">
@@ -699,7 +699,7 @@
           <div class="accred"><span class="ac ok">✓ SSI-listed (Instructor Training Center)</span><span class="acsrc">SSI’s own centre pages for <a href="https://www.divessi.com/en/divecenter/diveindia-havelock-andaman-islands-india-791197" target="_blank" rel="noopener">DIVEIndia Havelock</a> and <a href="https://www.divessi.com/en/divecenter/diveindia-neil-shaheed-dweep-india-791033" target="_blank" rel="noopener">DIVEIndia Neil</a> both say “Instructor Training Center”. Checked 7 Oct 2026.</span></div>
           <a class="url" href="https://diveindia.com/" target="_blank" rel="noopener">diveindia.com</a></div>
         <div class="school"><div class="top"><div><h4>Ocean Tribe</h4><span class="loc">Beach No. 3, Govind Nagar, Havelock</span></div><span class="badge ssi">SSI</span></div>
-          <p>Run by divers from the Andamans' Karen community. Havelock's Jackson's Bar, Dickson's Pinnacle and Johnny's Gorge are named after its own dive pros. SSI Open Water (4 dives over 4 days, to 18 m) and SSI Advanced (5 dives, to 30 m).</p>
+          <p data-depth-gt18>Run by divers from the Andamans' Karen community. Havelock's Jackson's Bar, Dickson's Pinnacle and Johnny's Gorge are named after its own dive pros. SSI Open Water (4 dives over 4 days, to 18 m) and SSI Advanced (5 dives, to 30 m).</p>
           <div class="accred"><span class="ac ok">✓ SSI-listed (Dive Center)</span><span class="acsrc">SSI lists “Ocean Tribe Scuba”, next to Sea View Beach Resort, Andaman, as an SSI dive centre with no training-centre rating shown (<a href="https://www.divessi.com/en/divecenter/ocean-tribe-scuba-dickson-poayesay-andaman-and-nicobar-india-791006" target="_blank" rel="noopener">SSI listing</a>). Checked 7 Oct 2026.</span></div>
           <a class="url" href="https://www.ocean-tribe.com/" target="_blank" rel="noopener">ocean-tribe.com</a></div>
         <div class="school"><div class="top"><div><h4>ScubaLov</h4><span class="loc">Havelock &amp; Neil, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
@@ -747,18 +747,18 @@
       <div class="sites">
         <div class="site"><b>Aquarium</b><span class="meta">Havelock · boat · ~2–15 m</span><p>Calm, shallow and fishy. A favourite for training dives.</p></div>
         <div class="site"><b>Margherita's Mischief &amp; K-Rock</b><span class="meta">Neil · ~6–19 m</span><p>Boulder reef and a volcanic rock on sand, suited to beginner–intermediate divers.</p></div>
-        <div class="site"><b>Grand Central Station</b><span class="meta">Netrani · gradual slope to ~20 m</span><p>Rabbitfish, parrotfish, batfish and barracuda. Stay within your 18 m.</p></div>
+        <div class="site"><b>Grand Central Station</b><span class="meta" data-depth-gt18>Netrani · gradual slope to ~20 m</span><p>Rabbitfish, parrotfish, batfish and barracuda. Stay within your 18 m.</p></div>
         <div class="site"><b>Umma Gumma reef</b><span class="meta">Grande Island, Goa · to ~12 m</span><p>Rocky reef with a wall. Currents can run either way.</p></div>
         <div class="site"><b>Kadmat</b><span class="meta">Lakshadweep · 20–50 m visibility</span><p>Calm lagoon on one side, coral wall on the other. Rays, turtles and reef sharks (Lakshadweep Admin).</p></div>
-        <div class="site"><b>Bus Stop</b><span class="meta">Neil · ~13–20 m</span><p>Gently sloping reef for certified divers. Plan depth carefully near your 18 m limit.</p></div>
+        <div class="site"><b>Bus Stop</b><span class="meta" data-depth-gt18>Neil · ~13–20 m</span><p>Gently sloping reef for certified divers. Plan depth carefully near your 18 m limit.</p></div>
       </div>
     </div>
 
     <!-- ADVANCED -->
     <div class="lvl-panel" id="lvl-adv" role="tabpanel" aria-labelledby="tab-adv">
       <div class="lvl-intro">
-        <div class="box"><h4>You're here if…</h4><p style="margin:0">You're certified, have some logged dives, and want deeper (to 30 m), currents, wrecks, night and navigation. Read <a href="#ch-gas">Ch 4</a>: at 30 m your no-stop time is about 20 minutes, your air lasts a quarter as long as at the surface, and narcosis starts to appear.</p></div>
-        <div class="box"><h4>Physics-smart upgrade</h4><p class="small" style="margin:0">Add an Enriched Air Nitrox course. It's short, extends no-stop times at 18–30 m, and some Indian trips (Barren Island) require it.</p></div>
+        <div class="box"><h4>You're here if…</h4><p data-depth-gt18 style="margin:0">You're certified, have some logged dives, and want deeper (to 30 m), currents, wrecks, night and navigation. Read <a href="#ch-gas">Ch 4</a>: at 30 m your no-stop time is about 20 minutes, your air lasts a quarter as long as at the surface, and narcosis starts to appear.</p></div>
+        <div class="box"><h4>Physics-smart upgrade</h4><p data-depth-gt18 class="small" style="margin:0">Add an Enriched Air Nitrox course. It's short, extends no-stop times at 18–30 m, and some Indian trips (Barren Island) require it.</p></div>
       </div>
       <div class="schools">
         <div class="school"><div class="top"><div><h4>The Dive Master Havelock</h4><span class="loc">Havelock, Andamans</span></div><span class="badge padi">PADI 5★ IDC</span></div>
@@ -778,11 +778,11 @@
           <div class="accred"><span class="ac ok">✓ PADI-listed (PADI Resort)</span><span class="acsrc">Listed by PADI as Goa Diving Private (Limited), Chicalim, Goa: “PADI Resort” (<a href="https://www.padi.com/dive-center/india/goa-diving-private-limited/" target="_blank" rel="noopener">PADI listing</a>). Checked 7 Oct 2026.</span></div>
           <a class="url" href="https://www.goadiving.com/our-offer" target="_blank" rel="noopener">goadiving.com</a></div>
         <div class="school"><div class="top"><div><h4>Netrani Adventures</h4><span class="loc">Murudeshwar</span></div><span class="badge">Claims PADI / SSI</span></div>
-          <p>Advanced Open Water: 5 ocean dives over 2 days, max 30 m.</p>
+          <p data-depth-gt18>Advanced Open Water: 5 ocean dives over 2 days, max 30 m.</p>
           <div class="accred"><span class="ac claim">School’s claim — PADI / SSI</span><span class="acsrc">The centre says it is Murdeshwar’s first PADI-certified dive centre, and its course page is titled “PADI / SSI Courses”. It isn’t among the centres on <a href="https://www.padi.com/dive-shops/india/murudeshwara/" target="_blank" rel="noopener">PADI’s Murudeshwara dive-shop page</a> (Just Dive, Meridian Adventures, Scuba Spirit), and we found no SSI centre page for it. Checked 7 Oct 2026.</span></div>
           <a class="url" href="https://netraniadventures.com/padi-ssi-courses/" target="_blank" rel="noopener">netraniadventures.com</a></div>
         <div class="school"><div class="top"><div><h4>Temple Adventures</h4><span class="loc">Pondicherry</span></div><span class="badge padi">PADI 5★ CDC</span></div>
-          <p>Pondicherry has unusually many deep sites: its PADI listing cites 17+ sites from 5 to 40 m, with nitrox and trimix fills and PADI TecRec and rebreather (CCR) training for later.</p>
+          <p data-depth-gt18>Pondicherry has unusually many deep sites: its PADI listing cites 17+ sites from 5 to 40 m, with nitrox and trimix fills and PADI TecRec and rebreather (CCR) training for later.</p>
           <div class="accred"><span class="ac ok">✓ PADI-listed (5 Star CDC)</span><span class="acsrc">PADI’s listing shows “PADI 5 Star CDC” with 12 PADI instructors (<a href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a>). Checked 7 Oct 2026.</span></div>
           <a class="url" href="https://www.padi.com/dive-center/india/temple-adventures-divers-india/" target="_blank" rel="noopener">PADI listing</a></div>
         <div class="school"><div class="top"><div><h4>Scuba Evolution India</h4><span class="loc">Calangute–Baga, North Goa → Grande Island</span></div><span class="badge padi">PADI 5★ IDC</span></div>
@@ -800,9 +800,9 @@
       </div>
       <h4 style="margin-top:26px">Sites that need Advanced skills</h4>
       <div class="sites">
-        <div class="site"><b>Dixon's Pinnacle</b><span class="meta">Havelock · ~16–35 m · current</span><p>Pinnacles in blue water. Deep-dive training and good air management needed.</p></div>
-        <div class="site"><b>Johnny's Gorge</b><span class="meta">Havelock · ~22–35 m</span><p>Known for whitetip reef sharks and schooling fish. Advanced divers only.</p></div>
-        <div class="site"><b>The Abyss</b><span class="meta">Netrani · ~35 m</span><p>Netrani's deep site. Also a small fishing-boat wreck resting at ~22 m.</p></div>
+        <div class="site"><b>Dixon's Pinnacle</b><span class="meta" data-depth-gt18>Havelock · ~16–35 m · current</span><p>Pinnacles in blue water. Deep-dive training and good air management needed.</p></div>
+        <div class="site"><b>Johnny's Gorge</b><span class="meta" data-depth-gt18>Havelock · ~22–35 m</span><p>Known for whitetip reef sharks and schooling fish. Advanced divers only.</p></div>
+        <div class="site"><b>The Abyss</b><span class="meta" data-depth-gt18>Netrani · ~35 m</span><p>Netrani's deep site. Also a small fishing-boat wreck resting at ~22 m.</p></div>
         <div class="site"><b>Davy Jones Locker</b><span class="meta">St George's Island, Goa · ~12–16 m</span><p>Steel-hulled wreck. Possible strong current and low visibility, so it suits experienced divers.</p></div>
         <div class="site"><b>Aravind's Wall</b><span class="meta">Pondicherry</span><p>Big fan corals on one of Temple Adventures' signature deeper sites (their earlier site guide).</p></div>
         <div class="site"><b>Bangaram drop-offs</b><span class="meta">Lakshadweep</span><p>Reef walls falling into deep blue: manta rays, reef sharks, turtles (PADI guide).</p></div>
