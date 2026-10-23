@@ -76,7 +76,7 @@
     sc.setAttribute("data-fab-label", "💬 Ask Kinetic");
     sc.setAttribute("data-persona", persona);
     sc.setAttribute("data-suggestions", JSON.stringify(suggestions));
-    sc.setAttribute("data-greeting", "Hi! I'm Kinetic's physics tutor. Ask about the science on this page or any sport on the site, and I'll link the pages I use.");
+    sc.setAttribute("data-greeting", "Hi! Ask me about the science on this page, or what it means for your first try. I'll link the pages I use.");
     document.body.appendChild(sc);
   }
 

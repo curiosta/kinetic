@@ -254,6 +254,20 @@
     tabs.forEach(b => b.setAttribute("aria-selected", b === btn ? "true" : "false"));
     document.querySelectorAll(".lvl-panel").forEach(p => p.classList.toggle("show", p.id === btn.getAttribute("aria-controls")));
   }));
+  // a link or URL hash to #lvl-x opens that tab (and scrolls to the tabs), even after the visitor switched tabs
+  const openLvl = (hash, scroll) => {
+    const btn = /^#lvl-[\w-]+$/.test(hash || "") && [...tabs].find(b => "#" + b.getAttribute("aria-controls") === hash);
+    if (!btn) return false;
+    if (btn.getAttribute("aria-selected") !== "true") btn.click();
+    if (scroll) { (btn.closest(".lvl-tabs") || btn).scrollIntoView({ block: "start" }); btn.focus({ preventScroll: true }); }
+    return true;
+  };
+  document.addEventListener("click", e => {
+    const a = e.target.closest && e.target.closest('a[href^="#lvl-"]');
+    if (a && openLvl(a.getAttribute("href"), true)) { e.preventDefault(); if (location.hash !== a.getAttribute("href")) history.pushState(null, "", a.getAttribute("href")); }
+  });
+  window.addEventListener("hashchange", () => openLvl(location.hash, true));
+  openLvl(location.hash, true);
 
   // ---------- STICKY NAV ACTIVE STATE ----------
   const navLinks = [...document.querySelectorAll(".sectionnav a[href^='#']")];
