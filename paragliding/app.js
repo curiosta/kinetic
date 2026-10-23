@@ -176,7 +176,7 @@
     resultBox.innerHTML =
       `<div class="score" id="quiz-score">${score}<small> / ${QUESTIONS.length}</small></div>` +
       `<h3 id="quiz-verdict">${title}</h3><p>${blurb}</p>` +
-      `<div class="result-note" id="quiz-disclaimer" role="note">${PAGE.disclaimer}</div>` +
+      `<div class="result-note" id="quiz-disclaimer" role="note" data-reel-hide>${PAGE.disclaimer}</div>` +
       (chItems ? `<strong>Chapters to read:</strong><ul id="quiz-revisit">${chItems}</ul>` : `<p><strong>Perfect score.</strong> The chapters still have the worked numbers if you want to go deeper.</p>`) +
       `<div class="actions"><button class="btn btn-ghost" type="button" id="quiz-retake">↺ Retake the challenge</button><a class="btn btn-ghost" href="#where">${PAGE.whereLabel}</a></div>`;
     document.getElementById("quiz-retake").addEventListener("click", resetQuiz);
@@ -221,7 +221,12 @@
     function update() {
       const H = +$("gl-height").value, wind = +$("gl-wind").value, LD = +$("gl-ld").value, W = +$("gl-weight").value, bank = +$("gl-bank").value;
       $("gl-height-o").textContent = H + " m";
-      $("gl-wind-o").textContent = wind === 0 ? "calm" : (wind < 0 ? (-wind) + " km/h head" : wind + " km/h tail");
+      // wind slider moves in 0.1 km/h steps: whole numbers read as before ("15 km/h head"), others to one decimal
+      const wAbs = Math.round(Math.abs(wind) * 10) / 10, wTxt = String(wAbs);
+      $("gl-wind-o").textContent = wAbs === 0 ? "calm" : (wind < 0 ? wTxt + " km/h head" : wTxt + " km/h tail");
+      $("gl-height").setAttribute("aria-valuetext", H + " m");
+      $("gl-wind").setAttribute("aria-valuetext", wAbs === 0 ? "calm" : (wind < 0 ? wTxt + " km/h headwind" : wTxt + " km/h tailwind"));
+      $("gl-bank").setAttribute("aria-valuetext", bank + "°");
       $("gl-ld-o").textContent = fmt(LD, 1) + " : 1";
       $("gl-weight-o").textContent = W + " kg";
       $("gl-bank-o").textContent = bank + "°";

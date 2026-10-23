@@ -98,7 +98,7 @@
   <div class="wrap">
     <div>
       <span class="eyebrow">Kinetic · Adventure science · Surfing</span>
-      <h1>Ride the energy of <em>a storm far out at sea.</em></h1>
+      <h1>Riding a wave is <em>applied physics.</em></h1>
       <p class="lede">Every wave you catch is energy that crossed an ocean. Learn how swell forms and refracts, why beach, reef and point breaks differ, how board volume, trim and rails work, and how to handle wipeouts and rips — then find a school on India's coast, from Puri to Covelong, at your level.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#challenge">Take the 15-question challenge →</a>
@@ -123,7 +123,7 @@
       <ul class="first-list">
         <li><b>Swim confidently first.</b> A wipeout can hold you under longer than it feels.</li>
         <li><b>The tide changes the spot.</b> Friendly at high tide can mean shallow and dangerous at low; ask what's underneath.</li>
-        <li><b>Ask who's teaching.</b> SFI's guidelines say non-certified instructors should never teach beginners on their own.</li>
+        <li data-reel-hide><b>Ask who's teaching.</b> SFI's guidelines say non-certified instructors should never teach beginners on their own.</li>
       </ul>
       <a class="first-link" href="#lvl-learn">Ask before you book a first lesson →</a>
     </div>
@@ -149,7 +149,7 @@
         <button class="btn btn-ghost" type="button" id="quiz-reset">Clear answers</button>
         <div class="warnline" id="quiz-warn" role="status"></div>
         <p class="small" style="margin-top:14px;color:#8fb3c6">Scoring: 12+ = physics: nailed it · 9–11 = nearly there · under 9 = brush up first.</p>
-        <p class="small" style="margin-top:8px;color:#ffe08a">A self-check, not a certification: it doesn't replace lessons with an ISA-certified instructor.</p>
+        <p class="small" style="margin-top:8px;color:#ffe08a" data-reel-hide>A self-check, not a certification: it doesn't replace lessons with an ISA-certified instructor.</p>
       </aside>
       <div>
         <div class="result" id="quiz-result" aria-live="polite"></div>
@@ -191,7 +191,7 @@
       <h3>Dial in a swell and follow it from a distant storm to the sandbar</h3>
       <p class="small" style="color:#a9c4d2;margin:0">Uses textbook linear wave theory: deep-water wavelength and speed from the period, energy travelling at half the crest speed, a rule-of-thumb breaking depth of height ÷ 0.78, and wave power per metre of crest. Real surf depends on the seabed, wind and tide. For learning only; it is not a surf forecast or a safety guide.</p>
       <div style="margin-top:18px">
-        <div class="ctl"><label for="sf-T">Swell period</label><input type="range" id="sf-T" min="5" max="16" step="1" value="8"><output id="sf-T-o">8 s</output></div>
+        <div class="ctl"><label for="sf-T">Swell period</label><input type="range" id="sf-T" min="5" max="16" step="0.5" value="8"><output id="sf-T-o">8 s</output></div>
         <div class="ctl"><label for="sf-H">Wave height</label><input type="range" id="sf-H" min="0.3" max="3" step="0.1" value="1"><output id="sf-H-o">1.0 m</output></div>
         <div class="ctl"><label>Distance from the storm</label><div class="seg" id="sf-dist"><button type="button" data-km="500" aria-pressed="false">500 km</button><button type="button" data-km="1000" aria-pressed="true">1,000 km</button><button type="button" data-km="2000" aria-pressed="false">2,000 km</button></div><span></span></div>
       </div>
@@ -450,14 +450,14 @@
     <div class="section-head">
       <span class="eyebrow">03 · The surf ladder</span>
       <h2>Whitewater → green waves → independent → competition → instructor → international</h2>
-      <p>Surfing has no licence. Schools run their own levels, the Surfing Federation of India (SFI) accredits schools and runs national contests, and the International Surfing Association (ISA) certifies instructors and coaches. The steps below are a typical path with the real requirement we found at each one. They aren't official grades.</p>
+      <p data-reel-hide>Surfing has no licence. Schools run their own levels, the Surfing Federation of India (SFI) accredits schools and runs national contests, and the International Surfing Association (ISA) certifies instructors and coaches. The steps below are a typical path with the real requirement we found at each one. They aren't official grades.</p>
     </div>
 
     <div class="ladder">
       <div class="rung">
         <div class="lvl"><span class="step">Step 1 · First lesson</span><b>Whitewater and your first stand-up</b><span class="iso">School's own level 1</span></div>
         <div class="cols">
-          <div class="ag"><span class="an">Real requirement</span><span class="cn">Kovalam Surf Club, Kerala</span><ul><li>Basic swimming skills; about 1.5 h with an internationally certified instructor</li><li>Theory on safety, ocean knowledge, paddling and balance, then pushed into whitewater; most students need 3–5 introduction classes</li></ul></div>
+          <div class="ag"><span class="an">Real requirement</span><span class="cn">Kovalam Surf Club, Kerala</span><ul><li data-reel-hide>Basic swimming skills; about 1.5 h with an internationally certified instructor</li><li>Theory on safety, ocean knowledge, paddling and balance, then pushed into whitewater; most students need 3–5 introduction classes</li></ul></div>
           <div class="ag"><span class="an">Real requirement</span><span class="cn">Kallialay Surf School, Puducherry</span><ul><li>Group lessons: swim at least 50 m confidently without touching the ground (non-swimmers can book a private lesson)</li><li>Children under 11 take private lessons</li></ul></div>
           <div class="ag"><span class="an">Science you're using</span><span class="cn">Volume, breaks and tide</span><ul><li><a href="#ch-board">Ch 3</a> and <a href="#ch-breaking">Ch 2</a></li></ul></div>
         </div>
@@ -473,7 +473,7 @@
       <div class="rung">
         <div class="lvl"><span class="step">Step 3 · Independent surfer</span><b>Choosing spots and conditions yourself</b><span class="iso">Self-assessed; coaching optional</span></div>
         <div class="cols">
-          <div class="ag"><span class="an">Real progression</span><span class="cn">Kovalam Surf Club level 4 · Mantra Surf Club</span><ul><li>Performance class: bottom turns, cutbacks and beyond, for surfers who can hold their own position</li><li>Mantra (Mulki) runs intermediate courses and advanced coaching with ISA-certified instructors</li></ul></div>
+          <div class="ag"><span class="an">Real progression</span><span class="cn">Kovalam Surf Club level 4 · Mantra Surf Club</span><ul><li>Performance class: bottom turns, cutbacks and beyond, for surfers who can hold their own position</li><li data-reel-hide>Mantra (Mulki) runs intermediate courses and advanced coaching with ISA-certified instructors</li></ul></div>
           <div class="ag"><span class="an">Science you're using</span><span class="cn">Swell and energy</span><ul><li>Reading forecasts: <a href="#ch-swell">Ch 1</a></li><li><a href="#ch-energy">Ch 6</a></li></ul></div>
           <div class="ag na"><span class="an">Kinetic tip</span><span class="cn">Never alone</span>Surf with others, ask locals about the bottom and the rips, and leave when it's beyond you.</div>
         </div>
@@ -487,10 +487,10 @@
         </div>
       </div>
       <div class="rung">
-        <div class="lvl"><span class="step">Step 5 · Instructor</span><b>ISA Surf Level 1 Instructor</b><span class="iso">ISA certification</span></div>
+        <div class="lvl"><span class="step">Step 5 · Instructor</span><b>ISA Surf Level 1 Instructor</b><span class="iso" data-reel-hide>ISA certification</span></div>
         <div class="cols">
           <div class="ag"><span class="an">Real requirement</span><span class="cn">ISA Surf Level 1</span><ul><li>Online Introduction to Surf Instructing course, then a Level 1 course with an ISA Course Presenter</li><li>Show basic surfing ability (traverse left and right on green waves and exit with control), log 20 supervised practical hours, hold a valid lifesaving or surf-rescue award</li></ul></div>
-          <div class="ag"><span class="an">In India</span><span class="cn">SFI-run ISA courses</span><ul><li>SFI has run ISA instructor, SUP and judging courses since 2014, certifying over 300 participants</li></ul></div>
+          <div class="ag"><span class="an">In India</span><span class="cn">SFI-run ISA courses</span><ul><li data-reel-hide>SFI has run ISA instructor, SUP and judging courses since 2014, certifying over 300 participants</li></ul></div>
           <div class="ag"><span class="an">Next level</span><span class="cn">ISA Surf Level 2 Coach</span><ul><li>For coaching intermediate to early-advanced surfers; requires Level 1 first</li></ul></div>
         </div>
       </div>
@@ -599,14 +599,14 @@
     <div class="lvl-panel show" id="lvl-learn" role="tabpanel" aria-labelledby="tab-learn">
       <div class="lvl-intro">
         <div class="box"><h4>You're here if…</h4><p style="margin:0">You've never surfed, or you're still on whitewater (Step 1). You can swim confidently. Read <a href="#ch-rips">Ch 5</a> before your first lesson.</p></div>
-        <div class="box"><h4>Ask before you book</h4><p class="small" style="margin:0">Are your instructors ISA-certified? Is the school SFI-accredited? What's the bottom like, sand or rock? Where do rips form on this beach? How many students per instructor?</p></div>
+        <div class="box"><h4>Ask before you book</h4><p class="small" style="margin:0" data-reel-hide>Are your instructors ISA-certified? Is the school SFI-accredited? What's the bottom like, sand or rock? Where do rips form on this beach? How many students per instructor?</p></div>
       </div>
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Surfing Yogis</h4><span class="loc">Puri–Konark Marine Drive, near Balighai, Odisha</span></div><span class="badge">Surf &amp; SUP</span></div>
-          <p>Surf and SUP lessons for beginners through advanced surfers, plus Hatha yoga and a signature Yoga on Water (SUP) session on the ocean and the Kushabhadra river. On the Puri–Konark Marine Drive about 15–16 km from Puri; pioneers of the India Surf Festival. Confirm ISA instructor status and conditions directly — their site does not list a certification.</p>
+          <p data-reel-hide>Surf and SUP lessons for beginners through advanced surfers, plus Hatha yoga and a signature Yoga on Water (SUP) session on the ocean and the Kushabhadra river. On the Puri–Konark Marine Drive about 15–16 km from Puri; pioneers of the India Surf Festival. Confirm ISA instructor status and conditions directly — their site does not list a certification.</p>
           <a class="url" href="https://surfingyogis.org/" target="_blank" rel="noopener">surfingyogis.org</a></div>
         <div class="school"><div class="top"><div><h4>Bay of Life</h4><span class="loc">Kovalam / Covelong, ECR, Chennai, Tamil Nadu</span></div><span class="badge">Surf school</span></div>
-          <p>Chennai's first surf school (since 2011) at a sheltered cove it calls a nursery for beginners, with a point break nearby for experienced riders. Soft-top boards for beginners; also SUP and kayaking. Describes itself as state-accredited with SFI-certified crew — confirm current status with the school.</p>
+          <p data-reel-hide>Chennai's first surf school (since 2011) at a sheltered cove it calls a nursery for beginners, with a point break nearby for experienced riders. Soft-top boards for beginners; also SUP and kayaking. Describes itself as state-accredited with SFI-certified crew — confirm current status with the school.</p>
           <a class="url" href="https://bayoflife.com/kovalam-covelong/" target="_blank" rel="noopener">bayoflife.com</a></div>
         <div class="school"><div class="top"><div><h4>Om Surf School</h4><span class="loc">Rushikonda Beach, Visakhapatnam, Andhra Pradesh</span></div><span class="badge">Surf school</span></div>
           <p>Founded in 2020 by three surfing brothers. Beginner, intermediate and advanced sessions (about 90 minutes) at Rushikonda; instructor Kalyan Rayithi is listed as ISA Level 1. Soft-tops for first waves; progressing students move toward hard boards.</p>
@@ -618,7 +618,7 @@
           <p>Running since 2009, every day of the year depending on the sea. Soft-top boards and rash vests provided; group students must swim 50 m confidently.</p>
           <a class="url" href="https://surfschoolindia.com/surf-school-faq/" target="_blank" rel="noopener">surfschoolindia.com</a></div>
         <div class="school"><div class="top"><div><h4>Mantra Surf Club</h4><span class="loc">Mulki, near Mangaluru, Karnataka · also Morjim, Goa</span></div><span class="badge">Surf school</span></div>
-          <p>Describes itself as India's first surf school, founded in 2004 at Mulki. Beginner lessons over three or five days with ISA-certified instructors. Also runs a Goa location at Morjim (Sandbanks).</p>
+          <p data-reel-hide>Describes itself as India's first surf school, founded in 2004 at Mulki. Beginner lessons over three or five days with ISA-certified instructors. Also runs a Goa location at Morjim (Sandbanks).</p>
           <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
         <div class="school"><div class="top"><div><h4>Cocopelli Surf School</h4><span class="loc">Gokarna Main Beach, Karnataka</span></div><span class="badge">Surf school</span></div>
           <p>Gokarna's first surf school (2010), run by ISA Level 1 instructor Sandeep Samuel. Teaches absolute beginners, non-swimmers and intermediates; recommends October to May for beginners. Recognition by ISA and SFI is Cocopelli's own claim — confirm if that matters to you.</p>
@@ -632,7 +632,7 @@
       </div>
       <div class="schools">
         <div class="school"><div class="top"><div><h4>Mantra intermediate &amp; advanced</h4><span class="loc">Mulki, Karnataka · Morjim, Goa</span></div><span class="badge">Coaching</span></div>
-          <p>Intermediate surf courses and advanced coaching with ISA-certified instructors at Mulki; board hire and guided sessions also at the Goa (Morjim) base.</p>
+          <p data-reel-hide>Intermediate surf courses and advanced coaching with ISA-certified instructors at Mulki; board hire and guided sessions also at the Goa (Morjim) base.</p>
           <a class="url" href="https://surfingindia.net/surf-school-india/" target="_blank" rel="noopener">surfingindia.net</a></div>
         <div class="school"><div class="top"><div><h4>Kovalam step-up &amp; performance</h4><span class="loc">Kovalam, Kerala</span></div><span class="badge">Coaching</span></div>
           <p>Step-up classes with the instructor paddling alongside, then performance classes: bottom turns, cutbacks and beyond, conditions permitting.</p>
@@ -670,7 +670,7 @@
         <div class="box"><h4>Ask before you book</h4><p class="small" style="margin:0">Do I meet the surfing-ability standard? Where can I get a valid lifesaving or surf-rescue award? Who will supervise my 20 practical hours?</p></div>
       </div>
       <div class="schools">
-        <div class="school"><div class="top"><div><h4>ISA Surf Level 1 Instructor</h4><span class="loc">Online course + in-person course</span></div><span class="badge gov">Certification</span></div>
+        <div class="school"><div class="top"><div><h4>ISA Surf Level 1 Instructor</h4><span class="loc">Online course + in-person course</span></div><span class="badge gov" data-reel-hide>Certification</span></div>
           <p>Online introduction, then an in-person course with an ISA Course Presenter, 20 supervised practical hours, a lifesaving award and the ISA Coach's Code of Conduct.</p>
           <a class="url" href="https://isasurf.org/learning/isa-courses/" target="_blank" rel="noopener">isasurf.org</a></div>
         <div class="school"><div class="top"><div><h4>SFI-run ISA courses</h4><span class="loc">Across India, e.g. Varkala, Kerala</span></div><span class="badge gov">Federation</span></div>
@@ -678,9 +678,9 @@
           <a class="url" href="https://www.surfingfederationofindia.org/courses" target="_blank" rel="noopener">surfingfederationofindia.org/courses</a></div>
       </div>
       <div class="sites">
-        <div class="site"><b>SFI school accreditation</b><span class="meta">What an accredited school must have</span><p>At least one active ISA-certified instructor, beach staff with active lifeguard (ILS) certification, safety briefings, an emergency action plan and posted weather and safety information.</p><a class="url" href="https://www.surfingfederationofindia.org/guidelines" target="_blank" rel="noopener">SFI guidelines</a></div>
+        <div class="site"><b>SFI school accreditation</b><span class="meta">What an accredited school must have</span><p data-reel-hide>At least one active ISA-certified instructor, beach staff with active lifeguard (ILS) certification, safety briefings, an emergency action plan and posted weather and safety information.</p><a class="url" href="https://www.surfingfederationofindia.org/guidelines" target="_blank" rel="noopener">SFI guidelines</a></div>
       </div>
-      <div class="callout note"><p style="margin:0">SFI's accreditation guidelines also say non-certified instructors should never teach beginners on their own. It's a good question to ask any school.</p></div>
+      <div class="callout note" data-reel-hide><p style="margin:0">SFI's accreditation guidelines also say non-certified instructors should never teach beginners on their own. It's a good question to ask any school.</p></div>
     </div>
   </div>
 </section>

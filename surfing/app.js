@@ -176,7 +176,7 @@
     resultBox.innerHTML =
       `<div class="score" id="quiz-score">${score}<small> / ${QUESTIONS.length}</small></div>` +
       `<h3 id="quiz-verdict">${title}</h3><p>${blurb}</p>` +
-      `<div class="result-note" id="quiz-disclaimer" role="note">${PAGE.disclaimer}</div>` +
+      `<div class="result-note" id="quiz-disclaimer" role="note" data-reel-hide>${PAGE.disclaimer}</div>` +
       (chItems ? `<strong>Chapters to read:</strong><ul id="quiz-revisit">${chItems}</ul>` : `<p><strong>Perfect score.</strong> The chapters still have the worked numbers if you want to go deeper.</p>`) +
       `<div class="actions"><button class="btn btn-ghost" type="button" id="quiz-retake">↺ Retake the challenge</button><a class="btn btn-ghost" href="#where">${PAGE.whereLabel}</a></div>`;
     document.getElementById("quiz-retake").addEventListener("click", resetQuiz);
@@ -220,7 +220,7 @@
     let dist = 1000;
     function update() {
       const T = +$("sf-T").value, H = +$("sf-H").value;
-      $("sf-T-o").textContent = T + " s";
+      $("sf-T-o").textContent = (Number.isInteger(T) ? T : T.toFixed(1)) + " s";   // 0.5 s steps
       $("sf-H-o").textContent = H.toFixed(1) + " m";
       const L = g * T * T / (2 * Math.PI), c = g * T / (2 * Math.PI), cg = c / 2;
       $("sf-L").textContent = Math.round(L) + " m";
