@@ -285,6 +285,7 @@ footer a{color:#7fd8cd}
 .lab .ctl label{font:600 .85rem var(--sans);color:#cfe2ec}
 .lab .ctl output{font:700 1.05rem var(--mono);color:#fff;text-align:right}
 .lab .ctl input[type=range]{min-width:0;width:100%}
+#gl-wind-o{display:inline-block;min-width:15ch;font-variant-numeric:tabular-nums;white-space:nowrap}
 .lab .seg{display:flex;flex-wrap:wrap;gap:6px}
 .lab .seg button{font:600 .82rem var(--sans);border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#dbe9f0;border-radius:999px;padding:6px 12px;cursor:pointer}
 .lab .seg button[aria-pressed=true]{background:var(--teal);color:var(--sea-900);border-color:var(--teal)}
