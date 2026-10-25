@@ -92,3 +92,37 @@
       snav.querySelectorAll("a").forEach(a => mo.observe(a, { attributes: true, attributeFilter: ["class"] }));
     }
   })();
+
+// ---------- Sport-page look: progress and dots for the self-check, and the active section in the navbar (display only; the check logic above is unchanged) ----------
+(function () {
+  "use strict";
+  var form = document.getElementById("sc-form");
+  var bar = document.getElementById("sc-progress"), label = document.getElementById("sc-progress-label"), dotsBox = document.getElementById("sc-dots");
+  if (form && bar && label && dotsBox) {
+    var qs = Array.prototype.slice.call(form.querySelectorAll("fieldset.q"));
+    var dots = qs.map(function (q, i) {
+      var a = document.createElement("a");
+      a.href = "#" + q.id; a.textContent = String(i + 1);
+      a.setAttribute("aria-label", "Question " + (i + 1));
+      dotsBox.appendChild(a); return a;
+    });
+    var paint = function () {
+      var n = 0;
+      qs.forEach(function (q, i) { var done = !!q.querySelector("input:checked"); dots[i].classList.toggle("answered", done); if (done) n++; });
+      bar.style.width = Math.round(100 * n / qs.length) + "%";
+      label.textContent = n + " of " + qs.length + " answered";
+    };
+    form.addEventListener("change", paint);
+    form.addEventListener("reset", function () { setTimeout(paint, 0); });
+    paint();
+  }
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".sectionnav a[href^='#']"));
+  if ("IntersectionObserver" in window && navLinks.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) navLinks.forEach(function (a) { a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id); });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    navLinks.forEach(function (a) { var t = document.querySelector(a.getAttribute("href")); if (t) io.observe(t); });
+  }
+})();

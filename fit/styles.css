@@ -38,3 +38,25 @@ fieldset.q .why{font-size:.84rem;color:var(--muted);margin:10px 0 0}
 @media (max-width:640px){.week{grid-template-columns:repeat(2,1fr)}.moves{grid-template-columns:1fr}.flags{columns:1}.opts.row,.opts.row2{grid-template-columns:1fr}}
 .callout h3.ch{font:700 1.1rem var(--sans);letter-spacing:0;margin-bottom:.35em}
 .table-scroll:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+/* sport-page look (Oct 2026): first-timer card, on-this-page index, chapter cards, quiz shell, all from ../scuba/styles.css */
+.first .chapters-index{margin:26px 0 0}
+.trio .chapter.mini{padding:22px 22px 18px;border-radius:18px;margin-bottom:0;display:flex;flex-direction:column}
+.trio .chapter.mini header{flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:8px}
+.trio .chapter.mini .chno{font-size:.74rem;letter-spacing:.06em}
+.trio .chapter.mini h3{font-size:1.25rem}
+.trio .chapter.mini .body{max-width:none}
+.trio .chapter.mini .body p{margin:0 0 .6em}
+.trio .chapter.mini .worked{margin:auto 0 0;padding:10px 14px}
+.trio .chapter.mini .worked p{margin:0;color:var(--muted)}
+.chapter.wide .body{max-width:none}
+.chapter.wide .worked{padding:12px 14px}
+.chapter.wide .week{margin-top:6px}
+.chapter .table-scroll{margin:0}
+.phys-teaser{margin-top:22px}
+.phys-teaser p{margin:0}
+.quiz-shell fieldset.q{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+.quiz-shell fieldset.q.missing{border-color:var(--coral)}
+.quiz-shell .disclaim{margin-top:0}
+.dots a.answered{outline:0}
+@media (max-width:960px){.chapter.wide{padding:26px 20px}}
+@media (max-width:640px){.trio .chapter.mini{padding:20px 18px 16px}.quiz-shell fieldset.q{padding:16px 16px}}

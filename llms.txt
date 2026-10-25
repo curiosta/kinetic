@@ -51,6 +51,10 @@ Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist page
 - [Running](https://kinetic.curiosta.com/running/): Before your next race: running economy, ground forces, VO2 max, energy, altitude and heat, and what they mean for you. Plus the 5K-to-ultra ladder with real qualification rules, governing bodies, and Indian races from Mumbai to the Ladakh Marathon.
 - [Triathlon & Ironman](https://kinetic.curiosta.com/triathlon/): Before your first race: check yourself in 15 questions on fuelling, pacing, swim drag and wetsuits, drafting, heat and transitions, and what they mean for you. Then follow the ladder from sprint to IRONMAN and the world championships.
 
+## The basics every sport shares
+
+- [Physics in five minutes](https://kinetic.curiosta.com/physics/): The basics every adventure sport shares: forces, energy, pressure, drag, impacts and balance, every number worked step by step. The sport pages hold the specifics. A refresher, not medical or training advice.
+
 ## Get fit and when to go
 
 - [Get fit](https://kinetic.curiosta.com/fit/): What your body does in adventure sports, a 6-week no-gym starter routine, what schools ask of beginners, eating and sleep, when to see a doctor, and a quick self-check.
