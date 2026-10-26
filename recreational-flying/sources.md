@@ -48,7 +48,6 @@ Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft,
 | Item | URL | Status |
 |---|---|---|
 | SkyWaltz: India's first fully licensed commercial hot-air balloon operator (own claim); MoCA authorisation Jan 2008; brand of E Factor Adventure Tourism; Jaipur (Kukas) base; ~1 h flights at sunrise/sunset; balloons for 2–22 people; season 1 Sep–30 Apr; internationally licensed pilots | https://www.skywaltz.com/about-us/ and /locations/ | loaded. Other locations (e.g. Lonavala) are search-index only, so the page says "other locations listed on its site" |
-| Tamil Nadu International Balloon Festival: 11th edition 15–18 Jan 2026, Jallikattu Grounds, L&T Bypass Road, Coimbatore; TN Tourism support; limited tethered rides 60–80 ft, weather-dependent, pilot's decision final; no free flights | https://tnibf.com/ | loaded |
 | GFZ Flying Club (near Jaipur): "No licence required" for powered paratrike (PPG) and powered parachute (PPC), "non-licensed flex-wing category in India"; progression to PHG, fixed-wing microlight, LSA, motor glider | https://gfzclub.in/ | loaded via WebFetch (box curl 000). **The no-licence statement is the school's own claim**; the page attributes it and tells readers to confirm the legal position |
 | PG Gurukul: 6-day paramotoring course at Kotkapura, Punjab; P3 rating required | https://www.paragliding.guru/ | loaded. Its prices are not shown |
 | SkyVentures (Rajasthan): "Rajasthan's first & only" hang-gliding school (own claim); 5-day basic course; intermediate ridge and thermal soaring; paramotor training; winch towing | https://skyventures.in/hang-glider-training-india/ | loaded |
@@ -74,13 +73,11 @@ Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft,
 | Paramotor Thrust Lab cross-link | ../paramotoring/#pm-lab | on-site |
 | Flying World Aviation APPI Power listing | https://appipower.org/school/2955/ | ✓ APPI POWER-listed (same as paramotoring deep3) |
 | SkyWaltz MoCA licence claim | skywaltz.com/about-us | School’s claim — not re-fetched live certificate |
-| TNIBF official festival | https://tnibf.com/ | ✓ Official festival site (identity) |
 | GFZ / SkyVentures / PG Gurukul paramotor | own sites | Accreditation: unverified (+ GFZ school’s claim non-licensed) |
 | Hadapsar | Hindustan Times Nov 2025 (prior source) | Reported — DGCA gliding centre; confirm status |
 
 ### Accreditation labels (5 Oct 2026)
 - SkyWaltz → School’s claim — MoCA licensed (Jan 2008)
-- TNIBF → ✓ Official festival site
 - Flying World Aviation → ✓ APPI POWER-listed
 - GFZ (both cards), PG Gurukul paramotor, SkyVentures → Accreditation: unverified
 - Hadapsar → Reported — DGCA gliding centre (press)

@@ -9,18 +9,4 @@ X-WR-CALDESC:Upcoming cycling & mtb events with announced dates\, from http
 X-WR-TIMEZONE:Asia/Kolkata
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
-BEGIN:VEVENT
-UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
-DTSTAMP:20261026T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261213
-SUMMARY:Tour of the Nilgiris
-LOCATION:Karnataka\, Kerala\, Tamil Nadu
-DESCRIPTION:Karnataka\, Kerala\, Tamil Nadu\nOfficial page: https://www.tou
- rofnilgiris.com/\nKinetic Cycling & MTB page: https://kinetic.curiosta.com
- /cycling-mtb/\nDates as announced by the organiser: check the official pag
- e before you plan.
-URL:https://www.tourofnilgiris.com/
-TRANSP:TRANSPARENT
-END:VEVENT
 END:VCALENDAR

@@ -31,7 +31,6 @@ Base checks 3 Oct 2026 (IST); deep5 pass 5 Oct 2026 (IST). Every fact on the pag
 |---|---|---|
 | AIR calendar 2026: time limits 100 km 7.5 h, 200 km 13.5 h, 300 km 20 h, 400 km 27 h, 600 km 40 h, 1,000 km 75 h, 1,200 km 90 h; a rider who completes a 200 km event is a randonneur; PBP 1,230 km in 90 h, every 4 years; Oct 2026 BRMs from 100 to 1,200 km across Indian cities | https://www.audaxindia.in/events-ec-2026 | loaded |
 | Fit India Sundays on Cycle: MYAS with CFI, Raahgiri Foundation and MY Bharat; across all states and UTs through the SAI and Khelo India network; 88th edition on 30 Aug 2026 at 25,000+ locations; "weekly cycling movement" | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304633&lang=1&reg=48 | loaded (PIB, 30 Aug 2026) |
-| Tour of the Nilgiris 2026: pre-tour briefing 5 Dec, flag-off 6 Dec, last day 12 Dec; 7 days, 700+ km, Karnataka–Kerala–Tamil Nadu; fully supported (transport, food, accommodation, cycle maintenance, medical backup); first event 2008 | https://www.tourofnilgiris.com/ | loaded (registration amounts **not reproduced**) |
 | NIM Mountain Terrain Biking course: techniques, skills and safety protocols for rugged terrain; for beginners and experienced riders; physical-conditioning recommendation | https://www.nimindia.net/mtbcourse | loaded (no duration or dates published on the page) |
 | National MTB Championship: about 800 cyclists at Mahendragiri, Gajapati district, Odisha; four days; under CFI; hosted by Odisha Cycling Association | https://timesofindia.indiatimes.com/city/bhubaneswar/800-cyclists-converge-on-mahendragiri-for-national-mtb-championship/articleshow/134622002.cms | loaded (TOI, 2 Oct 2026) |
 
@@ -72,7 +71,6 @@ Base checks 3 Oct 2026 (IST); deep5 pass 5 Oct 2026 (IST). Every fact on the pag
 ### Accreditation labels on cards (5 Oct 2026)
 - Fit India Sundays on Cycle → ✓ Government programme (PIB)
 - AIR 100 km brevets / Audax India BRMs → ✓ On Les Randonneurs Mondiaux member list
-- Tour of the Nilgiris → Accreditation: unverified (organiser's site only)
 - NIM MTB course → ✓ Government institute (NIM); CFI/UCI course stamp: none claimed
 - Himalayan Terra → School's claim — "experienced mountain bike coaches"; Accreditation: unverified
 - Into Wild Himalaya → School's claim — "certified instructors"; own course certificate; Accreditation: unverified
