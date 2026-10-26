@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
@@ -27,7 +27,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  trap-20261112@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261217
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -45,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  skeet-20261116@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261212
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -63,7 +63,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-rifle-pi
  stol-20261211@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20270101
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Rifle & Pi
@@ -74,6 +74,26 @@ DESCRIPTION:New Delhi and Bhopal\nOfficial page: https://www.thenrai.in/sho
  .com/shooting/\nDates as announced by the organiser: check the official pa
  ge before you plan.
 URL:https://www.thenrai.in/shooting_calander.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shooting-khelo-india-youth-games-2026-shooting-selection-only-youth-ath
+ letes-20261216@kinetic.curiosta.com
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261222
+SUMMARY:Khelo India Youth Games 2026: Shooting (selection only\, youth athl
+ etes)
+LOCATION:Gachibowli Shooting Range\, Hyderabad\, Telangana. Rifle\, pistol 
+ and shotgun. Selection only: athletes born 2008 or later\, picked through 
+ NRAI\, SGFI and CBSE quotas\, not open entry
+DESCRIPTION:Gachibowli Shooting Range\, Hyderabad\, Telangana. Rifle\, pist
+ ol and shotgun. Selection only: athletes born 2008 or later\, picked throu
+ gh NRAI\, SGFI and CBSE quotas\, not open entry\nOfficial page: https://ww
+ w.thenrai.in/details.aspx?view=8620\nKinetic Sport shooting page: https://
+ kinetic.curiosta.com/shooting/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8620
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

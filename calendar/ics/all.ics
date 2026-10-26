@@ -12,7 +12,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:archery-46th-junior-national-archery-championship-20261021@kinetic.curi
  osta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261029
 SUMMARY:46th Junior National Archery Championship
@@ -26,7 +26,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-35th-all-india-g-v-mavlankar-shooting-championship-pistol-2026
  1023@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:35th All India G.V. Mavlankar Shooting Championship (Pistol)
@@ -39,37 +39,8 @@ URL:https://www.thenrai.in/shooting_calander.aspx
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:motorsport-karting-indian-national-car-racing-championship-round-2-2026
- 1023@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261026
-SUMMARY:Indian National Car Racing Championship\, round 2
-LOCATION:Kari Motor Speedway\, Coimbatore
-DESCRIPTION:Kari Motor Speedway\, Coimbatore\nOfficial page: https://www.jk
- tyremotorsport.com/calendar\nKinetic Karting & motorsport page: https://ki
- netic.curiosta.com/motorsport-karting/\nDates as announced by the organise
- r: check the official page before you plan.
-URL:https://www.jktyremotorsport.com/calendar
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:cycling-mtb-mtb-shimla-20261023@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261026
-SUMMARY:MTB Shimla
-LOCATION:The Ridge\, Shimla\, Himachal Pradesh
-DESCRIPTION:The Ridge\, Shimla\, Himachal Pradesh\nOfficial page: https://h
- astpa.com/events/\nKinetic Cycling & MTB page: https://kinetic.curiosta.co
- m/cycling-mtb/\nDates as announced by the organiser: check the official pa
- ge before you plan.
-URL:https://hastpa.com/events/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:swimming-1st-sfi-short-course-nationals-20261025@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261029
 SUMMARY:1st SFI Short Course Nationals
@@ -86,7 +57,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:freediving-cmas-red-sea-open-cup-20261026@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261031
 SUMMARY:CMAS Red Sea Open Cup
@@ -100,7 +71,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:swimming-elephanta-to-gateway-of-india-expedition-swim-owsa-20261031@ki
  netic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261102
 SUMMARY:Elephanta to Gateway of India expedition swim (OWSA)
@@ -114,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:windsurfing-gethnaa-basic-aqua-sports-course-20261101@kinetic.curiosta.
  com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261111
 SUMMARY:GETHNAA Basic Aqua Sports Course
@@ -128,7 +99,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:triathlon-ironman-70-3-goa-20261101@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:IRONMAN 70.3 Goa
@@ -142,7 +113,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:surfing-isa-world-surfing-games-20261106@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261116
 SUMMARY:ISA World Surfing Games
@@ -156,7 +127,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-senior-national-archery-championships-indian-round-compound-rec
  urve-20261111@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261119
 SUMMARY:Senior National Archery Championships (Indian round\, compound\, re
@@ -171,7 +142,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  trap-20261112@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261217
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -189,7 +160,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:motorsport-karting-indian-national-car-racing-championship-round-3-2026
  1113@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:Indian National Car Racing Championship\, round 3
@@ -203,7 +174,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:swimming-aquamoga-the-goa-swimathon-20261114@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261116
 SUMMARY:Aquamoga: the Goa Swimathon
@@ -216,7 +187,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sailing-yai-senior-nationals-20261114@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261121
 SUMMARY:YAI Senior Nationals
@@ -230,7 +201,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:windsurfing-yai-senior-nationals-iqfoil-men-and-women-20261114@kinetic.
  curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261121
 SUMMARY:YAI Senior Nationals (iQFOiL\, men and women)
@@ -246,7 +217,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-shotgun-
  skeet-20261116@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261212
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Shotgun\, 
@@ -264,7 +235,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-4th-national-ranking-archery-tournament-20261121@kinetic.curios
  ta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261201
 SUMMARY:4th National Ranking Archery Tournament
@@ -278,7 +249,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:rock-climbing-30th-imf-national-sport-climbing-championship-20261127@ki
  netic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261201
 SUMMARY:30th IMF National Sport Climbing Championship
@@ -296,7 +267,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-malnad-ultra-20261128@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Malnad Ultra
@@ -310,7 +281,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:skating-64th-national-roller-skating-championships-rsfi-20261205@kineti
  c.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261216
 SUMMARY:64th National Roller Skating Championships (RSFI)
@@ -327,7 +298,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:skateboarding-64th-national-roller-skating-championships-incl-skateboar
  ding-20261205@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261216
 SUMMARY:64th National Roller Skating Championships (incl. skateboarding)
@@ -343,7 +314,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261213
 SUMMARY:Tour of the Nilgiris
@@ -358,7 +329,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shooting-69th-national-shooting-championship-competitions-nrai-rifle-pi
  stol-20261211@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20270101
 SUMMARY:69th National Shooting Championship Competitions (NRAI): Rifle & Pi
@@ -374,7 +345,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:motorsport-karting-indian-national-car-racing-championship-finale-20261
  211@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:Indian National Car Racing Championship\, finale
@@ -387,8 +358,28 @@ URL:https://www.jktyremotorsport.com/calendar
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:shooting-khelo-india-youth-games-2026-shooting-selection-only-youth-ath
+ letes-20261216@kinetic.curiosta.com
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261222
+SUMMARY:Khelo India Youth Games 2026: Shooting (selection only\, youth athl
+ etes)
+LOCATION:Gachibowli Shooting Range\, Hyderabad\, Telangana. Rifle\, pistol 
+ and shotgun. Selection only: athletes born 2008 or later\, picked through 
+ NRAI\, SGFI and CBSE quotas\, not open entry
+DESCRIPTION:Gachibowli Shooting Range\, Hyderabad\, Telangana. Rifle\, pist
+ ol and shotgun. Selection only: athletes born 2008 or later\, picked throu
+ gh NRAI\, SGFI and CBSE quotas\, not open entry\nOfficial page: https://ww
+ w.thenrai.in/details.aspx?view=8620\nKinetic Sport shooting page: https://
+ kinetic.curiosta.com/shooting/\nDates as announced by the organiser: check
+  the official page before you plan.
+URL:https://www.thenrai.in/details.aspx?view=8620
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:running-tata-steel-world-25k-kolkata-20261220@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Tata Steel World 25K Kolkata
@@ -402,7 +393,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-tata-mumbai-marathon-20270117@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Tata Mumbai Marathon
@@ -418,7 +409,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:archery-43rd-ntpc-sub-junior-national-archery-championship-20270206@kin
  etic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270216
 SUMMARY:43rd NTPC Sub-Junior National Archery Championship
@@ -433,7 +424,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:paragliding-pwca-asian-tour-india-panchgani-20270206@kinetic.curiosta.c
  om
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270213
 SUMMARY:PWCA Asian Tour India — Panchgani
@@ -448,7 +439,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-auroville-marathon-20270214@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Auroville Marathon
@@ -463,7 +454,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:triathlon-ironman-70-3-amdavad-first-edition-20270214@kinetic.curiosta.
  com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:IRONMAN 70.3 Amdavad (first edition)
@@ -478,7 +469,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:paragliding-paragliding-world-cup-india-panchgani-2027-20270214@kinetic
  .curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270222
 SUMMARY:Paragliding World Cup India — Panchgani 2027
@@ -493,7 +484,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-tata-ultra-marathon-20270221@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Tata Ultra Marathon
@@ -506,7 +497,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-cognizant-new-delhi-marathon-20270228@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:Cognizant New Delhi Marathon
@@ -519,7 +510,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:running-tcs-world-10k-bengaluru-20270425@kinetic.curiosta.com
-DTSTAMP:20261023T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270425
 DTEND;VALUE=DATE:20270426
 SUMMARY:TCS World 10K Bengaluru

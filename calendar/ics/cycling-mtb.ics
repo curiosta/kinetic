@@ -10,22 +10,8 @@ X-WR-TIMEZONE:Asia/Kolkata
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:cycling-mtb-mtb-shimla-20261023@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261026
-SUMMARY:MTB Shimla
-LOCATION:The Ridge\, Shimla\, Himachal Pradesh
-DESCRIPTION:The Ridge\, Shimla\, Himachal Pradesh\nOfficial page: https://h
- astpa.com/events/\nKinetic Cycling & MTB page: https://kinetic.curiosta.co
- m/cycling-mtb/\nDates as announced by the organiser: check the official pa
- ge before you plan.
-URL:https://hastpa.com/events/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:cycling-mtb-tour-of-the-nilgiris-20261206@kinetic.curiosta.com
-DTSTAMP:20261020T000000Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261213
 SUMMARY:Tour of the Nilgiris
