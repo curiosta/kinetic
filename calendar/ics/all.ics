@@ -509,6 +509,36 @@ URL:https://www.newdelhimarathon.com/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:skiing-snowboarding-vasaloppet-ppet-sp-r-sunday-90-km-classic-ski-leisu
+ re-20270228@kinetic.curiosta.com
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Vasaloppet Öppet Spår Sunday (90 km classic ski\, leisure)
+LOCATION:Sälen to Mora\, Dalarna\, Sweden
+DESCRIPTION:Sälen to Mora\, Dalarna\, Sweden\nOfficial page: https://vasal
+ oppet.se/en/ski/oppet-spar-sunday/\nKinetic Skiing & snowboarding page: ht
+ tps://kinetic.curiosta.com/skiing-snowboarding/\nDates as announced by the
+  organiser: check the official page before you plan.
+URL:https://vasaloppet.se/en/ski/oppet-spar-sunday/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:skiing-snowboarding-vasaloppet-90-km-classic-ski-race-20270307@kinetic.
+ curiosta.com
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Vasaloppet (90 km classic ski race)
+LOCATION:Sälen to Mora\, Dalarna\, Sweden
+DESCRIPTION:Sälen to Mora\, Dalarna\, Sweden\nOfficial page: https://vasal
+ oppet.se/en/ski/vasaloppet/\nKinetic Skiing & snowboarding page: https://k
+ inetic.curiosta.com/skiing-snowboarding/\nDates as announced by the organi
+ ser: check the official page before you plan.
+URL:https://vasaloppet.se/en/ski/vasaloppet/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:running-tcs-world-10k-bengaluru-20270425@kinetic.curiosta.com
 DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20270425

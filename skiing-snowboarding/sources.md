@@ -65,3 +65,16 @@ Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. Every fact on
 - NIM skiing → ✓ Government institute (NIM); ISIA not applicable
 - Auli → Tourism site — GMVN lessons; private ski-school accreditation unverified
 - BSSA championships → School's claim — FIS / IOA (directory lag noted)
+
+## 6. Vasaloppet (race abroad), added 26 Oct 2026
+
+Moved from Nomad under the individual-sport rule. All facts are from the organiser (Vasaloppet, vasaloppet.se); fees, bib price and registration periods were **not reproduced**.
+
+| Item | Source | Status |
+|---|---|---|
+| Vasaloppet 2027: Sunday 7 Mar 2027, joint start 08:00, 90 km, Sälen (Berga by) to Mora, classic technique, from the year you turn 17, seven checkpoints with cut-off times, about 12 hours to finish, women's and men's class | https://vasaloppet.se/en/ski/vasaloppet/ | fetched 26 Oct 2026 |
+| Held since 1922; "the 103rd Vasaloppet" on 7 Mar 2027; 2027 winter week 26 Feb–7 Mar (Vasaloppet 30, Tjejvasan, Öppet Spår Sunday and Monday, Ungdomsvasan, Vasaloppet 45, night races); first-timer packing list (phone, extra socks, extra hat, snacks, headlamp if still out after 17:00) | https://vasaloppet.se/en/guides-and-tips/ski/quick-guide-for-first-time-participants/ , https://vasaloppet.se/en/about-us/history/ , https://www.vasaloppet.se/en/calendar | fetched 26 Oct 2026 |
+| Öppet Spår Sunday, 28 Feb 2027, start from 06:50, 90 km classic from Sälen, type Leisure, "only competing against yourself", a seeding event for Vasaloppet | https://vasaloppet.se/en/ski/oppet-spar-sunday/ | fetched 26 Oct 2026 |
+| Classic technique only in Vasaloppet (skating can lead to disqualification); Öppet Spår Monday races are freestyle; fluorinated wax banned from 2024; competition-class entry needs a Swedish ski-club membership, international participants exempt | https://vasaloppet.se/en/rules/ , https://vasaloppet.se/en/guides-and-tips/ski/rules-for-our-ski-races/ | fetched 26 Oct 2026 |
+| Safety first: rescue and medical staff may remove participants from the course; late arrival at a checkpoint means stopping, with bus transport to Mora; bus booking opens end of November 2026 | https://vasaloppet.se/en/ski/vasaloppet/ | fetched 26 Oct 2026 |
+| "Who it suits" sentence on the page | our reading, labelled "General guidance, not a source" | editorial |
