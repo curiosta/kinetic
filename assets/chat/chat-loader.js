@@ -27,14 +27,19 @@
   var path = location.pathname.replace(/index\.html$/, "");
   var isHome = path === "/" || path === "";
   var isCalendar = /\/calendar\/?$/.test(path);
+  // Non-sport pages get their own chips (matched by path, like isCalendar), so the sport template below
+  // never turns a page title such as "Physics in five minutes" or "Get fit" into an activity.
+  var isPhysics = /\/physics\/?$/.test(path);
+  var isFit = /\/fit\/?$/.test(path);
   var suggestions;
+  var homeChips = [
+    "Which sport suits a beginner who loves water?",
+    "Explain the physics of paragliding simply",
+    "Which adventure sports can I do in India in winter?",
+    "Compare scuba diving and freediving"
+  ];
   if (isHome) {
-    suggestions = [
-      "Which sport suits a beginner who loves water?",
-      "Explain the physics of paragliding simply",
-      "Which adventure sports can I do in India in winter?",
-      "Compare scuba diving and freediving"
-    ];
+    suggestions = homeChips;
   } else if (isCalendar) {
     suggestions = [
       "What events are coming up next month?",
@@ -42,6 +47,22 @@
       "When is the best season for paragliding in India?",
       "How do I add this calendar to my phone?"
     ];
+  } else if (isPhysics) {
+    suggestions = [
+      "Explain pressure and buoyancy in simple terms",
+      "Why does a 60° bank feel like 2 g in paragliding?",
+      "Why do bent knees make a landing so much softer?",
+      "Which sport page should I read next?"
+    ];
+  } else if (isFit) {
+    suggestions = [
+      "What does the 6-week starter routine with no gym involve?",
+      "Am I fit enough for a first scuba or paragliding lesson?",
+      "When should I see a doctor before I start?",
+      "What should I eat, drink and sleep while I train?"
+    ];
+  } else if (!sportName()) {
+    suggestions = homeChips;                  // a page with no sport name in its title is not a sport page
   } else {
     var s = sportName() || "this sport", sl = s.toLowerCase();
     var ch = Array.prototype.slice.call(document.querySelectorAll("article.chapter header h3, article.chapter h3"))
