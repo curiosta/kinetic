@@ -1,6 +1,6 @@
 # Kinetic
 
-> Kinetic explains the physics behind 26 live adventure sports (plus 4 on a watchlist) and what it means for your safety: what happens to your body, your gear and the air or water around you, with real numbers. Each sport page has a pre-trip self-check quiz, an interactive lab, the skill or certification levels, governing bodies in India and worldwide, and places to try it in India by level, with questions to ask before you book. The self-checks are for learning, not a certification. Kinetic does not list costs or fees.
+> Kinetic explains the physics behind 28 live adventure sports (plus 5 on a watchlist) and what it means for your safety: what happens to your body, your gear and the air or water around you, with real numbers. Each sport page has a pre-trip self-check quiz, an interactive lab, the skill or certification levels, governing bodies in India and worldwide, and places to try it in India by level, with questions to ask before you book. The self-checks are for learning, not a certification. Kinetic does not list costs or fees.
 
 Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist pages cover sports with no Indian school or governing body found, so they have no where-to-go section and no season calendar rows.
 
@@ -22,6 +22,7 @@ Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist page
 - [Paramotoring](https://kinetic.curiosta.com/paramotoring/): Before your first powered flight: check yourself in 15 questions on thrust, PPG wings, torque, launches, fuel, wind and the rules, and what they mean for you. Then follow the ladder from paragliding to a paramotor course and PPG ratings.
 - [Skydiving](https://kinetic.curiosta.com/skydiving/): Before your first jump: check yourself in 15 questions on free fall, body position, opening forces, canopy flare, altitude and wind drift, and what they mean for you. Then follow the ladder from tandem to AFF and USPA A–D licences.
 - [Bungee & Zipline](https://kinetic.curiosta.com/bungee-zipline/): Before you jump or zip: check yourself in 15 questions on free fall, elastic cords, peak g, cord length, brakes and harnesses, and what they mean for you. Then see the operator standards and where to jump or zip in India and abroad.
+- [Hang Gliding](https://kinetic.curiosta.com/hang-gliding/): Before you fly a hang glider: check yourself in 15 questions on lift and glide ratio, weight-shift control, launch and landing in wind, stalls in turns and tow weak links. Then see the CIVL stages and what exists in India.
 
 ## Snow & ice
 
@@ -34,6 +35,7 @@ Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist page
 - [Skateboarding](https://kinetic.curiosta.com/skateboarding/): Before you drop in: check yourself in 15 questions on rolling, balance, the ollie, ramps and how to fall, and what they mean for you. Then find skateparks, competitions and coaching pathways in India.
 - [Cycling & Mountain Biking](https://kinetic.curiosta.com/cycling-mtb/): Before you ride: check yourself in 15 questions on power, drag, climbing, gears, braking and trail riding, and what they mean for you. Then follow the ladder from Sunday rides and brevets to MTB courses and national races in India.
 - [Karting & Motorsport](https://kinetic.curiosta.com/motorsport-karting/): Before you drive on track: check yourself in 15 questions on tyre grip, cornering force, weight transfer, braking distance and g-forces, and what they mean for you. Then see the FMSCI and FIA licence grades and where to drive on track in India.
+- [Motorcycle Racing & Off-road](https://kinetic.curiosta.com/motorcycle-racing/): Before you ride on track or trail: check yourself in 15 questions on lean angle and grip, countersteering, braking, crashes, jumps and off-road traction. Then see FMSCI licences, off-road schools and where to ride in India.
 
 ## Land & rock
 
@@ -58,7 +60,7 @@ Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist page
 ## Get fit and when to go
 
 - [Get fit](https://kinetic.curiosta.com/fit/): What your body does in adventure sports, a 6-week no-gym starter routine, what schools ask of beginners, eating and sleep, when to see a doctor, and a quick self-check.
-- [When to go](https://kinetic.curiosta.com/calendar/): Best months for 26 adventure sports in India, region by region, from diving in the Andamans to skiing in Gulmarg, with annual events and a source for every season.
+- [When to go](https://kinetic.curiosta.com/calendar/): Best months for 28 adventure sports in India, region by region, from diving in the Andamans to skiing in Gulmarg, with annual events and a source for every season.
 
 ## Watchlist
 
@@ -66,8 +68,9 @@ Kinetic is a Curiosta brand. Site: https://kinetic.curiosta.com/. Watchlist page
 - [Ice diving](https://kinetic.curiosta.com/ice-diving/): Before you consider ice diving: check yourself in 15 questions on the coldest water under the ice, heat loss, freezing regulators, tender lines and depth limits. Then see the CMAS Ice Diver path and where to learn abroad.
 - [Big-wave surfing](https://kinetic.curiosta.com/big-wave-surfing/): Before you consider big waves: check yourself in 15 questions on wave energy, long-period swell, seabed focusing, tow-in speeds and aerated water. Then see the safety and tow-in path and where to learn abroad.
 - [Snowkiting](https://kinetic.curiosta.com/snowkiting/): Before you consider snowkiting: check yourself in 15 questions on wind pressure, thin mountain air, the wind window, quick release, avalanche slopes and wind chill. Then see the snowkite path and where to learn abroad.
+- [BASE jumping and wingsuit flying](https://kinetic.curiosta.com/base-jumping/): Before you consider BASE or wingsuit flying: check yourself in 15 questions on low exits, slow openings, object strike, wind, glide ratio and terrain margins. Then see why it needs extensive skydiving experience first, and the rules abroad.
 
 ## Optional
 
-- [Home](https://kinetic.curiosta.com/): 26 live adventure sports plus 4 on the watchlist: the physics behind each one and what it means for you, with self-checks, labs and where to go.
+- [Home](https://kinetic.curiosta.com/): 28 live adventure sports plus 5 on the watchlist: the physics behind each one and what it means for you, with self-checks, labs and where to go.
 - [Sitemap](https://kinetic.curiosta.com/sitemap.xml): every page URL

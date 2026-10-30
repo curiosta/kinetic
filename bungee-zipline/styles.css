@@ -291,7 +291,37 @@ footer a{color:#7fd8cd}
 .gauge{margin-top:28px;display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.78rem;color:#8fb3c6}
 .gauge .bar{flex:1;height:6px;border-radius:6px}
 .skip-note{font-size:.86rem;color:var(--muted)}
-@media (max-width:640px){.lab .ctl{grid-template-columns:1fr auto;}.lab .ctl label{grid-column:1/-1}}
+/* labphone:start · phone pass for multi-slider labs (labphone.py, 30 Oct 2026; mirrors scuba/styles.css phone fixes) */
+.lab-card .k{font-size:max(.75rem,12px)}
+.lab-card .s,.lab .fine{font-size:max(.8125rem,13px)}
+.lab-bar{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width:640px){
+  .lab .ctl{grid-template-columns:1fr auto;gap:2px 12px;margin:4px 0 8px}
+  .lab .ctl label{grid-column:1;grid-row:1}
+  .lab .ctl output{grid-column:2;grid-row:1;font-size:.95rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .lab .ctl input[type=range]{grid-column:1/-1;grid-row:2;height:32px}
+  .lab .ctl .seg{grid-column:1/-1;grid-row:2}
+  .lab .seg button{min-height:44px;padding:10px 14px}
+  .lab-grid{gap:8px}
+  .lab-card{padding:9px 10px}
+  .lab-card .v{font-size:1.15rem}
+  .lab-card .k,.lab-card .s{display:block;line-height:1.25}
+  /* results bar: the 1-2 key readouts stay pinned under the header while you drag (like Scuba's depth bar) */
+  .lab-bar{display:flex;position:sticky;top:var(--lab-bar-top,var(--nav-h));z-index:3;gap:12px;margin:14px -20px 10px;padding:8px 20px;background:#08314f;box-shadow:0 6px 12px -8px rgba(0,0,0,.6)}
+  .lab-bar .lb{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+  /* one line each, so the bar keeps one height while you drag (values are kept short in SHORT; ellipsis is only a guard) */
+  .lab-bar .lbk,.lab-bar .lbv{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lab-bar .lbk{font:600 12.5px/1.25 var(--sans);color:#cfe2ec;height:1.25em}
+  .lab-bar .lbv{font:700 1.05rem/1.3 var(--mono);color:#fff;font-variant-numeric:tabular-nums;height:1.3em}
+}
+@media (max-width:400px){
+  .lab-card .k{font:600 12.5px/1.25 var(--sans);text-transform:none;letter-spacing:0}
+  .lab-bar{gap:10px}
+  .lab-bar .lbv{font-size:.98rem}
+}
+@media (max-width:640px){#bz-H-o{min-width:5.1ch}#bz-k-o{min-width:7.1ch}#bz-m-o{min-width:6.1ch}#bz-th-o{min-width:3.1ch}}
+/* labphone:end */
 
 /* ---------- theme: bungee-zipline (canyon dusk & cord orange) ---------- */
 .hero{background:radial-gradient(1100px 520px at 82% -10%,#f3a25b 0%,transparent 55%),radial-gradient(900px 500px at 10% 120%,#4b3a6b 0%,transparent 60%),linear-gradient(180deg,#2c2440,#140f1f)}

@@ -31,6 +31,7 @@ Every number on this page is either a figure already on a Kinetic sport page (na
 Each chip on the page links to the chapter the figure comes from.
 
 - [Archery](../archery/)
+- [BASE & wingsuit](../base-jumping/)
 - [Big-wave surfing](../big-wave-surfing/)
 - [Bungee & zipline](../bungee-zipline/)
 - [Cave diving](../cave-diving/)

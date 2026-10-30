@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Curiosta//Kinetic event calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kinetic — Motorcycle racing & off-road events
+X-WR-CALDESC:Upcoming motorcycle racing & off-road events with announced da
+ tes\, from https://kinetic.curiosta.com/calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:motorcycle-racing-mrf-mogrip-fmsci-national-supercross-championship-rou
+ nd-6-20261129@kinetic.curiosta.com
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:MRF MoGrip FMSCI National Supercross Championship\, round 6
+LOCATION:Kolhapur\, Maharashtra
+DESCRIPTION:Kolhapur\, Maharashtra\nOfficial page: https://mrfmotorsports.c
+ om/championship/off-road/two-wheeler/mrf-mogrip-fmsci-national-supercross-
+ championship-2026/2026/round-3\nKinetic Motorcycle racing & off-road page:
+  https://kinetic.curiosta.com/motorcycle-racing/\nDates as announced by th
+ e organiser: check the official page before you plan.
+URL:https://mrfmotorsports.com/championship/off-road/two-wheeler/mrf-mogrip
+ -fmsci-national-supercross-championship-2026/2026/round-3
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

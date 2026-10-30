@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://kinetic.curiosta.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Kinetic: the physics behind adventure sports, and what it means for you. 26 live sports plus 4 on the watchlist, science challenges, real numbers, when to go in India.">
+<meta property="og:image:alt" content="Kinetic: the physics behind adventure sports, and what it means for you. 28 live sports plus 5 on the watchlist, science challenges, real numbers, when to go in India.">
 <meta name="twitter:card" content="summary_large_image">
 <!-- seo:end -->
 <!-- ld:start -->
@@ -190,6 +190,7 @@
       <span class="eyebrow">Interactive · Fall Lab</span>
       <h3>Set up a lead fall and see what the rope, you and the top bolt feel</h3>
       <p class="small" style="color:#a9c4d2;margin:0">An idealised model: the rope is a perfect spring (stiffness EA ≈ 24 kN, chosen so an 80 kg mass in the standard factor-1.77 test gives ≈ 9 kN, inside the 12 kN limit), the belay is fixed, and nothing else absorbs energy. Real falls are softer, thanks to rope slip, a moving belayer and your body. For learning only; it is not a guide to how far you can safely fall.</p>
+      <div class="lab-bar" aria-hidden="true"><span class="lb"><span class="lbk">Fall factor</span><span class="lbv" data-src="rc-ff">0.35</span></span><span class="lb"><span class="lbk">Peak force on you</span><span class="lbv" data-src="rc-peak">4.2 kN</span></span></div>
       <div style="margin-top:18px">
         <div class="ctl"><label for="rc-mass">Climber mass</label><input type="range" id="rc-mass" min="40" max="110" step="1" value="70"><output id="rc-mass-o">70 kg</output></div>
         <div class="ctl"><label for="rc-out">Rope out (belayer to climber)</label><input type="range" id="rc-out" min="2" max="40" step="0.5" value="10"><output id="rc-out-o">10 m</output></div>
@@ -314,6 +315,27 @@
         <h4>The standard drop test</h4>
         <p>The UIAA's rope standard (UIAA 101, which requires the European norm EN 892) drops a test mass, 80 kg for single and twin ropes and 55 kg for half ropes, in a severe factor-1.77 fall onto a fixed metal edge. A single rope must hold the first drop with a peak force of <strong>no more than 12 kN</strong> (8 kN for a half rope, 12 kN for a twin pair), survive at least 5 drops (12 for twins), and stretch no more than 40% during the fall. Rope maker Petzl points out that real falls are usually softer than the test, because the belayer moves, the rope slips through the device and your harness and body flex.</p>
         <div class="callout warn"><h4><span class="safety-tag">Safety</span> Static ropes are not climbing ropes</h4><p style="margin:0">Low-stretch "static" ropes are for abseiling, hauling and rescue. Lead-fall on one and the peak force can be several times higher: switch the Fall Lab to "static" to see it. Belaying is a skill you learn hands-on from an instructor, and every gym will check it before you belay there.</p></div>
+        <!-- freesolo:start -->
+        <section class="free-solo" id="free-solo" aria-labelledby="free-solo-h">
+        <h4 id="free-solo-h">Free solo: the same physics with nothing to catch you</h4>
+        <p><strong>Free soloing</strong> means climbing with no rope and no protection. Everything above is about a rope stretching to slow you down over metres. Without one, a fall ends when you hit the ground or a ledge, and the stopping distance is a few centimetres. That's why a free-solo fall from above bouldering height is usually fatal. Our <a href="#rc-lab">Fall Lab</a> can't model it, because there's no rope to model.</p>
+        <p>Falling from height h, you reach the ground at <span class="eq">v = √(2 g h)</span> (ignoring air resistance) carrying energy <span class="eq">E = m g h</span>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · 70 kg climber, no rope (illustrative, air resistance ignored)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: free-solo fall speeds, 70 kg climber"><table class="data">
+            <thead><tr><th>Fall height</th><th>Impact speed</th><th>Energy to absorb</th></tr></thead>
+            <tbody>
+              <tr><td class="num">10 m</td><td class="num">14.0 m/s (50 km/h)</td><td class="num">6.9 kJ</td></tr>
+              <tr><td class="num">20 m</td><td class="num">19.8 m/s (71 km/h)</td><td class="num">13.7 kJ</td></tr>
+              <tr><td class="num">50 m</td><td class="num">31.3 m/s (113 km/h)</td><td class="num">34.3 kJ</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">Stopping from 14 m/s in 5 cm averages v² ÷ (2 d) = 196 ÷ 0.1 ≈ 1,960 m/s², about 200 g. The rope example above stops the same climber at a peak of about 4.2 kN, roughly 6 times body weight.</p>
+        </div>
+        <p>Staying on is a friction problem: a hold works only while <span class="eq">F ≤ μ N</span>, so your fingers and feet must keep pressing hard enough for friction to carry you. The margin shrinks as you tire: <a href="#ch-energy">pump</a> cuts the force your forearms can make, and a damp hold, a sweaty hand or a loose flake cuts it without warning. On a rope that's a fall you learn from; without one there is no second try.</p>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Experts die free soloing</h4><p style="margin:0">Skill lowers the chance of a slip, but it can't change what happens after one. John Bachar, one of the sport's best-known free soloists, died in a fall while free soloing near Mammoth Lakes, California, in July 2009 (<a href="https://www.latimes.com/local/obituaries/la-me-john-bachar8-2009jul08-story.html" target="_blank" rel="noopener noreferrer">Los Angeles Times</a>). This page doesn't teach free soloing. Climb on a rope, with a trained belayer, and learn from an instructor.</p></div>
+        </section>
+        <!-- freesolo:end -->
         <details class="check"><summary>You're 2 m above your last bolt with 12 m of rope out and no slack. What's your fall distance and fall factor?</summary>
         <p>You fall 2 m to the bolt and 2 m below it: <strong>4 m</strong> (plus rope stretch). f = 4 ÷ 12 ≈ <strong>0.33</strong>.</p></details>
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
@@ -725,13 +747,14 @@
     <div>
       <a class="wordmark" href="../" style="margin-bottom:8px"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0a3554"/><path d="M9 7v18M9 16l9-9M12 13l10 12" stroke="#11b5a4" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="25" cy="8" r="2" fill="#ff6b4a"/></svg><span class="wm-text">kinetic<b>.</b></span></a>
       <div>The physics of adventure sports, for anyone about to try one · a Curiosta brand · <a href="../">All sports</a> · <a href="../calendar/">Season calendar</a> · <a href="../fit/">Get fit</a></div>
-      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a> · <a href="../cave-diving/">cave diving</a> · <a href="../ice-diving/">ice diving</a> · <a href="../big-wave-surfing/">big-wave surfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a> · <a href="../snowkiting/">snowkiting</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a>; Land &amp; rock: <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
+      <div class="small" style="margin-top:6px">Facts and listings checked 5 Oct 2026. Sources: see <a href="sources.md">sources.md</a>. More sports. Water: <a href="../scuba/">scuba</a> · <a href="../freediving/">freediving</a> · <a href="../swimming/">swimming</a> · <a href="../surfing/">surfing</a> · <a href="../kayaking-rafting/">kayaking &amp; rafting</a> · <a href="../kitesurfing/">kitesurfing</a> · <a href="../windsurfing/">windsurfing</a> · <a href="../sailing/">sailing</a> · <a href="../cave-diving/">cave diving</a> · <a href="../ice-diving/">ice diving</a> · <a href="../big-wave-surfing/">big-wave surfing</a>; Air: <a href="../paragliding/">paragliding</a> · <a href="../recreational-flying/">recreational flying</a> · <a href="../paramotoring/">paramotoring</a> · <a href="../skydiving/">skydiving</a> · <a href="../bungee-zipline/">bungee &amp; zipline</a> · <a href="../hang-gliding/">hang gliding</a> · <a href="../base-jumping/">BASE jumping and wingsuit flying</a>; Snow &amp; ice: <a href="../skiing-snowboarding/">skiing &amp; snowboarding</a> · <a href="../ice-skating/">ice skating</a> · <a href="../snowkiting/">snowkiting</a>; Wheels: <a href="../skating/">skating</a> · <a href="../skateboarding/">skateboarding</a> · <a href="../cycling-mtb/">cycling &amp; MTB</a> · <a href="../motorsport-karting/">karting &amp; motorsport</a> · <a href="../motorcycle-racing/">motorcycle racing &amp; off-road</a>; Land &amp; rock: <a href="../mountaineering/">trekking &amp; mountaineering</a> · <a href="../horse-riding/">horse riding</a>; Precision: <a href="../archery/">archery</a> · <a href="../shooting/">sport shooting</a>; Endurance: <a href="../running/">running</a> · <a href="../triathlon/">triathlon</a></div>
     </div>
     <div class="proto">Prototype - kinetic.curiosta.com</div>
   </div>
 </footer>
 
 <script src="app.js"></script>
+<script src="../assets/lab/lab-bar.js" defer></script>
 <!-- chat:start · Ask Kinetic chat widget (assets/chat/); one tag per page, keep just before </body> -->
 <script src="/assets/chat/chat-loader.js" defer></script>
 <!-- chat:end -->
