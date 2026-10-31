@@ -16,7 +16,7 @@ Base checks 4 Oct 2026 (IST); deep5 pass 5 Oct 2026 (IST), section 5. Every fact
 | Neck load: 6 kg head + helmet (**rough, illustrative**) × 1.2 g ≈ 7.2 kg-force | F = m a | recomputed |
 | Downforce ½ ρ ClA v², ρ 1.2, ClA 3 m², 700 kg (**illustrative**): 100 / 150 / 200 / 250 km/h → 1,389 / 3,125 / 5,556 / 8,681 N = 0.20 / 0.46 / 0.81 / 1.26 × weight; 100 m corner μ 1.2 → 124 km/h without, 149 km/h with (1.74 g) | v² = μ g r ÷ (1 − μ ρ ClA r ÷ 2m) | recomputed |
 | Tyre temperature and hysteresis: grip depends on rubber temperature, with a working range | general polymer physics, qualitative | n/a |
-| Lab test points: default 68 km/h, 1.20 g, 2.51 s, 32.8 m, 2.36 s, no wings; 120 m → 135 km/h, 5.02 s; 700 kg (no wings) → unchanged; 100 m, ClA 3, 700 kg, 200 km/h → 149 km/h, 1.74 g, 3.81 s, 131.1 m, 4.72 s, 0.81 × weight; 150 kg, 150 m, μ 1.8, ClA 4, 100 km/h → no limit in this model, 21.8 m, 1.57 s, 1.26 × | lab_motorsport-karting.js | asserted in test-all.js |
+| Lab test points: default 68 km/h, 1.20 g, 2.51 s, 32.8 m, 2.36 s, no wings; 120 m → 135 km/h, 5.02 s; 700 kg (no wings) → unchanged; 100 m, ClA 3, 700 kg, 200 km/h → 149 km/h, 1.74 g, 3.81 s, 131.1 m, 4.72 s, 0.81 × weight; 150 kg, 150 m, μ 1.8, ClA 4, 100 km/h → no limit in this model, 21.8 m, 1.57 s, 1.26 ×; same at 650 kg → over 200 km/h (the top of the speed slider; the formula alone gives 3,340 km/h because 1 − μ ρ ClA r ÷ 2m is only 0.003), —, —, 21.8 m, 1.57 s, 0.29 × | lab_motorsport-karting.js | asserted in test-all.js |
 
 ## 2. Licences and governing bodies
 

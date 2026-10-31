@@ -214,6 +214,9 @@
   // Corner on a flat track: m v² ÷ r = μ (m g + ½ ρ ClA v²)  →  v² = μ g r ÷ (1 − μ ρ ClA r ÷ (2 m)); lateral g = v² ÷ (g r).
   // Time through a 90° bend = (π r ÷ 2) ÷ v. Braking on the flat with constant μ (downforce ignored): d = v² ÷ (2 μ g), t = v ÷ (μ g).
   // Downforce at the straight-line speed: ½ ρ ClA v² ÷ (m g), with ρ = 1.2 kg/m³ (illustrative).
+  // As μ ρ ClA r ÷ (2 m) nears 1 the formula's limit shoots up without bound (3,340 km/h at 150 m, μ 1.8, ClA 4, 650 kg): real cars
+  // are held back first by drag and engine power, which this model leaves out. So above the top of the speed slider the lab
+  // says "over 200 km/h" instead of a number; at or past 1 it says "no limit in this model" (Site QC live recheck, 31 Oct 2026).
   (function () {
     const $ = id => document.getElementById(id);
     if (!$("mk-r")) return;
@@ -225,14 +228,15 @@
       $("mk-v-o").textContent = v + " km/h";
       $("mk-cl-o").textContent = cla === 0 ? "0 (no wings)" : cla.toFixed(1) + " m²";
       $("mk-m-o").textContent = m + " kg";
-      const V = v / 3.6, den = 1 - mu * RHO * cla * r / (2 * m), vc = den > 0 ? Math.sqrt(mu * G * r / den) : 0;
-      $("mk-vc").textContent = vc ? Math.round(vc * 3.6) + " km/h" : "no limit in this model";
-      $("mk-lat").textContent = vc ? (vc * vc / (G * r)).toFixed(2) + " g" : "—";
-      $("mk-t90").textContent = vc ? (Math.PI * r / 2 / vc).toFixed(2) + " s" : "—";
+      const V = v / 3.6, den = 1 - mu * RHO * cla * r / (2 * m), vc = den > 1e-9 ? Math.sqrt(mu * G * r / den) : 0;
+      const VMAX = +$("mk-v").max, over = vc * 3.6 > VMAX, ok = vc && !over;   // VMAX: top of the speed slider (200 km/h)
+      $("mk-vc").textContent = !vc ? "no limit in this model" : over ? "over " + VMAX + " km/h" : Math.round(vc * 3.6) + " km/h";
+      $("mk-lat").textContent = ok ? (vc * vc / (G * r)).toFixed(2) + " g" : "—";
+      $("mk-t90").textContent = ok ? (Math.PI * r / 2 / vc).toFixed(2) + " s" : "—";
       $("mk-bd").textContent = (V * V / (2 * mu * G)).toFixed(1) + " m";
       $("mk-bt").textContent = (V / (mu * G)).toFixed(2) + " s";
       $("mk-df").textContent = cla > 0 ? (0.5 * RHO * cla * V * V / (m * G)).toFixed(2) + " × weight" : "none (no wings)";
-      $("mk-bar").style.width = vc ? Math.min(100, Math.round(100 * (vc * vc / (G * r)) / 3)) + "%" : "100%";
+      $("mk-bar").style.width = ok ? Math.min(100, Math.round(100 * (vc * vc / (G * r)) / 3)) + "%" : "100%";
     }
     ["mk-r", "mk-mu", "mk-v", "mk-cl", "mk-m"].forEach(id => $(id).addEventListener("input", update));
     update();
