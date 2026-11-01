@@ -54,7 +54,7 @@
 /* navstyle:end */
 .ss-links{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}
 
-/* calendar subscriptions (ics.py): Subscribe: Apple / Outlook · Google · .ics file — plain links styled as small buttons, inline SVG icons */
+/* calendar subscriptions (ics.py): Subscribe: Apple · Google · .ics file — plain links styled as small buttons, inline SVG icons */
 .subs{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.8rem;font-weight:500}
 .subs-l{color:var(--ink-2);font-weight:500;margin-right:2px}
 .subs-sub,.subs-g,.subs-dl{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:2px 10px;border:1px solid currentColor;border-radius:999px;font-weight:600;white-space:nowrap;text-decoration:none;line-height:1.2}
