@@ -140,13 +140,18 @@ main{overflow-x:clip}
 .subs-all{margin:14px 0 0;font-size:.9rem;color:var(--ink-2)}
 .subs-all .subs{font-size:.9rem}
 .cal-hero .subs-all{color:#d6e6ec}
-.cal-hero .subs-all .subs-sub,.cal-hero .subs-all .subs-copy{color:#8fe9dc}
-.cal-hero .subs-all .subs-msg{color:#d6e6ec}
+.cal-hero .subs-all .subs-sub,.cal-hero .subs-all .subs-g,.cal-hero .subs-all .subs-dl{color:#8fe9dc}
+.cal-hero .subs-all .subs-l{color:#d6e6ec}
 
-/* calendar subscriptions (ics.py): plain links, inline copy confirmation */
-.subs{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-size:.8rem;font-weight:500}
-.subs-sub{font-weight:600}
-.subs-copy{font:inherit;font-weight:600;background:none;border:0;padding:0;color:var(--sea-700,#0b5d73);text-decoration:underline;cursor:pointer;min-height:24px}
-.subs-copy:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
-.subs-msg{flex-basis:100%;color:var(--ink-2);font-size:.78rem}
-.subs-msg:empty{display:none}
+/* calendar subscriptions (ics.py): Subscribe: Apple / Outlook · Google · .ics file — plain links styled as small buttons, inline SVG icons */
+.subs{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.8rem;font-weight:500}
+.subs-l{color:var(--ink-2);font-weight:500;margin-right:2px}
+.subs-sub,.subs-g,.subs-dl{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:2px 10px;border:1px solid currentColor;border-radius:999px;font-weight:600;white-space:nowrap;text-decoration:none;line-height:1.2}
+.subs-sub:hover,.subs-g:hover,.subs-dl:hover{text-decoration:underline}
+.subs .subs-i{flex:none;width:16px;height:16px}
+.subs .subs-ext{margin-left:-2px;font-size:.9em}
+@media (max-width:420px){.subs{gap:6px 4px}.subs .subs-l{flex-basis:100%}.subs-sub,.subs-g,.subs-dl{font-size:.74rem;padding:2px 6px;gap:4px}}
+/* calendar table rows: same three links, no pill borders, so they sit in two short lines in the narrow sport column */
+.subs[data-short]{gap:0 12px;font-size:.74rem}
+.subs[data-short] .subs-l{flex-basis:100%;font-size:.7rem;margin:0}
+.subs[data-short] a{min-height:24px;padding:0;border:0;font-size:inherit;text-decoration:underline;text-underline-offset:2px}
