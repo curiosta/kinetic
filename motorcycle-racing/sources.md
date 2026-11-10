@@ -50,3 +50,16 @@ Checks 30 Oct 2026 (IST). Every fact on the page comes from a source listed here
 | C.S. Santosh first Indian Dakar finisher (2015); Harith Noah Rally2 class win, 11th overall, Dakar 2024 | Dakar, https://www.dakar.com/en/competitor/20 | loaded |
 | Aishwarya Pissay, 2019 FIM Bajas World Cup women's title | Sportstar, https://sportstar.thehindu.com/motorsport/aishwarya-pissay-first-indian-to-win-world-title-fim-bajas-world-cup/article29027191.ece | loaded |
 | Rahil Pillarisetty (Pro-Stock 301–400cc Open champion) and Jagathishree Kumaresan (retained Girls Stock 165cc title), 2025 season finale 11 Jan 2026 | The Hindu, https://www.thehindu.com/sport/motorsport/national-motorcycle-racing-championship-soorya-raj-kumar-end-championship-drought/article70498336.ece | loaded 30 Oct 2026 |
+
+<!-- deepb1:start -->
+## Deepen batch 1 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| Top speed record 368.6 km/h (Jorge Martin, FP2, Mugello 2026); slipstreaming means less air resistance and extra speed; Mugello straight 1.14 km; top speeds about 240 km/h (1960), 305 km/h (1990), 352 km/h (2011); factors: engines, electronics, aerodynamics, tyres, circuits; safety: protective gear incl. airbags, circuit standards for surface, run-off, marshals, barriers, medical | https://www.motogp.com/en/news/2025/03/11/how-fast-are-motogp-bikes-top-speeds-records-how-they-compare/521392 |
+| Front minimum 1.80 bar for 60% of a GP or 30% of a Sprint (since 2024); rear 1.68 bar; 2023 front 1.88 bar; penalties 16 s GP and 8 s Sprint; front pressure rises in hot air behind bikes and falls in clean air; rules followed Michelin safety concerns over deliberate low pressures; teams must predict how the race unfolds; Pirelli from 2027 | https://www.crash.net/motogp/feature/1092901/1/how-motogp-tyre-pressure-rules-work-2026 |
+| Check pressure monthly when cold (not driven for at least three hours); TPMS may light briefly on cold mornings (marginally low pressure); underinflation can lead to a flat, blowout or tread separation; sustained high temperature can lead to blowouts and tread separation; 511 deaths in tire-related crashes in 2024; replace at 2/32 in tread | https://www.nhtsa.gov/equipment/tires |
+| Typical stopping distances 20 to 70 mph (thinking, braking, total); rule 126: speed to stop well within the distance seen to be clear; enough space to pull up if the vehicle in front suddenly slows or stops; never closer than overall stopping distance; at least a two-second gap on high-speed roads and in tunnels where visibility is reduced; at least doubled on wet roads; up to ten times on icy roads; motorcycles need a greater distance to stop; fixed point such as a sign to measure the gap | https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158 ; https://assets.publishing.service.gov.uk/media/65f97642aa9b760011fbda4e/the-highway-code-stopping-distances.pdf |
+
+Illustrative values (labelled): C_d A 0.3 m², air 1.2 kg/m³; tyre temperatures 20, 30, 10, 60, 70, 80 °C. Kinetic arithmetic: two-second gap distances; 0.67 s thinking time and about 0.67 g braking implied by the Highway Code table. Physics: drag, power ∝ v³, kinetic energy, Gay-Lussac's law, distance = speed × time.
+<!-- deepb1:end -->

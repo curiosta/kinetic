@@ -94,3 +94,19 @@ All checks done **3 Oct 2026 (IST)**; deepen pass **5 Oct 2026 (IST)**. "Verifie
 - Sea Hawk Adventures: no IRF / WRF / GTE operator listing found this pass → **Accreditation: unverified**.
 - ABVIMAS, GETHNAA, IISM, UTDB: identity badges (state institute / academy / Ministry / regulator) — these name the organisation itself, not a third-party sport accreditation stamp.
 - GTE / United Rafting: certification-body card (pathway link), not a school accreditation badge.
+
+<!-- deepb1:start -->
+## Deepen batch 1 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| Below 50 °F a wetsuit or drysuit is essential; wool or synthetic next best; cold-water immersion slows reaction time significantly; dress warmer than on land, especially on snow and glacier-fed rivers; uncontrollable shaking, loss of coordination or difficulty speaking may mean hypothermia; waders not in turbulent water | https://site-media.americanwhitewater.org/Safety-Code-24-Print.pdf |
+| Throw rope: stand at the downstream end of an eddy, throw upstream so the current brings the swimmer into the eddy; free end in off-hand; underhand, overhand or sidearm; aim over the swimmer; grab the rope not the bag, on your back, rope over the far shoulder; avoid knots and loops, entanglement; arm, paddle or branch can help; tethered entry with a quick-release belt on a rescue life jacket is high-risk, learn on a swiftwater rescue course; do not let go of ropes unless necessary; three or more people and at least two craft; PFD minimum Performance Level 70 (Type III or V) | https://site-media.americanwhitewater.org/Safety-Code-24-Print.pdf ; https://www.americanwhitewater.org/explore/safety/safety-code/ |
+| High water: speed and power increase tremendously, fewer eddies, rescue harder; debris and strainers; small rise multiplied where the river narrows; reliable gage information; gauge meaning can change year to year in remote rivers; sun on snowpack, hard rain, dam releases; snowmelt low morning and high afternoon or vice versa; continuous rivers at high flows extremely dangerous | https://site-media.americanwhitewater.org/Safety-Code-24-Print.pdf |
+| 1-10-1 (about 1 min cold shock with breathing 600 to 1,000% above normal, about 10 min meaningful movement, about 1 h to unconsciousness) | https://csbc.ca/1-10-1-principle/ |
+| 1-10-1 caveat | https://www.coldwatersafety.org/1-10-1-myth |
+| Hypothermia possible in water below 70 °F | https://www.cdc.gov/niosh/cold-stress/about/related-illness.html |
+| Foam rather than inflatable life jacket for cold water; inflatables may not inflate properly in low temperatures | https://www.dnr.state.mn.us/safety/ice/ice-safety-gear.html |
+
+Illustrative values (labelled): skin temperature 33 °C; 40 m wide run at 2.0 and 2.5 m depth; slope 2 m per km; drag model and C_d A 0.5 m² from Ch 2. Physics: conduction ∝ temperature gap; resolving forces (sin and cos); Q = A × v; stream power ρ g Q S.
+<!-- deepb1:end -->

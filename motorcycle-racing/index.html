@@ -172,7 +172,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">02 · The science</span>
-      <h2>Six chapters. Every number worked out.</h2>
+      <h2>Nine chapters. Every number worked out.</h2>
       <p>Each chapter explains one idea in plain language, then works a real example. Try the Lean &amp; Grip Lab to see how speed, the corner and the surface change the limit.</p>
     </div>
 
@@ -183,6 +183,11 @@
       <a href="#ch-crash"><span class="n">CHAPTER 4</span><span class="t">High-side, low-side &amp; what the gear absorbs</span><span class="d">E = ½ m v²</span></a>
       <a href="#ch-jump"><span class="n">CHAPTER 5</span><span class="t">Motocross &amp; supercross: jumps and landing loads</span><span class="d">R = v² sin 2θ ÷ g</span></a>
       <a href="#ch-offroad"><span class="n">CHAPTER 6</span><span class="t">Off-road: bikes on loose ground, and four-wheel crews</span><span class="d">SSF = T ÷ 2H</span></a>
+          <!-- deepb1-idx:start -->
+      <a href="#ch-drag"><span class="n">CHAPTER 7</span><span class="t">Air resistance, top speed and the slipstream</span><span class="d">Drag grows with v², power with v³</span></a>
+      <a href="#ch-tyre"><span class="n">CHAPTER 8</span><span class="t">Tyre pressure and heat</span><span class="d">The gas law, minimum pressures and cold checks</span></a>
+      <a href="#ch-gap"><span class="n">CHAPTER 9</span><span class="t">Thinking distance and the two-second gap</span><span class="d">Reaction time and the Highway Code table</span></a>
+      <!-- deepb1-idx:end -->
     </nav>
 
     <!-- LEAN & GRIP LAB -->
@@ -382,6 +387,147 @@
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
+
+    <!-- deepb1:start -->
+    <!-- CHAPTER 7 -->
+    <article class="chapter" id="ch-drag">
+      <header><span class="chno">CH 7</span><h3>Air resistance, top speed and the slipstream</h3></header>
+      <p class="hook">Double your speed and the air pushes back four times as hard. The power to beat it goes up eight times.</p>
+      <div class="body">
+        <p>Air pushes back on a moving bike and rider. The drag force is <strong>F = ½ ρ C<sub>d</sub>A v²</strong>: air density ρ, the drag area C<sub>d</sub>A, and speed squared. The power the engine needs just to beat that drag is <strong>P = F × v</strong>, so it grows with <strong>v³</strong>. That is why each extra km/h at the top end is so hard to find.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · drag on a tucked bike and rider (C<sub>d</sub>A 0.3 m², air 1.2 kg/m³, illustrative)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: drag on a tucked bike and rider (C&lt;sub&gt;d&lt;/sub&gt;A 0.3 m², air 1.2 kg/m³, illustrative)"><table class="data">
+            <thead><tr><th>Speed</th><th>Drag force</th><th>Power to beat drag</th></tr></thead>
+            <tbody>
+              <tr><td class="num">100 km/h</td><td class="num">about 140 N</td><td class="num">about 3.9 kW</td></tr>
+              <tr><td class="num">200 km/h</td><td class="num">about 560 N</td><td class="num">about 31 kW</td></tr>
+              <tr><td class="num">300 km/h</td><td class="num">about 1,250 N</td><td class="num">about 104 kW</td></tr>
+              <tr><td class="num">368.6 km/h (MotoGP record)</td><td class="num">about 1,890 N</td><td class="num">about 193 kW</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">At 200 km/h (55.6 m/s): ½ × 1.2 × 0.3 × 55.6² ≈ 556 N, and 556 × 55.6 ≈ 31 kW. The 0.3 m² drag area is a teaching value. Rolling resistance and the drivetrain need more power on top.</p>
+        </div>
+        <div class="worked">
+          <span class="lbl">Worked example · MotoGP top speeds over time (MotoGP.com)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: MotoGP top speeds over time (MotoGP.com)"><table class="data">
+            <thead><tr><th>Year</th><th>Top speed</th><th>Power for drag compared with 1990</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1960</td><td class="num">about 240 km/h</td><td class="num">about 0.49 ×</td></tr>
+              <tr><td class="num">1990</td><td class="num">about 305 km/h</td><td class="num">1.00 ×</td></tr>
+              <tr><td class="num">2011</td><td class="num">about 352 km/h</td><td class="num">about 1.54 ×</td></tr>
+              <tr><td class="num">2026 (Jorge Martin, Mugello)</td><td class="num">368.6 km/h</td><td class="num">about 1.77 ×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">(368.6 ÷ 305)³ ≈ 1.77. Same drag area assumed. MotoGP says better engines, electronics, tyres, aerodynamics and circuits all played a part.</p>
+        </div>
+        <p><strong>The slipstream:</strong> a rider just behind another bike rides in slower, disturbed air. MotoGP.com says this means less air resistance and extra speed down Mugello's 1.14 km straight. Less drag at the same power means a higher top speed.</p>
+        <h4>What speed means for safety</h4>
+        <ul>
+          <li>Energy of motion per kg is <strong>½ v²</strong>. At 368.6 km/h it is about 5.2 kJ per kg. At 100 km/h it is about 0.39 kJ per kg. That is about <strong>13.6 times</strong> more energy to lose in a crash.</li>
+          <li>MotoGP says circuits must meet strict standards for the track surface, run-off areas, marshals, barriers and medical care, and riders wear helmets, suits with airbags, boots and gloves (Ch 4).</li>
+          <li>On the road, the same v² and v³ apply. More speed means much more drag, energy and stopping distance (Ch 3, Ch 9).</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Top speed belongs on a closed track</h4><p style="margin:0">Racing speeds need a closed circuit with run-off areas, marshals and medical teams. Public roads have none of these.</p></div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Put your hand out of a car window at 50 km/h, then at 100 km/h. The push on your hand at 100 km/h is about four times bigger.</div></div>
+        <details class="check"><summary>Speed goes from 150 km/h to 300 km/h. By how much does the drag force grow?</summary>
+        <p>(300 ÷ 150)² = <strong>4 times</strong>. The power to beat it grows 2³ = 8 times.</p></details>
+        <details class="check"><summary>Why does slipstreaming help a rider go faster on a straight?</summary>
+        <p>Riding close behind another bike means <strong>less air resistance</strong>, so the same power gives more speed.</p></details>
+        <p class="small src">Sources: <a href="https://www.motogp.com/en/news/2025/03/11/how-fast-are-motogp-bikes-top-speeds-records-how-they-compare/521392" target="_blank" rel="noopener">MotoGP.com: How fast are MotoGP bikes? (top speeds, slipstream, safety)</a>. Physics: drag equation, power = force × speed, kinetic energy. C<sub>d</sub>A 0.3 m² is illustrative</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 8 -->
+    <article class="chapter" id="ch-tyre">
+      <header><span class="chno">CH 8</span><h3>Tyre pressure and heat</h3></header>
+      <p class="hook">Hot air in a tyre pushes harder. Racers set minimum pressures. Road riders check theirs cold.</p>
+      <div class="body">
+        <p>The air in a tyre follows the gas law: at a fixed volume, <strong>absolute pressure ∝ absolute temperature</strong> (in kelvin, K = °C + 273). A gauge shows pressure <strong>above</strong> the air around it. So add about 1.013 bar before you use the law, and take it off again after.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how temperature changes tyre pressure (gauge readings, illustrative)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: how temperature changes tyre pressure (gauge readings, illustrative)"><table class="data">
+            <thead><tr><th>Start</th><th>New temperature</th><th>New gauge pressure</th></tr></thead>
+            <tbody>
+              <tr><td class="num">2.0 bar at 20 °C</td><td class="num">70 °C (hot after riding)</td><td class="num">about 2.5 bar</td></tr>
+              <tr><td class="num">2.0 bar at 30 °C (warm afternoon)</td><td class="num">10 °C (cold morning)</td><td class="num">about 1.8 bar</td></tr>
+              <tr><td class="num">1.80 bar at 80 °C (race front)</td><td class="num">60 °C (alone in clean air)</td><td class="num">about 1.64 bar</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">2.0 bar gauge = 3.013 bar absolute. 3.013 × (343 ÷ 293) ≈ 3.53 bar absolute = 2.5 bar gauge. The temperatures are teaching values. Real tyres also stretch a little when hot.</p>
+        </div>
+        <h4>MotoGP's minimum pressure rule (Crash.net, 2026)</h4>
+        <ul>
+          <li>Since 2024 the <strong>front tyre must be at least 1.80 bar</strong> for 60% of a Grand Prix or 30% of a Sprint. The rear minimum is <strong>1.68 bar</strong>. In 2023 the front minimum was 1.88 bar for 50% of a Grand Prix.</li>
+          <li>Break the rule and the penalty is 16 seconds in a Grand Prix and 8 seconds in a Sprint.</li>
+          <li>Front pressure <strong>rises</strong> when a rider sits in the hot air behind other bikes, and <strong>falls</strong> in clean air at the front. Teams must predict how the race will go when they set the starting pressure.</li>
+          <li>The rules came after the tyre maker Michelin raised safety concerns about teams running low pressures on purpose. Pirelli takes over as tyre supplier in 2027.</li>
+        </ul>
+        <h4>What it means on the road (NHTSA)</h4>
+        <ul>
+          <li><strong>Check pressure cold</strong>, at least once a month, when the vehicle has not been driven for at least 3 hours. A warm tyre reads high.</li>
+          <li>On cold mornings a pressure warning light can come on for a short time, then go off as the tyres warm up. NHTSA says that means the pressure is only just too low, so check it.</li>
+          <li>Too little air can lead to a flat tyre, a blowout or the tread coming off. Long periods of high heat can also damage a tyre and lead to blowouts.</li>
+          <li>NHTSA counts 511 deaths in tyre-related crashes on US roads in 2024. It says a tyre is not safe and must be replaced when the tread is down to 2/32 in (about 1.6 mm). NHTSA writes for cars and trucks. The physics of the air inside is the same for a bike.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Set pressures from the maker's figures</h4><p style="margin:0">Use the pressures in the owner's manual or on the label, measured cold. NHTSA says a tyre with too little air can lead to a blowout. The lower pressures used off-road (Ch 6) are for slow riding on loose ground.</p></div>
+        <div class="feel"><span class="ico">🌡️</span><div><span class="lbl">Feel the number</span>A 20 °C drop overnight takes about 0.2 bar off a 2 bar tyre. That is a tenth of its pressure.</div></div>
+        <details class="check"><summary>You set 2.0 bar at 20 °C. After a fast ride the tyre is at 70 °C. Roughly what does the gauge read?</summary>
+        <p>Absolute 3.01 × 343 ÷ 293 ≈ 3.53 bar, so <strong>about 2.5 bar</strong> on the gauge. Check pressures cold.</p></details>
+        <details class="check"><summary>What is the MotoGP front tyre minimum pressure since 2024?</summary>
+        <p><strong>1.80 bar</strong>, for 60% of a Grand Prix or 30% of a Sprint.</p></details>
+        <p class="small src">Sources: <a href="https://www.crash.net/motogp/feature/1092901/1/how-motogp-tyre-pressure-rules-work-2026" target="_blank" rel="noopener">Crash.net: How MotoGP tyre pressure rules work (2026)</a> · <a href="https://www.nhtsa.gov/equipment/tires" target="_blank" rel="noopener">NHTSA: Tires</a>. Physics: Gay-Lussac's law with absolute pressure and temperature. Temperatures in the table are illustrative</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 9 -->
+    <article class="chapter" id="ch-gap">
+      <header><span class="chno">CH 9</span><h3>Thinking distance and the two-second gap</h3></header>
+      <p class="hook">Before your brakes do anything, you travel for the time it takes to react. Your gap to the vehicle ahead has to cover that.</p>
+      <div class="body">
+        <p>A stop has two parts. <strong>Thinking distance</strong> is how far you travel before you start to brake: <strong>speed × reaction time</strong>. It grows in step with speed. <strong>Braking distance</strong> is <strong>v² ÷ (2a)</strong> (Ch 3), so it grows with speed squared. The UK Highway Code gives typical figures.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · UK Highway Code typical stopping distances</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: UK Highway Code typical stopping distances"><table class="data">
+            <thead><tr><th>Speed</th><th>Thinking</th><th>Braking</th><th>Total</th><th>Two-second gap</th></tr></thead>
+            <tbody>
+              <tr><td class="num">20 mph (32 km/h)</td><td class="num">6 m</td><td class="num">6 m</td><td class="num">12 m</td><td class="num">about 18 m</td></tr>
+              <tr><td class="num">30 mph (48 km/h)</td><td class="num">9 m</td><td class="num">14 m</td><td class="num">23 m</td><td class="num">about 27 m</td></tr>
+              <tr><td class="num">40 mph (64 km/h)</td><td class="num">12 m</td><td class="num">24 m</td><td class="num">36 m</td><td class="num">about 36 m</td></tr>
+              <tr><td class="num">50 mph (80 km/h)</td><td class="num">15 m</td><td class="num">38 m</td><td class="num">53 m</td><td class="num">about 45 m</td></tr>
+              <tr><td class="num">60 mph (97 km/h)</td><td class="num">18 m</td><td class="num">55 m</td><td class="num">73 m</td><td class="num">about 54 m</td></tr>
+              <tr><td class="num">70 mph (113 km/h)</td><td class="num">21 m</td><td class="num">75 m</td><td class="num">96 m</td><td class="num">about 63 m</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The two-second gap is speed × 2 s (Kinetic's arithmetic). Thinking time behind the code's table: 20 mph = 8.94 m/s, and 6 m ÷ 8.94 m/s ≈ 0.67 s. Braking at 70 mph: 31.3² ÷ (2 × 75) ≈ 6.5 m/s², about 0.67 g.</p>
+        </div>
+        <h4>Reading the table</h4>
+        <ul>
+          <li>Thinking distance goes up in step with speed: 6, 9, 12 … 21 m. That is about <strong>0.67 seconds</strong> of travel at each speed.</li>
+          <li>Braking distance grows with speed squared: from 20 to 40 mph it goes from 6 m to 24 m, <strong>four times</strong>.</li>
+          <li>The <strong>two-second gap</strong> is not your whole stopping distance. The vehicle ahead also needs time to stop. The gap gives you time to see, think and start braking.</li>
+        </ul>
+        <h4>What the Highway Code says (rule 126)</h4>
+        <ul>
+          <li>Ride at a speed that lets you <strong>stop well within the distance you can see to be clear</strong>.</li>
+          <li>Leave enough space to pull up safely if the vehicle in front suddenly slows down or stops. The safe rule is never to get closer than the <strong>overall stopping distance</strong>.</li>
+          <li>Leave <strong>at least a two-second gap</strong> on high-speed roads and in tunnels where visibility is reduced.</li>
+          <li>Make the gap <strong>at least double</strong> on wet roads and up to <strong>ten times</strong> bigger on icy roads.</li>
+          <li>Large vehicles and <strong>motorcycles need a greater distance to stop</strong>.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Count the gap, every ride</h4><p style="margin:0">The Highway Code says to use a fixed point, such as a sign, to measure a two-second gap. When the vehicle ahead passes it, count two seconds. If you reach the mark first, you are too close. Drop back, and drop back more in the wet.</p></div>
+        <div class="feel"><span class="ico">⏱️</span><div><span class="lbl">Feel the number</span>At 70 mph you travel about 31 metres every second. Two seconds is about the length of six buses.</div></div>
+        <details class="check"><summary>At 50 mph the Highway Code thinking distance is 15 m and braking is 38 m. What is the total?</summary>
+        <p>15 + 38 = <strong>53 m</strong>.</p></details>
+        <details class="check"><summary>The road is wet. What does the Highway Code say about your two-second gap?</summary>
+        <p><strong>At least double it</strong>, to four seconds or more.</p></details>
+        <p class="small src">Sources: <a href="https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158" target="_blank" rel="noopener">UK Highway Code, rules 103 to 158 (rule 126: stopping distances)</a> · <a href="https://assets.publishing.service.gov.uk/media/65f97642aa9b760011fbda4e/the-highway-code-stopping-distances.pdf" target="_blank" rel="noopener">Highway Code: typical stopping distances (chart)</a>. Physics: distance = speed × time, braking distance = v² ÷ (2a). Two-second distances are Kinetic arithmetic</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+    <!-- deepb1:end -->
   </div>
 </section>
 

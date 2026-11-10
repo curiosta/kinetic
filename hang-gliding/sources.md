@@ -41,3 +41,18 @@ Checks 30 Oct 2026 (IST). Every fact on the page comes from a source listed here
 |---|---|---|
 | Four Indian pilots in CIVL Class 1 ranking: Deepak Ingole (7th Guatemalan Super Fly Tournament IV 2025; 7th Guatemalan HG National Open 2026), Amit Mohan Sharma 25th, Sanjeev Kumar 26th, Nagaraj S 28th (Telomoyo Cup VIII 2024, Indonesia) | CIVL rankings, https://civlcomps.org/ranking/hang-gliding-class-1-sport-xc/pilots?1=0&nation_id=108 | loaded |
 | 24th FAI Hang Gliding World Championship, Àger, Spain, 13–26 Jul 2025; no Indian on podium lists | FAI, https://www.fai.org/page/hg-class-1-world-champions | loaded in research; bot-blocked (403) on link check |
+
+<!-- deepb1:start -->
+## Deepen batch 1 (10 Nov 2026): Chapters 6 to 9
+
+| Claim | Source |
+| --- | --- |
+| Dry adiabatic lapse rate 3 °C (5.4 °F) per 1,000 ft; Figure 9-10: 20 °C surface, parcel 11 °C at 3,000 ft AGL, unstable with 9 °C around it, stable with 13 °C; B turns unstable with more than 2 °C change; thunderstorm updrafts over 1,000 fpm, can pull a glider into the cloud; downbursts 2,000 fpm or more, 3,000 fpm in extreme cases; 800 ft pattern about 3 min, ground contact in 19 s at 2,500 fpm sink; ideal ridge slope about 1 to 4, shallower slopes do not overcome sink; lee-side downdraft 2,000 fpm or more near a steep ridge in strong winds | https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_9.pdf |
+| Thermal indicators (cumulus, circling gliders and birds, dust devils, dark ground and parking lots); ridge soaring 15 to 20 kt perpendicular, adequate within 45°, avoid flying low over a ridge at 10 kt or less; approach ridge at 45°; turns away from ridge; crab angle to avoid drifting over the top; do not fly on the crest or below the ridge on the downwind side; fly faster than minimum sink near the ridge | https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_10.pdf |
+| Polar example: minimum sink 1.9 kt at 40 kt; best L/D 50 kt with 2.1 kt sink, about 24:1; in a headwind shift the origin by the wind speed; weight 800 to 1,200 lb raises best L/D speed 60 to 73 kt with the same glide ratio | https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_5.pdf |
+| Treatment: fly lower or use supplemental oxygen; oxygen partial pressure falls in proportion to atmospheric pressure; above 10,000 ft hypoxia symptoms increase and time of useful consciousness drops; symptoms incl. euphoria, impaired judgement, cyanosis, false sense of security; TUC 20,000 ft 30 min or more, 22,000 ft 5 to 10 min, 25,000 ft 3 to 5 min; one ounce of alcohol about 2,000 ft of physiological altitude | https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf |
+| Crew oxygen above 12,500 ft up to 14,000 ft for more than 30 min, at all times above 14,000 ft (US-registered civil aircraft; used as a benchmark only) | https://www.ecfr.gov/current/title-14/part-91/section-91.211 |
+| Standard atmosphere temperature and pressure formulas | https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html |
+
+Illustrative values (labelled): 1.0 m/s sink in a turn; 25 km/h wind; slope model for upward air; 40 km/h and 2.5 km/h in a check question. Physics: lapse rate arithmetic, climb = lift − sink, sin and cos components, glide ratio = airspeed ÷ sink rate, Dalton's law.
+<!-- deepb1:end -->

@@ -172,7 +172,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">02 · The science</span>
-      <h2>Five chapters. Every number worked out.</h2>
+      <h2>Nine chapters. Every number worked out.</h2>
       <p>Each chapter explains one idea in plain language, then works a real example. Try the Glide Lab to see how height, glide ratio and wind change how far you can reach.</p>
     </div>
 
@@ -182,6 +182,12 @@
       <a href="#ch-launch"><span class="n">CHAPTER 3</span><span class="t">Launch, landing &amp; the wind</span><span class="d">ground speed = airspeed − wind</span></a>
       <a href="#ch-turns"><span class="n">CHAPTER 4</span><span class="t">Turns, stalls &amp; turbulence</span><span class="d">n = 1 ÷ cos φ</span></a>
       <a href="#ch-tow"><span class="n">CHAPTER 5</span><span class="t">Towing &amp; the weak link</span><span class="d">≈ 1 g</span></a>
+          <!-- deepb1-idx:start -->
+      <a href="#ch-thermal"><span class="n">CHAPTER 6</span><span class="t">Thermals: riding rising air</span><span class="d">Lapse rates, climb rate and storm sink</span></a>
+      <a href="#ch-ridge"><span class="n">CHAPTER 7</span><span class="t">Ridge lift and the lee side</span><span class="d">Slope angle, wind angle and ridge rules</span></a>
+      <a href="#ch-polar"><span class="n">CHAPTER 8</span><span class="t">The polar: slow to stay up, fast to go far</span><span class="d">Minimum sink, best glide and headwind</span></a>
+      <a href="#ch-thin"><span class="n">CHAPTER 9</span><span class="t">High and cold: thin air</span><span class="d">Oxygen pressure and time of useful consciousness</span></a>
+      <!-- deepb1-idx:end -->
     </nav>
 
     <!-- GLIDE LAB -->
@@ -338,6 +344,188 @@
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
+
+    <!-- deepb1:start -->
+    <!-- CHAPTER 6 -->
+    <article class="chapter" id="ch-thermal">
+      <header><span class="chno">CH 6</span><h3>Thermals: riding rising air</h3></header>
+      <p class="hook">A glider always sinks through the air. To climb, you find air that rises faster than you sink.</p>
+      <div class="body">
+        <p>The sun warms the ground, and the ground warms the air above it. Warm air is less dense, so a bubble of it rises. As it rises, the pressure around it falls, so it expands and cools. The FAA Glider Flying Handbook says rising dry air cools by about <strong>3 °C per 1,000 ft</strong> (the dry adiabatic lapse rate). The bubble keeps rising while it stays warmer than the air around it. That rising column is a <strong>thermal</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the FAA's stable and unstable air example (20 °C at the ground)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: the FAA&#x27;s stable and unstable air example (20 °C at the ground)"><table class="data">
+            <thead><tr><th>Case</th><th>Rising bubble at 3,000 ft</th><th>Air around it at 3,000 ft</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td class="num">11 °C</td><td class="num">9 °C</td><td>bubble is warmer: it keeps rising, a good thermal</td></tr>
+              <tr><td>B</td><td class="num">11 °C</td><td class="num">13 °C</td><td>bubble is colder: it sinks back, stable air</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">20 °C − 3 × 3 °C = 11 °C. The handbook says case B becomes unstable if the ground warms by more than 2 °C, or the air at 3,000 ft cools by more than 2 °C.</p>
+        </div>
+        <p>Your <strong>climb rate = the speed the air rises − your sink rate</strong>. In a turn the wing has to carry more than your weight (Ch 4), so it sinks faster than in straight flight.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · climb rate in a thermal with a sink rate of 1.0 m/s in the turn (illustrative)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: climb rate in a thermal with a sink rate of 1.0 m/s in the turn (illustrative)"><table class="data">
+            <thead><tr><th>Air rises at</th><th>Your sink</th><th>You climb at</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0.5 m/s</td><td class="num">1.0 m/s</td><td class="num">−0.5 m/s (you still go down)</td></tr>
+              <tr><td class="num">1.0 m/s</td><td class="num">1.0 m/s</td><td class="num">0 m/s (you hold height)</td></tr>
+              <tr><td class="num">2.0 m/s</td><td class="num">1.0 m/s</td><td class="num">+1.0 m/s</td></tr>
+              <tr><td class="num">3.0 m/s</td><td class="num">1.0 m/s</td><td class="num">+2.0 m/s</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The 1.0 m/s sink in a turn is a teaching value. The Glide Lab uses about 0.74 m/s for straight flight at 15:1 and 40 km/h.</p>
+        </div>
+        <h4>Signs of thermals (FAA Glider Flying Handbook)</h4>
+        <ul>
+          <li>Small cumulus clouds, other gliders circling, and circling birds.</li>
+          <li>In dry places, <strong>dust devils</strong> often mark thermals starting from the ground.</li>
+          <li>Dark ground such as tilled soil or large car parks can make strong thermals.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Thunderstorms: lift you cannot fly out of</h4><p style="margin:0">The handbook says updrafts under a storm cloud can be over 1,000 ft per minute (about 5 m/s) and can pull a glider into the cloud. Downbursts can sink at 2,000 ft per minute (about 10 m/s) or more, and 3,000 ft per minute in extreme cases. A normal approach from 800 ft takes about 3 minutes. In 2,500 ft per minute sink, the glider meets the ground in 19 seconds. Stay away from towering cumulus and storms.</p></div>
+        <div class="feel"><span class="ico">☀️</span><div><span class="lbl">Feel the number</span>A 2 °C gap between the bubble and the air around it is the gap between case A and case B. Small changes in the morning sun decide if the day is soarable.</div></div>
+        <details class="check"><summary>Air rises at 1.5 m/s. You sink at 1.0 m/s in the turn. What is your climb rate?</summary>
+        <p>1.5 − 1.0 = <strong>+0.5 m/s</strong>.</p></details>
+        <details class="check"><summary>A dry bubble leaves the ground at 25 °C. About how warm is it at 2,000 ft?</summary>
+        <p>25 − 2 × 3 = <strong>19 °C</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_9.pdf" target="_blank" rel="noopener">FAA Glider Flying Handbook, Ch 9: Soaring Weather (FAA-H-8083-13B)</a> · <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_10.pdf" target="_blank" rel="noopener">FAA Glider Flying Handbook, Ch 10: Soaring Techniques</a>. Physics: adiabatic cooling, buoyancy of warm air, relative velocity. The handbook is written for sailplanes. The physics of the air is the same for hang gliders</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 7 -->
+    <article class="chapter" id="ch-ridge">
+      <header><span class="chno">CH 7</span><h3>Ridge lift and the lee side</h3></header>
+      <p class="hook">Wind that hits a hill has to go up. On the far side, it comes down just as hard.</p>
+      <div class="body">
+        <p>When wind meets a slope, the air is pushed up along it. The upward part of the wind is about <strong>wind speed × sin(slope angle)</strong>. Only the part of the wind that blows straight at the ridge counts: <strong>wind × cos(angle off the ridge)</strong>. The FAA handbook says an ideal ridge slopes about <strong>1 in 4</strong>. Shallower slopes do not lift the air enough to beat a glider's sink.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · upward air on the face of a slope, wind 25 km/h (6.9 m/s) straight at the ridge (simple model)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: upward air on the face of a slope, wind 25 km/h (6.9 m/s) straight at the ridge (simple model)"><table class="data">
+            <thead><tr><th>Slope</th><th>Angle</th><th>Upward air</th><th>Against 0.74 m/s sink</th></tr></thead>
+            <tbody>
+              <tr><td class="num">1 in 4 (FAA ideal)</td><td class="num">about 14°</td><td class="num">about 1.7 m/s</td><td>climb</td></tr>
+              <tr><td class="num">1 in 10</td><td class="num">about 6°</td><td class="num">about 0.7 m/s</td><td>about level, no climb</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">6.9 × sin 14° ≈ 1.7 m/s. This simple model is for learning only. The real flow over a hill is more complex.</p>
+        </div>
+        <div class="worked">
+          <span class="lbl">Worked example · how much of a 25 km/h wind blows straight at the ridge</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: how much of a 25 km/h wind blows straight at the ridge"><table class="data">
+            <thead><tr><th>Wind angle off straight-on</th><th>Useful part (cos)</th><th>Useful wind</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0°</td><td class="num">1.00</td><td class="num">25 km/h</td></tr>
+              <tr><td class="num">30°</td><td class="num">0.87</td><td class="num">about 22 km/h</td></tr>
+              <tr><td class="num">45°</td><td class="num">0.71</td><td class="num">about 18 km/h</td></tr>
+              <tr><td class="num">60°</td><td class="num">0.50</td><td class="num">about 13 km/h</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">The FAA handbook says wind within 45° of straight-on still gives adequate lift. It says 15 to 20 knots (about 28 to 37 km/h) straight at the ridge is best.</p>
+        </div>
+        <h4>Ridge rules (FAA Glider Flying Handbook)</h4>
+        <ul>
+          <li>With <strong>10 knots of wind or less</strong>, avoid flying low over any ridge, because you can meet sink.</li>
+          <li><strong>Make every turn away from the ridge.</strong> A turn toward it adds ground speed downwind and can end in the slope.</li>
+          <li>Approach a ridge at an angle (about 45°), so you can turn away fast if you hit sink.</li>
+          <li>Near the ridge, <strong>fly faster than minimum sink speed</strong> for better control.</li>
+          <li>Hold a crab angle so the wind does not drift you over the top into the lee side.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> The lee side pushes you down</h4><p style="margin:0">The air that went up the front comes down behind the ridge. The handbook says this downdraft can reach <strong>2,000 ft per minute (about 10 m/s) or more</strong> near a steep ridge in strong wind, with turbulence and rotors. Do not fly on the crest or below the top on the downwind side. Plan to cross ridges high, with a height limit you set before the flight.</p></div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>Hold your hand flat out of a moving car window and tilt it up a little. The air lifts your hand. A slope does the same to the wind.</div></div>
+        <details class="check"><summary>The wind blows at 40° off straight-on to the ridge. Is it within the FAA's adequate range?</summary>
+        <p><strong>Yes.</strong> The handbook says within 45° of straight-on gives adequate lift.</p></details>
+        <details class="check"><summary>Why do you make every turn on a ridge away from it?</summary>
+        <p>A turn toward the ridge swings you <strong>downwind with a higher ground speed</strong>, toward the slope.</p></details>
+        <p class="small src">Sources: <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_9.pdf" target="_blank" rel="noopener">FAA Glider Flying Handbook, Ch 9 (ideal slope, lee downdraft)</a> · <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_10.pdf" target="_blank" rel="noopener">FAA Glider Flying Handbook, Ch 10 (ridge soaring and ridge rules)</a>. Physics: resolving wind into parts with sin and cos. The 25 km/h wind and the slope model are illustrative</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 8 -->
+    <article class="chapter" id="ch-polar">
+      <header><span class="chno">CH 8</span><h3>The polar: slow to stay up, fast to go far</h3></header>
+      <p class="hook">One speed keeps you up longest. A faster one takes you furthest. Into wind, faster still.</p>
+      <div class="body">
+        <p>A glider's <strong>polar</strong> is a graph of its sink rate at each airspeed. Two speeds on it matter most. <strong>Minimum sink speed</strong> loses the least height per second, so it keeps you up longest. <strong>Best glide speed</strong> (best L/D) loses the least height per metre forward, so it takes you furthest. The glide ratio at any speed is <strong>airspeed ÷ sink rate</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the FAA's example polar (a sailplane, not a hang glider)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: the FAA&#x27;s example polar (a sailplane, not a hang glider)"><table class="data">
+            <thead><tr><th>Point</th><th>Airspeed</th><th>Sink rate</th><th>Glide ratio in still air</th></tr></thead>
+            <tbody>
+              <tr><td>Minimum sink</td><td class="num">40 knots</td><td class="num">1.9 knots</td><td class="num">about 21:1</td></tr>
+              <tr><td>Best glide (best L/D)</td><td class="num">50 knots</td><td class="num">2.1 knots</td><td class="num">about 24:1</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">50 ÷ 2.1 ≈ 24. 40 ÷ 1.9 ≈ 21. A hang glider's polar is a curve of the same kind, at lower speeds and with a smaller glide ratio (Ch 1).</p>
+        </div>
+        <p><strong>Into a headwind</strong>, your speed over the ground is airspeed − headwind. The FAA handbook says to find the best speed in a headwind, shift the start of the graph by the wind speed. That always gives a <strong>faster</strong> speed than in still air.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · the same two speeds into a 20 knot headwind</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: the same two speeds into a 20 knot headwind"><table class="data">
+            <thead><tr><th>Airspeed</th><th>Ground speed</th><th>Sink rate</th><th>Glide over the ground</th></tr></thead>
+            <tbody>
+              <tr><td class="num">40 knots</td><td class="num">20 knots</td><td class="num">1.9 knots</td><td class="num">about 10.5:1</td></tr>
+              <tr><td class="num">50 knots</td><td class="num">30 knots</td><td class="num">2.1 knots</td><td class="num">about 14.3:1</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">30 ÷ 2.1 ≈ 14.3. Flying slowly into wind wastes height. In sinking air the same idea applies: fly faster to get through it sooner.</p>
+        </div>
+        <h4>Weight and the polar (FAA Glider Flying Handbook)</h4>
+        <ul>
+          <li>More weight raises every speed on the polar. In the FAA example, going from 800 to 1,200 lb raises the best glide speed from 60 to 73 knots.</li>
+          <li>The heavier glider sinks faster, but it glides the <strong>same distance</strong> at the higher speed. The glide ratio does not change.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Pick the speed for the job</h4><p style="margin:0">Low over the landing field, into wind, or in sink, a slow speed can leave you short. Know your wing's minimum sink and best glide speeds, and add speed when the wind is strong.</p></div>
+        <div class="feel"><span class="ico">🚲</span><div><span class="lbl">Feel the number</span>It is like riding a bike into wind. Pedal gently and you hardly move. Push harder and you cover the ground.</div></div>
+        <details class="check"><summary>At best glide your wing flies at 40 km/h and sinks at 2.5 km/h. What is its glide ratio in still air?</summary>
+        <p>40 ÷ 2.5 = <strong>16:1</strong>.</p></details>
+        <details class="check"><summary>Into a strong headwind, do you fly slower or faster than best glide speed to go furthest?</summary>
+        <p><strong>Faster.</strong> The FAA handbook shifts the polar by the headwind, which gives a higher best speed.</p></details>
+        <p class="small src">Sources: <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_5.pdf" target="_blank" rel="noopener">FAA Glider Flying Handbook, Ch 5: Glider Performance (polar, weight, headwind)</a>. The 40 km/h and 2.5 km/h values in the check question are illustrative. Check your own wing's manual for its speeds and weight range</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 9 -->
+    <article class="chapter" id="ch-thin">
+      <header><span class="chno">CH 9</span><h3>High and cold: thin air</h3></header>
+      <p class="hook">The air at 3,000 m has the same share of oxygen as at sea level, but about a third less pressure to push it into your lungs.</p>
+      <div class="body">
+        <p>Air is about 21% oxygen at every height you can fly. What falls with height is the <strong>pressure</strong>. The FAA's Pilot's Handbook says oxygen's partial pressure falls in step with air pressure. Lower pressure pushes less oxygen into your blood. Lack of oxygen is <strong>hypoxia</strong>. The air also gets colder as you climb.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · NASA standard atmosphere (15 °C at sea level)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: NASA standard atmosphere (15 °C at sea level)"><table class="data">
+            <thead><tr><th>Height</th><th>Air pressure (share of sea level)</th><th>Oxygen partial pressure</th><th>Standard temperature</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0 m</td><td class="num">100%</td><td class="num">about 21 kPa</td><td class="num">15 °C</td></tr>
+              <tr><td class="num">1,500 m</td><td class="num">about 84%</td><td class="num">about 18 kPa</td><td class="num">about 5 °C</td></tr>
+              <tr><td class="num">3,000 m (about 10,000 ft)</td><td class="num">about 69%</td><td class="num">about 15 kPa</td><td class="num">about −4 °C</td></tr>
+              <tr><td class="num">4,500 m (about 14,800 ft)</td><td class="num">about 57%</td><td class="num">about 12 kPa</td><td class="num">about −14 °C</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">NASA's model: T = 15.04 − 0.00649 × h (°C, h in m), and p = 101.29 × [(T + 273.1) ÷ 288.08]^5.256 kPa. Oxygen partial pressure ≈ 0.21 × p. Real days are warmer or colder than the standard.</p>
+        </div>
+        <h4>What the FAA says about hypoxia</h4>
+        <ul>
+          <li>Above <strong>10,000 ft</strong> (about 3,000 m), the symptoms of hypoxia get worse and the time of useful consciousness drops fast.</li>
+          <li>The first signs can be a <strong>happy, carefree feeling</strong> (euphoria), then slower reactions, poor judgement, headache, blue lips and fingernails, and tingling. You can feel that everything is normal when it is not.</li>
+          <li><strong>Time of useful consciousness</strong> is the time you have to make sound decisions without extra oxygen: 30 minutes or more at 20,000 ft, but only 5 to 10 minutes at 22,000 ft and 3 to 5 minutes at 25,000 ft.</li>
+          <li>One ounce of alcohol can act like an <strong>extra 2,000 ft</strong> of height on your body.</li>
+        </ul>
+        <p>US flight rules give a useful benchmark. Under 14 CFR 91.211, the crew of a US-registered aircraft must use oxygen above <strong>12,500 ft</strong> for any time over 30 minutes, and at all times above <strong>14,000 ft</strong>. These rules are for aircraft. They show where pilots in general start to need oxygen. Follow the rules where you fly.</p>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Cold and thin air together</h4><p style="margin:0">At about 4,500 m the standard air is about −14 °C, before the wind of flight. Dress for the cold at the top of the climb, not at launch. The FAA says the treatment for hypoxia is to fly lower or use extra oxygen. If you notice any symptom, go down.</p></div>
+        <div class="feel"><span class="ico">🏔️</span><div><span class="lbl">Feel the number</span>At 3,000 m every breath brings in about two-thirds of the oxygen it does at sea level.</div></div>
+        <details class="check"><summary>At 3,000 m the air pressure is about 69% of sea level. About what is the oxygen partial pressure?</summary>
+        <p>0.21 × 0.69 × 101 kPa ≈ <strong>15 kPa</strong>, against about 21 kPa at sea level.</p></details>
+        <details class="check"><summary>Why is euphoria a dangerous first sign of hypoxia?</summary>
+        <p>It makes you <strong>feel fine</strong>, so you do not notice your judgement is getting worse.</p></details>
+        <p class="small src">Sources: <a href="https://www.faa.gov/sites/faa.gov/files/19_phak_ch17.pdf" target="_blank" rel="noopener">FAA Pilot's Handbook of Aeronautical Knowledge, Ch 17: Aeromedical Factors</a> · <a href="https://www.ecfr.gov/current/title-14/part-91/section-91.211" target="_blank" rel="noopener">14 CFR 91.211: supplemental oxygen</a> · <a href="https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html" target="_blank" rel="noopener">NASA Glenn: Earth atmosphere model</a>. Physics: Dalton's law, the standard atmosphere</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+    <!-- deepb1:end -->
   </div>
 </section>
 

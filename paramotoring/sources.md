@@ -64,3 +64,16 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - PG Gurukul (Bir paragliding) → ✓ ACI-accredited (paragliding) + School’s claim — BHPA instructor
 - PG Gurukul (Kotkapura paramotor) → Accreditation: unverified (paramotor)
 - SkyThrill, Space Apple, GFZ → Accreditation: unverified (GFZ also School’s claim — non-licensed PPG/PPC)
+
+<!-- deepb1:start -->
+## Deepen batch 1 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| 384 USPPA incident reports 1995 to 2012 (one duplicate, 383 used); voluntary reporting; take-off 32.9% or 43% with run-up and inflation; paragliding most dangerous phase is landing; reasons (balance of thrust, weight, lift; slow climb from flat ground; too low for reserve); propeller 43 accidents (11.2%), most upper-limb injuries, all 11 finger-loss fractures; upper limbs 44.5%; fuel exhaustion and power plant/propeller failure 14%; fatal 23 of 383 (6%), not lower than paragliding and hang gliding; water immersion fatal 71.4%, 21.7% of deaths; weather main or contributing cause 10.1%; 70.5% on flat terrain; kit 20 to 40 kg; 80 to 250 cc, 11 to 22.5 kW; inadvisable to fly over or near water without auto-inflating flotation (CO2 cartridge, fires on submersion); safety ring on the cage; periodic checks of engine, wing and lines | https://bmjopen.bmj.com/content/4/8/e005508 |
+| Density altitude rises with high elevation, low pressure, high temperature, high humidity; example: 5,000 ft pressure altitude ground run 790 ft standard, +20 °C gives density altitude above 7,000 ft and a run closer to 1,000 ft | https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf |
+| Wind gradient: headwind expected to diminish during descent; abrupt gradient gives sudden airspeed loss; finite time to regain speed; may land short, closer approach; 60 kt TAS into 25 kt headwind gives 35 kt groundspeed | https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_chapter_5.pdf |
+| Standard atmosphere pressure and temperature | https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html |
+
+Illustrative values (labelled): propeller 1.25 m (matches the existing Ch 1 disk) at 1,200 and 2,500 rpm; 36 km/h airspeed (existing Thrust Lab default); wind 20 then 10 km/h. Physics: tip speed π D n; ρ = p ÷ (R T); lift ∝ ρ v²; relative velocity.
+<!-- deepb1:end -->
