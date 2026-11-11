@@ -78,3 +78,15 @@ Moved from Nomad under the individual-sport rule. All facts are from the organis
 | Classic technique only in Vasaloppet (skating can lead to disqualification); Öppet Spår Monday races are freestyle; fluorinated wax banned from 2024; competition-class entry needs a Swedish ski-club membership, international participants exempt | https://vasaloppet.se/en/rules/ , https://vasaloppet.se/en/guides-and-tips/ski/rules-for-our-ski-races/ | fetched 26 Oct 2026 |
 | Safety first: rescue and medical staff may remove participants from the course; late arrival at a checkpoint means stopping, with bus transport to Mora; bus booking opens end of November 2026 | https://vasaloppet.se/en/ski/vasaloppet/ | fetched 26 Oct 2026 |
 | "Who it suits" sentence on the page | our reading, labelled "General guidance, not a source" | editorial |
+
+<!-- deepb2:start -->
+## Deepen batch 2 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| 2024/25: 50 deaths, 61.6M visits, 0.81 per million; 2023/24 36, 60.5M, 0.60; 2022/23 46, 65.4M, 0.70; 2021/22 57, 60.7M, 0.94; 10-season average 44, 57.9M, 0.76; collisions with trees and the snow surface primary causes; trees nearly half of 2024/25 deaths; two deaths from falls from lifts; snow immersion including tree wells roughly ten percent; speed, loss of control and collisions with objects; 46 male, 4 female; 37 skiers, 13 snowboarders; 16% not wearing a helmet; helmet use 91% overall, 96% under 18; most on intermediate terrain; none in terrain parks; review Your Responsibility Code | https://www.nsaa.org/Common/Uploaded%20files/webdocs/Media_Public/IndustryStats/fatality_fact_sheet_2025.pdf |
+| Tree well void of loose snow around the trunk; fall in headfirst; struggling sinks deeper; 90% of volunteers in two US and Canada experiments could not rescue themselves (quoting the Tree-Well and Deep Snow Safety website, https://deepsnowsafety.org/what-is-a-snow-immersion-suffocation/); can kill in minutes; partner has about as long as you can hold your breath; constant visual contact; do not leave to get help, dig, clear face and airway; remove pole straps; avoid skiing close to trunks; hollows and moats, especially upside down | https://www.alpineinstitute.com/articles/deep-snow-immersion-tree-wells-and-moats/ |
+| EFH h = v_J² sin²(θ_J − θ_L) ÷ 2g; can be made small by matching landing slope to flight path; US Terrain Park Council recommends EFH under 1.5 m (Minetti: most an athletic male can absorb in his leg muscles); tabletop: landing just before the knuckle or deep into the landing area gives large EFH; straight takeoff at least 1.5 reaction times, about 0.3 s; example design speed 10.2 m/s; non-elite about 1.5 g, FIS about 0.7 g; skiing in 2004 became the second leading cause of spinal cord injuries in the US (Jackson et al.) | https://link.springer.com/article/10.1007/s12283-015-0182-6 |
+
+Illustrative values (labelled on the page): 75 kg skier; stopping distances 1 m and 0.1 m; contact areas 0.31, 0.10 and 0.06 m²; landing speed 12 m/s and 35° path; slope angles 30°, 25°, 15°, 0°. Physics: a = v² ÷ 2d, pressure = force ÷ area, EFH formula.
+<!-- deepb2:end -->

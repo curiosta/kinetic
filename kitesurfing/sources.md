@@ -67,3 +67,19 @@ Quest wind seasons and Goa monsoon row unchanged (already in seasons.py). No new
 - Quest Adventure Sports Academy and Aqua Outback: IKO (and Quest’s PADI / ISA) affiliations appear on the schools’ own sites only. IKO school-directory pages for these centres were not confirmed as live listings this pass → badges **IKO — school’s claim**.
 - YAI national kite event hosting at Aqua Outback: verified via YAI calendar (separate from IKO centre status).
 - IKO / VDWS instructor pathway cards link the bodies’ own course pages (not school accreditation).
+
+<!-- deepb2:start -->
+## Deepen batch 2 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| 235 kitesurfers over 6 months; 124 injuries; 7 per 1,000 h; 1 fatal, 11 severe; foot and ankle 28%, skull 14%, chest 13%, knee 13%; 56% from inability to detach the kite from the harness when control was lost; tendency to fewer injuries with a quick-release system | Nickel et al., Am J Sports Med 2004, PMID 15150038, https://doi.org/10.1177/0363546503262162 (abstract read via Europe PMC: https://europepmc.org/article/MED/15150038) |
+| Norway: 29 kiteboarders, 33 injuries, 12 concussions; falls from less than 5 m most common; operator error and lack of experience 82%; course stressing helmet and life vest for kitesurfing should be mandatory | https://pmc.ncbi.nlm.nih.gov/articles/PMC10804644/ |
+| Thunderstorm gusts: strong 34 to 49 kn, severe 50 to 63 kn, very severe/violent 64 kn or more | https://www.weather.gov/mlb/marine_thunderstorm_gust_threat |
+| When thunder roars go indoors and stay 30 minutes after the last thunder; closed building or hard-topped all-metal vehicle; not pavilions or under a tree; get out of the water, get off the beach | https://www.weather.gov/mlb/lightning_rules |
+| Thunder heard only about 10 miles from the strike; hearing it means within striking distance; sound about 5 s per mile, divide seconds by 5 | https://www.weather.gov/safety/lightning-science-thunder |
+| Tidal currents flood toward land and ebb toward sea; slack water near high or low tide in coastal rivers and estuaries; spring currents strong at full and new moon, neap currents weak at first and third quarter | https://oceanservice.noaa.gov/education/tutorial_currents/02tidal1.html |
+| Channel rips typically 1 to 2 ft/s, up to 8 ft/s; faster about an hour or two either side of low tide on beaches with tide range under 6 ft; swim parallel to the shoreline | https://www.weather.gov/safety/ripcurrent-science ; https://www.weather.gov/safety/ripcurrent-faqs |
+
+Illustrative values (labelled on the page): 75 kg rider; 12 m² kite pull 444 N at 15 kn from Ch 6; board speed 15 kn and 12 kn; currents 1, 1.5, 2 and 3 kn; 100 and 2,000 rider hours. Physics: pull ∝ v², vector addition, time = distance ÷ speed.
+<!-- deepb2:end -->

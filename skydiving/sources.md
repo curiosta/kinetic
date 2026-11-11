@@ -57,3 +57,16 @@ Checked 3 Oct 2026 (IST). Every fact on the page comes from a source listed here
 - Skyhigh India (tandem + AFF) → School’s claim — USPA affiliated; School’s claim — DGCA certified
 - Skydive India / Macsen → ✓ Named on MoCA-reported aerial-work list (Macsen Aviation); School’s claim — USPA ratings on staff
 - Skydive Dubai cards → Accreditation: unverified (this pass)
+
+<!-- deepb2:start -->
+## Deepen batch 2 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| US fatality rates per 100,000 jumps: 2021 10 deaths, 3.57M jumps, 0.28; 2022 20, 3.9M, 0.51; 2023 10, 3.65M, 0.27; 2024 9, 3.88M, 0.23; 2025 16, 3.47M, 0.46; 1961 rate 11 per 100,000 | https://www.uspa.org/discover/faqs/safety |
+| 2025: 4 of 16 deaths after intentional low turns; a safe landing usually still possible if the jumper aborts a low turn high enough; no student deaths, second year since records began in 1961; 4 died without starting emergency procedures, 2 after responding incorrectly; study: 10% took immediate action, 10% became hysterical, 80% froze; practise emergency procedures in the hanging harness; 1961 jumpers 22 times more likely to die than today; emergency decision altitudes: students and A no lower than 2,500 ft, B and C no lower than 2,000 ft; below 1,000 ft go to the reserve without a cutaway; a working AAD might have changed the outcome in 3 deaths; a non-wingsuit AAD might not fire in a wingsuit flat spin | https://www.uspa.org/a-need-for-vigilance-the-2025-fatality-summary |
+| Minimum opening altitudes: tandem 5,000 ft; students and A 3,000 ft; B 2,500 ft; C and D 2,500 ft, waiverable to no lower than 2,000 ft; students need a visually accessible altimeter and a functional AAD that meets the manufacturer's recommended service schedule | https://www.uspa.org/SIM/2-1 |
+| CYPRES 2 Expert: cuts the reserve closing loop above 35 m/s (78 mph) at about 225 m (750 ft); 35 m/s about 70% of freefall speed; operates down to about 40 m (130 ft); aircraft must always go above 1,500 ft (450 m); strictly a backup, not a substitute for training and timely emergency procedures, can fail at any time; a steep dive above 35 m/s under a main canopy below 225 m can fire it, "never do that" | https://www.cypres.aero/wp-content/uploads/2025/09/991002_cypres_2_user_guide-en.pdf ; https://www.cypres.aero/product/expert-cypres-2/specifications/ |
+
+Illustrative values (labelled on the page): landing speeds 5, 10 and 15 m/s. Physics: rate = deaths ÷ jumps, fall height = v² ÷ 2g, time = height ÷ speed, using the page's belly speed 53.6 m/s, head-down 71.4 m/s and canopy descent 5 m/s.
+<!-- deepb2:end -->

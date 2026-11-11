@@ -11,3 +11,18 @@
 | India: no big-wave or tow-in school or governing body found, 19 Oct 2026 | Kinetic research note |
 
 Physics: linear (Airy) wave theory (E = ⅛ρgH², L = gT²/2π, group speed, dispersion relation ω² = gk tanh kd), breaking rule of thumb H ≈ 0.78 d, Archimedes' principle. Example air fractions and storey heights are examples.
+
+<!-- deepb2:start -->
+## Deepen batch 2 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| Significant wave height approximately the average of the highest one-third of the waves | https://www.ndbc.noaa.gov/faq/wavecalc.shtml |
+| Rayleigh distribution; most frequent wave about half Hs; average about 5/8 Hs; average of highest 10% about 1.272 Hs; example Hs 10 ft: 1% above about 16 ft, 0.1% above about 19 ft; rule of thumb highest expected wave 2 × Hs, about 1 in 3,000 waves; 10 s period gives about 8.3 hours; deep-water waves begin to break at height/length above 1/7 | https://www.vos.noaa.gov/MWL/aug_05/nws.shtml |
+| Wave setup often about 10% of breaking wave height; water flows from high to low setup and offshore as a rip; channel rips typically 1 to 2 ft/s, up to 8 ft/s; rip pulses 30 s to 1 min with wave groups, speed can more than double, pulses often what lead people into trouble; focused rips at submarine canyons, ridges and offshore bars | https://www.weather.gov/safety/ripcurrent-science |
+| Rip speed likely increases with wave height and period; no surf-zone force pulls people under; people get into trouble through fear, panic, exhaustion; tell victim to swim parallel to the shoreline; many would-be rescuers have drowned | https://www.weather.gov/safety/ripcurrent-faqs |
+| All BW surfers and jet ski drivers must wear a personal flotation device during the Nazaré BW Event (rule 7.19(g)) | https://www.worldsurfleague.com/asset/41924/2025+WSL+Rule+Book+clean+09102025.pdf |
+| Big-wave vests are manual, pull tab; four CO2 canisters, each with its own tab; 25 to 38 g each; single use, replace on dry land; never use with one cartridge left; test by pulling tabs, listening for leaks, leaving inflated six hours; not buoyant enough to aid users unable to save themselves; not impact vests | https://www.surfertoday.com/surfing/how-does-an-inflatable-life-vest-work |
+
+Illustrative values (labelled on the page): gas temperature 15 °C, sea-level pressure, Hs 6 m and 10 m, 15 s and 12 s periods, a 5 m breaking wave. Physics: Rayleigh multipliers × Hs, time = waves × period, time = distance ÷ speed, ideal gas law (CO2 44 g/mol), Boyle's law (about 1 bar per 10 m of seawater), Archimedes' principle.
+<!-- deepb2:end -->

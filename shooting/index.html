@@ -172,7 +172,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">02 · The science</span>
-      <h2>Six chapters. Every number worked out.</h2>
+      <h2>Nine chapters. Every number worked out.</h2>
       <p>Each chapter explains one idea in plain language, then works a real example. Try the Hold &amp; Score Lab to see how wobble, speed and gun mass change the shot.</p>
     </div>
 
@@ -183,6 +183,11 @@
       <a href="#ch-breath"><span class="n">CHAPTER 4</span><span class="t">Breathing, heartbeat &amp; the hold</span><span class="d">Finding the stillest moment</span></a>
       <a href="#ch-trigger"><span class="n">CHAPTER 5</span><span class="t">Trigger control &amp; follow-through</span><span class="d">The milliseconds that matter</span></a>
       <a href="#ch-safety"><span class="n">CHAPTER 6</span><span class="t">Range safety, rules &amp; the law</span><span class="d">Flags, commands and licences</span></a>
+          <!-- deepb2-idx:start -->
+      <a href="#ch-noise"><span class="n">CHAPTER 7</span><span class="t">Noise and your hearing</span><span class="d">Decibels, pressure and the 3 dB rule</span></a>
+      <a href="#ch-lead"><span class="n">CHAPTER 8</span><span class="t">Lead dust and range air</span><span class="d">Airflow speed and clean hands</span></a>
+      <a href="#ch-shot"><span class="n">CHAPTER 9</span><span class="t">How far shot can travel</span><span class="d">Drag, pellet size and danger areas</span></a>
+      <!-- deepb2-idx:end -->
     </nav>
 
     <!-- HOLD & GROUP LAB -->
@@ -403,6 +408,115 @@
         <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
       </div>
     </article>
+    <!-- deepb2:start -->
+    <!-- CHAPTER 7 -->
+    <article class="chapter" id="ch-noise">
+      <header><span class="chno">CH 7</span><h3>Noise and your hearing</h3></header>
+      <p class="hook">Every 20 decibels means ten times the air pressure hitting your ear.</p>
+      <div class="body">
+        <p>Sound is a tiny, fast change in air pressure. Loudness is measured in <strong>decibels (dB)</strong> on a log scale: SPL = 20 × log₁₀(p ÷ 20 µPa), where p is the pressure change. So every +20 dB is 10 times the pressure. A 2017 review in <em>Seminars in Hearing</em> (Meinke and others) says peak levels from firearms run from about <strong>140 to 175 dB</strong>, and most are between 150 and 165 dB. It names small-calibre .17 and .22 rifles and air rifles as quieter exceptions.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · decibels as air pressure</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: decibels as air pressure"><table class="data">
+            <thead><tr><th>Level</th><th>What it is</th><th>Pressure at the ear</th></tr></thead>
+            <tbody>
+              <tr><td>85 dBA</td><td>NIOSH limit for an 8-hour average</td><td class="num">about 0.36 Pa</td></tr>
+              <tr><td>140 dB</td><td>NIOSH and OSHA limit: impulse noise never above this</td><td class="num">200 Pa</td></tr>
+              <tr><td>149.6 to 154.4 dB</td><td>Peaks NIOSH measured at an indoor range during firearms practice</td><td class="num">about 600 to 1,050 Pa</td></tr>
+              <tr><td>165 dB</td><td>Top of the range for most firearms (review)</td><td class="num">about 3,560 Pa</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">p = 20 µPa × 10^(SPL ÷ 20). For 140 dB: 20 µPa × 10⁷ = 200 Pa. 154.4 dB is 10^(14.4 ÷ 20) ≈ 5.2 times the pressure of the 140 dB limit.</p>
+        </div>
+        <h4>The 3 dB rule for time</h4>
+        <ul>
+          <li><strong>Average noise:</strong> NIOSH sets 85 dBA for 8 hours and uses a 3 dB exchange rate: every 3 dB more halves the safe time. 88 dBA allows 4 hours, 91 dBA 2 hours, 100 dBA only 15 minutes.</li>
+          <li><strong>At the range:</strong> NIOSH measured shooters at 111 to 115 dBA (NIOSH method) over 2.5 to 3 hours. By the 3 dB rule, 115 dBA uses up a full day's allowance in under 30 seconds.</li>
+          <li><strong>Damage can be fast:</strong> NIOSH says gunfire is intense enough to damage unprotected ears in minutes, not the years that most factory noise takes. Noise-induced hearing loss cannot be cured.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Wear plugs and muffs together</h4><p style="margin:0">NIOSH recommends double hearing protection, earplugs and earmuffs, for people who shoot at indoor ranges as part of their job. It says to push plugs in properly, and warns that the arms of safety glasses under earmuffs can let sound leak in. Kinetic's Ch 6 shows that ISSF rules require hearing protection near the 25 m, 50 m and 300 m lines and on shotgun ranges.</p></div>
+        <div class="feel"><span class="ico">✋</span><div><span class="lbl">Feel the number</span>A 154 dB peak pushes on your eardrum about five times harder than the 140 dB limit, and about 3,000 times harder than an 85 dB average.</div></div>
+        <details class="check"><summary>How much more air pressure is 160 dB than 140 dB?</summary>
+        <p>20 dB more = <strong>10 times</strong> the pressure (2,000 Pa against 200 Pa).</p></details>
+        <details class="check"><summary>NIOSH allows 85 dBA for 8 hours. How long at 94 dBA?</summary>
+        <p>94 is 9 dB more, so halve three times: 8 → 4 → 2 → <strong>1 hour</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://www.cdc.gov/niosh/bulletin/2009/firingrange.html" target="_blank" rel="noopener">NIOSH Science Bulletin: lead and noise at indoor firing ranges (2009)</a> · <a href="https://www.cdc.gov/niosh/hhe/reports/pdfs/2012-0065-3195.pdf" target="_blank" rel="noopener">NIOSH Health Hazard Evaluation 2012-0065-3195</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5634813/" target="_blank" rel="noopener">Meinke et al. 2017: preventing hearing loss from recreational firearms (abstract)</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 8 -->
+    <article class="chapter" id="ch-lead">
+      <header><span class="chno">CH 8</span><h3>Lead dust and range air</h3></header>
+      <p class="hook">Moving air carries lead dust away from the shooter, but hands carry it home.</p>
+      <div class="body">
+        <p>Firearm shots release lead dust from the bullets and the primers. NIOSH says it can be breathed in, or settle on surfaces and pass to your hands and then your mouth. An indoor range protects shooters with a steady flow of air from behind the firing line towards the targets. NIOSH recommends at least <strong>50 feet per minute</strong> (fpm) along the firing line, ideally 75 fpm, and at least 30 fpm downrange.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · how fast range air moves (NIOSH figures)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: how fast range air moves (NIOSH figures)"><table class="data">
+            <thead><tr><th>Airflow</th><th>In m/s</th><th>Time to travel 75 ft (22.9 m) to the bullet trap</th></tr></thead>
+            <tbody>
+              <tr><td>30 fpm (minimum downrange)</td><td class="num">0.15 m/s</td><td class="num">2.5 min</td></tr>
+              <tr><td>50 fpm (minimum at the firing line)</td><td class="num">0.25 m/s</td><td class="num">1.5 min</td></tr>
+              <tr><td>75 fpm (optimal at the firing line)</td><td class="num">0.38 m/s</td><td class="num">1 min</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">1 fpm = 0.00508 m/s. Time = distance ÷ speed: 75 ft ÷ 50 fpm = 1.5 min. The bullet trap in the NIOSH study was about 75 ft from the firing line. Each bay was designed to supply about 21,000 cubic feet of air a minute and pull out about 24,000. Pulling out about 14% more than goes in keeps the range at lower pressure, so air leaks in, not out.</p>
+        </div>
+        <h4>What NIOSH found</h4>
+        <ul>
+          <li><strong>Better air worked:</strong> after a new ventilation system, shooters' average airborne lead fell from 102 to 5.0 µg/m³, a twentyfold drop. The OSHA limit is 50 µg/m³ over 8 hours.</li>
+          <li><strong>Hands did not get cleaner:</strong> blood lead levels did not change much, and NIOSH says swallowed lead is a likely reason. It found lead on the hands of all shooters it tested. The one instructor whose hands tested clean had used lead removal wipes.</li>
+          <li><strong>Lead goes home:</strong> NIOSH found lead in every vehicle it sampled, and on shoes and clothes.</li>
+          <li><strong>A bad case:</strong> in another NIOSH case, trainees' blood lead rose from 6.5 to 50.4 µg/dL. Jacketed and coated bullets cut airborne lead by 94% to 97%.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Wash before you eat</h4><p style="margin:0">NIOSH says do not eat, drink, chew gum or use tobacco in the range. Wash hands and face before eating or drinking, use lead removal wipes, and change clothes and shoes before you leave. These findings come from indoor firearm ranges.</p></div>
+        <details class="check"><summary>Air moves at 60 fpm. How long to cross 75 ft?</summary>
+        <p>75 ÷ 60 = <strong>1.25 min</strong>, or 75 s.</p></details>
+        <details class="check"><summary>Airborne lead fell from 102 to 5.0 µg/m³. By what factor?</summary>
+        <p>102 ÷ 5.0 ≈ <strong>20 times</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://www.cdc.gov/niosh/hhe/reports/pdfs/2012-0065-3195.pdf" target="_blank" rel="noopener">NIOSH Health Hazard Evaluation 2012-0065-3195</a> · <a href="https://www.cdc.gov/niosh/bulletin/2009/firingrange.html" target="_blank" rel="noopener">NIOSH Science Bulletin (2009)</a></p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+
+    <!-- CHAPTER 9 -->
+    <article class="chapter" id="ch-shot">
+      <header><span class="chno">CH 9</span><h3>How far shot can travel</h3></header>
+      <p class="hook">A pellet 4 times wider can fly about 4 times further.</p>
+      <div class="body">
+        <p>A shotgun cartridge fires many small lead pellets. Each pellet slows down because of air drag. Drag force grows with the pellet's front area, which goes as diameter², but the pellet's mass goes as diameter³. So the slowing is about drag ÷ mass ∝ <strong>1 ÷ diameter</strong>: bigger pellets hold their speed longer and fly further. A rule called <strong>Journée's theory</strong> puts the maximum range in yards at about <strong>2,200 × diameter in inches</strong>.</p>
+        <div class="worked">
+          <span class="lbl">Worked example · UK Target Shotgun Manual, Table 2 (lead shot)</span>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Worked example: UK Target Shotgun Manual, Table 2 (lead shot)"><table class="data">
+            <thead><tr><th>UK shot size</th><th>Diameter</th><th>Weight of one pellet</th><th>Max range (Journée)</th><th>Drag slowing vs No 7½</th></tr></thead>
+            <tbody>
+              <tr><td>9</td><td class="num">2.03 mm</td><td class="num">0.05 g</td><td class="num">161 m</td><td class="num">1.13×</td></tr>
+              <tr><td>7½</td><td class="num">2.29 mm</td><td class="num">0.07 g</td><td class="num">181 m</td><td class="num">1×</td></tr>
+              <tr><td>6</td><td class="num">2.59 mm</td><td class="num">0.10 g</td><td class="num">205 m</td><td class="num">0.88×</td></tr>
+              <tr><td>4</td><td class="num">3.05 mm</td><td class="num">0.17 g</td><td class="num">241 m</td><td class="num">0.75×</td></tr>
+              <tr><td>SG (buckshot)</td><td class="num">8.43 mm</td><td class="num">3.56 g</td><td class="num">668 m</td><td class="num">0.27×</td></tr>
+            </tbody>
+          </table></div>
+          <p class="small" style="margin:10px 0 0">No 7½: 0.09 in × 2,200 ≈ 198 yd ≈ 181 m. Drag slowing ∝ 1 ÷ d: 2.29 ÷ 8.43 ≈ 0.27, so an SG pellet loses speed to drag about 4 times more slowly than a No 7½ pellet. The manual says the table is a general guide only.</p>
+        </div>
+        <h4>What changes the distance</h4>
+        <ul>
+          <li><strong>Angle:</strong> ShootingUK says about 29° is the angle that carries shot furthest, less than the 45° you get with no air, because drag cuts the long high path.</li>
+          <li><strong>Wind:</strong> ShootingUK says a computer model shows a strong following wind can add about 33% to the Journée distance.</li>
+          <li><strong>Joined-up shot:</strong> the manual says shot held together in a cup or bonded with glue travels far greater distances than the table shows.</li>
+          <li><strong>Slugs:</strong> a single solid slug reaches about 1,100 m, the manual says.</li>
+        </ul>
+        <div class="callout warn"><h4><span class="safety-tag">Safety</span> Know the danger area for what you load</h4><p style="margin:0">The UK manual sets these minimum safety distances where there is no backstop: birdshot up to size 4, 300 m. Buckshot up to SG, 750 m. Slug, 1,300 m. It asks clubs to state the largest shot size allowed, and shooters to bring no cartridges that could fire past the range danger area.</p></div>
+        <details class="check"><summary>Use Journée's rule. How far can a 0.12 in pellet go?</summary>
+        <p>0.12 × 2,200 = 264 yd ≈ <strong>241 m</strong>.</p></details>
+        <details class="check"><summary>Pellet B is twice as wide as pellet A. How does drag slow it compared with A?</summary>
+        <p>Slowing ∝ 1 ÷ d, so B slows <strong>half as fast</strong>.</p></details>
+        <p class="small src">Sources: <a href="https://nra.org.uk/wp-content/uploads/2017/04/TargetShotgunManual.pdf" target="_blank" rel="noopener">NRA (UK) Target Shotgun Manual: Table 2 and Safety Distances</a> · <a href="https://www.shootinguk.co.uk/news/how-far-do-shotgun-pellets-travel/" target="_blank" rel="noopener">ShootingUK: how far do shotgun pellets travel?</a>. Physics: drag ∝ area, mass ∝ volume.</p>
+        <a class="back-to-quiz" href="#challenge">↑ Back to the challenge</a>
+      </div>
+    </article>
+    <!-- deepb2:end -->
   </div>
 </section>
 

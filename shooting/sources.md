@@ -79,3 +79,17 @@ URL: https://backoffice.issf-sports.org/getfile.aspx?mod=docf&pane=1&inst=455&fi
 - Aim High India → Accreditation: unverified
 - State rifle associations → ✓ NRAI-affiliated units; India Open → ✓ NRAI competition; NRAI coaches course → ✓ NRAI course; ISSF Academy licences → ✓ ISSF programme
 - Accreditation key callout added under "Where to train".
+
+<!-- deepb2:start -->
+## Deepen batch 2 (10 Nov 2026): Chapters 7 to 9
+
+| Claim | Source |
+| --- | --- |
+| Peak levels at indoor ranges exceed 140 dB SPL; double hearing protection (plugs and muffs); safety glasses under earmuffs can create an acoustic leak; lead from bullets and primers, inhaled or via hands; trainees' blood lead 6.5 to 50.4 µg/dL; nylon-coated and copper-jacketed bullets cut airborne lead 94% to 97%; wash hands, forearms and face before eating; change clothes and shoes before leaving | https://www.cdc.gov/niosh/bulletin/2009/firingrange.html |
+| Peaks 149.6 to 154.4 dB; shooters 111 to 115 dBA (NIOSH criteria) over 2.5 to 3 h; REL 85 dBA 8-h TWA, 3-dB exchange rate; impulse never above 140 dB; gunfire can damage hearing in minutes; noise-induced hearing loss irreversible; proper insertion of plugs; airflow minimum 50 fpm at the firing line, optimal 75 fpm, downrange at least 30 fpm; bullet trap about 75 ft from the firing line; each bay supplies about 21,000 cfm and exhausts about 24,000 cfm; negative pressure; shooters' airborne lead 102 to 5.0 µg/m³, twentyfold; OSHA PEL 50 µg/m³; BLLs similar, ingestion likely; lead on all shooters' hands, instructor with wipes negative; lead in all vehicles sampled; no eating, drinking, gum or tobacco in the range | https://www.cdc.gov/niosh/hhe/reports/pdfs/2012-0065-3195.pdf |
+| Firearm peak SPLs about 140 to 175 dB; most recreational firearms 150 to 165 dB, excluding small-calibre .17 and .22 rifles and air rifles | Meinke et al., Semin Hear 2017, doi 10.1055/s-0037-1606323 (abstract read via Europe PMC; PMC full text was blocked to our fetcher): https://pmc.ncbi.nlm.nih.gov/articles/PMC5634813/ |
+| Table 2: No 9 2.03 mm 0.05 g 161 m; No 7½ 2.29 mm 0.07 g 181 m; No 6 2.59 mm 0.10 g 205 m; No 4 3.05 mm 0.17 g 241 m; SG 8.43 mm 3.56 g 668 m; general guide only; encapsulated or bonded shot travels far greater distances; slug max about 1,100 m; safety distances with no backstop: birdshot max size 4 300 m, buckshot max SG 750 m, slug 1,300 m; Journée: range in yards = diameter in inches × 2,200; clubs to state largest shot size | https://nra.org.uk/wp-content/uploads/2017/04/TargetShotgunManual.pdf |
+| About 29° is optimal; a powerful following wind can add about 33% to the Journée distance | https://www.shootinguk.co.uk/news/how-far-do-shotgun-pellets-travel/ |
+
+Physics: SPL = 20 log10(p ÷ 20 µPa); 3-dB halving; 1 fpm = 0.00508 m/s; time = distance ÷ speed; drag ∝ d², mass ∝ d³, so drag deceleration ∝ 1/d. Not used: ShootingUK's line that falling shot is not dangerous.
+<!-- deepb2:end -->
