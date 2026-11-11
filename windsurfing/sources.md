@@ -61,7 +61,7 @@ Checked 3 Oct 2026; deepened and re-checked 5 Oct 2026 (IST). Every fact on the 
 - **Mandvi (Gujarat) and Pulicat (TN)** as windsurfing spots: no school or official page found; left off.
 - **Goa windsurf schools other than Aquasail**: none verified; Goa appears via Aquasail, Morjim nationals and Sail Goa.
 
-- **iWindsurf** (requested as a ladder reference): not verified, so omitted.
+- **iWindsurf** (requested as a path reference): not verified, so omitted.
 - "Windsurf Association of India": named by Mumbai Sailing Club as its certifying body, but no official site for it was found; left off the page.
 - Gateway Sailing Club (Colaba): seen only via search index (fetch failed); left off.
 - VDWS level names were not checked in detail; the page refers to VDWS only generally.

@@ -51,7 +51,7 @@ Base checks **3 Oct 2026 (IST)**; deep4 pass **5 Oct 2026 (IST)**. "Verified" me
 - Other Indian rinks (e.g. in Dehradun, Mumbai, Hyderabad, Bengaluru malls) were not listed. We couldn't confirm a current, working official page for each this pass.
 - ISAI's own learner test levels and coach-certification system: not found on its site, so not listed.
 - ISAI national championship dates for 2026–27: not published when checked.
-- The Learn to Skate USA ladder is used as an international **reference**, not as something Indian rinks follow; the page says so.
+- The Learn to Skate USA path is used as an international **reference**, not as something Indian rinks follow; the page says so.
 - The frequently quoted "Learn to Skate USA is the official programme of U.S. Figure Skating, USA Hockey and US Speedskating" was not confirmed on the pages read, so it's not stated.
 
 ## 5. Deep research (5 Oct 2026, batch deep4)

@@ -16,7 +16,7 @@ All checks done **3 Oct 2026 (IST)**; deepened and re-checked **5 Oct 2026** (se
 | Water conducts heat roughly 25× faster than air; cold shock response; swim-failure; rip-current advice (swim parallel to shore, float, signal); drafting saves effort | General physiology and water-safety knowledge, **not fetched** |
 | Current vector maths (aim angle = asin(current ÷ speed), ground speed) | Computed (vector addition) |
 
-## 2. Rules, standards and ladders
+## 2. Rules, standards and paths
 
 | Item | URL | Status |
 |---|---|---|

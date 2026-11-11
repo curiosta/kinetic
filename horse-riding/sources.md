@@ -29,7 +29,7 @@ Checked 4 Oct 2026 (IST). Every fact on the page comes from a source listed here
 | Helmet standards accepted by British Eventing (PAS 015, EN1384/VG1, ASTM F1163, SNELL E2001/E2016, AS/NZS 3838); replace every 3–5 years; replace after any fall where the head hits the ground; body protectors BETA 2018 Level 3 or EN 13158:2018 Level 3, mandatory for cross-country; fit: chest, ribs, spine, finish above the saddle | British Eventing "Understanding Helmet and Body Protector Standards", https://beprepared.britisheventing.com/blog/understanding-helmet-and-body-protector-standards | loaded |
 | BETA 2018 Level 3 required at BE events from 1 Jan 2024 (purple BETA 2009 no longer permitted); three levels; protectors absorb energy of falls, kicks or being stepped on; protect abdomen, chest and ribs | British Eventing news, 6 Feb 2024, https://news.britisheventing.com/be-body-protector-rule-update-1st-january-2024/ | loaded; not linked from the page |
 
-## 3. Levels, ladder and governing bodies
+## 3. Levels, path and governing bodies
 
 | Item | Source | Status |
 |---|---|---|
@@ -57,7 +57,7 @@ Link check (4 Oct 2026): 16 external links on the page; 15 return 200 to curl; a
 
 ## 5. Not verified / softened / left off
 
-- **EFI learner levels**: the EFI site publishes competition grades and rider registration but no learner riding levels, so the ladder is a plain one with BHS Stages and the FEI framework as reference points, as the brief allowed.
+- **EFI learner levels**: the EFI site publishes competition grades and rider registration but no learner riding levels, so the path is a plain one with BHS Stages and the FEI framework as reference points, as the brief allowed.
 - **FEI Rider's Education Programme in India**: it's a framework national federations apply for; we found nothing saying the EFI has adopted it, so the page says so. "Launched January 2026" was softened to "its 2025 brochure planned the full launch for January 2026".
 - **Delhi Riding Club**: its listed domain (delhiridingclub.com) now redirects to an unrelated horoscope site, so there's no official page to verify against. Left off.
 - **Army Polo & Riding Club (Delhi) and other Army clubs accepting civilians**: aprcdelhi.com shows only placeholder ("lorem ipsum") text and a login; no official page confirms current civilian lessons. Left off.

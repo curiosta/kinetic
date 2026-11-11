@@ -2,7 +2,7 @@
 
 All checks done **3 Oct 2026 (IST)**. "Verified" means the official page or document was loaded and the stated fact was read on it, unless noted otherwise. The page deliberately shows **no prices, fares or fees**. Each operator, school and club is linked to its own site (or a news report where none exists), where readers should check current courses, approvals and dates.
 
-Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft, paramotors and powered parachutes, and hot-air balloons on one page. Paragliding has its own sibling page (`../paragliding/`), linked from the hero, chapters, ladder, bodies and where-to-go.
+Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft, paramotors and powered parachutes, and hot-air balloons on one page. Paragliding has its own sibling page (`../paragliding/`), linked from the hero, chapters, path, bodies and where-to-go.
 
 ## 1. Physics (chapters, quiz, Balloon Lab)
 
@@ -56,7 +56,7 @@ Scope: gliders (sailplanes), hang gliders, microlights and light sport aircraft,
 ## 5. Left out / judgement calls
 
 - **Grouping:** one page for five aircraft types, ordered by physics (unpowered wings → soaring → buoyancy → engines → weather → control). Paragliding stays on its own sibling page and is cross-linked, not duplicated.
-- **Ladder:** six steps by what a beginner can actually do next in India: passenger → school-described no-licence powered categories → hang gliding → DGCA glider licence → DGCA microlight/LSA licence → DGCA balloon licence plus FAI/Aero Club of India sport. It is a learning path, not an official progression.
+- **Path:** six steps by what a beginner can actually do next in India: passenger → school-described no-licence powered categories → hang gliding → DGCA glider licence → DGCA microlight/LSA licence → DGCA balloon licence plus FAI/Aero Club of India sport. It is a learning path, not an official progression.
 - **No flying-hour or age minimums** for DGCA licences: not verified on an official page.
 - **Agni Aero Sports Adventure Academy (Jakkur, Bengaluru)** left out: its site's data ends around 2010, so current operation couldn't be verified.
 - **Flying Monkeys** left out (site fetch timed out). **NCC gliding/microlight** left out (cadets only).

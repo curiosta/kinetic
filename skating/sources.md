@@ -6,7 +6,7 @@ Base checks done **3 Oct 2026 (IST)**; deep5 pass **5 Oct 2026 (IST)** (section 
 
 Skateboarding is governed by the same bodies (World Skate globally; RSFI says it is "the governing body for skateboarding and roller sports in India"). It's still left out of this page, with a short explanatory note:
 - **Different core physics.** The board isn't attached to the feet. Ollies, pop and flick tricks, and a sideways stance on one deck don't map onto striding on two skates.
-- **Different skill ladder.** Its competitions (Olympic street and park) also differ.
+- **Different skill path.** Its competitions (Olympic street and park) also differ.
 - **Better as a page of its own.** It deserves dedicated chapters rather than a sidebar.
 
 ## 1. Physics (chapters, quiz, Roll Lab)
@@ -28,7 +28,7 @@ Skateboarding is governed by the same bodies (World Skate globally; RSFI says it
 | ICP Level 1: teachable skills (forward stride 1–2, heel brake, A-frame turn, forward swizzle, parallel turn, spin stop, grass stop); additional skills (stride 3, backward swizzle/movement, forward slalom, T-stop, crossovers, transitions, backward powerslide); entry requirement of intermediate skills; full protective gear + heel brake compulsory; pass marks 85% theory, 80% practical teaching | https://www.inlinecertificationprogram.org/icp-level-1 | loaded |
 | ICP Levels 1–3 exist | ICP site navigation | loaded (Levels 2–3 details not read) |
 | Skate IA programmes: Level 1 Core, 2A Mastery of the Classroom, 2B Advanced Technical Skills, Skate Park, Freestyle Slalom; inline and quad; in person and online | https://www.skateia.org/programs | loaded |
-| **Kinetic milestone ladder** (Milestones 0–5) | Kinetic's own framework | **Judgement call**: no single international learner grading for roller/inline exists. Milestones 1–2 follow the ICP Level 1 skill lists; 0, 3 and 4 are labelled as Kinetic milestones |
+| **Kinetic milestone path** (Milestones 0–5) | Kinetic's own framework | **Judgement call**: no single international learner grading for roller/inline exists. Milestones 1–2 follow the ICP Level 1 skill lists; 0, 3 and 4 are labelled as Kinetic milestones |
 | RSFI age categories: Cadet 5–7 / 7–9 / 9–11, Sub-Junior 11–14, Junior 14–17, Senior above 17, Master above 30 | https://indiaskate.com/delhi/ | Taken from the 2021–22 national-player list on RSFI's Delhi page; not from a current RSFI rulebook |
 
 ## 3. Governing bodies
